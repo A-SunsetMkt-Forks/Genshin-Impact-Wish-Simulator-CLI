@@ -12,6 +12,7 @@ int main() {
     int wishes_number = 0;
     int four_star_assurance_number = 0;
     int five_star_assurance_number = 0;
+    int five_star_guarantee_number = 0;
     std::cout << "WELCOME TO GENSHIN IMPACT WISH SIMULATOR CLI" << endl << endl;
     std::cout << "Choose Your Wishes (Banners):" << endl;
     std::cout << "1: Character Event Wish; 2: Weapon Event Wish; 3: Permanent Wish; 4: Novice Wish" << endl << endl;
@@ -62,7 +63,6 @@ int main() {
     while (wishes_number >= 0) {
         std::cout << endl << "How many wishes? -1: Quit; 1: 1 Wish; 10: 10 Wishes" << endl << endl;
         std::cin >> wishes_number;
-        count = count + wishes_number;
         std::cout << endl;
         if (chosen_banner == 1 && chosen_event == 11) {
             while (wishes_number > 0) {
@@ -77,12 +77,14 @@ int main() {
                         star = 5;
                         five_count = five_count + 1;
                         five_star_assurance_number = 0;
-                        if (temp2 <= 6435000) {
+                        if (five_star_guarantee_number == 1) {type = 1; kind = 1;}
+                        else if (temp2 <= 6435000) {
                             type = 1;
                             kind = 1;
                         }
                         else {
                             type = 2;
+                            five_star_guarantee_number = 1;
                             if (temp3 <= 2574000) kind = 2;
                             else if (temp3 <= 5148000) kind = 3;
                             else if (temp3 <= 7722000) kind = 4;
@@ -159,12 +161,14 @@ int main() {
                         star = 5;
                         five_count = five_count + 1;
                         five_star_assurance_number = 0;
-                        if (temp2 <= 6435000) {
+                        if (five_star_guarantee_number == 1) {type = 1; kind = 1;}
+                        else if (temp2 <= 6435000) {
                             type = 1;
                             kind = 1;
                         }
                         else {
                             type = 2;
+                            five_star_guarantee_number = 1;
                             if (temp3 <= 2574000) kind = 2;
                             else if (temp3 <= 5148000) kind = 3;
                             else if (temp3 <= 7722000) kind = 4;
@@ -241,12 +245,14 @@ int main() {
                         star = 5;
                         five_count = five_count + 1;
                         five_star_assurance_number = 0;
-                        if (temp2 <= 6435000) {
+                        if (five_star_guarantee_number == 1) {type = 1; kind = 1;}
+                        else if (temp2 <= 6435000) {
                             type = 1;
                             kind = 1;
                         }
                         else {
                             type = 2;
+                            five_star_guarantee_number = 1;
                             if (temp3 <= 2574000) kind = 2;
                             else if (temp3 <= 5148000) kind = 3;
                             else if (temp3 <= 7722000) kind = 4;
@@ -306,12 +312,14 @@ int main() {
                         star = 5;
                         five_count = five_count + 1;
                         five_star_assurance_number = 0;
-                        if (temp2 <= 6435000) {
+                        if (five_star_guarantee_number == 1) {type = 1; kind = 1;}
+                        else if (temp2 <= 6435000) {
                             type = 1;
                             kind = 1;
                         }
                         else {
                             type = 2;
+                            five_star_guarantee_number = 1;
                             if (temp3 <= 2574000) kind = 2;
                             else if (temp3 <= 5148000) kind = 3;
                             else if (temp3 <= 7722000) kind = 4;
@@ -388,12 +396,14 @@ int main() {
                         star = 5;
                         five_count = five_count + 1;
                         five_star_assurance_number = 0;
-                        if (temp2 <= 6435000) {
+                        if (five_star_guarantee_number == 1) {type = 1; kind = 1;}
+                        else if (temp2 <= 6435000) {
                             type = 1;
                             kind = 1;
                         }
                         else {
                             type = 2;
+                            five_star_guarantee_number = 1;
                             if (temp3 <= 2574000) kind = 2;
                             else if (temp3 <= 5148000) kind = 3;
                             else if (temp3 <= 7722000) kind = 4;
@@ -470,12 +480,14 @@ int main() {
                         star = 5;
                         five_count = five_count + 1;
                         five_star_assurance_number = 0;
-                        if (temp2 <= 6435000) {
+                        if (five_star_guarantee_number == 1) {type = 1; kind = 1;}
+                        else if (temp2 <= 6435000) {
                             type = 1;
                             kind = 1;
                         }
                         else {
                             type = 2;
+                            five_star_guarantee_number = 1;
                             if (temp3 <= 2574000) kind = 2;
                             else if (temp3 <= 5148000) kind = 3;
                             else if (temp3 <= 7722000) kind = 4;
@@ -534,12 +546,14 @@ int main() {
                     star = 5;
                     five_count = five_count + 1;
                     five_star_assurance_number = 0;
-                    if (temp2 <= 6435000) {
+                    if (five_star_guarantee_number == 1) {type = 1; kind = 1;}
+                    else if (temp2 <= 6435000) {
                         type = 1;
                         kind = 1;
                     }
                     else {
                         type = 2;
+                        five_star_guarantee_number = 1;
                         if (temp3 <= 2574000) kind = 2;
                         else if (temp3 <= 5148000) kind = 3;
                         else if (temp3 <= 7722000) kind = 4;
@@ -547,6 +561,7 @@ int main() {
                         else kind = 6;
                     }
                 }
+                std::cout << count + 1 << " ";
                 switch (kind) {
                 case 1: std::cout << "!!!!!*****Tartaglia" << endl; break;
                 case 2: std::cout << "!!!!!*****Jean" << endl; break;
@@ -601,6 +616,7 @@ int main() {
                 case 51: std::cout << "***Cool Steel" << endl; break;
                 }
                 wishes_number = wishes_number - 1;
+                count = count + 1;
                 five_star_assurance_number = five_star_assurance_number + 1;
                 four_star_assurance_number = four_star_assurance_number + 1;
             }
