@@ -57,6 +57,8 @@ int main() {
     unsigned seed = std::chrono::system_clock::now().time_since_epoch().count();
     std::mt19937 generator(seed);
     int count = 0;
+    int five_count = 0;
+    int four_count = 0;
     while (wishes_number >= 0) {
         std::cout << endl << "How many wishes? -1: Quit; 1: 1 Wish; 10: 10 Wishes" << endl << endl;
         std::cin >> wishes_number;
@@ -73,6 +75,7 @@ int main() {
                 if (five_star_assurance_number <= 73 && four_star_assurance_number <= 8){
                     if (temp1 <= 77220) {
                         star = 5;
+                        five_count = five_count + 1;
                         five_star_assurance_number = 0;
                         if (temp2 <= 6435000) {
                             type = 1;
@@ -89,6 +92,7 @@ int main() {
                     }
                     else if (temp1 <= 733590) {
                         star = 4;
+                        four_count = four_count + 1;
                         four_star_assurance_number = 0;
                         if (temp2 <= 6435000) {
                             type = 1;
@@ -153,6 +157,7 @@ int main() {
                 else if (five_star_assurance_number <= 73 && four_star_assurance_number == 9){
                     if (temp1 <= 77220) {
                         star = 5;
+                        five_count = five_count + 1;
                         five_star_assurance_number = 0;
                         if (temp2 <= 6435000) {
                             type = 1;
@@ -169,6 +174,7 @@ int main() {
                     }
                     else if (temp1 <= 7297290) {
                         star = 4;
+                        four_count = four_count + 1;
                         four_star_assurance_number = 0;
                         if (temp2 <= 6435000) {
                             type = 1;
@@ -233,6 +239,7 @@ int main() {
                 else if (five_star_assurance_number <= 73 && four_star_assurance_number >= 10){
                     if (temp1 <= 77220) {
                         star = 5;
+                        five_count = five_count + 1;
                         five_star_assurance_number = 0;
                         if (temp2 <= 6435000) {
                             type = 1;
@@ -249,6 +256,7 @@ int main() {
                     }
                     else {
                         star = 4;
+                        four_count = four_count + 1;
                         four_star_assurance_number = 0;
                         if (temp2 <= 6435000) {
                             type = 1;
@@ -296,6 +304,7 @@ int main() {
                 else if (five_star_assurance_number <= 89 && five_star_assurance_number >= 74 && four_star_assurance_number <= 8){
                     if (temp1 <= 77220 + (five_star_assurance_number - 73) * 772200) {
                         star = 5;
+                        five_count = five_count + 1;
                         five_star_assurance_number = 0;
                         if (temp2 <= 6435000) {
                             type = 1;
@@ -312,6 +321,7 @@ int main() {
                     }
                     else if (temp1 <= 733590 + (five_star_assurance_number - 73) * 772200) {
                         star = 4;
+                        four_count = four_count + 1;
                         four_star_assurance_number = 0;
                         if (temp2 <= 6435000) {
                             type = 1;
@@ -376,6 +386,7 @@ int main() {
                 else if (five_star_assurance_number <= 89 && five_star_assurance_number >= 74 && four_star_assurance_number == 9){
                     if (temp1 <= 77220 + (five_star_assurance_number - 73) * 772200) {
                         star = 5;
+                        five_count = five_count + 1;
                         five_star_assurance_number = 0;
                         if (temp2 <= 6435000) {
                             type = 1;
@@ -392,6 +403,7 @@ int main() {
                     }
                     else if (temp1 <= 7297290 + (five_star_assurance_number - 73) * 772200) {
                         star = 4;
+                        four_count = four_count + 1;
                         four_star_assurance_number = 0;
                         if (temp2 <= 6435000) {
                             type = 1;
@@ -456,6 +468,7 @@ int main() {
                 else if (five_star_assurance_number <= 89 && five_star_assurance_number >= 74 && four_star_assurance_number >= 10){
                     if (temp1 <= 77220 + (five_star_assurance_number - 73) * 772200) {
                         star = 5;
+                        five_count = five_count + 1;
                         five_star_assurance_number = 0;
                         if (temp2 <= 6435000) {
                             type = 1;
@@ -472,6 +485,7 @@ int main() {
                     }
                     else {
                         star = 4;
+                        four_count = four_count + 1;
                         four_star_assurance_number = 0;
                         if (temp2 <= 6435000) {
                             type = 1;
@@ -518,6 +532,7 @@ int main() {
                 }
                 else {
                         star = 5;
+                        five_count = five_count + 1;
                         five_star_assurance_number = 0;
                         if (temp2 <= 6435000) {
                             type = 1;
@@ -590,7 +605,9 @@ int main() {
                 four_star_assurance_number = four_star_assurance_number + 1;
             }
         }
-        if(wishes_number>=0) printf("\nYou have pulled %d wishes.\n\n", count);
+        if(wishes_number >= 0) std::cout << "You have pulled " << count << " wishes." << endl 
+        << "5-stars:   " << five_count << "  " << five_count*100.0/count << "%" << endl 
+        << "4-stars:   " << four_count << "  " << four_count*100.0/count << "%" << endl << endl;
     }
     int pause = getchar();
 }
