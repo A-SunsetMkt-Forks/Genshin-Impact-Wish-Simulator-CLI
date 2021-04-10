@@ -65,14 +65,14 @@ int main() {
         count = count + wishes_number;
         std::cout << endl;
         if (chosen_banner == 1 && chosen_event == 11) {
-            while (wishes_number > 0){
+            while (wishes_number > 0) {
                 long int temp1 = generator() % 12870000 + 1;
                 long int temp2 = generator() % 12870000 + 1;
                 long int temp3 = generator() % 12870000 + 1;
                 int star = 0; //4-star or 5-star
                 int type = 0; //Up or non-up, character or weapon
                 int kind = 0; //which exactly
-                if (five_star_assurance_number <= 73 && four_star_assurance_number <= 8){
+                if (five_star_assurance_number <= 73 && four_star_assurance_number <= 8) {
                     if (temp1 <= 77220) {
                         star = 5;
                         five_count = five_count + 1;
@@ -154,7 +154,7 @@ int main() {
                         else kind = 51;
                     }
                 }
-                else if (five_star_assurance_number <= 73 && four_star_assurance_number == 9){
+                else if (five_star_assurance_number <= 73 && four_star_assurance_number == 9) {
                     if (temp1 <= 77220) {
                         star = 5;
                         five_count = five_count + 1;
@@ -236,7 +236,7 @@ int main() {
                         else kind = 51;
                     }
                 }
-                else if (five_star_assurance_number <= 73 && four_star_assurance_number >= 10){
+                else if (five_star_assurance_number <= 73 && four_star_assurance_number >= 10) {
                     if (temp1 <= 77220) {
                         star = 5;
                         five_count = five_count + 1;
@@ -301,7 +301,7 @@ int main() {
                         }
                     }
                 }
-                else if (five_star_assurance_number <= 89 && five_star_assurance_number >= 74 && four_star_assurance_number <= 8){
+                else if (five_star_assurance_number <= 89 && five_star_assurance_number >= 74 && four_star_assurance_number <= 8) {
                     if (temp1 <= 77220 + (five_star_assurance_number - 73) * 772200) {
                         star = 5;
                         five_count = five_count + 1;
@@ -383,7 +383,7 @@ int main() {
                         else kind = 51;
                     }
                 }
-                else if (five_star_assurance_number <= 89 && five_star_assurance_number >= 74 && four_star_assurance_number == 9){
+                else if (five_star_assurance_number <= 89 && five_star_assurance_number >= 74 && four_star_assurance_number == 9) {
                     if (temp1 <= 77220 + (five_star_assurance_number - 73) * 772200) {
                         star = 5;
                         five_count = five_count + 1;
@@ -465,7 +465,7 @@ int main() {
                         else kind = 51;
                     }
                 }
-                else if (five_star_assurance_number <= 89 && five_star_assurance_number >= 74 && four_star_assurance_number >= 10){
+                else if (five_star_assurance_number <= 89 && five_star_assurance_number >= 74 && four_star_assurance_number >= 10) {
                     if (temp1 <= 77220 + (five_star_assurance_number - 73) * 772200) {
                         star = 5;
                         five_count = five_count + 1;
@@ -531,21 +531,21 @@ int main() {
                     }
                 }
                 else {
-                        star = 5;
-                        five_count = five_count + 1;
-                        five_star_assurance_number = 0;
-                        if (temp2 <= 6435000) {
-                            type = 1;
-                            kind = 1;
-                        }
-                        else {
-                            type = 2;
-                            if (temp3 <= 2574000) kind = 2;
-                            else if (temp3 <= 5148000) kind = 3;
-                            else if (temp3 <= 7722000) kind = 4;
-                            else if (temp3 <= 10296000) kind = 5;
-                            else kind = 6;
-                        }
+                    star = 5;
+                    five_count = five_count + 1;
+                    five_star_assurance_number = 0;
+                    if (temp2 <= 6435000) {
+                        type = 1;
+                        kind = 1;
+                    }
+                    else {
+                        type = 2;
+                        if (temp3 <= 2574000) kind = 2;
+                        else if (temp3 <= 5148000) kind = 3;
+                        else if (temp3 <= 7722000) kind = 4;
+                        else if (temp3 <= 10296000) kind = 5;
+                        else kind = 6;
+                    }
                 }
                 switch (kind) {
                 case 1: std::cout << "!!!!!*****Tartaglia" << endl; break;
@@ -605,9 +605,10 @@ int main() {
                 four_star_assurance_number = four_star_assurance_number + 1;
             }
         }
-        if(wishes_number >= 0) std::cout << "You have pulled " << count << " wishes." << endl 
-        << "5-stars:   " << five_count << "  " << five_count*100.0/count << "%" << endl 
-        << "4-stars:   " << four_count << "  " << four_count*100.0/count << "%" << endl << endl;
+        if (wishes_number >= 0) std::cout << endl << "You have pulled " << count << " wishes." << endl
+            << "5-stars:   " << five_count << "  " << five_count * 100.0 / count << "%" << endl
+            << "4-stars:   " << four_count << "  " << four_count * 100.0 / count << "%" << endl << endl;
     }
+    int prepause = getchar();
     int pause = getchar();
 }
