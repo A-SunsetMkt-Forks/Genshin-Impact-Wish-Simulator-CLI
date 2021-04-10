@@ -55,13 +55,13 @@ int main() {
     } break;
     case 4: chosen_event = 1; break;
     }
-    unsigned seed = std::chrono::system_clock::now().time_since_epoch().count();
+    unsigned int seed = (unsigned int) std::chrono::system_clock::now().time_since_epoch().count();
     std::mt19937 generator(seed);
     int count = 0;
     int five_count = 0;
     int four_count = 0;
     int threshold = 17;
-    float unmet = 17.1;
+    double unmet = 17.1;
     int unmet_count = 0;
     while (wishes_number >= 0) {
         std::cout << endl << "How many wishes? -1: Quit; 1: 1 Wish; 10: 10 Wishes" << endl << endl;
@@ -75,7 +75,7 @@ int main() {
                 int star = 0; //4-star or 5-star
                 int type = 0; //Up or non-up, character or weapon
                 int kind = 0; //which exactly
-                if (unmet_count > threshold) unmet = unmet_count;
+                if (unmet_count > threshold) unmet = (double)unmet_count;
                 if (five_star_assurance_number <= 73 && four_star_assurance_number <= 8) {
                     if (temp1 <= 77220) {
                         star = 5;
@@ -109,7 +109,7 @@ int main() {
                         else if (temp2 <= 3217500 * (int)(10 * (unmet - threshold))) {
                             type = 2;
                             unmet_count = 0;
-                            unmet = 17.1;
+                            unmet = (double)17.1;
                             if (temp3 <= 1170000) kind = 10;
                             else if (temp3 <= 2340000) kind = 11;
                             else if (temp3 <= 3510000) kind = 12;
@@ -196,7 +196,7 @@ int main() {
                         else if (temp2 <= 9652500) {
                             type = 2;
                             unmet_count = 0;
-                            unmet = 17.1;
+                            unmet = (double)17.1;
                             if (temp3 <= 1170000) kind = 10;
                             else if (temp3 <= 2340000) kind = 11;
                             else if (temp3 <= 3510000) kind = 12;
@@ -283,7 +283,7 @@ int main() {
                         else if (temp2 <= 9652500) {
                             type = 2;
                             unmet_count = 0;
-                            unmet = 17.1;
+                            unmet = (double)17.1;
                             if (temp3 <= 1170000) kind = 10;
                             else if (temp3 <= 2340000) kind = 11;
                             else if (temp3 <= 3510000) kind = 12;
@@ -353,7 +353,7 @@ int main() {
                         else if (temp2 <= 9652500) {
                             type = 2;
                             unmet_count = 0;
-                            unmet = 17.1;
+                            unmet = (double)17.1;
                             if (temp3 <= 1170000) kind = 10;
                             else if (temp3 <= 2340000) kind = 11;
                             else if (temp3 <= 3510000) kind = 12;
@@ -440,7 +440,7 @@ int main() {
                         else if (temp2 <= 9652500) {
                             type = 2;
                             unmet_count = 0;
-                            unmet = 17.1;
+                            unmet = (double)17.1;
                             if (temp3 <= 1170000) kind = 10;
                             else if (temp3 <= 2340000) kind = 11;
                             else if (temp3 <= 3510000) kind = 12;
@@ -527,7 +527,7 @@ int main() {
                         else if (temp2 <= 9652500) {
                             type = 2;
                             unmet_count = 0;
-                            unmet = 17.1;
+                            unmet = (double)17.1;
                             if (temp3 <= 1170000) kind = 10;
                             else if (temp3 <= 2340000) kind = 11;
                             else if (temp3 <= 3510000) kind = 12;
