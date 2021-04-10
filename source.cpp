@@ -10,6 +10,8 @@ int main() {
     int chosen_banner = 0;
     int chosen_event = 0;
     int wishes_number = 0;
+    int four_star_assurance_number = 0;
+    int five_star_assurance_number = 0;
     std::cout << "WELCOME TO GENSHIN IMPACT WISH SIMULATOR CLI" << endl << endl;
     std::cout << "Choose Your Wishes (Banners):" << endl;
     std::cout << "1: Character Event Wish; 2: Weapon Event Wish; 3: Permanent Wish; 4: Novice Wish" << endl << endl;
@@ -68,79 +70,467 @@ int main() {
                 int star = 0; //4-star or 5-star
                 int type = 0; //Up or non-up, character or weapon
                 int kind = 0; //which exactly
-                if (temp1 <= 77220) {
-                    star = 5;
-                    if (temp2 <= 6435000) {
-                        type = 1;
-                        kind = 1;
+                if (five_star_assurance_number <= 73 && four_star_assurance_number <= 8){
+                    if (temp1 <= 77220) {
+                        star = 5;
+                        five_star_assurance_number = 0;
+                        if (temp2 <= 6435000) {
+                            type = 1;
+                            kind = 1;
+                        }
+                        else {
+                            type = 2;
+                            if (temp3 <= 2574000) kind = 2;
+                            else if (temp3 <= 5148000) kind = 3;
+                            else if (temp3 <= 7722000) kind = 4;
+                            else if (temp3 <= 10296000) kind = 5;
+                            else kind = 6;
+                        }
                     }
-                    else type = 2;
-                    if (temp3 <= 2574000) kind = 2;
-                    else if (temp3 <= 5148000) kind = 3;
-                    else if (temp3 <= 7722000) kind = 4;
-                    else if (temp3 <= 10296000) kind = 5;
-                    else kind = 6;
-                }
-                else if (temp1 <= 733590) {
-                    star = 4;
-                    if (temp2 <= 6435000) {
-                        type = 1;
-                        if (temp3 <= 4290000) kind = 7;
-                        else if (temp3 <= 8580000) kind = 8;
-                        else kind = 9;
-                    }
-                    else if (temp2 <= 9652500) {
-                        type = 2;
-                        if (temp3 <= 1170000) kind = 10;
-                        else if (temp3 <= 2340000) kind = 11;
-                        else if (temp3 <= 3510000) kind = 12;
-                        else if (temp3 <= 4680000) kind = 13;
-                        else if (temp3 <= 5850000) kind = 14;
-                        else if (temp3 <= 7020000) kind = 15;
-                        else if (temp3 <= 8190000) kind = 16;
-                        else if (temp3 <= 9360000) kind = 17;
-                        else if (temp3 <= 10530000) kind = 18;
-                        else if (temp3 <= 11700000) kind = 19;
-                        else kind = 20;
+                    else if (temp1 <= 733590) {
+                        star = 4;
+                        four_star_assurance_number = 0;
+                        if (temp2 <= 6435000) {
+                            type = 1;
+                            if (temp3 <= 4290000) kind = 7;
+                            else if (temp3 <= 8580000) kind = 8;
+                            else kind = 9;
+                        }
+                        else if (temp2 <= 9652500) {
+                            type = 2;
+                            if (temp3 <= 1170000) kind = 10;
+                            else if (temp3 <= 2340000) kind = 11;
+                            else if (temp3 <= 3510000) kind = 12;
+                            else if (temp3 <= 4680000) kind = 13;
+                            else if (temp3 <= 5850000) kind = 14;
+                            else if (temp3 <= 7020000) kind = 15;
+                            else if (temp3 <= 8190000) kind = 16;
+                            else if (temp3 <= 9360000) kind = 17;
+                            else if (temp3 <= 10530000) kind = 18;
+                            else if (temp3 <= 11700000) kind = 19;
+                            else kind = 20;
+                        }
+                        else {
+                            type = 3;
+                            if (temp3 <= 7150000) kind = 21;
+                            else if (temp3 <= 1430000) kind = 22;
+                            else if (temp3 <= 2145000) kind = 23;
+                            else if (temp3 <= 2860000) kind = 24;
+                            else if (temp3 <= 3575000) kind = 25;
+                            else if (temp3 <= 4290000) kind = 26;
+                            else if (temp3 <= 5005000) kind = 27;
+                            else if (temp3 <= 5720000) kind = 28;
+                            else if (temp3 <= 6435000) kind = 29;
+                            else if (temp3 <= 7150000) kind = 30;
+                            else if (temp3 <= 7865000) kind = 31;
+                            else if (temp3 <= 8580000) kind = 32;
+                            else if (temp3 <= 9295000) kind = 33;
+                            else if (temp3 <= 10010000) kind = 34;
+                            else if (temp3 <= 10725000) kind = 35;
+                            else if (temp3 <= 11440000) kind = 36;
+                            else if (temp3 <= 12155000) kind = 37;
+                            else kind = 38;
+                        }
                     }
                     else {
-                        type = 3;
-                        if (temp3 <= 7150000) kind = 21;
-                        else if (temp3 <= 1430000) kind = 22;
-                        else if (temp3 <= 2145000) kind = 23;
-                        else if (temp3 <= 2860000) kind = 24;
-                        else if (temp3 <= 3575000) kind = 25;
-                        else if (temp3 <= 4290000) kind = 26;
-                        else if (temp3 <= 5005000) kind = 27;
-                        else if (temp3 <= 5720000) kind = 28;
-                        else if (temp3 <= 6435000) kind = 29;
-                        else if (temp3 <= 7150000) kind = 30;
-                        else if (temp3 <= 7865000) kind = 31;
-                        else if (temp3 <= 8580000) kind = 32;
-                        else if (temp3 <= 9295000) kind = 33;
-                        else if (temp3 <= 10010000) kind = 34;
-                        else if (temp3 <= 10725000) kind = 35;
-                        else if (temp3 <= 11440000) kind = 36;
-                        else if (temp3 <= 12155000) kind = 37;
-                        else kind = 38;
+                        star = 3;
+                        type = 2;
+                        if (temp3 <= 990000) kind = 39;
+                        else if (temp3 <= 1980000) kind = 40;
+                        else if (temp3 <= 2970000) kind = 41;
+                        else if (temp3 <= 3960000) kind = 42;
+                        else if (temp3 <= 4950000) kind = 43;
+                        else if (temp3 <= 5940000) kind = 44;
+                        else if (temp3 <= 6930000) kind = 45;
+                        else if (temp3 <= 7920000) kind = 46;
+                        else if (temp3 <= 8910000) kind = 47;
+                        else if (temp3 <= 9900000) kind = 48;
+                        else if (temp3 <= 10890000) kind = 49;
+                        else if (temp3 <= 11880000) kind = 50;
+                        else kind = 51;
+                    }
+                }
+                else if (five_star_assurance_number <= 73 && four_star_assurance_number == 9){
+                    if (temp1 <= 77220) {
+                        star = 5;
+                        five_star_assurance_number = 0;
+                        if (temp2 <= 6435000) {
+                            type = 1;
+                            kind = 1;
+                        }
+                        else {
+                            type = 2;
+                            if (temp3 <= 2574000) kind = 2;
+                            else if (temp3 <= 5148000) kind = 3;
+                            else if (temp3 <= 7722000) kind = 4;
+                            else if (temp3 <= 10296000) kind = 5;
+                            else kind = 6;
+                        }
+                    }
+                    else if (temp1 <= 7297290) {
+                        star = 4;
+                        four_star_assurance_number = 0;
+                        if (temp2 <= 6435000) {
+                            type = 1;
+                            if (temp3 <= 4290000) kind = 7;
+                            else if (temp3 <= 8580000) kind = 8;
+                            else kind = 9;
+                        }
+                        else if (temp2 <= 9652500) {
+                            type = 2;
+                            if (temp3 <= 1170000) kind = 10;
+                            else if (temp3 <= 2340000) kind = 11;
+                            else if (temp3 <= 3510000) kind = 12;
+                            else if (temp3 <= 4680000) kind = 13;
+                            else if (temp3 <= 5850000) kind = 14;
+                            else if (temp3 <= 7020000) kind = 15;
+                            else if (temp3 <= 8190000) kind = 16;
+                            else if (temp3 <= 9360000) kind = 17;
+                            else if (temp3 <= 10530000) kind = 18;
+                            else if (temp3 <= 11700000) kind = 19;
+                            else kind = 20;
+                        }
+                        else {
+                            type = 3;
+                            if (temp3 <= 7150000) kind = 21;
+                            else if (temp3 <= 1430000) kind = 22;
+                            else if (temp3 <= 2145000) kind = 23;
+                            else if (temp3 <= 2860000) kind = 24;
+                            else if (temp3 <= 3575000) kind = 25;
+                            else if (temp3 <= 4290000) kind = 26;
+                            else if (temp3 <= 5005000) kind = 27;
+                            else if (temp3 <= 5720000) kind = 28;
+                            else if (temp3 <= 6435000) kind = 29;
+                            else if (temp3 <= 7150000) kind = 30;
+                            else if (temp3 <= 7865000) kind = 31;
+                            else if (temp3 <= 8580000) kind = 32;
+                            else if (temp3 <= 9295000) kind = 33;
+                            else if (temp3 <= 10010000) kind = 34;
+                            else if (temp3 <= 10725000) kind = 35;
+                            else if (temp3 <= 11440000) kind = 36;
+                            else if (temp3 <= 12155000) kind = 37;
+                            else kind = 38;
+                        }
+                    }
+                    else {
+                        star = 3;
+                        type = 2;
+                        if (temp3 <= 990000) kind = 39;
+                        else if (temp3 <= 1980000) kind = 40;
+                        else if (temp3 <= 2970000) kind = 41;
+                        else if (temp3 <= 3960000) kind = 42;
+                        else if (temp3 <= 4950000) kind = 43;
+                        else if (temp3 <= 5940000) kind = 44;
+                        else if (temp3 <= 6930000) kind = 45;
+                        else if (temp3 <= 7920000) kind = 46;
+                        else if (temp3 <= 8910000) kind = 47;
+                        else if (temp3 <= 9900000) kind = 48;
+                        else if (temp3 <= 10890000) kind = 49;
+                        else if (temp3 <= 11880000) kind = 50;
+                        else kind = 51;
+                    }
+                }
+                else if (five_star_assurance_number <= 73 && four_star_assurance_number >= 10){
+                    if (temp1 <= 77220) {
+                        star = 5;
+                        five_star_assurance_number = 0;
+                        if (temp2 <= 6435000) {
+                            type = 1;
+                            kind = 1;
+                        }
+                        else {
+                            type = 2;
+                            if (temp3 <= 2574000) kind = 2;
+                            else if (temp3 <= 5148000) kind = 3;
+                            else if (temp3 <= 7722000) kind = 4;
+                            else if (temp3 <= 10296000) kind = 5;
+                            else kind = 6;
+                        }
+                    }
+                    else {
+                        star = 4;
+                        four_star_assurance_number = 0;
+                        if (temp2 <= 6435000) {
+                            type = 1;
+                            if (temp3 <= 4290000) kind = 7;
+                            else if (temp3 <= 8580000) kind = 8;
+                            else kind = 9;
+                        }
+                        else if (temp2 <= 9652500) {
+                            type = 2;
+                            if (temp3 <= 1170000) kind = 10;
+                            else if (temp3 <= 2340000) kind = 11;
+                            else if (temp3 <= 3510000) kind = 12;
+                            else if (temp3 <= 4680000) kind = 13;
+                            else if (temp3 <= 5850000) kind = 14;
+                            else if (temp3 <= 7020000) kind = 15;
+                            else if (temp3 <= 8190000) kind = 16;
+                            else if (temp3 <= 9360000) kind = 17;
+                            else if (temp3 <= 10530000) kind = 18;
+                            else if (temp3 <= 11700000) kind = 19;
+                            else kind = 20;
+                        }
+                        else {
+                            type = 3;
+                            if (temp3 <= 7150000) kind = 21;
+                            else if (temp3 <= 1430000) kind = 22;
+                            else if (temp3 <= 2145000) kind = 23;
+                            else if (temp3 <= 2860000) kind = 24;
+                            else if (temp3 <= 3575000) kind = 25;
+                            else if (temp3 <= 4290000) kind = 26;
+                            else if (temp3 <= 5005000) kind = 27;
+                            else if (temp3 <= 5720000) kind = 28;
+                            else if (temp3 <= 6435000) kind = 29;
+                            else if (temp3 <= 7150000) kind = 30;
+                            else if (temp3 <= 7865000) kind = 31;
+                            else if (temp3 <= 8580000) kind = 32;
+                            else if (temp3 <= 9295000) kind = 33;
+                            else if (temp3 <= 10010000) kind = 34;
+                            else if (temp3 <= 10725000) kind = 35;
+                            else if (temp3 <= 11440000) kind = 36;
+                            else if (temp3 <= 12155000) kind = 37;
+                            else kind = 38;
+                        }
+                    }
+                }
+                else if (five_star_assurance_number <= 89 && five_star_assurance_number >= 74 && four_star_assurance_number <= 8){
+                    if (temp1 <= 77220 + (five_star_assurance_number - 73) * 772200) {
+                        star = 5;
+                        five_star_assurance_number = 0;
+                        if (temp2 <= 6435000) {
+                            type = 1;
+                            kind = 1;
+                        }
+                        else {
+                            type = 2;
+                            if (temp3 <= 2574000) kind = 2;
+                            else if (temp3 <= 5148000) kind = 3;
+                            else if (temp3 <= 7722000) kind = 4;
+                            else if (temp3 <= 10296000) kind = 5;
+                            else kind = 6;
+                        }
+                    }
+                    else if (temp1 <= 733590 + (five_star_assurance_number - 73) * 772200) {
+                        star = 4;
+                        four_star_assurance_number = 0;
+                        if (temp2 <= 6435000) {
+                            type = 1;
+                            if (temp3 <= 4290000) kind = 7;
+                            else if (temp3 <= 8580000) kind = 8;
+                            else kind = 9;
+                        }
+                        else if (temp2 <= 9652500) {
+                            type = 2;
+                            if (temp3 <= 1170000) kind = 10;
+                            else if (temp3 <= 2340000) kind = 11;
+                            else if (temp3 <= 3510000) kind = 12;
+                            else if (temp3 <= 4680000) kind = 13;
+                            else if (temp3 <= 5850000) kind = 14;
+                            else if (temp3 <= 7020000) kind = 15;
+                            else if (temp3 <= 8190000) kind = 16;
+                            else if (temp3 <= 9360000) kind = 17;
+                            else if (temp3 <= 10530000) kind = 18;
+                            else if (temp3 <= 11700000) kind = 19;
+                            else kind = 20;
+                        }
+                        else {
+                            type = 3;
+                            if (temp3 <= 7150000) kind = 21;
+                            else if (temp3 <= 1430000) kind = 22;
+                            else if (temp3 <= 2145000) kind = 23;
+                            else if (temp3 <= 2860000) kind = 24;
+                            else if (temp3 <= 3575000) kind = 25;
+                            else if (temp3 <= 4290000) kind = 26;
+                            else if (temp3 <= 5005000) kind = 27;
+                            else if (temp3 <= 5720000) kind = 28;
+                            else if (temp3 <= 6435000) kind = 29;
+                            else if (temp3 <= 7150000) kind = 30;
+                            else if (temp3 <= 7865000) kind = 31;
+                            else if (temp3 <= 8580000) kind = 32;
+                            else if (temp3 <= 9295000) kind = 33;
+                            else if (temp3 <= 10010000) kind = 34;
+                            else if (temp3 <= 10725000) kind = 35;
+                            else if (temp3 <= 11440000) kind = 36;
+                            else if (temp3 <= 12155000) kind = 37;
+                            else kind = 38;
+                        }
+                    }
+                    else {
+                        star = 3;
+                        type = 2;
+                        if (temp3 <= 990000) kind = 39;
+                        else if (temp3 <= 1980000) kind = 40;
+                        else if (temp3 <= 2970000) kind = 41;
+                        else if (temp3 <= 3960000) kind = 42;
+                        else if (temp3 <= 4950000) kind = 43;
+                        else if (temp3 <= 5940000) kind = 44;
+                        else if (temp3 <= 6930000) kind = 45;
+                        else if (temp3 <= 7920000) kind = 46;
+                        else if (temp3 <= 8910000) kind = 47;
+                        else if (temp3 <= 9900000) kind = 48;
+                        else if (temp3 <= 10890000) kind = 49;
+                        else if (temp3 <= 11880000) kind = 50;
+                        else kind = 51;
+                    }
+                }
+                else if (five_star_assurance_number <= 89 && five_star_assurance_number >= 74 && four_star_assurance_number == 9){
+                    if (temp1 <= 77220 + (five_star_assurance_number - 73) * 772200) {
+                        star = 5;
+                        five_star_assurance_number = 0;
+                        if (temp2 <= 6435000) {
+                            type = 1;
+                            kind = 1;
+                        }
+                        else {
+                            type = 2;
+                            if (temp3 <= 2574000) kind = 2;
+                            else if (temp3 <= 5148000) kind = 3;
+                            else if (temp3 <= 7722000) kind = 4;
+                            else if (temp3 <= 10296000) kind = 5;
+                            else kind = 6;
+                        }
+                    }
+                    else if (temp1 <= 7297290 + (five_star_assurance_number - 73) * 772200) {
+                        star = 4;
+                        four_star_assurance_number = 0;
+                        if (temp2 <= 6435000) {
+                            type = 1;
+                            if (temp3 <= 4290000) kind = 7;
+                            else if (temp3 <= 8580000) kind = 8;
+                            else kind = 9;
+                        }
+                        else if (temp2 <= 9652500) {
+                            type = 2;
+                            if (temp3 <= 1170000) kind = 10;
+                            else if (temp3 <= 2340000) kind = 11;
+                            else if (temp3 <= 3510000) kind = 12;
+                            else if (temp3 <= 4680000) kind = 13;
+                            else if (temp3 <= 5850000) kind = 14;
+                            else if (temp3 <= 7020000) kind = 15;
+                            else if (temp3 <= 8190000) kind = 16;
+                            else if (temp3 <= 9360000) kind = 17;
+                            else if (temp3 <= 10530000) kind = 18;
+                            else if (temp3 <= 11700000) kind = 19;
+                            else kind = 20;
+                        }
+                        else {
+                            type = 3;
+                            if (temp3 <= 7150000) kind = 21;
+                            else if (temp3 <= 1430000) kind = 22;
+                            else if (temp3 <= 2145000) kind = 23;
+                            else if (temp3 <= 2860000) kind = 24;
+                            else if (temp3 <= 3575000) kind = 25;
+                            else if (temp3 <= 4290000) kind = 26;
+                            else if (temp3 <= 5005000) kind = 27;
+                            else if (temp3 <= 5720000) kind = 28;
+                            else if (temp3 <= 6435000) kind = 29;
+                            else if (temp3 <= 7150000) kind = 30;
+                            else if (temp3 <= 7865000) kind = 31;
+                            else if (temp3 <= 8580000) kind = 32;
+                            else if (temp3 <= 9295000) kind = 33;
+                            else if (temp3 <= 10010000) kind = 34;
+                            else if (temp3 <= 10725000) kind = 35;
+                            else if (temp3 <= 11440000) kind = 36;
+                            else if (temp3 <= 12155000) kind = 37;
+                            else kind = 38;
+                        }
+                    }
+                    else {
+                        star = 3;
+                        type = 2;
+                        if (temp3 <= 990000) kind = 39;
+                        else if (temp3 <= 1980000) kind = 40;
+                        else if (temp3 <= 2970000) kind = 41;
+                        else if (temp3 <= 3960000) kind = 42;
+                        else if (temp3 <= 4950000) kind = 43;
+                        else if (temp3 <= 5940000) kind = 44;
+                        else if (temp3 <= 6930000) kind = 45;
+                        else if (temp3 <= 7920000) kind = 46;
+                        else if (temp3 <= 8910000) kind = 47;
+                        else if (temp3 <= 9900000) kind = 48;
+                        else if (temp3 <= 10890000) kind = 49;
+                        else if (temp3 <= 11880000) kind = 50;
+                        else kind = 51;
+                    }
+                }
+                else if (five_star_assurance_number <= 89 && five_star_assurance_number >= 74 && four_star_assurance_number >= 10){
+                    if (temp1 <= 77220 + (five_star_assurance_number - 73) * 772200) {
+                        star = 5;
+                        five_star_assurance_number = 0;
+                        if (temp2 <= 6435000) {
+                            type = 1;
+                            kind = 1;
+                        }
+                        else {
+                            type = 2;
+                            if (temp3 <= 2574000) kind = 2;
+                            else if (temp3 <= 5148000) kind = 3;
+                            else if (temp3 <= 7722000) kind = 4;
+                            else if (temp3 <= 10296000) kind = 5;
+                            else kind = 6;
+                        }
+                    }
+                    else {
+                        star = 4;
+                        four_star_assurance_number = 0;
+                        if (temp2 <= 6435000) {
+                            type = 1;
+                            if (temp3 <= 4290000) kind = 7;
+                            else if (temp3 <= 8580000) kind = 8;
+                            else kind = 9;
+                        }
+                        else if (temp2 <= 9652500) {
+                            type = 2;
+                            if (temp3 <= 1170000) kind = 10;
+                            else if (temp3 <= 2340000) kind = 11;
+                            else if (temp3 <= 3510000) kind = 12;
+                            else if (temp3 <= 4680000) kind = 13;
+                            else if (temp3 <= 5850000) kind = 14;
+                            else if (temp3 <= 7020000) kind = 15;
+                            else if (temp3 <= 8190000) kind = 16;
+                            else if (temp3 <= 9360000) kind = 17;
+                            else if (temp3 <= 10530000) kind = 18;
+                            else if (temp3 <= 11700000) kind = 19;
+                            else kind = 20;
+                        }
+                        else {
+                            type = 3;
+                            if (temp3 <= 7150000) kind = 21;
+                            else if (temp3 <= 1430000) kind = 22;
+                            else if (temp3 <= 2145000) kind = 23;
+                            else if (temp3 <= 2860000) kind = 24;
+                            else if (temp3 <= 3575000) kind = 25;
+                            else if (temp3 <= 4290000) kind = 26;
+                            else if (temp3 <= 5005000) kind = 27;
+                            else if (temp3 <= 5720000) kind = 28;
+                            else if (temp3 <= 6435000) kind = 29;
+                            else if (temp3 <= 7150000) kind = 30;
+                            else if (temp3 <= 7865000) kind = 31;
+                            else if (temp3 <= 8580000) kind = 32;
+                            else if (temp3 <= 9295000) kind = 33;
+                            else if (temp3 <= 10010000) kind = 34;
+                            else if (temp3 <= 10725000) kind = 35;
+                            else if (temp3 <= 11440000) kind = 36;
+                            else if (temp3 <= 12155000) kind = 37;
+                            else kind = 38;
+                        }
                     }
                 }
                 else {
-                    star = 3;
-                    type = 2;
-                    if (temp3 <= 990000) kind = 39;
-                    else if (temp3 <= 1980000) kind = 40;
-                    else if (temp3 <= 2970000) kind = 41;
-                    else if (temp3 <= 3960000) kind = 42;
-                    else if (temp3 <= 4950000) kind = 43;
-                    else if (temp3 <= 5940000) kind = 44;
-                    else if (temp3 <= 6930000) kind = 45;
-                    else if (temp3 <= 7920000) kind = 46;
-                    else if (temp3 <= 8910000) kind = 47;
-                    else if (temp3 <= 9900000) kind = 48;
-                    else if (temp3 <= 10890000) kind = 49;
-                    else if (temp3 <= 11880000) kind = 50;
-                    else kind = 51;
+                        star = 5;
+                        five_star_assurance_number = 0;
+                        if (temp2 <= 6435000) {
+                            type = 1;
+                            kind = 1;
+                        }
+                        else {
+                            type = 2;
+                            if (temp3 <= 2574000) kind = 2;
+                            else if (temp3 <= 5148000) kind = 3;
+                            else if (temp3 <= 7722000) kind = 4;
+                            else if (temp3 <= 10296000) kind = 5;
+                            else kind = 6;
+                        }
                 }
                 switch (kind) {
                 case 1: std::cout << "!!!!!*****Tartaglia" << endl; break;
@@ -196,9 +586,11 @@ int main() {
                 case 51: std::cout << "***Cool Steel" << endl; break;
                 }
                 wishes_number = wishes_number - 1;
+                five_star_assurance_number = five_star_assurance_number + 1;
+                four_star_assurance_number = four_star_assurance_number + 1;
             }
         }
-        printf("\nYou have pulled %d wishes.\n\n", count);
+        if(wishes_number>=0) printf("\nYou have pulled %d wishes.\n\n", count);
     }
     int pause = getchar();
 }
