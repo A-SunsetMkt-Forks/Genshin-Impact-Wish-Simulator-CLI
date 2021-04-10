@@ -60,6 +60,9 @@ int main() {
     int count = 0;
     int five_count = 0;
     int four_count = 0;
+    int threshold = 17;
+    float unmet = 17.1;
+    int unmet_count = 0;
     while (wishes_number >= 0) {
         std::cout << endl << "How many wishes? -1: Quit; 1: 1 Wish; 10: 10 Wishes" << endl << endl;
         std::cin >> wishes_number;
@@ -72,6 +75,7 @@ int main() {
                 int star = 0; //4-star or 5-star
                 int type = 0; //Up or non-up, character or weapon
                 int kind = 0; //which exactly
+                if(unmet_count > threshold) unmet = unmet_count;
                 if (five_star_assurance_number <= 73 && four_star_assurance_number <= 8) {
                     if (temp1 <= 77220) {
                         star = 5;
@@ -102,8 +106,10 @@ int main() {
                             else if (temp3 <= 8580000) kind = 8;
                             else kind = 9;
                         }
-                        else if (temp2 <= 9652500) {
+                        else if (temp2 <= 3217500 * (int)(10 * (unmet - threshold))) {
                             type = 2;
+                            unmet_count = 0;
+                            unmet = 17.1;
                             if (temp3 <= 1170000) kind = 10;
                             else if (temp3 <= 2340000) kind = 11;
                             else if (temp3 <= 3510000) kind = 12;
@@ -118,6 +124,7 @@ int main() {
                         }
                         else {
                             type = 3;
+                            unmet_count = unmet_count + 1;
                             if (temp3 <= 7150000) kind = 21;
                             else if (temp3 <= 1430000) kind = 22;
                             else if (temp3 <= 2145000) kind = 23;
@@ -180,7 +187,7 @@ int main() {
                         star = 4;
                         four_count = four_count + 1;
                         four_star_assurance_number = 0;
-                        if (temp2 <= 6435000) {
+                        if (temp2 <= 6435000 * (int)(10 * (unmet - threshold))) {
                             type = 1;
                             if (temp3 <= 4290000) kind = 7;
                             else if (temp3 <= 8580000) kind = 8;
@@ -188,6 +195,8 @@ int main() {
                         }
                         else if (temp2 <= 9652500) {
                             type = 2;
+                            unmet_count = 0;
+                            unmet = 17.1;
                             if (temp3 <= 1170000) kind = 10;
                             else if (temp3 <= 2340000) kind = 11;
                             else if (temp3 <= 3510000) kind = 12;
@@ -202,6 +211,7 @@ int main() {
                         }
                         else {
                             type = 3;
+                            unmet_count = unmet_count + 1;
                             if (temp3 <= 7150000) kind = 21;
                             else if (temp3 <= 1430000) kind = 22;
                             else if (temp3 <= 2145000) kind = 23;
@@ -264,7 +274,7 @@ int main() {
                         star = 4;
                         four_count = four_count + 1;
                         four_star_assurance_number = 0;
-                        if (temp2 <= 6435000) {
+                        if (temp2 <= 6435000 * (int)(10 * (unmet - threshold))) {
                             type = 1;
                             if (temp3 <= 4290000) kind = 7;
                             else if (temp3 <= 8580000) kind = 8;
@@ -272,6 +282,8 @@ int main() {
                         }
                         else if (temp2 <= 9652500) {
                             type = 2;
+                            unmet_count = 0;
+                            unmet = 17.1;
                             if (temp3 <= 1170000) kind = 10;
                             else if (temp3 <= 2340000) kind = 11;
                             else if (temp3 <= 3510000) kind = 12;
@@ -286,6 +298,7 @@ int main() {
                         }
                         else {
                             type = 3;
+                            unmet_count = unmet_count + 1;
                             if (temp3 <= 7150000) kind = 21;
                             else if (temp3 <= 1430000) kind = 22;
                             else if (temp3 <= 2145000) kind = 23;
@@ -331,7 +344,7 @@ int main() {
                         star = 4;
                         four_count = four_count + 1;
                         four_star_assurance_number = 0;
-                        if (temp2 <= 6435000) {
+                        if (temp2 <= 6435000 * (int)(10 * (unmet - threshold))) {
                             type = 1;
                             if (temp3 <= 4290000) kind = 7;
                             else if (temp3 <= 8580000) kind = 8;
@@ -339,6 +352,8 @@ int main() {
                         }
                         else if (temp2 <= 9652500) {
                             type = 2;
+                            unmet_count = 0;
+                            unmet = 17.1;
                             if (temp3 <= 1170000) kind = 10;
                             else if (temp3 <= 2340000) kind = 11;
                             else if (temp3 <= 3510000) kind = 12;
@@ -353,6 +368,7 @@ int main() {
                         }
                         else {
                             type = 3;
+                            unmet_count = unmet_count + 1;
                             if (temp3 <= 7150000) kind = 21;
                             else if (temp3 <= 1430000) kind = 22;
                             else if (temp3 <= 2145000) kind = 23;
@@ -415,7 +431,7 @@ int main() {
                         star = 4;
                         four_count = four_count + 1;
                         four_star_assurance_number = 0;
-                        if (temp2 <= 6435000) {
+                        if (temp2 <= 6435000 * (int)(10 * (unmet - threshold))) {
                             type = 1;
                             if (temp3 <= 4290000) kind = 7;
                             else if (temp3 <= 8580000) kind = 8;
@@ -423,6 +439,8 @@ int main() {
                         }
                         else if (temp2 <= 9652500) {
                             type = 2;
+                            unmet_count = 0;
+                            unmet = 17.1;
                             if (temp3 <= 1170000) kind = 10;
                             else if (temp3 <= 2340000) kind = 11;
                             else if (temp3 <= 3510000) kind = 12;
@@ -437,6 +455,7 @@ int main() {
                         }
                         else {
                             type = 3;
+                            unmet_count = unmet_count + 1;
                             if (temp3 <= 7150000) kind = 21;
                             else if (temp3 <= 1430000) kind = 22;
                             else if (temp3 <= 2145000) kind = 23;
@@ -499,7 +518,7 @@ int main() {
                         star = 4;
                         four_count = four_count + 1;
                         four_star_assurance_number = 0;
-                        if (temp2 <= 6435000) {
+                        if (temp2 <= 6435000 * (int)(10 * (unmet - threshold))) {
                             type = 1;
                             if (temp3 <= 4290000) kind = 7;
                             else if (temp3 <= 8580000) kind = 8;
@@ -507,6 +526,8 @@ int main() {
                         }
                         else if (temp2 <= 9652500) {
                             type = 2;
+                            unmet_count = 0;
+                            unmet = 17.1;
                             if (temp3 <= 1170000) kind = 10;
                             else if (temp3 <= 2340000) kind = 11;
                             else if (temp3 <= 3510000) kind = 12;
@@ -521,6 +542,7 @@ int main() {
                         }
                         else {
                             type = 3;
+                            unmet_count = unmet_count + 1;
                             if (temp3 <= 7150000) kind = 21;
                             else if (temp3 <= 1430000) kind = 22;
                             else if (temp3 <= 2145000) kind = 23;
