@@ -10,8 +10,8 @@ int main() {
     int chosen_banner = 0;
     int chosen_event = 0;
     int wishes_number = 0;
-    int four_star_assurance_number = 0;
-    int five_star_assurance_number = 0;
+    int four_star_assurance_number = 1;
+    int five_star_assurance_number = 1;
     int five_star_guarantee_number = 0;
     std::cout << "WELCOME TO GENSHIN IMPACT WISH SIMULATOR CLI" << endl << endl;
     std::cout << "Choose Your Wishes (Banners):" << endl;
@@ -75,13 +75,13 @@ int main() {
                 int star = 0; //4-star or 5-star
                 int type = 0; //Up or non-up, character or weapon
                 int kind = 0; //which exactly
-                if(unmet_count > threshold) unmet = unmet_count;
+                if (unmet_count > threshold) unmet = unmet_count;
                 if (five_star_assurance_number <= 73 && four_star_assurance_number <= 8) {
                     if (temp1 <= 77220) {
                         star = 5;
                         five_count = five_count + 1;
                         five_star_assurance_number = 0;
-                        if (five_star_guarantee_number == 1) {type = 1; kind = 1;}
+                        if (five_star_guarantee_number == 1) { type = 1; kind = 1; }
                         else if (temp2 <= 6435000) {
                             type = 1;
                             kind = 1;
@@ -168,7 +168,7 @@ int main() {
                         star = 5;
                         five_count = five_count + 1;
                         five_star_assurance_number = 0;
-                        if (five_star_guarantee_number == 1) {type = 1; kind = 1;}
+                        if (five_star_guarantee_number == 1) { type = 1; kind = 1; }
                         else if (temp2 <= 6435000) {
                             type = 1;
                             kind = 1;
@@ -255,7 +255,7 @@ int main() {
                         star = 5;
                         five_count = five_count + 1;
                         five_star_assurance_number = 0;
-                        if (five_star_guarantee_number == 1) {type = 1; kind = 1;}
+                        if (five_star_guarantee_number == 1) { type = 1; kind = 1; }
                         else if (temp2 <= 6435000) {
                             type = 1;
                             kind = 1;
@@ -325,7 +325,7 @@ int main() {
                         star = 5;
                         five_count = five_count + 1;
                         five_star_assurance_number = 0;
-                        if (five_star_guarantee_number == 1) {type = 1; kind = 1;}
+                        if (five_star_guarantee_number == 1) { type = 1; kind = 1; }
                         else if (temp2 <= 6435000) {
                             type = 1;
                             kind = 1;
@@ -412,7 +412,7 @@ int main() {
                         star = 5;
                         five_count = five_count + 1;
                         five_star_assurance_number = 0;
-                        if (five_star_guarantee_number == 1) {type = 1; kind = 1;}
+                        if (five_star_guarantee_number == 1) { type = 1; kind = 1; }
                         else if (temp2 <= 6435000) {
                             type = 1;
                             kind = 1;
@@ -499,7 +499,7 @@ int main() {
                         star = 5;
                         five_count = five_count + 1;
                         five_star_assurance_number = 0;
-                        if (five_star_guarantee_number == 1) {type = 1; kind = 1;}
+                        if (five_star_guarantee_number == 1) { type = 1; kind = 1; }
                         else if (temp2 <= 6435000) {
                             type = 1;
                             kind = 1;
@@ -568,7 +568,7 @@ int main() {
                     star = 5;
                     five_count = five_count + 1;
                     five_star_assurance_number = 0;
-                    if (five_star_guarantee_number == 1) {type = 1; kind = 1;}
+                    if (five_star_guarantee_number == 1) { type = 1; kind = 1; }
                     else if (temp2 <= 6435000) {
                         type = 1;
                         kind = 1;
