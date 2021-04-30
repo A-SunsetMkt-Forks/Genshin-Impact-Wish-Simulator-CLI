@@ -30,7 +30,8 @@ int main() {
             << "8: Dance of Lanterns/20210217-20210302 (Keqing, Ningguang, Bennett, Barbara)" << endl
             << "9: Moment of Bloom/20210302-20210316 (Hu Tao, Xingqiu, Xiangling, Chongyun)" << endl
             << "10: Ballad in Goblets/20210317-20210406 (Venti, Sucrose, Razor, Noelle)" << endl
-            << "11: Farewell of Snezhnaya/20210406-20210427 (Tartaglia, Rosaria, Barbara, Fischl)" << endl << endl;
+            << "11: Farewell of Snezhnaya/20210406-20210427 (Tartaglia, Rosaria, Barbara, Fischl)" << endl 
+            << "12: Gentry of Hermitage/20210406-20210427 (Zhongli, Yanfei, Noelle, Diona)" << endl << endl;
         std::cin >> chosen_event;
     } break;
     case 2: {
@@ -643,6 +644,596 @@ int main() {
                 case 49: std::cout << "***Skyrider Sword" << endl; break;
                 case 50: std::cout << "***Harbinger of Dawn" << endl; break;
                 case 51: std::cout << "***Cool Steel" << endl; break;
+                }
+                wishes_number = wishes_number - 1;
+                count = count + 1;
+                five_star_assurance_number = five_star_assurance_number + 1;
+                four_star_assurance_number = four_star_assurance_number + 1;
+            }
+        }
+        if (chosen_banner == 1 && chosen_event == 12) {
+            while (wishes_number > 0) {
+                long int temp1 = generator() % 12870000 + 1;
+                long int temp2 = generator() % 12870000 + 1;
+                long int temp3 = generator() % 12870000 + 1;
+                int star = 0; //4-star or 5-star
+                int type = 0; //Up or non-up, character or weapon
+                int kind = 0; //which exactly
+                if (unmet_count > threshold) unmet = (double)unmet_count;
+                if (five_star_assurance_number <= 73 && four_star_assurance_number <= 8) {
+                    if (temp1 <= 77220) {
+                        star = 5;
+                        five_count = five_count + 1;
+                        five_star_assurance_number = 0;
+                        if (five_star_guarantee_number == 1) { type = 1; kind = 1; five_star_guarantee_number = 0;}
+                        else if (temp2 <= 6435000) {
+                            type = 1;
+                            kind = 1;
+                            five_star_guarantee_number = 0;
+                        }
+                        else {
+                            type = 2;
+                            five_star_guarantee_number = 1;
+                            if (temp3 <= 2574000) kind = 2;
+                            else if (temp3 <= 5148000) kind = 3;
+                            else if (temp3 <= 7722000) kind = 4;
+                            else if (temp3 <= 10296000) kind = 5;
+                            else kind = 6;
+                        }
+                    }
+                    else if (temp1 <= 733590) {
+                        star = 4;
+                        four_count = four_count + 1;
+                        four_star_assurance_number = 0;
+                        if (temp2 <= 6435000) {
+                            type = 1;
+                            if (temp3 <= 4290000) kind = 7;
+                            else if (temp3 <= 8580000) kind = 8;
+                            else kind = 9;
+                        }
+                        else if (temp2 <= 3217500 * (int)(10 * (unmet - threshold))) {
+                            type = 2;
+                            unmet_count = 0;
+                            unmet = (double)17.1;
+                            if (temp3 <= 1072500) kind = 10;
+                            else if (temp3 <= 2145000) kind = 11;
+                            else if (temp3 <= 3217500) kind = 12;
+                            else if (temp3 <= 4290000) kind = 13;
+                            else if (temp3 <= 5362500) kind = 14;
+                            else if (temp3 <= 6435000) kind = 15;
+                            else if (temp3 <= 7507500) kind = 16;
+                            else if (temp3 <= 8580000) kind = 17;
+                            else if (temp3 <= 9652500) kind = 18;
+                            else if (temp3 <= 10725000) kind = 19;
+                            else if (temp3 <= 11797500) kind = 20;
+                            else kind = 21;
+                        }
+                        else {
+                            type = 3;
+                            unmet_count = unmet_count + 1;
+                            if (temp3 <= 7150000) kind = 22;
+                            else if (temp3 <= 1430000) kind = 23;
+                            else if (temp3 <= 2145000) kind = 24;
+                            else if (temp3 <= 2860000) kind = 25;
+                            else if (temp3 <= 3575000) kind = 26;
+                            else if (temp3 <= 4290000) kind = 27;
+                            else if (temp3 <= 5005000) kind = 28;
+                            else if (temp3 <= 5720000) kind = 29;
+                            else if (temp3 <= 6435000) kind = 30;
+                            else if (temp3 <= 7150000) kind = 31;
+                            else if (temp3 <= 7865000) kind = 32;
+                            else if (temp3 <= 8580000) kind = 33;
+                            else if (temp3 <= 9295000) kind = 34;
+                            else if (temp3 <= 10010000) kind = 35;
+                            else if (temp3 <= 10725000) kind = 36;
+                            else if (temp3 <= 11440000) kind = 37;
+                            else if (temp3 <= 12155000) kind = 38;
+                            else kind = 39;
+                        }
+                    }
+                    else {
+                        star = 3;
+                        type = 2;
+                        if (temp3 <= 990000) kind = 39;
+                        else if (temp3 <= 1980000) kind = 40;
+                        else if (temp3 <= 2970000) kind = 41;
+                        else if (temp3 <= 3960000) kind = 42;
+                        else if (temp3 <= 4950000) kind = 43;
+                        else if (temp3 <= 5940000) kind = 44;
+                        else if (temp3 <= 6930000) kind = 45;
+                        else if (temp3 <= 7920000) kind = 46;
+                        else if (temp3 <= 8910000) kind = 47;
+                        else if (temp3 <= 9900000) kind = 48;
+                        else if (temp3 <= 10890000) kind = 49;
+                        else if (temp3 <= 11880000) kind = 50;
+                        else kind = 51;
+                    }
+                }
+                else if (five_star_assurance_number <= 73 && four_star_assurance_number == 9) {
+                    if (temp1 <= 77220) {
+                        star = 5;
+                        five_count = five_count + 1;
+                        five_star_assurance_number = 0;
+                        if (five_star_guarantee_number == 1) { type = 1; kind = 1; five_star_guarantee_number = 0;}
+                        else if (temp2 <= 6435000) {
+                            type = 1;
+                            kind = 1;
+                            five_star_guarantee_number = 0;
+                        }
+                        else {
+                            type = 2;
+                            five_star_guarantee_number = 1;
+                            if (temp3 <= 2574000) kind = 2;
+                            else if (temp3 <= 5148000) kind = 3;
+                            else if (temp3 <= 7722000) kind = 4;
+                            else if (temp3 <= 10296000) kind = 5;
+                            else kind = 6;
+                        }
+                    }
+                    else if (temp1 <= 7297290) {
+                        star = 4;
+                        four_count = four_count + 1;
+                        four_star_assurance_number = 0;
+                        if (temp2 <= 6435000 * (int)(10 * (unmet - threshold))) {
+                            type = 1;
+                            if (temp3 <= 4290000) kind = 7;
+                            else if (temp3 <= 8580000) kind = 8;
+                            else kind = 9;
+                        }
+                        else if (temp2 <= 9652500) {
+                            type = 2;
+                            unmet_count = 0;
+                            unmet = (double)17.1;
+                            if (temp3 <= 1072500) kind = 10;
+                            else if (temp3 <= 2145000) kind = 11;
+                            else if (temp3 <= 3217500) kind = 12;
+                            else if (temp3 <= 4290000) kind = 13;
+                            else if (temp3 <= 5362500) kind = 14;
+                            else if (temp3 <= 6435000) kind = 15;
+                            else if (temp3 <= 7507500) kind = 16;
+                            else if (temp3 <= 8580000) kind = 17;
+                            else if (temp3 <= 9652500) kind = 18;
+                            else if (temp3 <= 10725000) kind = 19;
+                            else if (temp3 <= 11797500) kind = 20;
+                            else kind = 21;
+                        }
+                        else {
+                            type = 3;
+                            unmet_count = unmet_count + 1;
+                            if (temp3 <= 7150000) kind = 22;
+                            else if (temp3 <= 1430000) kind = 23;
+                            else if (temp3 <= 2145000) kind = 24;
+                            else if (temp3 <= 2860000) kind = 25;
+                            else if (temp3 <= 3575000) kind = 26;
+                            else if (temp3 <= 4290000) kind = 27;
+                            else if (temp3 <= 5005000) kind = 28;
+                            else if (temp3 <= 5720000) kind = 29;
+                            else if (temp3 <= 6435000) kind = 30;
+                            else if (temp3 <= 7150000) kind = 31;
+                            else if (temp3 <= 7865000) kind = 32;
+                            else if (temp3 <= 8580000) kind = 33;
+                            else if (temp3 <= 9295000) kind = 34;
+                            else if (temp3 <= 10010000) kind = 35;
+                            else if (temp3 <= 10725000) kind = 36;
+                            else if (temp3 <= 11440000) kind = 37;
+                            else if (temp3 <= 12155000) kind = 38;
+                            else kind = 39;
+                        }
+                    }
+                    else {
+                        star = 3;
+                        type = 2;
+                        if (temp3 <= 990000) kind = 39;
+                        else if (temp3 <= 1980000) kind = 40;
+                        else if (temp3 <= 2970000) kind = 41;
+                        else if (temp3 <= 3960000) kind = 42;
+                        else if (temp3 <= 4950000) kind = 43;
+                        else if (temp3 <= 5940000) kind = 44;
+                        else if (temp3 <= 6930000) kind = 45;
+                        else if (temp3 <= 7920000) kind = 46;
+                        else if (temp3 <= 8910000) kind = 47;
+                        else if (temp3 <= 9900000) kind = 48;
+                        else if (temp3 <= 10890000) kind = 49;
+                        else if (temp3 <= 11880000) kind = 50;
+                        else kind = 51;
+                    }
+                }
+                else if (five_star_assurance_number <= 73 && four_star_assurance_number >= 10) {
+                    if (temp1 <= 77220) {
+                        star = 5;
+                        five_count = five_count + 1;
+                        five_star_assurance_number = 0;
+                        if (five_star_guarantee_number == 1) { type = 1; kind = 1; five_star_guarantee_number = 0;}
+                        else if (temp2 <= 6435000) {
+                            type = 1;
+                            kind = 1;
+                            five_star_guarantee_number = 0;
+                        }
+                        else {
+                            type = 2;
+                            five_star_guarantee_number = 1;
+                            if (temp3 <= 2574000) kind = 2;
+                            else if (temp3 <= 5148000) kind = 3;
+                            else if (temp3 <= 7722000) kind = 4;
+                            else if (temp3 <= 10296000) kind = 5;
+                            else kind = 6;
+                        }
+                    }
+                    else {
+                        star = 4;
+                        four_count = four_count + 1;
+                        four_star_assurance_number = 0;
+                        if (temp2 <= 6435000 * (int)(10 * (unmet - threshold))) {
+                            type = 1;
+                            if (temp3 <= 4290000) kind = 7;
+                            else if (temp3 <= 8580000) kind = 8;
+                            else kind = 9;
+                        }
+                        else if (temp2 <= 9652500) {
+                            type = 2;
+                            unmet_count = 0;
+                            unmet = (double)17.1;
+                            if (temp3 <= 1072500) kind = 10;
+                            else if (temp3 <= 2145000) kind = 11;
+                            else if (temp3 <= 3217500) kind = 12;
+                            else if (temp3 <= 4290000) kind = 13;
+                            else if (temp3 <= 5362500) kind = 14;
+                            else if (temp3 <= 6435000) kind = 15;
+                            else if (temp3 <= 7507500) kind = 16;
+                            else if (temp3 <= 8580000) kind = 17;
+                            else if (temp3 <= 9652500) kind = 18;
+                            else if (temp3 <= 10725000) kind = 19;
+                            else if (temp3 <= 11797500) kind = 20;
+                            else kind = 21;
+                        }
+                        else {
+                            type = 3;
+                            unmet_count = unmet_count + 1;
+                            if (temp3 <= 7150000) kind = 22;
+                            else if (temp3 <= 1430000) kind = 23;
+                            else if (temp3 <= 2145000) kind = 24;
+                            else if (temp3 <= 2860000) kind = 25;
+                            else if (temp3 <= 3575000) kind = 26;
+                            else if (temp3 <= 4290000) kind = 27;
+                            else if (temp3 <= 5005000) kind = 28;
+                            else if (temp3 <= 5720000) kind = 29;
+                            else if (temp3 <= 6435000) kind = 30;
+                            else if (temp3 <= 7150000) kind = 31;
+                            else if (temp3 <= 7865000) kind = 32;
+                            else if (temp3 <= 8580000) kind = 33;
+                            else if (temp3 <= 9295000) kind = 34;
+                            else if (temp3 <= 10010000) kind = 35;
+                            else if (temp3 <= 10725000) kind = 36;
+                            else if (temp3 <= 11440000) kind = 37;
+                            else if (temp3 <= 12155000) kind = 38;
+                            else kind = 39;
+                        }
+                    }
+                }
+                else if (five_star_assurance_number <= 89 && five_star_assurance_number >= 74 && four_star_assurance_number <= 8) {
+                    if (temp1 <= 77220 + (five_star_assurance_number - 73) * 772200) {
+                        star = 5;
+                        five_count = five_count + 1;
+                        five_star_assurance_number = 0;
+                        if (five_star_guarantee_number == 1) { type = 1; kind = 1; five_star_guarantee_number = 0;}
+                        else if (temp2 <= 6435000) {
+                            type = 1;
+                            kind = 1;
+                            five_star_guarantee_number = 0;
+                        }
+                        else {
+                            type = 2;
+                            five_star_guarantee_number = 1;
+                            if (temp3 <= 2574000) kind = 2;
+                            else if (temp3 <= 5148000) kind = 3;
+                            else if (temp3 <= 7722000) kind = 4;
+                            else if (temp3 <= 10296000) kind = 5;
+                            else kind = 6;
+                        }
+                    }
+                    else if (temp1 <= 733590 + (five_star_assurance_number - 73) * 772200) {
+                        star = 4;
+                        four_count = four_count + 1;
+                        four_star_assurance_number = 0;
+                        if (temp2 <= 6435000 * (int)(10 * (unmet - threshold))) {
+                            type = 1;
+                            if (temp3 <= 4290000) kind = 7;
+                            else if (temp3 <= 8580000) kind = 8;
+                            else kind = 9;
+                        }
+                        else if (temp2 <= 9652500) {
+                            type = 2;
+                            unmet_count = 0;
+                            unmet = (double)17.1;
+                            if (temp3 <= 1072500) kind = 10;
+                            else if (temp3 <= 2145000) kind = 11;
+                            else if (temp3 <= 3217500) kind = 12;
+                            else if (temp3 <= 4290000) kind = 13;
+                            else if (temp3 <= 5362500) kind = 14;
+                            else if (temp3 <= 6435000) kind = 15;
+                            else if (temp3 <= 7507500) kind = 16;
+                            else if (temp3 <= 8580000) kind = 17;
+                            else if (temp3 <= 9652500) kind = 18;
+                            else if (temp3 <= 10725000) kind = 19;
+                            else if (temp3 <= 11797500) kind = 20;
+                            else kind = 21;
+                        }
+                        else {
+                            type = 3;
+                            unmet_count = unmet_count + 1;
+                            if (temp3 <= 7150000) kind = 22;
+                            else if (temp3 <= 1430000) kind = 23;
+                            else if (temp3 <= 2145000) kind = 24;
+                            else if (temp3 <= 2860000) kind = 25;
+                            else if (temp3 <= 3575000) kind = 26;
+                            else if (temp3 <= 4290000) kind = 27;
+                            else if (temp3 <= 5005000) kind = 28;
+                            else if (temp3 <= 5720000) kind = 29;
+                            else if (temp3 <= 6435000) kind = 30;
+                            else if (temp3 <= 7150000) kind = 31;
+                            else if (temp3 <= 7865000) kind = 32;
+                            else if (temp3 <= 8580000) kind = 33;
+                            else if (temp3 <= 9295000) kind = 34;
+                            else if (temp3 <= 10010000) kind = 35;
+                            else if (temp3 <= 10725000) kind = 36;
+                            else if (temp3 <= 11440000) kind = 37;
+                            else if (temp3 <= 12155000) kind = 38;
+                            else kind = 39;
+                        }
+                    }
+                    else {
+                        star = 3;
+                        type = 2;
+                        if (temp3 <= 990000) kind = 39;
+                        else if (temp3 <= 1980000) kind = 40;
+                        else if (temp3 <= 2970000) kind = 41;
+                        else if (temp3 <= 3960000) kind = 42;
+                        else if (temp3 <= 4950000) kind = 43;
+                        else if (temp3 <= 5940000) kind = 44;
+                        else if (temp3 <= 6930000) kind = 45;
+                        else if (temp3 <= 7920000) kind = 46;
+                        else if (temp3 <= 8910000) kind = 47;
+                        else if (temp3 <= 9900000) kind = 48;
+                        else if (temp3 <= 10890000) kind = 49;
+                        else if (temp3 <= 11880000) kind = 50;
+                        else kind = 51;
+                    }
+                }
+                else if (five_star_assurance_number <= 89 && five_star_assurance_number >= 74 && four_star_assurance_number == 9) {
+                    if (temp1 <= 77220 + (five_star_assurance_number - 73) * 772200) {
+                        star = 5;
+                        five_count = five_count + 1;
+                        five_star_assurance_number = 0;
+                        if (five_star_guarantee_number == 1) { type = 1; kind = 1; five_star_guarantee_number = 0;}
+                        else if (temp2 <= 6435000) {
+                            type = 1;
+                            kind = 1;
+                            five_star_guarantee_number = 0;
+                        }
+                        else {
+                            type = 2;
+                            five_star_guarantee_number = 1;
+                            if (temp3 <= 2574000) kind = 2;
+                            else if (temp3 <= 5148000) kind = 3;
+                            else if (temp3 <= 7722000) kind = 4;
+                            else if (temp3 <= 10296000) kind = 5;
+                            else kind = 6;
+                        }
+                    }
+                    else if (temp1 <= 7297290 + (five_star_assurance_number - 73) * 772200) {
+                        star = 4;
+                        four_count = four_count + 1;
+                        four_star_assurance_number = 0;
+                        if (temp2 <= 6435000 * (int)(10 * (unmet - threshold))) {
+                            type = 1;
+                            if (temp3 <= 4290000) kind = 7;
+                            else if (temp3 <= 8580000) kind = 8;
+                            else kind = 9;
+                        }
+                        else if (temp2 <= 9652500) {
+                            type = 2;
+                            unmet_count = 0;
+                            unmet = (double)17.1;
+                            if (temp3 <= 1072500) kind = 10;
+                            else if (temp3 <= 2145000) kind = 11;
+                            else if (temp3 <= 3217500) kind = 12;
+                            else if (temp3 <= 4290000) kind = 13;
+                            else if (temp3 <= 5362500) kind = 14;
+                            else if (temp3 <= 6435000) kind = 15;
+                            else if (temp3 <= 7507500) kind = 16;
+                            else if (temp3 <= 8580000) kind = 17;
+                            else if (temp3 <= 9652500) kind = 18;
+                            else if (temp3 <= 10725000) kind = 19;
+                            else if (temp3 <= 11797500) kind = 20;
+                            else kind = 21;
+                        }
+                        else {
+                            type = 3;
+                            unmet_count = unmet_count + 1;
+                            if (temp3 <= 7150000) kind = 22;
+                            else if (temp3 <= 1430000) kind = 23;
+                            else if (temp3 <= 2145000) kind = 24;
+                            else if (temp3 <= 2860000) kind = 25;
+                            else if (temp3 <= 3575000) kind = 26;
+                            else if (temp3 <= 4290000) kind = 27;
+                            else if (temp3 <= 5005000) kind = 28;
+                            else if (temp3 <= 5720000) kind = 29;
+                            else if (temp3 <= 6435000) kind = 30;
+                            else if (temp3 <= 7150000) kind = 31;
+                            else if (temp3 <= 7865000) kind = 32;
+                            else if (temp3 <= 8580000) kind = 33;
+                            else if (temp3 <= 9295000) kind = 34;
+                            else if (temp3 <= 10010000) kind = 35;
+                            else if (temp3 <= 10725000) kind = 36;
+                            else if (temp3 <= 11440000) kind = 37;
+                            else if (temp3 <= 12155000) kind = 38;
+                            else kind = 39;
+                        }
+                    }
+                    else {
+                        star = 3;
+                        type = 2;
+                        if (temp3 <= 990000) kind = 39;
+                        else if (temp3 <= 1980000) kind = 40;
+                        else if (temp3 <= 2970000) kind = 41;
+                        else if (temp3 <= 3960000) kind = 42;
+                        else if (temp3 <= 4950000) kind = 43;
+                        else if (temp3 <= 5940000) kind = 44;
+                        else if (temp3 <= 6930000) kind = 45;
+                        else if (temp3 <= 7920000) kind = 46;
+                        else if (temp3 <= 8910000) kind = 47;
+                        else if (temp3 <= 9900000) kind = 48;
+                        else if (temp3 <= 10890000) kind = 49;
+                        else if (temp3 <= 11880000) kind = 50;
+                        else kind = 51;
+                    }
+                }
+                else if (five_star_assurance_number <= 89 && five_star_assurance_number >= 74 && four_star_assurance_number >= 10) {
+                    if (temp1 <= 77220 + (five_star_assurance_number - 73) * 772200) {
+                        star = 5;
+                        five_count = five_count + 1;
+                        five_star_assurance_number = 0;
+                        if (five_star_guarantee_number == 1) { type = 1; kind = 1; five_star_guarantee_number = 0;}
+                        else if (temp2 <= 6435000) {
+                            type = 1;
+                            kind = 1;
+                            five_star_guarantee_number = 0;
+                        }
+                        else {
+                            type = 2;
+                            five_star_guarantee_number = 1;
+                            if (temp3 <= 2574000) kind = 2;
+                            else if (temp3 <= 5148000) kind = 3;
+                            else if (temp3 <= 7722000) kind = 4;
+                            else if (temp3 <= 10296000) kind = 5;
+                            else kind = 6;
+                        }
+                    }
+                    else {
+                        star = 4;
+                        four_count = four_count + 1;
+                        four_star_assurance_number = 0;
+                        if (temp2 <= 6435000 * (int)(10 * (unmet - threshold))) {
+                            type = 1;
+                            if (temp3 <= 4290000) kind = 7;
+                            else if (temp3 <= 8580000) kind = 8;
+                            else kind = 9;
+                        }
+                        else if (temp2 <= 9652500) {
+                            type = 2;
+                            unmet_count = 0;
+                            unmet = (double)17.1;
+                            if (temp3 <= 1072500) kind = 10;
+                            else if (temp3 <= 2145000) kind = 11;
+                            else if (temp3 <= 3217500) kind = 12;
+                            else if (temp3 <= 4290000) kind = 13;
+                            else if (temp3 <= 5362500) kind = 14;
+                            else if (temp3 <= 6435000) kind = 15;
+                            else if (temp3 <= 7507500) kind = 16;
+                            else if (temp3 <= 8580000) kind = 17;
+                            else if (temp3 <= 9652500) kind = 18;
+                            else if (temp3 <= 10725000) kind = 19;
+                            else if (temp3 <= 11797500) kind = 20;
+                            else kind = 21;
+                        }
+                        else {
+                            type = 3;
+                            unmet_count = unmet_count + 1;
+                            if (temp3 <= 7150000) kind = 22;
+                            else if (temp3 <= 1430000) kind = 23;
+                            else if (temp3 <= 2145000) kind = 24;
+                            else if (temp3 <= 2860000) kind = 25;
+                            else if (temp3 <= 3575000) kind = 26;
+                            else if (temp3 <= 4290000) kind = 27;
+                            else if (temp3 <= 5005000) kind = 28;
+                            else if (temp3 <= 5720000) kind = 29;
+                            else if (temp3 <= 6435000) kind = 30;
+                            else if (temp3 <= 7150000) kind = 31;
+                            else if (temp3 <= 7865000) kind = 32;
+                            else if (temp3 <= 8580000) kind = 33;
+                            else if (temp3 <= 9295000) kind = 34;
+                            else if (temp3 <= 10010000) kind = 35;
+                            else if (temp3 <= 10725000) kind = 36;
+                            else if (temp3 <= 11440000) kind = 37;
+                            else if (temp3 <= 12155000) kind = 38;
+                            else kind = 39;
+                        }
+                    }
+                }
+                else {
+                    star = 5;
+                    five_count = five_count + 1;
+                    five_star_assurance_number = 0;
+                    if (five_star_guarantee_number == 1) { type = 1; kind = 1; five_star_guarantee_number = 0;}
+                    else if (temp2 <= 6435000) {
+                        type = 1;
+                        kind = 1;
+                        five_star_guarantee_number = 0;
+                    }
+                    else {
+                        type = 2;
+                        five_star_guarantee_number = 1;
+                        if (temp3 <= 2574000) kind = 2;
+                        else if (temp3 <= 5148000) kind = 3;
+                        else if (temp3 <= 7722000) kind = 4;
+                        else if (temp3 <= 10296000) kind = 5;
+                        else kind = 6;
+                    }
+                }
+                std::cout << count + 1 << " ";
+                switch (kind) {
+                case 1: std::cout << "!!!!!*****Zhongli" << endl; break;
+                case 2: std::cout << "!!!!!*****Jean" << endl; break;
+                case 3: std::cout << "!!!!!*****Qiqi" << endl; break;
+                case 4: std::cout << "!!!!!*****Keqing" << endl; break;
+                case 5: std::cout << "!!!!!*****Diluc" << endl; break;
+                case 6: std::cout << "!!!!!*****Mona" << endl; break;
+                case 7: std::cout << "!!****Yanfei" << endl; break;
+                case 8: std::cout << "!!****Noelle" << endl; break;
+                case 9: std::cout << "!!****Diona" << endl; break;
+                case 10: std::cout << "!!****Sucrose" << endl; break;
+                case 11: std::cout << "!!****Chongyun" << endl; break;
+                case 12: std::cout << "!!****Beidou" << endl; break;
+                case 13: std::cout << "!!****Razor" << endl; break;
+                case 14: std::cout << "!!****Rosaria" << endl; break;
+                case 15: std::cout << "!!****Ningguang" << endl; break;
+                case 16: std::cout << "!!****Xingqiu" << endl; break;
+                case 17: std::cout << "!!****Bennett" << endl; break;
+                case 18: std::cout << "!!****Xiangling" << endl; break;
+                case 19: std::cout << "!!****Barbara" << endl; break;
+                case 20: std::cout << "!!****Xinyan" << endl; break;
+                case 21: std::cout << "!!****Fischl" << endl; break;
+                case 22: std::cout << "!!****Favonius Warbow" << endl; break;
+                case 23: std::cout << "!!****Sacrificial Bow" << endl; break;
+                case 24: std::cout << "!!****Rust" << endl; break;
+                case 25: std::cout << "!!****The Stringless" << endl; break;
+                case 26: std::cout << "!!****Favonius Codex" << endl; break;
+                case 27: std::cout << "!!****Sacrificial Fragments" << endl; break;
+                case 28: std::cout << "!!****Eye of Perception" << endl; break;
+                case 29: std::cout << "!!****The Widsith" << endl; break;
+                case 30: std::cout << "!!****Favonius Greatsword" << endl; break;
+                case 31: std::cout << "!!****Sacrificial Greatsword" << endl; break;
+                case 32: std::cout << "!!****Rainslasher" << endl; break;
+                case 33: std::cout << "!!****The Bell" << endl; break;
+                case 34: std::cout << "!!****Favonius Lance" << endl; break;
+                case 35: std::cout << "!!****Dragon's Bane" << endl; break;
+                case 36: std::cout << "!!****Favonius Sword" << endl; break;
+                case 37: std::cout << "!!****Sacrificial Sword" << endl; break;
+                case 38: std::cout << "!!****Lion's Roar" << endl; break;
+                case 39: std::cout << "!!****The Flute" << endl; break;
+                case 40: std::cout << "***Slingshot" << endl; break;
+                case 41: std::cout << "***Sharpshooter's Oath" << endl; break;
+                case 42: std::cout << "***Raven Bow" << endl; break;
+                case 43: std::cout << "***Emerald Orb" << endl; break;
+                case 44: std::cout << "***Thrilling Tales of Dragon Slayers" << endl; break;
+                case 45: std::cout << "***Magic Guide" << endl; break;
+                case 46: std::cout << "***Debate Club" << endl; break;
+                case 47: std::cout << "***Bloodtainted Greatsword" << endl; break;
+                case 48: std::cout << "***Ferrous Shadow" << endl; break;
+                case 49: std::cout << "***Black Tassel" << endl; break;
+                case 50: std::cout << "***Skyrider Sword" << endl; break;
+                case 51: std::cout << "***Harbinger of Dawn" << endl; break;
+                case 52: std::cout << "***Cool Steel" << endl; break;
                 }
                 wishes_number = wishes_number - 1;
                 count = count + 1;
