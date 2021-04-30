@@ -14,48 +14,54 @@ int main() {
     int five_star_assurance_number = 1;
     int five_star_guarantee_number = 0;
     int four_star_guarantee_number = 0;
+    int quit = 1;
     std::cout << "WELCOME TO GENSHIN IMPACT WISH SIMULATOR CLI" << endl << endl;
     std::cout << "Choose Your Wishes (Banners):" << endl;
-    std::cout << "1: Character Event Wish; 2: Weapon Event Wish; 3: Permanent Wish; 4: Novice Wish" << endl << endl;
+    std::cout << "-1: Quit; 1: Character Event Wish; 2: Weapon Event Wish; 3: Permanent Wish; 4: Novice Wish;" << endl << endl;
     std::cin >> chosen_banner;
     switch (chosen_banner) {
-    case 1: {
-        std::cout << endl << "Choose Your Events:" << endl
-            << "1: Ballad in Goblets/20200928-20201018 (Venti, Barbara, Fischl, Xiangling)" << endl
-            << "2: Sparkling Steps/20201020-20201110 (Klee, Xingqiu, Noelle, Sucrose)" << endl
-            << "3: Farewell of Snezhnaya/20201111-20201201 (Tartaglia, Diona, Beidou, Ningguang)" << endl
-            << "4: Gentry of Hermitage/20201201-20201222 (Zhongli, Xinyan, Razor, Chongyun)" << endl
-            << "5: Secretum Secretorum/20201223-20210112 (Albedo, Fischl, Sucrose, Bennett)" << endl
-            << "6: Adrift in the Harbor/20210112-20210202 (Ganyu, Xiangling, Xingqiu, Noelle)" << endl
-            << "7: Invitation to Mundane Life/20210203-20210217 (Xiao, Diona, Beidou, Xinyan)" << endl
-            << "8: Dance of Lanterns/20210217-20210302 (Keqing, Ningguang, Bennett, Barbara)" << endl
-            << "9: Moment of Bloom/20210302-20210316 (Hu Tao, Xingqiu, Xiangling, Chongyun)" << endl
-            << "10: Ballad in Goblets/20210317-20210406 (Venti, Sucrose, Razor, Noelle)" << endl
-            << "11: Farewell of Snezhnaya/20210406-20210427 (Tartaglia, Rosaria, Barbara, Fischl)" << endl 
-            << "12: Gentry of Hermitage/20210406-20210427 (Zhongli, Yanfei, Noelle, Diona)" << endl << endl;
-        std::cin >> chosen_event;
-    } break;
-    case 2: {
-        std::cout << endl << "Choose Your Events:" << endl
-            << "1: Epitome Invocation/20200928-20201018 (Aquila Favonia, Amos' Bow, The Flute, The Bell, The Widsith, The Stringless, Favonius Lance)" << endl
-            << "2: Epitome Invocation/20201020-20201109 (Lost Prayer to the Sacred Winds, Wolf's Gravestone, Sacrificial Sword, Sacrificial Bow, Sacrificial Greatsword, Sacrificial Fragments, Dragon's Bane)" << endl
-            << "3: Epitome Invocation/20201111-20201201 (Memory of Dust, Skyward Harp, Rainslasher, Eye of Perception, Rust, Favonius Lance)" << endl
-            << "4: Epitome Invocation/20201201-20201222 (Vortex Vanquisher, The Unforged, Lion's Roar, The Bell, Favonius Codex, Favonius Warbow, Dragon's Bane)" << endl
-            << "5: Epitome Invocation/20201223-20210112 (Summit Shaper, Skyward Atlas, Favonius Sword, Favonius Greatsword, Favonius Lance, Sacrificial Fragments, The Stringless)" << endl
-            << "6: Epitome Invocation/20210112-20210202 (Skyward Pride, Amos' Bow, Sacrificial Sword, The Bell, Dragon's Bane, Eye of Perception, Favonius Warbow)" << endl
-            << "7: Epitome Invocation/20210203-20210223 (Primordial Jade Cutter, Primordial Jade Winged-Spear, Rust, Eye of Perception, Favonius Lance, Sacrificial Greatsword, The Flute)" << endl
-            << "8: Epitome Invocation/20210223-20210316 (Staff of Homa, Lithic Blade, Lithic Spear, Wolf's Gravestone, Sacrificial Bow, The Widsith, Lion's Roar)" << endl
-            << "9: Epitome Invocation/20210317-20210406 (Elegy for the End, Skyward Blade, The Alley Flash, Wine and Song, Favonius Greatsword, Favonius Warbow, Dragon's Bane)" << endl
-            << "10: Epitome Invocation/20210406-20210427 (Skyward Harp, Lost Prayer to the Sacred Winds, Alley Hunter, Favonius Sword, Sacrificial Greatsword, Favonius Codex, Favonius Lance)" << endl << endl;
-        std::cin >> chosen_event;
-    } break;
-    case 3: {
-        std::cout << endl << "Choose Your Events:" << endl
-            << "1: Wanderlust Invocation/20200928-20201222 (Released)" << endl
-            << "2: Wanderlust Invocation/20201223- (Adds Diona and Xinyan)" << endl << endl;
-        std::cin >> chosen_event;
-    } break;
-    case 4: chosen_event = 1; break;
+        case -1: break;
+        case 1: {
+            std::cout << endl << "Choose Your Events:" << endl
+                << "1: Ballad in Goblets/20200928-20201018 (Venti, Barbara, Fischl, Xiangling)" << endl
+                << "2: Sparkling Steps/20201020-20201110 (Klee, Xingqiu, Noelle, Sucrose)" << endl
+                << "3: Farewell of Snezhnaya/20201111-20201201 (Tartaglia, Diona, Beidou, Ningguang)" << endl
+                << "4: Gentry of Hermitage/20201201-20201222 (Zhongli, Xinyan, Razor, Chongyun)" << endl
+                << "5: Secretum Secretorum/20201223-20210112 (Albedo, Fischl, Sucrose, Bennett)" << endl
+                << "6: Adrift in the Harbor/20210112-20210202 (Ganyu, Xiangling, Xingqiu, Noelle)" << endl
+                << "7: Invitation to Mundane Life/20210203-20210217 (Xiao, Diona, Beidou, Xinyan)" << endl
+                << "8: Dance of Lanterns/20210217-20210302 (Keqing, Ningguang, Bennett, Barbara)" << endl
+                << "9: Moment of Bloom/20210302-20210316 (Hu Tao, Xingqiu, Xiangling, Chongyun)" << endl
+                << "10: Ballad in Goblets/20210317-20210406 (Venti, Sucrose, Razor, Noelle)" << endl
+                << "11: Farewell of Snezhnaya/20210406-20210427 (Tartaglia, Rosaria, Barbara, Fischl)" << endl 
+                << "12: Gentry of Hermitage/20210406-20210427 (Zhongli, Yanfei, Noelle, Diona)" << endl << endl;
+            std::cin >> chosen_event;
+            if (chosen_event > 0 && chosen_event < 13 && chosen_event == (int) chosen_event) quit = 0; else std::cout << endl << "Invalid event!" << endl;
+        } break;
+        case 2: {
+            std::cout << endl << "Choose Your Events:" << endl
+                << "1: Epitome Invocation/20200928-20201018 (Aquila Favonia, Amos' Bow, The Flute, The Bell, The Widsith, The Stringless, Favonius Lance)" << endl
+                << "2: Epitome Invocation/20201020-20201109 (Lost Prayer to the Sacred Winds, Wolf's Gravestone, Sacrificial Sword, Sacrificial Bow, Sacrificial Greatsword, Sacrificial Fragments, Dragon's Bane)" << endl
+                << "3: Epitome Invocation/20201111-20201201 (Memory of Dust, Skyward Harp, Rainslasher, Eye of Perception, Rust, Favonius Lance)" << endl
+                << "4: Epitome Invocation/20201201-20201222 (Vortex Vanquisher, The Unforged, Lion's Roar, The Bell, Favonius Codex, Favonius Warbow, Dragon's Bane)" << endl
+                << "5: Epitome Invocation/20201223-20210112 (Summit Shaper, Skyward Atlas, Favonius Sword, Favonius Greatsword, Favonius Lance, Sacrificial Fragments, The Stringless)" << endl
+                << "6: Epitome Invocation/20210112-20210202 (Skyward Pride, Amos' Bow, Sacrificial Sword, The Bell, Dragon's Bane, Eye of Perception, Favonius Warbow)" << endl
+                << "7: Epitome Invocation/20210203-20210223 (Primordial Jade Cutter, Primordial Jade Winged-Spear, Rust, Eye of Perception, Favonius Lance, Sacrificial Greatsword, The Flute)" << endl
+                << "8: Epitome Invocation/20210223-20210316 (Staff of Homa, Lithic Blade, Lithic Spear, Wolf's Gravestone, Sacrificial Bow, The Widsith, Lion's Roar)" << endl
+                << "9: Epitome Invocation/20210317-20210406 (Elegy for the End, Skyward Blade, The Alley Flash, Wine and Song, Favonius Greatsword, Favonius Warbow, Dragon's Bane)" << endl
+                << "10: Epitome Invocation/20210406-20210427 (Skyward Harp, Lost Prayer to the Sacred Winds, Alley Hunter, Favonius Sword, Sacrificial Greatsword, Favonius Codex, Favonius Lance)" << endl << endl;
+            std::cin >> chosen_event;
+            if (chosen_event > 0 && chosen_event < 11 && chosen_event == (int) chosen_event) quit = 0; else std::cout << endl << "Invalid event!" << endl;
+        } break;
+        case 3: {
+            std::cout << endl << "Choose Your Events:" << endl
+                << "1: Wanderlust Invocation/20200928-20201222 (Released)" << endl
+                << "2: Wanderlust Invocation/20201223- (Adds Diona and Xinyan)" << endl << endl;
+            std::cin >> chosen_event;
+            if (chosen_event > 0 && chosen_event < 3 && chosen_event == (int) chosen_event) quit = 0; else std::cout << endl << "Invalid event!" << endl;
+        } break;
+        case 4: chosen_event = 1; break;
+        default: {chosen_banner = 0; chosen_event = 0; quit = 1; std:cout << "Invalid banner!" << endl;}
     }
     unsigned int seed = (unsigned int) std::chrono::system_clock::now().time_since_epoch().count();
     std::mt19937 generator(seed);
@@ -66,10 +72,11 @@ int main() {
     double unmet = 17.1;
     int unmet_count = 0;
     while (wishes_number >= 0) {
+        if (quit == 1) break;
         std::cout << endl << "How many wishes? -1: Quit; 1: 1 Wish; 10: 10 Wishes" << endl << endl;
         std::cin >> wishes_number;
         std::cout << endl;
-        //if (!(wishes_number == -1||wishes_number == 10||wishes_number == 1)){std::cout << "Invalid number of wishes!";wishes_number = 0;}
+        //if (!(wishes_number == -1||wishes_number == 10||wishes_number == 1)){std::cout << "Invalid number of wishes!" << endl;wishes_number = 0;}
         if (chosen_banner == 1 && chosen_event == 11) {
             while (wishes_number > 0) {
                 long int temp1 = generator() % 12870000 + 1;
