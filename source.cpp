@@ -61,7 +61,7 @@ int main() {
             if (chosen_event > 0 && chosen_event < 3 && chosen_event == (int) chosen_event) quit = 0; else std::cout << endl << "Invalid event!" << endl;
         } break;
         case 4: chosen_event = 1; break;
-        default: {chosen_banner = 0; chosen_event = 0; quit = 1; std:cout << "Invalid banner!" << endl;}
+        default: {chosen_banner = 0; chosen_event = 0; quit = 1; std::cout << "Invalid banner!" << endl;}
     }
     unsigned int seed = (unsigned int) std::chrono::system_clock::now().time_since_epoch().count();
     std::mt19937 generator(seed);
