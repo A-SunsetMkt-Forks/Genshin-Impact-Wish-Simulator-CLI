@@ -69,6 +69,7 @@ int main() {
         std::cout << endl << "How many wishes? -1: Quit; 1: 1 Wish; 10: 10 Wishes" << endl << endl;
         std::cin >> wishes_number;
         std::cout << endl;
+        //if (!(wishes_number == -1||wishes_number == 10||wishes_number == 1)){std::cout << "Invalid number of wishes!";wishes_number = 0;}
         if (chosen_banner == 1 && chosen_event == 11) {
             while (wishes_number > 0) {
                 long int temp1 = generator() % 12870000 + 1;
