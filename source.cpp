@@ -13,6 +13,7 @@ int main() {
     int four_star_assurance_number = 1;
     int five_star_assurance_number = 1;
     int five_star_guarantee_number = 0;
+    int four_star_guarantee_number = 0;
     std::cout << "WELCOME TO GENSHIN IMPACT WISH SIMULATOR CLI" << endl << endl;
     std::cout << "Choose Your Wishes (Banners):" << endl;
     std::cout << "1: Character Event Wish; 2: Weapon Event Wish; 3: Permanent Wish; 4: Novice Wish" << endl << endl;
@@ -102,11 +103,19 @@ int main() {
                         star = 4;
                         four_count = four_count + 1;
                         four_star_assurance_number = 0;
-                        if (temp2 <= 6435000) {
+                        if (four_star_guarantee_number == 1) {
+                            type = 1;
+                            if (temp3 <= 4290000) kind = 7;
+                            else if (temp3 <= 8580000) kind = 8;
+                            else kind = 9; 
+                            four_star_guarantee_number = 0;
+                            }
+                        else if (temp2 <= 6435000) {
                             type = 1;
                             if (temp3 <= 4290000) kind = 7;
                             else if (temp3 <= 8580000) kind = 8;
                             else kind = 9;
+                            four_star_guarantee_number = 0;
                         }
                         else if (temp2 <= 3217500 * (int)(10 * (unmet - threshold))) {
                             type = 2;
@@ -123,6 +132,7 @@ int main() {
                             else if (temp3 <= 10530000) kind = 18;
                             else if (temp3 <= 11700000) kind = 19;
                             else kind = 20;
+                            four_star_guarantee_number = 1;
                         }
                         else {
                             type = 3;
@@ -145,6 +155,7 @@ int main() {
                             else if (temp3 <= 11440000) kind = 36;
                             else if (temp3 <= 12155000) kind = 37;
                             else kind = 38;
+                            four_star_guarantee_number = 1;
                         }
                     }
                     else {
@@ -190,11 +201,19 @@ int main() {
                         star = 4;
                         four_count = four_count + 1;
                         four_star_assurance_number = 0;
-                        if (temp2 <= 6435000 * (int)(10 * (unmet - threshold))) {
+                        if (four_star_guarantee_number == 1) {
+                            type = 1;
+                            if (temp3 <= 4290000) kind = 7;
+                            else if (temp3 <= 8580000) kind = 8;
+                            else kind = 9; 
+                            four_star_guarantee_number = 0;
+                            }
+                        else if (temp2 <= 6435000 * (int)(10 * (unmet - threshold))) {
                             type = 1;
                             if (temp3 <= 4290000) kind = 7;
                             else if (temp3 <= 8580000) kind = 8;
                             else kind = 9;
+                            four_star_guarantee_number = 0;
                         }
                         else if (temp2 <= 9652500) {
                             type = 2;
@@ -211,6 +230,7 @@ int main() {
                             else if (temp3 <= 10530000) kind = 18;
                             else if (temp3 <= 11700000) kind = 19;
                             else kind = 20;
+                            four_star_guarantee_number = 1;
                         }
                         else {
                             type = 3;
@@ -233,6 +253,7 @@ int main() {
                             else if (temp3 <= 11440000) kind = 36;
                             else if (temp3 <= 12155000) kind = 37;
                             else kind = 38;
+                            four_star_guarantee_number = 1;
                         }
                     }
                     else {
@@ -278,11 +299,19 @@ int main() {
                         star = 4;
                         four_count = four_count + 1;
                         four_star_assurance_number = 0;
-                        if (temp2 <= 6435000 * (int)(10 * (unmet - threshold))) {
+                        if (four_star_guarantee_number == 1) {
+                            type = 1;
+                            if (temp3 <= 4290000) kind = 7;
+                            else if (temp3 <= 8580000) kind = 8;
+                            else kind = 9; 
+                            four_star_guarantee_number = 0;
+                            }
+                        else if (temp2 <= 6435000 * (int)(10 * (unmet - threshold))) {
                             type = 1;
                             if (temp3 <= 4290000) kind = 7;
                             else if (temp3 <= 8580000) kind = 8;
                             else kind = 9;
+                            four_star_guarantee_number = 0;
                         }
                         else if (temp2 <= 9652500) {
                             type = 2;
@@ -299,6 +328,7 @@ int main() {
                             else if (temp3 <= 10530000) kind = 18;
                             else if (temp3 <= 11700000) kind = 19;
                             else kind = 20;
+                            four_star_guarantee_number = 1;
                         }
                         else {
                             type = 3;
@@ -321,6 +351,7 @@ int main() {
                             else if (temp3 <= 11440000) kind = 36;
                             else if (temp3 <= 12155000) kind = 37;
                             else kind = 38;
+                            four_star_guarantee_number = 1;
                         }
                     }
                 }
@@ -349,11 +380,19 @@ int main() {
                         star = 4;
                         four_count = four_count + 1;
                         four_star_assurance_number = 0;
-                        if (temp2 <= 6435000 * (int)(10 * (unmet - threshold))) {
+                        if (four_star_guarantee_number == 1) {
+                            type = 1;
+                            if (temp3 <= 4290000) kind = 7;
+                            else if (temp3 <= 8580000) kind = 8;
+                            else kind = 9; 
+                            four_star_guarantee_number = 0;
+                            }
+                        else if (temp2 <= 6435000 * (int)(10 * (unmet - threshold))) {
                             type = 1;
                             if (temp3 <= 4290000) kind = 7;
                             else if (temp3 <= 8580000) kind = 8;
                             else kind = 9;
+                            four_star_guarantee_number = 0;
                         }
                         else if (temp2 <= 9652500) {
                             type = 2;
@@ -370,6 +409,7 @@ int main() {
                             else if (temp3 <= 10530000) kind = 18;
                             else if (temp3 <= 11700000) kind = 19;
                             else kind = 20;
+                            four_star_guarantee_number = 1;
                         }
                         else {
                             type = 3;
@@ -392,6 +432,7 @@ int main() {
                             else if (temp3 <= 11440000) kind = 36;
                             else if (temp3 <= 12155000) kind = 37;
                             else kind = 38;
+                            four_star_guarantee_number = 1;
                         }
                     }
                     else {
@@ -437,11 +478,19 @@ int main() {
                         star = 4;
                         four_count = four_count + 1;
                         four_star_assurance_number = 0;
-                        if (temp2 <= 6435000 * (int)(10 * (unmet - threshold))) {
+                        if (four_star_guarantee_number == 1) {
+                            type = 1;
+                            if (temp3 <= 4290000) kind = 7;
+                            else if (temp3 <= 8580000) kind = 8;
+                            else kind = 9; 
+                            four_star_guarantee_number = 0;
+                            }
+                        else if (temp2 <= 6435000 * (int)(10 * (unmet - threshold))) {
                             type = 1;
                             if (temp3 <= 4290000) kind = 7;
                             else if (temp3 <= 8580000) kind = 8;
                             else kind = 9;
+                            four_star_guarantee_number = 0;
                         }
                         else if (temp2 <= 9652500) {
                             type = 2;
@@ -458,6 +507,7 @@ int main() {
                             else if (temp3 <= 10530000) kind = 18;
                             else if (temp3 <= 11700000) kind = 19;
                             else kind = 20;
+                            four_star_guarantee_number = 1;
                         }
                         else {
                             type = 3;
@@ -480,6 +530,7 @@ int main() {
                             else if (temp3 <= 11440000) kind = 36;
                             else if (temp3 <= 12155000) kind = 37;
                             else kind = 38;
+                            four_star_guarantee_number = 1;
                         }
                     }
                     else {
@@ -525,11 +576,19 @@ int main() {
                         star = 4;
                         four_count = four_count + 1;
                         four_star_assurance_number = 0;
-                        if (temp2 <= 6435000 * (int)(10 * (unmet - threshold))) {
+                        if (four_star_guarantee_number == 1) {
+                            type = 1;
+                            if (temp3 <= 4290000) kind = 7;
+                            else if (temp3 <= 8580000) kind = 8;
+                            else kind = 9; 
+                            four_star_guarantee_number = 0;
+                            }
+                        else if (temp2 <= 6435000 * (int)(10 * (unmet - threshold))) {
                             type = 1;
                             if (temp3 <= 4290000) kind = 7;
                             else if (temp3 <= 8580000) kind = 8;
                             else kind = 9;
+                            four_star_guarantee_number = 0;
                         }
                         else if (temp2 <= 9652500) {
                             type = 2;
@@ -546,6 +605,7 @@ int main() {
                             else if (temp3 <= 10530000) kind = 18;
                             else if (temp3 <= 11700000) kind = 19;
                             else kind = 20;
+                            four_star_guarantee_number = 1;
                         }
                         else {
                             type = 3;
@@ -568,6 +628,7 @@ int main() {
                             else if (temp3 <= 11440000) kind = 36;
                             else if (temp3 <= 12155000) kind = 37;
                             else kind = 38;
+                            four_star_guarantee_number = 1;
                         }
                     }
                 }
@@ -685,11 +746,19 @@ int main() {
                         star = 4;
                         four_count = four_count + 1;
                         four_star_assurance_number = 0;
-                        if (temp2 <= 6435000) {
+                        if (four_star_guarantee_number == 1) {
+                            type = 1;
+                            if (temp3 <= 4290000) kind = 7;
+                            else if (temp3 <= 8580000) kind = 8;
+                            else kind = 9; 
+                            four_star_guarantee_number = 0;
+                            }
+                        else if (temp2 <= 6435000) {
                             type = 1;
                             if (temp3 <= 4290000) kind = 7;
                             else if (temp3 <= 8580000) kind = 8;
                             else kind = 9;
+                            four_star_guarantee_number = 0;
                         }
                         else if (temp2 <= 3217500 * (int)(10 * (unmet - threshold))) {
                             type = 2;
@@ -707,6 +776,7 @@ int main() {
                             else if (temp3 <= 10725000) kind = 19;
                             else if (temp3 <= 11797500) kind = 20;
                             else kind = 21;
+                            four_star_guarantee_number = 1;
                         }
                         else {
                             type = 3;
@@ -729,24 +799,25 @@ int main() {
                             else if (temp3 <= 11440000) kind = 37;
                             else if (temp3 <= 12155000) kind = 38;
                             else kind = 39;
+                            four_star_guarantee_number = 1;
                         }
                     }
                     else {
                         star = 3;
                         type = 2;
-                        if (temp3 <= 990000) kind = 39;
-                        else if (temp3 <= 1980000) kind = 40;
-                        else if (temp3 <= 2970000) kind = 41;
-                        else if (temp3 <= 3960000) kind = 42;
-                        else if (temp3 <= 4950000) kind = 43;
-                        else if (temp3 <= 5940000) kind = 44;
-                        else if (temp3 <= 6930000) kind = 45;
-                        else if (temp3 <= 7920000) kind = 46;
-                        else if (temp3 <= 8910000) kind = 47;
-                        else if (temp3 <= 9900000) kind = 48;
-                        else if (temp3 <= 10890000) kind = 49;
-                        else if (temp3 <= 11880000) kind = 50;
-                        else kind = 51;
+                        if (temp3 <= 990000) kind = 40;
+                        else if (temp3 <= 1980000) kind = 41;
+                        else if (temp3 <= 2970000) kind = 42;
+                        else if (temp3 <= 3960000) kind = 43;
+                        else if (temp3 <= 4950000) kind = 44;
+                        else if (temp3 <= 5940000) kind = 45;
+                        else if (temp3 <= 6930000) kind = 46;
+                        else if (temp3 <= 7920000) kind = 47;
+                        else if (temp3 <= 8910000) kind = 48;
+                        else if (temp3 <= 9900000) kind = 49;
+                        else if (temp3 <= 10890000) kind = 50;
+                        else if (temp3 <= 11880000) kind = 51;
+                        else kind = 52;
                     }
                 }
                 else if (five_star_assurance_number <= 73 && four_star_assurance_number == 9) {
@@ -774,11 +845,19 @@ int main() {
                         star = 4;
                         four_count = four_count + 1;
                         four_star_assurance_number = 0;
-                        if (temp2 <= 6435000 * (int)(10 * (unmet - threshold))) {
+                        if (four_star_guarantee_number == 1) {
+                            type = 1;
+                            if (temp3 <= 4290000) kind = 7;
+                            else if (temp3 <= 8580000) kind = 8;
+                            else kind = 9; 
+                            four_star_guarantee_number = 0;
+                            }
+                        else if (temp2 <= 6435000 * (int)(10 * (unmet - threshold))) {
                             type = 1;
                             if (temp3 <= 4290000) kind = 7;
                             else if (temp3 <= 8580000) kind = 8;
                             else kind = 9;
+                            four_star_guarantee_number = 0;
                         }
                         else if (temp2 <= 9652500) {
                             type = 2;
@@ -796,6 +875,7 @@ int main() {
                             else if (temp3 <= 10725000) kind = 19;
                             else if (temp3 <= 11797500) kind = 20;
                             else kind = 21;
+                            four_star_guarantee_number = 1;
                         }
                         else {
                             type = 3;
@@ -818,24 +898,25 @@ int main() {
                             else if (temp3 <= 11440000) kind = 37;
                             else if (temp3 <= 12155000) kind = 38;
                             else kind = 39;
+                            four_star_guarantee_number = 1;
                         }
                     }
                     else {
                         star = 3;
                         type = 2;
-                        if (temp3 <= 990000) kind = 39;
-                        else if (temp3 <= 1980000) kind = 40;
-                        else if (temp3 <= 2970000) kind = 41;
-                        else if (temp3 <= 3960000) kind = 42;
-                        else if (temp3 <= 4950000) kind = 43;
-                        else if (temp3 <= 5940000) kind = 44;
-                        else if (temp3 <= 6930000) kind = 45;
-                        else if (temp3 <= 7920000) kind = 46;
-                        else if (temp3 <= 8910000) kind = 47;
-                        else if (temp3 <= 9900000) kind = 48;
-                        else if (temp3 <= 10890000) kind = 49;
-                        else if (temp3 <= 11880000) kind = 50;
-                        else kind = 51;
+                        if (temp3 <= 990000) kind = 40;
+                        else if (temp3 <= 1980000) kind = 41;
+                        else if (temp3 <= 2970000) kind = 42;
+                        else if (temp3 <= 3960000) kind = 43;
+                        else if (temp3 <= 4950000) kind = 44;
+                        else if (temp3 <= 5940000) kind = 45;
+                        else if (temp3 <= 6930000) kind = 46;
+                        else if (temp3 <= 7920000) kind = 47;
+                        else if (temp3 <= 8910000) kind = 48;
+                        else if (temp3 <= 9900000) kind = 49;
+                        else if (temp3 <= 10890000) kind = 50;
+                        else if (temp3 <= 11880000) kind = 51;
+                        else kind = 52;
                     }
                 }
                 else if (five_star_assurance_number <= 73 && four_star_assurance_number >= 10) {
@@ -863,11 +944,19 @@ int main() {
                         star = 4;
                         four_count = four_count + 1;
                         four_star_assurance_number = 0;
-                        if (temp2 <= 6435000 * (int)(10 * (unmet - threshold))) {
+                        if (four_star_guarantee_number == 1) {
+                            type = 1;
+                            if (temp3 <= 4290000) kind = 7;
+                            else if (temp3 <= 8580000) kind = 8;
+                            else kind = 9; 
+                            four_star_guarantee_number = 0;
+                            }
+                        else if (temp2 <= 6435000 * (int)(10 * (unmet - threshold))) {
                             type = 1;
                             if (temp3 <= 4290000) kind = 7;
                             else if (temp3 <= 8580000) kind = 8;
                             else kind = 9;
+                            four_star_guarantee_number = 0;
                         }
                         else if (temp2 <= 9652500) {
                             type = 2;
@@ -885,6 +974,7 @@ int main() {
                             else if (temp3 <= 10725000) kind = 19;
                             else if (temp3 <= 11797500) kind = 20;
                             else kind = 21;
+                            four_star_guarantee_number = 1;
                         }
                         else {
                             type = 3;
@@ -907,6 +997,7 @@ int main() {
                             else if (temp3 <= 11440000) kind = 37;
                             else if (temp3 <= 12155000) kind = 38;
                             else kind = 39;
+                            four_star_guarantee_number = 1;
                         }
                     }
                 }
@@ -935,11 +1026,19 @@ int main() {
                         star = 4;
                         four_count = four_count + 1;
                         four_star_assurance_number = 0;
-                        if (temp2 <= 6435000 * (int)(10 * (unmet - threshold))) {
+                        if (four_star_guarantee_number == 1) {
+                            type = 1;
+                            if (temp3 <= 4290000) kind = 7;
+                            else if (temp3 <= 8580000) kind = 8;
+                            else kind = 9; 
+                            four_star_guarantee_number = 0;
+                            }
+                        else if (temp2 <= 6435000 * (int)(10 * (unmet - threshold))) {
                             type = 1;
                             if (temp3 <= 4290000) kind = 7;
                             else if (temp3 <= 8580000) kind = 8;
                             else kind = 9;
+                            four_star_guarantee_number = 0;
                         }
                         else if (temp2 <= 9652500) {
                             type = 2;
@@ -957,6 +1056,7 @@ int main() {
                             else if (temp3 <= 10725000) kind = 19;
                             else if (temp3 <= 11797500) kind = 20;
                             else kind = 21;
+                            four_star_guarantee_number = 1;
                         }
                         else {
                             type = 3;
@@ -979,24 +1079,25 @@ int main() {
                             else if (temp3 <= 11440000) kind = 37;
                             else if (temp3 <= 12155000) kind = 38;
                             else kind = 39;
+                            four_star_guarantee_number = 1;
                         }
                     }
                     else {
                         star = 3;
                         type = 2;
-                        if (temp3 <= 990000) kind = 39;
-                        else if (temp3 <= 1980000) kind = 40;
-                        else if (temp3 <= 2970000) kind = 41;
-                        else if (temp3 <= 3960000) kind = 42;
-                        else if (temp3 <= 4950000) kind = 43;
-                        else if (temp3 <= 5940000) kind = 44;
-                        else if (temp3 <= 6930000) kind = 45;
-                        else if (temp3 <= 7920000) kind = 46;
-                        else if (temp3 <= 8910000) kind = 47;
-                        else if (temp3 <= 9900000) kind = 48;
-                        else if (temp3 <= 10890000) kind = 49;
-                        else if (temp3 <= 11880000) kind = 50;
-                        else kind = 51;
+                        if (temp3 <= 990000) kind = 40;
+                        else if (temp3 <= 1980000) kind = 41;
+                        else if (temp3 <= 2970000) kind = 42;
+                        else if (temp3 <= 3960000) kind = 43;
+                        else if (temp3 <= 4950000) kind = 44;
+                        else if (temp3 <= 5940000) kind = 45;
+                        else if (temp3 <= 6930000) kind = 46;
+                        else if (temp3 <= 7920000) kind = 47;
+                        else if (temp3 <= 8910000) kind = 48;
+                        else if (temp3 <= 9900000) kind = 49;
+                        else if (temp3 <= 10890000) kind = 50;
+                        else if (temp3 <= 11880000) kind = 51;
+                        else kind = 52;
                     }
                 }
                 else if (five_star_assurance_number <= 89 && five_star_assurance_number >= 74 && four_star_assurance_number == 9) {
@@ -1024,11 +1125,19 @@ int main() {
                         star = 4;
                         four_count = four_count + 1;
                         four_star_assurance_number = 0;
-                        if (temp2 <= 6435000 * (int)(10 * (unmet - threshold))) {
+                        if (four_star_guarantee_number == 1) {
+                            type = 1;
+                            if (temp3 <= 4290000) kind = 7;
+                            else if (temp3 <= 8580000) kind = 8;
+                            else kind = 9; 
+                            four_star_guarantee_number = 0;
+                            }
+                        else if (temp2 <= 6435000 * (int)(10 * (unmet - threshold))) {
                             type = 1;
                             if (temp3 <= 4290000) kind = 7;
                             else if (temp3 <= 8580000) kind = 8;
                             else kind = 9;
+                            four_star_guarantee_number = 0;
                         }
                         else if (temp2 <= 9652500) {
                             type = 2;
@@ -1046,6 +1155,7 @@ int main() {
                             else if (temp3 <= 10725000) kind = 19;
                             else if (temp3 <= 11797500) kind = 20;
                             else kind = 21;
+                            four_star_guarantee_number = 1;
                         }
                         else {
                             type = 3;
@@ -1068,24 +1178,25 @@ int main() {
                             else if (temp3 <= 11440000) kind = 37;
                             else if (temp3 <= 12155000) kind = 38;
                             else kind = 39;
+                            four_star_guarantee_number = 1;
                         }
                     }
                     else {
                         star = 3;
                         type = 2;
-                        if (temp3 <= 990000) kind = 39;
-                        else if (temp3 <= 1980000) kind = 40;
-                        else if (temp3 <= 2970000) kind = 41;
-                        else if (temp3 <= 3960000) kind = 42;
-                        else if (temp3 <= 4950000) kind = 43;
-                        else if (temp3 <= 5940000) kind = 44;
-                        else if (temp3 <= 6930000) kind = 45;
-                        else if (temp3 <= 7920000) kind = 46;
-                        else if (temp3 <= 8910000) kind = 47;
-                        else if (temp3 <= 9900000) kind = 48;
-                        else if (temp3 <= 10890000) kind = 49;
-                        else if (temp3 <= 11880000) kind = 50;
-                        else kind = 51;
+                        if (temp3 <= 990000) kind = 40;
+                        else if (temp3 <= 1980000) kind = 41;
+                        else if (temp3 <= 2970000) kind = 42;
+                        else if (temp3 <= 3960000) kind = 43;
+                        else if (temp3 <= 4950000) kind = 44;
+                        else if (temp3 <= 5940000) kind = 45;
+                        else if (temp3 <= 6930000) kind = 46;
+                        else if (temp3 <= 7920000) kind = 47;
+                        else if (temp3 <= 8910000) kind = 48;
+                        else if (temp3 <= 9900000) kind = 49;
+                        else if (temp3 <= 10890000) kind = 50;
+                        else if (temp3 <= 11880000) kind = 51;
+                        else kind = 52;
                     }
                 }
                 else if (five_star_assurance_number <= 89 && five_star_assurance_number >= 74 && four_star_assurance_number >= 10) {
@@ -1113,11 +1224,19 @@ int main() {
                         star = 4;
                         four_count = four_count + 1;
                         four_star_assurance_number = 0;
-                        if (temp2 <= 6435000 * (int)(10 * (unmet - threshold))) {
+                        if (four_star_guarantee_number == 1) {
+                            type = 1;
+                            if (temp3 <= 4290000) kind = 7;
+                            else if (temp3 <= 8580000) kind = 8;
+                            else kind = 9; 
+                            four_star_guarantee_number = 0;
+                            }
+                        else if (temp2 <= 6435000 * (int)(10 * (unmet - threshold))) {
                             type = 1;
                             if (temp3 <= 4290000) kind = 7;
                             else if (temp3 <= 8580000) kind = 8;
                             else kind = 9;
+                            four_star_guarantee_number = 0;
                         }
                         else if (temp2 <= 9652500) {
                             type = 2;
@@ -1135,6 +1254,7 @@ int main() {
                             else if (temp3 <= 10725000) kind = 19;
                             else if (temp3 <= 11797500) kind = 20;
                             else kind = 21;
+                            four_star_guarantee_number = 1;
                         }
                         else {
                             type = 3;
@@ -1157,6 +1277,7 @@ int main() {
                             else if (temp3 <= 11440000) kind = 37;
                             else if (temp3 <= 12155000) kind = 38;
                             else kind = 39;
+                            four_star_guarantee_number = 1;
                         }
                     }
                 }
