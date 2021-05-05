@@ -28,6 +28,7 @@ int main() {
     int unmet_count = 0;
     int is_noelle = 1;
     enter_chosen_banner:
+    chosen_banner = 0;
     std::cout << "Choose Your Wishes (Banners):" << endl;
     std::cout << "-1: Quit; 1: Character Event Wish; 2: Weapon Event Wish; 3: Permanent Wish; 4: Novice Wish;" << endl << endl;
     std::cin >> chosen_banner;
@@ -35,6 +36,7 @@ int main() {
         case -1: goto full_quit;
         case 1: {
             enter_chosen_event_1:
+            chosen_event = 0;
             std::cout << endl << "Choose Your Events:" << endl
                 << "-1: Re-choose Wishes (Banners)" << endl
                 << "1: Ballad in Goblets/20200928-20201018 (Venti, Barbara, Fischl, Xiangling)" << endl
@@ -55,6 +57,7 @@ int main() {
         } break;
         case 2: {
             enter_chosen_event_2:
+            chosen_event = 0;
             std::cout << endl << "Choose Your Events:" << endl
                 << "-1: Re-choose Wishes (Banners)" << endl
                 << "1: Epitome Invocation/20200928-20201018 (Aquila Favonia, Amos' Bow, The Flute, The Bell, The Widsith, The Stringless, Favonius Lance)" << endl
@@ -74,6 +77,7 @@ int main() {
         } break;
         case 3: {
             enter_chosen_event_3:
+            chosen_event = 0;
             std::cout << endl << "Choose Your Events:" << endl
                 << "-1: Re-choose Wishes (Banners)" << endl
                 << "1: Wanderlust Invocation/20200928-20201222 (Released)" << endl
@@ -85,6 +89,7 @@ int main() {
         } break;
         case 4: {
             enter_chosen_event_4:
+            chosen_event = 0;
             std::cout << endl << "Choose Your Events:" << endl
                 << "-1: Re-choose Wishes (Banners)" << endl 
                 << "1: Beginners' wish" << endl << endl;
