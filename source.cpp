@@ -748,15 +748,15 @@ int main() {
                         }
                         else {
                             type = 2;
-                            if (temp3 <= 1287000) kind = 6;
+                            if (temp3 <= ULTRAPOS/10) kind = 6;
                             else if (temp3 <= ULTRAPOS/5) kind = 7;
-                            else if (temp3 <= 3861000) kind = 8;
+                            else if (temp3 <= ULTRAPOS/10 * 3) kind = 8;
                             else if (temp3 <= ULTRAPOS/5 * 2) kind = 9;
                             else if (temp3 <= ULTRAPOS/2) kind = 10;
                             else if (temp3 <= ULTRAPOS/5 * 3) kind = 11;
-                            else if (temp3 <= 9009000) kind = 12;
+                            else if (temp3 <= ULTRAPOS/10 * 7) kind = 12;
                             else if (temp3 <= ULTRAPOS/5 * 4) kind = 13;
-                            else if (temp3 <= 11583000) kind = 14;
+                            else if (temp3 <= ULTRAPOS/10 * 9) kind = 14;
                             else kind = 15;
                         }
                     }
