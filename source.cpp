@@ -8,6 +8,8 @@
 using namespace std;
 
 int main() {
+    std::cout << "WELCOME TO GENSHIN IMPACT WISH SIMULATOR CLI" << endl << endl;
+    while ( 1 ) {
     int chosen_banner = 0;
     int chosen_event = 0;
     int wishes_number = 0;
@@ -16,14 +18,25 @@ int main() {
     int five_star_guarantee_number = 0;
     int four_star_guarantee_number = 0;
     int quit = 1;
-    std::cout << "WELCOME TO GENSHIN IMPACT WISH SIMULATOR CLI" << endl << endl;
+    unsigned int seed = (unsigned int) std::chrono::system_clock::now().time_since_epoch().count();
+    std::mt19937 generator(seed);
+    int count = 0;
+    int five_count = 0;
+    int four_count = 0;
+    int threshold = 17;
+    double unmet = 17.1;
+    int unmet_count = 0;
+    int is_noelle = 1;
+    enter_chosen_banner:
     std::cout << "Choose Your Wishes (Banners):" << endl;
     std::cout << "-1: Quit; 1: Character Event Wish; 2: Weapon Event Wish; 3: Permanent Wish; 4: Novice Wish;" << endl << endl;
     std::cin >> chosen_banner;
     switch (chosen_banner) {
-    case -1: break;
+        case -1: goto full_quit;
         case 1: {
+            enter_chosen_event_1:
             std::cout << endl << "Choose Your Events:" << endl
+                << "-1: Re-choose Wishes (Banners)" << endl
                 << "1: Ballad in Goblets/20200928-20201018 (Venti, Barbara, Fischl, Xiangling)" << endl
                 << "2: Sparkling Steps/20201020-20201110 (Klee, Xingqiu, Noelle, Sucrose)" << endl
                 << "3: Farewell of Snezhnaya/20201111-20201201 (Tartaglia, Diona, Beidou, Ningguang)" << endl
@@ -37,10 +50,13 @@ int main() {
                 << "11: Farewell of Snezhnaya/20210406-20210427 (Tartaglia, Rosaria, Barbara, Fischl)" << endl 
                 << "12: Gentry of Hermitage/20210428-20210518 (Zhongli, Yanfei, Noelle, Diona)" << endl << endl;
             std::cin >> chosen_event;
-            if (chosen_event > 0 && chosen_event < 13 && chosen_event == (int) chosen_event) quit = 0; else std::cout << endl << "Invalid event!" << endl;
+            if (chosen_event == -1) {chosen_event = 0; std::cout << endl; goto enter_chosen_banner;}
+            if (chosen_event > 0 && chosen_event < 13 && chosen_event == (int) chosen_event) quit = 0; else {std::cout << endl << "Invalid event!" << endl << endl; goto enter_chosen_event_1;}
         } break;
         case 2: {
+            enter_chosen_event_2:
             std::cout << endl << "Choose Your Events:" << endl
+                << "-1: Re-choose Wishes (Banners)" << endl
                 << "1: Epitome Invocation/20200928-20201018 (Aquila Favonia, Amos' Bow, The Flute, The Bell, The Widsith, The Stringless, Favonius Lance)" << endl
                 << "2: Epitome Invocation/20201020-20201109 (Lost Prayer to the Sacred Winds, Wolf's Gravestone, Sacrificial Sword, Sacrificial Bow, Sacrificial Greatsword, Sacrificial Fragments, Dragon's Bane)" << endl
                 << "3: Epitome Invocation/20201111-20201201 (Memory of Dust, Skyward Harp, Rainslasher, Eye of Perception, Rust, Favonius Lance)" << endl
@@ -53,30 +69,32 @@ int main() {
                 << "10: Epitome Invocation/20210406-20210427 (Skyward Harp, Lost Prayer to the Sacred Winds, Alley Hunter, Favonius Sword, Sacrificial Greatsword, Favonius Codex, Favonius Lance)" << endl 
                 << "11: Epitome Invocation/20210428-20210518 (Summit Shaper, Memory of Dust, The Flute, Lithic Blade, Lithic Spear, Eye of Perception, Sacrificial Bow)" << endl << endl;
             std::cin >> chosen_event;
-            if (chosen_event > 0 && chosen_event < 12 && chosen_event == (int) chosen_event) quit = 0; else std::cout << endl << "Invalid event!" << endl;
+            if (chosen_event == -1) {chosen_event = 0; std::cout << endl; goto enter_chosen_banner;}
+            if (chosen_event > 0 && chosen_event < 12 && chosen_event == (int) chosen_event) quit = 0; else {std::cout << endl << "Invalid event!" << endl << endl; goto enter_chosen_event_2;}
         } break;
         case 3: {
+            enter_chosen_event_3:
             std::cout << endl << "Choose Your Events:" << endl
+                << "-1: Re-choose Wishes (Banners)" << endl
                 << "1: Wanderlust Invocation/20200928-20201222 (Released)" << endl
                 << "2: Wanderlust Invocation/20201223-20210427 (Adds Diona and Xinyan)" << endl 
                 << "3: Wanderlust Invocation/20210428- (Adds Rosaria)" << endl << endl;
             std::cin >> chosen_event;
-            if (chosen_event > 0 && chosen_event < 4 && chosen_event == (int) chosen_event) quit = 0; else std::cout << endl << "Invalid event!" << endl;
+            if (chosen_event == -1) {chosen_event = 0; std::cout << endl; goto enter_chosen_banner;}
+            if (chosen_event > 0 && chosen_event < 4 && chosen_event == (int) chosen_event) quit = 0; else {std::cout << endl << "Invalid event!" << endl << endl; goto enter_chosen_event_3;}
         } break;
-        case 4: {chosen_event = 1; quit = 0;} break;
-        default: {chosen_banner = 0; chosen_event = 0; quit = 1; std::cout << "Invalid banner!" << endl;}
+        case 4: {
+            enter_chosen_event_4:
+            std::cout << endl << "Choose Your Events:" << endl
+                << "-1: Re-choose Wishes (Banners)" << endl 
+                << "1: Beginners' wish" << endl << endl;
+            std::cin >> chosen_event; quit = 0;} break;
+            if (chosen_event == -1) {chosen_event = 0; std::cout << endl; goto enter_chosen_banner;}
+            if (chosen_event == 1 && chosen_event == (int) chosen_event) quit = 0; else {std::cout << endl << "Invalid event!" << endl << endl; goto enter_chosen_event_4;}
+        default: {chosen_banner = 0; chosen_event = 0; quit = 1; std::cout << "Invalid banner!" << endl << endl; goto enter_chosen_banner;}
     }
-    unsigned int seed = (unsigned int) std::chrono::system_clock::now().time_since_epoch().count();
-    std::mt19937 generator(seed);
-    int count = 0;
-    int five_count = 0;
-    int four_count = 0;
-    int threshold = 17;
-    double unmet = 17.1;
-    int unmet_count = 0;
-    int is_noelle = 1;
     while (wishes_number >= 0) {
-        if (quit == 1) break;
+        if (quit == 1) goto full_quit;
         enter_wishes_number:
         std::cout << endl << "How many wishes? -1: Quit; 1: 1 Wish; 10: 10 Wishes" << endl << endl;
         std::cin >> wishes_number;
@@ -3446,6 +3464,8 @@ int main() {
             << "5-stars:   " << five_count << "  " << five_count * 100.0 / count << "%" << endl
             << "4-stars:   " << four_count << "  " << four_count * 100.0 / count << "%" << endl << endl;
         if (chosen_banner == 4 && chosen_event == 1 && count == 20) goto full_quit;
+    }
+    if( wishes_number <= 0 ) {goto full_quit;}
     }
     full_quit:
     int prepause = getchar();
