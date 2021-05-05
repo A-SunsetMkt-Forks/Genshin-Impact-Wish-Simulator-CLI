@@ -51,9 +51,9 @@ int main() {
                 << "8: Epitome Invocation/20210223-20210316 (Staff of Homa, Lithic Blade, Lithic Spear, Wolf's Gravestone, Sacrificial Bow, The Widsith, Lion's Roar)" << endl
                 << "9: Epitome Invocation/20210317-20210406 (Elegy for the End, Skyward Blade, The Alley Flash, Wine and Song, Favonius Greatsword, Favonius Warbow, Dragon's Bane)" << endl
                 << "10: Epitome Invocation/20210406-20210427 (Skyward Harp, Lost Prayer to the Sacred Winds, Alley Hunter, Favonius Sword, Sacrificial Greatsword, Favonius Codex, Favonius Lance)" << endl 
-                << "10: Epitome Invocation/20210428-20210518 (Summit Shaper, Memory of Dust, The Flute, Lithic Blade, Lithic Spear, Eye of Perception, Sacrificial Bow)" << endl << endl;
+                << "11: Epitome Invocation/20210428-20210518 (Summit Shaper, Memory of Dust, The Flute, Lithic Blade, Lithic Spear, Eye of Perception, Sacrificial Bow)" << endl << endl;
             std::cin >> chosen_event;
-            if (chosen_event > 0 && chosen_event < 11 && chosen_event == (int) chosen_event) quit = 0; else std::cout << endl << "Invalid event!" << endl;
+            if (chosen_event > 0 && chosen_event < 12 && chosen_event == (int) chosen_event) quit = 0; else std::cout << endl << "Invalid event!" << endl;
         } break;
         case 3: {
             std::cout << endl << "Choose Your Events:" << endl
@@ -61,7 +61,7 @@ int main() {
                 << "2: Wanderlust Invocation/20201223-20210427 (Adds Diona and Xinyan)" << endl 
                 << "3: Wanderlust Invocation/20210428- (Adds Rosaria)" << endl << endl;
             std::cin >> chosen_event;
-            if (chosen_event > 0 && chosen_event < 3 && chosen_event == (int) chosen_event) quit = 0; else std::cout << endl << "Invalid event!" << endl;
+            if (chosen_event > 0 && chosen_event < 4 && chosen_event == (int) chosen_event) quit = 0; else std::cout << endl << "Invalid event!" << endl;
         } break;
         case 4: chosen_event = 1; break;
         default: {chosen_banner = 0; chosen_event = 0; quit = 1; std::cout << "Invalid banner!" << endl;}
