@@ -63,7 +63,7 @@ int main() {
             std::cin >> chosen_event;
             if (chosen_event > 0 && chosen_event < 4 && chosen_event == (int) chosen_event) quit = 0; else std::cout << endl << "Invalid event!" << endl;
         } break;
-        case 4: chosen_event = 1; break;
+        case 4: {chosen_event = 1; quit = 0;} break;
         default: {chosen_banner = 0; chosen_event = 0; quit = 1; std::cout << "Invalid banner!" << endl;}
     }
     unsigned int seed = (unsigned int) std::chrono::system_clock::now().time_since_epoch().count();
