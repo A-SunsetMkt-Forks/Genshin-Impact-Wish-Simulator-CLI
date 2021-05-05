@@ -96,7 +96,7 @@ int main() {
     while (wishes_number >= 0) {
         if (quit == 1) goto full_quit;
         enter_wishes_number:
-        std::cout << endl << "How many wishes? -1: Quit; 1: 1 Wish; 10: 10 Wishes" << endl << endl;
+        std::cout << endl << "How many wishes? -1: Re-choose_banner; 1: 1 Wish; 10: 10 Wishes" << endl << endl;
         std::cin >> wishes_number;
         std::cout << endl;
         if (chosen_banner == 4 && chosen_event == 1 && wishes_number == -1) { wishes_number = 0; goto full_quit; }
@@ -3465,7 +3465,6 @@ int main() {
             << "4-stars:   " << four_count << "  " << four_count * 100.0 / count << "%" << endl << endl;
         if (chosen_banner == 4 && chosen_event == 1 && count == 20) goto full_quit;
     }
-    if( wishes_number <= 0 ) {goto full_quit;}
     }
     full_quit:
     int prepause = getchar();
