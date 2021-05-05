@@ -21,7 +21,7 @@ int main() {
     std::cout << "-1: Quit; 1: Character Event Wish; 2: Weapon Event Wish; 3: Permanent Wish; 4: Novice Wish;" << endl << endl;
     std::cin >> chosen_banner;
     switch (chosen_banner) {
-        case -1: break;
+    case -1: break;
         case 1: {
             std::cout << endl << "Choose Your Events:" << endl
                 << "1: Ballad in Goblets/20200928-20201018 (Venti, Barbara, Fischl, Xiangling)" << endl
@@ -74,12 +74,16 @@ int main() {
     int threshold = 17;
     double unmet = 17.1;
     int unmet_count = 0;
+    int is_noelle = 1;
     while (wishes_number >= 0) {
         if (quit == 1) break;
+        enter_wishes_number:
         std::cout << endl << "How many wishes? -1: Quit; 1: 1 Wish; 10: 10 Wishes" << endl << endl;
         std::cin >> wishes_number;
         std::cout << endl;
-        //if (!(wishes_number == -1||wishes_number == 10||wishes_number == 1)){std::cout << "Invalid number of wishes!" << endl;wishes_number = 0;}
+        if (chosen_banner == 4 && chosen_event == 1 && wishes_number == -1) { wishes_number = 0; goto full_quit; }
+        if (chosen_banner == 4 && chosen_event == 1 && wishes_number != 10) { wishes_number = 0; std::cout << "Invalid number of wishes!" << endl; goto enter_wishes_number; }
+        if (!(wishes_number == -1||wishes_number == 10||wishes_number == 1)){ wishes_number = 0; std::cout << "Invalid number of wishes!" << endl; goto enter_wishes_number; }
         if (chosen_banner == 1 && chosen_event == 11) {
             while (wishes_number > 0) {
                 long int temp1 = generator() % ULTRAPOS + 1;
@@ -3266,7 +3270,15 @@ int main() {
                 int type = 0; //Up or non-up, character or weapon
                 int kind = 0; //which exactly
                 if (unmet_count > threshold) unmet = (double)unmet_count;
-                if (four_star_assurance_number <= 8) {
+                if (is_noelle == 1 && count == 9) {
+                    star = 4;
+                    four_count = four_count + 1;
+                    four_star_assurance_number = 0;
+                    type = 1;
+                    kind = 8;
+                    is_noelle = 0;
+                }
+                else if (four_star_assurance_number <= 8) {
                     if (temp1 <= ULTRAPOS/1000 * 6) {
                         star = 5;
                         five_count = five_count + 1;
@@ -3277,40 +3289,41 @@ int main() {
                         else if (temp3 <= ULTRAPOS/5 * 4) kind = 4;
                         else kind = 5;
                     }
-                    else if (temp1 <= ULTRAPOS/1000 * 57) {
+                    else if (temp1 <= ULTRAPOS / 1000 * 57) {
                         star = 4;
                         four_count = four_count + 1;
                         four_star_assurance_number = 0;
-                            type = 1;
-                            unmet_count = 0;
-                            unmet = (double)17.1;
-                            if (temp3 <= ULTRAPOS/10) kind = 6;
-                            else if (temp3 <= ULTRAPOS/5) kind = 7;
-                            else if (temp3 <= ULTRAPOS/10 * 3) kind = 8;
-                            else if (temp3 <= ULTRAPOS/5 * 2) kind = 9;
-                            else if (temp3 <= ULTRAPOS/2) kind = 10;
-                            else if (temp3 <= ULTRAPOS/5 * 3) kind = 11;
-                            else if (temp3 <= ULTRAPOS/10 * 7) kind = 12;
-                            else if (temp3 <= ULTRAPOS/5 * 4) kind = 13;
-                            else if (temp3 <= ULTRAPOS/10 * 9) kind = 14;
-                            else kind = 15;
+                        type = 1;
+                        unmet_count = 0;
+                        unmet = (double)17.1;
+                        if (temp3 <= ULTRAPOS / 11) kind = 6;
+                        else if (temp3 <= ULTRAPOS / 11 * 2) kind = 7;
+                        else if (temp3 <= ULTRAPOS / 11 * 3) { kind = 8; is_noelle = 0;}
+                        else if (temp3 <= ULTRAPOS / 11 * 4) kind = 9;
+                        else if (temp3 <= ULTRAPOS / 11 * 5) kind = 10;
+                        else if (temp3 <= ULTRAPOS / 11 * 6) kind = 11;
+                        else if (temp3 <= ULTRAPOS / 11 * 7) kind = 12;
+                        else if (temp3 <= ULTRAPOS / 11 * 8) kind = 13;
+                        else if (temp3 <= ULTRAPOS / 11 * 9) kind = 14;
+                        else if (temp3 <= ULTRAPOS / 11 * 10) kind = 15;
+                        else kind = 16;
                     }
                     else {
                         star = 3;
                         type = 2;
-                        if (temp3 <= ULTRAPOS/13) kind = 16;
-                        else if (temp3 <= ULTRAPOS/13 * 2) kind = 17;
-                        else if (temp3 <= ULTRAPOS/13 * 3) kind = 18;
-                        else if (temp3 <= ULTRAPOS/13 * 4) kind = 19;
-                        else if (temp3 <= ULTRAPOS/13 * 5) kind = 20;
-                        else if (temp3 <= ULTRAPOS/13 * 6) kind = 21;
-                        else if (temp3 <= ULTRAPOS/13 * 7) kind = 22;
-                        else if (temp3 <= ULTRAPOS/13 * 8) kind = 23;
-                        else if (temp3 <= ULTRAPOS/13 * 9) kind = 24;
-                        else if (temp3 <= ULTRAPOS/13 * 10) kind = 25;
-                        else if (temp3 <= ULTRAPOS/13 * 11) kind = 26;
-                        else if (temp3 <= ULTRAPOS/13 * 12) kind = 27;
-                        else kind = 28;
+                        if (temp3 <= ULTRAPOS/13) kind = 17;
+                        else if (temp3 <= ULTRAPOS/13 * 2) kind = 18;
+                        else if (temp3 <= ULTRAPOS/13 * 3) kind = 19;
+                        else if (temp3 <= ULTRAPOS/13 * 4) kind = 20;
+                        else if (temp3 <= ULTRAPOS/13 * 5) kind = 21;
+                        else if (temp3 <= ULTRAPOS/13 * 6) kind = 22;
+                        else if (temp3 <= ULTRAPOS/13 * 7) kind = 23;
+                        else if (temp3 <= ULTRAPOS/13 * 8) kind = 24;
+                        else if (temp3 <= ULTRAPOS/13 * 9) kind = 25;
+                        else if (temp3 <= ULTRAPOS/13 * 10) kind = 26;
+                        else if (temp3 <= ULTRAPOS/13 * 11) kind = 27;
+                        else if (temp3 <= ULTRAPOS/13 * 12) kind = 28;
+                        else kind = 29;
                     }
                 }
                 else if (four_star_assurance_number == 9) {
@@ -3331,33 +3344,34 @@ int main() {
                             type = 1;
                             unmet_count = 0;
                             unmet = (double)17.1;
-                            if (temp3 <= ULTRAPOS/10) kind = 6;
-                            else if (temp3 <= ULTRAPOS/5) kind = 7;
-                            else if (temp3 <= ULTRAPOS/10 * 3) kind = 8;
-                            else if (temp3 <= ULTRAPOS/5 * 2) kind = 9;
-                            else if (temp3 <= ULTRAPOS/2) kind = 10;
-                            else if (temp3 <= ULTRAPOS/5 * 3) kind = 11;
-                            else if (temp3 <= ULTRAPOS/10 * 7) kind = 12;
-                            else if (temp3 <= ULTRAPOS/5 * 4) kind = 13;
-                            else if (temp3 <= ULTRAPOS/10 * 9) kind = 14;
-                            else kind = 15;
+                            if (temp3 <= ULTRAPOS / 11) kind = 6;
+                            else if (temp3 <= ULTRAPOS / 11 * 2) kind = 7;
+                            else if (temp3 <= ULTRAPOS / 11 * 3) { kind = 8; is_noelle = 0; }
+                            else if (temp3 <= ULTRAPOS / 11 * 4) kind = 9;
+                            else if (temp3 <= ULTRAPOS / 11 * 5) kind = 10;
+                            else if (temp3 <= ULTRAPOS / 11 * 6) kind = 11;
+                            else if (temp3 <= ULTRAPOS / 11 * 7) kind = 12;
+                            else if (temp3 <= ULTRAPOS / 11 * 8) kind = 13;
+                            else if (temp3 <= ULTRAPOS / 11 * 9) kind = 14;
+                            else if (temp3 <= ULTRAPOS / 11 * 10) kind = 15;
+                            else kind = 16;
                     }
                     else {
                         star = 3;
                         type = 2;
-                        if (temp3 <= ULTRAPOS/13) kind = 48;
-                        else if (temp3 <= ULTRAPOS/13 * 2) kind = 49;
-                        else if (temp3 <= ULTRAPOS/13 * 3) kind = 50;
-                        else if (temp3 <= ULTRAPOS/13 * 4) kind = 51;
-                        else if (temp3 <= ULTRAPOS/13 * 5) kind = 52;
-                        else if (temp3 <= ULTRAPOS/13 * 6) kind = 53;
-                        else if (temp3 <= ULTRAPOS/13 * 7) kind = 54;
-                        else if (temp3 <= ULTRAPOS/13 * 8) kind = 55;
-                        else if (temp3 <= ULTRAPOS/13 * 9) kind = 56;
-                        else if (temp3 <= ULTRAPOS/13 * 10) kind = 57;
-                        else if (temp3 <= ULTRAPOS/13 * 11) kind = 58;
-                        else if (temp3 <= ULTRAPOS/13 * 12) kind = 59;
-                        else kind = 60;
+                        if (temp3 <= ULTRAPOS / 13) kind = 17;
+                        else if (temp3 <= ULTRAPOS / 13 * 2) kind = 18;
+                        else if (temp3 <= ULTRAPOS / 13 * 3) kind = 19;
+                        else if (temp3 <= ULTRAPOS / 13 * 4) kind = 20;
+                        else if (temp3 <= ULTRAPOS / 13 * 5) kind = 21;
+                        else if (temp3 <= ULTRAPOS / 13 * 6) kind = 22;
+                        else if (temp3 <= ULTRAPOS / 13 * 7) kind = 23;
+                        else if (temp3 <= ULTRAPOS / 13 * 8) kind = 24;
+                        else if (temp3 <= ULTRAPOS / 13 * 9) kind = 25;
+                        else if (temp3 <= ULTRAPOS / 13 * 10) kind = 26;
+                        else if (temp3 <= ULTRAPOS / 13 * 11) kind = 27;
+                        else if (temp3 <= ULTRAPOS / 13 * 12) kind = 28;
+                        else kind = 29;
                     }
                 }
                 else {
@@ -3378,16 +3392,17 @@ int main() {
                             type = 1;
                             unmet_count = 0;
                             unmet = (double)17.1;
-                            if (temp3 <= ULTRAPOS/10) kind = 6;
-                            else if (temp3 <= ULTRAPOS/5) kind = 7;
-                            else if (temp3 <= ULTRAPOS/10 * 3) kind = 8;
-                            else if (temp3 <= ULTRAPOS/5 * 2) kind = 9;
-                            else if (temp3 <= ULTRAPOS/2) kind = 10;
-                            else if (temp3 <= ULTRAPOS/5 * 3) kind = 11;
-                            else if (temp3 <= ULTRAPOS/10 * 7) kind = 12;
-                            else if (temp3 <= ULTRAPOS/5 * 4) kind = 13;
-                            else if (temp3 <= ULTRAPOS/10 * 9) kind = 14;
-                            else kind = 15;
+                            if (temp3 <= ULTRAPOS / 11) kind = 6;
+                            else if (temp3 <= ULTRAPOS / 11 * 2) kind = 7;
+                            else if (temp3 <= ULTRAPOS / 11 * 3) { kind = 8; is_noelle = 0; }
+                            else if (temp3 <= ULTRAPOS / 11 * 4) kind = 9;
+                            else if (temp3 <= ULTRAPOS / 11 * 5) kind = 10;
+                            else if (temp3 <= ULTRAPOS / 11 * 6) kind = 11;
+                            else if (temp3 <= ULTRAPOS / 11 * 7) kind = 12;
+                            else if (temp3 <= ULTRAPOS / 11 * 8) kind = 13;
+                            else if (temp3 <= ULTRAPOS / 11 * 9) kind = 14;
+                            else if (temp3 <= ULTRAPOS / 11 * 10) kind = 15;
+                            else kind = 16;
                     }
                 }
                 std::cout << count + 1 << " ";
@@ -3397,72 +3412,42 @@ int main() {
                 case 3: std::cout << "!!!!!*****Qiqi" << endl; break;
                 case 4: std::cout << "!!!!!*****Diluc" << endl; break;
                 case 5: std::cout << "!!!!!*****Jean" << endl; break;
-                case 6: std::cout << "!!!!!*****Amos' Bow" << endl; break;
-                case 7: std::cout << "!!!!!*****Skyward Harp" << endl; break;
-                case 8: std::cout << "!!!!!*****Lost Prayer to the Sacred Winds" << endl; break;
-                case 9: std::cout << "!!!!!*****Skyward Atlas" << endl; break;
-                case 10: std::cout << "!!!!!*****Primordial Jade Winged-Spear" << endl; break;
-                case 11: std::cout << "!!!!!*****Skyward Spine" << endl; break;
-                case 12: std::cout << "!!!!!*****Wolf's Gravestone" << endl; break;
-                case 13: std::cout << "!!!!!*****Skyward Pride" << endl; break;
-                case 14: std::cout << "!!!!!*****Skyward Blade" << endl; break;
-                case 15: std::cout << "!!!!!*****Aquila Favonia" << endl; break;
-                case 16: std::cout << "!!****Sucrose" << endl; break;
-                case 17: std::cout << "!!****Chongyun" << endl; break;
-                case 18: std::cout << "!!****Noelle" << endl; break;
-                case 19: std::cout << "!!****Bennett" << endl; break;
-                case 20: std::cout << "!!****Fischl" << endl; break;
-                case 21: std::cout << "!!****Ningguang" << endl; break;
-                case 22: std::cout << "!!****Xingqiu" << endl; break;
-                case 23: std::cout << "!!****Beidou" << endl; break;
-                case 24: std::cout << "!!****Xiangling" << endl; break;
-                case 25: std::cout << "!!****Amber" << endl; break;
-                case 26: std::cout << "!!****Razor" << endl; break;
-                case 27: std::cout << "!!****Kaeya" << endl; break;
-                case 28: std::cout << "!!****Barbara" << endl; break;
-                case 29: std::cout << "!!****Lisa" << endl; break;
-                case 30: std::cout << "!!****Rust" << endl; break;
-                case 31: std::cout << "!!****Sacrificial Bow" << endl; break;
-                case 32: std::cout << "!!****The Stringless" << endl; break;
-                case 33: std::cout << "!!****Favonius Warbow" << endl; break;
-                case 34: std::cout << "!!****Eye of Perception" << endl; break;
-                case 35: std::cout << "!!****Sacrificial Fragments" << endl; break;
-                case 36: std::cout << "!!****The Widsith" << endl; break;
-                case 37: std::cout << "!!****Favonius Codex" << endl; break;
-                case 38: std::cout << "!!****Favonius Lance" << endl; break;
-                case 39: std::cout << "!!****Dragon's Bane" << endl; break;
-                case 40: std::cout << "!!****Rainslasher" << endl; break;
-                case 41: std::cout << "!!****Sacrificial Greatsword" << endl; break;
-                case 42: std::cout << "!!****The Bell" << endl; break;
-                case 43: std::cout << "!!****Favonius Greatsword" << endl; break;
-                case 44: std::cout << "!!****Lion's Roar" << endl; break;
-                case 45: std::cout << "!!****Sacrificial Sword" << endl; break;
-                case 46: std::cout << "!!****The Flute" << endl; break;
-                case 47: std::cout << "!!****Favonius Sword" << endl; break;
-                case 48: std::cout << "***Slingshot" << endl; break;
-                case 49: std::cout << "***Sharpshooter's Oath" << endl; break;
-                case 50: std::cout << "***Raven Bow" << endl; break;
-                case 51: std::cout << "***Emerald Orb" << endl; break;
-                case 52: std::cout << "***Thrilling Tales of Dragon Slayers" << endl; break;
-                case 53: std::cout << "***Magic Guide" << endl; break;
-                case 54: std::cout << "***Black Tassel" << endl; break;
-                case 55: std::cout << "***Debate Club" << endl; break;
-                case 56: std::cout << "***Bloodtainted Greatsword" << endl; break;
-                case 57: std::cout << "***Ferrous Shadow" << endl; break;
-                case 58: std::cout << "***Skyrider Sword" << endl; break;
-                case 59: std::cout << "***Harbinger of Dawn" << endl; break;
-                case 60: std::cout << "***Cool Steel" << endl; break;
+                case 6: std::cout << "!!****Sucrose" << endl; break;
+                case 7: std::cout << "!!****Chongyun" << endl; break;
+                case 8: std::cout << "!!****Noelle" << endl; break;
+                case 9: std::cout << "!!****Bennett" << endl; break;
+                case 10: std::cout << "!!****Fischl" << endl; break;
+                case 11: std::cout << "!!****Ningguang" << endl; break;
+                case 12: std::cout << "!!****Xingqiu" << endl; break;
+                case 13: std::cout << "!!****Beidou" << endl; break;
+                case 14: std::cout << "!!****Xiangling" << endl; break;
+                case 15: std::cout << "!!****Razor" << endl; break;
+                case 16: std::cout << "!!****Barbara" << endl; break;
+                case 17: std::cout << "***Slingshot" << endl; break;
+                case 18: std::cout << "***Sharpshooter's Oath" << endl; break;
+                case 19: std::cout << "***Raven Bow" << endl; break;
+                case 20: std::cout << "***Emerald Orb" << endl; break;
+                case 21: std::cout << "***Thrilling Tales of Dragon Slayers" << endl; break;
+                case 22: std::cout << "***Magic Guide" << endl; break;
+                case 23: std::cout << "***Black Tassel" << endl; break;
+                case 24: std::cout << "***Debate Club" << endl; break;
+                case 25: std::cout << "***Bloodtainted Greatsword" << endl; break;
+                case 26: std::cout << "***Ferrous Shadow" << endl; break;
+                case 27: std::cout << "***Skyrider Sword" << endl; break;
+                case 28: std::cout << "***Harbinger of Dawn" << endl; break;
+                case 29: std::cout << "***Cool Steel" << endl; break;
                 }
                 wishes_number = wishes_number - 1;
                 count = count + 1;
-                five_star_assurance_number = five_star_assurance_number + 1;
                 four_star_assurance_number = four_star_assurance_number + 1;
             }
         }
         if (wishes_number >= 0) std::cout << endl << "You have pulled " << count << " wishes." << endl
             << "5-stars:   " << five_count << "  " << five_count * 100.0 / count << "%" << endl
             << "4-stars:   " << four_count << "  " << four_count * 100.0 / count << "%" << endl << endl;
+        if (chosen_banner == 4 && chosen_event == 1 && count == 20) goto full_quit;
     }
+    full_quit:
     int prepause = getchar();
     int pause = getchar();
 }
