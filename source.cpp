@@ -691,7 +691,7 @@ int main() {
                         else kind = 6;
                     }
                 }
-                std::cout << count + 1 << " ";
+                std::cout << count + 1 << "(" << five_star_assurance_number << ")" << " ";
                 switch (kind) {
                 case 1: std::cout << "!!!!!*****Tartaglia" << endl; break;
                 case 2: std::cout << "!!!!!*****Jean" << endl; break;
@@ -1340,7 +1340,7 @@ int main() {
                         else kind = 6;
                     }
                 }
-                std::cout << count + 1 << " ";
+                std::cout << count + 1 << "(" << five_star_assurance_number << ")" << " ";
                 switch (kind) {
                 case 1: std::cout << "!!!!!*****Zhongli" << endl; break;
                 case 2: std::cout << "!!!!!*****Jean" << endl; break;
@@ -1948,7 +1948,7 @@ int main() {
                             else kind = 15;
                         }
                 }
-                std::cout << count + 1 << " ";
+                std::cout << count + 1 << "(" << five_star_assurance_number << ")" << " ";
                 switch (kind) {
                 case 1: std::cout << "!!!!!*****Keqing" << endl; break;
                 case 2: std::cout << "!!!!!*****Mona" << endl; break;
@@ -2576,7 +2576,7 @@ int main() {
                             else kind = 15;
                         }
                 }
-                std::cout << count + 1 << " ";
+                std::cout << count + 1 << "(" << five_star_assurance_number << ")" << " ";
                 switch (kind) {
                 case 1: std::cout << "!!!!!*****Keqing" << endl; break;
                 case 2: std::cout << "!!!!!*****Mona" << endl; break;
@@ -3212,7 +3212,7 @@ int main() {
                             else kind = 15;
                         }
                 }
-                std::cout << count + 1 << " ";
+                std::cout << count + 1 << "(" << five_star_assurance_number << ")" << " ";
                 switch (kind) {
                 case 1: std::cout << "!!!!!*****Keqing" << endl; break;
                 case 2: std::cout << "!!!!!*****Mona" << endl; break;
@@ -3428,7 +3428,7 @@ int main() {
                             else kind = 16;
                     }
                 }
-                std::cout << count + 1 << " ";
+                std::cout << count + 1 << "(" << five_star_assurance_number << ")" << " ";
                 switch (kind) {
                 case 1: std::cout << "!!!!!*****Keqing" << endl; break;
                 case 2: std::cout << "!!!!!*****Mona" << endl; break;
