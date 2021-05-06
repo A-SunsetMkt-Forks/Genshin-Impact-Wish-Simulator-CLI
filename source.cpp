@@ -121,20 +121,20 @@ int main() {
                         star = 5;
                         five_count = five_count + 1;
                         five_star_assurance_number = 0;
-                        if (five_star_guarantee_number == 1) { type = 1; kind = 1; five_star_guarantee_number = 0;}
+                        if (five_star_guarantee_number == 1) { type = 1; kind = 66; five_star_guarantee_number = 0;}
                         else if (temp2 <= ULTRAPOS/2) {
                             type = 1;
-                            kind = 1;
+                            kind = 66;
                             five_star_guarantee_number = 0;
                         }
                         else {
                             type = 2;
                             five_star_guarantee_number = 1;
-                            if (temp3 <= ULTRAPOS/5) kind = 2;
+                            if (temp3 <= ULTRAPOS/5) kind = 5;
                             else if (temp3 <= ULTRAPOS/5 * 2) kind = 3;
-                            else if (temp3 <= ULTRAPOS/5 * 3) kind = 4;
-                            else if (temp3 <= ULTRAPOS/5 * 4) kind = 5;
-                            else kind = 6;
+                            else if (temp3 <= ULTRAPOS/5 * 3) kind = 1;
+                            else if (temp3 <= ULTRAPOS/5 * 4) kind = 4;
+                            else kind = 2;
                         }
                     }
                     else if (temp1 <= ULTRAPOS/1000*57) {
@@ -219,21 +219,20 @@ int main() {
                         star = 5;
                         five_count = five_count + 1;
                         five_star_assurance_number = 0;
-                        if (five_star_guarantee_number == 1) { type = 1; kind = 1; five_star_guarantee_number = 0;}
+                        if (five_star_guarantee_number == 1) { type = 1; kind = 66; five_star_guarantee_number = 0;}
                         else if (temp2 <= ULTRAPOS/2) {
-                            //here
                             type = 1;
-                            kind = 1;
+                            kind = 66;
                             five_star_guarantee_number = 0;
                         }
                         else {
                             type = 2;
                             five_star_guarantee_number = 1;
-                            if (temp3 <= ULTRAPOS/5) kind = 2;
+                            if (temp3 <= ULTRAPOS/5) kind = 5;
                             else if (temp3 <= ULTRAPOS/5 * 2) kind = 3;
-                            else if (temp3 <= ULTRAPOS/5 * 3) kind = 4;
-                            else if (temp3 <= ULTRAPOS/5 * 4) kind = 5;
-                            else kind = 6;
+                            else if (temp3 <= ULTRAPOS/5 * 3) kind = 1;
+                            else if (temp3 <= ULTRAPOS/5 * 4) kind = 4;
+                            else kind = 2;
                         }
                     }
                     else if (temp1 <= ULTRAPOS/1000 * 567) {
@@ -318,20 +317,20 @@ int main() {
                         star = 5;
                         five_count = five_count + 1;
                         five_star_assurance_number = 0;
-                        if (five_star_guarantee_number == 1) { type = 1; kind = 1; five_star_guarantee_number = 0;}
+                        if (five_star_guarantee_number == 1) { type = 1; kind = 66; five_star_guarantee_number = 0;}
                         else if (temp2 <= ULTRAPOS/2) {
                             type = 1;
-                            kind = 1;
+                            kind = 66;
                             five_star_guarantee_number = 0;
                         }
                         else {
                             type = 2;
                             five_star_guarantee_number = 1;
-                            if (temp3 <= ULTRAPOS/5) kind = 2;
+                            if (temp3 <= ULTRAPOS/5) kind = 5;
                             else if (temp3 <= ULTRAPOS/5 * 2) kind = 3;
-                            else if (temp3 <= ULTRAPOS/5 * 3) kind = 4;
-                            else if (temp3 <= ULTRAPOS/5 * 4) kind = 5;
-                            else kind = 6;
+                            else if (temp3 <= ULTRAPOS/5 * 3) kind = 1;
+                            else if (temp3 <= ULTRAPOS/5 * 4) kind = 4;
+                            else kind = 2;
                         }
                     }
                     else {
@@ -399,20 +398,20 @@ int main() {
                         star = 5;
                         five_count = five_count + 1;
                         five_star_assurance_number = 0;
-                        if (five_star_guarantee_number == 1) { type = 1; kind = 1; five_star_guarantee_number = 0;}
+                        if (five_star_guarantee_number == 1) { type = 1; kind = 66; five_star_guarantee_number = 0;}
                         else if (temp2 <= ULTRAPOS/2) {
                             type = 1;
-                            kind = 1;
+                            kind = 66;
                             five_star_guarantee_number = 0;
                         }
                         else {
                             type = 2;
                             five_star_guarantee_number = 1;
-                            if (temp3 <= ULTRAPOS/5) kind = 2;
+                            if (temp3 <= ULTRAPOS/5) kind = 5;
                             else if (temp3 <= ULTRAPOS/5 * 2) kind = 3;
-                            else if (temp3 <= ULTRAPOS/5 * 3) kind = 4;
-                            else if (temp3 <= ULTRAPOS/5 * 4) kind = 5;
-                            else kind = 6;
+                            else if (temp3 <= ULTRAPOS/5 * 3) kind = 1;
+                            else if (temp3 <= ULTRAPOS/5 * 4) kind = 4;
+                            else kind = 2;
                         }
                     }
                     else if (temp1 <= ULTRAPOS/1000 * 57 + (five_star_assurance_number - 73) * ULTRAPOS/1000 * 60) {
@@ -497,20 +496,20 @@ int main() {
                         star = 5;
                         five_count = five_count + 1;
                         five_star_assurance_number = 0;
-                        if (five_star_guarantee_number == 1) { type = 1; kind = 1; five_star_guarantee_number = 0;}
+                        if (five_star_guarantee_number == 1) { type = 1; kind = 66; five_star_guarantee_number = 0;}
                         else if (temp2 <= ULTRAPOS/2) {
                             type = 1;
-                            kind = 1;
+                            kind = 66;
                             five_star_guarantee_number = 0;
                         }
                         else {
                             type = 2;
                             five_star_guarantee_number = 1;
-                            if (temp3 <= ULTRAPOS/5) kind = 2;
+                            if (temp3 <= ULTRAPOS/5) kind = 5;
                             else if (temp3 <= ULTRAPOS/5 * 2) kind = 3;
-                            else if (temp3 <= ULTRAPOS/5 * 3) kind = 4;
-                            else if (temp3 <= ULTRAPOS/5 * 4) kind = 5;
-                            else kind = 6;
+                            else if (temp3 <= ULTRAPOS/5 * 3) kind = 1;
+                            else if (temp3 <= ULTRAPOS/5 * 4) kind = 4;
+                            else kind = 2;
                         }
                     }
                     else if (temp1 <= ULTRAPOS/1000 * 567 + (five_star_assurance_number - 73) * ULTRAPOS/1000 * 60) {
@@ -595,20 +594,20 @@ int main() {
                         star = 5;
                         five_count = five_count + 1;
                         five_star_assurance_number = 0;
-                        if (five_star_guarantee_number == 1) { type = 1; kind = 1; five_star_guarantee_number = 0;}
+                        if (five_star_guarantee_number == 1) { type = 1; kind = 66; five_star_guarantee_number = 0;}
                         else if (temp2 <= ULTRAPOS/2) {
                             type = 1;
-                            kind = 1;
+                            kind = 66;
                             five_star_guarantee_number = 0;
                         }
                         else {
                             type = 2;
                             five_star_guarantee_number = 1;
-                            if (temp3 <= ULTRAPOS/5) kind = 2;
+                            if (temp3 <= ULTRAPOS/5) kind = 5;
                             else if (temp3 <= ULTRAPOS/5 * 2) kind = 3;
-                            else if (temp3 <= ULTRAPOS/5 * 3) kind = 4;
-                            else if (temp3 <= ULTRAPOS/5 * 4) kind = 5;
-                            else kind = 6;
+                            else if (temp3 <= ULTRAPOS/5 * 3) kind = 1;
+                            else if (temp3 <= ULTRAPOS/5 * 4) kind = 4;
+                            else kind = 2;
                         }
                     }
                     else {
@@ -675,20 +674,20 @@ int main() {
                     star = 5;
                     five_count = five_count + 1;
                     five_star_assurance_number = 0;
-                    if (five_star_guarantee_number == 1) { type = 1; kind = 1; five_star_guarantee_number = 0;}
+                    if (five_star_guarantee_number == 1) { type = 1; kind = 66; five_star_guarantee_number = 0;}
                     else if (temp2 <= ULTRAPOS/2) {
                         type = 1;
-                        kind = 1;
+                        kind = 66;
                         five_star_guarantee_number = 0;
                     }
                     else {
                         type = 2;
                         five_star_guarantee_number = 1;
-                        if (temp3 <= ULTRAPOS/5) kind = 2;
+                        if (temp3 <= ULTRAPOS/5) kind = 5;
                         else if (temp3 <= ULTRAPOS/5 * 2) kind = 3;
-                        else if (temp3 <= ULTRAPOS/5 * 3) kind = 4;
-                        else if (temp3 <= ULTRAPOS/5 * 4) kind = 5;
-                        else kind = 6;
+                        else if (temp3 <= ULTRAPOS/5 * 3) kind = 1;
+                        else if (temp3 <= ULTRAPOS/5 * 4) kind = 4;
+                        else kind = 2;
                     }
                 }
                 std::cout << count + 1 << "(" << five_star_assurance_number << ")" << " ";
