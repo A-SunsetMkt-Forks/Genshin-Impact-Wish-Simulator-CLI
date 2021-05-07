@@ -4046,7 +4046,7 @@ int main() {
                 four_star_assurance_number = four_star_assurance_number + 1;
             }
         }
-        if (wishes_number >= 0) std::cout << endl << "You have pulled " << count << " wishes." << endl
+        if (wishes_number >= 0) {std::cout << endl << "You have pulled " << count << " wishes." << endl
             << "5-stars:   " << five_count << "  " << five_count * 100.0 / count << "%" << endl
             << "4-stars:   " << four_count << "  " << four_count * 100.0 / count << "%" << endl;
         for (int iout = 0; iout < 15; iout++){if (pcount[iout] > 0) std::cout << pname[iout] << "(" << pcount[iout] << ")" << " ";}
@@ -4060,7 +4060,7 @@ int main() {
         if (pcount[79] > 0) std::cout << pname[79] << "(" << pcount[79] << ")" << " ";
         if (pcount[80] > 0) std::cout << pname[80] << "(" << pcount[80] << ")" << " ";
         for (int iout = 82; iout < 85; iout++){if (pcount[iout] > 0) std::cout << pname[iout] << "(" << pcount[iout] << ")" << " ";}
-        std::cout << endl;
+        std::cout << endl;}
         if (chosen_banner == 4 && chosen_event == 1 && count == 20) goto full_quit;
     }
     }
