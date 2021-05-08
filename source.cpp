@@ -19,7 +19,7 @@ int main() {
     int four_star_guarantee_number = 0;
     int quit = 1;
     unsigned int seed = (unsigned int) std::chrono::system_clock::now().time_since_epoch().count();
-    std::mt19937 generator(seed);
+    std::mt19937_64 generator(seed);
     long long int count = 0;
     long long int five_count = 0;
     long long int four_count = 0;
