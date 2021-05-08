@@ -20,9 +20,9 @@ int main() {
     int quit = 1;
     unsigned int seed = (unsigned int) std::chrono::system_clock::now().time_since_epoch().count();
     std::mt19937 generator(seed);
-    int count = 0;
-    int five_count = 0;
-    int four_count = 0;
+    long long int count = 0;
+    long long int five_count = 0;
+    long long int four_count = 0;
     int threshold = 17;
     double unmet = 17.1;
     int unmet_count = 0;
@@ -30,11 +30,11 @@ int main() {
     int ave_fives = 0;
     int max_fives = 1;
     int min_fives = 90;
-    int max_fivesth = 1;
-    int min_fivesth = 1;
-    int max_fivecount = 1;
-    int min_fivecount = 1;
-    int pcount[128] = {0};
+    long long int max_fivesth = 1;
+    long long int min_fivesth = 1;
+    long long int max_fivecount = 1;
+    long long int min_fivecount = 1;
+    long long int pcount[128] = {0};
     string pname[128] = {
                 "Keqing",
                 "Mona",
@@ -247,9 +247,9 @@ int main() {
         //if (!(wishes_number == -1||wishes_number == 10||wishes_number == 1)){ wishes_number = 0; std::cout << "Invalid number of wishes!" << endl; goto enter_wishes_number; }
         if (chosen_banner == 1 && chosen_event == 11) {
             while (wishes_number > 0) {
-                long int temp1 = generator() % ULTRAPOS + 1;
-                long int temp2 = generator() % ULTRAPOS + 1;
-                long int temp3 = generator() % ULTRAPOS + 1;
+                long long int temp1 = generator() % ULTRAPOS + 1;
+                long long int temp2 = generator() % ULTRAPOS + 1;
+                long long int temp3 = generator() % ULTRAPOS + 1;
                 int star = 0; //4-star or 5-star
                 int type = 0; //Up or non-up, character or weapon
                 int kind = 0; //which exactly
@@ -988,9 +988,9 @@ int main() {
         }
         if (chosen_banner == 1 && chosen_event == 12) {
             while (wishes_number > 0) {
-                long int temp1 = generator() % ULTRAPOS + 1;
-                long int temp2 = generator() % ULTRAPOS + 1;
-                long int temp3 = generator() % ULTRAPOS + 1;
+                long long int temp1 = generator() % ULTRAPOS + 1;
+                long long int temp2 = generator() % ULTRAPOS + 1;
+                long long int temp3 = generator() % ULTRAPOS + 1;
                 int star = 0; //4-star or 5-star
                 int type = 0; //Up or non-up, character or weapon
                 int kind = 0; //which exactly
@@ -1735,9 +1735,9 @@ int main() {
         }
         if (chosen_banner == 3 && chosen_event == 1) {
             while (wishes_number > 0) {
-                long int temp1 = generator() % ULTRAPOS + 1;
-                long int temp2 = generator() % ULTRAPOS + 1;
-                long int temp3 = generator() % ULTRAPOS + 1;
+                long long int temp1 = generator() % ULTRAPOS + 1;
+                long long int temp2 = generator() % ULTRAPOS + 1;
+                long long int temp3 = generator() % ULTRAPOS + 1;
                 int star = 0; //4-star or 5-star
                 int type = 0; //Up or non-up, character or weapon
                 int kind = 0; //which exactly
@@ -2440,9 +2440,9 @@ int main() {
         }
         if (chosen_banner == 3 && chosen_event == 2) {
             while (wishes_number > 0) {
-                long int temp1 = generator() % ULTRAPOS + 1;
-                long int temp2 = generator() % ULTRAPOS + 1;
-                long int temp3 = generator() % ULTRAPOS + 1;
+                long long int temp1 = generator() % ULTRAPOS + 1;
+                long long int temp2 = generator() % ULTRAPOS + 1;
+                long long int temp3 = generator() % ULTRAPOS + 1;
                 int star = 0; //4-star or 5-star
                 int type = 0; //Up or non-up, character or weapon
                 int kind = 0; //which exactly
@@ -3157,9 +3157,9 @@ int main() {
         }
         if (chosen_banner == 3 && chosen_event == 3) {
             while (wishes_number > 0) {
-                long int temp1 = generator() % ULTRAPOS + 1;
-                long int temp2 = generator() % ULTRAPOS + 1;
-                long int temp3 = generator() % ULTRAPOS + 1;
+                long long int temp1 = generator() % ULTRAPOS + 1;
+                long long int temp2 = generator() % ULTRAPOS + 1;
+                long long int temp3 = generator() % ULTRAPOS + 1;
                 int star = 0; //4-star or 5-star
                 int type = 0; //Up or non-up, character or weapon
                 int kind = 0; //which exactly
@@ -3880,9 +3880,9 @@ int main() {
         }
         if (chosen_banner == 4 && chosen_event == 1) {
             while (wishes_number > 0) {
-                long int temp1 = generator() % ULTRAPOS + 1;
-                long int temp2 = generator() % ULTRAPOS + 1;
-                long int temp3 = generator() % ULTRAPOS + 1;
+                long long int temp1 = generator() % ULTRAPOS + 1;
+                long long int temp2 = generator() % ULTRAPOS + 1;
+                long long int temp3 = generator() % ULTRAPOS + 1;
                 int star = 0; //4-star or 5-star
                 int type = 0; //Up or non-up, character or weapon
                 int kind = 0; //which exactly
