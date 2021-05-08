@@ -4168,9 +4168,9 @@ int main() {
             std::cout << endl << "You have pulled " << count << " wishes and " << five_count <<" non-5-stars" << endl
             << "5-stars:   " << five_count << "  " << five_count * 100.0 / count << "%" << endl
             << "4-stars:   " << four_count << "  " << four_count * 100.0 / count << "%" << endl
-            << "max non-5-stars-max:   " << max_fives << " at " << max_fivesth << "-th non-5-stars" << endl
-            << "min non-5-stars-max:   " << min_fives << " at " << min_fivesth << "-th non-5-stars" << endl
-            << "Ave non-5-star-max:   "<< ave_fives * 1.0 / five_count << endl;
+            << "max non-5-stars-max:   " << max_fives << " at " << max_fivesth << "-th non-5-stars  " << max_fivecount + 1 << "-th wishes" << endl
+            << "min non-5-stars-max:   " << min_fives << " at " << min_fivesth << "-th non-5-stars  " << min_fivecount + 1 << "-th wishes" << endl
+            << "ave non-5-star-max:   "<< ave_fives * 1.0 / five_count << endl;
         }
         for (int iout = 0; iout < 15; iout++){if (pcount[iout] > 0) std::cout << pname[iout] << "(" << pcount[iout] << ")" << " ";}
         for (int iout = 63; iout < 71; iout++){if (pcount[iout] > 0) std::cout << pname[iout] << "(" << pcount[iout] << ")" << " ";}
