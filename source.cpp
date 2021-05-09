@@ -4184,10 +4184,10 @@ int main() {
         if (pcount[79] > 0) std::cout << pname[79] << "(" << pcount[79] << ")" << " ";
         if (pcount[80] > 0) std::cout << pname[80] << "(" << pcount[80] << ")" << " ";
         for (int iout = 82; iout < 85; iout++){if (pcount[iout] > 0) std::cout << pname[iout] << "(" << pcount[iout] << ")" << " ";}
-        std::cout << endl << endl;}
-        auto elapsed = std::chrono::steady_clock::now() - start;
+        std::cout << endl << endl;auto elapsed = std::chrono::steady_clock::now() - start;
         long long int microseconds = std::chrono::duration_cast<std::chrono::microseconds>(elapsed).count();
         std::cout << microseconds * 1.0 / 1000000 << " seconds elapsed." << endl;
+        }
         if (chosen_banner == 4 && chosen_event == 1 && count == 20) goto full_quit;
     }
     }
