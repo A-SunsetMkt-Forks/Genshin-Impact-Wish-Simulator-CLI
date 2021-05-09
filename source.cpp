@@ -18,7 +18,7 @@ int main() {
     int five_star_guarantee_number = 0;
     int four_star_guarantee_number = 0;
     int quit = 1;
-    unsigned int seed = (unsigned int) std::chrono::system_clock::now().time_since_epoch().count();
+    unsigned int seed = (unsigned int) std::chrono::high_resolution_clock::now().time_since_epoch().count();
     std::mt19937_64 generator(seed);
     long long int count = 0;
     long long int five_count = 0;
@@ -245,6 +245,7 @@ int main() {
         if (chosen_banner == 4 && chosen_event == 1 && wishes_number == -1) { wishes_number = 0; goto full_quit; }
         if (chosen_banner == 4 && chosen_event == 1 && wishes_number != 10) { wishes_number = 0; std::cout << "Invalid number of wishes!" << endl; goto enter_wishes_number; }
         //if (!(wishes_number == -1||wishes_number == 10||wishes_number == 1)){ wishes_number = 0; std::cout << "Invalid number of wishes!" << endl; goto enter_wishes_number; }
+        auto start = std::chrono::steady_clock::now();
         if (chosen_banner == 1 && chosen_event == 11) {
             while (wishes_number > 0) {
                 long long int temp1 = generator() % ULTRAPOS + 1;
@@ -4165,25 +4166,28 @@ int main() {
             << "4-stars:   " << four_count << "  " << four_count * 100.0 / count << "%" << endl;
             }
         else{
-            std::cout << endl << "You have pulled " << count << " wishes and " << five_count <<" non-5-stars" << endl
+            std::cout << endl << "You have pulled " << count << " wishes." << endl
             << "5-stars:   " << five_count << "  " << five_count * 100.0 / count << "%" << endl
             << "4-stars:   " << four_count << "  " << four_count * 100.0 / count << "%" << endl
             << "max non-5-stars-max:   " << max_fives << " at " << max_fivesth << "-th non-5-stars  " << max_fivecount + 1 << "-th wishes" << endl
             << "min non-5-stars-max:   " << min_fives << " at " << min_fivesth << "-th non-5-stars  " << min_fivecount + 1 << "-th wishes" << endl
-            << "ave non-5-star-max:   "<< ave_fives * 1.0 / five_count << endl;
+            << "ave non-5-star-max:   "<< ave_fives * 1.0 / five_count << endl << endl;
         }
         for (int iout = 0; iout < 15; iout++){if (pcount[iout] > 0) std::cout << pname[iout] << "(" << pcount[iout] << ")" << " ";}
         for (int iout = 63; iout < 71; iout++){if (pcount[iout] > 0) std::cout << pname[iout] << "(" << pcount[iout] << ")" << " ";}
         for (int iout = 73; iout < 79; iout++){if (pcount[iout] > 0) std::cout << pname[iout] << "(" << pcount[iout] << ")" << " ";}
         if (pcount[81] > 0) std::cout << 81 << "(" << pcount[81] << ")" << " ";
-        std::cout << endl;
+        std::cout << endl << endl;
         for (int iout = 15; iout < 50; iout++){if (pcount[iout] > 0) std::cout << pname[iout] << "(" << pcount[iout] << ")" << " ";}
         if (pcount[71] > 0) std::cout << pname[71] << "(" << pcount[71] << ")" << " ";
         if (pcount[72] > 0) std::cout << pname[72] << "(" << pcount[72] << ")" << " ";
         if (pcount[79] > 0) std::cout << pname[79] << "(" << pcount[79] << ")" << " ";
         if (pcount[80] > 0) std::cout << pname[80] << "(" << pcount[80] << ")" << " ";
         for (int iout = 82; iout < 85; iout++){if (pcount[iout] > 0) std::cout << pname[iout] << "(" << pcount[iout] << ")" << " ";}
-        std::cout << endl;}
+        std::cout << endl << endl;}
+        auto elapsed = std::chrono::steady_clock::now() - start;
+        long long int microseconds = std::chrono::duration_cast<std::chrono::microseconds>(elapsed).count();
+        std::cout << microseconds * 1.0 / 1000000 << " seconds elapsed." << endl;
         if (chosen_banner == 4 && chosen_event == 1 && count == 20) goto full_quit;
     }
     }
