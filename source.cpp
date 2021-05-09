@@ -4,7 +4,7 @@
 #include <random>
 #include <vector>
 #include <string>
-#define ULTRAPOS 437580000
+#define ULTRAPOS 218790000
 using namespace std;
 
 int main() {
