@@ -4,7 +4,7 @@
 #include <random>
 #include <vector>
 #include <string>
-#define ULTRAPOS 218790000
+#define ULTRAPOS 437580000
 using namespace std;
 
 int main() {
@@ -18,7 +18,7 @@ int main() {
     int five_star_guarantee_number = 0;
     int four_star_guarantee_number = 0;
     int quit = 1;
-    unsigned int seed = (unsigned int) std::chrono::system_clock::now().time_since_epoch().count();
+    unsigned int seed = (unsigned int) std::chrono::_V2::high_resolution_clock::now().time_since_epoch().count();
     std::mt19937_64 generator(seed);
     long long int count = 0;
     long long int five_count = 0;
@@ -255,8 +255,8 @@ int main() {
                 int type = 0; //Up or non-up, character or weapon
                 int kind = 0; //which exactly
                 if (unmet_count > threshold) unmet = (double)unmet_count;
-                if (five_star_assurance_number <= 73 && four_star_assurance_number <= 8) {
-                    if (temp1 <= ULTRAPOS/1000 * 6) {
+                if (five_star_assurance_number < 1 + 73 && four_star_assurance_number < 1 + 8) {
+                    if (temp1 < 1 + ULTRAPOS/1000 * 6) {
                         star = 5;
                         five_count = five_count + 1;
                         ave_fives = ave_fives + five_star_assurance_number;
@@ -264,7 +264,7 @@ int main() {
                         if (five_star_assurance_number < min_fives) { min_fives = five_star_assurance_number; min_fivesth = five_count; min_fivecount = count; }
                         five_star_assurance_number = 0;
                         if (five_star_guarantee_number == 1) { type = 1; kind = 66; five_star_guarantee_number = 0;}
-                        else if (temp2 <= ULTRAPOS/2) {
+                        else if (temp2 < 1 + ULTRAPOS/2) {
                             type = 1;
                             kind = 66;
                             five_star_guarantee_number = 0;
@@ -272,68 +272,68 @@ int main() {
                         else {
                             type = 2;
                             five_star_guarantee_number = 1;
-                            if (temp3 <= ULTRAPOS/5) kind = 5;
-                            else if (temp3 <= ULTRAPOS/5 * 2) kind = 3;
-                            else if (temp3 <= ULTRAPOS/5 * 3) kind = 1;
-                            else if (temp3 <= ULTRAPOS/5 * 4) kind = 4;
+                            if (temp3 < 1 + ULTRAPOS/5) kind = 5;
+                            else if (temp3 < 1 + ULTRAPOS/5 * 2) kind = 3;
+                            else if (temp3 < 1 + ULTRAPOS/5 * 3) kind = 1;
+                            else if (temp3 < 1 + ULTRAPOS/5 * 4) kind = 4;
                             else kind = 2;
                         }
                     }
-                    else if (temp1 <= ULTRAPOS/1000*57) {
+                    else if (temp1 < 1 + ULTRAPOS/1000*57) {
                         star = 4;
                         four_count = four_count + 1;
                         four_star_assurance_number = 0;
                         if (four_star_guarantee_number == 1) {
                             type = 1;
-                            if (temp3 <= ULTRAPOS/3) kind = 23;
-                            else if (temp3 <= ULTRAPOS/3 * 2) kind = 16;
+                            if (temp3 < 1 + ULTRAPOS/3) kind = 23;
+                            else if (temp3 < 1 + ULTRAPOS/3 * 2) kind = 16;
                             else kind = 31; 
                             four_star_guarantee_number = 0;
                             }
-                        else if (temp2 <= ULTRAPOS/2) {
+                        else if (temp2 < 1 + ULTRAPOS/2) {
                             type = 1;
-                            if (temp3 <= ULTRAPOS/3) kind = 23;
-                            else if (temp3 <= ULTRAPOS/3 * 2) kind = 16;
+                            if (temp3 < 1 + ULTRAPOS/3) kind = 23;
+                            else if (temp3 < 1 + ULTRAPOS/3 * 2) kind = 16;
                             else kind = 31;
                             four_star_guarantee_number = 0;
                         }
-                        else if (temp2 <= ULTRAPOS/4 * (int)(10 * (unmet - threshold))) {
+                        else if (temp2 < 1 + ULTRAPOS/4 * (int)(10 * (unmet - threshold))) {
                             type = 2;
                             unmet_count = 0;
                             unmet = (double)17.1;
-                            if (temp3 <= ULTRAPOS/11) kind = 18;
-                            else if (temp3 <= ULTRAPOS/11 * 2) kind = 20;
-                            else if (temp3 <= ULTRAPOS/11 * 3) kind = 26;
-                            else if (temp3 <= ULTRAPOS/11 * 4) kind = 29;
-                            else if (temp3 <= ULTRAPOS/11 * 5) kind = 21;
-                            else if (temp3 <= ULTRAPOS/11 * 6) kind = 24;
-                            else if (temp3 <= ULTRAPOS/11 * 7) kind = 25;
-                            else if (temp3 <= ULTRAPOS/11 * 8) kind = 22;
-                            else if (temp3 <= ULTRAPOS/11 * 9) kind = 27;
-                            else if (temp3 <= ULTRAPOS/11 * 10) kind = 19;
+                            if (temp3 < 1 + ULTRAPOS/11) kind = 18;
+                            else if (temp3 < 1 + ULTRAPOS/11 * 2) kind = 20;
+                            else if (temp3 < 1 + ULTRAPOS/11 * 3) kind = 26;
+                            else if (temp3 < 1 + ULTRAPOS/11 * 4) kind = 29;
+                            else if (temp3 < 1 + ULTRAPOS/11 * 5) kind = 21;
+                            else if (temp3 < 1 + ULTRAPOS/11 * 6) kind = 24;
+                            else if (temp3 < 1 + ULTRAPOS/11 * 7) kind = 25;
+                            else if (temp3 < 1 + ULTRAPOS/11 * 8) kind = 22;
+                            else if (temp3 < 1 + ULTRAPOS/11 * 9) kind = 27;
+                            else if (temp3 < 1 + ULTRAPOS/11 * 10) kind = 19;
                             else kind = 17;
                             four_star_guarantee_number = 1;
                         }
                         else {
                             type = 3;
                             unmet_count = unmet_count + 1;
-                            if (temp3 <= ULTRAPOS/18) kind = 36;
-                            else if (temp3 <= ULTRAPOS/9) kind = 34;
-                            else if (temp3 <= ULTRAPOS/6) kind = 33;
-                            else if (temp3 <= ULTRAPOS/9 * 2) kind = 35;
-                            else if (temp3 <= ULTRAPOS/18 * 5) kind = 40;
-                            else if (temp3 <= ULTRAPOS/3) kind = 38;
-                            else if (temp3 <= ULTRAPOS/18 * 7) kind = 37;
-                            else if (temp3 <= ULTRAPOS/9 * 4) kind = 39;
-                            else if (temp3 <= ULTRAPOS/2) kind = 46;
-                            else if (temp3 <= ULTRAPOS/9 * 5) kind = 44;
-                            else if (temp3 <= ULTRAPOS/18 * 11) kind = 43;
-                            else if (temp3 <= ULTRAPOS/3 * 2) kind = 45;
-                            else if (temp3 <= ULTRAPOS/18 * 13) kind = 41;
-                            else if (temp3 <= ULTRAPOS/9 * 7) kind = 42;
-                            else if (temp3 <= ULTRAPOS/6 * 5) kind = 50;
-                            else if (temp3 <= ULTRAPOS/9 * 8) kind = 48;
-                            else if (temp3 <= ULTRAPOS/18 * 17) kind = 47;
+                            if (temp3 < 1 + ULTRAPOS/18) kind = 36;
+                            else if (temp3 < 1 + ULTRAPOS/9) kind = 34;
+                            else if (temp3 < 1 + ULTRAPOS/6) kind = 33;
+                            else if (temp3 < 1 + ULTRAPOS/9 * 2) kind = 35;
+                            else if (temp3 < 1 + ULTRAPOS/18 * 5) kind = 40;
+                            else if (temp3 < 1 + ULTRAPOS/3) kind = 38;
+                            else if (temp3 < 1 + ULTRAPOS/18 * 7) kind = 37;
+                            else if (temp3 < 1 + ULTRAPOS/9 * 4) kind = 39;
+                            else if (temp3 < 1 + ULTRAPOS/2) kind = 46;
+                            else if (temp3 < 1 + ULTRAPOS/9 * 5) kind = 44;
+                            else if (temp3 < 1 + ULTRAPOS/18 * 11) kind = 43;
+                            else if (temp3 < 1 + ULTRAPOS/3 * 2) kind = 45;
+                            else if (temp3 < 1 + ULTRAPOS/18 * 13) kind = 41;
+                            else if (temp3 < 1 + ULTRAPOS/9 * 7) kind = 42;
+                            else if (temp3 < 1 + ULTRAPOS/6 * 5) kind = 50;
+                            else if (temp3 < 1 + ULTRAPOS/9 * 8) kind = 48;
+                            else if (temp3 < 1 + ULTRAPOS/18 * 17) kind = 47;
                             else kind = 49;
                             four_star_guarantee_number = 1;
                         }
@@ -341,23 +341,23 @@ int main() {
                     else {
                         star = 3;
                         type = 2;
-                        if (temp3 <= ULTRAPOS/13) kind = 51;
-                        else if (temp3 <= ULTRAPOS/13 * 2) kind = 52;
-                        else if (temp3 <= ULTRAPOS/13 * 3) kind = 53;
-                        else if (temp3 <= ULTRAPOS/13 * 4) kind = 54;
-                        else if (temp3 <= ULTRAPOS/13 * 5) kind = 55;
-                        else if (temp3 <= ULTRAPOS/13 * 6) kind = 56;
-                        else if (temp3 <= ULTRAPOS/13 * 7) kind = 57;
-                        else if (temp3 <= ULTRAPOS/13 * 8) kind = 58;
-                        else if (temp3 <= ULTRAPOS/13 * 9) kind = 59;
-                        else if (temp3 <= ULTRAPOS/13 * 10) kind = 60;
-                        else if (temp3 <= ULTRAPOS/13 * 11) kind = 61;
-                        else if (temp3 <= ULTRAPOS/13 * 12) kind = 62;
+                        if (temp3 < 1 + ULTRAPOS/13) kind = 51;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 2) kind = 52;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 3) kind = 53;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 4) kind = 54;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 5) kind = 55;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 6) kind = 56;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 7) kind = 57;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 8) kind = 58;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 9) kind = 59;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 10) kind = 60;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 11) kind = 61;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 12) kind = 62;
                         else kind = 63;
                     }
                 }
-                else if (five_star_assurance_number <= 73 && four_star_assurance_number == 9) {
-                    if (temp1 <= ULTRAPOS/1000 * 6) {
+                else if (five_star_assurance_number < 1 + 73 && four_star_assurance_number == 9) {
+                    if (temp1 < 1 + ULTRAPOS/1000 * 6) {
                         star = 5;
                         five_count = five_count + 1;
                         ave_fives = ave_fives + five_star_assurance_number;
@@ -365,7 +365,7 @@ int main() {
                         if (five_star_assurance_number < min_fives) { min_fives = five_star_assurance_number; min_fivesth = five_count; min_fivecount = count; }
                         five_star_assurance_number = 0;
                         if (five_star_guarantee_number == 1) { type = 1; kind = 66; five_star_guarantee_number = 0;}
-                        else if (temp2 <= ULTRAPOS/2) {
+                        else if (temp2 < 1 + ULTRAPOS/2) {
                             type = 1;
                             kind = 66;
                             five_star_guarantee_number = 0;
@@ -373,68 +373,68 @@ int main() {
                         else {
                             type = 2;
                             five_star_guarantee_number = 1;
-                            if (temp3 <= ULTRAPOS/5) kind = 5;
-                            else if (temp3 <= ULTRAPOS/5 * 2) kind = 3;
-                            else if (temp3 <= ULTRAPOS/5 * 3) kind = 1;
-                            else if (temp3 <= ULTRAPOS/5 * 4) kind = 4;
+                            if (temp3 < 1 + ULTRAPOS/5) kind = 5;
+                            else if (temp3 < 1 + ULTRAPOS/5 * 2) kind = 3;
+                            else if (temp3 < 1 + ULTRAPOS/5 * 3) kind = 1;
+                            else if (temp3 < 1 + ULTRAPOS/5 * 4) kind = 4;
                             else kind = 2;
                         }
                     }
-                    else if (temp1 <= ULTRAPOS/1000 * 567) {
+                    else if (temp1 < 1 + ULTRAPOS/1000 * 567) {
                         star = 4;
                         four_count = four_count + 1;
                         four_star_assurance_number = 0;
                         if (four_star_guarantee_number == 1) {
                             type = 1;
-                            if (temp3 <= ULTRAPOS/3) kind = 23;
-                            else if (temp3 <= ULTRAPOS/3 * 2) kind = 16;
+                            if (temp3 < 1 + ULTRAPOS/3) kind = 23;
+                            else if (temp3 < 1 + ULTRAPOS/3 * 2) kind = 16;
                             else kind = 31;
                             four_star_guarantee_number = 0;
                             }
-                        else if (temp2 <= ULTRAPOS/2 * (int)(10 * (unmet - threshold))) {
+                        else if (temp2 < 1 + ULTRAPOS/2 * (int)(10 * (unmet - threshold))) {
                             type = 1;
-                            if (temp3 <= ULTRAPOS/3) kind = 23;
-                            else if (temp3 <= ULTRAPOS/3 * 2) kind = 16;
+                            if (temp3 < 1 + ULTRAPOS/3) kind = 23;
+                            else if (temp3 < 1 + ULTRAPOS/3 * 2) kind = 16;
                             else kind = 31;
                             four_star_guarantee_number = 0;
                         }
-                        else if (temp2 <= ULTRAPOS/6 * 5) {
+                        else if (temp2 < 1 + ULTRAPOS/6 * 5) {
                             type = 2;
                             unmet_count = 0;
                             unmet = (double)17.1;
-                            if (temp3 <= ULTRAPOS/11) kind = 18;
-                            else if (temp3 <= ULTRAPOS/11 * 2) kind = 20;
-                            else if (temp3 <= ULTRAPOS/11 * 3) kind = 26;
-                            else if (temp3 <= ULTRAPOS/11 * 4) kind = 29;
-                            else if (temp3 <= ULTRAPOS/11 * 5) kind = 21;
-                            else if (temp3 <= ULTRAPOS/11 * 6) kind = 24;
-                            else if (temp3 <= ULTRAPOS/11 * 7) kind = 25;
-                            else if (temp3 <= ULTRAPOS/11 * 8) kind = 22;
-                            else if (temp3 <= ULTRAPOS/11 * 9) kind = 27;
-                            else if (temp3 <= ULTRAPOS/11 * 10) kind = 19;
+                            if (temp3 < 1 + ULTRAPOS/11) kind = 18;
+                            else if (temp3 < 1 + ULTRAPOS/11 * 2) kind = 20;
+                            else if (temp3 < 1 + ULTRAPOS/11 * 3) kind = 26;
+                            else if (temp3 < 1 + ULTRAPOS/11 * 4) kind = 29;
+                            else if (temp3 < 1 + ULTRAPOS/11 * 5) kind = 21;
+                            else if (temp3 < 1 + ULTRAPOS/11 * 6) kind = 24;
+                            else if (temp3 < 1 + ULTRAPOS/11 * 7) kind = 25;
+                            else if (temp3 < 1 + ULTRAPOS/11 * 8) kind = 22;
+                            else if (temp3 < 1 + ULTRAPOS/11 * 9) kind = 27;
+                            else if (temp3 < 1 + ULTRAPOS/11 * 10) kind = 19;
                             else kind = 17;
                             four_star_guarantee_number = 1;
                         }
                         else {
                             type = 3;
                             unmet_count = unmet_count + 1;
-                            if (temp3 <= ULTRAPOS/18) kind = 36;
-                            else if (temp3 <= ULTRAPOS/9) kind = 34;
-                            else if (temp3 <= ULTRAPOS/6) kind = 33;
-                            else if (temp3 <= ULTRAPOS/9 * 2) kind = 35;
-                            else if (temp3 <= ULTRAPOS/3) kind = 40;
-                            else if (temp3 <= ULTRAPOS/18 * 5) kind = 38;
-                            else if (temp3 <= ULTRAPOS/18 * 7) kind = 37;
-                            else if (temp3 <= ULTRAPOS/9 * 4) kind = 39;
-                            else if (temp3 <= ULTRAPOS/2) kind = 46;
-                            else if (temp3 <= ULTRAPOS/9 * 5) kind = 44;
-                            else if (temp3 <= ULTRAPOS/18 * 11) kind = 43;
-                            else if (temp3 <= ULTRAPOS/3 * 2) kind = 45;
-                            else if (temp3 <= ULTRAPOS/18 * 13) kind = 41;
-                            else if (temp3 <= ULTRAPOS/9 * 7) kind = 42;
-                            else if (temp3 <= ULTRAPOS/6 * 5) kind = 50;
-                            else if (temp3 <= ULTRAPOS/9 * 8) kind = 47;
-                            else if (temp3 <= ULTRAPOS/18 * 17) kind = 48;
+                            if (temp3 < 1 + ULTRAPOS/18) kind = 36;
+                            else if (temp3 < 1 + ULTRAPOS/9) kind = 34;
+                            else if (temp3 < 1 + ULTRAPOS/6) kind = 33;
+                            else if (temp3 < 1 + ULTRAPOS/9 * 2) kind = 35;
+                            else if (temp3 < 1 + ULTRAPOS/3) kind = 40;
+                            else if (temp3 < 1 + ULTRAPOS/18 * 5) kind = 38;
+                            else if (temp3 < 1 + ULTRAPOS/18 * 7) kind = 37;
+                            else if (temp3 < 1 + ULTRAPOS/9 * 4) kind = 39;
+                            else if (temp3 < 1 + ULTRAPOS/2) kind = 46;
+                            else if (temp3 < 1 + ULTRAPOS/9 * 5) kind = 44;
+                            else if (temp3 < 1 + ULTRAPOS/18 * 11) kind = 43;
+                            else if (temp3 < 1 + ULTRAPOS/3 * 2) kind = 45;
+                            else if (temp3 < 1 + ULTRAPOS/18 * 13) kind = 41;
+                            else if (temp3 < 1 + ULTRAPOS/9 * 7) kind = 42;
+                            else if (temp3 < 1 + ULTRAPOS/6 * 5) kind = 50;
+                            else if (temp3 < 1 + ULTRAPOS/9 * 8) kind = 47;
+                            else if (temp3 < 1 + ULTRAPOS/18 * 17) kind = 48;
                             else kind = 49;
                             four_star_guarantee_number = 1;
                         }
@@ -442,23 +442,23 @@ int main() {
                     else {
                         star = 3;
                         type = 2;
-                        if (temp3 <= ULTRAPOS/13) kind = 51;
-                        else if (temp3 <= ULTRAPOS/13 * 2) kind = 52;
-                        else if (temp3 <= ULTRAPOS/13 * 3) kind = 53;
-                        else if (temp3 <= ULTRAPOS/13 * 4) kind = 54;
-                        else if (temp3 <= ULTRAPOS/13 * 5) kind = 55;
-                        else if (temp3 <= ULTRAPOS/13 * 6) kind = 56;
-                        else if (temp3 <= ULTRAPOS/13 * 7) kind = 57;
-                        else if (temp3 <= ULTRAPOS/13 * 8) kind = 58;
-                        else if (temp3 <= ULTRAPOS/13 * 9) kind = 59;
-                        else if (temp3 <= ULTRAPOS/13 * 10) kind = 60;
-                        else if (temp3 <= ULTRAPOS/13 * 11) kind = 61;
-                        else if (temp3 <= ULTRAPOS/13 * 12) kind = 62;
+                        if (temp3 < 1 + ULTRAPOS/13) kind = 51;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 2) kind = 52;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 3) kind = 53;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 4) kind = 54;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 5) kind = 55;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 6) kind = 56;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 7) kind = 57;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 8) kind = 58;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 9) kind = 59;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 10) kind = 60;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 11) kind = 61;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 12) kind = 62;
                         else kind = 63;
                     }
                 }
-                else if (five_star_assurance_number <= 73 && four_star_assurance_number >= 10) {
-                    if (temp1 <= ULTRAPOS/1000 * 6) {
+                else if (five_star_assurance_number < 1 + 73 && four_star_assurance_number >= 10) {
+                    if (temp1 < 1 + ULTRAPOS/1000 * 6) {
                         star = 5;
                         five_count = five_count + 1;
                         ave_fives = ave_fives + five_star_assurance_number;
@@ -466,7 +466,7 @@ int main() {
                         if (five_star_assurance_number < min_fives) { min_fives = five_star_assurance_number; min_fivesth = five_count; min_fivecount = count; }
                         five_star_assurance_number = 0;
                         if (five_star_guarantee_number == 1) { type = 1; kind = 66; five_star_guarantee_number = 0;}
-                        else if (temp2 <= ULTRAPOS/2) {
+                        else if (temp2 < 1 + ULTRAPOS/2) {
                             type = 1;
                             kind = 66;
                             five_star_guarantee_number = 0;
@@ -474,10 +474,10 @@ int main() {
                         else {
                             type = 2;
                             five_star_guarantee_number = 1;
-                            if (temp3 <= ULTRAPOS/5) kind = 5;
-                            else if (temp3 <= ULTRAPOS/5 * 2) kind = 3;
-                            else if (temp3 <= ULTRAPOS/5 * 3) kind = 1;
-                            else if (temp3 <= ULTRAPOS/5 * 4) kind = 4;
+                            if (temp3 < 1 + ULTRAPOS/5) kind = 5;
+                            else if (temp3 < 1 + ULTRAPOS/5 * 2) kind = 3;
+                            else if (temp3 < 1 + ULTRAPOS/5 * 3) kind = 1;
+                            else if (temp3 < 1 + ULTRAPOS/5 * 4) kind = 4;
                             else kind = 2;
                         }
                     }
@@ -487,62 +487,62 @@ int main() {
                         four_star_assurance_number = 0;
                         if (four_star_guarantee_number == 1) {
                             type = 1;
-                            if (temp3 <= ULTRAPOS/3) kind = 23;
-                            else if (temp3 <= ULTRAPOS/3 * 2) kind = 16;
+                            if (temp3 < 1 + ULTRAPOS/3) kind = 23;
+                            else if (temp3 < 1 + ULTRAPOS/3 * 2) kind = 16;
                             else kind = 31;
                             four_star_guarantee_number = 0;
                             }
-                        else if (temp2 <= ULTRAPOS/2 * (int)(10 * (unmet - threshold))) {
+                        else if (temp2 < 1 + ULTRAPOS/2 * (int)(10 * (unmet - threshold))) {
                             type = 1;
-                            if (temp3 <= ULTRAPOS/3) kind = 23;
-                            else if (temp3 <= ULTRAPOS/3 * 2) kind = 16;
+                            if (temp3 < 1 + ULTRAPOS/3) kind = 23;
+                            else if (temp3 < 1 + ULTRAPOS/3 * 2) kind = 16;
                             else kind = 31;
                             four_star_guarantee_number = 0;
                         }
-                        else if (temp2 <= ULTRAPOS/6 * 5) {
+                        else if (temp2 < 1 + ULTRAPOS/6 * 5) {
                             type = 2;
                             unmet_count = 0;
                             unmet = (double)17.1;
-                            if (temp3 <= ULTRAPOS/11) kind = 18;
-                            else if (temp3 <= ULTRAPOS/11 * 2) kind = 20;
-                            else if (temp3 <= ULTRAPOS/11 * 3) kind = 26;
-                            else if (temp3 <= ULTRAPOS/11 * 4) kind = 29;
-                            else if (temp3 <= ULTRAPOS/11 * 5) kind = 21;
-                            else if (temp3 <= ULTRAPOS/11 * 6) kind = 24;
-                            else if (temp3 <= ULTRAPOS/11 * 7) kind = 25;
-                            else if (temp3 <= ULTRAPOS/11 * 8) kind = 22;
-                            else if (temp3 <= ULTRAPOS/11 * 9) kind = 27;
-                            else if (temp3 <= ULTRAPOS/11 * 10) kind = 19;
+                            if (temp3 < 1 + ULTRAPOS/11) kind = 18;
+                            else if (temp3 < 1 + ULTRAPOS/11 * 2) kind = 20;
+                            else if (temp3 < 1 + ULTRAPOS/11 * 3) kind = 26;
+                            else if (temp3 < 1 + ULTRAPOS/11 * 4) kind = 29;
+                            else if (temp3 < 1 + ULTRAPOS/11 * 5) kind = 21;
+                            else if (temp3 < 1 + ULTRAPOS/11 * 6) kind = 24;
+                            else if (temp3 < 1 + ULTRAPOS/11 * 7) kind = 25;
+                            else if (temp3 < 1 + ULTRAPOS/11 * 8) kind = 22;
+                            else if (temp3 < 1 + ULTRAPOS/11 * 9) kind = 27;
+                            else if (temp3 < 1 + ULTRAPOS/11 * 10) kind = 19;
                             else kind = 17;
                             four_star_guarantee_number = 1;
                         }
                         else {
                             type = 3;
                             unmet_count = unmet_count + 1;
-                            if (temp3 <= ULTRAPOS/18) kind = 36;
-                            else if (temp3 <= ULTRAPOS/9) kind = 34;
-                            else if (temp3 <= ULTRAPOS/6) kind = 33;
-                            else if (temp3 <= ULTRAPOS/9 * 2) kind = 35;
-                            else if (temp3 <= ULTRAPOS/18 * 5) kind = 40;
-                            else if (temp3 <= ULTRAPOS/3) kind = 38;
-                            else if (temp3 <= ULTRAPOS/18 * 7) kind = 37;
-                            else if (temp3 <= ULTRAPOS/9 * 4) kind = 39;
-                            else if (temp3 <= ULTRAPOS/2) kind = 46;
-                            else if (temp3 <= ULTRAPOS/9 * 5) kind = 44;
-                            else if (temp3 <= ULTRAPOS/18 * 11) kind = 43;
-                            else if (temp3 <= ULTRAPOS/3 * 2) kind = 45;
-                            else if (temp3 <= ULTRAPOS/18 * 13) kind = 41;
-                            else if (temp3 <= ULTRAPOS/9 * 7) kind = 42;
-                            else if (temp3 <= ULTRAPOS/6 * 5) kind = 50;
-                            else if (temp3 <= ULTRAPOS/9 * 8) kind = 47;
-                            else if (temp3 <= ULTRAPOS/18 * 17) kind = 48;
+                            if (temp3 < 1 + ULTRAPOS/18) kind = 36;
+                            else if (temp3 < 1 + ULTRAPOS/9) kind = 34;
+                            else if (temp3 < 1 + ULTRAPOS/6) kind = 33;
+                            else if (temp3 < 1 + ULTRAPOS/9 * 2) kind = 35;
+                            else if (temp3 < 1 + ULTRAPOS/18 * 5) kind = 40;
+                            else if (temp3 < 1 + ULTRAPOS/3) kind = 38;
+                            else if (temp3 < 1 + ULTRAPOS/18 * 7) kind = 37;
+                            else if (temp3 < 1 + ULTRAPOS/9 * 4) kind = 39;
+                            else if (temp3 < 1 + ULTRAPOS/2) kind = 46;
+                            else if (temp3 < 1 + ULTRAPOS/9 * 5) kind = 44;
+                            else if (temp3 < 1 + ULTRAPOS/18 * 11) kind = 43;
+                            else if (temp3 < 1 + ULTRAPOS/3 * 2) kind = 45;
+                            else if (temp3 < 1 + ULTRAPOS/18 * 13) kind = 41;
+                            else if (temp3 < 1 + ULTRAPOS/9 * 7) kind = 42;
+                            else if (temp3 < 1 + ULTRAPOS/6 * 5) kind = 50;
+                            else if (temp3 < 1 + ULTRAPOS/9 * 8) kind = 47;
+                            else if (temp3 < 1 + ULTRAPOS/18 * 17) kind = 48;
                             else kind = 49;
                             four_star_guarantee_number = 1;
                         }
                     }
                 }
-                else if (five_star_assurance_number <= 89 && five_star_assurance_number >= 74 && four_star_assurance_number <= 8) {
-                    if (temp1 <= ULTRAPOS/1000 * 6 + (five_star_assurance_number - 73) * ULTRAPOS/1000 * 60) {
+                else if (five_star_assurance_number < 1 + 89 && five_star_assurance_number >= 74 && four_star_assurance_number < 1 + 8) {
+                    if (temp1 < 1 + ULTRAPOS/1000 * 6 + (five_star_assurance_number - 73) * ULTRAPOS/1000 * 60) {
                         star = 5;
                         five_count = five_count + 1;
                         ave_fives = ave_fives + five_star_assurance_number;
@@ -550,7 +550,7 @@ int main() {
                         if (five_star_assurance_number < min_fives) { min_fives = five_star_assurance_number; min_fivesth = five_count; min_fivecount = count; }
                         five_star_assurance_number = 0;
                         if (five_star_guarantee_number == 1) { type = 1; kind = 66; five_star_guarantee_number = 0;}
-                        else if (temp2 <= ULTRAPOS/2) {
+                        else if (temp2 < 1 + ULTRAPOS/2) {
                             type = 1;
                             kind = 66;
                             five_star_guarantee_number = 0;
@@ -558,169 +558,68 @@ int main() {
                         else {
                             type = 2;
                             five_star_guarantee_number = 1;
-                            if (temp3 <= ULTRAPOS/5) kind = 5;
-                            else if (temp3 <= ULTRAPOS/5 * 2) kind = 3;
-                            else if (temp3 <= ULTRAPOS/5 * 3) kind = 1;
-                            else if (temp3 <= ULTRAPOS/5 * 4) kind = 4;
+                            if (temp3 < 1 + ULTRAPOS/5) kind = 5;
+                            else if (temp3 < 1 + ULTRAPOS/5 * 2) kind = 3;
+                            else if (temp3 < 1 + ULTRAPOS/5 * 3) kind = 1;
+                            else if (temp3 < 1 + ULTRAPOS/5 * 4) kind = 4;
                             else kind = 2;
                         }
                     }
-                    else if (temp1 <= ULTRAPOS/1000 * 57 + (five_star_assurance_number - 73) * ULTRAPOS/1000 * 60) {
+                    else if (temp1 < 1 + ULTRAPOS/1000 * 57 + (five_star_assurance_number - 73) * ULTRAPOS/1000 * 60) {
                         star = 4;
                         four_count = four_count + 1;
                         four_star_assurance_number = 0;
                         if (four_star_guarantee_number == 1) {
                             type = 1;
-                            if (temp3 <= ULTRAPOS/3) kind = 23;
-                            else if (temp3 <= ULTRAPOS/3 * 2) kind = 16;
+                            if (temp3 < 1 + ULTRAPOS/3) kind = 23;
+                            else if (temp3 < 1 + ULTRAPOS/3 * 2) kind = 16;
                             else kind = 31;
                             four_star_guarantee_number = 0;
                             }
-                        else if (temp2 <= ULTRAPOS/2 * (int)(10 * (unmet - threshold))) {
+                        else if (temp2 < 1 + ULTRAPOS/2 * (int)(10 * (unmet - threshold))) {
                             type = 1;
-                            if (temp3 <= ULTRAPOS/3) kind = 23;
-                            else if (temp3 <= ULTRAPOS/3 * 2) kind = 16;
+                            if (temp3 < 1 + ULTRAPOS/3) kind = 23;
+                            else if (temp3 < 1 + ULTRAPOS/3 * 2) kind = 16;
                             else kind = 31;
                             four_star_guarantee_number = 0;
                         }
-                        else if (temp2 <= ULTRAPOS/6 * 5) {
+                        else if (temp2 < 1 + ULTRAPOS/6 * 5) {
                             type = 2;
                             unmet_count = 0;
                             unmet = (double)17.1;
-                            if (temp3 <= ULTRAPOS/11) kind = 18;
-                            else if (temp3 <= ULTRAPOS/11 * 2) kind = 20;
-                            else if (temp3 <= ULTRAPOS/11 * 3) kind = 26;
-                            else if (temp3 <= ULTRAPOS/11 * 4) kind = 29;
-                            else if (temp3 <= ULTRAPOS/11 * 5) kind = 21;
-                            else if (temp3 <= ULTRAPOS/11 * 6) kind = 24;
-                            else if (temp3 <= ULTRAPOS/11 * 7) kind = 25;
-                            else if (temp3 <= ULTRAPOS/11 * 8) kind = 22;
-                            else if (temp3 <= ULTRAPOS/11 * 9) kind = 27;
-                            else if (temp3 <= ULTRAPOS/11 * 10) kind = 19;
+                            if (temp3 < 1 + ULTRAPOS/11) kind = 18;
+                            else if (temp3 < 1 + ULTRAPOS/11 * 2) kind = 20;
+                            else if (temp3 < 1 + ULTRAPOS/11 * 3) kind = 26;
+                            else if (temp3 < 1 + ULTRAPOS/11 * 4) kind = 29;
+                            else if (temp3 < 1 + ULTRAPOS/11 * 5) kind = 21;
+                            else if (temp3 < 1 + ULTRAPOS/11 * 6) kind = 24;
+                            else if (temp3 < 1 + ULTRAPOS/11 * 7) kind = 25;
+                            else if (temp3 < 1 + ULTRAPOS/11 * 8) kind = 22;
+                            else if (temp3 < 1 + ULTRAPOS/11 * 9) kind = 27;
+                            else if (temp3 < 1 + ULTRAPOS/11 * 10) kind = 19;
                             else kind = 17;
                             four_star_guarantee_number = 1;
                         }
                         else {
                             type = 3;
                             unmet_count = unmet_count + 1;
-                            if (temp3 <= ULTRAPOS/18) kind = 36;
-                            else if (temp3 <= ULTRAPOS/9) kind = 34;
-                            else if (temp3 <= ULTRAPOS/6) kind = 33;
-                            else if (temp3 <= ULTRAPOS/9 * 2) kind = 35;
-                            else if (temp3 <= ULTRAPOS/3) kind = 40;
-                            else if (temp3 <= ULTRAPOS/18 * 5) kind = 38;
-                            else if (temp3 <= ULTRAPOS/18 * 7) kind = 37;
-                            else if (temp3 <= ULTRAPOS/9 * 4) kind = 39;
-                            else if (temp3 <= ULTRAPOS/2) kind = 46;
-                            else if (temp3 <= ULTRAPOS/9 * 5) kind = 44;
-                            else if (temp3 <= ULTRAPOS/18 * 11) kind = 43;
-                            else if (temp3 <= ULTRAPOS/3 * 2) kind = 45;
-                            else if (temp3 <= ULTRAPOS/18 * 13) kind = 41;
-                            else if (temp3 <= ULTRAPOS/9 * 7) kind = 42;
-                            else if (temp3 <= ULTRAPOS/6 * 5) kind = 50;
-                            else if (temp3 <= ULTRAPOS/9 * 8) kind = 47;
-                            else if (temp3 <= ULTRAPOS/18 * 17) kind = 48;
-                            else kind = 49;
-                            four_star_guarantee_number = 1;
-                        }
-                    }
-                    else {
-                        star = 3;
-                        type = 2;
-                        if (temp3 <= ULTRAPOS/13) kind = 51;
-                        else if (temp3 <= ULTRAPOS/13 * 2) kind = 52;
-                        else if (temp3 <= ULTRAPOS/13 * 3) kind = 53;
-                        else if (temp3 <= ULTRAPOS/13 * 4) kind = 54;
-                        else if (temp3 <= ULTRAPOS/13 * 5) kind = 55;
-                        else if (temp3 <= ULTRAPOS/13 * 6) kind = 56;
-                        else if (temp3 <= ULTRAPOS/13 * 7) kind = 57;
-                        else if (temp3 <= ULTRAPOS/13 * 8) kind = 58;
-                        else if (temp3 <= ULTRAPOS/13 * 9) kind = 59;
-                        else if (temp3 <= ULTRAPOS/13 * 10) kind = 60;
-                        else if (temp3 <= ULTRAPOS/13 * 11) kind = 61;
-                        else if (temp3 <= ULTRAPOS/13 * 12) kind = 62;
-                        else kind = 63;
-                    }
-                }
-                else if (five_star_assurance_number <= 89 && five_star_assurance_number >= 74 && four_star_assurance_number == 9) {
-                    if (temp1 <= ULTRAPOS/1000 * 6 + (five_star_assurance_number - 73) * ULTRAPOS/1000 * 60) {
-                        star = 5;
-                        five_count = five_count + 1;
-                        ave_fives = ave_fives + five_star_assurance_number;
-                        if (five_star_assurance_number > max_fives) { max_fives = five_star_assurance_number; max_fivesth = five_count; max_fivecount = count; }
-                        if (five_star_assurance_number < min_fives) { min_fives = five_star_assurance_number; min_fivesth = five_count; min_fivecount = count; }
-                        five_star_assurance_number = 0;
-                        if (five_star_guarantee_number == 1) { type = 1; kind = 66; five_star_guarantee_number = 0;}
-                        else if (temp2 <= ULTRAPOS/2) {
-                            type = 1;
-                            kind = 66;
-                            five_star_guarantee_number = 0;
-                        }
-                        else {
-                            type = 2;
-                            five_star_guarantee_number = 1;
-                            if (temp3 <= ULTRAPOS/5) kind = 5;
-                            else if (temp3 <= ULTRAPOS/5 * 2) kind = 3;
-                            else if (temp3 <= ULTRAPOS/5 * 3) kind = 1;
-                            else if (temp3 <= ULTRAPOS/5 * 4) kind = 4;
-                            else kind = 2;
-                        }
-                    }
-                    else if (temp1 <= ULTRAPOS/1000 * 567 + (five_star_assurance_number - 73) * ULTRAPOS/1000 * 60) {
-                        star = 4;
-                        four_count = four_count + 1;
-                        four_star_assurance_number = 0;
-                        if (four_star_guarantee_number == 1) {
-                            type = 1;
-                            if (temp3 <= ULTRAPOS/3) kind = 23;
-                            else if (temp3 <= ULTRAPOS/3 * 2) kind = 16;
-                            else kind = 31;
-                            four_star_guarantee_number = 0;
-                            }
-                        else if (temp2 <= ULTRAPOS/2 * (int)(10 * (unmet - threshold))) {
-                            type = 1;
-                            if (temp3 <= ULTRAPOS/3) kind = 23;
-                            else if (temp3 <= ULTRAPOS/3 * 2) kind = 16;
-                            else kind = 31;
-                            four_star_guarantee_number = 0;
-                        }
-                        else if (temp2 <= ULTRAPOS/6 * 5) {
-                            type = 2;
-                            unmet_count = 0;
-                            unmet = (double)17.1;
-                            if (temp3 <= ULTRAPOS/11) kind = 18;
-                            else if (temp3 <= ULTRAPOS/11 * 2) kind = 20;
-                            else if (temp3 <= ULTRAPOS/11 * 3) kind = 26;
-                            else if (temp3 <= ULTRAPOS/11 * 4) kind = 29;
-                            else if (temp3 <= ULTRAPOS/11 * 5) kind = 21;
-                            else if (temp3 <= ULTRAPOS/11 * 6) kind = 24;
-                            else if (temp3 <= ULTRAPOS/11 * 7) kind = 25;
-                            else if (temp3 <= ULTRAPOS/11 * 8) kind = 22;
-                            else if (temp3 <= ULTRAPOS/11 * 9) kind = 27;
-                            else if (temp3 <= ULTRAPOS/11 * 10) kind = 19;
-                            else kind = 17;
-                            four_star_guarantee_number = 1;
-                        }
-                        else {
-                            type = 3;
-                            unmet_count = unmet_count + 1;
-                            if (temp3 <= ULTRAPOS/18) kind = 36;
-                            else if (temp3 <= ULTRAPOS/9) kind = 34;
-                            else if (temp3 <= ULTRAPOS/6) kind = 33;
-                            else if (temp3 <= ULTRAPOS/9 * 2) kind = 35;
-                            else if (temp3 <= ULTRAPOS/3) kind = 40;
-                            else if (temp3 <= ULTRAPOS/18 * 5) kind = 38;
-                            else if (temp3 <= ULTRAPOS/18 * 7) kind = 37;
-                            else if (temp3 <= ULTRAPOS/9 * 4) kind = 39;
-                            else if (temp3 <= ULTRAPOS/2) kind = 46;
-                            else if (temp3 <= ULTRAPOS/18) kind = 44;
-                            else if (temp3 <= ULTRAPOS/18 * 11) kind = 43;
-                            else if (temp3 <= ULTRAPOS/3 * 2) kind = 45;
-                            else if (temp3 <= ULTRAPOS/18 * 13) kind = 41;
-                            else if (temp3 <= ULTRAPOS/9 * 7) kind = 42;
-                            else if (temp3 <= ULTRAPOS/6 * 5) kind = 50;
-                            else if (temp3 <= ULTRAPOS/9 * 8) kind = 47;
-                            else if (temp3 <= ULTRAPOS/18 * 17) kind = 48;
+                            if (temp3 < 1 + ULTRAPOS/18) kind = 36;
+                            else if (temp3 < 1 + ULTRAPOS/9) kind = 34;
+                            else if (temp3 < 1 + ULTRAPOS/6) kind = 33;
+                            else if (temp3 < 1 + ULTRAPOS/9 * 2) kind = 35;
+                            else if (temp3 < 1 + ULTRAPOS/3) kind = 40;
+                            else if (temp3 < 1 + ULTRAPOS/18 * 5) kind = 38;
+                            else if (temp3 < 1 + ULTRAPOS/18 * 7) kind = 37;
+                            else if (temp3 < 1 + ULTRAPOS/9 * 4) kind = 39;
+                            else if (temp3 < 1 + ULTRAPOS/2) kind = 46;
+                            else if (temp3 < 1 + ULTRAPOS/9 * 5) kind = 44;
+                            else if (temp3 < 1 + ULTRAPOS/18 * 11) kind = 43;
+                            else if (temp3 < 1 + ULTRAPOS/3 * 2) kind = 45;
+                            else if (temp3 < 1 + ULTRAPOS/18 * 13) kind = 41;
+                            else if (temp3 < 1 + ULTRAPOS/9 * 7) kind = 42;
+                            else if (temp3 < 1 + ULTRAPOS/6 * 5) kind = 50;
+                            else if (temp3 < 1 + ULTRAPOS/9 * 8) kind = 47;
+                            else if (temp3 < 1 + ULTRAPOS/18 * 17) kind = 48;
                             else kind = 49;
                             four_star_guarantee_number = 1;
                         }
@@ -728,23 +627,23 @@ int main() {
                     else {
                         star = 3;
                         type = 2;
-                        if (temp3 <= ULTRAPOS/13) kind = 51;
-                        else if (temp3 <= ULTRAPOS/13 * 2) kind = 52;
-                        else if (temp3 <= ULTRAPOS/13 * 3) kind = 53;
-                        else if (temp3 <= ULTRAPOS/13 * 4) kind = 54;
-                        else if (temp3 <= ULTRAPOS/13 * 5) kind = 55;
-                        else if (temp3 <= ULTRAPOS/13 * 6) kind = 56;
-                        else if (temp3 <= ULTRAPOS/13 * 7) kind = 57;
-                        else if (temp3 <= ULTRAPOS/13 * 8) kind = 58;
-                        else if (temp3 <= ULTRAPOS/13 * 9) kind = 59;
-                        else if (temp3 <= ULTRAPOS/13 * 10) kind = 60;
-                        else if (temp3 <= ULTRAPOS/13 * 11) kind = 61;
-                        else if (temp3 <= ULTRAPOS/13 * 12) kind = 62;
+                        if (temp3 < 1 + ULTRAPOS/13) kind = 51;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 2) kind = 52;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 3) kind = 53;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 4) kind = 54;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 5) kind = 55;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 6) kind = 56;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 7) kind = 57;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 8) kind = 58;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 9) kind = 59;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 10) kind = 60;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 11) kind = 61;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 12) kind = 62;
                         else kind = 63;
                     }
                 }
-                else if (five_star_assurance_number <= 89 && five_star_assurance_number >= 74 && four_star_assurance_number >= 10) {
-                    if (temp1 <= ULTRAPOS/1000 * 6 + (five_star_assurance_number - 73) * ULTRAPOS/1000 * 60) {
+                else if (five_star_assurance_number < 1 + 89 && five_star_assurance_number >= 74 && four_star_assurance_number == 9) {
+                    if (temp1 < 1 + ULTRAPOS/1000 * 6 + (five_star_assurance_number - 73) * ULTRAPOS/1000 * 60) {
                         star = 5;
                         five_count = five_count + 1;
                         ave_fives = ave_fives + five_star_assurance_number;
@@ -752,7 +651,7 @@ int main() {
                         if (five_star_assurance_number < min_fives) { min_fives = five_star_assurance_number; min_fivesth = five_count; min_fivecount = count; }
                         five_star_assurance_number = 0;
                         if (five_star_guarantee_number == 1) { type = 1; kind = 66; five_star_guarantee_number = 0;}
-                        else if (temp2 <= ULTRAPOS/2) {
+                        else if (temp2 < 1 + ULTRAPOS/2) {
                             type = 1;
                             kind = 66;
                             five_star_guarantee_number = 0;
@@ -760,10 +659,111 @@ int main() {
                         else {
                             type = 2;
                             five_star_guarantee_number = 1;
-                            if (temp3 <= ULTRAPOS/5) kind = 5;
-                            else if (temp3 <= ULTRAPOS/5 * 2) kind = 3;
-                            else if (temp3 <= ULTRAPOS/5 * 3) kind = 1;
-                            else if (temp3 <= ULTRAPOS/5 * 4) kind = 4;
+                            if (temp3 < 1 + ULTRAPOS/5) kind = 5;
+                            else if (temp3 < 1 + ULTRAPOS/5 * 2) kind = 3;
+                            else if (temp3 < 1 + ULTRAPOS/5 * 3) kind = 1;
+                            else if (temp3 < 1 + ULTRAPOS/5 * 4) kind = 4;
+                            else kind = 2;
+                        }
+                    }
+                    else if (temp1 < 1 + ULTRAPOS/1000 * 567 + (five_star_assurance_number - 73) * ULTRAPOS/1000 * 60) {
+                        star = 4;
+                        four_count = four_count + 1;
+                        four_star_assurance_number = 0;
+                        if (four_star_guarantee_number == 1) {
+                            type = 1;
+                            if (temp3 < 1 + ULTRAPOS/3) kind = 23;
+                            else if (temp3 < 1 + ULTRAPOS/3 * 2) kind = 16;
+                            else kind = 31;
+                            four_star_guarantee_number = 0;
+                            }
+                        else if (temp2 < 1 + ULTRAPOS/2 * (int)(10 * (unmet - threshold))) {
+                            type = 1;
+                            if (temp3 < 1 + ULTRAPOS/3) kind = 23;
+                            else if (temp3 < 1 + ULTRAPOS/3 * 2) kind = 16;
+                            else kind = 31;
+                            four_star_guarantee_number = 0;
+                        }
+                        else if (temp2 < 1 + ULTRAPOS/6 * 5) {
+                            type = 2;
+                            unmet_count = 0;
+                            unmet = (double)17.1;
+                            if (temp3 < 1 + ULTRAPOS/11) kind = 18;
+                            else if (temp3 < 1 + ULTRAPOS/11 * 2) kind = 20;
+                            else if (temp3 < 1 + ULTRAPOS/11 * 3) kind = 26;
+                            else if (temp3 < 1 + ULTRAPOS/11 * 4) kind = 29;
+                            else if (temp3 < 1 + ULTRAPOS/11 * 5) kind = 21;
+                            else if (temp3 < 1 + ULTRAPOS/11 * 6) kind = 24;
+                            else if (temp3 < 1 + ULTRAPOS/11 * 7) kind = 25;
+                            else if (temp3 < 1 + ULTRAPOS/11 * 8) kind = 22;
+                            else if (temp3 < 1 + ULTRAPOS/11 * 9) kind = 27;
+                            else if (temp3 < 1 + ULTRAPOS/11 * 10) kind = 19;
+                            else kind = 17;
+                            four_star_guarantee_number = 1;
+                        }
+                        else {
+                            type = 3;
+                            unmet_count = unmet_count + 1;
+                            if (temp3 < 1 + ULTRAPOS/18) kind = 36;
+                            else if (temp3 < 1 + ULTRAPOS/9) kind = 34;
+                            else if (temp3 < 1 + ULTRAPOS/6) kind = 33;
+                            else if (temp3 < 1 + ULTRAPOS/9 * 2) kind = 35;
+                            else if (temp3 < 1 + ULTRAPOS/3) kind = 40;
+                            else if (temp3 < 1 + ULTRAPOS/18 * 5) kind = 38;
+                            else if (temp3 < 1 + ULTRAPOS/18 * 7) kind = 37;
+                            else if (temp3 < 1 + ULTRAPOS/9 * 4) kind = 39;
+                            else if (temp3 < 1 + ULTRAPOS/2) kind = 46;
+                            else if (temp3 < 1 + ULTRAPOS/18) kind = 44;
+                            else if (temp3 < 1 + ULTRAPOS/18 * 11) kind = 43;
+                            else if (temp3 < 1 + ULTRAPOS/3 * 2) kind = 45;
+                            else if (temp3 < 1 + ULTRAPOS/18 * 13) kind = 41;
+                            else if (temp3 < 1 + ULTRAPOS/9 * 7) kind = 42;
+                            else if (temp3 < 1 + ULTRAPOS/6 * 5) kind = 50;
+                            else if (temp3 < 1 + ULTRAPOS/9 * 8) kind = 47;
+                            else if (temp3 < 1 + ULTRAPOS/18 * 17) kind = 48;
+                            else kind = 49;
+                            four_star_guarantee_number = 1;
+                        }
+                    }
+                    else {
+                        star = 3;
+                        type = 2;
+                        if (temp3 < 1 + ULTRAPOS/13) kind = 51;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 2) kind = 52;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 3) kind = 53;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 4) kind = 54;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 5) kind = 55;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 6) kind = 56;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 7) kind = 57;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 8) kind = 58;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 9) kind = 59;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 10) kind = 60;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 11) kind = 61;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 12) kind = 62;
+                        else kind = 63;
+                    }
+                }
+                else if (five_star_assurance_number < 1 + 89 && five_star_assurance_number >= 74 && four_star_assurance_number >= 10) {
+                    if (temp1 < 1 + ULTRAPOS/1000 * 6 + (five_star_assurance_number - 73) * ULTRAPOS/1000 * 60) {
+                        star = 5;
+                        five_count = five_count + 1;
+                        ave_fives = ave_fives + five_star_assurance_number;
+                        if (five_star_assurance_number > max_fives) { max_fives = five_star_assurance_number; max_fivesth = five_count; max_fivecount = count; }
+                        if (five_star_assurance_number < min_fives) { min_fives = five_star_assurance_number; min_fivesth = five_count; min_fivecount = count; }
+                        five_star_assurance_number = 0;
+                        if (five_star_guarantee_number == 1) { type = 1; kind = 66; five_star_guarantee_number = 0;}
+                        else if (temp2 < 1 + ULTRAPOS/2) {
+                            type = 1;
+                            kind = 66;
+                            five_star_guarantee_number = 0;
+                        }
+                        else {
+                            type = 2;
+                            five_star_guarantee_number = 1;
+                            if (temp3 < 1 + ULTRAPOS/5) kind = 5;
+                            else if (temp3 < 1 + ULTRAPOS/5 * 2) kind = 3;
+                            else if (temp3 < 1 + ULTRAPOS/5 * 3) kind = 1;
+                            else if (temp3 < 1 + ULTRAPOS/5 * 4) kind = 4;
                             else kind = 2;
                         }
                     }
@@ -773,55 +773,55 @@ int main() {
                         four_star_assurance_number = 0;
                         if (four_star_guarantee_number == 1) {
                             type = 1;
-                            if (temp3 <= ULTRAPOS/3) kind = 23;
-                            else if (temp3 <= ULTRAPOS/3 * 2) kind = 16;
+                            if (temp3 < 1 + ULTRAPOS/3) kind = 23;
+                            else if (temp3 < 1 + ULTRAPOS/3 * 2) kind = 16;
                             else kind = 31;
                             four_star_guarantee_number = 0;
                             }
-                        else if (temp2 <= ULTRAPOS/2 * (int)(10 * (unmet - threshold))) {
+                        else if (temp2 < 1 + ULTRAPOS/2 * (int)(10 * (unmet - threshold))) {
                             type = 1;
-                            if (temp3 <= ULTRAPOS/3) kind = 23;
-                            else if (temp3 <= ULTRAPOS/3 * 2) kind = 16;
+                            if (temp3 < 1 + ULTRAPOS/3) kind = 23;
+                            else if (temp3 < 1 + ULTRAPOS/3 * 2) kind = 16;
                             else kind = 31;
                             four_star_guarantee_number = 0;
                         }
-                        else if (temp2 <= ULTRAPOS/6 * 5) {
+                        else if (temp2 < 1 + ULTRAPOS/6 * 5) {
                             type = 2;
                             unmet_count = 0;
                             unmet = (double)17.1;
-                            if (temp3 <= ULTRAPOS/11) kind = 18;
-                            else if (temp3 <= ULTRAPOS/11 * 2) kind = 20;
-                            else if (temp3 <= ULTRAPOS/11 * 3) kind = 26;
-                            else if (temp3 <= ULTRAPOS/11 * 4) kind = 29;
-                            else if (temp3 <= ULTRAPOS/11 * 5) kind = 21;
-                            else if (temp3 <= ULTRAPOS/11 * 6) kind = 24;
-                            else if (temp3 <= ULTRAPOS/11 * 7) kind = 25;
-                            else if (temp3 <= ULTRAPOS/11 * 8) kind = 22;
-                            else if (temp3 <= ULTRAPOS/11 * 9) kind = 27;
-                            else if (temp3 <= ULTRAPOS/11 * 10) kind = 19;
+                            if (temp3 < 1 + ULTRAPOS/11) kind = 18;
+                            else if (temp3 < 1 + ULTRAPOS/11 * 2) kind = 20;
+                            else if (temp3 < 1 + ULTRAPOS/11 * 3) kind = 26;
+                            else if (temp3 < 1 + ULTRAPOS/11 * 4) kind = 29;
+                            else if (temp3 < 1 + ULTRAPOS/11 * 5) kind = 21;
+                            else if (temp3 < 1 + ULTRAPOS/11 * 6) kind = 24;
+                            else if (temp3 < 1 + ULTRAPOS/11 * 7) kind = 25;
+                            else if (temp3 < 1 + ULTRAPOS/11 * 8) kind = 22;
+                            else if (temp3 < 1 + ULTRAPOS/11 * 9) kind = 27;
+                            else if (temp3 < 1 + ULTRAPOS/11 * 10) kind = 19;
                             else kind = 17;
                             four_star_guarantee_number = 1;
                         }
                         else {
                             type = 3;
                             unmet_count = unmet_count + 1;
-                            if (temp3 <= ULTRAPOS/18) kind = 36;
-                            else if (temp3 <= ULTRAPOS/9) kind = 34;
-                            else if (temp3 <= ULTRAPOS/6) kind = 33;
-                            else if (temp3 <= ULTRAPOS/9 * 2) kind = 35;
-                            else if (temp3 <= ULTRAPOS/3) kind = 40;
-                            else if (temp3 <= ULTRAPOS/18 * 5) kind = 38;
-                            else if (temp3 <= ULTRAPOS/18 * 7) kind = 37;
-                            else if (temp3 <= ULTRAPOS/9 * 4) kind = 39;
-                            else if (temp3 <= ULTRAPOS/2) kind = 46;
-                            else if (temp3 <= ULTRAPOS/9 * 5) kind = 44;
-                            else if (temp3 <= ULTRAPOS/18 * 11) kind = 43;
-                            else if (temp3 <= ULTRAPOS/3 * 2) kind = 45;
-                            else if (temp3 <= ULTRAPOS/18 * 13) kind = 41;
-                            else if (temp3 <= ULTRAPOS/9 * 7) kind = 42;
-                            else if (temp3 <= ULTRAPOS/6 * 5) kind = 50;
-                            else if (temp3 <= ULTRAPOS/9 * 8) kind = 47;
-                            else if (temp3 <= ULTRAPOS/18 * 17) kind = 48;
+                            if (temp3 < 1 + ULTRAPOS/18) kind = 36;
+                            else if (temp3 < 1 + ULTRAPOS/9) kind = 34;
+                            else if (temp3 < 1 + ULTRAPOS/6) kind = 33;
+                            else if (temp3 < 1 + ULTRAPOS/9 * 2) kind = 35;
+                            else if (temp3 < 1 + ULTRAPOS/3) kind = 40;
+                            else if (temp3 < 1 + ULTRAPOS/18 * 5) kind = 38;
+                            else if (temp3 < 1 + ULTRAPOS/18 * 7) kind = 37;
+                            else if (temp3 < 1 + ULTRAPOS/9 * 4) kind = 39;
+                            else if (temp3 < 1 + ULTRAPOS/2) kind = 46;
+                            else if (temp3 < 1 + ULTRAPOS/9 * 5) kind = 44;
+                            else if (temp3 < 1 + ULTRAPOS/18 * 11) kind = 43;
+                            else if (temp3 < 1 + ULTRAPOS/3 * 2) kind = 45;
+                            else if (temp3 < 1 + ULTRAPOS/18 * 13) kind = 41;
+                            else if (temp3 < 1 + ULTRAPOS/9 * 7) kind = 42;
+                            else if (temp3 < 1 + ULTRAPOS/6 * 5) kind = 50;
+                            else if (temp3 < 1 + ULTRAPOS/9 * 8) kind = 47;
+                            else if (temp3 < 1 + ULTRAPOS/18 * 17) kind = 48;
                             else kind = 49;
                             four_star_guarantee_number = 1;
                         }
@@ -835,7 +835,7 @@ int main() {
                         if (five_star_assurance_number < min_fives) { min_fives = five_star_assurance_number; min_fivesth = five_count; min_fivecount = count; }
                         five_star_assurance_number = 0;
                     if (five_star_guarantee_number == 1) { type = 1; kind = 66; five_star_guarantee_number = 0;}
-                    else if (temp2 <= ULTRAPOS/2) {
+                    else if (temp2 < 1 + ULTRAPOS/2) {
                         type = 1;
                         kind = 66;
                         five_star_guarantee_number = 0;
@@ -843,10 +843,10 @@ int main() {
                     else {
                         type = 2;
                         five_star_guarantee_number = 1;
-                        if (temp3 <= ULTRAPOS/5) kind = 5;
-                        else if (temp3 <= ULTRAPOS/5 * 2) kind = 3;
-                        else if (temp3 <= ULTRAPOS/5 * 3) kind = 1;
-                        else if (temp3 <= ULTRAPOS/5 * 4) kind = 4;
+                        if (temp3 < 1 + ULTRAPOS/5) kind = 5;
+                        else if (temp3 < 1 + ULTRAPOS/5 * 2) kind = 3;
+                        else if (temp3 < 1 + ULTRAPOS/5 * 3) kind = 1;
+                        else if (temp3 < 1 + ULTRAPOS/5 * 4) kind = 4;
                         else kind = 2;
                     }
                 }
@@ -996,8 +996,8 @@ int main() {
                 int type = 0; //Up or non-up, character or weapon
                 int kind = 0; //which exactly
                 if (unmet_count > threshold) unmet = (double)unmet_count;
-                if (five_star_assurance_number <= 73 && four_star_assurance_number <= 8) {
-                    if (temp1 <= ULTRAPOS/1000 * 6) {
+                if (five_star_assurance_number < 1 + 73 && four_star_assurance_number < 1 + 8) {
+                    if (temp1 < 1 + ULTRAPOS/1000 * 6) {
                         star = 5;
                         five_count = five_count + 1;
                         ave_fives = ave_fives + five_star_assurance_number;
@@ -1005,7 +1005,7 @@ int main() {
                         if (five_star_assurance_number < min_fives) { min_fives = five_star_assurance_number; min_fivesth = five_count; min_fivecount = count; }
                         five_star_assurance_number = 0;
                         if (five_star_guarantee_number == 1) { type = 1; kind = 1; five_star_guarantee_number = 0;}
-                        else if (temp2 <= ULTRAPOS/2) {
+                        else if (temp2 < 1 + ULTRAPOS/2) {
                             type = 1;
                             kind = 1;
                             five_star_guarantee_number = 0;
@@ -1013,69 +1013,69 @@ int main() {
                         else {
                             type = 2;
                             five_star_guarantee_number = 1;
-                            if (temp3 <= ULTRAPOS/5) kind = 2;
-                            else if (temp3 <= ULTRAPOS/5 * 2) kind = 3;
-                            else if (temp3 <= ULTRAPOS/5 * 3) kind = 4;
-                            else if (temp3 <= ULTRAPOS/5 * 4) kind = 5;
+                            if (temp3 < 1 + ULTRAPOS/5) kind = 2;
+                            else if (temp3 < 1 + ULTRAPOS/5 * 2) kind = 3;
+                            else if (temp3 < 1 + ULTRAPOS/5 * 3) kind = 4;
+                            else if (temp3 < 1 + ULTRAPOS/5 * 4) kind = 5;
                             else kind = 6;
                         }
                     }
-                    else if (temp1 <= ULTRAPOS/1000 * 57) {
+                    else if (temp1 < 1 + ULTRAPOS/1000 * 57) {
                         star = 4;
                         four_count = four_count + 1;
                         four_star_assurance_number = 0;
                         if (four_star_guarantee_number == 1) {
                             type = 1;
-                            if (temp3 <= ULTRAPOS/3) kind = 7;
-                            else if (temp3 <= ULTRAPOS/3 * 2) kind = 8;
+                            if (temp3 < 1 + ULTRAPOS/3) kind = 7;
+                            else if (temp3 < 1 + ULTRAPOS/3 * 2) kind = 8;
                             else kind = 9; 
                             four_star_guarantee_number = 0;
                             }
-                        else if (temp2 <= ULTRAPOS/2) {
+                        else if (temp2 < 1 + ULTRAPOS/2) {
                             type = 1;
-                            if (temp3 <= ULTRAPOS/3) kind = 7;
-                            else if (temp3 <= ULTRAPOS/3 * 2) kind = 8;
+                            if (temp3 < 1 + ULTRAPOS/3) kind = 7;
+                            else if (temp3 < 1 + ULTRAPOS/3 * 2) kind = 8;
                             else kind = 9;
                             four_star_guarantee_number = 0;
                         }
-                        else if (temp2 <= ULTRAPOS/4 * (int)(10 * (unmet - threshold))) {
+                        else if (temp2 < 1 + ULTRAPOS/4 * (int)(10 * (unmet - threshold))) {
                             type = 2;
                             unmet_count = 0;
                             unmet = (double)17.1;
-                            if (temp3 <= ULTRAPOS/12) kind = 10;
-                            else if (temp3 <= ULTRAPOS/6) kind = 11;
-                            else if (temp3 <= ULTRAPOS/4) kind = 12;
-                            else if (temp3 <= ULTRAPOS/3) kind = 13;
-                            else if (temp3 <= ULTRAPOS/12 * 5) kind = 14;
-                            else if (temp3 <= ULTRAPOS/2) kind = 15;
-                            else if (temp3 <= ULTRAPOS/12 * 7) kind = 16;
-                            else if (temp3 <= ULTRAPOS/3 * 2) kind = 17;
-                            else if (temp3 <= ULTRAPOS/4 * 3) kind = 18;
-                            else if (temp3 <= ULTRAPOS/6 * 5) kind = 19;
-                            else if (temp3 <= ULTRAPOS/12 * 11) kind = 20;
+                            if (temp3 < 1 + ULTRAPOS/12) kind = 10;
+                            else if (temp3 < 1 + ULTRAPOS/6) kind = 11;
+                            else if (temp3 < 1 + ULTRAPOS/4) kind = 12;
+                            else if (temp3 < 1 + ULTRAPOS/3) kind = 13;
+                            else if (temp3 < 1 + ULTRAPOS/12 * 5) kind = 14;
+                            else if (temp3 < 1 + ULTRAPOS/2) kind = 15;
+                            else if (temp3 < 1 + ULTRAPOS/12 * 7) kind = 16;
+                            else if (temp3 < 1 + ULTRAPOS/3 * 2) kind = 17;
+                            else if (temp3 < 1 + ULTRAPOS/4 * 3) kind = 18;
+                            else if (temp3 < 1 + ULTRAPOS/6 * 5) kind = 19;
+                            else if (temp3 < 1 + ULTRAPOS/12 * 11) kind = 20;
                             else kind = 21;
                             four_star_guarantee_number = 1;
                         }
                         else {
                             type = 3;
                             unmet_count = unmet_count + 1;
-                            if (temp3 <= ULTRAPOS/18) kind = 22;
-                            else if (temp3 <= ULTRAPOS/9) kind = 23;
-                            else if (temp3 <= ULTRAPOS/6) kind = 24;
-                            else if (temp3 <= ULTRAPOS/9 * 2) kind = 25;
-                            else if (temp3 <= ULTRAPOS/18 * 5) kind = 26;
-                            else if (temp3 <= ULTRAPOS/3) kind = 27;
-                            else if (temp3 <= ULTRAPOS/18 * 7) kind = 28;
-                            else if (temp3 <= ULTRAPOS/9 * 4) kind = 29;
-                            else if (temp3 <= ULTRAPOS/2) kind = 30;
-                            else if (temp3 <= ULTRAPOS/9 * 5) kind = 31;
-                            else if (temp3 <= ULTRAPOS/18 * 11) kind = 32;
-                            else if (temp3 <= ULTRAPOS/3 * 2) kind = 33;
-                            else if (temp3 <= ULTRAPOS/18 * 13) kind = 34;
-                            else if (temp3 <= ULTRAPOS/9 * 7) kind = 35;
-                            else if (temp3 <= ULTRAPOS/6 * 5) kind = 36;
-                            else if (temp3 <= ULTRAPOS/9 * 8) kind = 37;
-                            else if (temp3 <= ULTRAPOS/18 * 17) kind = 38;
+                            if (temp3 < 1 + ULTRAPOS/18) kind = 22;
+                            else if (temp3 < 1 + ULTRAPOS/9) kind = 23;
+                            else if (temp3 < 1 + ULTRAPOS/6) kind = 24;
+                            else if (temp3 < 1 + ULTRAPOS/9 * 2) kind = 25;
+                            else if (temp3 < 1 + ULTRAPOS/18 * 5) kind = 26;
+                            else if (temp3 < 1 + ULTRAPOS/3) kind = 27;
+                            else if (temp3 < 1 + ULTRAPOS/18 * 7) kind = 28;
+                            else if (temp3 < 1 + ULTRAPOS/9 * 4) kind = 29;
+                            else if (temp3 < 1 + ULTRAPOS/2) kind = 30;
+                            else if (temp3 < 1 + ULTRAPOS/9 * 5) kind = 31;
+                            else if (temp3 < 1 + ULTRAPOS/18 * 11) kind = 32;
+                            else if (temp3 < 1 + ULTRAPOS/3 * 2) kind = 33;
+                            else if (temp3 < 1 + ULTRAPOS/18 * 13) kind = 34;
+                            else if (temp3 < 1 + ULTRAPOS/9 * 7) kind = 35;
+                            else if (temp3 < 1 + ULTRAPOS/6 * 5) kind = 36;
+                            else if (temp3 < 1 + ULTRAPOS/9 * 8) kind = 37;
+                            else if (temp3 < 1 + ULTRAPOS/18 * 17) kind = 38;
                             else kind = 39;
                             four_star_guarantee_number = 1;
                         }
@@ -1083,23 +1083,23 @@ int main() {
                     else {
                         star = 3;
                         type = 2;
-                        if (temp3 <= ULTRAPOS/13) kind = 40;
-                        else if (temp3 <= ULTRAPOS/13 * 2) kind = 41;
-                        else if (temp3 <= ULTRAPOS/13 * 3) kind = 42;
-                        else if (temp3 <= ULTRAPOS/13 * 4) kind = 43;
-                        else if (temp3 <= ULTRAPOS/13 * 5) kind = 44;
-                        else if (temp3 <= ULTRAPOS/13 * 6) kind = 45;
-                        else if (temp3 <= ULTRAPOS/13 * 7) kind = 46;
-                        else if (temp3 <= ULTRAPOS/13 * 8) kind = 47;
-                        else if (temp3 <= ULTRAPOS/13 * 9) kind = 48;
-                        else if (temp3 <= ULTRAPOS/13 * 10) kind = 49;
-                        else if (temp3 <= ULTRAPOS/13 * 11) kind = 50;
-                        else if (temp3 <= ULTRAPOS/13 * 12) kind = 51;
+                        if (temp3 < 1 + ULTRAPOS/13) kind = 40;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 2) kind = 41;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 3) kind = 42;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 4) kind = 43;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 5) kind = 44;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 6) kind = 45;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 7) kind = 46;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 8) kind = 47;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 9) kind = 48;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 10) kind = 49;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 11) kind = 50;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 12) kind = 51;
                         else kind = 52;
                     }
                 }
-                else if (five_star_assurance_number <= 73 && four_star_assurance_number == 9) {
-                    if (temp1 <= ULTRAPOS/1000 * 6) {
+                else if (five_star_assurance_number < 1 + 73 && four_star_assurance_number == 9) {
+                    if (temp1 < 1 + ULTRAPOS/1000 * 6) {
                         star = 5;
                         five_count = five_count + 1;
                         ave_fives = ave_fives + five_star_assurance_number;
@@ -1107,7 +1107,7 @@ int main() {
                         if (five_star_assurance_number < min_fives) { min_fives = five_star_assurance_number; min_fivesth = five_count; min_fivecount = count; }
                         five_star_assurance_number = 0;
                         if (five_star_guarantee_number == 1) { type = 1; kind = 1; five_star_guarantee_number = 0;}
-                        else if (temp2 <= ULTRAPOS/2) {
+                        else if (temp2 < 1 + ULTRAPOS/2) {
                             type = 1;
                             kind = 1;
                             five_star_guarantee_number = 0;
@@ -1115,69 +1115,69 @@ int main() {
                         else {
                             type = 2;
                             five_star_guarantee_number = 1;
-                            if (temp3 <= ULTRAPOS/5) kind = 2;
-                            else if (temp3 <= ULTRAPOS/5 * 2) kind = 3;
-                            else if (temp3 <= ULTRAPOS/5 * 3) kind = 4;
-                            else if (temp3 <= ULTRAPOS/5 * 4) kind = 5;
+                            if (temp3 < 1 + ULTRAPOS/5) kind = 2;
+                            else if (temp3 < 1 + ULTRAPOS/5 * 2) kind = 3;
+                            else if (temp3 < 1 + ULTRAPOS/5 * 3) kind = 4;
+                            else if (temp3 < 1 + ULTRAPOS/5 * 4) kind = 5;
                             else kind = 6;
                         }
                     }
-                    else if (temp1 <= ULTRAPOS/1000 * 567) {
+                    else if (temp1 < 1 + ULTRAPOS/1000 * 567) {
                         star = 4;
                         four_count = four_count + 1;
                         four_star_assurance_number = 0;
                         if (four_star_guarantee_number == 1) {
                             type = 1;
-                            if (temp3 <= ULTRAPOS/3) kind = 7;
-                            else if (temp3 <= ULTRAPOS/3 * 2) kind = 8;
+                            if (temp3 < 1 + ULTRAPOS/3) kind = 7;
+                            else if (temp3 < 1 + ULTRAPOS/3 * 2) kind = 8;
                             else kind = 9; 
                             four_star_guarantee_number = 0;
                             }
-                        else if (temp2 <= ULTRAPOS/2 * (int)(10 * (unmet - threshold))) {
+                        else if (temp2 < 1 + ULTRAPOS/2 * (int)(10 * (unmet - threshold))) {
                             type = 1;
-                            if (temp3 <= ULTRAPOS/3) kind = 7;
-                            else if (temp3 <= ULTRAPOS/3 * 2) kind = 8;
+                            if (temp3 < 1 + ULTRAPOS/3) kind = 7;
+                            else if (temp3 < 1 + ULTRAPOS/3 * 2) kind = 8;
                             else kind = 9;
                             four_star_guarantee_number = 0;
                         }
-                        else if (temp2 <= ULTRAPOS/6 * 5) {
+                        else if (temp2 < 1 + ULTRAPOS/6 * 5) {
                             type = 2;
                             unmet_count = 0;
                             unmet = (double)17.1;
-                            if (temp3 <= ULTRAPOS/12) kind = 10;
-                            else if (temp3 <= ULTRAPOS/6) kind = 11;
-                            else if (temp3 <= ULTRAPOS/4) kind = 12;
-                            else if (temp3 <= ULTRAPOS/3) kind = 13;
-                            else if (temp3 <= ULTRAPOS/12 * 5) kind = 14;
-                            else if (temp3 <= ULTRAPOS/2) kind = 15;
-                            else if (temp3 <= ULTRAPOS/12 * 7) kind = 16;
-                            else if (temp3 <= ULTRAPOS/3 * 2) kind = 17;
-                            else if (temp3 <= ULTRAPOS/4 * 3) kind = 18;
-                            else if (temp3 <= ULTRAPOS/6 * 5) kind = 19;
-                            else if (temp3 <= ULTRAPOS/12 * 11) kind = 20;
+                            if (temp3 < 1 + ULTRAPOS/12) kind = 10;
+                            else if (temp3 < 1 + ULTRAPOS/6) kind = 11;
+                            else if (temp3 < 1 + ULTRAPOS/4) kind = 12;
+                            else if (temp3 < 1 + ULTRAPOS/3) kind = 13;
+                            else if (temp3 < 1 + ULTRAPOS/12 * 5) kind = 14;
+                            else if (temp3 < 1 + ULTRAPOS/2) kind = 15;
+                            else if (temp3 < 1 + ULTRAPOS/12 * 7) kind = 16;
+                            else if (temp3 < 1 + ULTRAPOS/3 * 2) kind = 17;
+                            else if (temp3 < 1 + ULTRAPOS/4 * 3) kind = 18;
+                            else if (temp3 < 1 + ULTRAPOS/6 * 5) kind = 19;
+                            else if (temp3 < 1 + ULTRAPOS/12 * 11) kind = 20;
                             else kind = 21;
                             four_star_guarantee_number = 1;
                         }
                         else {
                             type = 3;
                             unmet_count = unmet_count + 1;
-                            if (temp3 <= ULTRAPOS/18) kind = 22;
-                            else if (temp3 <= ULTRAPOS/9) kind = 23;
-                            else if (temp3 <= ULTRAPOS/6) kind = 24;
-                            else if (temp3 <= ULTRAPOS/9 * 2) kind = 25;
-                            else if (temp3 <= ULTRAPOS/18 * 5) kind = 26;
-                            else if (temp3 <= ULTRAPOS/3) kind = 27;
-                            else if (temp3 <= ULTRAPOS/18 * 7) kind = 28;
-                            else if (temp3 <= ULTRAPOS/9 * 4) kind = 29;
-                            else if (temp3 <= ULTRAPOS/2) kind = 30;
-                            else if (temp3 <= ULTRAPOS/9 * 5) kind = 31;
-                            else if (temp3 <= ULTRAPOS/18 * 11) kind = 32;
-                            else if (temp3 <= ULTRAPOS/3 * 2) kind = 33;
-                            else if (temp3 <= ULTRAPOS/18 * 13) kind = 34;
-                            else if (temp3 <= ULTRAPOS/9 * 7) kind = 35;
-                            else if (temp3 <= ULTRAPOS/6 * 5) kind = 36;
-                            else if (temp3 <= ULTRAPOS/9 * 8) kind = 37;
-                            else if (temp3 <= ULTRAPOS/18 * 17) kind = 38;
+                            if (temp3 < 1 + ULTRAPOS/18) kind = 22;
+                            else if (temp3 < 1 + ULTRAPOS/9) kind = 23;
+                            else if (temp3 < 1 + ULTRAPOS/6) kind = 24;
+                            else if (temp3 < 1 + ULTRAPOS/9 * 2) kind = 25;
+                            else if (temp3 < 1 + ULTRAPOS/18 * 5) kind = 26;
+                            else if (temp3 < 1 + ULTRAPOS/3) kind = 27;
+                            else if (temp3 < 1 + ULTRAPOS/18 * 7) kind = 28;
+                            else if (temp3 < 1 + ULTRAPOS/9 * 4) kind = 29;
+                            else if (temp3 < 1 + ULTRAPOS/2) kind = 30;
+                            else if (temp3 < 1 + ULTRAPOS/9 * 5) kind = 31;
+                            else if (temp3 < 1 + ULTRAPOS/18 * 11) kind = 32;
+                            else if (temp3 < 1 + ULTRAPOS/3 * 2) kind = 33;
+                            else if (temp3 < 1 + ULTRAPOS/18 * 13) kind = 34;
+                            else if (temp3 < 1 + ULTRAPOS/9 * 7) kind = 35;
+                            else if (temp3 < 1 + ULTRAPOS/6 * 5) kind = 36;
+                            else if (temp3 < 1 + ULTRAPOS/9 * 8) kind = 37;
+                            else if (temp3 < 1 + ULTRAPOS/18 * 17) kind = 38;
                             else kind = 39;
                             four_star_guarantee_number = 1;
                         }
@@ -1185,23 +1185,23 @@ int main() {
                     else {
                         star = 3;
                         type = 2;
-                        if (temp3 <= ULTRAPOS/13) kind = 40;
-                        else if (temp3 <= ULTRAPOS/13 * 2) kind = 41;
-                        else if (temp3 <= ULTRAPOS/13 * 3) kind = 42;
-                        else if (temp3 <= ULTRAPOS/13 * 4) kind = 43;
-                        else if (temp3 <= ULTRAPOS/13 * 5) kind = 44;
-                        else if (temp3 <= ULTRAPOS/13 * 6) kind = 45;
-                        else if (temp3 <= ULTRAPOS/13 * 7) kind = 46;
-                        else if (temp3 <= ULTRAPOS/13 * 8) kind = 47;
-                        else if (temp3 <= ULTRAPOS/13 * 9) kind = 48;
-                        else if (temp3 <= ULTRAPOS/13 * 10) kind = 49;
-                        else if (temp3 <= ULTRAPOS/13 * 11) kind = 50;
-                        else if (temp3 <= ULTRAPOS/13 * 12) kind = 51;
+                        if (temp3 < 1 + ULTRAPOS/13) kind = 40;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 2) kind = 41;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 3) kind = 42;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 4) kind = 43;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 5) kind = 44;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 6) kind = 45;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 7) kind = 46;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 8) kind = 47;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 9) kind = 48;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 10) kind = 49;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 11) kind = 50;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 12) kind = 51;
                         else kind = 52;
                     }
                 }
-                else if (five_star_assurance_number <= 73 && four_star_assurance_number >= 10) {
-                    if (temp1 <= ULTRAPOS/1000 * 6) {
+                else if (five_star_assurance_number < 1 + 73 && four_star_assurance_number >= 10) {
+                    if (temp1 < 1 + ULTRAPOS/1000 * 6) {
                         star = 5;
                         five_count = five_count + 1;
                         ave_fives = ave_fives + five_star_assurance_number;
@@ -1209,7 +1209,7 @@ int main() {
                         if (five_star_assurance_number < min_fives) { min_fives = five_star_assurance_number; min_fivesth = five_count; min_fivecount = count; }
                         five_star_assurance_number = 0;
                         if (five_star_guarantee_number == 1) { type = 1; kind = 1; five_star_guarantee_number = 0;}
-                        else if (temp2 <= ULTRAPOS/2) {
+                        else if (temp2 < 1 + ULTRAPOS/2) {
                             type = 1;
                             kind = 1;
                             five_star_guarantee_number = 0;
@@ -1217,10 +1217,10 @@ int main() {
                         else {
                             type = 2;
                             five_star_guarantee_number = 1;
-                            if (temp3 <= ULTRAPOS/5) kind = 2;
-                            else if (temp3 <= ULTRAPOS/5 * 2) kind = 3;
-                            else if (temp3 <= ULTRAPOS/5 * 3) kind = 4;
-                            else if (temp3 <= ULTRAPOS/5 * 4) kind = 5;
+                            if (temp3 < 1 + ULTRAPOS/5) kind = 2;
+                            else if (temp3 < 1 + ULTRAPOS/5 * 2) kind = 3;
+                            else if (temp3 < 1 + ULTRAPOS/5 * 3) kind = 4;
+                            else if (temp3 < 1 + ULTRAPOS/5 * 4) kind = 5;
                             else kind = 6;
                         }
                     }
@@ -1230,63 +1230,63 @@ int main() {
                         four_star_assurance_number = 0;
                         if (four_star_guarantee_number == 1) {
                             type = 1;
-                            if (temp3 <= ULTRAPOS/3) kind = 7;
-                            else if (temp3 <= ULTRAPOS/3 * 2) kind = 8;
+                            if (temp3 < 1 + ULTRAPOS/3) kind = 7;
+                            else if (temp3 < 1 + ULTRAPOS/3 * 2) kind = 8;
                             else kind = 9; 
                             four_star_guarantee_number = 0;
                             }
-                        else if (temp2 <= ULTRAPOS/2 * (int)(10 * (unmet - threshold))) {
+                        else if (temp2 < 1 + ULTRAPOS/2 * (int)(10 * (unmet - threshold))) {
                             type = 1;
-                            if (temp3 <= ULTRAPOS/3) kind = 7;
-                            else if (temp3 <= ULTRAPOS/3 * 2) kind = 8;
+                            if (temp3 < 1 + ULTRAPOS/3) kind = 7;
+                            else if (temp3 < 1 + ULTRAPOS/3 * 2) kind = 8;
                             else kind = 9;
                             four_star_guarantee_number = 0;
                         }
-                        else if (temp2 <= ULTRAPOS/6 * 5) {
+                        else if (temp2 < 1 + ULTRAPOS/6 * 5) {
                             type = 2;
                             unmet_count = 0;
                             unmet = (double)17.1;
-                            if (temp3 <= ULTRAPOS/12) kind = 10;
-                            else if (temp3 <= ULTRAPOS/6) kind = 11;
-                            else if (temp3 <= ULTRAPOS/4) kind = 12;
-                            else if (temp3 <= ULTRAPOS/3) kind = 13;
-                            else if (temp3 <= ULTRAPOS/12 * 5) kind = 14;
-                            else if (temp3 <= ULTRAPOS/2) kind = 15;
-                            else if (temp3 <= ULTRAPOS/12 * 7) kind = 16;
-                            else if (temp3 <= ULTRAPOS/3 * 2) kind = 17;
-                            else if (temp3 <= ULTRAPOS/4 * 3) kind = 18;
-                            else if (temp3 <= ULTRAPOS/6 * 5) kind = 19;
-                            else if (temp3 <= ULTRAPOS/12 * 11) kind = 20;
+                            if (temp3 < 1 + ULTRAPOS/12) kind = 10;
+                            else if (temp3 < 1 + ULTRAPOS/6) kind = 11;
+                            else if (temp3 < 1 + ULTRAPOS/4) kind = 12;
+                            else if (temp3 < 1 + ULTRAPOS/3) kind = 13;
+                            else if (temp3 < 1 + ULTRAPOS/12 * 5) kind = 14;
+                            else if (temp3 < 1 + ULTRAPOS/2) kind = 15;
+                            else if (temp3 < 1 + ULTRAPOS/12 * 7) kind = 16;
+                            else if (temp3 < 1 + ULTRAPOS/3 * 2) kind = 17;
+                            else if (temp3 < 1 + ULTRAPOS/4 * 3) kind = 18;
+                            else if (temp3 < 1 + ULTRAPOS/6 * 5) kind = 19;
+                            else if (temp3 < 1 + ULTRAPOS/12 * 11) kind = 20;
                             else kind = 21;
                             four_star_guarantee_number = 1;
                         }
                         else {
                             type = 3;
                             unmet_count = unmet_count + 1;
-                            if (temp3 <= ULTRAPOS/18) kind = 22;
-                            else if (temp3 <= ULTRAPOS/9) kind = 23;
-                            else if (temp3 <= ULTRAPOS/6) kind = 24;
-                            else if (temp3 <= ULTRAPOS/9 * 2) kind = 25;
-                            else if (temp3 <= ULTRAPOS/18 * 5) kind = 26;
-                            else if (temp3 <= ULTRAPOS/3) kind = 27;
-                            else if (temp3 <= ULTRAPOS/18 * 7) kind = 28;
-                            else if (temp3 <= ULTRAPOS/9 * 4) kind = 29;
-                            else if (temp3 <= ULTRAPOS/2) kind = 30;
-                            else if (temp3 <= ULTRAPOS/9 * 5) kind = 31;
-                            else if (temp3 <= ULTRAPOS/18 * 11) kind = 32;
-                            else if (temp3 <= ULTRAPOS/3 * 2) kind = 33;
-                            else if (temp3 <= ULTRAPOS/18 * 13) kind = 34;
-                            else if (temp3 <= ULTRAPOS/9 * 7) kind = 35;
-                            else if (temp3 <= ULTRAPOS/6 * 5) kind = 36;
-                            else if (temp3 <= ULTRAPOS/9 * 8) kind = 37;
-                            else if (temp3 <= ULTRAPOS/18 * 17) kind = 38;
+                            if (temp3 < 1 + ULTRAPOS/18) kind = 22;
+                            else if (temp3 < 1 + ULTRAPOS/9) kind = 23;
+                            else if (temp3 < 1 + ULTRAPOS/6) kind = 24;
+                            else if (temp3 < 1 + ULTRAPOS/9 * 2) kind = 25;
+                            else if (temp3 < 1 + ULTRAPOS/18 * 5) kind = 26;
+                            else if (temp3 < 1 + ULTRAPOS/3) kind = 27;
+                            else if (temp3 < 1 + ULTRAPOS/18 * 7) kind = 28;
+                            else if (temp3 < 1 + ULTRAPOS/9 * 4) kind = 29;
+                            else if (temp3 < 1 + ULTRAPOS/2) kind = 30;
+                            else if (temp3 < 1 + ULTRAPOS/9 * 5) kind = 31;
+                            else if (temp3 < 1 + ULTRAPOS/18 * 11) kind = 32;
+                            else if (temp3 < 1 + ULTRAPOS/3 * 2) kind = 33;
+                            else if (temp3 < 1 + ULTRAPOS/18 * 13) kind = 34;
+                            else if (temp3 < 1 + ULTRAPOS/9 * 7) kind = 35;
+                            else if (temp3 < 1 + ULTRAPOS/6 * 5) kind = 36;
+                            else if (temp3 < 1 + ULTRAPOS/9 * 8) kind = 37;
+                            else if (temp3 < 1 + ULTRAPOS/18 * 17) kind = 38;
                             else kind = 39;
                             four_star_guarantee_number = 1;
                         }
                     }
                 }
-                else if (five_star_assurance_number <= 89 && five_star_assurance_number >= 74 && four_star_assurance_number <= 8) {
-                    if (temp1 <= ULTRAPOS/1000 * 6 + (five_star_assurance_number - 73) * ULTRAPOS/1000 * 60) {
+                else if (five_star_assurance_number < 1 + 89 && five_star_assurance_number >= 74 && four_star_assurance_number < 1 + 8) {
+                    if (temp1 < 1 + ULTRAPOS/1000 * 6 + (five_star_assurance_number - 73) * ULTRAPOS/1000 * 60) {
                         star = 5;
                         five_count = five_count + 1;
                         ave_fives = ave_fives + five_star_assurance_number;
@@ -1294,7 +1294,7 @@ int main() {
                         if (five_star_assurance_number < min_fives) { min_fives = five_star_assurance_number; min_fivesth = five_count; min_fivecount = count; }
                         five_star_assurance_number = 0;
                         if (five_star_guarantee_number == 1) { type = 1; kind = 1; five_star_guarantee_number = 0;}
-                        else if (temp2 <= ULTRAPOS/2) {
+                        else if (temp2 < 1 + ULTRAPOS/2) {
                             type = 1;
                             kind = 1;
                             five_star_guarantee_number = 0;
@@ -1302,171 +1302,69 @@ int main() {
                         else {
                             type = 2;
                             five_star_guarantee_number = 1;
-                            if (temp3 <= ULTRAPOS/5) kind = 2;
-                            else if (temp3 <= ULTRAPOS/5 * 2) kind = 3;
-                            else if (temp3 <= ULTRAPOS/5 * 3) kind = 4;
-                            else if (temp3 <= ULTRAPOS/5 * 4) kind = 5;
+                            if (temp3 < 1 + ULTRAPOS/5) kind = 2;
+                            else if (temp3 < 1 + ULTRAPOS/5 * 2) kind = 3;
+                            else if (temp3 < 1 + ULTRAPOS/5 * 3) kind = 4;
+                            else if (temp3 < 1 + ULTRAPOS/5 * 4) kind = 5;
                             else kind = 6;
                         }
                     }
-                    else if (temp1 <= ULTRAPOS/1000 * 57 + (five_star_assurance_number - 73) * ULTRAPOS/1000 * 60) {
+                    else if (temp1 < 1 + ULTRAPOS/1000 * 57 + (five_star_assurance_number - 73) * ULTRAPOS/1000 * 60) {
                         star = 4;
                         four_count = four_count + 1;
                         four_star_assurance_number = 0;
                         if (four_star_guarantee_number == 1) {
                             type = 1;
-                            if (temp3 <= ULTRAPOS/3) kind = 7;
-                            else if (temp3 <= ULTRAPOS/3 * 2) kind = 8;
+                            if (temp3 < 1 + ULTRAPOS/3) kind = 7;
+                            else if (temp3 < 1 + ULTRAPOS/3 * 2) kind = 8;
                             else kind = 9; 
                             four_star_guarantee_number = 0;
                             }
-                        else if (temp2 <= ULTRAPOS/2 * (int)(10 * (unmet - threshold))) {
+                        else if (temp2 < 1 + ULTRAPOS/2 * (int)(10 * (unmet - threshold))) {
                             type = 1;
-                            if (temp3 <= ULTRAPOS/3) kind = 7;
-                            else if (temp3 <= ULTRAPOS/3 * 2) kind = 8;
+                            if (temp3 < 1 + ULTRAPOS/3) kind = 7;
+                            else if (temp3 < 1 + ULTRAPOS/3 * 2) kind = 8;
                             else kind = 9;
                             four_star_guarantee_number = 0;
                         }
-                        else if (temp2 <= ULTRAPOS/6 * 5) {
+                        else if (temp2 < 1 + ULTRAPOS/6 * 5) {
                             type = 2;
                             unmet_count = 0;
                             unmet = (double)17.1;
-                            if (temp3 <= ULTRAPOS/12) kind = 10;
-                            else if (temp3 <= ULTRAPOS/6) kind = 11;
-                            else if (temp3 <= ULTRAPOS/4) kind = 12;
-                            else if (temp3 <= ULTRAPOS/3) kind = 13;
-                            else if (temp3 <= ULTRAPOS/12 * 5) kind = 14;
-                            else if (temp3 <= ULTRAPOS/2) kind = 15;
-                            else if (temp3 <= ULTRAPOS/12 * 7) kind = 16;
-                            else if (temp3 <= ULTRAPOS/3 * 2) kind = 17;
-                            else if (temp3 <= ULTRAPOS/4 * 3) kind = 18;
-                            else if (temp3 <= ULTRAPOS/6 * 5) kind = 19;
-                            else if (temp3 <= ULTRAPOS/12 * 11) kind = 20;
+                            if (temp3 < 1 + ULTRAPOS/12) kind = 10;
+                            else if (temp3 < 1 + ULTRAPOS/6) kind = 11;
+                            else if (temp3 < 1 + ULTRAPOS/4) kind = 12;
+                            else if (temp3 < 1 + ULTRAPOS/3) kind = 13;
+                            else if (temp3 < 1 + ULTRAPOS/12 * 5) kind = 14;
+                            else if (temp3 < 1 + ULTRAPOS/2) kind = 15;
+                            else if (temp3 < 1 + ULTRAPOS/12 * 7) kind = 16;
+                            else if (temp3 < 1 + ULTRAPOS/3 * 2) kind = 17;
+                            else if (temp3 < 1 + ULTRAPOS/4 * 3) kind = 18;
+                            else if (temp3 < 1 + ULTRAPOS/6 * 5) kind = 19;
+                            else if (temp3 < 1 + ULTRAPOS/12 * 11) kind = 20;
                             else kind = 21;
                             four_star_guarantee_number = 1;
                         }
                         else {
                             type = 3;
                             unmet_count = unmet_count + 1;
-                            if (temp3 <= ULTRAPOS/18) kind = 22;
-                            else if (temp3 <= ULTRAPOS/9) kind = 23;
-                            else if (temp3 <= ULTRAPOS/6) kind = 24;
-                            else if (temp3 <= ULTRAPOS/9 * 2) kind = 25;
-                            else if (temp3 <= ULTRAPOS/18 * 5) kind = 26;
-                            else if (temp3 <= ULTRAPOS/3) kind = 27;
-                            else if (temp3 <= ULTRAPOS/18 * 7) kind = 28;
-                            else if (temp3 <= ULTRAPOS/9 * 4) kind = 29;
-                            else if (temp3 <= ULTRAPOS/2) kind = 30;
-                            else if (temp3 <= ULTRAPOS/9 * 5) kind = 31;
-                            else if (temp3 <= ULTRAPOS/18 * 11) kind = 32;
-                            else if (temp3 <= ULTRAPOS/3 * 2) kind = 33;
-                            else if (temp3 <= ULTRAPOS/18 * 13) kind = 34;
-                            else if (temp3 <= ULTRAPOS/9 * 7) kind = 35;
-                            else if (temp3 <= ULTRAPOS/6 * 5) kind = 36;
-                            else if (temp3 <= ULTRAPOS/9 * 8) kind = 37;
-                            else if (temp3 <= ULTRAPOS/18 * 17) kind = 38;
-                            else kind = 39;
-                            four_star_guarantee_number = 1;
-                        }
-                    }
-                    else {
-                        star = 3;
-                        type = 2;
-                        if (temp3 <= ULTRAPOS/13) kind = 40;
-                        else if (temp3 <= ULTRAPOS/13 * 2) kind = 41;
-                        else if (temp3 <= ULTRAPOS/13 * 3) kind = 42;
-                        else if (temp3 <= ULTRAPOS/13 * 4) kind = 43;
-                        else if (temp3 <= ULTRAPOS/13 * 5) kind = 44;
-                        else if (temp3 <= ULTRAPOS/13 * 6) kind = 45;
-                        else if (temp3 <= ULTRAPOS/13 * 7) kind = 46;
-                        else if (temp3 <= ULTRAPOS/13 * 8) kind = 47;
-                        else if (temp3 <= ULTRAPOS/13 * 9) kind = 48;
-                        else if (temp3 <= ULTRAPOS/13 * 10) kind = 49;
-                        else if (temp3 <= ULTRAPOS/13 * 11) kind = 50;
-                        else if (temp3 <= ULTRAPOS/13 * 12) kind = 51;
-                        else kind = 52;
-                    }
-                }
-                else if (five_star_assurance_number <= 89 && five_star_assurance_number >= 74 && four_star_assurance_number == 9) {
-                    if (temp1 <= ULTRAPOS/1000 * 6 + (five_star_assurance_number - 73) * ULTRAPOS/1000 * 60) {
-                        star = 5;
-                        five_count = five_count + 1;
-                        ave_fives = ave_fives + five_star_assurance_number;
-                        if (five_star_assurance_number > max_fives) { max_fives = five_star_assurance_number; max_fivesth = five_count; max_fivecount = count; }
-                        if (five_star_assurance_number < min_fives) { min_fives = five_star_assurance_number; min_fivesth = five_count; min_fivecount = count; }
-                        five_star_assurance_number = 0;
-                        if (five_star_guarantee_number == 1) { type = 1; kind = 1; five_star_guarantee_number = 0;}
-                        else if (temp2 <= ULTRAPOS/2) {
-                            type = 1;
-                            kind = 1;
-                            five_star_guarantee_number = 0;
-                        }
-                        else {
-                            type = 2;
-                            five_star_guarantee_number = 1;
-                            if (temp3 <= ULTRAPOS/5) kind = 2;
-                            else if (temp3 <= ULTRAPOS/5 * 2) kind = 3;
-                            else if (temp3 <= ULTRAPOS/5 * 3) kind = 4;
-                            else if (temp3 <= ULTRAPOS/5 * 4) kind = 5;
-                            else kind = 6;
-                        }
-                    }
-                    else if (temp1 <= ULTRAPOS/1000 * 567 + (five_star_assurance_number - 73) * ULTRAPOS/1000 * 60) {
-                        star = 4;
-                        four_count = four_count + 1;
-                        four_star_assurance_number = 0;
-                        if (four_star_guarantee_number == 1) {
-                            type = 1;
-                            if (temp3 <= ULTRAPOS/3) kind = 7;
-                            else if (temp3 <= ULTRAPOS/3 * 2) kind = 8;
-                            else kind = 9; 
-                            four_star_guarantee_number = 0;
-                            }
-                        else if (temp2 <= ULTRAPOS/2 * (int)(10 * (unmet - threshold))) {
-                            type = 1;
-                            if (temp3 <= ULTRAPOS/3) kind = 7;
-                            else if (temp3 <= ULTRAPOS/3 * 2) kind = 8;
-                            else kind = 9;
-                            four_star_guarantee_number = 0;
-                        }
-                        else if (temp2 <= ULTRAPOS/6 * 5) {
-                            type = 2;
-                            unmet_count = 0;
-                            unmet = (double)17.1;
-                            if (temp3 <= ULTRAPOS/12) kind = 10;
-                            else if (temp3 <= ULTRAPOS/6) kind = 11;
-                            else if (temp3 <= ULTRAPOS/4) kind = 12;
-                            else if (temp3 <= ULTRAPOS/3) kind = 13;
-                            else if (temp3 <= ULTRAPOS/12 * 5) kind = 14;
-                            else if (temp3 <= ULTRAPOS/2) kind = 15;
-                            else if (temp3 <= ULTRAPOS/12 * 7) kind = 16;
-                            else if (temp3 <= ULTRAPOS/3 * 2) kind = 17;
-                            else if (temp3 <= ULTRAPOS/4 * 3) kind = 18;
-                            else if (temp3 <= ULTRAPOS/6 * 5) kind = 19;
-                            else if (temp3 <= ULTRAPOS/12 * 11) kind = 20;
-                            else kind = 21;
-                            four_star_guarantee_number = 1;
-                        }
-                        else {
-                            type = 3;
-                            unmet_count = unmet_count + 1;
-                            if (temp3 <= ULTRAPOS/18) kind = 22;
-                            else if (temp3 <= ULTRAPOS/9) kind = 23;
-                            else if (temp3 <= ULTRAPOS/6) kind = 24;
-                            else if (temp3 <= ULTRAPOS/9 * 2) kind = 25;
-                            else if (temp3 <= ULTRAPOS/18 * 5) kind = 26;
-                            else if (temp3 <= ULTRAPOS/3) kind = 27;
-                            else if (temp3 <= ULTRAPOS/18 * 7) kind = 28;
-                            else if (temp3 <= ULTRAPOS/9 * 4) kind = 29;
-                            else if (temp3 <= ULTRAPOS/2) kind = 30;
-                            else if (temp3 <= ULTRAPOS/9 * 5) kind = 31;
-                            else if (temp3 <= ULTRAPOS/18 * 11) kind = 32;
-                            else if (temp3 <= ULTRAPOS/3 * 2) kind = 33;
-                            else if (temp3 <= ULTRAPOS/18 * 13) kind = 34;
-                            else if (temp3 <= ULTRAPOS/9 * 7) kind = 35;
-                            else if (temp3 <= ULTRAPOS/6 * 5) kind = 36;
-                            else if (temp3 <= ULTRAPOS/9 * 8) kind = 37;
-                            else if (temp3 <= ULTRAPOS/18 * 17) kind = 38;
+                            if (temp3 < 1 + ULTRAPOS/18) kind = 22;
+                            else if (temp3 < 1 + ULTRAPOS/9) kind = 23;
+                            else if (temp3 < 1 + ULTRAPOS/6) kind = 24;
+                            else if (temp3 < 1 + ULTRAPOS/9 * 2) kind = 25;
+                            else if (temp3 < 1 + ULTRAPOS/18 * 5) kind = 26;
+                            else if (temp3 < 1 + ULTRAPOS/3) kind = 27;
+                            else if (temp3 < 1 + ULTRAPOS/18 * 7) kind = 28;
+                            else if (temp3 < 1 + ULTRAPOS/9 * 4) kind = 29;
+                            else if (temp3 < 1 + ULTRAPOS/2) kind = 30;
+                            else if (temp3 < 1 + ULTRAPOS/9 * 5) kind = 31;
+                            else if (temp3 < 1 + ULTRAPOS/18 * 11) kind = 32;
+                            else if (temp3 < 1 + ULTRAPOS/3 * 2) kind = 33;
+                            else if (temp3 < 1 + ULTRAPOS/18 * 13) kind = 34;
+                            else if (temp3 < 1 + ULTRAPOS/9 * 7) kind = 35;
+                            else if (temp3 < 1 + ULTRAPOS/6 * 5) kind = 36;
+                            else if (temp3 < 1 + ULTRAPOS/9 * 8) kind = 37;
+                            else if (temp3 < 1 + ULTRAPOS/18 * 17) kind = 38;
                             else kind = 39;
                             four_star_guarantee_number = 1;
                         }
@@ -1474,23 +1372,23 @@ int main() {
                     else {
                         star = 3;
                         type = 2;
-                        if (temp3 <= ULTRAPOS/13) kind = 40;
-                        else if (temp3 <= ULTRAPOS/13 * 2) kind = 41;
-                        else if (temp3 <= ULTRAPOS/13 * 3) kind = 42;
-                        else if (temp3 <= ULTRAPOS/13 * 4) kind = 43;
-                        else if (temp3 <= ULTRAPOS/13 * 5) kind = 44;
-                        else if (temp3 <= ULTRAPOS/13 * 6) kind = 45;
-                        else if (temp3 <= ULTRAPOS/13 * 7) kind = 46;
-                        else if (temp3 <= ULTRAPOS/13 * 8) kind = 47;
-                        else if (temp3 <= ULTRAPOS/13 * 9) kind = 48;
-                        else if (temp3 <= ULTRAPOS/13 * 10) kind = 49;
-                        else if (temp3 <= ULTRAPOS/13 * 11) kind = 50;
-                        else if (temp3 <= ULTRAPOS/13 * 12) kind = 51;
+                        if (temp3 < 1 + ULTRAPOS/13) kind = 40;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 2) kind = 41;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 3) kind = 42;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 4) kind = 43;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 5) kind = 44;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 6) kind = 45;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 7) kind = 46;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 8) kind = 47;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 9) kind = 48;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 10) kind = 49;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 11) kind = 50;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 12) kind = 51;
                         else kind = 52;
                     }
                 }
-                else if (five_star_assurance_number <= 89 && five_star_assurance_number >= 74 && four_star_assurance_number >= 10) {
-                    if (temp1 <= ULTRAPOS/1000 * 6 + (five_star_assurance_number - 73) * ULTRAPOS/1000 * 60) {
+                else if (five_star_assurance_number < 1 + 89 && five_star_assurance_number >= 74 && four_star_assurance_number == 9) {
+                    if (temp1 < 1 + ULTRAPOS/1000 * 6 + (five_star_assurance_number - 73) * ULTRAPOS/1000 * 60) {
                         star = 5;
                         five_count = five_count + 1;
                         ave_fives = ave_fives + five_star_assurance_number;
@@ -1498,7 +1396,7 @@ int main() {
                         if (five_star_assurance_number < min_fives) { min_fives = five_star_assurance_number; min_fivesth = five_count; min_fivecount = count; }
                         five_star_assurance_number = 0;
                         if (five_star_guarantee_number == 1) { type = 1; kind = 1; five_star_guarantee_number = 0;}
-                        else if (temp2 <= ULTRAPOS/2) {
+                        else if (temp2 < 1 + ULTRAPOS/2) {
                             type = 1;
                             kind = 1;
                             five_star_guarantee_number = 0;
@@ -1506,10 +1404,112 @@ int main() {
                         else {
                             type = 2;
                             five_star_guarantee_number = 1;
-                            if (temp3 <= ULTRAPOS/5) kind = 2;
-                            else if (temp3 <= ULTRAPOS/5 * 2) kind = 3;
-                            else if (temp3 <= ULTRAPOS/5 * 3) kind = 4;
-                            else if (temp3 <= ULTRAPOS/5 * 4) kind = 5;
+                            if (temp3 < 1 + ULTRAPOS/5) kind = 2;
+                            else if (temp3 < 1 + ULTRAPOS/5 * 2) kind = 3;
+                            else if (temp3 < 1 + ULTRAPOS/5 * 3) kind = 4;
+                            else if (temp3 < 1 + ULTRAPOS/5 * 4) kind = 5;
+                            else kind = 6;
+                        }
+                    }
+                    else if (temp1 < 1 + ULTRAPOS/1000 * 567 + (five_star_assurance_number - 73) * ULTRAPOS/1000 * 60) {
+                        star = 4;
+                        four_count = four_count + 1;
+                        four_star_assurance_number = 0;
+                        if (four_star_guarantee_number == 1) {
+                            type = 1;
+                            if (temp3 < 1 + ULTRAPOS/3) kind = 7;
+                            else if (temp3 < 1 + ULTRAPOS/3 * 2) kind = 8;
+                            else kind = 9; 
+                            four_star_guarantee_number = 0;
+                            }
+                        else if (temp2 < 1 + ULTRAPOS/2 * (int)(10 * (unmet - threshold))) {
+                            type = 1;
+                            if (temp3 < 1 + ULTRAPOS/3) kind = 7;
+                            else if (temp3 < 1 + ULTRAPOS/3 * 2) kind = 8;
+                            else kind = 9;
+                            four_star_guarantee_number = 0;
+                        }
+                        else if (temp2 < 1 + ULTRAPOS/6 * 5) {
+                            type = 2;
+                            unmet_count = 0;
+                            unmet = (double)17.1;
+                            if (temp3 < 1 + ULTRAPOS/12) kind = 10;
+                            else if (temp3 < 1 + ULTRAPOS/6) kind = 11;
+                            else if (temp3 < 1 + ULTRAPOS/4) kind = 12;
+                            else if (temp3 < 1 + ULTRAPOS/3) kind = 13;
+                            else if (temp3 < 1 + ULTRAPOS/12 * 5) kind = 14;
+                            else if (temp3 < 1 + ULTRAPOS/2) kind = 15;
+                            else if (temp3 < 1 + ULTRAPOS/12 * 7) kind = 16;
+                            else if (temp3 < 1 + ULTRAPOS/3 * 2) kind = 17;
+                            else if (temp3 < 1 + ULTRAPOS/4 * 3) kind = 18;
+                            else if (temp3 < 1 + ULTRAPOS/6 * 5) kind = 19;
+                            else if (temp3 < 1 + ULTRAPOS/12 * 11) kind = 20;
+                            else kind = 21;
+                            four_star_guarantee_number = 1;
+                        }
+                        else {
+                            type = 3;
+                            unmet_count = unmet_count + 1;
+                            if (temp3 < 1 + ULTRAPOS/18) kind = 22;
+                            else if (temp3 < 1 + ULTRAPOS/9) kind = 23;
+                            else if (temp3 < 1 + ULTRAPOS/6) kind = 24;
+                            else if (temp3 < 1 + ULTRAPOS/9 * 2) kind = 25;
+                            else if (temp3 < 1 + ULTRAPOS/18 * 5) kind = 26;
+                            else if (temp3 < 1 + ULTRAPOS/3) kind = 27;
+                            else if (temp3 < 1 + ULTRAPOS/18 * 7) kind = 28;
+                            else if (temp3 < 1 + ULTRAPOS/9 * 4) kind = 29;
+                            else if (temp3 < 1 + ULTRAPOS/2) kind = 30;
+                            else if (temp3 < 1 + ULTRAPOS/9 * 5) kind = 31;
+                            else if (temp3 < 1 + ULTRAPOS/18 * 11) kind = 32;
+                            else if (temp3 < 1 + ULTRAPOS/3 * 2) kind = 33;
+                            else if (temp3 < 1 + ULTRAPOS/18 * 13) kind = 34;
+                            else if (temp3 < 1 + ULTRAPOS/9 * 7) kind = 35;
+                            else if (temp3 < 1 + ULTRAPOS/6 * 5) kind = 36;
+                            else if (temp3 < 1 + ULTRAPOS/9 * 8) kind = 37;
+                            else if (temp3 < 1 + ULTRAPOS/18 * 17) kind = 38;
+                            else kind = 39;
+                            four_star_guarantee_number = 1;
+                        }
+                    }
+                    else {
+                        star = 3;
+                        type = 2;
+                        if (temp3 < 1 + ULTRAPOS/13) kind = 40;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 2) kind = 41;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 3) kind = 42;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 4) kind = 43;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 5) kind = 44;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 6) kind = 45;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 7) kind = 46;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 8) kind = 47;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 9) kind = 48;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 10) kind = 49;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 11) kind = 50;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 12) kind = 51;
+                        else kind = 52;
+                    }
+                }
+                else if (five_star_assurance_number < 1 + 89 && five_star_assurance_number >= 74 && four_star_assurance_number >= 10) {
+                    if (temp1 < 1 + ULTRAPOS/1000 * 6 + (five_star_assurance_number - 73) * ULTRAPOS/1000 * 60) {
+                        star = 5;
+                        five_count = five_count + 1;
+                        ave_fives = ave_fives + five_star_assurance_number;
+                        if (five_star_assurance_number > max_fives) { max_fives = five_star_assurance_number; max_fivesth = five_count; max_fivecount = count; }
+                        if (five_star_assurance_number < min_fives) { min_fives = five_star_assurance_number; min_fivesth = five_count; min_fivecount = count; }
+                        five_star_assurance_number = 0;
+                        if (five_star_guarantee_number == 1) { type = 1; kind = 1; five_star_guarantee_number = 0;}
+                        else if (temp2 < 1 + ULTRAPOS/2) {
+                            type = 1;
+                            kind = 1;
+                            five_star_guarantee_number = 0;
+                        }
+                        else {
+                            type = 2;
+                            five_star_guarantee_number = 1;
+                            if (temp3 < 1 + ULTRAPOS/5) kind = 2;
+                            else if (temp3 < 1 + ULTRAPOS/5 * 2) kind = 3;
+                            else if (temp3 < 1 + ULTRAPOS/5 * 3) kind = 4;
+                            else if (temp3 < 1 + ULTRAPOS/5 * 4) kind = 5;
                             else kind = 6;
                         }
                     }
@@ -1519,56 +1519,56 @@ int main() {
                         four_star_assurance_number = 0;
                         if (four_star_guarantee_number == 1) {
                             type = 1;
-                            if (temp3 <= ULTRAPOS/3) kind = 7;
-                            else if (temp3 <= ULTRAPOS/3 * 2) kind = 8;
+                            if (temp3 < 1 + ULTRAPOS/3) kind = 7;
+                            else if (temp3 < 1 + ULTRAPOS/3 * 2) kind = 8;
                             else kind = 9; 
                             four_star_guarantee_number = 0;
                             }
-                        else if (temp2 <= ULTRAPOS/2 * (int)(10 * (unmet - threshold))) {
+                        else if (temp2 < 1 + ULTRAPOS/2 * (int)(10 * (unmet - threshold))) {
                             type = 1;
-                            if (temp3 <= ULTRAPOS/3) kind = 7;
-                            else if (temp3 <= ULTRAPOS/3 * 2) kind = 8;
+                            if (temp3 < 1 + ULTRAPOS/3) kind = 7;
+                            else if (temp3 < 1 + ULTRAPOS/3 * 2) kind = 8;
                             else kind = 9;
                             four_star_guarantee_number = 0;
                         }
-                        else if (temp2 <= ULTRAPOS/6 * 5) {
+                        else if (temp2 < 1 + ULTRAPOS/6 * 5) {
                             type = 2;
                             unmet_count = 0;
                             unmet = (double)17.1;
-                            if (temp3 <= ULTRAPOS/12) kind = 10;
-                            else if (temp3 <= ULTRAPOS/6) kind = 11;
-                            else if (temp3 <= ULTRAPOS/4) kind = 12;
-                            else if (temp3 <= ULTRAPOS/3) kind = 13;
-                            else if (temp3 <= ULTRAPOS/12 * 5) kind = 14;
-                            else if (temp3 <= ULTRAPOS/2) kind = 15;
-                            else if (temp3 <= ULTRAPOS/12 * 7) kind = 16;
-                            else if (temp3 <= ULTRAPOS/3 * 2) kind = 17;
-                            else if (temp3 <= ULTRAPOS/4 * 3) kind = 18;
-                            else if (temp3 <= ULTRAPOS/6 * 5) kind = 19;
-                            else if (temp3 <= ULTRAPOS/12 * 11) kind = 20;
+                            if (temp3 < 1 + ULTRAPOS/12) kind = 10;
+                            else if (temp3 < 1 + ULTRAPOS/6) kind = 11;
+                            else if (temp3 < 1 + ULTRAPOS/4) kind = 12;
+                            else if (temp3 < 1 + ULTRAPOS/3) kind = 13;
+                            else if (temp3 < 1 + ULTRAPOS/12 * 5) kind = 14;
+                            else if (temp3 < 1 + ULTRAPOS/2) kind = 15;
+                            else if (temp3 < 1 + ULTRAPOS/12 * 7) kind = 16;
+                            else if (temp3 < 1 + ULTRAPOS/3 * 2) kind = 17;
+                            else if (temp3 < 1 + ULTRAPOS/4 * 3) kind = 18;
+                            else if (temp3 < 1 + ULTRAPOS/6 * 5) kind = 19;
+                            else if (temp3 < 1 + ULTRAPOS/12 * 11) kind = 20;
                             else kind = 21;
                             four_star_guarantee_number = 1;
                         }
                         else {
                             type = 3;
                             unmet_count = unmet_count + 1;
-                            if (temp3 <= ULTRAPOS/18) kind = 22;
-                            else if (temp3 <= ULTRAPOS/9) kind = 23;
-                            else if (temp3 <= ULTRAPOS/6) kind = 24;
-                            else if (temp3 <= ULTRAPOS/9 * 2) kind = 25;
-                            else if (temp3 <= ULTRAPOS/18 * 5) kind = 26;
-                            else if (temp3 <= ULTRAPOS/3) kind = 27;
-                            else if (temp3 <= ULTRAPOS/18 * 7) kind = 28;
-                            else if (temp3 <= ULTRAPOS/9 * 4) kind = 29;
-                            else if (temp3 <= ULTRAPOS/2) kind = 30;
-                            else if (temp3 <= ULTRAPOS/9 * 5) kind = 31;
-                            else if (temp3 <= ULTRAPOS/18 * 11) kind = 32;
-                            else if (temp3 <= ULTRAPOS/3 * 2) kind = 33;
-                            else if (temp3 <= ULTRAPOS/18 * 13) kind = 34;
-                            else if (temp3 <= ULTRAPOS/9 * 7) kind = 35;
-                            else if (temp3 <= ULTRAPOS/6 * 5) kind = 36;
-                            else if (temp3 <= ULTRAPOS/9 * 8) kind = 37;
-                            else if (temp3 <= ULTRAPOS/18 * 17) kind = 38;
+                            if (temp3 < 1 + ULTRAPOS/18) kind = 22;
+                            else if (temp3 < 1 + ULTRAPOS/9) kind = 23;
+                            else if (temp3 < 1 + ULTRAPOS/6) kind = 24;
+                            else if (temp3 < 1 + ULTRAPOS/9 * 2) kind = 25;
+                            else if (temp3 < 1 + ULTRAPOS/18 * 5) kind = 26;
+                            else if (temp3 < 1 + ULTRAPOS/3) kind = 27;
+                            else if (temp3 < 1 + ULTRAPOS/18 * 7) kind = 28;
+                            else if (temp3 < 1 + ULTRAPOS/9 * 4) kind = 29;
+                            else if (temp3 < 1 + ULTRAPOS/2) kind = 30;
+                            else if (temp3 < 1 + ULTRAPOS/9 * 5) kind = 31;
+                            else if (temp3 < 1 + ULTRAPOS/18 * 11) kind = 32;
+                            else if (temp3 < 1 + ULTRAPOS/3 * 2) kind = 33;
+                            else if (temp3 < 1 + ULTRAPOS/18 * 13) kind = 34;
+                            else if (temp3 < 1 + ULTRAPOS/9 * 7) kind = 35;
+                            else if (temp3 < 1 + ULTRAPOS/6 * 5) kind = 36;
+                            else if (temp3 < 1 + ULTRAPOS/9 * 8) kind = 37;
+                            else if (temp3 < 1 + ULTRAPOS/18 * 17) kind = 38;
                             else kind = 39;
                             four_star_guarantee_number = 1;
                         }
@@ -1582,7 +1582,7 @@ int main() {
                         if (five_star_assurance_number < min_fives) { min_fives = five_star_assurance_number; min_fivesth = five_count; min_fivecount = count; }
                         five_star_assurance_number = 0;
                     if (five_star_guarantee_number == 1) { type = 1; kind = 1; five_star_guarantee_number = 0;}
-                    else if (temp2 <= ULTRAPOS/2) {
+                    else if (temp2 < 1 + ULTRAPOS/2) {
                         type = 1;
                         kind = 1;
                         five_star_guarantee_number = 0;
@@ -1590,10 +1590,10 @@ int main() {
                     else {
                         type = 2;
                         five_star_guarantee_number = 1;
-                        if (temp3 <= ULTRAPOS/5) kind = 2;
-                        else if (temp3 <= ULTRAPOS/5 * 2) kind = 3;
-                        else if (temp3 <= ULTRAPOS/5 * 3) kind = 4;
-                        else if (temp3 <= ULTRAPOS/5 * 4) kind = 5;
+                        if (temp3 < 1 + ULTRAPOS/5) kind = 2;
+                        else if (temp3 < 1 + ULTRAPOS/5 * 2) kind = 3;
+                        else if (temp3 < 1 + ULTRAPOS/5 * 3) kind = 4;
+                        else if (temp3 < 1 + ULTRAPOS/5 * 4) kind = 5;
                         else kind = 6;
                     }
                 }
@@ -1743,221 +1743,221 @@ int main() {
                 int type = 0; //Up or non-up, character or weapon
                 int kind = 0; //which exactly
                 if (unmet_count > threshold) unmet = (double)unmet_count;
-                if (five_star_assurance_number <= 73 && four_star_assurance_number <= 8) {
-                    if (temp1 <= ULTRAPOS/1000 * 6) {
+                if (five_star_assurance_number < 1 + 73 && four_star_assurance_number < 1 + 8) {
+                    if (temp1 < 1 + ULTRAPOS/1000 * 6) {
                         star = 5;
                         five_count = five_count + 1;
                         ave_fives = ave_fives + five_star_assurance_number;
                         if (five_star_assurance_number > max_fives) { max_fives = five_star_assurance_number; max_fivesth = five_count; max_fivecount = count; }
                         if (five_star_assurance_number < min_fives) { min_fives = five_star_assurance_number; min_fivesth = five_count; min_fivecount = count; }
                         five_star_assurance_number = 0;
-                        if (temp2 <= ULTRAPOS/2) {
+                        if (temp2 < 1 + ULTRAPOS/2) {
                             type = 1;
-                            if (temp3 <= ULTRAPOS/5) kind = 1;
-                            else if (temp3 <= ULTRAPOS/5 * 2) kind = 2;
-                            else if (temp3 <= ULTRAPOS/5 * 3) kind = 3;
-                            else if (temp3 <= ULTRAPOS/5 * 4) kind = 4;
+                            if (temp3 < 1 + ULTRAPOS/5) kind = 1;
+                            else if (temp3 < 1 + ULTRAPOS/5 * 2) kind = 2;
+                            else if (temp3 < 1 + ULTRAPOS/5 * 3) kind = 3;
+                            else if (temp3 < 1 + ULTRAPOS/5 * 4) kind = 4;
                             else kind = 5;
                         }
                         else {
                             type = 2;
-                            if (temp3 <= ULTRAPOS/10) kind = 6;
-                            else if (temp3 <= ULTRAPOS/5) kind = 7;
-                            else if (temp3 <= ULTRAPOS/10 * 3) kind = 8;
-                            else if (temp3 <= ULTRAPOS/5 * 2) kind = 9;
-                            else if (temp3 <= ULTRAPOS/2) kind = 10;
-                            else if (temp3 <= ULTRAPOS/5 * 3) kind = 11;
-                            else if (temp3 <= ULTRAPOS/10 * 7) kind = 12;
-                            else if (temp3 <= ULTRAPOS/5 * 4) kind = 13;
-                            else if (temp3 <= ULTRAPOS/10 * 9) kind = 14;
+                            if (temp3 < 1 + ULTRAPOS/10) kind = 6;
+                            else if (temp3 < 1 + ULTRAPOS/5) kind = 7;
+                            else if (temp3 < 1 + ULTRAPOS/10 * 3) kind = 8;
+                            else if (temp3 < 1 + ULTRAPOS/5 * 2) kind = 9;
+                            else if (temp3 < 1 + ULTRAPOS/2) kind = 10;
+                            else if (temp3 < 1 + ULTRAPOS/5 * 3) kind = 11;
+                            else if (temp3 < 1 + ULTRAPOS/10 * 7) kind = 12;
+                            else if (temp3 < 1 + ULTRAPOS/5 * 4) kind = 13;
+                            else if (temp3 < 1 + ULTRAPOS/10 * 9) kind = 14;
                             else kind = 15;
                         }
                     }
-                    else if (temp1 <= ULTRAPOS/1000 * 57) {
+                    else if (temp1 < 1 + ULTRAPOS/1000 * 57) {
                         star = 4;
                         four_count = four_count + 1;
                         four_star_assurance_number = 0;
-                        if (temp2 <= ULTRAPOS/2 * (int)(10 * (unmet - threshold))) {
+                        if (temp2 < 1 + ULTRAPOS/2 * (int)(10 * (unmet - threshold))) {
                             type = 1;
                             unmet_count = 0;
                             unmet = (double)17.1;
-                            if (temp3 <= ULTRAPOS/14) kind = 16;
-                            else if (temp3 <= ULTRAPOS/7) kind = 17;
-                            else if (temp3 <= ULTRAPOS/14 * 3) kind = 18;
-                            else if (temp3 <= ULTRAPOS/7 * 2) kind = 19;
-                            else if (temp3 <= ULTRAPOS/14 * 5) kind = 20;
-                            else if (temp3 <= ULTRAPOS/7 * 3) kind = 21;
-                            else if (temp3 <= ULTRAPOS/2) kind = 22;
-                            else if (temp3 <= ULTRAPOS/7 * 4) kind = 23;
-                            else if (temp3 <= ULTRAPOS/14 * 9) kind = 24;
-                            else if (temp3 <= ULTRAPOS/7 * 5) kind = 25;
-                            else if (temp3 <= ULTRAPOS/14 * 11) kind = 26;
-                            else if (temp3 <= ULTRAPOS/7 * 6) kind = 27;
-                            else if (temp3 <= ULTRAPOS/14 * 13) kind = 28;
+                            if (temp3 < 1 + ULTRAPOS/14) kind = 16;
+                            else if (temp3 < 1 + ULTRAPOS/7) kind = 17;
+                            else if (temp3 < 1 + ULTRAPOS/14 * 3) kind = 18;
+                            else if (temp3 < 1 + ULTRAPOS/7 * 2) kind = 19;
+                            else if (temp3 < 1 + ULTRAPOS/14 * 5) kind = 20;
+                            else if (temp3 < 1 + ULTRAPOS/7 * 3) kind = 21;
+                            else if (temp3 < 1 + ULTRAPOS/2) kind = 22;
+                            else if (temp3 < 1 + ULTRAPOS/7 * 4) kind = 23;
+                            else if (temp3 < 1 + ULTRAPOS/14 * 9) kind = 24;
+                            else if (temp3 < 1 + ULTRAPOS/7 * 5) kind = 25;
+                            else if (temp3 < 1 + ULTRAPOS/14 * 11) kind = 26;
+                            else if (temp3 < 1 + ULTRAPOS/7 * 6) kind = 27;
+                            else if (temp3 < 1 + ULTRAPOS/14 * 13) kind = 28;
                             else kind = 29;
                         }
                         else {
                             type = 2;
                             unmet_count = unmet_count + 1;
-                            if (temp3 <= ULTRAPOS/9 * 5) kind = 30;
-                            else if (temp3 <= ULTRAPOS/9) kind = 31;
-                            else if (temp3 <= ULTRAPOS/6) kind = 32;
-                            else if (temp3 <= ULTRAPOS/9 * 2) kind = 33;
-                            else if (temp3 <= ULTRAPOS/18 * 5) kind = 34;
-                            else if (temp3 <= ULTRAPOS/3) kind = 35;
-                            else if (temp3 <= ULTRAPOS/18 * 7) kind = 36;
-                            else if (temp3 <= ULTRAPOS/9 * 4) kind = 37;
-                            else if (temp3 <= ULTRAPOS/2) kind = 38;
-                            else if (temp3 <= ULTRAPOS/9 * 5) kind = 39;
-                            else if (temp3 <= ULTRAPOS/18 * 11) kind = 40;
-                            else if (temp3 <= ULTRAPOS/3 * 2) kind = 41;
-                            else if (temp3 <= ULTRAPOS/18 * 13) kind = 42;
-                            else if (temp3 <= ULTRAPOS/9 * 7) kind = 43;
-                            else if (temp3 <= ULTRAPOS/6 * 5) kind = 44;
-                            else if (temp3 <= ULTRAPOS/9 * 8) kind = 45;
-                            else if (temp3 <= ULTRAPOS/18 * 17) kind = 46;
+                            if (temp3 < 1 + ULTRAPOS/9 * 5) kind = 30;
+                            else if (temp3 < 1 + ULTRAPOS/9) kind = 31;
+                            else if (temp3 < 1 + ULTRAPOS/6) kind = 32;
+                            else if (temp3 < 1 + ULTRAPOS/9 * 2) kind = 33;
+                            else if (temp3 < 1 + ULTRAPOS/18 * 5) kind = 34;
+                            else if (temp3 < 1 + ULTRAPOS/3) kind = 35;
+                            else if (temp3 < 1 + ULTRAPOS/18 * 7) kind = 36;
+                            else if (temp3 < 1 + ULTRAPOS/9 * 4) kind = 37;
+                            else if (temp3 < 1 + ULTRAPOS/2) kind = 38;
+                            else if (temp3 < 1 + ULTRAPOS/9 * 5) kind = 39;
+                            else if (temp3 < 1 + ULTRAPOS/18 * 11) kind = 40;
+                            else if (temp3 < 1 + ULTRAPOS/3 * 2) kind = 41;
+                            else if (temp3 < 1 + ULTRAPOS/18 * 13) kind = 42;
+                            else if (temp3 < 1 + ULTRAPOS/9 * 7) kind = 43;
+                            else if (temp3 < 1 + ULTRAPOS/6 * 5) kind = 44;
+                            else if (temp3 < 1 + ULTRAPOS/9 * 8) kind = 45;
+                            else if (temp3 < 1 + ULTRAPOS/18 * 17) kind = 46;
                             else kind = 47;
                         }
                     }
                     else {
                         star = 3;
                         type = 2;
-                        if (temp3 <= ULTRAPOS/13) kind = 48;
-                        else if (temp3 <= ULTRAPOS/13 * 2) kind = 49;
-                        else if (temp3 <= ULTRAPOS/13 * 3) kind = 50;
-                        else if (temp3 <= ULTRAPOS/13 * 4) kind = 51;
-                        else if (temp3 <= ULTRAPOS/13 * 5) kind = 52;
-                        else if (temp3 <= ULTRAPOS/13 * 6) kind = 53;
-                        else if (temp3 <= ULTRAPOS/13 * 7) kind = 54;
-                        else if (temp3 <= ULTRAPOS/13 * 8) kind = 55;
-                        else if (temp3 <= ULTRAPOS/13 * 9) kind = 56;
-                        else if (temp3 <= ULTRAPOS/13 * 10) kind = 57;
-                        else if (temp3 <= ULTRAPOS/13 * 11) kind = 58;
-                        else if (temp3 <= ULTRAPOS/13 * 12) kind = 59;
+                        if (temp3 < 1 + ULTRAPOS/13) kind = 48;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 2) kind = 49;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 3) kind = 50;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 4) kind = 51;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 5) kind = 52;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 6) kind = 53;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 7) kind = 54;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 8) kind = 55;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 9) kind = 56;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 10) kind = 57;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 11) kind = 58;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 12) kind = 59;
                         else kind = 60;
                     }
                 }
-                else if (five_star_assurance_number <= 73 && four_star_assurance_number == 9) {
-                    if (temp1 <= ULTRAPOS/1000 * 6) {
+                else if (five_star_assurance_number < 1 + 73 && four_star_assurance_number == 9) {
+                    if (temp1 < 1 + ULTRAPOS/1000 * 6) {
                         star = 5;
                         five_count = five_count + 1;
                         ave_fives = ave_fives + five_star_assurance_number;
                         if (five_star_assurance_number > max_fives) { max_fives = five_star_assurance_number; max_fivesth = five_count; max_fivecount = count; }
                         if (five_star_assurance_number < min_fives) { min_fives = five_star_assurance_number; min_fivesth = five_count; min_fivecount = count; }
                         five_star_assurance_number = 0;
-                        if (temp2 <= ULTRAPOS/2) {
+                        if (temp2 < 1 + ULTRAPOS/2) {
                             type = 1;
-                            if (temp3 <= ULTRAPOS/5) kind = 1;
-                            else if (temp3 <= ULTRAPOS/5 * 2) kind = 2;
-                            else if (temp3 <= ULTRAPOS/5 * 3) kind = 3;
-                            else if (temp3 <= ULTRAPOS/5 * 4) kind = 4;
+                            if (temp3 < 1 + ULTRAPOS/5) kind = 1;
+                            else if (temp3 < 1 + ULTRAPOS/5 * 2) kind = 2;
+                            else if (temp3 < 1 + ULTRAPOS/5 * 3) kind = 3;
+                            else if (temp3 < 1 + ULTRAPOS/5 * 4) kind = 4;
                             else kind = 5;
                         }
                         else {
                             type = 2;
-                            if (temp3 <= ULTRAPOS/10) kind = 6;
-                            else if (temp3 <= ULTRAPOS/5) kind = 7;
-                            else if (temp3 <= ULTRAPOS/10 * 3) kind = 8;
-                            else if (temp3 <= ULTRAPOS/5 * 2) kind = 9;
-                            else if (temp3 <= ULTRAPOS/2) kind = 10;
-                            else if (temp3 <= ULTRAPOS/5 * 3) kind = 11;
-                            else if (temp3 <= ULTRAPOS/10 * 7) kind = 12;
-                            else if (temp3 <= ULTRAPOS/5 * 4) kind = 13;
-                            else if (temp3 <= ULTRAPOS/10 * 9) kind = 14;
+                            if (temp3 < 1 + ULTRAPOS/10) kind = 6;
+                            else if (temp3 < 1 + ULTRAPOS/5) kind = 7;
+                            else if (temp3 < 1 + ULTRAPOS/10 * 3) kind = 8;
+                            else if (temp3 < 1 + ULTRAPOS/5 * 2) kind = 9;
+                            else if (temp3 < 1 + ULTRAPOS/2) kind = 10;
+                            else if (temp3 < 1 + ULTRAPOS/5 * 3) kind = 11;
+                            else if (temp3 < 1 + ULTRAPOS/10 * 7) kind = 12;
+                            else if (temp3 < 1 + ULTRAPOS/5 * 4) kind = 13;
+                            else if (temp3 < 1 + ULTRAPOS/10 * 9) kind = 14;
                             else kind = 15;
                         }
                     }
-                    else if (temp1 <= ULTRAPOS/1000 * 567) {
+                    else if (temp1 < 1 + ULTRAPOS/1000 * 567) {
                         star = 4;
                         four_count = four_count + 1;
                         four_star_assurance_number = 0;
-                        if (temp2 <= ULTRAPOS/2 * (int)(10 * (unmet - threshold))) {
+                        if (temp2 < 1 + ULTRAPOS/2 * (int)(10 * (unmet - threshold))) {
                             type = 1;
                             unmet_count = 0;
                             unmet = (double)17.1;
-                            if (temp3 <= ULTRAPOS/14) kind = 16;
-                            else if (temp3 <= ULTRAPOS/7) kind = 17;
-                            else if (temp3 <= ULTRAPOS/14 * 3) kind = 18;
-                            else if (temp3 <= ULTRAPOS/7 * 2) kind = 19;
-                            else if (temp3 <= ULTRAPOS/14 * 5) kind = 20;
-                            else if (temp3 <= ULTRAPOS/7 * 3) kind = 21;
-                            else if (temp3 <= ULTRAPOS/2) kind = 22;
-                            else if (temp3 <= ULTRAPOS/7 * 4) kind = 23;
-                            else if (temp3 <= ULTRAPOS/14 * 9) kind = 24;
-                            else if (temp3 <= ULTRAPOS/7 * 5) kind = 25;
-                            else if (temp3 <= ULTRAPOS/14 * 11) kind = 26;
-                            else if (temp3 <= ULTRAPOS/7 * 6) kind = 27;
-                            else if (temp3 <= ULTRAPOS/14 * 13) kind = 28;
+                            if (temp3 < 1 + ULTRAPOS/14) kind = 16;
+                            else if (temp3 < 1 + ULTRAPOS/7) kind = 17;
+                            else if (temp3 < 1 + ULTRAPOS/14 * 3) kind = 18;
+                            else if (temp3 < 1 + ULTRAPOS/7 * 2) kind = 19;
+                            else if (temp3 < 1 + ULTRAPOS/14 * 5) kind = 20;
+                            else if (temp3 < 1 + ULTRAPOS/7 * 3) kind = 21;
+                            else if (temp3 < 1 + ULTRAPOS/2) kind = 22;
+                            else if (temp3 < 1 + ULTRAPOS/7 * 4) kind = 23;
+                            else if (temp3 < 1 + ULTRAPOS/14 * 9) kind = 24;
+                            else if (temp3 < 1 + ULTRAPOS/7 * 5) kind = 25;
+                            else if (temp3 < 1 + ULTRAPOS/14 * 11) kind = 26;
+                            else if (temp3 < 1 + ULTRAPOS/7 * 6) kind = 27;
+                            else if (temp3 < 1 + ULTRAPOS/14 * 13) kind = 28;
                             else kind = 29;
                         }
                         else {
                             type = 2;
                             unmet_count = unmet_count + 1;
-                            if (temp3 <= ULTRAPOS/9 * 5) kind = 30;
-                            else if (temp3 <= ULTRAPOS/9) kind = 31;
-                            else if (temp3 <= ULTRAPOS/6) kind = 32;
-                            else if (temp3 <= ULTRAPOS/9 * 2) kind = 33;
-                            else if (temp3 <= ULTRAPOS/18 * 5) kind = 34;
-                            else if (temp3 <= ULTRAPOS/3) kind = 35;
-                            else if (temp3 <= ULTRAPOS/18 * 7) kind = 36;
-                            else if (temp3 <= ULTRAPOS/9 * 4) kind = 37;
-                            else if (temp3 <= ULTRAPOS/2) kind = 38;
-                            else if (temp3 <= ULTRAPOS/9 * 5) kind = 39;
-                            else if (temp3 <= ULTRAPOS/18 * 11) kind = 40;
-                            else if (temp3 <= ULTRAPOS/3 * 2) kind = 41;
-                            else if (temp3 <= ULTRAPOS/18 * 13) kind = 42;
-                            else if (temp3 <= ULTRAPOS/9 * 7) kind = 43;
-                            else if (temp3 <= ULTRAPOS/6 * 5) kind = 44;
-                            else if (temp3 <= ULTRAPOS/9 * 8) kind = 45;
-                            else if (temp3 <= ULTRAPOS/18 * 17) kind = 46;
+                            if (temp3 < 1 + ULTRAPOS/9 * 5) kind = 30;
+                            else if (temp3 < 1 + ULTRAPOS/9) kind = 31;
+                            else if (temp3 < 1 + ULTRAPOS/6) kind = 32;
+                            else if (temp3 < 1 + ULTRAPOS/9 * 2) kind = 33;
+                            else if (temp3 < 1 + ULTRAPOS/18 * 5) kind = 34;
+                            else if (temp3 < 1 + ULTRAPOS/3) kind = 35;
+                            else if (temp3 < 1 + ULTRAPOS/18 * 7) kind = 36;
+                            else if (temp3 < 1 + ULTRAPOS/9 * 4) kind = 37;
+                            else if (temp3 < 1 + ULTRAPOS/2) kind = 38;
+                            else if (temp3 < 1 + ULTRAPOS/9 * 5) kind = 39;
+                            else if (temp3 < 1 + ULTRAPOS/18 * 11) kind = 40;
+                            else if (temp3 < 1 + ULTRAPOS/3 * 2) kind = 41;
+                            else if (temp3 < 1 + ULTRAPOS/18 * 13) kind = 42;
+                            else if (temp3 < 1 + ULTRAPOS/9 * 7) kind = 43;
+                            else if (temp3 < 1 + ULTRAPOS/6 * 5) kind = 44;
+                            else if (temp3 < 1 + ULTRAPOS/9 * 8) kind = 45;
+                            else if (temp3 < 1 + ULTRAPOS/18 * 17) kind = 46;
                             else kind = 47;
                         }
                     }
                     else {
                         star = 3;
                         type = 2;
-                        if (temp3 <= ULTRAPOS/13) kind = 48;
-                        else if (temp3 <= ULTRAPOS/13 * 2) kind = 49;
-                        else if (temp3 <= ULTRAPOS/13 * 3) kind = 50;
-                        else if (temp3 <= ULTRAPOS/13 * 4) kind = 51;
-                        else if (temp3 <= ULTRAPOS/13 * 5) kind = 52;
-                        else if (temp3 <= ULTRAPOS/13 * 6) kind = 53;
-                        else if (temp3 <= ULTRAPOS/13 * 7) kind = 54;
-                        else if (temp3 <= ULTRAPOS/13 * 8) kind = 55;
-                        else if (temp3 <= ULTRAPOS/13 * 9) kind = 56;
-                        else if (temp3 <= ULTRAPOS/13 * 10) kind = 57;
-                        else if (temp3 <= ULTRAPOS/13 * 11) kind = 58;
-                        else if (temp3 <= ULTRAPOS/13 * 12) kind = 59;
+                        if (temp3 < 1 + ULTRAPOS/13) kind = 48;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 2) kind = 49;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 3) kind = 50;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 4) kind = 51;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 5) kind = 52;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 6) kind = 53;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 7) kind = 54;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 8) kind = 55;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 9) kind = 56;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 10) kind = 57;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 11) kind = 58;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 12) kind = 59;
                         else kind = 60;
                     }
                 }
-                else if (five_star_assurance_number <= 73 && four_star_assurance_number >= 10) {
-                    if (temp1 <= ULTRAPOS/1000 * 6) {
+                else if (five_star_assurance_number < 1 + 73 && four_star_assurance_number >= 10) {
+                    if (temp1 < 1 + ULTRAPOS/1000 * 6) {
                         star = 5;
                         five_count = five_count + 1;
                         ave_fives = ave_fives + five_star_assurance_number;
                         if (five_star_assurance_number > max_fives) { max_fives = five_star_assurance_number; max_fivesth = five_count; max_fivecount = count; }
                         if (five_star_assurance_number < min_fives) { min_fives = five_star_assurance_number; min_fivesth = five_count; min_fivecount = count; }
                         five_star_assurance_number = 0;
-                        if (temp2 <= ULTRAPOS/2) {
+                        if (temp2 < 1 + ULTRAPOS/2) {
                             type = 1;
-                            if (temp3 <= ULTRAPOS/5) kind = 1;
-                            else if (temp3 <= ULTRAPOS/5 * 2) kind = 2;
-                            else if (temp3 <= ULTRAPOS/5 * 3) kind = 3;
-                            else if (temp3 <= ULTRAPOS/5 * 4) kind = 4;
+                            if (temp3 < 1 + ULTRAPOS/5) kind = 1;
+                            else if (temp3 < 1 + ULTRAPOS/5 * 2) kind = 2;
+                            else if (temp3 < 1 + ULTRAPOS/5 * 3) kind = 3;
+                            else if (temp3 < 1 + ULTRAPOS/5 * 4) kind = 4;
                             else kind = 5;
                         }
                         else {
                             type = 2;
-                            if (temp3 <= ULTRAPOS/10) kind = 6;
-                            else if (temp3 <= ULTRAPOS/5) kind = 7;
-                            else if (temp3 <= ULTRAPOS/10 * 3) kind = 8;
-                            else if (temp3 <= ULTRAPOS/5 * 2) kind = 9;
-                            else if (temp3 <= ULTRAPOS/2) kind = 10;
-                            else if (temp3 <= ULTRAPOS/5 * 3) kind = 11;
-                            else if (temp3 <= ULTRAPOS/10 * 7) kind = 12;
-                            else if (temp3 <= ULTRAPOS/5 * 4) kind = 13;
-                            else if (temp3 <= ULTRAPOS/10 * 9) kind = 14;
+                            if (temp3 < 1 + ULTRAPOS/10) kind = 6;
+                            else if (temp3 < 1 + ULTRAPOS/5) kind = 7;
+                            else if (temp3 < 1 + ULTRAPOS/10 * 3) kind = 8;
+                            else if (temp3 < 1 + ULTRAPOS/5 * 2) kind = 9;
+                            else if (temp3 < 1 + ULTRAPOS/2) kind = 10;
+                            else if (temp3 < 1 + ULTRAPOS/5 * 3) kind = 11;
+                            else if (temp3 < 1 + ULTRAPOS/10 * 7) kind = 12;
+                            else if (temp3 < 1 + ULTRAPOS/5 * 4) kind = 13;
+                            else if (temp3 < 1 + ULTRAPOS/10 * 9) kind = 14;
                             else kind = 15;
                         }
                     }
@@ -1965,264 +1965,264 @@ int main() {
                         star = 4;
                         four_count = four_count + 1;
                         four_star_assurance_number = 0;
-                        if (temp2 <= ULTRAPOS/2 * (int)(10 * (unmet - threshold))) {
+                        if (temp2 < 1 + ULTRAPOS/2 * (int)(10 * (unmet - threshold))) {
                             type = 1;
                             unmet_count = 0;
                             unmet = (double)17.1;
-                            if (temp3 <= ULTRAPOS/14) kind = 16;
-                            else if (temp3 <= ULTRAPOS/7) kind = 17;
-                            else if (temp3 <= ULTRAPOS/14 * 3) kind = 18;
-                            else if (temp3 <= ULTRAPOS/7 * 2) kind = 19;
-                            else if (temp3 <= ULTRAPOS/14 * 5) kind = 20;
-                            else if (temp3 <= ULTRAPOS/7 * 3) kind = 21;
-                            else if (temp3 <= ULTRAPOS/2) kind = 22;
-                            else if (temp3 <= ULTRAPOS/7 * 4) kind = 23;
-                            else if (temp3 <= ULTRAPOS/14 * 9) kind = 24;
-                            else if (temp3 <= ULTRAPOS/7 * 5) kind = 25;
-                            else if (temp3 <= ULTRAPOS/14 * 11) kind = 26;
-                            else if (temp3 <= ULTRAPOS/7 * 6) kind = 27;
-                            else if (temp3 <= ULTRAPOS/14 * 13) kind = 28;
+                            if (temp3 < 1 + ULTRAPOS/14) kind = 16;
+                            else if (temp3 < 1 + ULTRAPOS/7) kind = 17;
+                            else if (temp3 < 1 + ULTRAPOS/14 * 3) kind = 18;
+                            else if (temp3 < 1 + ULTRAPOS/7 * 2) kind = 19;
+                            else if (temp3 < 1 + ULTRAPOS/14 * 5) kind = 20;
+                            else if (temp3 < 1 + ULTRAPOS/7 * 3) kind = 21;
+                            else if (temp3 < 1 + ULTRAPOS/2) kind = 22;
+                            else if (temp3 < 1 + ULTRAPOS/7 * 4) kind = 23;
+                            else if (temp3 < 1 + ULTRAPOS/14 * 9) kind = 24;
+                            else if (temp3 < 1 + ULTRAPOS/7 * 5) kind = 25;
+                            else if (temp3 < 1 + ULTRAPOS/14 * 11) kind = 26;
+                            else if (temp3 < 1 + ULTRAPOS/7 * 6) kind = 27;
+                            else if (temp3 < 1 + ULTRAPOS/14 * 13) kind = 28;
                             else kind = 29;
                         }
                         else {
                             type = 2;
                             unmet_count = unmet_count + 1;
-                            if (temp3 <= ULTRAPOS/9 * 5) kind = 30;
-                            else if (temp3 <= ULTRAPOS/9) kind = 31;
-                            else if (temp3 <= ULTRAPOS/6) kind = 32;
-                            else if (temp3 <= ULTRAPOS/9 * 2) kind = 33;
-                            else if (temp3 <= ULTRAPOS/18 * 5) kind = 34;
-                            else if (temp3 <= ULTRAPOS/3) kind = 35;
-                            else if (temp3 <= ULTRAPOS/18 * 7) kind = 36;
-                            else if (temp3 <= ULTRAPOS/9 * 4) kind = 37;
-                            else if (temp3 <= ULTRAPOS/2) kind = 38;
-                            else if (temp3 <= ULTRAPOS/9 * 5) kind = 39;
-                            else if (temp3 <= ULTRAPOS/18 * 11) kind = 40;
-                            else if (temp3 <= ULTRAPOS/3 * 2) kind = 41;
-                            else if (temp3 <= ULTRAPOS/18 * 13) kind = 42;
-                            else if (temp3 <= ULTRAPOS/9 * 7) kind = 43;
-                            else if (temp3 <= ULTRAPOS/6 * 5) kind = 44;
-                            else if (temp3 <= ULTRAPOS/9 * 8) kind = 45;
-                            else if (temp3 <= ULTRAPOS/18 * 17) kind = 46;
+                            if (temp3 < 1 + ULTRAPOS/9 * 5) kind = 30;
+                            else if (temp3 < 1 + ULTRAPOS/9) kind = 31;
+                            else if (temp3 < 1 + ULTRAPOS/6) kind = 32;
+                            else if (temp3 < 1 + ULTRAPOS/9 * 2) kind = 33;
+                            else if (temp3 < 1 + ULTRAPOS/18 * 5) kind = 34;
+                            else if (temp3 < 1 + ULTRAPOS/3) kind = 35;
+                            else if (temp3 < 1 + ULTRAPOS/18 * 7) kind = 36;
+                            else if (temp3 < 1 + ULTRAPOS/9 * 4) kind = 37;
+                            else if (temp3 < 1 + ULTRAPOS/2) kind = 38;
+                            else if (temp3 < 1 + ULTRAPOS/9 * 5) kind = 39;
+                            else if (temp3 < 1 + ULTRAPOS/18 * 11) kind = 40;
+                            else if (temp3 < 1 + ULTRAPOS/3 * 2) kind = 41;
+                            else if (temp3 < 1 + ULTRAPOS/18 * 13) kind = 42;
+                            else if (temp3 < 1 + ULTRAPOS/9 * 7) kind = 43;
+                            else if (temp3 < 1 + ULTRAPOS/6 * 5) kind = 44;
+                            else if (temp3 < 1 + ULTRAPOS/9 * 8) kind = 45;
+                            else if (temp3 < 1 + ULTRAPOS/18 * 17) kind = 46;
                             else kind = 47;
                         }
                     }
                 }
-                else if (five_star_assurance_number <= 89 && five_star_assurance_number >= 74 && four_star_assurance_number <= 8) {
-                    if (temp1 <= ULTRAPOS/1000 * 6 + (five_star_assurance_number - 73) * ULTRAPOS/1000 * 60) {
+                else if (five_star_assurance_number < 1 + 89 && five_star_assurance_number >= 74 && four_star_assurance_number < 1 + 8) {
+                    if (temp1 < 1 + ULTRAPOS/1000 * 6 + (five_star_assurance_number - 73) * ULTRAPOS/1000 * 60) {
                         star = 5;
                         five_count = five_count + 1;
                         ave_fives = ave_fives + five_star_assurance_number;
                         if (five_star_assurance_number > max_fives) { max_fives = five_star_assurance_number; max_fivesth = five_count; max_fivecount = count; }
                         if (five_star_assurance_number < min_fives) { min_fives = five_star_assurance_number; min_fivesth = five_count; min_fivecount = count; }
                         five_star_assurance_number = 0;
-                        if (temp2 <= ULTRAPOS/2) {
+                        if (temp2 < 1 + ULTRAPOS/2) {
                             type = 1;
-                            if (temp3 <= ULTRAPOS/5) kind = 1;
-                            else if (temp3 <= ULTRAPOS/5 * 2) kind = 2;
-                            else if (temp3 <= ULTRAPOS/5 * 3) kind = 3;
-                            else if (temp3 <= ULTRAPOS/5 * 4) kind = 4;
+                            if (temp3 < 1 + ULTRAPOS/5) kind = 1;
+                            else if (temp3 < 1 + ULTRAPOS/5 * 2) kind = 2;
+                            else if (temp3 < 1 + ULTRAPOS/5 * 3) kind = 3;
+                            else if (temp3 < 1 + ULTRAPOS/5 * 4) kind = 4;
                             else kind = 5;
                         }
                         else {
                             type = 2;
-                            if (temp3 <= ULTRAPOS/10) kind = 6;
-                            else if (temp3 <= ULTRAPOS/5) kind = 7;
-                            else if (temp3 <= ULTRAPOS/10 * 3) kind = 8;
-                            else if (temp3 <= ULTRAPOS/5 * 2) kind = 9;
-                            else if (temp3 <= ULTRAPOS/2) kind = 10;
-                            else if (temp3 <= ULTRAPOS/5 * 3) kind = 11;
-                            else if (temp3 <= ULTRAPOS/10 * 7) kind = 12;
-                            else if (temp3 <= ULTRAPOS/5 * 4) kind = 13;
-                            else if (temp3 <= ULTRAPOS/10 * 9) kind = 14;
+                            if (temp3 < 1 + ULTRAPOS/10) kind = 6;
+                            else if (temp3 < 1 + ULTRAPOS/5) kind = 7;
+                            else if (temp3 < 1 + ULTRAPOS/10 * 3) kind = 8;
+                            else if (temp3 < 1 + ULTRAPOS/5 * 2) kind = 9;
+                            else if (temp3 < 1 + ULTRAPOS/2) kind = 10;
+                            else if (temp3 < 1 + ULTRAPOS/5 * 3) kind = 11;
+                            else if (temp3 < 1 + ULTRAPOS/10 * 7) kind = 12;
+                            else if (temp3 < 1 + ULTRAPOS/5 * 4) kind = 13;
+                            else if (temp3 < 1 + ULTRAPOS/10 * 9) kind = 14;
                             else kind = 15;
                         }
                     }
-                    else if (temp1 <= ULTRAPOS/1000 * 57 + (five_star_assurance_number - 73) * ULTRAPOS/1000 * 60){
+                    else if (temp1 < 1 + ULTRAPOS/1000 * 57 + (five_star_assurance_number - 73) * ULTRAPOS/1000 * 60){
                         star = 4;
                         four_count = four_count + 1;
                         four_star_assurance_number = 0;
-                        if (temp2 <= ULTRAPOS/2 * (int)(10 * (unmet - threshold))) {
+                        if (temp2 < 1 + ULTRAPOS/2 * (int)(10 * (unmet - threshold))) {
                             type = 1;
                             unmet_count = 0;
                             unmet = (double)17.1;
-                            if (temp3 <= ULTRAPOS/14) kind = 16;
-                            else if (temp3 <= ULTRAPOS/7) kind = 17;
-                            else if (temp3 <= ULTRAPOS/14 * 3) kind = 18;
-                            else if (temp3 <= ULTRAPOS/7 * 2) kind = 19;
-                            else if (temp3 <= ULTRAPOS/14 * 5) kind = 20;
-                            else if (temp3 <= ULTRAPOS/7 * 3) kind = 21;
-                            else if (temp3 <= ULTRAPOS/2) kind = 22;
-                            else if (temp3 <= ULTRAPOS/7 * 4) kind = 23;
-                            else if (temp3 <= ULTRAPOS/14 * 9) kind = 24;
-                            else if (temp3 <= ULTRAPOS/7 * 5) kind = 25;
-                            else if (temp3 <= ULTRAPOS/14 * 11) kind = 26;
-                            else if (temp3 <= ULTRAPOS/7 * 6) kind = 27;
-                            else if (temp3 <= ULTRAPOS/14 * 13) kind = 28;
+                            if (temp3 < 1 + ULTRAPOS/14) kind = 16;
+                            else if (temp3 < 1 + ULTRAPOS/7) kind = 17;
+                            else if (temp3 < 1 + ULTRAPOS/14 * 3) kind = 18;
+                            else if (temp3 < 1 + ULTRAPOS/7 * 2) kind = 19;
+                            else if (temp3 < 1 + ULTRAPOS/14 * 5) kind = 20;
+                            else if (temp3 < 1 + ULTRAPOS/7 * 3) kind = 21;
+                            else if (temp3 < 1 + ULTRAPOS/2) kind = 22;
+                            else if (temp3 < 1 + ULTRAPOS/7 * 4) kind = 23;
+                            else if (temp3 < 1 + ULTRAPOS/14 * 9) kind = 24;
+                            else if (temp3 < 1 + ULTRAPOS/7 * 5) kind = 25;
+                            else if (temp3 < 1 + ULTRAPOS/14 * 11) kind = 26;
+                            else if (temp3 < 1 + ULTRAPOS/7 * 6) kind = 27;
+                            else if (temp3 < 1 + ULTRAPOS/14 * 13) kind = 28;
                             else kind = 29;
                         }
                         else {
                             type = 2;
                             unmet_count = unmet_count + 1;
-                            if (temp3 <= ULTRAPOS/9 * 5) kind = 30;
-                            else if (temp3 <= ULTRAPOS/9) kind = 31;
-                            else if (temp3 <= ULTRAPOS/6) kind = 32;
-                            else if (temp3 <= ULTRAPOS/9 * 2) kind = 33;
-                            else if (temp3 <= ULTRAPOS/18 * 5) kind = 34;
-                            else if (temp3 <= ULTRAPOS/3) kind = 35;
-                            else if (temp3 <= ULTRAPOS/18 * 7) kind = 36;
-                            else if (temp3 <= ULTRAPOS/9 * 4) kind = 37;
-                            else if (temp3 <= ULTRAPOS/2) kind = 38;
-                            else if (temp3 <= ULTRAPOS/9 * 5) kind = 39;
-                            else if (temp3 <= ULTRAPOS/18 * 11) kind = 40;
-                            else if (temp3 <= ULTRAPOS/3 * 2) kind = 41;
-                            else if (temp3 <= ULTRAPOS/18 * 13) kind = 42;
-                            else if (temp3 <= ULTRAPOS/9 * 7) kind = 43;
-                            else if (temp3 <= ULTRAPOS/6 * 5) kind = 44;
-                            else if (temp3 <= ULTRAPOS/9 * 8) kind = 45;
-                            else if (temp3 <= ULTRAPOS/18 * 17) kind = 46;
-                            else kind = 47;
-                        }
-                    }
-                    else {
-                        star = 3;
-                        type = 2;
-                        if (temp3 <= ULTRAPOS/13) kind = 48;
-                        else if (temp3 <= ULTRAPOS/13 * 2) kind = 49;
-                        else if (temp3 <= ULTRAPOS/13 * 3) kind = 50;
-                        else if (temp3 <= ULTRAPOS/13 * 4) kind = 51;
-                        else if (temp3 <= ULTRAPOS/13 * 5) kind = 52;
-                        else if (temp3 <= ULTRAPOS/13 * 6) kind = 53;
-                        else if (temp3 <= ULTRAPOS/13 * 7) kind = 54;
-                        else if (temp3 <= ULTRAPOS/13 * 8) kind = 55;
-                        else if (temp3 <= ULTRAPOS/13 * 9) kind = 56;
-                        else if (temp3 <= ULTRAPOS/13 * 10) kind = 57;
-                        else if (temp3 <= ULTRAPOS/13 * 11) kind = 58;
-                        else if (temp3 <= ULTRAPOS/13 * 12) kind = 59;
-                        else kind = 60;
-                    }
-                }
-                else if (five_star_assurance_number <= 89 && five_star_assurance_number >= 74 && four_star_assurance_number == 9) {
-                    if (temp1 <= ULTRAPOS/1000 * 6 + (five_star_assurance_number - 73) * ULTRAPOS/1000 * 60) {
-                        star = 5;
-                        five_count = five_count + 1;
-                        ave_fives = ave_fives + five_star_assurance_number;
-                        if (five_star_assurance_number > max_fives) { max_fives = five_star_assurance_number; max_fivesth = five_count; max_fivecount = count; }
-                        if (five_star_assurance_number < min_fives) { min_fives = five_star_assurance_number; min_fivesth = five_count; min_fivecount = count; }
-                        five_star_assurance_number = 0;
-                        if (temp2 <= ULTRAPOS/2) {
-                            type = 1;
-                            if (temp3 <= ULTRAPOS/5) kind = 1;
-                            else if (temp3 <= ULTRAPOS/5 * 2) kind = 2;
-                            else if (temp3 <= ULTRAPOS/5 * 3) kind = 3;
-                            else if (temp3 <= ULTRAPOS/5 * 4) kind = 4;
-                            else kind = 5;
-                        }
-                        else {
-                            type = 2;
-                            if (temp3 <= ULTRAPOS/10) kind = 6;
-                            else if (temp3 <= ULTRAPOS/5) kind = 7;
-                            else if (temp3 <= ULTRAPOS/10 * 3) kind = 8;
-                            else if (temp3 <= ULTRAPOS/5 * 2) kind = 9;
-                            else if (temp3 <= ULTRAPOS/2) kind = 10;
-                            else if (temp3 <= ULTRAPOS/5 * 3) kind = 11;
-                            else if (temp3 <= ULTRAPOS/10 * 7) kind = 12;
-                            else if (temp3 <= ULTRAPOS/5 * 4) kind = 13;
-                            else if (temp3 <= ULTRAPOS/10 * 9) kind = 14;
-                            else kind = 15;
-                        }
-                    }
-                    else if (temp1 <= ULTRAPOS/1000 * 567 + (five_star_assurance_number - 73) * ULTRAPOS/1000 * 60) {
-                        star = 4;
-                        four_count = four_count + 1;
-                        four_star_assurance_number = 0;
-                        if (temp2 <= ULTRAPOS/2 * (int)(10 * (unmet - threshold))) {
-                            type = 1;
-                            unmet_count = 0;
-                            unmet = (double)17.1;
-                            if (temp3 <= ULTRAPOS/14) kind = 16;
-                            else if (temp3 <= ULTRAPOS/7) kind = 17;
-                            else if (temp3 <= ULTRAPOS/14 * 3) kind = 18;
-                            else if (temp3 <= ULTRAPOS/7 * 2) kind = 19;
-                            else if (temp3 <= ULTRAPOS/14 * 5) kind = 20;
-                            else if (temp3 <= ULTRAPOS/7 * 3) kind = 21;
-                            else if (temp3 <= ULTRAPOS/2) kind = 22;
-                            else if (temp3 <= ULTRAPOS/7 * 4) kind = 23;
-                            else if (temp3 <= ULTRAPOS/14 * 9) kind = 24;
-                            else if (temp3 <= ULTRAPOS/7 * 5) kind = 25;
-                            else if (temp3 <= ULTRAPOS/14 * 11) kind = 26;
-                            else if (temp3 <= ULTRAPOS/7 * 6) kind = 27;
-                            else if (temp3 <= ULTRAPOS/14 * 13) kind = 28;
-                            else kind = 29;
-                        }
-                        else {
-                            type = 2;
-                            unmet_count = unmet_count + 1;
-                            if (temp3 <= ULTRAPOS/9 * 5) kind = 30;
-                            else if (temp3 <= ULTRAPOS/9) kind = 31;
-                            else if (temp3 <= ULTRAPOS/6) kind = 32;
-                            else if (temp3 <= ULTRAPOS/9 * 2) kind = 33;
-                            else if (temp3 <= ULTRAPOS/18 * 5) kind = 34;
-                            else if (temp3 <= ULTRAPOS/3) kind = 35;
-                            else if (temp3 <= ULTRAPOS/18 * 7) kind = 36;
-                            else if (temp3 <= ULTRAPOS/9 * 4) kind = 37;
-                            else if (temp3 <= ULTRAPOS/2) kind = 38;
-                            else if (temp3 <= ULTRAPOS/9 * 5) kind = 39;
-                            else if (temp3 <= ULTRAPOS/18 * 11) kind = 40;
-                            else if (temp3 <= ULTRAPOS/3 * 2) kind = 41;
-                            else if (temp3 <= ULTRAPOS/18 * 13) kind = 42;
-                            else if (temp3 <= ULTRAPOS/9 * 7) kind = 43;
-                            else if (temp3 <= ULTRAPOS/6 * 5) kind = 44;
-                            else if (temp3 <= ULTRAPOS/9 * 8) kind = 45;
-                            else if (temp3 <= ULTRAPOS/18 * 17) kind = 46;
+                            if (temp3 < 1 + ULTRAPOS/9 * 5) kind = 30;
+                            else if (temp3 < 1 + ULTRAPOS/9) kind = 31;
+                            else if (temp3 < 1 + ULTRAPOS/6) kind = 32;
+                            else if (temp3 < 1 + ULTRAPOS/9 * 2) kind = 33;
+                            else if (temp3 < 1 + ULTRAPOS/18 * 5) kind = 34;
+                            else if (temp3 < 1 + ULTRAPOS/3) kind = 35;
+                            else if (temp3 < 1 + ULTRAPOS/18 * 7) kind = 36;
+                            else if (temp3 < 1 + ULTRAPOS/9 * 4) kind = 37;
+                            else if (temp3 < 1 + ULTRAPOS/2) kind = 38;
+                            else if (temp3 < 1 + ULTRAPOS/9 * 5) kind = 39;
+                            else if (temp3 < 1 + ULTRAPOS/18 * 11) kind = 40;
+                            else if (temp3 < 1 + ULTRAPOS/3 * 2) kind = 41;
+                            else if (temp3 < 1 + ULTRAPOS/18 * 13) kind = 42;
+                            else if (temp3 < 1 + ULTRAPOS/9 * 7) kind = 43;
+                            else if (temp3 < 1 + ULTRAPOS/6 * 5) kind = 44;
+                            else if (temp3 < 1 + ULTRAPOS/9 * 8) kind = 45;
+                            else if (temp3 < 1 + ULTRAPOS/18 * 17) kind = 46;
                             else kind = 47;
                         }
                     }
                     else {
                         star = 3;
                         type = 2;
-                        if (temp3 <= ULTRAPOS/13) kind = 48;
-                        else if (temp3 <= ULTRAPOS/13 * 2) kind = 49;
-                        else if (temp3 <= ULTRAPOS/13 * 3) kind = 50;
-                        else if (temp3 <= ULTRAPOS/13 * 4) kind = 51;
-                        else if (temp3 <= ULTRAPOS/13 * 5) kind = 52;
-                        else if (temp3 <= ULTRAPOS/13 * 6) kind = 53;
-                        else if (temp3 <= ULTRAPOS/13 * 7) kind = 54;
-                        else if (temp3 <= ULTRAPOS/13 * 8) kind = 55;
-                        else if (temp3 <= ULTRAPOS/13 * 9) kind = 56;
-                        else if (temp3 <= ULTRAPOS/13 * 10) kind = 57;
-                        else if (temp3 <= ULTRAPOS/13 * 11) kind = 58;
-                        else if (temp3 <= ULTRAPOS/13 * 12) kind = 59;
+                        if (temp3 < 1 + ULTRAPOS/13) kind = 48;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 2) kind = 49;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 3) kind = 50;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 4) kind = 51;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 5) kind = 52;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 6) kind = 53;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 7) kind = 54;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 8) kind = 55;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 9) kind = 56;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 10) kind = 57;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 11) kind = 58;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 12) kind = 59;
                         else kind = 60;
                     }
                 }
-                else if (five_star_assurance_number <= 89 && five_star_assurance_number >= 74 && four_star_assurance_number >= 10) {
-                    if (temp1 <= ULTRAPOS/1000 * 6 + (five_star_assurance_number - 73) * ULTRAPOS/1000 * 60) {
+                else if (five_star_assurance_number < 1 + 89 && five_star_assurance_number >= 74 && four_star_assurance_number == 9) {
+                    if (temp1 < 1 + ULTRAPOS/1000 * 6 + (five_star_assurance_number - 73) * ULTRAPOS/1000 * 60) {
                         star = 5;
                         five_count = five_count + 1;
                         ave_fives = ave_fives + five_star_assurance_number;
                         if (five_star_assurance_number > max_fives) { max_fives = five_star_assurance_number; max_fivesth = five_count; max_fivecount = count; }
                         if (five_star_assurance_number < min_fives) { min_fives = five_star_assurance_number; min_fivesth = five_count; min_fivecount = count; }
                         five_star_assurance_number = 0;
-                        if (temp2 <= ULTRAPOS/2) {
+                        if (temp2 < 1 + ULTRAPOS/2) {
                             type = 1;
-                            if (temp3 <= ULTRAPOS/5) kind = 1;
-                            else if (temp3 <= ULTRAPOS/5 * 2) kind = 2;
-                            else if (temp3 <= ULTRAPOS/5 * 3) kind = 3;
-                            else if (temp3 <= ULTRAPOS/5 * 4) kind = 4;
+                            if (temp3 < 1 + ULTRAPOS/5) kind = 1;
+                            else if (temp3 < 1 + ULTRAPOS/5 * 2) kind = 2;
+                            else if (temp3 < 1 + ULTRAPOS/5 * 3) kind = 3;
+                            else if (temp3 < 1 + ULTRAPOS/5 * 4) kind = 4;
                             else kind = 5;
                         }
                         else {
                             type = 2;
-                            if (temp3 <= ULTRAPOS/10) kind = 6;
-                            else if (temp3 <= ULTRAPOS/5) kind = 7;
-                            else if (temp3 <= ULTRAPOS/10 * 3) kind = 8;
-                            else if (temp3 <= ULTRAPOS/5 * 2) kind = 9;
-                            else if (temp3 <= ULTRAPOS/2) kind = 10;
-                            else if (temp3 <= ULTRAPOS/5 * 3) kind = 11;
-                            else if (temp3 <= ULTRAPOS/10 * 7) kind = 12;
-                            else if (temp3 <= ULTRAPOS/5 * 4) kind = 13;
-                            else if (temp3 <= ULTRAPOS/10 * 9) kind = 14;
+                            if (temp3 < 1 + ULTRAPOS/10) kind = 6;
+                            else if (temp3 < 1 + ULTRAPOS/5) kind = 7;
+                            else if (temp3 < 1 + ULTRAPOS/10 * 3) kind = 8;
+                            else if (temp3 < 1 + ULTRAPOS/5 * 2) kind = 9;
+                            else if (temp3 < 1 + ULTRAPOS/2) kind = 10;
+                            else if (temp3 < 1 + ULTRAPOS/5 * 3) kind = 11;
+                            else if (temp3 < 1 + ULTRAPOS/10 * 7) kind = 12;
+                            else if (temp3 < 1 + ULTRAPOS/5 * 4) kind = 13;
+                            else if (temp3 < 1 + ULTRAPOS/10 * 9) kind = 14;
+                            else kind = 15;
+                        }
+                    }
+                    else if (temp1 < 1 + ULTRAPOS/1000 * 567 + (five_star_assurance_number - 73) * ULTRAPOS/1000 * 60) {
+                        star = 4;
+                        four_count = four_count + 1;
+                        four_star_assurance_number = 0;
+                        if (temp2 < 1 + ULTRAPOS/2 * (int)(10 * (unmet - threshold))) {
+                            type = 1;
+                            unmet_count = 0;
+                            unmet = (double)17.1;
+                            if (temp3 < 1 + ULTRAPOS/14) kind = 16;
+                            else if (temp3 < 1 + ULTRAPOS/7) kind = 17;
+                            else if (temp3 < 1 + ULTRAPOS/14 * 3) kind = 18;
+                            else if (temp3 < 1 + ULTRAPOS/7 * 2) kind = 19;
+                            else if (temp3 < 1 + ULTRAPOS/14 * 5) kind = 20;
+                            else if (temp3 < 1 + ULTRAPOS/7 * 3) kind = 21;
+                            else if (temp3 < 1 + ULTRAPOS/2) kind = 22;
+                            else if (temp3 < 1 + ULTRAPOS/7 * 4) kind = 23;
+                            else if (temp3 < 1 + ULTRAPOS/14 * 9) kind = 24;
+                            else if (temp3 < 1 + ULTRAPOS/7 * 5) kind = 25;
+                            else if (temp3 < 1 + ULTRAPOS/14 * 11) kind = 26;
+                            else if (temp3 < 1 + ULTRAPOS/7 * 6) kind = 27;
+                            else if (temp3 < 1 + ULTRAPOS/14 * 13) kind = 28;
+                            else kind = 29;
+                        }
+                        else {
+                            type = 2;
+                            unmet_count = unmet_count + 1;
+                            if (temp3 < 1 + ULTRAPOS/9 * 5) kind = 30;
+                            else if (temp3 < 1 + ULTRAPOS/9) kind = 31;
+                            else if (temp3 < 1 + ULTRAPOS/6) kind = 32;
+                            else if (temp3 < 1 + ULTRAPOS/9 * 2) kind = 33;
+                            else if (temp3 < 1 + ULTRAPOS/18 * 5) kind = 34;
+                            else if (temp3 < 1 + ULTRAPOS/3) kind = 35;
+                            else if (temp3 < 1 + ULTRAPOS/18 * 7) kind = 36;
+                            else if (temp3 < 1 + ULTRAPOS/9 * 4) kind = 37;
+                            else if (temp3 < 1 + ULTRAPOS/2) kind = 38;
+                            else if (temp3 < 1 + ULTRAPOS/9 * 5) kind = 39;
+                            else if (temp3 < 1 + ULTRAPOS/18 * 11) kind = 40;
+                            else if (temp3 < 1 + ULTRAPOS/3 * 2) kind = 41;
+                            else if (temp3 < 1 + ULTRAPOS/18 * 13) kind = 42;
+                            else if (temp3 < 1 + ULTRAPOS/9 * 7) kind = 43;
+                            else if (temp3 < 1 + ULTRAPOS/6 * 5) kind = 44;
+                            else if (temp3 < 1 + ULTRAPOS/9 * 8) kind = 45;
+                            else if (temp3 < 1 + ULTRAPOS/18 * 17) kind = 46;
+                            else kind = 47;
+                        }
+                    }
+                    else {
+                        star = 3;
+                        type = 2;
+                        if (temp3 < 1 + ULTRAPOS/13) kind = 48;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 2) kind = 49;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 3) kind = 50;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 4) kind = 51;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 5) kind = 52;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 6) kind = 53;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 7) kind = 54;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 8) kind = 55;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 9) kind = 56;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 10) kind = 57;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 11) kind = 58;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 12) kind = 59;
+                        else kind = 60;
+                    }
+                }
+                else if (five_star_assurance_number < 1 + 89 && five_star_assurance_number >= 74 && four_star_assurance_number >= 10) {
+                    if (temp1 < 1 + ULTRAPOS/1000 * 6 + (five_star_assurance_number - 73) * ULTRAPOS/1000 * 60) {
+                        star = 5;
+                        five_count = five_count + 1;
+                        ave_fives = ave_fives + five_star_assurance_number;
+                        if (five_star_assurance_number > max_fives) { max_fives = five_star_assurance_number; max_fivesth = five_count; max_fivecount = count; }
+                        if (five_star_assurance_number < min_fives) { min_fives = five_star_assurance_number; min_fivesth = five_count; min_fivecount = count; }
+                        five_star_assurance_number = 0;
+                        if (temp2 < 1 + ULTRAPOS/2) {
+                            type = 1;
+                            if (temp3 < 1 + ULTRAPOS/5) kind = 1;
+                            else if (temp3 < 1 + ULTRAPOS/5 * 2) kind = 2;
+                            else if (temp3 < 1 + ULTRAPOS/5 * 3) kind = 3;
+                            else if (temp3 < 1 + ULTRAPOS/5 * 4) kind = 4;
+                            else kind = 5;
+                        }
+                        else {
+                            type = 2;
+                            if (temp3 < 1 + ULTRAPOS/10) kind = 6;
+                            else if (temp3 < 1 + ULTRAPOS/5) kind = 7;
+                            else if (temp3 < 1 + ULTRAPOS/10 * 3) kind = 8;
+                            else if (temp3 < 1 + ULTRAPOS/5 * 2) kind = 9;
+                            else if (temp3 < 1 + ULTRAPOS/2) kind = 10;
+                            else if (temp3 < 1 + ULTRAPOS/5 * 3) kind = 11;
+                            else if (temp3 < 1 + ULTRAPOS/10 * 7) kind = 12;
+                            else if (temp3 < 1 + ULTRAPOS/5 * 4) kind = 13;
+                            else if (temp3 < 1 + ULTRAPOS/10 * 9) kind = 14;
                             else kind = 15;
                         }
                     }
@@ -2230,45 +2230,45 @@ int main() {
                         star = 4;
                         four_count = four_count + 1;
                         four_star_assurance_number = 0;
-                        if (temp2 <= ULTRAPOS/2 * (int)(10 * (unmet - threshold))) {
+                        if (temp2 < 1 + ULTRAPOS/2 * (int)(10 * (unmet - threshold))) {
                             type = 1;
                             unmet_count = 0;
                             unmet = (double)17.1;
-                            if (temp3 <= ULTRAPOS/14) kind = 16;
-                            else if (temp3 <= ULTRAPOS/7) kind = 17;
-                            else if (temp3 <= ULTRAPOS/14 * 3) kind = 18;
-                            else if (temp3 <= ULTRAPOS/7 * 2) kind = 19;
-                            else if (temp3 <= ULTRAPOS/14 * 5) kind = 20;
-                            else if (temp3 <= ULTRAPOS/7 * 3) kind = 21;
-                            else if (temp3 <= ULTRAPOS/2) kind = 22;
-                            else if (temp3 <= ULTRAPOS/7 * 4) kind = 23;
-                            else if (temp3 <= ULTRAPOS/14 * 9) kind = 24;
-                            else if (temp3 <= ULTRAPOS/7 * 5) kind = 25;
-                            else if (temp3 <= ULTRAPOS/14 * 11) kind = 26;
-                            else if (temp3 <= ULTRAPOS/7 * 6) kind = 27;
-                            else if (temp3 <= ULTRAPOS/14 * 13) kind = 28;
+                            if (temp3 < 1 + ULTRAPOS/14) kind = 16;
+                            else if (temp3 < 1 + ULTRAPOS/7) kind = 17;
+                            else if (temp3 < 1 + ULTRAPOS/14 * 3) kind = 18;
+                            else if (temp3 < 1 + ULTRAPOS/7 * 2) kind = 19;
+                            else if (temp3 < 1 + ULTRAPOS/14 * 5) kind = 20;
+                            else if (temp3 < 1 + ULTRAPOS/7 * 3) kind = 21;
+                            else if (temp3 < 1 + ULTRAPOS/2) kind = 22;
+                            else if (temp3 < 1 + ULTRAPOS/7 * 4) kind = 23;
+                            else if (temp3 < 1 + ULTRAPOS/14 * 9) kind = 24;
+                            else if (temp3 < 1 + ULTRAPOS/7 * 5) kind = 25;
+                            else if (temp3 < 1 + ULTRAPOS/14 * 11) kind = 26;
+                            else if (temp3 < 1 + ULTRAPOS/7 * 6) kind = 27;
+                            else if (temp3 < 1 + ULTRAPOS/14 * 13) kind = 28;
                             else kind = 29;
                         }
                         else {
                             type = 2;
                             unmet_count = unmet_count + 1;
-                            if (temp3 <= ULTRAPOS/9 * 5) kind = 30;
-                            else if (temp3 <= ULTRAPOS/9) kind = 31;
-                            else if (temp3 <= ULTRAPOS/6) kind = 32;
-                            else if (temp3 <= ULTRAPOS/9 * 2) kind = 33;
-                            else if (temp3 <= ULTRAPOS/18 * 5) kind = 34;
-                            else if (temp3 <= ULTRAPOS/3) kind = 35;
-                            else if (temp3 <= ULTRAPOS/18 * 7) kind = 36;
-                            else if (temp3 <= ULTRAPOS/9 * 4) kind = 37;
-                            else if (temp3 <= ULTRAPOS/2) kind = 38;
-                            else if (temp3 <= ULTRAPOS/9 * 5) kind = 39;
-                            else if (temp3 <= ULTRAPOS/18 * 11) kind = 40;
-                            else if (temp3 <= ULTRAPOS/3 * 2) kind = 41;
-                            else if (temp3 <= ULTRAPOS/18 * 13) kind = 42;
-                            else if (temp3 <= ULTRAPOS/9 * 7) kind = 43;
-                            else if (temp3 <= ULTRAPOS/6 * 5) kind = 44;
-                            else if (temp3 <= ULTRAPOS/9 * 8) kind = 45;
-                            else if (temp3 <= ULTRAPOS/18 * 17) kind = 46;
+                            if (temp3 < 1 + ULTRAPOS/9 * 5) kind = 30;
+                            else if (temp3 < 1 + ULTRAPOS/9) kind = 31;
+                            else if (temp3 < 1 + ULTRAPOS/6) kind = 32;
+                            else if (temp3 < 1 + ULTRAPOS/9 * 2) kind = 33;
+                            else if (temp3 < 1 + ULTRAPOS/18 * 5) kind = 34;
+                            else if (temp3 < 1 + ULTRAPOS/3) kind = 35;
+                            else if (temp3 < 1 + ULTRAPOS/18 * 7) kind = 36;
+                            else if (temp3 < 1 + ULTRAPOS/9 * 4) kind = 37;
+                            else if (temp3 < 1 + ULTRAPOS/2) kind = 38;
+                            else if (temp3 < 1 + ULTRAPOS/9 * 5) kind = 39;
+                            else if (temp3 < 1 + ULTRAPOS/18 * 11) kind = 40;
+                            else if (temp3 < 1 + ULTRAPOS/3 * 2) kind = 41;
+                            else if (temp3 < 1 + ULTRAPOS/18 * 13) kind = 42;
+                            else if (temp3 < 1 + ULTRAPOS/9 * 7) kind = 43;
+                            else if (temp3 < 1 + ULTRAPOS/6 * 5) kind = 44;
+                            else if (temp3 < 1 + ULTRAPOS/9 * 8) kind = 45;
+                            else if (temp3 < 1 + ULTRAPOS/18 * 17) kind = 46;
                             else kind = 47;
                         }
                     }
@@ -2280,25 +2280,25 @@ int main() {
                         if (five_star_assurance_number > max_fives) { max_fives = five_star_assurance_number; max_fivesth = five_count; max_fivecount = count; }
                         if (five_star_assurance_number < min_fives) { min_fives = five_star_assurance_number; min_fivesth = five_count; min_fivecount = count; }
                         five_star_assurance_number = 0;
-                        if (temp2 <= ULTRAPOS/2) {
+                        if (temp2 < 1 + ULTRAPOS/2) {
                             type = 1;
-                            if (temp3 <= ULTRAPOS/5) kind = 1;
-                            else if (temp3 <= ULTRAPOS/5 * 2) kind = 2;
-                            else if (temp3 <= ULTRAPOS/5 * 3) kind = 3;
-                            else if (temp3 <= ULTRAPOS/5 * 4) kind = 4;
+                            if (temp3 < 1 + ULTRAPOS/5) kind = 1;
+                            else if (temp3 < 1 + ULTRAPOS/5 * 2) kind = 2;
+                            else if (temp3 < 1 + ULTRAPOS/5 * 3) kind = 3;
+                            else if (temp3 < 1 + ULTRAPOS/5 * 4) kind = 4;
                             else kind = 5;
                         }
                         else {
                             type = 2;
-                            if (temp3 <= ULTRAPOS/10) kind = 6;
-                            else if (temp3 <= ULTRAPOS/5) kind = 7;
-                            else if (temp3 <= ULTRAPOS/10 * 3) kind = 8;
-                            else if (temp3 <= ULTRAPOS/5 * 2) kind = 9;
-                            else if (temp3 <= ULTRAPOS/2) kind = 10;
-                            else if (temp3 <= ULTRAPOS/5 * 3) kind = 11;
-                            else if (temp3 <= ULTRAPOS/10 * 7) kind = 12;
-                            else if (temp3 <= ULTRAPOS/5 * 4) kind = 13;
-                            else if (temp3 <= ULTRAPOS/10 * 9) kind = 14;
+                            if (temp3 < 1 + ULTRAPOS/10) kind = 6;
+                            else if (temp3 < 1 + ULTRAPOS/5) kind = 7;
+                            else if (temp3 < 1 + ULTRAPOS/10 * 3) kind = 8;
+                            else if (temp3 < 1 + ULTRAPOS/5 * 2) kind = 9;
+                            else if (temp3 < 1 + ULTRAPOS/2) kind = 10;
+                            else if (temp3 < 1 + ULTRAPOS/5 * 3) kind = 11;
+                            else if (temp3 < 1 + ULTRAPOS/10 * 7) kind = 12;
+                            else if (temp3 < 1 + ULTRAPOS/5 * 4) kind = 13;
+                            else if (temp3 < 1 + ULTRAPOS/10 * 9) kind = 14;
                             else kind = 15;
                         }
                 }
@@ -2448,225 +2448,225 @@ int main() {
                 int type = 0; //Up or non-up, character or weapon
                 int kind = 0; //which exactly
                 if (unmet_count > threshold) unmet = (double)unmet_count;
-                if (five_star_assurance_number <= 73 && four_star_assurance_number <= 8) {
-                    if (temp1 <= ULTRAPOS/1000 * 6) {
+                if (five_star_assurance_number < 1 + 73 && four_star_assurance_number < 1 + 8) {
+                    if (temp1 < 1 + ULTRAPOS/1000 * 6) {
                         star = 5;
                         five_count = five_count + 1;
                         ave_fives = ave_fives + five_star_assurance_number;
                         if (five_star_assurance_number > max_fives) { max_fives = five_star_assurance_number; max_fivesth = five_count; max_fivecount = count; }
                         if (five_star_assurance_number < min_fives) { min_fives = five_star_assurance_number; min_fivesth = five_count; min_fivecount = count; }
                         five_star_assurance_number = 0;
-                        if (temp2 <= ULTRAPOS/2) {
+                        if (temp2 < 1 + ULTRAPOS/2) {
                             type = 1;
-                            if (temp3 <= ULTRAPOS/5) kind = 1;
-                            else if (temp3 <= ULTRAPOS/5 * 2) kind = 2;
-                            else if (temp3 <= ULTRAPOS/5 * 3) kind = 3;
-                            else if (temp3 <= ULTRAPOS/5 * 4) kind = 4;
+                            if (temp3 < 1 + ULTRAPOS/5) kind = 1;
+                            else if (temp3 < 1 + ULTRAPOS/5 * 2) kind = 2;
+                            else if (temp3 < 1 + ULTRAPOS/5 * 3) kind = 3;
+                            else if (temp3 < 1 + ULTRAPOS/5 * 4) kind = 4;
                             else kind = 5;
                         }
                         else {
                             type = 2;
-                            if (temp3 <= ULTRAPOS/10) kind = 6;
-                            else if (temp3 <= ULTRAPOS/5) kind = 7;
-                            else if (temp3 <= ULTRAPOS/10 * 3) kind = 8;
-                            else if (temp3 <= ULTRAPOS/5 * 2) kind = 9;
-                            else if (temp3 <= ULTRAPOS/2) kind = 10;
-                            else if (temp3 <= ULTRAPOS/5 * 3) kind = 11;
-                            else if (temp3 <= ULTRAPOS/10 * 7) kind = 12;
-                            else if (temp3 <= ULTRAPOS/5 * 4) kind = 13;
-                            else if (temp3 <= ULTRAPOS/10 * 9) kind = 14;
+                            if (temp3 < 1 + ULTRAPOS/10) kind = 6;
+                            else if (temp3 < 1 + ULTRAPOS/5) kind = 7;
+                            else if (temp3 < 1 + ULTRAPOS/10 * 3) kind = 8;
+                            else if (temp3 < 1 + ULTRAPOS/5 * 2) kind = 9;
+                            else if (temp3 < 1 + ULTRAPOS/2) kind = 10;
+                            else if (temp3 < 1 + ULTRAPOS/5 * 3) kind = 11;
+                            else if (temp3 < 1 + ULTRAPOS/10 * 7) kind = 12;
+                            else if (temp3 < 1 + ULTRAPOS/5 * 4) kind = 13;
+                            else if (temp3 < 1 + ULTRAPOS/10 * 9) kind = 14;
                             else kind = 15;
                         }
                     }
-                    else if (temp1 <= ULTRAPOS/1000 * 57) {
+                    else if (temp1 < 1 + ULTRAPOS/1000 * 57) {
                         star = 4;
                         four_count = four_count + 1;
                         four_star_assurance_number = 0;
-                        if (temp2 <= ULTRAPOS/2 * (int)(10 * (unmet - threshold))) {
+                        if (temp2 < 1 + ULTRAPOS/2 * (int)(10 * (unmet - threshold))) {
                             type = 1;
                             unmet_count = 0;
                             unmet = (double)17.1;
-                            if (temp3 <= ULTRAPOS/16) kind = 16;
-                            else if (temp3 <= ULTRAPOS/8) kind = 17;
-                            else if (temp3 <= ULTRAPOS/16 * 3) kind = 18;
-                            else if (temp3 <= ULTRAPOS/4) kind = 19;
-                            else if (temp3 <= ULTRAPOS/16 * 5) kind = 20;
-                            else if (temp3 <= ULTRAPOS/8 * 3) kind = 21;
-                            else if (temp3 <= ULTRAPOS/16 * 7) kind = 22;
-                            else if (temp3 <= ULTRAPOS/2) kind = 23;
-                            else if (temp3 <= ULTRAPOS/16 * 9) kind = 24;
-                            else if (temp3 <= ULTRAPOS/8 * 5) kind = 25;
-                            else if (temp3 <= ULTRAPOS/16 * 11) kind = 26;
-                            else if (temp3 <= ULTRAPOS/4 * 3) kind = 27;
-                            else if (temp3 <= ULTRAPOS/16 * 13) kind = 28;
-                            else if (temp3 <= ULTRAPOS/8 * 7) kind = 29;
-                            else if (temp3 <= ULTRAPOS/16 * 15) kind = 30;
+                            if (temp3 < 1 + ULTRAPOS/16) kind = 16;
+                            else if (temp3 < 1 + ULTRAPOS/8) kind = 17;
+                            else if (temp3 < 1 + ULTRAPOS/16 * 3) kind = 18;
+                            else if (temp3 < 1 + ULTRAPOS/4) kind = 19;
+                            else if (temp3 < 1 + ULTRAPOS/16 * 5) kind = 20;
+                            else if (temp3 < 1 + ULTRAPOS/8 * 3) kind = 21;
+                            else if (temp3 < 1 + ULTRAPOS/16 * 7) kind = 22;
+                            else if (temp3 < 1 + ULTRAPOS/2) kind = 23;
+                            else if (temp3 < 1 + ULTRAPOS/16 * 9) kind = 24;
+                            else if (temp3 < 1 + ULTRAPOS/8 * 5) kind = 25;
+                            else if (temp3 < 1 + ULTRAPOS/16 * 11) kind = 26;
+                            else if (temp3 < 1 + ULTRAPOS/4 * 3) kind = 27;
+                            else if (temp3 < 1 + ULTRAPOS/16 * 13) kind = 28;
+                            else if (temp3 < 1 + ULTRAPOS/8 * 7) kind = 29;
+                            else if (temp3 < 1 + ULTRAPOS/16 * 15) kind = 30;
                             else kind = 31;
                         }
                         else {
                             type = 2;
                             unmet_count = unmet_count + 1;
-                            if (temp3 <= ULTRAPOS/9 * 5) kind = 32;
-                            else if (temp3 <= ULTRAPOS/9) kind = 33;
-                            else if (temp3 <= ULTRAPOS/6) kind = 34;
-                            else if (temp3 <= ULTRAPOS/9 * 2) kind = 35;
-                            else if (temp3 <= ULTRAPOS/18 * 5) kind = 36;
-                            else if (temp3 <= ULTRAPOS/3) kind = 37;
-                            else if (temp3 <= ULTRAPOS/18 * 7) kind = 38;
-                            else if (temp3 <= ULTRAPOS/9 * 4) kind = 39;
-                            else if (temp3 <= ULTRAPOS/2) kind = 40;
-                            else if (temp3 <= ULTRAPOS/9 * 5) kind = 41;
-                            else if (temp3 <= ULTRAPOS/18 * 11) kind = 42;
-                            else if (temp3 <= ULTRAPOS/3 * 2) kind = 43;
-                            else if (temp3 <= ULTRAPOS/18 * 13) kind = 44;
-                            else if (temp3 <= ULTRAPOS/9 * 7) kind = 45;
-                            else if (temp3 <= ULTRAPOS/6 * 5) kind = 46;
-                            else if (temp3 <= ULTRAPOS/9 * 8) kind = 47;
-                            else if (temp3 <= ULTRAPOS/18 * 17) kind = 48;
+                            if (temp3 < 1 + ULTRAPOS/9 * 5) kind = 32;
+                            else if (temp3 < 1 + ULTRAPOS/9) kind = 33;
+                            else if (temp3 < 1 + ULTRAPOS/6) kind = 34;
+                            else if (temp3 < 1 + ULTRAPOS/9 * 2) kind = 35;
+                            else if (temp3 < 1 + ULTRAPOS/18 * 5) kind = 36;
+                            else if (temp3 < 1 + ULTRAPOS/3) kind = 37;
+                            else if (temp3 < 1 + ULTRAPOS/18 * 7) kind = 38;
+                            else if (temp3 < 1 + ULTRAPOS/9 * 4) kind = 39;
+                            else if (temp3 < 1 + ULTRAPOS/2) kind = 40;
+                            else if (temp3 < 1 + ULTRAPOS/9 * 5) kind = 41;
+                            else if (temp3 < 1 + ULTRAPOS/18 * 11) kind = 42;
+                            else if (temp3 < 1 + ULTRAPOS/3 * 2) kind = 43;
+                            else if (temp3 < 1 + ULTRAPOS/18 * 13) kind = 44;
+                            else if (temp3 < 1 + ULTRAPOS/9 * 7) kind = 45;
+                            else if (temp3 < 1 + ULTRAPOS/6 * 5) kind = 46;
+                            else if (temp3 < 1 + ULTRAPOS/9 * 8) kind = 47;
+                            else if (temp3 < 1 + ULTRAPOS/18 * 17) kind = 48;
                             else kind = 49;
                         }
                     }
                     else {
                         star = 3;
                         type = 2;
-                        if (temp3 <= ULTRAPOS/13) kind = 50;
-                        else if (temp3 <= ULTRAPOS/13 * 2) kind = 51;
-                        else if (temp3 <= ULTRAPOS/13 * 3) kind = 52;
-                        else if (temp3 <= ULTRAPOS/13 * 4) kind = 53;
-                        else if (temp3 <= ULTRAPOS/13 * 5) kind = 54;
-                        else if (temp3 <= ULTRAPOS/13 * 6) kind = 55;
-                        else if (temp3 <= ULTRAPOS/13 * 7) kind = 56;
-                        else if (temp3 <= ULTRAPOS/13 * 8) kind = 57;
-                        else if (temp3 <= ULTRAPOS/13 * 9) kind = 58;
-                        else if (temp3 <= ULTRAPOS/13 * 10) kind = 59;
-                        else if (temp3 <= ULTRAPOS/13 * 11) kind = 60;
-                        else if (temp3 <= ULTRAPOS/13 * 12) kind = 61;
+                        if (temp3 < 1 + ULTRAPOS/13) kind = 50;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 2) kind = 51;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 3) kind = 52;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 4) kind = 53;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 5) kind = 54;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 6) kind = 55;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 7) kind = 56;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 8) kind = 57;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 9) kind = 58;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 10) kind = 59;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 11) kind = 60;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 12) kind = 61;
                         else kind = 62;
                     }
                 }
-                else if (five_star_assurance_number <= 73 && four_star_assurance_number == 9) {
-                    if (temp1 <= ULTRAPOS/1000 * 6) {
+                else if (five_star_assurance_number < 1 + 73 && four_star_assurance_number == 9) {
+                    if (temp1 < 1 + ULTRAPOS/1000 * 6) {
                         star = 5;
                         five_count = five_count + 1;
                         ave_fives = ave_fives + five_star_assurance_number;
                         if (five_star_assurance_number > max_fives) { max_fives = five_star_assurance_number; max_fivesth = five_count; max_fivecount = count; }
                         if (five_star_assurance_number < min_fives) { min_fives = five_star_assurance_number; min_fivesth = five_count; min_fivecount = count; }
                         five_star_assurance_number = 0;
-                        if (temp2 <= ULTRAPOS/2) {
+                        if (temp2 < 1 + ULTRAPOS/2) {
                             type = 1;
-                            if (temp3 <= ULTRAPOS/5) kind = 1;
-                            else if (temp3 <= ULTRAPOS/5 * 2) kind = 2;
-                            else if (temp3 <= ULTRAPOS/5 * 3) kind = 3;
-                            else if (temp3 <= ULTRAPOS/5 * 4) kind = 4;
+                            if (temp3 < 1 + ULTRAPOS/5) kind = 1;
+                            else if (temp3 < 1 + ULTRAPOS/5 * 2) kind = 2;
+                            else if (temp3 < 1 + ULTRAPOS/5 * 3) kind = 3;
+                            else if (temp3 < 1 + ULTRAPOS/5 * 4) kind = 4;
                             else kind = 5;
                         }
                         else {
                             type = 2;
-                            if (temp3 <= ULTRAPOS/10) kind = 6;
-                            else if (temp3 <= ULTRAPOS/5) kind = 7;
-                            else if (temp3 <= ULTRAPOS/10 * 3) kind = 8;
-                            else if (temp3 <= ULTRAPOS/5 * 2) kind = 9;
-                            else if (temp3 <= ULTRAPOS/2) kind = 10;
-                            else if (temp3 <= ULTRAPOS/5 * 3) kind = 11;
-                            else if (temp3 <= ULTRAPOS/10 * 7) kind = 12;
-                            else if (temp3 <= ULTRAPOS/5 * 4) kind = 13;
-                            else if (temp3 <= ULTRAPOS/10 * 9) kind = 14;
+                            if (temp3 < 1 + ULTRAPOS/10) kind = 6;
+                            else if (temp3 < 1 + ULTRAPOS/5) kind = 7;
+                            else if (temp3 < 1 + ULTRAPOS/10 * 3) kind = 8;
+                            else if (temp3 < 1 + ULTRAPOS/5 * 2) kind = 9;
+                            else if (temp3 < 1 + ULTRAPOS/2) kind = 10;
+                            else if (temp3 < 1 + ULTRAPOS/5 * 3) kind = 11;
+                            else if (temp3 < 1 + ULTRAPOS/10 * 7) kind = 12;
+                            else if (temp3 < 1 + ULTRAPOS/5 * 4) kind = 13;
+                            else if (temp3 < 1 + ULTRAPOS/10 * 9) kind = 14;
                             else kind = 15;
                         }
                     }
-                    else if (temp1 <= ULTRAPOS/1000 * 567) {
+                    else if (temp1 < 1 + ULTRAPOS/1000 * 567) {
                         star = 4;
                         four_count = four_count + 1;
                         four_star_assurance_number = 0;
-                        if (temp2 <= ULTRAPOS/2 * (int)(10 * (unmet - threshold))) {
+                        if (temp2 < 1 + ULTRAPOS/2 * (int)(10 * (unmet - threshold))) {
                             type = 1;
                             unmet_count = 0;
                             unmet = (double)17.1;
-                            if (temp3 <= ULTRAPOS/16) kind = 16;
-                            else if (temp3 <= ULTRAPOS/8) kind = 17;
-                            else if (temp3 <= ULTRAPOS/16 * 3) kind = 18;
-                            else if (temp3 <= ULTRAPOS/4) kind = 19;
-                            else if (temp3 <= ULTRAPOS/16 * 5) kind = 20;
-                            else if (temp3 <= ULTRAPOS/8 * 3) kind = 21;
-                            else if (temp3 <= ULTRAPOS/16 * 7) kind = 22;
-                            else if (temp3 <= ULTRAPOS/2) kind = 23;
-                            else if (temp3 <= ULTRAPOS/16 * 9) kind = 24;
-                            else if (temp3 <= ULTRAPOS/8 * 5) kind = 25;
-                            else if (temp3 <= ULTRAPOS/16 * 11) kind = 26;
-                            else if (temp3 <= ULTRAPOS/4 * 3) kind = 27;
-                            else if (temp3 <= ULTRAPOS/16 * 13) kind = 28;
-                            else if (temp3 <= ULTRAPOS/8 * 7) kind = 29;
-                            else if (temp3 <= ULTRAPOS/16 * 15) kind = 30;
+                            if (temp3 < 1 + ULTRAPOS/16) kind = 16;
+                            else if (temp3 < 1 + ULTRAPOS/8) kind = 17;
+                            else if (temp3 < 1 + ULTRAPOS/16 * 3) kind = 18;
+                            else if (temp3 < 1 + ULTRAPOS/4) kind = 19;
+                            else if (temp3 < 1 + ULTRAPOS/16 * 5) kind = 20;
+                            else if (temp3 < 1 + ULTRAPOS/8 * 3) kind = 21;
+                            else if (temp3 < 1 + ULTRAPOS/16 * 7) kind = 22;
+                            else if (temp3 < 1 + ULTRAPOS/2) kind = 23;
+                            else if (temp3 < 1 + ULTRAPOS/16 * 9) kind = 24;
+                            else if (temp3 < 1 + ULTRAPOS/8 * 5) kind = 25;
+                            else if (temp3 < 1 + ULTRAPOS/16 * 11) kind = 26;
+                            else if (temp3 < 1 + ULTRAPOS/4 * 3) kind = 27;
+                            else if (temp3 < 1 + ULTRAPOS/16 * 13) kind = 28;
+                            else if (temp3 < 1 + ULTRAPOS/8 * 7) kind = 29;
+                            else if (temp3 < 1 + ULTRAPOS/16 * 15) kind = 30;
                             else kind = 31;
                         }
                         else {
                             type = 2;
                             unmet_count = unmet_count + 1;
-                            if (temp3 <= ULTRAPOS/9 * 5) kind = 32;
-                            else if (temp3 <= ULTRAPOS/9) kind = 33;
-                            else if (temp3 <= ULTRAPOS/6) kind = 34;
-                            else if (temp3 <= ULTRAPOS/9 * 2) kind = 35;
-                            else if (temp3 <= ULTRAPOS/18 * 5) kind = 36;
-                            else if (temp3 <= ULTRAPOS/3) kind = 37;
-                            else if (temp3 <= ULTRAPOS/18 * 7) kind = 38;
-                            else if (temp3 <= ULTRAPOS/9 * 4) kind = 39;
-                            else if (temp3 <= ULTRAPOS/2) kind = 40;
-                            else if (temp3 <= ULTRAPOS/9 * 5) kind = 41;
-                            else if (temp3 <= ULTRAPOS/18 * 11) kind = 42;
-                            else if (temp3 <= ULTRAPOS/3 * 2) kind = 43;
-                            else if (temp3 <= ULTRAPOS/18 * 13) kind = 44;
-                            else if (temp3 <= ULTRAPOS/9 * 7) kind = 45;
-                            else if (temp3 <= ULTRAPOS/6 * 5) kind = 46;
-                            else if (temp3 <= ULTRAPOS/9 * 8) kind = 47;
-                            else if (temp3 <= ULTRAPOS/18 * 17) kind = 48;
+                            if (temp3 < 1 + ULTRAPOS/9 * 5) kind = 32;
+                            else if (temp3 < 1 + ULTRAPOS/9) kind = 33;
+                            else if (temp3 < 1 + ULTRAPOS/6) kind = 34;
+                            else if (temp3 < 1 + ULTRAPOS/9 * 2) kind = 35;
+                            else if (temp3 < 1 + ULTRAPOS/18 * 5) kind = 36;
+                            else if (temp3 < 1 + ULTRAPOS/3) kind = 37;
+                            else if (temp3 < 1 + ULTRAPOS/18 * 7) kind = 38;
+                            else if (temp3 < 1 + ULTRAPOS/9 * 4) kind = 39;
+                            else if (temp3 < 1 + ULTRAPOS/2) kind = 40;
+                            else if (temp3 < 1 + ULTRAPOS/9 * 5) kind = 41;
+                            else if (temp3 < 1 + ULTRAPOS/18 * 11) kind = 42;
+                            else if (temp3 < 1 + ULTRAPOS/3 * 2) kind = 43;
+                            else if (temp3 < 1 + ULTRAPOS/18 * 13) kind = 44;
+                            else if (temp3 < 1 + ULTRAPOS/9 * 7) kind = 45;
+                            else if (temp3 < 1 + ULTRAPOS/6 * 5) kind = 46;
+                            else if (temp3 < 1 + ULTRAPOS/9 * 8) kind = 47;
+                            else if (temp3 < 1 + ULTRAPOS/18 * 17) kind = 48;
                             else kind = 49;
                         }
                     }
                     else {
                         star = 3;
                         type = 2;
-                        if (temp3 <= ULTRAPOS/13) kind = 50;
-                        else if (temp3 <= ULTRAPOS/13 * 2) kind = 51;
-                        else if (temp3 <= ULTRAPOS/13 * 3) kind = 52;
-                        else if (temp3 <= ULTRAPOS/13 * 4) kind = 53;
-                        else if (temp3 <= ULTRAPOS/13 * 5) kind = 54;
-                        else if (temp3 <= ULTRAPOS/13 * 6) kind = 55;
-                        else if (temp3 <= ULTRAPOS/13 * 7) kind = 56;
-                        else if (temp3 <= ULTRAPOS/13 * 8) kind = 57;
-                        else if (temp3 <= ULTRAPOS/13 * 9) kind = 58;
-                        else if (temp3 <= ULTRAPOS/13 * 10) kind = 59;
-                        else if (temp3 <= ULTRAPOS/13 * 11) kind = 60;
-                        else if (temp3 <= ULTRAPOS/13 * 12) kind = 61;
+                        if (temp3 < 1 + ULTRAPOS/13) kind = 50;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 2) kind = 51;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 3) kind = 52;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 4) kind = 53;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 5) kind = 54;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 6) kind = 55;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 7) kind = 56;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 8) kind = 57;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 9) kind = 58;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 10) kind = 59;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 11) kind = 60;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 12) kind = 61;
                         else kind = 62;
                     }
                 }
-                else if (five_star_assurance_number <= 73 && four_star_assurance_number >= 10) {
-                    if (temp1 <= ULTRAPOS/1000 * 6) {
+                else if (five_star_assurance_number < 1 + 73 && four_star_assurance_number >= 10) {
+                    if (temp1 < 1 + ULTRAPOS/1000 * 6) {
                         star = 5;
                         five_count = five_count + 1;
                         ave_fives = ave_fives + five_star_assurance_number;
                         if (five_star_assurance_number > max_fives) { max_fives = five_star_assurance_number; max_fivesth = five_count; max_fivecount = count; }
                         if (five_star_assurance_number < min_fives) { min_fives = five_star_assurance_number; min_fivesth = five_count; min_fivecount = count; }
                         five_star_assurance_number = 0;
-                        if (temp2 <= ULTRAPOS/2) {
+                        if (temp2 < 1 + ULTRAPOS/2) {
                             type = 1;
-                            if (temp3 <= ULTRAPOS/5) kind = 1;
-                            else if (temp3 <= ULTRAPOS/5 * 2) kind = 2;
-                            else if (temp3 <= ULTRAPOS/5 * 3) kind = 3;
-                            else if (temp3 <= ULTRAPOS/5 * 4) kind = 4;
+                            if (temp3 < 1 + ULTRAPOS/5) kind = 1;
+                            else if (temp3 < 1 + ULTRAPOS/5 * 2) kind = 2;
+                            else if (temp3 < 1 + ULTRAPOS/5 * 3) kind = 3;
+                            else if (temp3 < 1 + ULTRAPOS/5 * 4) kind = 4;
                             else kind = 5;
                         }
                         else {
                             type = 2;
-                            if (temp3 <= ULTRAPOS/10) kind = 6;
-                            else if (temp3 <= ULTRAPOS/5) kind = 7;
-                            else if (temp3 <= ULTRAPOS/10 * 3) kind = 8;
-                            else if (temp3 <= ULTRAPOS/5 * 2) kind = 9;
-                            else if (temp3 <= ULTRAPOS/2) kind = 10;
-                            else if (temp3 <= ULTRAPOS/5 * 3) kind = 11;
-                            else if (temp3 <= ULTRAPOS/10 * 7) kind = 12;
-                            else if (temp3 <= ULTRAPOS/5 * 4) kind = 13;
-                            else if (temp3 <= ULTRAPOS/10 * 9) kind = 14;
+                            if (temp3 < 1 + ULTRAPOS/10) kind = 6;
+                            else if (temp3 < 1 + ULTRAPOS/5) kind = 7;
+                            else if (temp3 < 1 + ULTRAPOS/10 * 3) kind = 8;
+                            else if (temp3 < 1 + ULTRAPOS/5 * 2) kind = 9;
+                            else if (temp3 < 1 + ULTRAPOS/2) kind = 10;
+                            else if (temp3 < 1 + ULTRAPOS/5 * 3) kind = 11;
+                            else if (temp3 < 1 + ULTRAPOS/10 * 7) kind = 12;
+                            else if (temp3 < 1 + ULTRAPOS/5 * 4) kind = 13;
+                            else if (temp3 < 1 + ULTRAPOS/10 * 9) kind = 14;
                             else kind = 15;
                         }
                     }
@@ -2674,270 +2674,270 @@ int main() {
                         star = 4;
                         four_count = four_count + 1;
                         four_star_assurance_number = 0;
-                        if (temp2 <= ULTRAPOS/2 * (int)(10 * (unmet - threshold))) {
+                        if (temp2 < 1 + ULTRAPOS/2 * (int)(10 * (unmet - threshold))) {
                             type = 1;
                             unmet_count = 0;
                             unmet = (double)17.1;
-                            if (temp3 <= ULTRAPOS/16) kind = 16;
-                            else if (temp3 <= ULTRAPOS/8) kind = 17;
-                            else if (temp3 <= ULTRAPOS/16 * 3) kind = 18;
-                            else if (temp3 <= ULTRAPOS/4) kind = 19;
-                            else if (temp3 <= ULTRAPOS/16 * 5) kind = 20;
-                            else if (temp3 <= ULTRAPOS/8 * 3) kind = 21;
-                            else if (temp3 <= ULTRAPOS/16 * 7) kind = 22;
-                            else if (temp3 <= ULTRAPOS/2) kind = 23;
-                            else if (temp3 <= ULTRAPOS/16 * 9) kind = 24;
-                            else if (temp3 <= ULTRAPOS/8 * 5) kind = 25;
-                            else if (temp3 <= ULTRAPOS/16 * 11) kind = 26;
-                            else if (temp3 <= ULTRAPOS/4 * 3) kind = 27;
-                            else if (temp3 <= ULTRAPOS/16 * 13) kind = 28;
-                            else if (temp3 <= ULTRAPOS/8 * 7) kind = 29;
-                            else if (temp3 <= ULTRAPOS/16 * 15) kind = 30;
+                            if (temp3 < 1 + ULTRAPOS/16) kind = 16;
+                            else if (temp3 < 1 + ULTRAPOS/8) kind = 17;
+                            else if (temp3 < 1 + ULTRAPOS/16 * 3) kind = 18;
+                            else if (temp3 < 1 + ULTRAPOS/4) kind = 19;
+                            else if (temp3 < 1 + ULTRAPOS/16 * 5) kind = 20;
+                            else if (temp3 < 1 + ULTRAPOS/8 * 3) kind = 21;
+                            else if (temp3 < 1 + ULTRAPOS/16 * 7) kind = 22;
+                            else if (temp3 < 1 + ULTRAPOS/2) kind = 23;
+                            else if (temp3 < 1 + ULTRAPOS/16 * 9) kind = 24;
+                            else if (temp3 < 1 + ULTRAPOS/8 * 5) kind = 25;
+                            else if (temp3 < 1 + ULTRAPOS/16 * 11) kind = 26;
+                            else if (temp3 < 1 + ULTRAPOS/4 * 3) kind = 27;
+                            else if (temp3 < 1 + ULTRAPOS/16 * 13) kind = 28;
+                            else if (temp3 < 1 + ULTRAPOS/8 * 7) kind = 29;
+                            else if (temp3 < 1 + ULTRAPOS/16 * 15) kind = 30;
                             else kind = 31;
                         }
                         else {
                             type = 2;
                             unmet_count = unmet_count + 1;
-                            if (temp3 <= ULTRAPOS/9 * 5) kind = 32;
-                            else if (temp3 <= ULTRAPOS/9) kind = 33;
-                            else if (temp3 <= ULTRAPOS/6) kind = 34;
-                            else if (temp3 <= ULTRAPOS/9 * 2) kind = 35;
-                            else if (temp3 <= ULTRAPOS/18 * 5) kind = 36;
-                            else if (temp3 <= ULTRAPOS/3) kind = 37;
-                            else if (temp3 <= ULTRAPOS/18 * 7) kind = 38;
-                            else if (temp3 <= ULTRAPOS/9 * 4) kind = 39;
-                            else if (temp3 <= ULTRAPOS/2) kind = 40;
-                            else if (temp3 <= ULTRAPOS/9 * 5) kind = 41;
-                            else if (temp3 <= ULTRAPOS/18 * 11) kind = 42;
-                            else if (temp3 <= ULTRAPOS/3 * 2) kind = 43;
-                            else if (temp3 <= ULTRAPOS/18 * 13) kind = 44;
-                            else if (temp3 <= ULTRAPOS/9 * 7) kind = 45;
-                            else if (temp3 <= ULTRAPOS/6 * 5) kind = 46;
-                            else if (temp3 <= ULTRAPOS/9 * 8) kind = 47;
-                            else if (temp3 <= ULTRAPOS/18 * 17) kind = 48;
+                            if (temp3 < 1 + ULTRAPOS/9 * 5) kind = 32;
+                            else if (temp3 < 1 + ULTRAPOS/9) kind = 33;
+                            else if (temp3 < 1 + ULTRAPOS/6) kind = 34;
+                            else if (temp3 < 1 + ULTRAPOS/9 * 2) kind = 35;
+                            else if (temp3 < 1 + ULTRAPOS/18 * 5) kind = 36;
+                            else if (temp3 < 1 + ULTRAPOS/3) kind = 37;
+                            else if (temp3 < 1 + ULTRAPOS/18 * 7) kind = 38;
+                            else if (temp3 < 1 + ULTRAPOS/9 * 4) kind = 39;
+                            else if (temp3 < 1 + ULTRAPOS/2) kind = 40;
+                            else if (temp3 < 1 + ULTRAPOS/9 * 5) kind = 41;
+                            else if (temp3 < 1 + ULTRAPOS/18 * 11) kind = 42;
+                            else if (temp3 < 1 + ULTRAPOS/3 * 2) kind = 43;
+                            else if (temp3 < 1 + ULTRAPOS/18 * 13) kind = 44;
+                            else if (temp3 < 1 + ULTRAPOS/9 * 7) kind = 45;
+                            else if (temp3 < 1 + ULTRAPOS/6 * 5) kind = 46;
+                            else if (temp3 < 1 + ULTRAPOS/9 * 8) kind = 47;
+                            else if (temp3 < 1 + ULTRAPOS/18 * 17) kind = 48;
                             else kind = 49;
                         }
                     }
                 }
-                else if (five_star_assurance_number <= 89 && five_star_assurance_number >= 74 && four_star_assurance_number <= 8) {
-                    if (temp1 <= ULTRAPOS/1000 * 6 + (five_star_assurance_number - 73) * ULTRAPOS/1000 * 60) {
+                else if (five_star_assurance_number < 1 + 89 && five_star_assurance_number >= 74 && four_star_assurance_number < 1 + 8) {
+                    if (temp1 < 1 + ULTRAPOS/1000 * 6 + (five_star_assurance_number - 73) * ULTRAPOS/1000 * 60) {
                         star = 5;
                         five_count = five_count + 1;
                         ave_fives = ave_fives + five_star_assurance_number;
                         if (five_star_assurance_number > max_fives) { max_fives = five_star_assurance_number; max_fivesth = five_count; max_fivecount = count; }
                         if (five_star_assurance_number < min_fives) { min_fives = five_star_assurance_number; min_fivesth = five_count; min_fivecount = count; }
                         five_star_assurance_number = 0;
-                        if (temp2 <= ULTRAPOS/2) {
+                        if (temp2 < 1 + ULTRAPOS/2) {
                             type = 1;
-                            if (temp3 <= ULTRAPOS/5) kind = 1;
-                            else if (temp3 <= ULTRAPOS/5 * 2) kind = 2;
-                            else if (temp3 <= ULTRAPOS/5 * 3) kind = 3;
-                            else if (temp3 <= ULTRAPOS/5 * 4) kind = 4;
+                            if (temp3 < 1 + ULTRAPOS/5) kind = 1;
+                            else if (temp3 < 1 + ULTRAPOS/5 * 2) kind = 2;
+                            else if (temp3 < 1 + ULTRAPOS/5 * 3) kind = 3;
+                            else if (temp3 < 1 + ULTRAPOS/5 * 4) kind = 4;
                             else kind = 5;
                         }
                         else {
                             type = 2;
-                            if (temp3 <= ULTRAPOS/10) kind = 6;
-                            else if (temp3 <= ULTRAPOS/5) kind = 7;
-                            else if (temp3 <= ULTRAPOS/10 * 3) kind = 8;
-                            else if (temp3 <= ULTRAPOS/5 * 2) kind = 9;
-                            else if (temp3 <= ULTRAPOS/2) kind = 10;
-                            else if (temp3 <= ULTRAPOS/5 * 3) kind = 11;
-                            else if (temp3 <= ULTRAPOS/10 * 7) kind = 12;
-                            else if (temp3 <= ULTRAPOS/5 * 4) kind = 13;
-                            else if (temp3 <= ULTRAPOS/10 * 9) kind = 14;
+                            if (temp3 < 1 + ULTRAPOS/10) kind = 6;
+                            else if (temp3 < 1 + ULTRAPOS/5) kind = 7;
+                            else if (temp3 < 1 + ULTRAPOS/10 * 3) kind = 8;
+                            else if (temp3 < 1 + ULTRAPOS/5 * 2) kind = 9;
+                            else if (temp3 < 1 + ULTRAPOS/2) kind = 10;
+                            else if (temp3 < 1 + ULTRAPOS/5 * 3) kind = 11;
+                            else if (temp3 < 1 + ULTRAPOS/10 * 7) kind = 12;
+                            else if (temp3 < 1 + ULTRAPOS/5 * 4) kind = 13;
+                            else if (temp3 < 1 + ULTRAPOS/10 * 9) kind = 14;
                             else kind = 15;
                         }
                     }
-                    else if (temp1 <= ULTRAPOS/1000 * 57 + (five_star_assurance_number - 73) * ULTRAPOS/1000 * 60){
+                    else if (temp1 < 1 + ULTRAPOS/1000 * 57 + (five_star_assurance_number - 73) * ULTRAPOS/1000 * 60){
                         star = 4;
                         four_count = four_count + 1;
                         four_star_assurance_number = 0;
-                        if (temp2 <= ULTRAPOS/2 * (int)(10 * (unmet - threshold))) {
+                        if (temp2 < 1 + ULTRAPOS/2 * (int)(10 * (unmet - threshold))) {
                             type = 1;
                             unmet_count = 0;
                             unmet = (double)17.1;
-                            if (temp3 <= ULTRAPOS/16) kind = 16;
-                            else if (temp3 <= ULTRAPOS/8) kind = 17;
-                            else if (temp3 <= ULTRAPOS/16 * 3) kind = 18;
-                            else if (temp3 <= ULTRAPOS/4) kind = 19;
-                            else if (temp3 <= ULTRAPOS/16 * 5) kind = 20;
-                            else if (temp3 <= ULTRAPOS/8 * 3) kind = 21;
-                            else if (temp3 <= ULTRAPOS/16 * 7) kind = 22;
-                            else if (temp3 <= ULTRAPOS/2) kind = 23;
-                            else if (temp3 <= ULTRAPOS/16 * 9) kind = 24;
-                            else if (temp3 <= ULTRAPOS/8 * 5) kind = 25;
-                            else if (temp3 <= ULTRAPOS/16 * 11) kind = 26;
-                            else if (temp3 <= ULTRAPOS/4 * 3) kind = 27;
-                            else if (temp3 <= ULTRAPOS/16 * 13) kind = 28;
-                            else if (temp3 <= ULTRAPOS/8 * 7) kind = 29;
-                            else if (temp3 <= ULTRAPOS/16 * 15) kind = 30;
+                            if (temp3 < 1 + ULTRAPOS/16) kind = 16;
+                            else if (temp3 < 1 + ULTRAPOS/8) kind = 17;
+                            else if (temp3 < 1 + ULTRAPOS/16 * 3) kind = 18;
+                            else if (temp3 < 1 + ULTRAPOS/4) kind = 19;
+                            else if (temp3 < 1 + ULTRAPOS/16 * 5) kind = 20;
+                            else if (temp3 < 1 + ULTRAPOS/8 * 3) kind = 21;
+                            else if (temp3 < 1 + ULTRAPOS/16 * 7) kind = 22;
+                            else if (temp3 < 1 + ULTRAPOS/2) kind = 23;
+                            else if (temp3 < 1 + ULTRAPOS/16 * 9) kind = 24;
+                            else if (temp3 < 1 + ULTRAPOS/8 * 5) kind = 25;
+                            else if (temp3 < 1 + ULTRAPOS/16 * 11) kind = 26;
+                            else if (temp3 < 1 + ULTRAPOS/4 * 3) kind = 27;
+                            else if (temp3 < 1 + ULTRAPOS/16 * 13) kind = 28;
+                            else if (temp3 < 1 + ULTRAPOS/8 * 7) kind = 29;
+                            else if (temp3 < 1 + ULTRAPOS/16 * 15) kind = 30;
                             else kind = 31;
                         }
                         else {
                             type = 2;
                             unmet_count = unmet_count + 1;
-                            if (temp3 <= ULTRAPOS/9 * 5) kind = 32;
-                            else if (temp3 <= ULTRAPOS/9) kind = 33;
-                            else if (temp3 <= ULTRAPOS/6) kind = 34;
-                            else if (temp3 <= ULTRAPOS/9 * 2) kind = 35;
-                            else if (temp3 <= ULTRAPOS/18 * 5) kind = 36;
-                            else if (temp3 <= ULTRAPOS/3) kind = 37;
-                            else if (temp3 <= ULTRAPOS/18 * 7) kind = 38;
-                            else if (temp3 <= ULTRAPOS/9 * 4) kind = 39;
-                            else if (temp3 <= ULTRAPOS/2) kind = 40;
-                            else if (temp3 <= ULTRAPOS/9 * 5) kind = 41;
-                            else if (temp3 <= ULTRAPOS/18 * 11) kind = 42;
-                            else if (temp3 <= ULTRAPOS/3 * 2) kind = 43;
-                            else if (temp3 <= ULTRAPOS/18 * 13) kind = 44;
-                            else if (temp3 <= ULTRAPOS/9 * 7) kind = 45;
-                            else if (temp3 <= ULTRAPOS/6 * 5) kind = 46;
-                            else if (temp3 <= ULTRAPOS/9 * 8) kind = 47;
-                            else if (temp3 <= ULTRAPOS/18 * 17) kind = 48;
-                            else kind = 49;
-                        }
-                    }
-                    else {
-                        star = 3;
-                        type = 2;
-                        if (temp3 <= ULTRAPOS/13) kind = 50;
-                        else if (temp3 <= ULTRAPOS/13 * 2) kind = 51;
-                        else if (temp3 <= ULTRAPOS/13 * 3) kind = 52;
-                        else if (temp3 <= ULTRAPOS/13 * 4) kind = 53;
-                        else if (temp3 <= ULTRAPOS/13 * 5) kind = 54;
-                        else if (temp3 <= ULTRAPOS/13 * 6) kind = 55;
-                        else if (temp3 <= ULTRAPOS/13 * 7) kind = 56;
-                        else if (temp3 <= ULTRAPOS/13 * 8) kind = 57;
-                        else if (temp3 <= ULTRAPOS/13 * 9) kind = 58;
-                        else if (temp3 <= ULTRAPOS/13 * 10) kind = 59;
-                        else if (temp3 <= ULTRAPOS/13 * 11) kind = 60;
-                        else if (temp3 <= ULTRAPOS/13 * 12) kind = 61;
-                        else kind = 62;
-                    }
-                }
-                else if (five_star_assurance_number <= 89 && five_star_assurance_number >= 74 && four_star_assurance_number == 9) {
-                    if (temp1 <= ULTRAPOS/1000 * 6 + (five_star_assurance_number - 73) * ULTRAPOS/1000 * 60) {
-                        star = 5;
-                        five_count = five_count + 1;
-                        ave_fives = ave_fives + five_star_assurance_number;
-                        if (five_star_assurance_number > max_fives) { max_fives = five_star_assurance_number; max_fivesth = five_count; max_fivecount = count; }
-                        if (five_star_assurance_number < min_fives) { min_fives = five_star_assurance_number; min_fivesth = five_count; min_fivecount = count; }
-                        five_star_assurance_number = 0;
-                        if (temp2 <= ULTRAPOS/2) {
-                            type = 1;
-                            if (temp3 <= ULTRAPOS/5) kind = 1;
-                            else if (temp3 <= ULTRAPOS/5 * 2) kind = 2;
-                            else if (temp3 <= ULTRAPOS/5 * 3) kind = 3;
-                            else if (temp3 <= ULTRAPOS/5 * 4) kind = 4;
-                            else kind = 5;
-                        }
-                        else {
-                            type = 2;
-                            if (temp3 <= ULTRAPOS/10) kind = 6;
-                            else if (temp3 <= ULTRAPOS/5) kind = 7;
-                            else if (temp3 <= ULTRAPOS/10 * 3) kind = 8;
-                            else if (temp3 <= ULTRAPOS/5 * 2) kind = 9;
-                            else if (temp3 <= ULTRAPOS/2) kind = 10;
-                            else if (temp3 <= ULTRAPOS/5 * 3) kind = 11;
-                            else if (temp3 <= ULTRAPOS/10 * 7) kind = 12;
-                            else if (temp3 <= ULTRAPOS/5 * 4) kind = 13;
-                            else if (temp3 <= ULTRAPOS/10 * 9) kind = 14;
-                            else kind = 15;
-                        }
-                    }
-                    else if (temp1 <= ULTRAPOS/1000 * 567 + (five_star_assurance_number - 73) * ULTRAPOS/1000 * 60) {
-                        star = 4;
-                        four_count = four_count + 1;
-                        four_star_assurance_number = 0;
-                        if (temp2 <= ULTRAPOS/2 * (int)(10 * (unmet - threshold))) {
-                            type = 1;
-                            unmet_count = 0;
-                            unmet = (double)17.1;
-                            if (temp3 <= ULTRAPOS/16) kind = 16;
-                            else if (temp3 <= ULTRAPOS/8) kind = 17;
-                            else if (temp3 <= ULTRAPOS/16 * 3) kind = 18;
-                            else if (temp3 <= ULTRAPOS/4) kind = 19;
-                            else if (temp3 <= ULTRAPOS/16 * 5) kind = 20;
-                            else if (temp3 <= ULTRAPOS/8 * 3) kind = 21;
-                            else if (temp3 <= ULTRAPOS/16 * 7) kind = 22;
-                            else if (temp3 <= ULTRAPOS/2) kind = 23;
-                            else if (temp3 <= ULTRAPOS/16 * 9) kind = 24;
-                            else if (temp3 <= ULTRAPOS/8 * 5) kind = 25;
-                            else if (temp3 <= ULTRAPOS/16 * 11) kind = 26;
-                            else if (temp3 <= ULTRAPOS/4 * 3) kind = 27;
-                            else if (temp3 <= ULTRAPOS/16 * 13) kind = 28;
-                            else if (temp3 <= ULTRAPOS/8 * 7) kind = 29;
-                            else if (temp3 <= ULTRAPOS/16 * 15) kind = 30;
-                            else kind = 31;
-                        }
-                        else {
-                            type = 2;
-                            unmet_count = unmet_count + 1;
-                            if (temp3 <= ULTRAPOS/9 * 5) kind = 32;
-                            else if (temp3 <= ULTRAPOS/9) kind = 33;
-                            else if (temp3 <= ULTRAPOS/6) kind = 34;
-                            else if (temp3 <= ULTRAPOS/9 * 2) kind = 35;
-                            else if (temp3 <= ULTRAPOS/18 * 5) kind = 36;
-                            else if (temp3 <= ULTRAPOS/3) kind = 37;
-                            else if (temp3 <= ULTRAPOS/18 * 7) kind = 38;
-                            else if (temp3 <= ULTRAPOS/9 * 4) kind = 39;
-                            else if (temp3 <= ULTRAPOS/2) kind = 40;
-                            else if (temp3 <= ULTRAPOS/9 * 5) kind = 41;
-                            else if (temp3 <= ULTRAPOS/18 * 11) kind = 42;
-                            else if (temp3 <= ULTRAPOS/3 * 2) kind = 43;
-                            else if (temp3 <= ULTRAPOS/18 * 13) kind = 44;
-                            else if (temp3 <= ULTRAPOS/9 * 7) kind = 45;
-                            else if (temp3 <= ULTRAPOS/6 * 5) kind = 46;
-                            else if (temp3 <= ULTRAPOS/9 * 8) kind = 47;
-                            else if (temp3 <= ULTRAPOS/18 * 17) kind = 48;
+                            if (temp3 < 1 + ULTRAPOS/9 * 5) kind = 32;
+                            else if (temp3 < 1 + ULTRAPOS/9) kind = 33;
+                            else if (temp3 < 1 + ULTRAPOS/6) kind = 34;
+                            else if (temp3 < 1 + ULTRAPOS/9 * 2) kind = 35;
+                            else if (temp3 < 1 + ULTRAPOS/18 * 5) kind = 36;
+                            else if (temp3 < 1 + ULTRAPOS/3) kind = 37;
+                            else if (temp3 < 1 + ULTRAPOS/18 * 7) kind = 38;
+                            else if (temp3 < 1 + ULTRAPOS/9 * 4) kind = 39;
+                            else if (temp3 < 1 + ULTRAPOS/2) kind = 40;
+                            else if (temp3 < 1 + ULTRAPOS/9 * 5) kind = 41;
+                            else if (temp3 < 1 + ULTRAPOS/18 * 11) kind = 42;
+                            else if (temp3 < 1 + ULTRAPOS/3 * 2) kind = 43;
+                            else if (temp3 < 1 + ULTRAPOS/18 * 13) kind = 44;
+                            else if (temp3 < 1 + ULTRAPOS/9 * 7) kind = 45;
+                            else if (temp3 < 1 + ULTRAPOS/6 * 5) kind = 46;
+                            else if (temp3 < 1 + ULTRAPOS/9 * 8) kind = 47;
+                            else if (temp3 < 1 + ULTRAPOS/18 * 17) kind = 48;
                             else kind = 49;
                         }
                     }
                     else {
                         star = 3;
                         type = 2;
-                        if (temp3 <= ULTRAPOS/13) kind = 50;
-                        else if (temp3 <= ULTRAPOS/13 * 2) kind = 51;
-                        else if (temp3 <= ULTRAPOS/13 * 3) kind = 52;
-                        else if (temp3 <= ULTRAPOS/13 * 4) kind = 53;
-                        else if (temp3 <= ULTRAPOS/13 * 5) kind = 54;
-                        else if (temp3 <= ULTRAPOS/13 * 6) kind = 55;
-                        else if (temp3 <= ULTRAPOS/13 * 7) kind = 56;
-                        else if (temp3 <= ULTRAPOS/13 * 8) kind = 57;
-                        else if (temp3 <= ULTRAPOS/13 * 9) kind = 58;
-                        else if (temp3 <= ULTRAPOS/13 * 10) kind = 59;
-                        else if (temp3 <= ULTRAPOS/13 * 11) kind = 60;
-                        else if (temp3 <= ULTRAPOS/13 * 12) kind = 61;
+                        if (temp3 < 1 + ULTRAPOS/13) kind = 50;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 2) kind = 51;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 3) kind = 52;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 4) kind = 53;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 5) kind = 54;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 6) kind = 55;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 7) kind = 56;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 8) kind = 57;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 9) kind = 58;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 10) kind = 59;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 11) kind = 60;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 12) kind = 61;
                         else kind = 62;
                     }
                 }
-                else if (five_star_assurance_number <= 89 && five_star_assurance_number >= 74 && four_star_assurance_number >= 10) {
-                    if (temp1 <= ULTRAPOS/1000 * 6 + (five_star_assurance_number - 73) * ULTRAPOS/1000 * 60) {
+                else if (five_star_assurance_number < 1 + 89 && five_star_assurance_number >= 74 && four_star_assurance_number == 9) {
+                    if (temp1 < 1 + ULTRAPOS/1000 * 6 + (five_star_assurance_number - 73) * ULTRAPOS/1000 * 60) {
                         star = 5;
                         five_count = five_count + 1;
                         ave_fives = ave_fives + five_star_assurance_number;
                         if (five_star_assurance_number > max_fives) { max_fives = five_star_assurance_number; max_fivesth = five_count; max_fivecount = count; }
                         if (five_star_assurance_number < min_fives) { min_fives = five_star_assurance_number; min_fivesth = five_count; min_fivecount = count; }
                         five_star_assurance_number = 0;
-                        if (temp2 <= ULTRAPOS/2) {
+                        if (temp2 < 1 + ULTRAPOS/2) {
                             type = 1;
-                            if (temp3 <= ULTRAPOS/5) kind = 1;
-                            else if (temp3 <= ULTRAPOS/5 * 2) kind = 2;
-                            else if (temp3 <= ULTRAPOS/5 * 3) kind = 3;
-                            else if (temp3 <= ULTRAPOS/5 * 4) kind = 4;
+                            if (temp3 < 1 + ULTRAPOS/5) kind = 1;
+                            else if (temp3 < 1 + ULTRAPOS/5 * 2) kind = 2;
+                            else if (temp3 < 1 + ULTRAPOS/5 * 3) kind = 3;
+                            else if (temp3 < 1 + ULTRAPOS/5 * 4) kind = 4;
                             else kind = 5;
                         }
                         else {
                             type = 2;
-                            if (temp3 <= ULTRAPOS/10) kind = 6;
-                            else if (temp3 <= ULTRAPOS/5) kind = 7;
-                            else if (temp3 <= ULTRAPOS/10 * 3) kind = 8;
-                            else if (temp3 <= ULTRAPOS/5 * 2) kind = 9;
-                            else if (temp3 <= ULTRAPOS/2) kind = 10;
-                            else if (temp3 <= ULTRAPOS/5 * 3) kind = 11;
-                            else if (temp3 <= ULTRAPOS/10 * 7) kind = 12;
-                            else if (temp3 <= ULTRAPOS/5 * 4) kind = 13;
-                            else if (temp3 <= ULTRAPOS/10 * 9) kind = 14;
+                            if (temp3 < 1 + ULTRAPOS/10) kind = 6;
+                            else if (temp3 < 1 + ULTRAPOS/5) kind = 7;
+                            else if (temp3 < 1 + ULTRAPOS/10 * 3) kind = 8;
+                            else if (temp3 < 1 + ULTRAPOS/5 * 2) kind = 9;
+                            else if (temp3 < 1 + ULTRAPOS/2) kind = 10;
+                            else if (temp3 < 1 + ULTRAPOS/5 * 3) kind = 11;
+                            else if (temp3 < 1 + ULTRAPOS/10 * 7) kind = 12;
+                            else if (temp3 < 1 + ULTRAPOS/5 * 4) kind = 13;
+                            else if (temp3 < 1 + ULTRAPOS/10 * 9) kind = 14;
+                            else kind = 15;
+                        }
+                    }
+                    else if (temp1 < 1 + ULTRAPOS/1000 * 567 + (five_star_assurance_number - 73) * ULTRAPOS/1000 * 60) {
+                        star = 4;
+                        four_count = four_count + 1;
+                        four_star_assurance_number = 0;
+                        if (temp2 < 1 + ULTRAPOS/2 * (int)(10 * (unmet - threshold))) {
+                            type = 1;
+                            unmet_count = 0;
+                            unmet = (double)17.1;
+                            if (temp3 < 1 + ULTRAPOS/16) kind = 16;
+                            else if (temp3 < 1 + ULTRAPOS/8) kind = 17;
+                            else if (temp3 < 1 + ULTRAPOS/16 * 3) kind = 18;
+                            else if (temp3 < 1 + ULTRAPOS/4) kind = 19;
+                            else if (temp3 < 1 + ULTRAPOS/16 * 5) kind = 20;
+                            else if (temp3 < 1 + ULTRAPOS/8 * 3) kind = 21;
+                            else if (temp3 < 1 + ULTRAPOS/16 * 7) kind = 22;
+                            else if (temp3 < 1 + ULTRAPOS/2) kind = 23;
+                            else if (temp3 < 1 + ULTRAPOS/16 * 9) kind = 24;
+                            else if (temp3 < 1 + ULTRAPOS/8 * 5) kind = 25;
+                            else if (temp3 < 1 + ULTRAPOS/16 * 11) kind = 26;
+                            else if (temp3 < 1 + ULTRAPOS/4 * 3) kind = 27;
+                            else if (temp3 < 1 + ULTRAPOS/16 * 13) kind = 28;
+                            else if (temp3 < 1 + ULTRAPOS/8 * 7) kind = 29;
+                            else if (temp3 < 1 + ULTRAPOS/16 * 15) kind = 30;
+                            else kind = 31;
+                        }
+                        else {
+                            type = 2;
+                            unmet_count = unmet_count + 1;
+                            if (temp3 < 1 + ULTRAPOS/9 * 5) kind = 32;
+                            else if (temp3 < 1 + ULTRAPOS/9) kind = 33;
+                            else if (temp3 < 1 + ULTRAPOS/6) kind = 34;
+                            else if (temp3 < 1 + ULTRAPOS/9 * 2) kind = 35;
+                            else if (temp3 < 1 + ULTRAPOS/18 * 5) kind = 36;
+                            else if (temp3 < 1 + ULTRAPOS/3) kind = 37;
+                            else if (temp3 < 1 + ULTRAPOS/18 * 7) kind = 38;
+                            else if (temp3 < 1 + ULTRAPOS/9 * 4) kind = 39;
+                            else if (temp3 < 1 + ULTRAPOS/2) kind = 40;
+                            else if (temp3 < 1 + ULTRAPOS/9 * 5) kind = 41;
+                            else if (temp3 < 1 + ULTRAPOS/18 * 11) kind = 42;
+                            else if (temp3 < 1 + ULTRAPOS/3 * 2) kind = 43;
+                            else if (temp3 < 1 + ULTRAPOS/18 * 13) kind = 44;
+                            else if (temp3 < 1 + ULTRAPOS/9 * 7) kind = 45;
+                            else if (temp3 < 1 + ULTRAPOS/6 * 5) kind = 46;
+                            else if (temp3 < 1 + ULTRAPOS/9 * 8) kind = 47;
+                            else if (temp3 < 1 + ULTRAPOS/18 * 17) kind = 48;
+                            else kind = 49;
+                        }
+                    }
+                    else {
+                        star = 3;
+                        type = 2;
+                        if (temp3 < 1 + ULTRAPOS/13) kind = 50;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 2) kind = 51;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 3) kind = 52;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 4) kind = 53;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 5) kind = 54;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 6) kind = 55;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 7) kind = 56;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 8) kind = 57;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 9) kind = 58;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 10) kind = 59;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 11) kind = 60;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 12) kind = 61;
+                        else kind = 62;
+                    }
+                }
+                else if (five_star_assurance_number < 1 + 89 && five_star_assurance_number >= 74 && four_star_assurance_number >= 10) {
+                    if (temp1 < 1 + ULTRAPOS/1000 * 6 + (five_star_assurance_number - 73) * ULTRAPOS/1000 * 60) {
+                        star = 5;
+                        five_count = five_count + 1;
+                        ave_fives = ave_fives + five_star_assurance_number;
+                        if (five_star_assurance_number > max_fives) { max_fives = five_star_assurance_number; max_fivesth = five_count; max_fivecount = count; }
+                        if (five_star_assurance_number < min_fives) { min_fives = five_star_assurance_number; min_fivesth = five_count; min_fivecount = count; }
+                        five_star_assurance_number = 0;
+                        if (temp2 < 1 + ULTRAPOS/2) {
+                            type = 1;
+                            if (temp3 < 1 + ULTRAPOS/5) kind = 1;
+                            else if (temp3 < 1 + ULTRAPOS/5 * 2) kind = 2;
+                            else if (temp3 < 1 + ULTRAPOS/5 * 3) kind = 3;
+                            else if (temp3 < 1 + ULTRAPOS/5 * 4) kind = 4;
+                            else kind = 5;
+                        }
+                        else {
+                            type = 2;
+                            if (temp3 < 1 + ULTRAPOS/10) kind = 6;
+                            else if (temp3 < 1 + ULTRAPOS/5) kind = 7;
+                            else if (temp3 < 1 + ULTRAPOS/10 * 3) kind = 8;
+                            else if (temp3 < 1 + ULTRAPOS/5 * 2) kind = 9;
+                            else if (temp3 < 1 + ULTRAPOS/2) kind = 10;
+                            else if (temp3 < 1 + ULTRAPOS/5 * 3) kind = 11;
+                            else if (temp3 < 1 + ULTRAPOS/10 * 7) kind = 12;
+                            else if (temp3 < 1 + ULTRAPOS/5 * 4) kind = 13;
+                            else if (temp3 < 1 + ULTRAPOS/10 * 9) kind = 14;
                             else kind = 15;
                         }
                     }
@@ -2945,47 +2945,47 @@ int main() {
                         star = 4;
                         four_count = four_count + 1;
                         four_star_assurance_number = 0;
-                        if (temp2 <= ULTRAPOS/2 * (int)(10 * (unmet - threshold))) {
+                        if (temp2 < 1 + ULTRAPOS/2 * (int)(10 * (unmet - threshold))) {
                             type = 1;
                             unmet_count = 0;
                             unmet = (double)17.1;
-                            if (temp3 <= ULTRAPOS/16) kind = 16;
-                            else if (temp3 <= ULTRAPOS/8) kind = 17;
-                            else if (temp3 <= ULTRAPOS/16 * 3) kind = 18;
-                            else if (temp3 <= ULTRAPOS/4) kind = 19;
-                            else if (temp3 <= ULTRAPOS/16 * 5) kind = 20;
-                            else if (temp3 <= ULTRAPOS/8 * 3) kind = 21;
-                            else if (temp3 <= ULTRAPOS/16 * 7) kind = 22;
-                            else if (temp3 <= ULTRAPOS/2) kind = 23;
-                            else if (temp3 <= ULTRAPOS/16 * 9) kind = 24;
-                            else if (temp3 <= ULTRAPOS/8 * 5) kind = 25;
-                            else if (temp3 <= ULTRAPOS/16 * 11) kind = 26;
-                            else if (temp3 <= ULTRAPOS/4 * 3) kind = 27;
-                            else if (temp3 <= ULTRAPOS/16 * 13) kind = 28;
-                            else if (temp3 <= ULTRAPOS/8 * 7) kind = 29;
-                            else if (temp3 <= ULTRAPOS/16 * 15) kind = 30;
+                            if (temp3 < 1 + ULTRAPOS/16) kind = 16;
+                            else if (temp3 < 1 + ULTRAPOS/8) kind = 17;
+                            else if (temp3 < 1 + ULTRAPOS/16 * 3) kind = 18;
+                            else if (temp3 < 1 + ULTRAPOS/4) kind = 19;
+                            else if (temp3 < 1 + ULTRAPOS/16 * 5) kind = 20;
+                            else if (temp3 < 1 + ULTRAPOS/8 * 3) kind = 21;
+                            else if (temp3 < 1 + ULTRAPOS/16 * 7) kind = 22;
+                            else if (temp3 < 1 + ULTRAPOS/2) kind = 23;
+                            else if (temp3 < 1 + ULTRAPOS/16 * 9) kind = 24;
+                            else if (temp3 < 1 + ULTRAPOS/8 * 5) kind = 25;
+                            else if (temp3 < 1 + ULTRAPOS/16 * 11) kind = 26;
+                            else if (temp3 < 1 + ULTRAPOS/4 * 3) kind = 27;
+                            else if (temp3 < 1 + ULTRAPOS/16 * 13) kind = 28;
+                            else if (temp3 < 1 + ULTRAPOS/8 * 7) kind = 29;
+                            else if (temp3 < 1 + ULTRAPOS/16 * 15) kind = 30;
                             else kind = 31;
                         }
                         else {
                             type = 2;
                             unmet_count = unmet_count + 1;
-                            if (temp3 <= ULTRAPOS/9 * 5) kind = 32;
-                            else if (temp3 <= ULTRAPOS/9) kind = 33;
-                            else if (temp3 <= ULTRAPOS/6) kind = 34;
-                            else if (temp3 <= ULTRAPOS/9 * 2) kind = 35;
-                            else if (temp3 <= ULTRAPOS/18 * 5) kind = 36;
-                            else if (temp3 <= ULTRAPOS/3) kind = 37;
-                            else if (temp3 <= ULTRAPOS/18 * 7) kind = 38;
-                            else if (temp3 <= ULTRAPOS/9 * 4) kind = 39;
-                            else if (temp3 <= ULTRAPOS/2) kind = 40;
-                            else if (temp3 <= ULTRAPOS/9 * 5) kind = 41;
-                            else if (temp3 <= ULTRAPOS/18 * 11) kind = 42;
-                            else if (temp3 <= ULTRAPOS/3 * 2) kind = 43;
-                            else if (temp3 <= ULTRAPOS/18 * 13) kind = 44;
-                            else if (temp3 <= ULTRAPOS/9 * 7) kind = 45;
-                            else if (temp3 <= ULTRAPOS/6 * 5) kind = 46;
-                            else if (temp3 <= ULTRAPOS/9 * 8) kind = 47;
-                            else if (temp3 <= ULTRAPOS/18 * 17) kind = 48;
+                            if (temp3 < 1 + ULTRAPOS/9 * 5) kind = 32;
+                            else if (temp3 < 1 + ULTRAPOS/9) kind = 33;
+                            else if (temp3 < 1 + ULTRAPOS/6) kind = 34;
+                            else if (temp3 < 1 + ULTRAPOS/9 * 2) kind = 35;
+                            else if (temp3 < 1 + ULTRAPOS/18 * 5) kind = 36;
+                            else if (temp3 < 1 + ULTRAPOS/3) kind = 37;
+                            else if (temp3 < 1 + ULTRAPOS/18 * 7) kind = 38;
+                            else if (temp3 < 1 + ULTRAPOS/9 * 4) kind = 39;
+                            else if (temp3 < 1 + ULTRAPOS/2) kind = 40;
+                            else if (temp3 < 1 + ULTRAPOS/9 * 5) kind = 41;
+                            else if (temp3 < 1 + ULTRAPOS/18 * 11) kind = 42;
+                            else if (temp3 < 1 + ULTRAPOS/3 * 2) kind = 43;
+                            else if (temp3 < 1 + ULTRAPOS/18 * 13) kind = 44;
+                            else if (temp3 < 1 + ULTRAPOS/9 * 7) kind = 45;
+                            else if (temp3 < 1 + ULTRAPOS/6 * 5) kind = 46;
+                            else if (temp3 < 1 + ULTRAPOS/9 * 8) kind = 47;
+                            else if (temp3 < 1 + ULTRAPOS/18 * 17) kind = 48;
                             else kind = 49;
                         }
                     }
@@ -2997,25 +2997,25 @@ int main() {
                         if (five_star_assurance_number > max_fives) { max_fives = five_star_assurance_number; max_fivesth = five_count; max_fivecount = count; }
                         if (five_star_assurance_number < min_fives) { min_fives = five_star_assurance_number; min_fivesth = five_count; min_fivecount = count; }
                         five_star_assurance_number = 0;
-                        if (temp2 <= ULTRAPOS/2) {
+                        if (temp2 < 1 + ULTRAPOS/2) {
                             type = 1;
-                            if (temp3 <= ULTRAPOS/5) kind = 1;
-                            else if (temp3 <= ULTRAPOS/5 * 2) kind = 2;
-                            else if (temp3 <= ULTRAPOS/5 * 3) kind = 3;
-                            else if (temp3 <= ULTRAPOS/5 * 4) kind = 4;
+                            if (temp3 < 1 + ULTRAPOS/5) kind = 1;
+                            else if (temp3 < 1 + ULTRAPOS/5 * 2) kind = 2;
+                            else if (temp3 < 1 + ULTRAPOS/5 * 3) kind = 3;
+                            else if (temp3 < 1 + ULTRAPOS/5 * 4) kind = 4;
                             else kind = 5;
                         }
                         else {
                             type = 2;
-                            if (temp3 <= ULTRAPOS/10) kind = 6;
-                            else if (temp3 <= ULTRAPOS/5) kind = 7;
-                            else if (temp3 <= ULTRAPOS/10 * 3) kind = 8;
-                            else if (temp3 <= ULTRAPOS/5 * 2) kind = 9;
-                            else if (temp3 <= ULTRAPOS/2) kind = 10;
-                            else if (temp3 <= ULTRAPOS/5 * 3) kind = 11;
-                            else if (temp3 <= ULTRAPOS/10 * 7) kind = 12;
-                            else if (temp3 <= ULTRAPOS/5 * 4) kind = 13;
-                            else if (temp3 <= ULTRAPOS/10 * 9) kind = 14;
+                            if (temp3 < 1 + ULTRAPOS/10) kind = 6;
+                            else if (temp3 < 1 + ULTRAPOS/5) kind = 7;
+                            else if (temp3 < 1 + ULTRAPOS/10 * 3) kind = 8;
+                            else if (temp3 < 1 + ULTRAPOS/5 * 2) kind = 9;
+                            else if (temp3 < 1 + ULTRAPOS/2) kind = 10;
+                            else if (temp3 < 1 + ULTRAPOS/5 * 3) kind = 11;
+                            else if (temp3 < 1 + ULTRAPOS/10 * 7) kind = 12;
+                            else if (temp3 < 1 + ULTRAPOS/5 * 4) kind = 13;
+                            else if (temp3 < 1 + ULTRAPOS/10 * 9) kind = 14;
                             else kind = 15;
                         }
                 }
@@ -3165,227 +3165,227 @@ int main() {
                 int type = 0; //Up or non-up, character or weapon
                 int kind = 0; //which exactly
                 if (unmet_count > threshold) unmet = (double)unmet_count;
-                if (five_star_assurance_number <= 73 && four_star_assurance_number <= 8) {
-                    if (temp1 <= ULTRAPOS/1000 * 6) {
+                if (five_star_assurance_number < 1 + 73 && four_star_assurance_number < 1 + 8) {
+                    if (temp1 < 1 + ULTRAPOS/1000 * 6) {
                         star = 5;
                         five_count = five_count + 1;
                         ave_fives = ave_fives + five_star_assurance_number;
                         if (five_star_assurance_number > max_fives) { max_fives = five_star_assurance_number; max_fivesth = five_count; max_fivecount = count; }
                         if (five_star_assurance_number < min_fives) { min_fives = five_star_assurance_number; min_fivesth = five_count; min_fivecount = count; }
                         five_star_assurance_number = 0;
-                        if (temp2 <= ULTRAPOS/2) {
+                        if (temp2 < 1 + ULTRAPOS/2) {
                             type = 1;
-                            if (temp3 <= ULTRAPOS/5) kind = 1;
-                            else if (temp3 <= ULTRAPOS/5 * 2) kind = 2;
-                            else if (temp3 <= ULTRAPOS/5 * 3) kind = 3;
-                            else if (temp3 <= ULTRAPOS/5 * 4) kind = 4;
+                            if (temp3 < 1 + ULTRAPOS/5) kind = 1;
+                            else if (temp3 < 1 + ULTRAPOS/5 * 2) kind = 2;
+                            else if (temp3 < 1 + ULTRAPOS/5 * 3) kind = 3;
+                            else if (temp3 < 1 + ULTRAPOS/5 * 4) kind = 4;
                             else kind = 5;
                         }
                         else {
                             type = 2;
-                            if (temp3 <= ULTRAPOS/10) kind = 6;
-                            else if (temp3 <= ULTRAPOS/5) kind = 7;
-                            else if (temp3 <= ULTRAPOS/10 * 3) kind = 8;
-                            else if (temp3 <= ULTRAPOS/5 * 2) kind = 9;
-                            else if (temp3 <= ULTRAPOS/2) kind = 10;
-                            else if (temp3 <= ULTRAPOS/5 * 3) kind = 11;
-                            else if (temp3 <= ULTRAPOS/10 * 7) kind = 12;
-                            else if (temp3 <= ULTRAPOS/5 * 4) kind = 13;
-                            else if (temp3 <= ULTRAPOS/10 * 9) kind = 14;
+                            if (temp3 < 1 + ULTRAPOS/10) kind = 6;
+                            else if (temp3 < 1 + ULTRAPOS/5) kind = 7;
+                            else if (temp3 < 1 + ULTRAPOS/10 * 3) kind = 8;
+                            else if (temp3 < 1 + ULTRAPOS/5 * 2) kind = 9;
+                            else if (temp3 < 1 + ULTRAPOS/2) kind = 10;
+                            else if (temp3 < 1 + ULTRAPOS/5 * 3) kind = 11;
+                            else if (temp3 < 1 + ULTRAPOS/10 * 7) kind = 12;
+                            else if (temp3 < 1 + ULTRAPOS/5 * 4) kind = 13;
+                            else if (temp3 < 1 + ULTRAPOS/10 * 9) kind = 14;
                             else kind = 15;
                         }
                     }
-                    else if (temp1 <= ULTRAPOS/1000 * 57) {
+                    else if (temp1 < 1 + ULTRAPOS/1000 * 57) {
                         star = 4;
                         four_count = four_count + 1;
                         four_star_assurance_number = 0;
-                        if (temp2 <= ULTRAPOS/2 * (int)(10 * (unmet - threshold))) {
+                        if (temp2 < 1 + ULTRAPOS/2 * (int)(10 * (unmet - threshold))) {
                             type = 1;
                             unmet_count = 0;
                             unmet = (double)17.1;
-                            if (temp3 <= ULTRAPOS/17) kind = 16;
-                            else if (temp3 <= ULTRAPOS/17 * 2) kind = 17;
-                            else if (temp3 <= ULTRAPOS/17 * 3) kind = 18;
-                            else if (temp3 <= ULTRAPOS/17 * 4) kind = 19;
-                            else if (temp3 <= ULTRAPOS/17 * 5) kind = 20;
-                            else if (temp3 <= ULTRAPOS/17 * 6) kind = 21;
-                            else if (temp3 <= ULTRAPOS/17 * 7) kind = 22;
-                            else if (temp3 <= ULTRAPOS/17 * 8) kind = 23;
-                            else if (temp3 <= ULTRAPOS/17 * 9) kind = 24;
-                            else if (temp3 <= ULTRAPOS/17 * 10) kind = 25;
-                            else if (temp3 <= ULTRAPOS/17 * 11) kind = 26;
-                            else if (temp3 <= ULTRAPOS/17 * 12) kind = 27;
-                            else if (temp3 <= ULTRAPOS/17 * 13) kind = 28;
-                            else if (temp3 <= ULTRAPOS/17 * 14) kind = 29;
-                            else if (temp3 <= ULTRAPOS/17 * 15) kind = 30;
-                            else if (temp3 <= ULTRAPOS/17 * 16) kind = 31;
+                            if (temp3 < 1 + ULTRAPOS/17) kind = 16;
+                            else if (temp3 < 1 + ULTRAPOS/17 * 2) kind = 17;
+                            else if (temp3 < 1 + ULTRAPOS/17 * 3) kind = 18;
+                            else if (temp3 < 1 + ULTRAPOS/17 * 4) kind = 19;
+                            else if (temp3 < 1 + ULTRAPOS/17 * 5) kind = 20;
+                            else if (temp3 < 1 + ULTRAPOS/17 * 6) kind = 21;
+                            else if (temp3 < 1 + ULTRAPOS/17 * 7) kind = 22;
+                            else if (temp3 < 1 + ULTRAPOS/17 * 8) kind = 23;
+                            else if (temp3 < 1 + ULTRAPOS/17 * 9) kind = 24;
+                            else if (temp3 < 1 + ULTRAPOS/17 * 10) kind = 25;
+                            else if (temp3 < 1 + ULTRAPOS/17 * 11) kind = 26;
+                            else if (temp3 < 1 + ULTRAPOS/17 * 12) kind = 27;
+                            else if (temp3 < 1 + ULTRAPOS/17 * 13) kind = 28;
+                            else if (temp3 < 1 + ULTRAPOS/17 * 14) kind = 29;
+                            else if (temp3 < 1 + ULTRAPOS/17 * 15) kind = 30;
+                            else if (temp3 < 1 + ULTRAPOS/17 * 16) kind = 31;
                             else kind = 32;
                         }
                         else {
                             type = 2;
                             unmet_count = unmet_count + 1;
-                            if (temp3 <= ULTRAPOS/9 * 5) kind = 33;
-                            else if (temp3 <= ULTRAPOS/9) kind = 34;
-                            else if (temp3 <= ULTRAPOS/6) kind = 35;
-                            else if (temp3 <= ULTRAPOS/9 * 2) kind = 36;
-                            else if (temp3 <= ULTRAPOS/18 * 5) kind = 37;
-                            else if (temp3 <= ULTRAPOS/3) kind = 38;
-                            else if (temp3 <= ULTRAPOS/18 * 7) kind = 39;
-                            else if (temp3 <= ULTRAPOS/9 * 4) kind = 40;
-                            else if (temp3 <= ULTRAPOS/2) kind = 41;
-                            else if (temp3 <= ULTRAPOS/9 * 5) kind = 42;
-                            else if (temp3 <= ULTRAPOS/18 * 11) kind = 43;
-                            else if (temp3 <= ULTRAPOS/3 * 2) kind = 44;
-                            else if (temp3 <= ULTRAPOS/18 * 13) kind = 45;
-                            else if (temp3 <= ULTRAPOS/9 * 7) kind = 46;
-                            else if (temp3 <= ULTRAPOS/6 * 5) kind = 47;
-                            else if (temp3 <= ULTRAPOS/9 * 8) kind = 48;
-                            else if (temp3 <= ULTRAPOS/18 * 17) kind = 49;
+                            if (temp3 < 1 + ULTRAPOS/9 * 5) kind = 33;
+                            else if (temp3 < 1 + ULTRAPOS/9) kind = 34;
+                            else if (temp3 < 1 + ULTRAPOS/6) kind = 35;
+                            else if (temp3 < 1 + ULTRAPOS/9 * 2) kind = 36;
+                            else if (temp3 < 1 + ULTRAPOS/18 * 5) kind = 37;
+                            else if (temp3 < 1 + ULTRAPOS/3) kind = 38;
+                            else if (temp3 < 1 + ULTRAPOS/18 * 7) kind = 39;
+                            else if (temp3 < 1 + ULTRAPOS/9 * 4) kind = 40;
+                            else if (temp3 < 1 + ULTRAPOS/2) kind = 41;
+                            else if (temp3 < 1 + ULTRAPOS/9 * 5) kind = 42;
+                            else if (temp3 < 1 + ULTRAPOS/18 * 11) kind = 43;
+                            else if (temp3 < 1 + ULTRAPOS/3 * 2) kind = 44;
+                            else if (temp3 < 1 + ULTRAPOS/18 * 13) kind = 45;
+                            else if (temp3 < 1 + ULTRAPOS/9 * 7) kind = 46;
+                            else if (temp3 < 1 + ULTRAPOS/6 * 5) kind = 47;
+                            else if (temp3 < 1 + ULTRAPOS/9 * 8) kind = 48;
+                            else if (temp3 < 1 + ULTRAPOS/18 * 17) kind = 49;
                             else kind = 50;
                         }
                     }
                     else {
                         star = 3;
                         type = 2;
-                        if (temp3 <= ULTRAPOS/13) kind = 51;
-                        else if (temp3 <= ULTRAPOS/13 * 2) kind = 52;
-                        else if (temp3 <= ULTRAPOS/13 * 3) kind = 53;
-                        else if (temp3 <= ULTRAPOS/13 * 4) kind = 54;
-                        else if (temp3 <= ULTRAPOS/13 * 5) kind = 55;
-                        else if (temp3 <= ULTRAPOS/13 * 6) kind = 56;
-                        else if (temp3 <= ULTRAPOS/13 * 7) kind = 57;
-                        else if (temp3 <= ULTRAPOS/13 * 8) kind = 58;
-                        else if (temp3 <= ULTRAPOS/13 * 9) kind = 59;
-                        else if (temp3 <= ULTRAPOS/13 * 10) kind = 60;
-                        else if (temp3 <= ULTRAPOS/13 * 11) kind = 61;
-                        else if (temp3 <= ULTRAPOS/13 * 12) kind = 62;
+                        if (temp3 < 1 + ULTRAPOS/13) kind = 51;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 2) kind = 52;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 3) kind = 53;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 4) kind = 54;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 5) kind = 55;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 6) kind = 56;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 7) kind = 57;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 8) kind = 58;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 9) kind = 59;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 10) kind = 60;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 11) kind = 61;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 12) kind = 62;
                         else kind = 63;
                     }
                 }
-                else if (five_star_assurance_number <= 73 && four_star_assurance_number == 9) {
-                    if (temp1 <= ULTRAPOS/1000 * 6) {
+                else if (five_star_assurance_number < 1 + 73 && four_star_assurance_number == 9) {
+                    if (temp1 < 1 + ULTRAPOS/1000 * 6) {
                         star = 5;
                         five_count = five_count + 1;
                         ave_fives = ave_fives + five_star_assurance_number;
                         if (five_star_assurance_number > max_fives) { max_fives = five_star_assurance_number; max_fivesth = five_count; max_fivecount = count; }
                         if (five_star_assurance_number < min_fives) { min_fives = five_star_assurance_number; min_fivesth = five_count; min_fivecount = count; }
                         five_star_assurance_number = 0;
-                        if (temp2 <= ULTRAPOS/2) {
+                        if (temp2 < 1 + ULTRAPOS/2) {
                             type = 1;
-                            if (temp3 <= ULTRAPOS/5) kind = 1;
-                            else if (temp3 <= ULTRAPOS/5 * 2) kind = 2;
-                            else if (temp3 <= ULTRAPOS/5 * 3) kind = 3;
-                            else if (temp3 <= ULTRAPOS/5 * 4) kind = 4;
+                            if (temp3 < 1 + ULTRAPOS/5) kind = 1;
+                            else if (temp3 < 1 + ULTRAPOS/5 * 2) kind = 2;
+                            else if (temp3 < 1 + ULTRAPOS/5 * 3) kind = 3;
+                            else if (temp3 < 1 + ULTRAPOS/5 * 4) kind = 4;
                             else kind = 5;
                         }
                         else {
                             type = 2;
-                            if (temp3 <= ULTRAPOS/10) kind = 6;
-                            else if (temp3 <= ULTRAPOS/5) kind = 7;
-                            else if (temp3 <= ULTRAPOS/10 * 3) kind = 8;
-                            else if (temp3 <= ULTRAPOS/5 * 2) kind = 9;
-                            else if (temp3 <= ULTRAPOS/2) kind = 10;
-                            else if (temp3 <= ULTRAPOS/5 * 3) kind = 11;
-                            else if (temp3 <= ULTRAPOS/10 * 7) kind = 12;
-                            else if (temp3 <= ULTRAPOS/5 * 4) kind = 13;
-                            else if (temp3 <= ULTRAPOS/10 * 9) kind = 14;
+                            if (temp3 < 1 + ULTRAPOS/10) kind = 6;
+                            else if (temp3 < 1 + ULTRAPOS/5) kind = 7;
+                            else if (temp3 < 1 + ULTRAPOS/10 * 3) kind = 8;
+                            else if (temp3 < 1 + ULTRAPOS/5 * 2) kind = 9;
+                            else if (temp3 < 1 + ULTRAPOS/2) kind = 10;
+                            else if (temp3 < 1 + ULTRAPOS/5 * 3) kind = 11;
+                            else if (temp3 < 1 + ULTRAPOS/10 * 7) kind = 12;
+                            else if (temp3 < 1 + ULTRAPOS/5 * 4) kind = 13;
+                            else if (temp3 < 1 + ULTRAPOS/10 * 9) kind = 14;
                             else kind = 15;
                         }
                     }
-                    else if (temp1 <= ULTRAPOS/1000 * 567) {
+                    else if (temp1 < 1 + ULTRAPOS/1000 * 567) {
                         star = 4;
                         four_count = four_count + 1;
                         four_star_assurance_number = 0;
-                        if (temp2 <= ULTRAPOS/2 * (int)(10 * (unmet - threshold))) {
+                        if (temp2 < 1 + ULTRAPOS/2 * (int)(10 * (unmet - threshold))) {
                             type = 1;
                             unmet_count = 0;
                             unmet = (double)17.1;
-                            if (temp3 <= ULTRAPOS/17) kind = 16;
-                            else if (temp3 <= ULTRAPOS/17 * 2) kind = 17;
-                            else if (temp3 <= ULTRAPOS/17 * 3) kind = 18;
-                            else if (temp3 <= ULTRAPOS/17 * 4) kind = 19;
-                            else if (temp3 <= ULTRAPOS/17 * 5) kind = 20;
-                            else if (temp3 <= ULTRAPOS/17 * 6) kind = 21;
-                            else if (temp3 <= ULTRAPOS/17 * 7) kind = 22;
-                            else if (temp3 <= ULTRAPOS/17 * 8) kind = 23;
-                            else if (temp3 <= ULTRAPOS/17 * 9) kind = 24;
-                            else if (temp3 <= ULTRAPOS/17 * 10) kind = 25;
-                            else if (temp3 <= ULTRAPOS/17 * 11) kind = 26;
-                            else if (temp3 <= ULTRAPOS/17 * 12) kind = 27;
-                            else if (temp3 <= ULTRAPOS/17 * 13) kind = 28;
-                            else if (temp3 <= ULTRAPOS/17 * 14) kind = 29;
-                            else if (temp3 <= ULTRAPOS/17 * 15) kind = 30;
-                            else if (temp3 <= ULTRAPOS/17 * 16) kind = 31;
+                            if (temp3 < 1 + ULTRAPOS/17) kind = 16;
+                            else if (temp3 < 1 + ULTRAPOS/17 * 2) kind = 17;
+                            else if (temp3 < 1 + ULTRAPOS/17 * 3) kind = 18;
+                            else if (temp3 < 1 + ULTRAPOS/17 * 4) kind = 19;
+                            else if (temp3 < 1 + ULTRAPOS/17 * 5) kind = 20;
+                            else if (temp3 < 1 + ULTRAPOS/17 * 6) kind = 21;
+                            else if (temp3 < 1 + ULTRAPOS/17 * 7) kind = 22;
+                            else if (temp3 < 1 + ULTRAPOS/17 * 8) kind = 23;
+                            else if (temp3 < 1 + ULTRAPOS/17 * 9) kind = 24;
+                            else if (temp3 < 1 + ULTRAPOS/17 * 10) kind = 25;
+                            else if (temp3 < 1 + ULTRAPOS/17 * 11) kind = 26;
+                            else if (temp3 < 1 + ULTRAPOS/17 * 12) kind = 27;
+                            else if (temp3 < 1 + ULTRAPOS/17 * 13) kind = 28;
+                            else if (temp3 < 1 + ULTRAPOS/17 * 14) kind = 29;
+                            else if (temp3 < 1 + ULTRAPOS/17 * 15) kind = 30;
+                            else if (temp3 < 1 + ULTRAPOS/17 * 16) kind = 31;
                             else kind = 32;
                         }
                         else {
                             type = 2;
                             unmet_count = unmet_count + 1;
-                            if (temp3 <= ULTRAPOS/9 * 5) kind = 33;
-                            else if (temp3 <= ULTRAPOS/9) kind = 34;
-                            else if (temp3 <= ULTRAPOS/6) kind = 35;
-                            else if (temp3 <= ULTRAPOS/9 * 2) kind = 36;
-                            else if (temp3 <= ULTRAPOS/18 * 5) kind = 37;
-                            else if (temp3 <= ULTRAPOS/3) kind = 38;
-                            else if (temp3 <= ULTRAPOS/18 * 7) kind = 39;
-                            else if (temp3 <= ULTRAPOS/9 * 4) kind = 40;
-                            else if (temp3 <= ULTRAPOS/2) kind = 41;
-                            else if (temp3 <= ULTRAPOS/9 * 5) kind = 42;
-                            else if (temp3 <= ULTRAPOS/18 * 11) kind = 43;
-                            else if (temp3 <= ULTRAPOS/3 * 2) kind = 44;
-                            else if (temp3 <= ULTRAPOS/18 * 13) kind = 45;
-                            else if (temp3 <= ULTRAPOS/9 * 7) kind = 46;
-                            else if (temp3 <= ULTRAPOS/6 * 5) kind = 47;
-                            else if (temp3 <= ULTRAPOS/9 * 8) kind = 48;
-                            else if (temp3 <= ULTRAPOS/18 * 17) kind = 49;
+                            if (temp3 < 1 + ULTRAPOS/9 * 5) kind = 33;
+                            else if (temp3 < 1 + ULTRAPOS/9) kind = 34;
+                            else if (temp3 < 1 + ULTRAPOS/6) kind = 35;
+                            else if (temp3 < 1 + ULTRAPOS/9 * 2) kind = 36;
+                            else if (temp3 < 1 + ULTRAPOS/18 * 5) kind = 37;
+                            else if (temp3 < 1 + ULTRAPOS/3) kind = 38;
+                            else if (temp3 < 1 + ULTRAPOS/18 * 7) kind = 39;
+                            else if (temp3 < 1 + ULTRAPOS/9 * 4) kind = 40;
+                            else if (temp3 < 1 + ULTRAPOS/2) kind = 41;
+                            else if (temp3 < 1 + ULTRAPOS/9 * 5) kind = 42;
+                            else if (temp3 < 1 + ULTRAPOS/18 * 11) kind = 43;
+                            else if (temp3 < 1 + ULTRAPOS/3 * 2) kind = 44;
+                            else if (temp3 < 1 + ULTRAPOS/18 * 13) kind = 45;
+                            else if (temp3 < 1 + ULTRAPOS/9 * 7) kind = 46;
+                            else if (temp3 < 1 + ULTRAPOS/6 * 5) kind = 47;
+                            else if (temp3 < 1 + ULTRAPOS/9 * 8) kind = 48;
+                            else if (temp3 < 1 + ULTRAPOS/18 * 17) kind = 49;
                             else kind = 50;
                         }
                     }
                     else {
                         star = 3;
                         type = 2;
-                        if (temp3 <= ULTRAPOS/13) kind = 51;
-                        else if (temp3 <= ULTRAPOS/13 * 2) kind = 52;
-                        else if (temp3 <= ULTRAPOS/13 * 3) kind = 53;
-                        else if (temp3 <= ULTRAPOS/13 * 4) kind = 54;
-                        else if (temp3 <= ULTRAPOS/13 * 5) kind = 55;
-                        else if (temp3 <= ULTRAPOS/13 * 6) kind = 56;
-                        else if (temp3 <= ULTRAPOS/13 * 7) kind = 57;
-                        else if (temp3 <= ULTRAPOS/13 * 8) kind = 58;
-                        else if (temp3 <= ULTRAPOS/13 * 9) kind = 59;
-                        else if (temp3 <= ULTRAPOS/13 * 10) kind = 60;
-                        else if (temp3 <= ULTRAPOS/13 * 11) kind = 61;
-                        else if (temp3 <= ULTRAPOS/13 * 12) kind = 62;
+                        if (temp3 < 1 + ULTRAPOS/13) kind = 51;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 2) kind = 52;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 3) kind = 53;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 4) kind = 54;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 5) kind = 55;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 6) kind = 56;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 7) kind = 57;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 8) kind = 58;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 9) kind = 59;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 10) kind = 60;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 11) kind = 61;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 12) kind = 62;
                         else kind = 63;
                     }
                 }
-                else if (five_star_assurance_number <= 73 && four_star_assurance_number >= 10) {
-                    if (temp1 <= ULTRAPOS/1000 * 6) {
+                else if (five_star_assurance_number < 1 + 73 && four_star_assurance_number >= 10) {
+                    if (temp1 < 1 + ULTRAPOS/1000 * 6) {
                         star = 5;
                         five_count = five_count + 1;
                         ave_fives = ave_fives + five_star_assurance_number;
                         if (five_star_assurance_number > max_fives) { max_fives = five_star_assurance_number; max_fivesth = five_count; max_fivecount = count; }
                         if (five_star_assurance_number < min_fives) { min_fives = five_star_assurance_number; min_fivesth = five_count; min_fivecount = count; }
                         five_star_assurance_number = 0;
-                        if (temp2 <= ULTRAPOS/2) {
+                        if (temp2 < 1 + ULTRAPOS/2) {
                             type = 1;
-                            if (temp3 <= ULTRAPOS/5) kind = 1;
-                            else if (temp3 <= ULTRAPOS/5 * 2) kind = 2;
-                            else if (temp3 <= ULTRAPOS/5 * 3) kind = 3;
-                            else if (temp3 <= ULTRAPOS/5 * 4) kind = 4;
+                            if (temp3 < 1 + ULTRAPOS/5) kind = 1;
+                            else if (temp3 < 1 + ULTRAPOS/5 * 2) kind = 2;
+                            else if (temp3 < 1 + ULTRAPOS/5 * 3) kind = 3;
+                            else if (temp3 < 1 + ULTRAPOS/5 * 4) kind = 4;
                             else kind = 5;
                         }
                         else {
                             type = 2;
-                            if (temp3 <= ULTRAPOS/10) kind = 6;
-                            else if (temp3 <= ULTRAPOS/5) kind = 7;
-                            else if (temp3 <= ULTRAPOS/10 * 3) kind = 8;
-                            else if (temp3 <= ULTRAPOS/5 * 2) kind = 9;
-                            else if (temp3 <= ULTRAPOS/2) kind = 10;
-                            else if (temp3 <= ULTRAPOS/5 * 3) kind = 11;
-                            else if (temp3 <= ULTRAPOS/10 * 7) kind = 12;
-                            else if (temp3 <= ULTRAPOS/5 * 4) kind = 13;
-                            else if (temp3 <= ULTRAPOS/10 * 9) kind = 14;
+                            if (temp3 < 1 + ULTRAPOS/10) kind = 6;
+                            else if (temp3 < 1 + ULTRAPOS/5) kind = 7;
+                            else if (temp3 < 1 + ULTRAPOS/10 * 3) kind = 8;
+                            else if (temp3 < 1 + ULTRAPOS/5 * 2) kind = 9;
+                            else if (temp3 < 1 + ULTRAPOS/2) kind = 10;
+                            else if (temp3 < 1 + ULTRAPOS/5 * 3) kind = 11;
+                            else if (temp3 < 1 + ULTRAPOS/10 * 7) kind = 12;
+                            else if (temp3 < 1 + ULTRAPOS/5 * 4) kind = 13;
+                            else if (temp3 < 1 + ULTRAPOS/10 * 9) kind = 14;
                             else kind = 15;
                         }
                     }
@@ -3393,273 +3393,273 @@ int main() {
                         star = 4;
                         four_count = four_count + 1;
                         four_star_assurance_number = 0;
-                        if (temp2 <= ULTRAPOS/2 * (int)(10 * (unmet - threshold))) {
+                        if (temp2 < 1 + ULTRAPOS/2 * (int)(10 * (unmet - threshold))) {
                             type = 1;
                             unmet_count = 0;
                             unmet = (double)17.1;
-                            if (temp3 <= ULTRAPOS/17) kind = 16;
-                            else if (temp3 <= ULTRAPOS/17 * 2) kind = 17;
-                            else if (temp3 <= ULTRAPOS/17 * 3) kind = 18;
-                            else if (temp3 <= ULTRAPOS/17 * 4) kind = 19;
-                            else if (temp3 <= ULTRAPOS/17 * 5) kind = 20;
-                            else if (temp3 <= ULTRAPOS/17 * 6) kind = 21;
-                            else if (temp3 <= ULTRAPOS/17 * 7) kind = 22;
-                            else if (temp3 <= ULTRAPOS/17 * 8) kind = 23;
-                            else if (temp3 <= ULTRAPOS/17 * 9) kind = 24;
-                            else if (temp3 <= ULTRAPOS/17 * 10) kind = 25;
-                            else if (temp3 <= ULTRAPOS/17 * 11) kind = 26;
-                            else if (temp3 <= ULTRAPOS/17 * 12) kind = 27;
-                            else if (temp3 <= ULTRAPOS/17 * 13) kind = 28;
-                            else if (temp3 <= ULTRAPOS/17 * 14) kind = 29;
-                            else if (temp3 <= ULTRAPOS/17 * 15) kind = 30;
-                            else if (temp3 <= ULTRAPOS/17 * 16) kind = 31;
+                            if (temp3 < 1 + ULTRAPOS/17) kind = 16;
+                            else if (temp3 < 1 + ULTRAPOS/17 * 2) kind = 17;
+                            else if (temp3 < 1 + ULTRAPOS/17 * 3) kind = 18;
+                            else if (temp3 < 1 + ULTRAPOS/17 * 4) kind = 19;
+                            else if (temp3 < 1 + ULTRAPOS/17 * 5) kind = 20;
+                            else if (temp3 < 1 + ULTRAPOS/17 * 6) kind = 21;
+                            else if (temp3 < 1 + ULTRAPOS/17 * 7) kind = 22;
+                            else if (temp3 < 1 + ULTRAPOS/17 * 8) kind = 23;
+                            else if (temp3 < 1 + ULTRAPOS/17 * 9) kind = 24;
+                            else if (temp3 < 1 + ULTRAPOS/17 * 10) kind = 25;
+                            else if (temp3 < 1 + ULTRAPOS/17 * 11) kind = 26;
+                            else if (temp3 < 1 + ULTRAPOS/17 * 12) kind = 27;
+                            else if (temp3 < 1 + ULTRAPOS/17 * 13) kind = 28;
+                            else if (temp3 < 1 + ULTRAPOS/17 * 14) kind = 29;
+                            else if (temp3 < 1 + ULTRAPOS/17 * 15) kind = 30;
+                            else if (temp3 < 1 + ULTRAPOS/17 * 16) kind = 31;
                             else kind = 32;
                         }
                         else {
                             type = 2;
                             unmet_count = unmet_count + 1;
-                            if (temp3 <= ULTRAPOS/9 * 5) kind = 33;
-                            else if (temp3 <= ULTRAPOS/9) kind = 34;
-                            else if (temp3 <= ULTRAPOS/6) kind = 35;
-                            else if (temp3 <= ULTRAPOS/9 * 2) kind = 36;
-                            else if (temp3 <= ULTRAPOS/18 * 5) kind = 37;
-                            else if (temp3 <= ULTRAPOS/3) kind = 38;
-                            else if (temp3 <= ULTRAPOS/18 * 7) kind = 39;
-                            else if (temp3 <= ULTRAPOS/9 * 4) kind = 40;
-                            else if (temp3 <= ULTRAPOS/2) kind = 41;
-                            else if (temp3 <= ULTRAPOS/9 * 5) kind = 42;
-                            else if (temp3 <= ULTRAPOS/18 * 11) kind = 43;
-                            else if (temp3 <= ULTRAPOS/3 * 2) kind = 44;
-                            else if (temp3 <= ULTRAPOS/18 * 13) kind = 45;
-                            else if (temp3 <= ULTRAPOS/9 * 7) kind = 46;
-                            else if (temp3 <= ULTRAPOS/6 * 5) kind = 47;
-                            else if (temp3 <= ULTRAPOS/9 * 8) kind = 48;
-                            else if (temp3 <= ULTRAPOS/18 * 17) kind = 49;
+                            if (temp3 < 1 + ULTRAPOS/9 * 5) kind = 33;
+                            else if (temp3 < 1 + ULTRAPOS/9) kind = 34;
+                            else if (temp3 < 1 + ULTRAPOS/6) kind = 35;
+                            else if (temp3 < 1 + ULTRAPOS/9 * 2) kind = 36;
+                            else if (temp3 < 1 + ULTRAPOS/18 * 5) kind = 37;
+                            else if (temp3 < 1 + ULTRAPOS/3) kind = 38;
+                            else if (temp3 < 1 + ULTRAPOS/18 * 7) kind = 39;
+                            else if (temp3 < 1 + ULTRAPOS/9 * 4) kind = 40;
+                            else if (temp3 < 1 + ULTRAPOS/2) kind = 41;
+                            else if (temp3 < 1 + ULTRAPOS/9 * 5) kind = 42;
+                            else if (temp3 < 1 + ULTRAPOS/18 * 11) kind = 43;
+                            else if (temp3 < 1 + ULTRAPOS/3 * 2) kind = 44;
+                            else if (temp3 < 1 + ULTRAPOS/18 * 13) kind = 45;
+                            else if (temp3 < 1 + ULTRAPOS/9 * 7) kind = 46;
+                            else if (temp3 < 1 + ULTRAPOS/6 * 5) kind = 47;
+                            else if (temp3 < 1 + ULTRAPOS/9 * 8) kind = 48;
+                            else if (temp3 < 1 + ULTRAPOS/18 * 17) kind = 49;
                             else kind = 50;
                         }
                     }
                 }
-                else if (five_star_assurance_number <= 89 && five_star_assurance_number >= 74 && four_star_assurance_number <= 8) {
-                    if (temp1 <= ULTRAPOS/1000 * 6 + (five_star_assurance_number - 73) * ULTRAPOS/1000 * 60) {
+                else if (five_star_assurance_number < 1 + 89 && five_star_assurance_number >= 74 && four_star_assurance_number < 1 + 8) {
+                    if (temp1 < 1 + ULTRAPOS/1000 * 6 + (five_star_assurance_number - 73) * ULTRAPOS/1000 * 60) {
                         star = 5;
                         five_count = five_count + 1;
                         ave_fives = ave_fives + five_star_assurance_number;
                         if (five_star_assurance_number > max_fives) { max_fives = five_star_assurance_number; max_fivesth = five_count; max_fivecount = count; }
                         if (five_star_assurance_number < min_fives) { min_fives = five_star_assurance_number; min_fivesth = five_count; min_fivecount = count; }
                         five_star_assurance_number = 0;
-                        if (temp2 <= ULTRAPOS/2) {
+                        if (temp2 < 1 + ULTRAPOS/2) {
                             type = 1;
-                            if (temp3 <= ULTRAPOS/5) kind = 1;
-                            else if (temp3 <= ULTRAPOS/5 * 2) kind = 2;
-                            else if (temp3 <= ULTRAPOS/5 * 3) kind = 3;
-                            else if (temp3 <= ULTRAPOS/5 * 4) kind = 4;
+                            if (temp3 < 1 + ULTRAPOS/5) kind = 1;
+                            else if (temp3 < 1 + ULTRAPOS/5 * 2) kind = 2;
+                            else if (temp3 < 1 + ULTRAPOS/5 * 3) kind = 3;
+                            else if (temp3 < 1 + ULTRAPOS/5 * 4) kind = 4;
                             else kind = 5;
                         }
                         else {
                             type = 2;
-                            if (temp3 <= ULTRAPOS/10) kind = 6;
-                            else if (temp3 <= ULTRAPOS/5) kind = 7;
-                            else if (temp3 <= ULTRAPOS/10 * 3) kind = 8;
-                            else if (temp3 <= ULTRAPOS/5 * 2) kind = 9;
-                            else if (temp3 <= ULTRAPOS/2) kind = 10;
-                            else if (temp3 <= ULTRAPOS/5 * 3) kind = 11;
-                            else if (temp3 <= ULTRAPOS/10 * 7) kind = 12;
-                            else if (temp3 <= ULTRAPOS/5 * 4) kind = 13;
-                            else if (temp3 <= ULTRAPOS/10 * 9) kind = 14;
+                            if (temp3 < 1 + ULTRAPOS/10) kind = 6;
+                            else if (temp3 < 1 + ULTRAPOS/5) kind = 7;
+                            else if (temp3 < 1 + ULTRAPOS/10 * 3) kind = 8;
+                            else if (temp3 < 1 + ULTRAPOS/5 * 2) kind = 9;
+                            else if (temp3 < 1 + ULTRAPOS/2) kind = 10;
+                            else if (temp3 < 1 + ULTRAPOS/5 * 3) kind = 11;
+                            else if (temp3 < 1 + ULTRAPOS/10 * 7) kind = 12;
+                            else if (temp3 < 1 + ULTRAPOS/5 * 4) kind = 13;
+                            else if (temp3 < 1 + ULTRAPOS/10 * 9) kind = 14;
                             else kind = 15;
                         }
                     }
-                    else if (temp1 <= ULTRAPOS/1000 * 57 + (five_star_assurance_number - 73) * ULTRAPOS/1000 * 60){
+                    else if (temp1 < 1 + ULTRAPOS/1000 * 57 + (five_star_assurance_number - 73) * ULTRAPOS/1000 * 60){
                         star = 4;
                         four_count = four_count + 1;
                         four_star_assurance_number = 0;
-                        if (temp2 <= ULTRAPOS/2 * (int)(10 * (unmet - threshold))) {
+                        if (temp2 < 1 + ULTRAPOS/2 * (int)(10 * (unmet - threshold))) {
                             type = 1;
                             unmet_count = 0;
                             unmet = (double)17.1;
-                            if (temp3 <= ULTRAPOS/17) kind = 16;
-                            else if (temp3 <= ULTRAPOS/17 * 2) kind = 17;
-                            else if (temp3 <= ULTRAPOS/17 * 3) kind = 18;
-                            else if (temp3 <= ULTRAPOS/17 * 4) kind = 19;
-                            else if (temp3 <= ULTRAPOS/17 * 5) kind = 20;
-                            else if (temp3 <= ULTRAPOS/17 * 6) kind = 21;
-                            else if (temp3 <= ULTRAPOS/17 * 7) kind = 22;
-                            else if (temp3 <= ULTRAPOS/17 * 8) kind = 23;
-                            else if (temp3 <= ULTRAPOS/17 * 9) kind = 24;
-                            else if (temp3 <= ULTRAPOS/17 * 10) kind = 25;
-                            else if (temp3 <= ULTRAPOS/17 * 11) kind = 26;
-                            else if (temp3 <= ULTRAPOS/17 * 12) kind = 27;
-                            else if (temp3 <= ULTRAPOS/17 * 13) kind = 28;
-                            else if (temp3 <= ULTRAPOS/17 * 14) kind = 29;
-                            else if (temp3 <= ULTRAPOS/17 * 15) kind = 30;
-                            else if (temp3 <= ULTRAPOS/17 * 16) kind = 31;
+                            if (temp3 < 1 + ULTRAPOS/17) kind = 16;
+                            else if (temp3 < 1 + ULTRAPOS/17 * 2) kind = 17;
+                            else if (temp3 < 1 + ULTRAPOS/17 * 3) kind = 18;
+                            else if (temp3 < 1 + ULTRAPOS/17 * 4) kind = 19;
+                            else if (temp3 < 1 + ULTRAPOS/17 * 5) kind = 20;
+                            else if (temp3 < 1 + ULTRAPOS/17 * 6) kind = 21;
+                            else if (temp3 < 1 + ULTRAPOS/17 * 7) kind = 22;
+                            else if (temp3 < 1 + ULTRAPOS/17 * 8) kind = 23;
+                            else if (temp3 < 1 + ULTRAPOS/17 * 9) kind = 24;
+                            else if (temp3 < 1 + ULTRAPOS/17 * 10) kind = 25;
+                            else if (temp3 < 1 + ULTRAPOS/17 * 11) kind = 26;
+                            else if (temp3 < 1 + ULTRAPOS/17 * 12) kind = 27;
+                            else if (temp3 < 1 + ULTRAPOS/17 * 13) kind = 28;
+                            else if (temp3 < 1 + ULTRAPOS/17 * 14) kind = 29;
+                            else if (temp3 < 1 + ULTRAPOS/17 * 15) kind = 30;
+                            else if (temp3 < 1 + ULTRAPOS/17 * 16) kind = 31;
                             else kind = 32;
                         }
                         else {
                             type = 2;
                             unmet_count = unmet_count + 1;
-                            if (temp3 <= ULTRAPOS/9 * 5) kind = 33;
-                            else if (temp3 <= ULTRAPOS/9) kind = 34;
-                            else if (temp3 <= ULTRAPOS/6) kind = 35;
-                            else if (temp3 <= ULTRAPOS/9 * 2) kind = 36;
-                            else if (temp3 <= ULTRAPOS/18 * 5) kind = 37;
-                            else if (temp3 <= ULTRAPOS/3) kind = 38;
-                            else if (temp3 <= ULTRAPOS/18 * 7) kind = 39;
-                            else if (temp3 <= ULTRAPOS/9 * 4) kind = 40;
-                            else if (temp3 <= ULTRAPOS/2) kind = 41;
-                            else if (temp3 <= ULTRAPOS/9 * 5) kind = 42;
-                            else if (temp3 <= ULTRAPOS/18 * 11) kind = 43;
-                            else if (temp3 <= ULTRAPOS/3 * 2) kind = 44;
-                            else if (temp3 <= ULTRAPOS/18 * 13) kind = 45;
-                            else if (temp3 <= ULTRAPOS/9 * 7) kind = 46;
-                            else if (temp3 <= ULTRAPOS/6 * 5) kind = 47;
-                            else if (temp3 <= ULTRAPOS/9 * 8) kind = 48;
-                            else if (temp3 <= ULTRAPOS/18 * 17) kind = 49;
-                            else kind = 50;
-                        }
-                    }
-                    else {
-                        star = 3;
-                        type = 2;
-                        if (temp3 <= ULTRAPOS/13) kind = 51;
-                        else if (temp3 <= ULTRAPOS/13 * 2) kind = 52;
-                        else if (temp3 <= ULTRAPOS/13 * 3) kind = 53;
-                        else if (temp3 <= ULTRAPOS/13 * 4) kind = 54;
-                        else if (temp3 <= ULTRAPOS/13 * 5) kind = 55;
-                        else if (temp3 <= ULTRAPOS/13 * 6) kind = 56;
-                        else if (temp3 <= ULTRAPOS/13 * 7) kind = 57;
-                        else if (temp3 <= ULTRAPOS/13 * 8) kind = 58;
-                        else if (temp3 <= ULTRAPOS/13 * 9) kind = 59;
-                        else if (temp3 <= ULTRAPOS/13 * 10) kind = 60;
-                        else if (temp3 <= ULTRAPOS/13 * 11) kind = 61;
-                        else if (temp3 <= ULTRAPOS/13 * 12) kind = 62;
-                        else kind = 63;
-                    }
-                }
-                else if (five_star_assurance_number <= 89 && five_star_assurance_number >= 74 && four_star_assurance_number == 9) {
-                    if (temp1 <= ULTRAPOS/1000 * 6 + (five_star_assurance_number - 73) * ULTRAPOS/1000 * 60) {
-                        star = 5;
-                        five_count = five_count + 1;
-                        ave_fives = ave_fives + five_star_assurance_number;
-                        if (five_star_assurance_number > max_fives) { max_fives = five_star_assurance_number; max_fivesth = five_count; max_fivecount = count; }
-                        if (five_star_assurance_number < min_fives) { min_fives = five_star_assurance_number; min_fivesth = five_count; min_fivecount = count; }
-                        five_star_assurance_number = 0;
-                        if (temp2 <= ULTRAPOS/2) {
-                            type = 1;
-                            if (temp3 <= ULTRAPOS/5) kind = 1;
-                            else if (temp3 <= ULTRAPOS/5 * 2) kind = 2;
-                            else if (temp3 <= ULTRAPOS/5 * 3) kind = 3;
-                            else if (temp3 <= ULTRAPOS/5 * 4) kind = 4;
-                            else kind = 5;
-                        }
-                        else {
-                            type = 2;
-                            if (temp3 <= ULTRAPOS/10) kind = 6;
-                            else if (temp3 <= ULTRAPOS/5) kind = 7;
-                            else if (temp3 <= ULTRAPOS/10 * 3) kind = 8;
-                            else if (temp3 <= ULTRAPOS/5 * 2) kind = 9;
-                            else if (temp3 <= ULTRAPOS/2) kind = 10;
-                            else if (temp3 <= ULTRAPOS/5 * 3) kind = 11;
-                            else if (temp3 <= ULTRAPOS/10 * 7) kind = 12;
-                            else if (temp3 <= ULTRAPOS/5 * 4) kind = 13;
-                            else if (temp3 <= ULTRAPOS/10 * 9) kind = 14;
-                            else kind = 15;
-                        }
-                    }
-                    else if (temp1 <= ULTRAPOS/1000 * 567 + (five_star_assurance_number - 73) * ULTRAPOS/1000 * 60) {
-                        star = 4;
-                        four_count = four_count + 1;
-                        four_star_assurance_number = 0;
-                        if (temp2 <= ULTRAPOS/2 * (int)(10 * (unmet - threshold))) {
-                            type = 1;
-                            unmet_count = 0;
-                            unmet = (double)17.1;
-                            if (temp3 <= ULTRAPOS/17) kind = 16;
-                            else if (temp3 <= ULTRAPOS/17 * 2) kind = 17;
-                            else if (temp3 <= ULTRAPOS/17 * 3) kind = 18;
-                            else if (temp3 <= ULTRAPOS/17 * 4) kind = 19;
-                            else if (temp3 <= ULTRAPOS/17 * 5) kind = 20;
-                            else if (temp3 <= ULTRAPOS/17 * 6) kind = 21;
-                            else if (temp3 <= ULTRAPOS/17 * 7) kind = 22;
-                            else if (temp3 <= ULTRAPOS/17 * 8) kind = 23;
-                            else if (temp3 <= ULTRAPOS/17 * 9) kind = 24;
-                            else if (temp3 <= ULTRAPOS/17 * 10) kind = 25;
-                            else if (temp3 <= ULTRAPOS/17 * 11) kind = 26;
-                            else if (temp3 <= ULTRAPOS/17 * 12) kind = 27;
-                            else if (temp3 <= ULTRAPOS/17 * 13) kind = 28;
-                            else if (temp3 <= ULTRAPOS/17 * 14) kind = 29;
-                            else if (temp3 <= ULTRAPOS/17 * 15) kind = 30;
-                            else if (temp3 <= ULTRAPOS/17 * 16) kind = 31;
-                            else kind = 32;
-                        }
-                        else {
-                            type = 2;
-                            unmet_count = unmet_count + 1;
-                            if (temp3 <= ULTRAPOS/9 * 5) kind = 33;
-                            else if (temp3 <= ULTRAPOS/9) kind = 34;
-                            else if (temp3 <= ULTRAPOS/6) kind = 35;
-                            else if (temp3 <= ULTRAPOS/9 * 2) kind = 36;
-                            else if (temp3 <= ULTRAPOS/18 * 5) kind = 37;
-                            else if (temp3 <= ULTRAPOS/3) kind = 38;
-                            else if (temp3 <= ULTRAPOS/18 * 7) kind = 39;
-                            else if (temp3 <= ULTRAPOS/9 * 4) kind = 40;
-                            else if (temp3 <= ULTRAPOS/2) kind = 41;
-                            else if (temp3 <= ULTRAPOS/9 * 5) kind = 42;
-                            else if (temp3 <= ULTRAPOS/18 * 11) kind = 43;
-                            else if (temp3 <= ULTRAPOS/3 * 2) kind = 44;
-                            else if (temp3 <= ULTRAPOS/18 * 13) kind = 45;
-                            else if (temp3 <= ULTRAPOS/9 * 7) kind = 46;
-                            else if (temp3 <= ULTRAPOS/6 * 5) kind = 47;
-                            else if (temp3 <= ULTRAPOS/9 * 8) kind = 48;
-                            else if (temp3 <= ULTRAPOS/18 * 17) kind = 49;
+                            if (temp3 < 1 + ULTRAPOS/9 * 5) kind = 33;
+                            else if (temp3 < 1 + ULTRAPOS/9) kind = 34;
+                            else if (temp3 < 1 + ULTRAPOS/6) kind = 35;
+                            else if (temp3 < 1 + ULTRAPOS/9 * 2) kind = 36;
+                            else if (temp3 < 1 + ULTRAPOS/18 * 5) kind = 37;
+                            else if (temp3 < 1 + ULTRAPOS/3) kind = 38;
+                            else if (temp3 < 1 + ULTRAPOS/18 * 7) kind = 39;
+                            else if (temp3 < 1 + ULTRAPOS/9 * 4) kind = 40;
+                            else if (temp3 < 1 + ULTRAPOS/2) kind = 41;
+                            else if (temp3 < 1 + ULTRAPOS/9 * 5) kind = 42;
+                            else if (temp3 < 1 + ULTRAPOS/18 * 11) kind = 43;
+                            else if (temp3 < 1 + ULTRAPOS/3 * 2) kind = 44;
+                            else if (temp3 < 1 + ULTRAPOS/18 * 13) kind = 45;
+                            else if (temp3 < 1 + ULTRAPOS/9 * 7) kind = 46;
+                            else if (temp3 < 1 + ULTRAPOS/6 * 5) kind = 47;
+                            else if (temp3 < 1 + ULTRAPOS/9 * 8) kind = 48;
+                            else if (temp3 < 1 + ULTRAPOS/18 * 17) kind = 49;
                             else kind = 50;
                         }
                     }
                     else {
                         star = 3;
                         type = 2;
-                        if (temp3 <= ULTRAPOS/13) kind = 51;
-                        else if (temp3 <= ULTRAPOS/13 * 2) kind = 52;
-                        else if (temp3 <= ULTRAPOS/13 * 3) kind = 53;
-                        else if (temp3 <= ULTRAPOS/13 * 4) kind = 54;
-                        else if (temp3 <= ULTRAPOS/13 * 5) kind = 55;
-                        else if (temp3 <= ULTRAPOS/13 * 6) kind = 56;
-                        else if (temp3 <= ULTRAPOS/13 * 7) kind = 57;
-                        else if (temp3 <= ULTRAPOS/13 * 8) kind = 58;
-                        else if (temp3 <= ULTRAPOS/13 * 9) kind = 59;
-                        else if (temp3 <= ULTRAPOS/13 * 10) kind = 60;
-                        else if (temp3 <= ULTRAPOS/13 * 11) kind = 61;
-                        else if (temp3 <= ULTRAPOS/13 * 12) kind = 62;
+                        if (temp3 < 1 + ULTRAPOS/13) kind = 51;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 2) kind = 52;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 3) kind = 53;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 4) kind = 54;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 5) kind = 55;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 6) kind = 56;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 7) kind = 57;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 8) kind = 58;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 9) kind = 59;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 10) kind = 60;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 11) kind = 61;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 12) kind = 62;
                         else kind = 63;
                     }
                 }
-                else if (five_star_assurance_number <= 89 && five_star_assurance_number >= 74 && four_star_assurance_number >= 10) {
-                    if (temp1 <= ULTRAPOS/1000 * 6 + (five_star_assurance_number - 73) * ULTRAPOS/1000 * 60) {
+                else if (five_star_assurance_number < 1 + 89 && five_star_assurance_number >= 74 && four_star_assurance_number == 9) {
+                    if (temp1 < 1 + ULTRAPOS/1000 * 6 + (five_star_assurance_number - 73) * ULTRAPOS/1000 * 60) {
                         star = 5;
                         five_count = five_count + 1;
                         ave_fives = ave_fives + five_star_assurance_number;
                         if (five_star_assurance_number > max_fives) { max_fives = five_star_assurance_number; max_fivesth = five_count; max_fivecount = count; }
                         if (five_star_assurance_number < min_fives) { min_fives = five_star_assurance_number; min_fivesth = five_count; min_fivecount = count; }
                         five_star_assurance_number = 0;
-                        if (temp2 <= ULTRAPOS/2) {
+                        if (temp2 < 1 + ULTRAPOS/2) {
                             type = 1;
-                            if (temp3 <= ULTRAPOS/5) kind = 1;
-                            else if (temp3 <= ULTRAPOS/5 * 2) kind = 2;
-                            else if (temp3 <= ULTRAPOS/5 * 3) kind = 3;
-                            else if (temp3 <= ULTRAPOS/5 * 4) kind = 4;
+                            if (temp3 < 1 + ULTRAPOS/5) kind = 1;
+                            else if (temp3 < 1 + ULTRAPOS/5 * 2) kind = 2;
+                            else if (temp3 < 1 + ULTRAPOS/5 * 3) kind = 3;
+                            else if (temp3 < 1 + ULTRAPOS/5 * 4) kind = 4;
                             else kind = 5;
                         }
                         else {
                             type = 2;
-                            if (temp3 <= ULTRAPOS/10) kind = 6;
-                            else if (temp3 <= ULTRAPOS/5) kind = 7;
-                            else if (temp3 <= ULTRAPOS/10 * 3) kind = 8;
-                            else if (temp3 <= ULTRAPOS/5 * 2) kind = 9;
-                            else if (temp3 <= ULTRAPOS/2) kind = 10;
-                            else if (temp3 <= ULTRAPOS/5 * 3) kind = 11;
-                            else if (temp3 <= ULTRAPOS/10 * 7) kind = 12;
-                            else if (temp3 <= ULTRAPOS/5 * 4) kind = 13;
-                            else if (temp3 <= ULTRAPOS/10 * 9) kind = 14;
+                            if (temp3 < 1 + ULTRAPOS/10) kind = 6;
+                            else if (temp3 < 1 + ULTRAPOS/5) kind = 7;
+                            else if (temp3 < 1 + ULTRAPOS/10 * 3) kind = 8;
+                            else if (temp3 < 1 + ULTRAPOS/5 * 2) kind = 9;
+                            else if (temp3 < 1 + ULTRAPOS/2) kind = 10;
+                            else if (temp3 < 1 + ULTRAPOS/5 * 3) kind = 11;
+                            else if (temp3 < 1 + ULTRAPOS/10 * 7) kind = 12;
+                            else if (temp3 < 1 + ULTRAPOS/5 * 4) kind = 13;
+                            else if (temp3 < 1 + ULTRAPOS/10 * 9) kind = 14;
+                            else kind = 15;
+                        }
+                    }
+                    else if (temp1 < 1 + ULTRAPOS/1000 * 567 + (five_star_assurance_number - 73) * ULTRAPOS/1000 * 60) {
+                        star = 4;
+                        four_count = four_count + 1;
+                        four_star_assurance_number = 0;
+                        if (temp2 < 1 + ULTRAPOS/2 * (int)(10 * (unmet - threshold))) {
+                            type = 1;
+                            unmet_count = 0;
+                            unmet = (double)17.1;
+                            if (temp3 < 1 + ULTRAPOS/17) kind = 16;
+                            else if (temp3 < 1 + ULTRAPOS/17 * 2) kind = 17;
+                            else if (temp3 < 1 + ULTRAPOS/17 * 3) kind = 18;
+                            else if (temp3 < 1 + ULTRAPOS/17 * 4) kind = 19;
+                            else if (temp3 < 1 + ULTRAPOS/17 * 5) kind = 20;
+                            else if (temp3 < 1 + ULTRAPOS/17 * 6) kind = 21;
+                            else if (temp3 < 1 + ULTRAPOS/17 * 7) kind = 22;
+                            else if (temp3 < 1 + ULTRAPOS/17 * 8) kind = 23;
+                            else if (temp3 < 1 + ULTRAPOS/17 * 9) kind = 24;
+                            else if (temp3 < 1 + ULTRAPOS/17 * 10) kind = 25;
+                            else if (temp3 < 1 + ULTRAPOS/17 * 11) kind = 26;
+                            else if (temp3 < 1 + ULTRAPOS/17 * 12) kind = 27;
+                            else if (temp3 < 1 + ULTRAPOS/17 * 13) kind = 28;
+                            else if (temp3 < 1 + ULTRAPOS/17 * 14) kind = 29;
+                            else if (temp3 < 1 + ULTRAPOS/17 * 15) kind = 30;
+                            else if (temp3 < 1 + ULTRAPOS/17 * 16) kind = 31;
+                            else kind = 32;
+                        }
+                        else {
+                            type = 2;
+                            unmet_count = unmet_count + 1;
+                            if (temp3 < 1 + ULTRAPOS/9 * 5) kind = 33;
+                            else if (temp3 < 1 + ULTRAPOS/9) kind = 34;
+                            else if (temp3 < 1 + ULTRAPOS/6) kind = 35;
+                            else if (temp3 < 1 + ULTRAPOS/9 * 2) kind = 36;
+                            else if (temp3 < 1 + ULTRAPOS/18 * 5) kind = 37;
+                            else if (temp3 < 1 + ULTRAPOS/3) kind = 38;
+                            else if (temp3 < 1 + ULTRAPOS/18 * 7) kind = 39;
+                            else if (temp3 < 1 + ULTRAPOS/9 * 4) kind = 40;
+                            else if (temp3 < 1 + ULTRAPOS/2) kind = 41;
+                            else if (temp3 < 1 + ULTRAPOS/9 * 5) kind = 42;
+                            else if (temp3 < 1 + ULTRAPOS/18 * 11) kind = 43;
+                            else if (temp3 < 1 + ULTRAPOS/3 * 2) kind = 44;
+                            else if (temp3 < 1 + ULTRAPOS/18 * 13) kind = 45;
+                            else if (temp3 < 1 + ULTRAPOS/9 * 7) kind = 46;
+                            else if (temp3 < 1 + ULTRAPOS/6 * 5) kind = 47;
+                            else if (temp3 < 1 + ULTRAPOS/9 * 8) kind = 48;
+                            else if (temp3 < 1 + ULTRAPOS/18 * 17) kind = 49;
+                            else kind = 50;
+                        }
+                    }
+                    else {
+                        star = 3;
+                        type = 2;
+                        if (temp3 < 1 + ULTRAPOS/13) kind = 51;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 2) kind = 52;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 3) kind = 53;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 4) kind = 54;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 5) kind = 55;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 6) kind = 56;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 7) kind = 57;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 8) kind = 58;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 9) kind = 59;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 10) kind = 60;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 11) kind = 61;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 12) kind = 62;
+                        else kind = 63;
+                    }
+                }
+                else if (five_star_assurance_number < 1 + 89 && five_star_assurance_number >= 74 && four_star_assurance_number >= 10) {
+                    if (temp1 < 1 + ULTRAPOS/1000 * 6 + (five_star_assurance_number - 73) * ULTRAPOS/1000 * 60) {
+                        star = 5;
+                        five_count = five_count + 1;
+                        ave_fives = ave_fives + five_star_assurance_number;
+                        if (five_star_assurance_number > max_fives) { max_fives = five_star_assurance_number; max_fivesth = five_count; max_fivecount = count; }
+                        if (five_star_assurance_number < min_fives) { min_fives = five_star_assurance_number; min_fivesth = five_count; min_fivecount = count; }
+                        five_star_assurance_number = 0;
+                        if (temp2 < 1 + ULTRAPOS/2) {
+                            type = 1;
+                            if (temp3 < 1 + ULTRAPOS/5) kind = 1;
+                            else if (temp3 < 1 + ULTRAPOS/5 * 2) kind = 2;
+                            else if (temp3 < 1 + ULTRAPOS/5 * 3) kind = 3;
+                            else if (temp3 < 1 + ULTRAPOS/5 * 4) kind = 4;
+                            else kind = 5;
+                        }
+                        else {
+                            type = 2;
+                            if (temp3 < 1 + ULTRAPOS/10) kind = 6;
+                            else if (temp3 < 1 + ULTRAPOS/5) kind = 7;
+                            else if (temp3 < 1 + ULTRAPOS/10 * 3) kind = 8;
+                            else if (temp3 < 1 + ULTRAPOS/5 * 2) kind = 9;
+                            else if (temp3 < 1 + ULTRAPOS/2) kind = 10;
+                            else if (temp3 < 1 + ULTRAPOS/5 * 3) kind = 11;
+                            else if (temp3 < 1 + ULTRAPOS/10 * 7) kind = 12;
+                            else if (temp3 < 1 + ULTRAPOS/5 * 4) kind = 13;
+                            else if (temp3 < 1 + ULTRAPOS/10 * 9) kind = 14;
                             else kind = 15;
                         }
                     }
@@ -3667,48 +3667,48 @@ int main() {
                         star = 4;
                         four_count = four_count + 1;
                         four_star_assurance_number = 0;
-                        if (temp2 <= ULTRAPOS/2 * (int)(10 * (unmet - threshold))) {
+                        if (temp2 < 1 + ULTRAPOS/2 * (int)(10 * (unmet - threshold))) {
                             type = 1;
                             unmet_count = 0;
                             unmet = (double)17.1;
-                            if (temp3 <= ULTRAPOS/17) kind = 16;
-                            else if (temp3 <= ULTRAPOS/17 * 2) kind = 17;
-                            else if (temp3 <= ULTRAPOS/17 * 3) kind = 18;
-                            else if (temp3 <= ULTRAPOS/17 * 4) kind = 19;
-                            else if (temp3 <= ULTRAPOS/17 * 5) kind = 20;
-                            else if (temp3 <= ULTRAPOS/17 * 6) kind = 21;
-                            else if (temp3 <= ULTRAPOS/17 * 7) kind = 22;
-                            else if (temp3 <= ULTRAPOS/17 * 8) kind = 23;
-                            else if (temp3 <= ULTRAPOS/17 * 9) kind = 24;
-                            else if (temp3 <= ULTRAPOS/17 * 10) kind = 25;
-                            else if (temp3 <= ULTRAPOS/17 * 11) kind = 26;
-                            else if (temp3 <= ULTRAPOS/17 * 12) kind = 27;
-                            else if (temp3 <= ULTRAPOS/17 * 13) kind = 28;
-                            else if (temp3 <= ULTRAPOS/17 * 14) kind = 29;
-                            else if (temp3 <= ULTRAPOS/17 * 15) kind = 30;
-                            else if (temp3 <= ULTRAPOS/17 * 16) kind = 31;
+                            if (temp3 < 1 + ULTRAPOS/17) kind = 16;
+                            else if (temp3 < 1 + ULTRAPOS/17 * 2) kind = 17;
+                            else if (temp3 < 1 + ULTRAPOS/17 * 3) kind = 18;
+                            else if (temp3 < 1 + ULTRAPOS/17 * 4) kind = 19;
+                            else if (temp3 < 1 + ULTRAPOS/17 * 5) kind = 20;
+                            else if (temp3 < 1 + ULTRAPOS/17 * 6) kind = 21;
+                            else if (temp3 < 1 + ULTRAPOS/17 * 7) kind = 22;
+                            else if (temp3 < 1 + ULTRAPOS/17 * 8) kind = 23;
+                            else if (temp3 < 1 + ULTRAPOS/17 * 9) kind = 24;
+                            else if (temp3 < 1 + ULTRAPOS/17 * 10) kind = 25;
+                            else if (temp3 < 1 + ULTRAPOS/17 * 11) kind = 26;
+                            else if (temp3 < 1 + ULTRAPOS/17 * 12) kind = 27;
+                            else if (temp3 < 1 + ULTRAPOS/17 * 13) kind = 28;
+                            else if (temp3 < 1 + ULTRAPOS/17 * 14) kind = 29;
+                            else if (temp3 < 1 + ULTRAPOS/17 * 15) kind = 30;
+                            else if (temp3 < 1 + ULTRAPOS/17 * 16) kind = 31;
                             else kind = 32;
                         }
                         else {
                             type = 2;
                             unmet_count = unmet_count + 1;
-                            if (temp3 <= ULTRAPOS/9 * 5) kind = 33;
-                            else if (temp3 <= ULTRAPOS/9) kind = 34;
-                            else if (temp3 <= ULTRAPOS/6) kind = 35;
-                            else if (temp3 <= ULTRAPOS/9 * 2) kind = 36;
-                            else if (temp3 <= ULTRAPOS/18 * 5) kind = 37;
-                            else if (temp3 <= ULTRAPOS/3) kind = 38;
-                            else if (temp3 <= ULTRAPOS/18 * 7) kind = 39;
-                            else if (temp3 <= ULTRAPOS/9 * 4) kind = 40;
-                            else if (temp3 <= ULTRAPOS/2) kind = 41;
-                            else if (temp3 <= ULTRAPOS/9 * 5) kind = 42;
-                            else if (temp3 <= ULTRAPOS/18 * 11) kind = 43;
-                            else if (temp3 <= ULTRAPOS/3 * 2) kind = 44;
-                            else if (temp3 <= ULTRAPOS/18 * 13) kind = 45;
-                            else if (temp3 <= ULTRAPOS/9 * 7) kind = 46;
-                            else if (temp3 <= ULTRAPOS/6 * 5) kind = 47;
-                            else if (temp3 <= ULTRAPOS/9 * 8) kind = 48;
-                            else if (temp3 <= ULTRAPOS/18 * 17) kind = 49;
+                            if (temp3 < 1 + ULTRAPOS/9 * 5) kind = 33;
+                            else if (temp3 < 1 + ULTRAPOS/9) kind = 34;
+                            else if (temp3 < 1 + ULTRAPOS/6) kind = 35;
+                            else if (temp3 < 1 + ULTRAPOS/9 * 2) kind = 36;
+                            else if (temp3 < 1 + ULTRAPOS/18 * 5) kind = 37;
+                            else if (temp3 < 1 + ULTRAPOS/3) kind = 38;
+                            else if (temp3 < 1 + ULTRAPOS/18 * 7) kind = 39;
+                            else if (temp3 < 1 + ULTRAPOS/9 * 4) kind = 40;
+                            else if (temp3 < 1 + ULTRAPOS/2) kind = 41;
+                            else if (temp3 < 1 + ULTRAPOS/9 * 5) kind = 42;
+                            else if (temp3 < 1 + ULTRAPOS/18 * 11) kind = 43;
+                            else if (temp3 < 1 + ULTRAPOS/3 * 2) kind = 44;
+                            else if (temp3 < 1 + ULTRAPOS/18 * 13) kind = 45;
+                            else if (temp3 < 1 + ULTRAPOS/9 * 7) kind = 46;
+                            else if (temp3 < 1 + ULTRAPOS/6 * 5) kind = 47;
+                            else if (temp3 < 1 + ULTRAPOS/9 * 8) kind = 48;
+                            else if (temp3 < 1 + ULTRAPOS/18 * 17) kind = 49;
                             else kind = 50;
                         }
                     }
@@ -3720,25 +3720,25 @@ int main() {
                         if (five_star_assurance_number > max_fives) { max_fives = five_star_assurance_number; max_fivesth = five_count; max_fivecount = count; }
                         if (five_star_assurance_number < min_fives) { min_fives = five_star_assurance_number; min_fivesth = five_count; min_fivecount = count; }
                         five_star_assurance_number = 0;
-                        if (temp2 <= ULTRAPOS/2) {
+                        if (temp2 < 1 + ULTRAPOS/2) {
                             type = 1;
-                            if (temp3 <= ULTRAPOS/5) kind = 1;
-                            else if (temp3 <= ULTRAPOS/5 * 2) kind = 2;
-                            else if (temp3 <= ULTRAPOS/5 * 3) kind = 3;
-                            else if (temp3 <= ULTRAPOS/5 * 4) kind = 4;
+                            if (temp3 < 1 + ULTRAPOS/5) kind = 1;
+                            else if (temp3 < 1 + ULTRAPOS/5 * 2) kind = 2;
+                            else if (temp3 < 1 + ULTRAPOS/5 * 3) kind = 3;
+                            else if (temp3 < 1 + ULTRAPOS/5 * 4) kind = 4;
                             else kind = 5;
                         }
                         else {
                             type = 2;
-                            if (temp3 <= ULTRAPOS/10) kind = 6;
-                            else if (temp3 <= ULTRAPOS/5) kind = 7;
-                            else if (temp3 <= ULTRAPOS/10 * 3) kind = 8;
-                            else if (temp3 <= ULTRAPOS/5 * 2) kind = 9;
-                            else if (temp3 <= ULTRAPOS/2) kind = 10;
-                            else if (temp3 <= ULTRAPOS/5 * 3) kind = 11;
-                            else if (temp3 <= ULTRAPOS/10 * 7) kind = 12;
-                            else if (temp3 <= ULTRAPOS/5 * 4) kind = 13;
-                            else if (temp3 <= ULTRAPOS/10 * 9) kind = 14;
+                            if (temp3 < 1 + ULTRAPOS/10) kind = 6;
+                            else if (temp3 < 1 + ULTRAPOS/5) kind = 7;
+                            else if (temp3 < 1 + ULTRAPOS/10 * 3) kind = 8;
+                            else if (temp3 < 1 + ULTRAPOS/5 * 2) kind = 9;
+                            else if (temp3 < 1 + ULTRAPOS/2) kind = 10;
+                            else if (temp3 < 1 + ULTRAPOS/5 * 3) kind = 11;
+                            else if (temp3 < 1 + ULTRAPOS/10 * 7) kind = 12;
+                            else if (temp3 < 1 + ULTRAPOS/5 * 4) kind = 13;
+                            else if (temp3 < 1 + ULTRAPOS/10 * 9) kind = 14;
                             else kind = 15;
                         }
                 }
@@ -3896,111 +3896,111 @@ int main() {
                     kind = 8;
                     is_noelle = 0;
                 }
-                else if (four_star_assurance_number <= 8) {
-                    if (temp1 <= ULTRAPOS/1000 * 6) {
+                else if (four_star_assurance_number < 1 + 8) {
+                    if (temp1 < 1 + ULTRAPOS/1000 * 6) {
                         star = 5;
                         five_count = five_count + 1;
                         type = 1;
-                        if (temp3 <= ULTRAPOS/5) kind = 1;
-                        else if (temp3 <= ULTRAPOS/5 * 2) kind = 2;
-                        else if (temp3 <= ULTRAPOS/5 * 3) kind = 3;
-                        else if (temp3 <= ULTRAPOS/5 * 4) kind = 4;
+                        if (temp3 < 1 + ULTRAPOS/5) kind = 1;
+                        else if (temp3 < 1 + ULTRAPOS/5 * 2) kind = 2;
+                        else if (temp3 < 1 + ULTRAPOS/5 * 3) kind = 3;
+                        else if (temp3 < 1 + ULTRAPOS/5 * 4) kind = 4;
                         else kind = 5;
                     }
-                    else if (temp1 <= ULTRAPOS / 1000 * 57) {
+                    else if (temp1 < 1 + ULTRAPOS / 1000 * 57) {
                         star = 4;
                         four_count = four_count + 1;
                         four_star_assurance_number = 0;
                         type = 1;
                         unmet_count = 0;
                         unmet = (double)17.1;
-                        if (temp3 <= ULTRAPOS / 11) kind = 6;
-                        else if (temp3 <= ULTRAPOS / 11 * 2) kind = 7;
-                        else if (temp3 <= ULTRAPOS / 11 * 3) { kind = 8; is_noelle = 0;}
-                        else if (temp3 <= ULTRAPOS / 11 * 4) kind = 9;
-                        else if (temp3 <= ULTRAPOS / 11 * 5) kind = 10;
-                        else if (temp3 <= ULTRAPOS / 11 * 6) kind = 11;
-                        else if (temp3 <= ULTRAPOS / 11 * 7) kind = 12;
-                        else if (temp3 <= ULTRAPOS / 11 * 8) kind = 13;
-                        else if (temp3 <= ULTRAPOS / 11 * 9) kind = 14;
-                        else if (temp3 <= ULTRAPOS / 11 * 10) kind = 15;
+                        if (temp3 < 1 + ULTRAPOS / 11) kind = 6;
+                        else if (temp3 < 1 + ULTRAPOS / 11 * 2) kind = 7;
+                        else if (temp3 < 1 + ULTRAPOS / 11 * 3) { kind = 8; is_noelle = 0;}
+                        else if (temp3 < 1 + ULTRAPOS / 11 * 4) kind = 9;
+                        else if (temp3 < 1 + ULTRAPOS / 11 * 5) kind = 10;
+                        else if (temp3 < 1 + ULTRAPOS / 11 * 6) kind = 11;
+                        else if (temp3 < 1 + ULTRAPOS / 11 * 7) kind = 12;
+                        else if (temp3 < 1 + ULTRAPOS / 11 * 8) kind = 13;
+                        else if (temp3 < 1 + ULTRAPOS / 11 * 9) kind = 14;
+                        else if (temp3 < 1 + ULTRAPOS / 11 * 10) kind = 15;
                         else kind = 16;
                     }
                     else {
                         star = 3;
                         type = 2;
-                        if (temp3 <= ULTRAPOS/13) kind = 17;
-                        else if (temp3 <= ULTRAPOS/13 * 2) kind = 18;
-                        else if (temp3 <= ULTRAPOS/13 * 3) kind = 19;
-                        else if (temp3 <= ULTRAPOS/13 * 4) kind = 20;
-                        else if (temp3 <= ULTRAPOS/13 * 5) kind = 21;
-                        else if (temp3 <= ULTRAPOS/13 * 6) kind = 22;
-                        else if (temp3 <= ULTRAPOS/13 * 7) kind = 23;
-                        else if (temp3 <= ULTRAPOS/13 * 8) kind = 24;
-                        else if (temp3 <= ULTRAPOS/13 * 9) kind = 25;
-                        else if (temp3 <= ULTRAPOS/13 * 10) kind = 26;
-                        else if (temp3 <= ULTRAPOS/13 * 11) kind = 27;
-                        else if (temp3 <= ULTRAPOS/13 * 12) kind = 28;
+                        if (temp3 < 1 + ULTRAPOS/13) kind = 17;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 2) kind = 18;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 3) kind = 19;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 4) kind = 20;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 5) kind = 21;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 6) kind = 22;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 7) kind = 23;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 8) kind = 24;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 9) kind = 25;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 10) kind = 26;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 11) kind = 27;
+                        else if (temp3 < 1 + ULTRAPOS/13 * 12) kind = 28;
                         else kind = 29;
                     }
                 }
                 else if (four_star_assurance_number == 9) {
-                    if (temp1 <= ULTRAPOS/1000 * 6) {
+                    if (temp1 < 1 + ULTRAPOS/1000 * 6) {
                         star = 5;
                         five_count = five_count + 1;
                         type = 1;
-                        if (temp3 <= ULTRAPOS/5) kind = 1;
-                        else if (temp3 <= ULTRAPOS/5 * 2) kind = 2;
-                        else if (temp3 <= ULTRAPOS/5 * 3) kind = 3;
-                        else if (temp3 <= ULTRAPOS/5 * 4) kind = 4;
+                        if (temp3 < 1 + ULTRAPOS/5) kind = 1;
+                        else if (temp3 < 1 + ULTRAPOS/5 * 2) kind = 2;
+                        else if (temp3 < 1 + ULTRAPOS/5 * 3) kind = 3;
+                        else if (temp3 < 1 + ULTRAPOS/5 * 4) kind = 4;
                         else kind = 5;
                     }
-                    else if (temp1 <= ULTRAPOS/1000 * 567) {
+                    else if (temp1 < 1 + ULTRAPOS/1000 * 567) {
                         star = 4;
                         four_count = four_count + 1;
                         four_star_assurance_number = 0;
                             type = 1;
                             unmet_count = 0;
                             unmet = (double)17.1;
-                            if (temp3 <= ULTRAPOS / 11) kind = 6;
-                            else if (temp3 <= ULTRAPOS / 11 * 2) kind = 7;
-                            else if (temp3 <= ULTRAPOS / 11 * 3) { kind = 8; is_noelle = 0; }
-                            else if (temp3 <= ULTRAPOS / 11 * 4) kind = 9;
-                            else if (temp3 <= ULTRAPOS / 11 * 5) kind = 10;
-                            else if (temp3 <= ULTRAPOS / 11 * 6) kind = 11;
-                            else if (temp3 <= ULTRAPOS / 11 * 7) kind = 12;
-                            else if (temp3 <= ULTRAPOS / 11 * 8) kind = 13;
-                            else if (temp3 <= ULTRAPOS / 11 * 9) kind = 14;
-                            else if (temp3 <= ULTRAPOS / 11 * 10) kind = 15;
+                            if (temp3 < 1 + ULTRAPOS / 11) kind = 6;
+                            else if (temp3 < 1 + ULTRAPOS / 11 * 2) kind = 7;
+                            else if (temp3 < 1 + ULTRAPOS / 11 * 3) { kind = 8; is_noelle = 0; }
+                            else if (temp3 < 1 + ULTRAPOS / 11 * 4) kind = 9;
+                            else if (temp3 < 1 + ULTRAPOS / 11 * 5) kind = 10;
+                            else if (temp3 < 1 + ULTRAPOS / 11 * 6) kind = 11;
+                            else if (temp3 < 1 + ULTRAPOS / 11 * 7) kind = 12;
+                            else if (temp3 < 1 + ULTRAPOS / 11 * 8) kind = 13;
+                            else if (temp3 < 1 + ULTRAPOS / 11 * 9) kind = 14;
+                            else if (temp3 < 1 + ULTRAPOS / 11 * 10) kind = 15;
                             else kind = 16;
                     }
                     else {
                         star = 3;
                         type = 2;
-                        if (temp3 <= ULTRAPOS / 13) kind = 17;
-                        else if (temp3 <= ULTRAPOS / 13 * 2) kind = 18;
-                        else if (temp3 <= ULTRAPOS / 13 * 3) kind = 19;
-                        else if (temp3 <= ULTRAPOS / 13 * 4) kind = 20;
-                        else if (temp3 <= ULTRAPOS / 13 * 5) kind = 21;
-                        else if (temp3 <= ULTRAPOS / 13 * 6) kind = 22;
-                        else if (temp3 <= ULTRAPOS / 13 * 7) kind = 23;
-                        else if (temp3 <= ULTRAPOS / 13 * 8) kind = 24;
-                        else if (temp3 <= ULTRAPOS / 13 * 9) kind = 25;
-                        else if (temp3 <= ULTRAPOS / 13 * 10) kind = 26;
-                        else if (temp3 <= ULTRAPOS / 13 * 11) kind = 27;
-                        else if (temp3 <= ULTRAPOS / 13 * 12) kind = 28;
+                        if (temp3 < 1 + ULTRAPOS / 13) kind = 17;
+                        else if (temp3 < 1 + ULTRAPOS / 13 * 2) kind = 18;
+                        else if (temp3 < 1 + ULTRAPOS / 13 * 3) kind = 19;
+                        else if (temp3 < 1 + ULTRAPOS / 13 * 4) kind = 20;
+                        else if (temp3 < 1 + ULTRAPOS / 13 * 5) kind = 21;
+                        else if (temp3 < 1 + ULTRAPOS / 13 * 6) kind = 22;
+                        else if (temp3 < 1 + ULTRAPOS / 13 * 7) kind = 23;
+                        else if (temp3 < 1 + ULTRAPOS / 13 * 8) kind = 24;
+                        else if (temp3 < 1 + ULTRAPOS / 13 * 9) kind = 25;
+                        else if (temp3 < 1 + ULTRAPOS / 13 * 10) kind = 26;
+                        else if (temp3 < 1 + ULTRAPOS / 13 * 11) kind = 27;
+                        else if (temp3 < 1 + ULTRAPOS / 13 * 12) kind = 28;
                         else kind = 29;
                     }
                 }
                 else {
-                    if (temp1 <= ULTRAPOS/1000 * 6) {
+                    if (temp1 < 1 + ULTRAPOS/1000 * 6) {
                         star = 5;
                         five_count = five_count + 1;
                         type = 1;
-                        if (temp3 <= ULTRAPOS/5) kind = 1;
-                        else if (temp3 <= ULTRAPOS/5 * 2) kind = 2;
-                        else if (temp3 <= ULTRAPOS/5 * 3) kind = 3;
-                        else if (temp3 <= ULTRAPOS/5 * 4) kind = 4;
+                        if (temp3 < 1 + ULTRAPOS/5) kind = 1;
+                        else if (temp3 < 1 + ULTRAPOS/5 * 2) kind = 2;
+                        else if (temp3 < 1 + ULTRAPOS/5 * 3) kind = 3;
+                        else if (temp3 < 1 + ULTRAPOS/5 * 4) kind = 4;
                         else kind = 5;
                     }
                     else {
@@ -4010,16 +4010,16 @@ int main() {
                             type = 1;
                             unmet_count = 0;
                             unmet = (double)17.1;
-                            if (temp3 <= ULTRAPOS / 11) kind = 6;
-                            else if (temp3 <= ULTRAPOS / 11 * 2) kind = 7;
-                            else if (temp3 <= ULTRAPOS / 11 * 3) { kind = 8; is_noelle = 0; }
-                            else if (temp3 <= ULTRAPOS / 11 * 4) kind = 9;
-                            else if (temp3 <= ULTRAPOS / 11 * 5) kind = 10;
-                            else if (temp3 <= ULTRAPOS / 11 * 6) kind = 11;
-                            else if (temp3 <= ULTRAPOS / 11 * 7) kind = 12;
-                            else if (temp3 <= ULTRAPOS / 11 * 8) kind = 13;
-                            else if (temp3 <= ULTRAPOS / 11 * 9) kind = 14;
-                            else if (temp3 <= ULTRAPOS / 11 * 10) kind = 15;
+                            if (temp3 < 1 + ULTRAPOS / 11) kind = 6;
+                            else if (temp3 < 1 + ULTRAPOS / 11 * 2) kind = 7;
+                            else if (temp3 < 1 + ULTRAPOS / 11 * 3) { kind = 8; is_noelle = 0; }
+                            else if (temp3 < 1 + ULTRAPOS / 11 * 4) kind = 9;
+                            else if (temp3 < 1 + ULTRAPOS / 11 * 5) kind = 10;
+                            else if (temp3 < 1 + ULTRAPOS / 11 * 6) kind = 11;
+                            else if (temp3 < 1 + ULTRAPOS / 11 * 7) kind = 12;
+                            else if (temp3 < 1 + ULTRAPOS / 11 * 8) kind = 13;
+                            else if (temp3 < 1 + ULTRAPOS / 11 * 9) kind = 14;
+                            else if (temp3 < 1 + ULTRAPOS / 11 * 10) kind = 15;
                             else kind = 16;
                     }
                 }
