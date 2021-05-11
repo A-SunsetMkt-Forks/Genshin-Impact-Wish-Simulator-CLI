@@ -7,35 +7,11 @@
 #define ULTRAPOS 437580000
 using namespace std;
 
-int main() {
-    std::cout << "WELCOME TO GENSHIN IMPACT WISH SIMULATOR CLI" << endl << endl;
-    while ( 1 ) {
-    int chosen_banner = 0;
-    int chosen_event = 0;
-    int wishes_number = 0;
-    int four_star_assurance_number = 1;
-    int five_star_assurance_number = 1;
-    int five_star_guarantee_number = 0;
-    int four_star_guarantee_number = 0;
-    int quit = 1;
-    unsigned int seed = (unsigned int) std::chrono::_V2::high_resolution_clock::now().time_since_epoch().count();
-    std::mt19937_64 generator(seed);
-    long long int count = 0;
-    long long int five_count = 0;
-    long long int four_count = 0;
-    int threshold = 17;
-    double unmet = 17.1;
-    int unmet_count = 0;
-    int is_noelle = 1;
-    int ave_fives = 0;
-    int max_fives = 1;
-    int min_fives = 90;
-    long long int max_fivesth = 1;
-    long long int min_fivesth = 1;
-    long long int max_fivecount = 1;
-    long long int min_fivecount = 1;
-    long long int pcount[128] = {0};
-    string pname[128] = {
+unsigned int seed = (unsigned int) std::chrono::_V2::high_resolution_clock::now().time_since_epoch().count();
+std::mt19937_64 generator(seed);
+
+long long int pcount[128] = {0};
+string pname[128] = {
                 "Keqing",
                 "Mona",
                 "Qiqi",
@@ -165,6 +141,33 @@ int main() {
                 "Placeholder",
                 "Placeholder",
     };
+
+
+int main() {
+    std::cout << "WELCOME TO GENSHIN IMPACT WISH SIMULATOR CLI" << endl << endl;
+    while ( 1 ) {
+    int chosen_banner = 0;
+    int chosen_event = 0;
+    int wishes_number = 0;
+    int four_star_assurance_number = 1;
+    int five_star_assurance_number = 1;
+    int five_star_guarantee_number = 0;
+    int four_star_guarantee_number = 0;
+    int quit = 1;
+    long long int count = 0;
+    long long int five_count = 0;
+    long long int four_count = 0;
+    int threshold = 17;
+    double unmet = 17.1;
+    int unmet_count = 0;
+    int is_noelle = 1;
+    int ave_fives = 0;
+    int max_fives = 1;
+    int min_fives = 90;
+    long long int max_fivesth = 1;
+    long long int min_fivesth = 1;
+    long long int max_fivecount = 1;
+    long long int min_fivecount = 1;
     enter_chosen_banner:
     chosen_banner = 0;
     std::cout << "Choose Your Wishes (Banners):" << endl;
