@@ -265,12 +265,11 @@ int main() {
             while (wishes_number > 0) {
                 long long int temp1 = generator() % ULTRAPOS + 1;
                 long long int temp2 = generator() % ULTRAPOS + 1;
-                long long int temp3 = generator() % ULTRAPOS + 1;
                 int star = 0; //4-star or 5-star
                 int type = 0; //Up or non-up, character or weapon
                 int kind = 0; //which exactly
                 if (unmet_count > threshold) unmet = (double)unmet_count;
-                if (five_star_assurance_number < 1 + 73 && four_star_assurance_number < 1 + 8) {
+                if (five_star_assurance_number < 74 && four_star_assurance_number < 9) {
                     if (temp1 < 1 + ULTRAPOS/1000 * 6) {
                         star = 5;
                         five_count = five_count + 1;
@@ -330,7 +329,7 @@ int main() {
                         kind = rspick(templist, 13);
                     }
                 }
-                else if (five_star_assurance_number < 1 + 73 && four_star_assurance_number == 9) {
+                else if (five_star_assurance_number < 74 && four_star_assurance_number == 9) {
                     if (temp1 < 1 + ULTRAPOS/1000 * 6) {
                         star = 5;
                         five_count = five_count + 1;
@@ -390,7 +389,7 @@ int main() {
                         kind = rspick(templist, 13);
                     }
                 }
-                else if (five_star_assurance_number < 1 + 73 && four_star_assurance_number >= 10) {
+                else if (five_star_assurance_number < 74 && four_star_assurance_number > 9) {
                     if (temp1 < 1 + ULTRAPOS/1000 * 6) {
                         star = 5;
                         five_count = five_count + 1;
@@ -444,7 +443,7 @@ int main() {
                         }
                     }
                 }
-                else if (five_star_assurance_number < 1 + 89 && five_star_assurance_number >= 74 && four_star_assurance_number < 1 + 8) {
+                else if (five_star_assurance_number < 90 && five_star_assurance_number > 73 && four_star_assurance_number < 9) {
                     if (temp1 < 1 + ULTRAPOS/1000 * 6 + (five_star_assurance_number - 73) * ULTRAPOS/1000 * 60) {
                         star = 5;
                         five_count = five_count + 1;
@@ -504,7 +503,7 @@ int main() {
                         kind = rspick(templist, 13);
                     }
                 }
-                else if (five_star_assurance_number < 1 + 89 && five_star_assurance_number >= 74 && four_star_assurance_number == 9) {
+                else if (five_star_assurance_number < 90 && five_star_assurance_number > 73 && four_star_assurance_number == 9) {
                     if (temp1 < 1 + ULTRAPOS/1000 * 6 + (five_star_assurance_number - 73) * ULTRAPOS/1000 * 60) {
                         star = 5;
                         five_count = five_count + 1;
@@ -564,7 +563,7 @@ int main() {
                         kind = rspick(templist, 13);
                     }
                 }
-                else if (five_star_assurance_number < 1 + 89 && five_star_assurance_number >= 74 && four_star_assurance_number >= 10) {
+                else if (five_star_assurance_number < 90 && five_star_assurance_number > 73 && four_star_assurance_number > 9) {
                     if (temp1 < 1 + ULTRAPOS/1000 * 6 + (five_star_assurance_number - 73) * ULTRAPOS/1000 * 60) {
                         star = 5;
                         five_count = five_count + 1;
@@ -2945,16 +2944,17 @@ int main() {
                 four_star_assurance_number = four_star_assurance_number + 1;
             }
         }
+        */
+
         if (chosen_banner == 3 && chosen_event == 3) {
             while (wishes_number > 0) {
                 long long int temp1 = generator() % ULTRAPOS + 1;
                 long long int temp2 = generator() % ULTRAPOS + 1;
-                long long int temp3 = generator() % ULTRAPOS + 1;
                 int star = 0; //4-star or 5-star
                 int type = 0; //Up or non-up, character or weapon
                 int kind = 0; //which exactly
                 if (unmet_count > threshold) unmet = (double)unmet_count;
-                if (five_star_assurance_number < 1 + 73 && four_star_assurance_number < 1 + 8) {
+                if (five_star_assurance_number < 74 && four_star_assurance_number < 9) {
                     if (temp1 < 1 + ULTRAPOS/1000 * 6) {
                         star = 5;
                         five_count = five_count + 1;
@@ -2964,24 +2964,13 @@ int main() {
                         five_star_assurance_number = 0;
                         if (temp2 < 1 + ULTRAPOS/2) {
                             type = 1;
-                            if (temp3 < 1 + ULTRAPOS/5) kind = 1;
-                            else if (temp3 < 1 + ULTRAPOS/5 * 2) kind = 2;
-                            else if (temp3 < 1 + ULTRAPOS/5 * 3) kind = 3;
-                            else if (temp3 < 1 + ULTRAPOS/5 * 4) kind = 4;
-                            else kind = 5;
+                            int templist[] = {1, 2, 3, 4, 5};
+                            kind = rspick(templist, 5);
                         }
                         else {
                             type = 2;
-                            if (temp3 < 1 + ULTRAPOS/10) kind = 6;
-                            else if (temp3 < 1 + ULTRAPOS/5) kind = 7;
-                            else if (temp3 < 1 + ULTRAPOS/10 * 3) kind = 8;
-                            else if (temp3 < 1 + ULTRAPOS/5 * 2) kind = 9;
-                            else if (temp3 < 1 + ULTRAPOS/2) kind = 10;
-                            else if (temp3 < 1 + ULTRAPOS/5 * 3) kind = 11;
-                            else if (temp3 < 1 + ULTRAPOS/10 * 7) kind = 12;
-                            else if (temp3 < 1 + ULTRAPOS/5 * 4) kind = 13;
-                            else if (temp3 < 1 + ULTRAPOS/10 * 9) kind = 14;
-                            else kind = 15;
+                            int templist[] = {6, 7, 8, 9, 10, 11, 12, 13, 14, 15};
+                            kind = rspick(templist, 10);
                         }
                     }
                     else if (temp1 < 1 + ULTRAPOS/1000 * 57) {
@@ -2992,66 +2981,24 @@ int main() {
                             type = 1;
                             unmet_count = 0;
                             unmet = (double)17.1;
-                            if (temp3 < 1 + ULTRAPOS/17) kind = 16;
-                            else if (temp3 < 1 + ULTRAPOS/17 * 2) kind = 17;
-                            else if (temp3 < 1 + ULTRAPOS/17 * 3) kind = 18;
-                            else if (temp3 < 1 + ULTRAPOS/17 * 4) kind = 19;
-                            else if (temp3 < 1 + ULTRAPOS/17 * 5) kind = 20;
-                            else if (temp3 < 1 + ULTRAPOS/17 * 6) kind = 21;
-                            else if (temp3 < 1 + ULTRAPOS/17 * 7) kind = 22;
-                            else if (temp3 < 1 + ULTRAPOS/17 * 8) kind = 23;
-                            else if (temp3 < 1 + ULTRAPOS/17 * 9) kind = 24;
-                            else if (temp3 < 1 + ULTRAPOS/17 * 10) kind = 25;
-                            else if (temp3 < 1 + ULTRAPOS/17 * 11) kind = 26;
-                            else if (temp3 < 1 + ULTRAPOS/17 * 12) kind = 27;
-                            else if (temp3 < 1 + ULTRAPOS/17 * 13) kind = 28;
-                            else if (temp3 < 1 + ULTRAPOS/17 * 14) kind = 29;
-                            else if (temp3 < 1 + ULTRAPOS/17 * 15) kind = 30;
-                            else if (temp3 < 1 + ULTRAPOS/17 * 16) kind = 31;
-                            else kind = 32;
+                            int templist[] = {16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32};
+                            kind = rspick(templist, 17);
                         }
                         else {
                             type = 2;
                             unmet_count = unmet_count + 1;
-                            if (temp3 < 1 + ULTRAPOS/9 * 5) kind = 33;
-                            else if (temp3 < 1 + ULTRAPOS/9) kind = 34;
-                            else if (temp3 < 1 + ULTRAPOS/6) kind = 35;
-                            else if (temp3 < 1 + ULTRAPOS/9 * 2) kind = 36;
-                            else if (temp3 < 1 + ULTRAPOS/18 * 5) kind = 37;
-                            else if (temp3 < 1 + ULTRAPOS/3) kind = 38;
-                            else if (temp3 < 1 + ULTRAPOS/18 * 7) kind = 39;
-                            else if (temp3 < 1 + ULTRAPOS/9 * 4) kind = 40;
-                            else if (temp3 < 1 + ULTRAPOS/2) kind = 41;
-                            else if (temp3 < 1 + ULTRAPOS/9 * 5) kind = 42;
-                            else if (temp3 < 1 + ULTRAPOS/18 * 11) kind = 43;
-                            else if (temp3 < 1 + ULTRAPOS/3 * 2) kind = 44;
-                            else if (temp3 < 1 + ULTRAPOS/18 * 13) kind = 45;
-                            else if (temp3 < 1 + ULTRAPOS/9 * 7) kind = 46;
-                            else if (temp3 < 1 + ULTRAPOS/6 * 5) kind = 47;
-                            else if (temp3 < 1 + ULTRAPOS/9 * 8) kind = 48;
-                            else if (temp3 < 1 + ULTRAPOS/18 * 17) kind = 49;
-                            else kind = 50;
+                            int templist[] = {33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50};
+                            kind = rspick(templist, 18);
                         }
                     }
                     else {
                         star = 3;
                         type = 2;
-                        if (temp3 < 1 + ULTRAPOS/13) kind = 51;
-                        else if (temp3 < 1 + ULTRAPOS/13 * 2) kind = 52;
-                        else if (temp3 < 1 + ULTRAPOS/13 * 3) kind = 53;
-                        else if (temp3 < 1 + ULTRAPOS/13 * 4) kind = 54;
-                        else if (temp3 < 1 + ULTRAPOS/13 * 5) kind = 55;
-                        else if (temp3 < 1 + ULTRAPOS/13 * 6) kind = 56;
-                        else if (temp3 < 1 + ULTRAPOS/13 * 7) kind = 57;
-                        else if (temp3 < 1 + ULTRAPOS/13 * 8) kind = 58;
-                        else if (temp3 < 1 + ULTRAPOS/13 * 9) kind = 59;
-                        else if (temp3 < 1 + ULTRAPOS/13 * 10) kind = 60;
-                        else if (temp3 < 1 + ULTRAPOS/13 * 11) kind = 61;
-                        else if (temp3 < 1 + ULTRAPOS/13 * 12) kind = 62;
-                        else kind = 63;
+                        int templist[] = {51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63};
+                        kind = rspick(templist, 13);
                     }
                 }
-                else if (five_star_assurance_number < 1 + 73 && four_star_assurance_number == 9) {
+                else if (five_star_assurance_number < 74 && four_star_assurance_number == 9) {
                     if (temp1 < 1 + ULTRAPOS/1000 * 6) {
                         star = 5;
                         five_count = five_count + 1;
@@ -3061,24 +3008,13 @@ int main() {
                         five_star_assurance_number = 0;
                         if (temp2 < 1 + ULTRAPOS/2) {
                             type = 1;
-                            if (temp3 < 1 + ULTRAPOS/5) kind = 1;
-                            else if (temp3 < 1 + ULTRAPOS/5 * 2) kind = 2;
-                            else if (temp3 < 1 + ULTRAPOS/5 * 3) kind = 3;
-                            else if (temp3 < 1 + ULTRAPOS/5 * 4) kind = 4;
-                            else kind = 5;
+                            int templist[] = {1, 2, 3, 4, 5};
+                            kind = rspick(templist, 5);
                         }
                         else {
                             type = 2;
-                            if (temp3 < 1 + ULTRAPOS/10) kind = 6;
-                            else if (temp3 < 1 + ULTRAPOS/5) kind = 7;
-                            else if (temp3 < 1 + ULTRAPOS/10 * 3) kind = 8;
-                            else if (temp3 < 1 + ULTRAPOS/5 * 2) kind = 9;
-                            else if (temp3 < 1 + ULTRAPOS/2) kind = 10;
-                            else if (temp3 < 1 + ULTRAPOS/5 * 3) kind = 11;
-                            else if (temp3 < 1 + ULTRAPOS/10 * 7) kind = 12;
-                            else if (temp3 < 1 + ULTRAPOS/5 * 4) kind = 13;
-                            else if (temp3 < 1 + ULTRAPOS/10 * 9) kind = 14;
-                            else kind = 15;
+                            int templist[] = {6, 7, 8, 9, 10, 11, 12, 13, 14, 15};
+                            kind = rspick(templist, 10);
                         }
                     }
                     else if (temp1 < 1 + ULTRAPOS/1000 * 567) {
@@ -3089,66 +3025,24 @@ int main() {
                             type = 1;
                             unmet_count = 0;
                             unmet = (double)17.1;
-                            if (temp3 < 1 + ULTRAPOS/17) kind = 16;
-                            else if (temp3 < 1 + ULTRAPOS/17 * 2) kind = 17;
-                            else if (temp3 < 1 + ULTRAPOS/17 * 3) kind = 18;
-                            else if (temp3 < 1 + ULTRAPOS/17 * 4) kind = 19;
-                            else if (temp3 < 1 + ULTRAPOS/17 * 5) kind = 20;
-                            else if (temp3 < 1 + ULTRAPOS/17 * 6) kind = 21;
-                            else if (temp3 < 1 + ULTRAPOS/17 * 7) kind = 22;
-                            else if (temp3 < 1 + ULTRAPOS/17 * 8) kind = 23;
-                            else if (temp3 < 1 + ULTRAPOS/17 * 9) kind = 24;
-                            else if (temp3 < 1 + ULTRAPOS/17 * 10) kind = 25;
-                            else if (temp3 < 1 + ULTRAPOS/17 * 11) kind = 26;
-                            else if (temp3 < 1 + ULTRAPOS/17 * 12) kind = 27;
-                            else if (temp3 < 1 + ULTRAPOS/17 * 13) kind = 28;
-                            else if (temp3 < 1 + ULTRAPOS/17 * 14) kind = 29;
-                            else if (temp3 < 1 + ULTRAPOS/17 * 15) kind = 30;
-                            else if (temp3 < 1 + ULTRAPOS/17 * 16) kind = 31;
-                            else kind = 32;
+                            int templist[] = {16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32};
+                            kind = rspick(templist, 17);
                         }
                         else {
                             type = 2;
                             unmet_count = unmet_count + 1;
-                            if (temp3 < 1 + ULTRAPOS/9 * 5) kind = 33;
-                            else if (temp3 < 1 + ULTRAPOS/9) kind = 34;
-                            else if (temp3 < 1 + ULTRAPOS/6) kind = 35;
-                            else if (temp3 < 1 + ULTRAPOS/9 * 2) kind = 36;
-                            else if (temp3 < 1 + ULTRAPOS/18 * 5) kind = 37;
-                            else if (temp3 < 1 + ULTRAPOS/3) kind = 38;
-                            else if (temp3 < 1 + ULTRAPOS/18 * 7) kind = 39;
-                            else if (temp3 < 1 + ULTRAPOS/9 * 4) kind = 40;
-                            else if (temp3 < 1 + ULTRAPOS/2) kind = 41;
-                            else if (temp3 < 1 + ULTRAPOS/9 * 5) kind = 42;
-                            else if (temp3 < 1 + ULTRAPOS/18 * 11) kind = 43;
-                            else if (temp3 < 1 + ULTRAPOS/3 * 2) kind = 44;
-                            else if (temp3 < 1 + ULTRAPOS/18 * 13) kind = 45;
-                            else if (temp3 < 1 + ULTRAPOS/9 * 7) kind = 46;
-                            else if (temp3 < 1 + ULTRAPOS/6 * 5) kind = 47;
-                            else if (temp3 < 1 + ULTRAPOS/9 * 8) kind = 48;
-                            else if (temp3 < 1 + ULTRAPOS/18 * 17) kind = 49;
-                            else kind = 50;
+                            int templist[] = {33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50};
+                            kind = rspick(templist, 18);
                         }
                     }
                     else {
                         star = 3;
                         type = 2;
-                        if (temp3 < 1 + ULTRAPOS/13) kind = 51;
-                        else if (temp3 < 1 + ULTRAPOS/13 * 2) kind = 52;
-                        else if (temp3 < 1 + ULTRAPOS/13 * 3) kind = 53;
-                        else if (temp3 < 1 + ULTRAPOS/13 * 4) kind = 54;
-                        else if (temp3 < 1 + ULTRAPOS/13 * 5) kind = 55;
-                        else if (temp3 < 1 + ULTRAPOS/13 * 6) kind = 56;
-                        else if (temp3 < 1 + ULTRAPOS/13 * 7) kind = 57;
-                        else if (temp3 < 1 + ULTRAPOS/13 * 8) kind = 58;
-                        else if (temp3 < 1 + ULTRAPOS/13 * 9) kind = 59;
-                        else if (temp3 < 1 + ULTRAPOS/13 * 10) kind = 60;
-                        else if (temp3 < 1 + ULTRAPOS/13 * 11) kind = 61;
-                        else if (temp3 < 1 + ULTRAPOS/13 * 12) kind = 62;
-                        else kind = 63;
+                        int templist[] = {51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63};
+                        kind = rspick(templist, 13);
                     }
                 }
-                else if (five_star_assurance_number < 1 + 73 && four_star_assurance_number >= 10) {
+                else if (five_star_assurance_number < 74 && four_star_assurance_number > 9) {
                     if (temp1 < 1 + ULTRAPOS/1000 * 6) {
                         star = 5;
                         five_count = five_count + 1;
@@ -3158,24 +3052,13 @@ int main() {
                         five_star_assurance_number = 0;
                         if (temp2 < 1 + ULTRAPOS/2) {
                             type = 1;
-                            if (temp3 < 1 + ULTRAPOS/5) kind = 1;
-                            else if (temp3 < 1 + ULTRAPOS/5 * 2) kind = 2;
-                            else if (temp3 < 1 + ULTRAPOS/5 * 3) kind = 3;
-                            else if (temp3 < 1 + ULTRAPOS/5 * 4) kind = 4;
-                            else kind = 5;
+                            int templist[] = {1, 2, 3, 4, 5};
+                            kind = rspick(templist, 5);
                         }
                         else {
                             type = 2;
-                            if (temp3 < 1 + ULTRAPOS/10) kind = 6;
-                            else if (temp3 < 1 + ULTRAPOS/5) kind = 7;
-                            else if (temp3 < 1 + ULTRAPOS/10 * 3) kind = 8;
-                            else if (temp3 < 1 + ULTRAPOS/5 * 2) kind = 9;
-                            else if (temp3 < 1 + ULTRAPOS/2) kind = 10;
-                            else if (temp3 < 1 + ULTRAPOS/5 * 3) kind = 11;
-                            else if (temp3 < 1 + ULTRAPOS/10 * 7) kind = 12;
-                            else if (temp3 < 1 + ULTRAPOS/5 * 4) kind = 13;
-                            else if (temp3 < 1 + ULTRAPOS/10 * 9) kind = 14;
-                            else kind = 15;
+                            int templist[] = {6, 7, 8, 9, 10, 11, 12, 13, 14, 15};
+                            kind = rspick(templist, 10);
                         }
                     }
                     else {
@@ -3186,49 +3069,18 @@ int main() {
                             type = 1;
                             unmet_count = 0;
                             unmet = (double)17.1;
-                            if (temp3 < 1 + ULTRAPOS/17) kind = 16;
-                            else if (temp3 < 1 + ULTRAPOS/17 * 2) kind = 17;
-                            else if (temp3 < 1 + ULTRAPOS/17 * 3) kind = 18;
-                            else if (temp3 < 1 + ULTRAPOS/17 * 4) kind = 19;
-                            else if (temp3 < 1 + ULTRAPOS/17 * 5) kind = 20;
-                            else if (temp3 < 1 + ULTRAPOS/17 * 6) kind = 21;
-                            else if (temp3 < 1 + ULTRAPOS/17 * 7) kind = 22;
-                            else if (temp3 < 1 + ULTRAPOS/17 * 8) kind = 23;
-                            else if (temp3 < 1 + ULTRAPOS/17 * 9) kind = 24;
-                            else if (temp3 < 1 + ULTRAPOS/17 * 10) kind = 25;
-                            else if (temp3 < 1 + ULTRAPOS/17 * 11) kind = 26;
-                            else if (temp3 < 1 + ULTRAPOS/17 * 12) kind = 27;
-                            else if (temp3 < 1 + ULTRAPOS/17 * 13) kind = 28;
-                            else if (temp3 < 1 + ULTRAPOS/17 * 14) kind = 29;
-                            else if (temp3 < 1 + ULTRAPOS/17 * 15) kind = 30;
-                            else if (temp3 < 1 + ULTRAPOS/17 * 16) kind = 31;
-                            else kind = 32;
+                            int templist[] = {16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32};
+                            kind = rspick(templist, 17);
                         }
                         else {
                             type = 2;
                             unmet_count = unmet_count + 1;
-                            if (temp3 < 1 + ULTRAPOS/9 * 5) kind = 33;
-                            else if (temp3 < 1 + ULTRAPOS/9) kind = 34;
-                            else if (temp3 < 1 + ULTRAPOS/6) kind = 35;
-                            else if (temp3 < 1 + ULTRAPOS/9 * 2) kind = 36;
-                            else if (temp3 < 1 + ULTRAPOS/18 * 5) kind = 37;
-                            else if (temp3 < 1 + ULTRAPOS/3) kind = 38;
-                            else if (temp3 < 1 + ULTRAPOS/18 * 7) kind = 39;
-                            else if (temp3 < 1 + ULTRAPOS/9 * 4) kind = 40;
-                            else if (temp3 < 1 + ULTRAPOS/2) kind = 41;
-                            else if (temp3 < 1 + ULTRAPOS/9 * 5) kind = 42;
-                            else if (temp3 < 1 + ULTRAPOS/18 * 11) kind = 43;
-                            else if (temp3 < 1 + ULTRAPOS/3 * 2) kind = 44;
-                            else if (temp3 < 1 + ULTRAPOS/18 * 13) kind = 45;
-                            else if (temp3 < 1 + ULTRAPOS/9 * 7) kind = 46;
-                            else if (temp3 < 1 + ULTRAPOS/6 * 5) kind = 47;
-                            else if (temp3 < 1 + ULTRAPOS/9 * 8) kind = 48;
-                            else if (temp3 < 1 + ULTRAPOS/18 * 17) kind = 49;
-                            else kind = 50;
+                            int templist[] = {33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50};
+                            kind = rspick(templist, 18);
                         }
                     }
                 }
-                else if (five_star_assurance_number < 1 + 89 && five_star_assurance_number >= 74 && four_star_assurance_number < 1 + 8) {
+                else if (five_star_assurance_number < 90 && five_star_assurance_number > 73 && four_star_assurance_number < 9) {
                     if (temp1 < 1 + ULTRAPOS/1000 * 6 + (five_star_assurance_number - 73) * ULTRAPOS/1000 * 60) {
                         star = 5;
                         five_count = five_count + 1;
@@ -3238,24 +3090,13 @@ int main() {
                         five_star_assurance_number = 0;
                         if (temp2 < 1 + ULTRAPOS/2) {
                             type = 1;
-                            if (temp3 < 1 + ULTRAPOS/5) kind = 1;
-                            else if (temp3 < 1 + ULTRAPOS/5 * 2) kind = 2;
-                            else if (temp3 < 1 + ULTRAPOS/5 * 3) kind = 3;
-                            else if (temp3 < 1 + ULTRAPOS/5 * 4) kind = 4;
-                            else kind = 5;
+                            int templist[] = {1, 2, 3, 4, 5};
+                            kind = rspick(templist, 5);
                         }
                         else {
                             type = 2;
-                            if (temp3 < 1 + ULTRAPOS/10) kind = 6;
-                            else if (temp3 < 1 + ULTRAPOS/5) kind = 7;
-                            else if (temp3 < 1 + ULTRAPOS/10 * 3) kind = 8;
-                            else if (temp3 < 1 + ULTRAPOS/5 * 2) kind = 9;
-                            else if (temp3 < 1 + ULTRAPOS/2) kind = 10;
-                            else if (temp3 < 1 + ULTRAPOS/5 * 3) kind = 11;
-                            else if (temp3 < 1 + ULTRAPOS/10 * 7) kind = 12;
-                            else if (temp3 < 1 + ULTRAPOS/5 * 4) kind = 13;
-                            else if (temp3 < 1 + ULTRAPOS/10 * 9) kind = 14;
-                            else kind = 15;
+                            int templist[] = {6, 7, 8, 9, 10, 11, 12, 13, 14, 15};
+                            kind = rspick(templist, 10);
                         }
                     }
                     else if (temp1 < 1 + ULTRAPOS/1000 * 57 + (five_star_assurance_number - 73) * ULTRAPOS/1000 * 60){
@@ -3266,66 +3107,24 @@ int main() {
                             type = 1;
                             unmet_count = 0;
                             unmet = (double)17.1;
-                            if (temp3 < 1 + ULTRAPOS/17) kind = 16;
-                            else if (temp3 < 1 + ULTRAPOS/17 * 2) kind = 17;
-                            else if (temp3 < 1 + ULTRAPOS/17 * 3) kind = 18;
-                            else if (temp3 < 1 + ULTRAPOS/17 * 4) kind = 19;
-                            else if (temp3 < 1 + ULTRAPOS/17 * 5) kind = 20;
-                            else if (temp3 < 1 + ULTRAPOS/17 * 6) kind = 21;
-                            else if (temp3 < 1 + ULTRAPOS/17 * 7) kind = 22;
-                            else if (temp3 < 1 + ULTRAPOS/17 * 8) kind = 23;
-                            else if (temp3 < 1 + ULTRAPOS/17 * 9) kind = 24;
-                            else if (temp3 < 1 + ULTRAPOS/17 * 10) kind = 25;
-                            else if (temp3 < 1 + ULTRAPOS/17 * 11) kind = 26;
-                            else if (temp3 < 1 + ULTRAPOS/17 * 12) kind = 27;
-                            else if (temp3 < 1 + ULTRAPOS/17 * 13) kind = 28;
-                            else if (temp3 < 1 + ULTRAPOS/17 * 14) kind = 29;
-                            else if (temp3 < 1 + ULTRAPOS/17 * 15) kind = 30;
-                            else if (temp3 < 1 + ULTRAPOS/17 * 16) kind = 31;
-                            else kind = 32;
+                            int templist[] = {16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32};
+                            kind = rspick(templist, 17);
                         }
                         else {
                             type = 2;
                             unmet_count = unmet_count + 1;
-                            if (temp3 < 1 + ULTRAPOS/9 * 5) kind = 33;
-                            else if (temp3 < 1 + ULTRAPOS/9) kind = 34;
-                            else if (temp3 < 1 + ULTRAPOS/6) kind = 35;
-                            else if (temp3 < 1 + ULTRAPOS/9 * 2) kind = 36;
-                            else if (temp3 < 1 + ULTRAPOS/18 * 5) kind = 37;
-                            else if (temp3 < 1 + ULTRAPOS/3) kind = 38;
-                            else if (temp3 < 1 + ULTRAPOS/18 * 7) kind = 39;
-                            else if (temp3 < 1 + ULTRAPOS/9 * 4) kind = 40;
-                            else if (temp3 < 1 + ULTRAPOS/2) kind = 41;
-                            else if (temp3 < 1 + ULTRAPOS/9 * 5) kind = 42;
-                            else if (temp3 < 1 + ULTRAPOS/18 * 11) kind = 43;
-                            else if (temp3 < 1 + ULTRAPOS/3 * 2) kind = 44;
-                            else if (temp3 < 1 + ULTRAPOS/18 * 13) kind = 45;
-                            else if (temp3 < 1 + ULTRAPOS/9 * 7) kind = 46;
-                            else if (temp3 < 1 + ULTRAPOS/6 * 5) kind = 47;
-                            else if (temp3 < 1 + ULTRAPOS/9 * 8) kind = 48;
-                            else if (temp3 < 1 + ULTRAPOS/18 * 17) kind = 49;
-                            else kind = 50;
+                            int templist[] = {33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50};
+                            kind = rspick(templist, 18);
                         }
                     }
                     else {
                         star = 3;
                         type = 2;
-                        if (temp3 < 1 + ULTRAPOS/13) kind = 51;
-                        else if (temp3 < 1 + ULTRAPOS/13 * 2) kind = 52;
-                        else if (temp3 < 1 + ULTRAPOS/13 * 3) kind = 53;
-                        else if (temp3 < 1 + ULTRAPOS/13 * 4) kind = 54;
-                        else if (temp3 < 1 + ULTRAPOS/13 * 5) kind = 55;
-                        else if (temp3 < 1 + ULTRAPOS/13 * 6) kind = 56;
-                        else if (temp3 < 1 + ULTRAPOS/13 * 7) kind = 57;
-                        else if (temp3 < 1 + ULTRAPOS/13 * 8) kind = 58;
-                        else if (temp3 < 1 + ULTRAPOS/13 * 9) kind = 59;
-                        else if (temp3 < 1 + ULTRAPOS/13 * 10) kind = 60;
-                        else if (temp3 < 1 + ULTRAPOS/13 * 11) kind = 61;
-                        else if (temp3 < 1 + ULTRAPOS/13 * 12) kind = 62;
-                        else kind = 63;
+                        int templist[] = {51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63};
+                        kind = rspick(templist, 13);
                     }
                 }
-                else if (five_star_assurance_number < 1 + 89 && five_star_assurance_number >= 74 && four_star_assurance_number == 9) {
+                else if (five_star_assurance_number < 90 && five_star_assurance_number > 73 && four_star_assurance_number == 9) {
                     if (temp1 < 1 + ULTRAPOS/1000 * 6 + (five_star_assurance_number - 73) * ULTRAPOS/1000 * 60) {
                         star = 5;
                         five_count = five_count + 1;
@@ -3335,24 +3134,13 @@ int main() {
                         five_star_assurance_number = 0;
                         if (temp2 < 1 + ULTRAPOS/2) {
                             type = 1;
-                            if (temp3 < 1 + ULTRAPOS/5) kind = 1;
-                            else if (temp3 < 1 + ULTRAPOS/5 * 2) kind = 2;
-                            else if (temp3 < 1 + ULTRAPOS/5 * 3) kind = 3;
-                            else if (temp3 < 1 + ULTRAPOS/5 * 4) kind = 4;
-                            else kind = 5;
+                            int templist[] = {1, 2, 3, 4, 5};
+                            kind = rspick(templist, 5);
                         }
                         else {
                             type = 2;
-                            if (temp3 < 1 + ULTRAPOS/10) kind = 6;
-                            else if (temp3 < 1 + ULTRAPOS/5) kind = 7;
-                            else if (temp3 < 1 + ULTRAPOS/10 * 3) kind = 8;
-                            else if (temp3 < 1 + ULTRAPOS/5 * 2) kind = 9;
-                            else if (temp3 < 1 + ULTRAPOS/2) kind = 10;
-                            else if (temp3 < 1 + ULTRAPOS/5 * 3) kind = 11;
-                            else if (temp3 < 1 + ULTRAPOS/10 * 7) kind = 12;
-                            else if (temp3 < 1 + ULTRAPOS/5 * 4) kind = 13;
-                            else if (temp3 < 1 + ULTRAPOS/10 * 9) kind = 14;
-                            else kind = 15;
+                            int templist[] = {6, 7, 8, 9, 10, 11, 12, 13, 14, 15};
+                            kind = rspick(templist, 10);
                         }
                     }
                     else if (temp1 < 1 + ULTRAPOS/1000 * 567 + (five_star_assurance_number - 73) * ULTRAPOS/1000 * 60) {
@@ -3363,66 +3151,24 @@ int main() {
                             type = 1;
                             unmet_count = 0;
                             unmet = (double)17.1;
-                            if (temp3 < 1 + ULTRAPOS/17) kind = 16;
-                            else if (temp3 < 1 + ULTRAPOS/17 * 2) kind = 17;
-                            else if (temp3 < 1 + ULTRAPOS/17 * 3) kind = 18;
-                            else if (temp3 < 1 + ULTRAPOS/17 * 4) kind = 19;
-                            else if (temp3 < 1 + ULTRAPOS/17 * 5) kind = 20;
-                            else if (temp3 < 1 + ULTRAPOS/17 * 6) kind = 21;
-                            else if (temp3 < 1 + ULTRAPOS/17 * 7) kind = 22;
-                            else if (temp3 < 1 + ULTRAPOS/17 * 8) kind = 23;
-                            else if (temp3 < 1 + ULTRAPOS/17 * 9) kind = 24;
-                            else if (temp3 < 1 + ULTRAPOS/17 * 10) kind = 25;
-                            else if (temp3 < 1 + ULTRAPOS/17 * 11) kind = 26;
-                            else if (temp3 < 1 + ULTRAPOS/17 * 12) kind = 27;
-                            else if (temp3 < 1 + ULTRAPOS/17 * 13) kind = 28;
-                            else if (temp3 < 1 + ULTRAPOS/17 * 14) kind = 29;
-                            else if (temp3 < 1 + ULTRAPOS/17 * 15) kind = 30;
-                            else if (temp3 < 1 + ULTRAPOS/17 * 16) kind = 31;
-                            else kind = 32;
+                            int templist[] = {16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32};
+                            kind = rspick(templist, 17);
                         }
                         else {
                             type = 2;
                             unmet_count = unmet_count + 1;
-                            if (temp3 < 1 + ULTRAPOS/9 * 5) kind = 33;
-                            else if (temp3 < 1 + ULTRAPOS/9) kind = 34;
-                            else if (temp3 < 1 + ULTRAPOS/6) kind = 35;
-                            else if (temp3 < 1 + ULTRAPOS/9 * 2) kind = 36;
-                            else if (temp3 < 1 + ULTRAPOS/18 * 5) kind = 37;
-                            else if (temp3 < 1 + ULTRAPOS/3) kind = 38;
-                            else if (temp3 < 1 + ULTRAPOS/18 * 7) kind = 39;
-                            else if (temp3 < 1 + ULTRAPOS/9 * 4) kind = 40;
-                            else if (temp3 < 1 + ULTRAPOS/2) kind = 41;
-                            else if (temp3 < 1 + ULTRAPOS/9 * 5) kind = 42;
-                            else if (temp3 < 1 + ULTRAPOS/18 * 11) kind = 43;
-                            else if (temp3 < 1 + ULTRAPOS/3 * 2) kind = 44;
-                            else if (temp3 < 1 + ULTRAPOS/18 * 13) kind = 45;
-                            else if (temp3 < 1 + ULTRAPOS/9 * 7) kind = 46;
-                            else if (temp3 < 1 + ULTRAPOS/6 * 5) kind = 47;
-                            else if (temp3 < 1 + ULTRAPOS/9 * 8) kind = 48;
-                            else if (temp3 < 1 + ULTRAPOS/18 * 17) kind = 49;
-                            else kind = 50;
+                            int templist[] = {33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50};
+                            kind = rspick(templist, 18);
                         }
                     }
                     else {
                         star = 3;
                         type = 2;
-                        if (temp3 < 1 + ULTRAPOS/13) kind = 51;
-                        else if (temp3 < 1 + ULTRAPOS/13 * 2) kind = 52;
-                        else if (temp3 < 1 + ULTRAPOS/13 * 3) kind = 53;
-                        else if (temp3 < 1 + ULTRAPOS/13 * 4) kind = 54;
-                        else if (temp3 < 1 + ULTRAPOS/13 * 5) kind = 55;
-                        else if (temp3 < 1 + ULTRAPOS/13 * 6) kind = 56;
-                        else if (temp3 < 1 + ULTRAPOS/13 * 7) kind = 57;
-                        else if (temp3 < 1 + ULTRAPOS/13 * 8) kind = 58;
-                        else if (temp3 < 1 + ULTRAPOS/13 * 9) kind = 59;
-                        else if (temp3 < 1 + ULTRAPOS/13 * 10) kind = 60;
-                        else if (temp3 < 1 + ULTRAPOS/13 * 11) kind = 61;
-                        else if (temp3 < 1 + ULTRAPOS/13 * 12) kind = 62;
-                        else kind = 63;
+                        int templist[] = {51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63};
+                        kind = rspick(templist, 13);
                     }
                 }
-                else if (five_star_assurance_number < 1 + 89 && five_star_assurance_number >= 74 && four_star_assurance_number >= 10) {
+                else if (five_star_assurance_number < 90 && five_star_assurance_number > 73 && four_star_assurance_number > 9) {
                     if (temp1 < 1 + ULTRAPOS/1000 * 6 + (five_star_assurance_number - 73) * ULTRAPOS/1000 * 60) {
                         star = 5;
                         five_count = five_count + 1;
@@ -3432,24 +3178,13 @@ int main() {
                         five_star_assurance_number = 0;
                         if (temp2 < 1 + ULTRAPOS/2) {
                             type = 1;
-                            if (temp3 < 1 + ULTRAPOS/5) kind = 1;
-                            else if (temp3 < 1 + ULTRAPOS/5 * 2) kind = 2;
-                            else if (temp3 < 1 + ULTRAPOS/5 * 3) kind = 3;
-                            else if (temp3 < 1 + ULTRAPOS/5 * 4) kind = 4;
-                            else kind = 5;
+                            int templist[] = {1, 2, 3, 4, 5};
+                            kind = rspick(templist, 5);
                         }
                         else {
                             type = 2;
-                            if (temp3 < 1 + ULTRAPOS/10) kind = 6;
-                            else if (temp3 < 1 + ULTRAPOS/5) kind = 7;
-                            else if (temp3 < 1 + ULTRAPOS/10 * 3) kind = 8;
-                            else if (temp3 < 1 + ULTRAPOS/5 * 2) kind = 9;
-                            else if (temp3 < 1 + ULTRAPOS/2) kind = 10;
-                            else if (temp3 < 1 + ULTRAPOS/5 * 3) kind = 11;
-                            else if (temp3 < 1 + ULTRAPOS/10 * 7) kind = 12;
-                            else if (temp3 < 1 + ULTRAPOS/5 * 4) kind = 13;
-                            else if (temp3 < 1 + ULTRAPOS/10 * 9) kind = 14;
-                            else kind = 15;
+                            int templist[] = {6, 7, 8, 9, 10, 11, 12, 13, 14, 15};
+                            kind = rspick(templist, 10);
                         }
                     }
                     else {
@@ -3460,45 +3195,14 @@ int main() {
                             type = 1;
                             unmet_count = 0;
                             unmet = (double)17.1;
-                            if (temp3 < 1 + ULTRAPOS/17) kind = 16;
-                            else if (temp3 < 1 + ULTRAPOS/17 * 2) kind = 17;
-                            else if (temp3 < 1 + ULTRAPOS/17 * 3) kind = 18;
-                            else if (temp3 < 1 + ULTRAPOS/17 * 4) kind = 19;
-                            else if (temp3 < 1 + ULTRAPOS/17 * 5) kind = 20;
-                            else if (temp3 < 1 + ULTRAPOS/17 * 6) kind = 21;
-                            else if (temp3 < 1 + ULTRAPOS/17 * 7) kind = 22;
-                            else if (temp3 < 1 + ULTRAPOS/17 * 8) kind = 23;
-                            else if (temp3 < 1 + ULTRAPOS/17 * 9) kind = 24;
-                            else if (temp3 < 1 + ULTRAPOS/17 * 10) kind = 25;
-                            else if (temp3 < 1 + ULTRAPOS/17 * 11) kind = 26;
-                            else if (temp3 < 1 + ULTRAPOS/17 * 12) kind = 27;
-                            else if (temp3 < 1 + ULTRAPOS/17 * 13) kind = 28;
-                            else if (temp3 < 1 + ULTRAPOS/17 * 14) kind = 29;
-                            else if (temp3 < 1 + ULTRAPOS/17 * 15) kind = 30;
-                            else if (temp3 < 1 + ULTRAPOS/17 * 16) kind = 31;
-                            else kind = 32;
+                            int templist[] = {16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32};
+                            kind = rspick(templist, 17);
                         }
                         else {
                             type = 2;
                             unmet_count = unmet_count + 1;
-                            if (temp3 < 1 + ULTRAPOS/9 * 5) kind = 33;
-                            else if (temp3 < 1 + ULTRAPOS/9) kind = 34;
-                            else if (temp3 < 1 + ULTRAPOS/6) kind = 35;
-                            else if (temp3 < 1 + ULTRAPOS/9 * 2) kind = 36;
-                            else if (temp3 < 1 + ULTRAPOS/18 * 5) kind = 37;
-                            else if (temp3 < 1 + ULTRAPOS/3) kind = 38;
-                            else if (temp3 < 1 + ULTRAPOS/18 * 7) kind = 39;
-                            else if (temp3 < 1 + ULTRAPOS/9 * 4) kind = 40;
-                            else if (temp3 < 1 + ULTRAPOS/2) kind = 41;
-                            else if (temp3 < 1 + ULTRAPOS/9 * 5) kind = 42;
-                            else if (temp3 < 1 + ULTRAPOS/18 * 11) kind = 43;
-                            else if (temp3 < 1 + ULTRAPOS/3 * 2) kind = 44;
-                            else if (temp3 < 1 + ULTRAPOS/18 * 13) kind = 45;
-                            else if (temp3 < 1 + ULTRAPOS/9 * 7) kind = 46;
-                            else if (temp3 < 1 + ULTRAPOS/6 * 5) kind = 47;
-                            else if (temp3 < 1 + ULTRAPOS/9 * 8) kind = 48;
-                            else if (temp3 < 1 + ULTRAPOS/18 * 17) kind = 49;
-                            else kind = 50;
+                            int templist[] = {33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50};
+                            kind = rspick(templist, 18);
                         }
                     }
                 }
@@ -3511,24 +3215,13 @@ int main() {
                         five_star_assurance_number = 0;
                         if (temp2 < 1 + ULTRAPOS/2) {
                             type = 1;
-                            if (temp3 < 1 + ULTRAPOS/5) kind = 1;
-                            else if (temp3 < 1 + ULTRAPOS/5 * 2) kind = 2;
-                            else if (temp3 < 1 + ULTRAPOS/5 * 3) kind = 3;
-                            else if (temp3 < 1 + ULTRAPOS/5 * 4) kind = 4;
-                            else kind = 5;
+                            int templist[] = {1, 2, 3, 4, 5};
+                            kind = rspick(templist, 5);
                         }
                         else {
                             type = 2;
-                            if (temp3 < 1 + ULTRAPOS/10) kind = 6;
-                            else if (temp3 < 1 + ULTRAPOS/5) kind = 7;
-                            else if (temp3 < 1 + ULTRAPOS/10 * 3) kind = 8;
-                            else if (temp3 < 1 + ULTRAPOS/5 * 2) kind = 9;
-                            else if (temp3 < 1 + ULTRAPOS/2) kind = 10;
-                            else if (temp3 < 1 + ULTRAPOS/5 * 3) kind = 11;
-                            else if (temp3 < 1 + ULTRAPOS/10 * 7) kind = 12;
-                            else if (temp3 < 1 + ULTRAPOS/5 * 4) kind = 13;
-                            else if (temp3 < 1 + ULTRAPOS/10 * 9) kind = 14;
-                            else kind = 15;
+                            int templist[] = {6, 7, 8, 9, 10, 11, 12, 13, 14, 15};
+                            kind = rspick(templist, 10);
                         }
                 }
                 std::cout << count + 1 << "(" << five_star_assurance_number << ")" << " ";
@@ -3668,6 +3361,7 @@ int main() {
                 four_star_assurance_number = four_star_assurance_number + 1;
             }
         }
+        /*
         if (chosen_banner == 4 && chosen_event == 1) {
             while (wishes_number > 0) {
                 long long int temp1 = generator() % ULTRAPOS + 1;
@@ -3690,11 +3384,8 @@ int main() {
                         star = 5;
                         five_count = five_count + 1;
                         type = 1;
-                        if (temp3 < 1 + ULTRAPOS/5) kind = 1;
-                        else if (temp3 < 1 + ULTRAPOS/5 * 2) kind = 2;
-                        else if (temp3 < 1 + ULTRAPOS/5 * 3) kind = 3;
-                        else if (temp3 < 1 + ULTRAPOS/5 * 4) kind = 4;
-                        else kind = 5;
+                        int templist[] = {1, 2, 3, 4, 5};
+                        kind = rspick(templist, 5);
                     }
                     else if (temp1 < 1 + ULTRAPOS / 1000 * 57) {
                         star = 4;
