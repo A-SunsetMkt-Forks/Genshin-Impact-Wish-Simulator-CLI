@@ -10,7 +10,6 @@ using namespace std;
 unsigned int seed = (unsigned int) std::chrono::high_resolution_clock::now().time_since_epoch().count();
 std::mt19937_64 generator(seed);
 
-long long int pcount[128] = {0};
 string pname[128] = {
                 "Keqing",
                 "Mona",
@@ -168,10 +167,11 @@ int main() {
     int quit = 1;
     long long int count = 0;
     long long int five_count = 0;
+    long long int five_count_c = 0;
+    long long int five_count_w = 0;
     long long int four_count = 0;
-    int threshold = 17;
-    double unmet = 17.1;
-    int unmet_count = 0;
+    long long int four_count_c = 0;
+    long long int four_count_w = 0;
     int is_noelle = 1;
     int ave_fives = 0;
     int max_fives = 1;
@@ -180,6 +180,11 @@ int main() {
     long long int min_fivesth = 1;
     long long int max_fivecount = 1;
     long long int min_fivecount = 1;
+    long long int unmet4_c = 0;
+    long long int unmet4_w = 0;
+    long long int unmet5_c = 0;
+    long long int unmet5_w = 0;
+    long long int pcount[128] = {0};
     enter_chosen_banner:
     chosen_banner = 0;
     std::cout << "Choose Your Wishes (Banners):" << endl;
@@ -261,6 +266,7 @@ int main() {
         if (chosen_banner == 4 && chosen_event == 1 && wishes_number != 10) { wishes_number = 0; std::cout << "Invalid number of wishes!" << endl; goto enter_wishes_number; }
         //if (!(wishes_number == -1||wishes_number == 10||wishes_number == 1)){ wishes_number = 0; std::cout << "Invalid number of wishes!" << endl; goto enter_wishes_number; }
         auto start = std::chrono::steady_clock::now();
+        /*
         if (chosen_banner == 1 && chosen_event == 11) {
             while (wishes_number > 0) {
                 long long int temp1 = generator() % ULTRAPOS + 1;
@@ -774,7 +780,6 @@ int main() {
                 four_star_assurance_number = four_star_assurance_number + 1;
             }
         }
-        /*
         if (chosen_banner == 1 && chosen_event == 12) {
             while (wishes_number > 0) {
                 long long int temp1 = generator() % ULTRAPOS + 1;
@@ -2948,47 +2953,131 @@ int main() {
 
         if (chosen_banner == 3 && chosen_event == 3) {
             while (wishes_number > 0) {
-                long long int temp1 = generator() % ULTRAPOS + 1;
-                long long int temp2 = generator() % ULTRAPOS + 1;
+                long long int temp1 = generator() % ULTRAPOS;
+                long long int temp2 = generator() % ULTRAPOS;
                 int star = 0; //4-star or 5-star
                 int type = 0; //Up or non-up, character or weapon
                 int kind = 0; //which exactly
-                if (unmet_count > threshold) unmet = (double)unmet_count;
                 if (five_star_assurance_number < 74 && four_star_assurance_number < 9) {
-                    if (temp1 < 1 + ULTRAPOS/1000 * 6) {
+                    if (temp1 < ULTRAPOS/1000 * 6) {
                         star = 5;
                         five_count = five_count + 1;
                         ave_fives = ave_fives + five_star_assurance_number;
                         if (five_star_assurance_number > max_fives) { max_fives = five_star_assurance_number; max_fivesth = five_count; max_fivecount = count; }
                         if (five_star_assurance_number < min_fives) { min_fives = five_star_assurance_number; min_fivesth = five_count; min_fivecount = count; }
                         five_star_assurance_number = 0;
-                        if (temp2 < 1 + ULTRAPOS/2) {
-                            type = 1;
-                            int templist[] = {1, 2, 3, 4, 5};
-                            kind = rspick(templist, 5);
+                        if (unmet5_c < 148 && unmet5_w < 148) {
+                            if (temp2 < ULTRAPOS/2) {
+                                type = 1;
+                                five_count_c ++;
+                                unmet5_w ++;
+                                unmet5_c = 0;
+                                int templist[] = {1, 2, 3, 4, 5};
+                                kind = rspick(templist, 5);
+                            }
+                            else {
+                                type = 2;
+                                five_count_w ++;
+                                unmet5_c ++;
+                                unmet5_w = 0;
+                                int templist[] = {6, 7, 8, 9, 10, 11, 12, 13, 14, 15};
+                                kind = rspick(templist, 10);
+                            }
+                        }
+                        else if (unmet5_c > 147){
+                            if (temp2 < (long long int) ULTRAPOS * (1 + 1.0 / (1468 - 10 * unmet5_c))) {
+                                type = 1;
+                                five_count_c ++;
+                                unmet5_w ++;
+                                unmet5_c = 0;
+                                int templist[] = {1, 2, 3, 4, 5};
+                                kind = rspick(templist, 5);
+                            }
+                            else {
+                                type = 2;
+                                five_count_w ++;
+                                unmet5_c ++;
+                                unmet5_w = 0;
+                                int templist[] = {6, 7, 8, 9, 10, 11, 12, 13, 14, 15};
+                                kind = rspick(templist, 10);
+                            }
                         }
                         else {
-                            type = 2;
-                            int templist[] = {6, 7, 8, 9, 10, 11, 12, 13, 14, 15};
-                            kind = rspick(templist, 10);
+                            if (temp2 < (long long int) ULTRAPOS * (1 + 1.0 / (1468 - 10 * unmet5_w))) {
+                                type = 2;
+                                five_count_w ++;
+                                unmet5_c ++;
+                                unmet5_w = 0;
+                                int templist[] = {6, 7, 8, 9, 10, 11, 12, 13, 14, 15};
+                                kind = rspick(templist, 10);
+                            }
+                            else {
+                                type = 1;
+                                five_count_c ++;
+                                unmet5_w ++;
+                                unmet5_c = 0;
+                                int templist[] = {1, 2, 3, 4, 5};
+                                kind = rspick(templist, 5);
+                            }
                         }
                     }
-                    else if (temp1 < 1 + ULTRAPOS/1000 * 57) {
+                    else if (temp1 < ULTRAPOS/1000 * 57) {
                         star = 4;
                         four_count = four_count + 1;
                         four_star_assurance_number = 0;
-                        if (temp2 < 1 + ULTRAPOS/2 * (int)(10 * (unmet - threshold))) {
-                            type = 1;
-                            unmet_count = 0;
-                            unmet = (double)17.1;
-                            int templist[] = {16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32};
-                            kind = rspick(templist, 17);
+                        if (unmet4_c < 18 && unmet4_w < 18) {
+                            if (temp2 < ULTRAPOS/2) {
+                                type = 1;
+                                four_count_c ++;
+                                unmet4_w ++;
+                                unmet4_c = 0;
+                                int templist[] = {16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32};
+                                kind = rspick(templist, 17);
+                            }
+                            else {
+                                type = 2;
+                                four_count_w ++;
+                                unmet4_c ++;
+                                unmet4_w = 0;
+                                int templist[] = {33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50};
+                                kind = rspick(templist, 18);
+                            }
+                        }
+                        else if (unmet4_c > 17) {
+                            if (temp2 < (long long int) ULTRAPOS * (1 + 1.0 / (168 - 10 * unmet4_c))) {
+                                type = 1;
+                                four_count_c ++;
+                                unmet4_w ++;
+                                unmet4_c = 0;
+                                int templist[] = {16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32};
+                                kind = rspick(templist, 17);
+                            }
+                            else {
+                                type = 2;
+                                four_count_w ++;
+                                unmet4_c ++;
+                                unmet4_w = 0;
+                                int templist[] = {33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50};
+                                kind = rspick(templist, 18);
+                            }
                         }
                         else {
-                            type = 2;
-                            unmet_count = unmet_count + 1;
-                            int templist[] = {33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50};
-                            kind = rspick(templist, 18);
+                            if (temp2 < (long long int) ULTRAPOS * (1 + 1.0 / (168 - 10 * unmet4_w))) {
+                                type = 2;
+                                four_count_w ++;
+                                unmet4_c ++;
+                                unmet4_w = 0;
+                                int templist[] = {33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50};
+                                kind = rspick(templist, 18);
+                            }
+                            else {
+                                type = 1;
+                                four_count_c ++;
+                                unmet4_w ++;
+                                unmet4_c = 0;
+                                int templist[] = {16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32};
+                                kind = rspick(templist, 17);
+                            }
                         }
                     }
                     else {
@@ -2999,40 +3088,125 @@ int main() {
                     }
                 }
                 else if (five_star_assurance_number < 74 && four_star_assurance_number == 9) {
-                    if (temp1 < 1 + ULTRAPOS/1000 * 6) {
+                    if (temp1 < ULTRAPOS/1000 * 6) {
                         star = 5;
                         five_count = five_count + 1;
                         ave_fives = ave_fives + five_star_assurance_number;
                         if (five_star_assurance_number > max_fives) { max_fives = five_star_assurance_number; max_fivesth = five_count; max_fivecount = count; }
                         if (five_star_assurance_number < min_fives) { min_fives = five_star_assurance_number; min_fivesth = five_count; min_fivecount = count; }
                         five_star_assurance_number = 0;
-                        if (temp2 < 1 + ULTRAPOS/2) {
-                            type = 1;
-                            int templist[] = {1, 2, 3, 4, 5};
-                            kind = rspick(templist, 5);
+                        if (unmet5_c < 148 && unmet5_w < 148) {
+                            if (temp2 < ULTRAPOS/2) {
+                                type = 1;
+                                five_count_c ++;
+                                unmet5_w ++;
+                                unmet5_c = 0;
+                                int templist[] = {1, 2, 3, 4, 5};
+                                kind = rspick(templist, 5);
+                            }
+                            else {
+                                type = 2;
+                                five_count_w ++;
+                                unmet5_c ++;
+                                unmet5_w = 0;
+                                int templist[] = {6, 7, 8, 9, 10, 11, 12, 13, 14, 15};
+                                kind = rspick(templist, 10);
+                            }
+                        }
+                        else if (unmet5_c > 147){
+                            if (temp2 < (long long int) ULTRAPOS * (1 + 1.0 / (1468 - 10 * unmet5_c))) {
+                                type = 1;
+                                five_count_c ++;
+                                unmet5_w ++;
+                                unmet5_c = 0;
+                                int templist[] = {1, 2, 3, 4, 5};
+                                kind = rspick(templist, 5);
+                            }
+                            else {
+                                type = 2;
+                                five_count_w ++;
+                                unmet5_c ++;
+                                unmet5_w = 0;
+                                int templist[] = {6, 7, 8, 9, 10, 11, 12, 13, 14, 15};
+                                kind = rspick(templist, 10);
+                            }
                         }
                         else {
-                            type = 2;
-                            int templist[] = {6, 7, 8, 9, 10, 11, 12, 13, 14, 15};
-                            kind = rspick(templist, 10);
+                            if (temp2 < (long long int) ULTRAPOS * (1 + 1.0 / (1468 - 10 * unmet5_w))) {
+                                type = 2;
+                                five_count_w ++;
+                                unmet5_c ++;
+                                unmet5_w = 0;
+                                int templist[] = {6, 7, 8, 9, 10, 11, 12, 13, 14, 15};
+                                kind = rspick(templist, 10);
+                            }
+                            else {
+                                type = 1;
+                                five_count_c ++;
+                                unmet5_w ++;
+                                unmet5_c = 0;
+                                int templist[] = {1, 2, 3, 4, 5};
+                                kind = rspick(templist, 5);
+                            }
                         }
                     }
-                    else if (temp1 < 1 + ULTRAPOS/1000 * 567) {
+                    else if (temp1 < ULTRAPOS/1000 * 567) {
                         star = 4;
                         four_count = four_count + 1;
                         four_star_assurance_number = 0;
-                        if (temp2 < 1 + ULTRAPOS/2 * (int)(10 * (unmet - threshold))) {
-                            type = 1;
-                            unmet_count = 0;
-                            unmet = (double)17.1;
-                            int templist[] = {16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32};
-                            kind = rspick(templist, 17);
+                        if (unmet4_c < 18 && unmet4_w < 18) {
+                            if (temp2 < ULTRAPOS/2) {
+                                type = 1;
+                                four_count_c ++;
+                                unmet4_w ++;
+                                unmet4_c = 0;
+                                int templist[] = {16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32};
+                                kind = rspick(templist, 17);
+                            }
+                            else {
+                                type = 2;
+                                four_count_w ++;
+                                unmet4_c ++;
+                                unmet4_w = 0;
+                                int templist[] = {33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50};
+                                kind = rspick(templist, 18);
+                            }
+                        }
+                        else if (unmet4_c > 17) {
+                            if (temp2 < (long long int) ULTRAPOS * (1 + 1.0 / (168 - 10 * unmet4_c))) {
+                                type = 1;
+                                four_count_c ++;
+                                unmet4_w ++;
+                                unmet4_c = 0;
+                                int templist[] = {16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32};
+                                kind = rspick(templist, 17);
+                            }
+                            else {
+                                type = 2;
+                                four_count_w ++;
+                                unmet4_c ++;
+                                unmet4_w = 0;
+                                int templist[] = {33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50};
+                                kind = rspick(templist, 18);
+                            }
                         }
                         else {
-                            type = 2;
-                            unmet_count = unmet_count + 1;
-                            int templist[] = {33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50};
-                            kind = rspick(templist, 18);
+                            if (temp2 < (long long int) ULTRAPOS * (1 + 1.0 / (168 - 10 * unmet4_w))) {
+                                type = 2;
+                                four_count_w ++;
+                                unmet4_c ++;
+                                unmet4_w = 0;
+                                int templist[] = {33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50};
+                                kind = rspick(templist, 18);
+                            }
+                            else {
+                                type = 1;
+                                four_count_c ++;
+                                unmet4_w ++;
+                                unmet4_c = 0;
+                                int templist[] = {16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32};
+                                kind = rspick(templist, 17);
+                            }
                         }
                     }
                     else {
@@ -3043,78 +3217,248 @@ int main() {
                     }
                 }
                 else if (five_star_assurance_number < 74 && four_star_assurance_number > 9) {
-                    if (temp1 < 1 + ULTRAPOS/1000 * 6) {
+                    if (temp1 < ULTRAPOS/1000 * 6) {
                         star = 5;
                         five_count = five_count + 1;
                         ave_fives = ave_fives + five_star_assurance_number;
                         if (five_star_assurance_number > max_fives) { max_fives = five_star_assurance_number; max_fivesth = five_count; max_fivecount = count; }
                         if (five_star_assurance_number < min_fives) { min_fives = five_star_assurance_number; min_fivesth = five_count; min_fivecount = count; }
                         five_star_assurance_number = 0;
-                        if (temp2 < 1 + ULTRAPOS/2) {
-                            type = 1;
-                            int templist[] = {1, 2, 3, 4, 5};
-                            kind = rspick(templist, 5);
+                        if (unmet5_c < 148 && unmet5_w < 148) {
+                            if (temp2 < ULTRAPOS/2) {
+                                type = 1;
+                                five_count_c ++;
+                                unmet5_w ++;
+                                unmet5_c = 0;
+                                int templist[] = {1, 2, 3, 4, 5};
+                                kind = rspick(templist, 5);
+                            }
+                            else {
+                                type = 2;
+                                five_count_w ++;
+                                unmet5_c ++;
+                                unmet5_w = 0;
+                                int templist[] = {6, 7, 8, 9, 10, 11, 12, 13, 14, 15};
+                                kind = rspick(templist, 10);
+                            }
+                        }
+                        else if (unmet5_c > 147){
+                            if (temp2 < (long long int) ULTRAPOS * (1 + 1.0 / (1468 - 10 * unmet5_c))) {
+                                type = 1;
+                                five_count_c ++;
+                                unmet5_w ++;
+                                unmet5_c = 0;
+                                int templist[] = {1, 2, 3, 4, 5};
+                                kind = rspick(templist, 5);
+                            }
+                            else {
+                                type = 2;
+                                five_count_w ++;
+                                unmet5_c ++;
+                                unmet5_w = 0;
+                                int templist[] = {6, 7, 8, 9, 10, 11, 12, 13, 14, 15};
+                                kind = rspick(templist, 10);
+                            }
                         }
                         else {
-                            type = 2;
-                            int templist[] = {6, 7, 8, 9, 10, 11, 12, 13, 14, 15};
-                            kind = rspick(templist, 10);
+                            if (temp2 < (long long int) ULTRAPOS * (1 + 1.0 / (1468 - 10 * unmet5_w))) {
+                                type = 2;
+                                five_count_w ++;
+                                unmet5_c ++;
+                                unmet5_w = 0;
+                                int templist[] = {6, 7, 8, 9, 10, 11, 12, 13, 14, 15};
+                                kind = rspick(templist, 10);
+                            }
+                            else {
+                                type = 1;
+                                five_count_c ++;
+                                unmet5_w ++;
+                                unmet5_c = 0;
+                                int templist[] = {1, 2, 3, 4, 5};
+                                kind = rspick(templist, 5);
+                            }
                         }
                     }
                     else {
                         star = 4;
                         four_count = four_count + 1;
                         four_star_assurance_number = 0;
-                        if (temp2 < 1 + ULTRAPOS/2 * (int)(10 * (unmet - threshold))) {
-                            type = 1;
-                            unmet_count = 0;
-                            unmet = (double)17.1;
-                            int templist[] = {16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32};
-                            kind = rspick(templist, 17);
+                        if (unmet4_c < 18 && unmet4_w < 18) {
+                            if (temp2 < ULTRAPOS/2) {
+                                type = 1;
+                                four_count_c ++;
+                                unmet4_w ++;
+                                unmet4_c = 0;
+                                int templist[] = {16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32};
+                                kind = rspick(templist, 17);
+                            }
+                            else {
+                                type = 2;
+                                four_count_w ++;
+                                unmet4_c ++;
+                                unmet4_w = 0;
+                                int templist[] = {33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50};
+                                kind = rspick(templist, 18);
+                            }
+                        }
+                        else if (unmet4_c > 17) {
+                            if (temp2 < (long long int) ULTRAPOS * (1 + 1.0 / (168 - 10 * unmet4_c))) {
+                                type = 1;
+                                four_count_c ++;
+                                unmet4_w ++;
+                                unmet4_c = 0;
+                                int templist[] = {16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32};
+                                kind = rspick(templist, 17);
+                            }
+                            else {
+                                type = 2;
+                                four_count_w ++;
+                                unmet4_c ++;
+                                unmet4_w = 0;
+                                int templist[] = {33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50};
+                                kind = rspick(templist, 18);
+                            }
                         }
                         else {
-                            type = 2;
-                            unmet_count = unmet_count + 1;
-                            int templist[] = {33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50};
-                            kind = rspick(templist, 18);
+                            if (temp2 < (long long int) ULTRAPOS * (1 + 1.0 / (168 - 10 * unmet4_w))) {
+                                type = 2;
+                                four_count_w ++;
+                                unmet4_c ++;
+                                unmet4_w = 0;
+                                int templist[] = {33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50};
+                                kind = rspick(templist, 18);
+                            }
+                            else {
+                                type = 1;
+                                four_count_c ++;
+                                unmet4_w ++;
+                                unmet4_c = 0;
+                                int templist[] = {16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32};
+                                kind = rspick(templist, 17);
+                            }
                         }
                     }
                 }
                 else if (five_star_assurance_number < 90 && five_star_assurance_number > 73 && four_star_assurance_number < 9) {
-                    if (temp1 < 1 + ULTRAPOS/1000 * 6 + (five_star_assurance_number - 73) * ULTRAPOS/1000 * 60) {
+                    if (temp1 < ULTRAPOS/1000 * 6 + (five_star_assurance_number - 73) * ULTRAPOS/1000 * 60) {
                         star = 5;
                         five_count = five_count + 1;
                         ave_fives = ave_fives + five_star_assurance_number;
                         if (five_star_assurance_number > max_fives) { max_fives = five_star_assurance_number; max_fivesth = five_count; max_fivecount = count; }
                         if (five_star_assurance_number < min_fives) { min_fives = five_star_assurance_number; min_fivesth = five_count; min_fivecount = count; }
                         five_star_assurance_number = 0;
-                        if (temp2 < 1 + ULTRAPOS/2) {
-                            type = 1;
-                            int templist[] = {1, 2, 3, 4, 5};
-                            kind = rspick(templist, 5);
+                        if (unmet5_c < 148 && unmet5_w < 148) {
+                            if (temp2 < ULTRAPOS/2) {
+                                type = 1;
+                                five_count_c ++;
+                                unmet5_w ++;
+                                unmet5_c = 0;
+                                int templist[] = {1, 2, 3, 4, 5};
+                                kind = rspick(templist, 5);
+                            }
+                            else {
+                                type = 2;
+                                five_count_w ++;
+                                unmet5_c ++;
+                                unmet5_w = 0;
+                                int templist[] = {6, 7, 8, 9, 10, 11, 12, 13, 14, 15};
+                                kind = rspick(templist, 10);
+                            }
+                        }
+                        else if (unmet5_c > 147){
+                            if (temp2 < (long long int) ULTRAPOS * (1 + 1.0 / (1468 - 10 * unmet5_c))) {
+                                type = 1;
+                                five_count_c ++;
+                                unmet5_w ++;
+                                unmet5_c = 0;
+                                int templist[] = {1, 2, 3, 4, 5};
+                                kind = rspick(templist, 5);
+                            }
+                            else {
+                                type = 2;
+                                five_count_w ++;
+                                unmet5_c ++;
+                                unmet5_w = 0;
+                                int templist[] = {6, 7, 8, 9, 10, 11, 12, 13, 14, 15};
+                                kind = rspick(templist, 10);
+                            }
                         }
                         else {
-                            type = 2;
-                            int templist[] = {6, 7, 8, 9, 10, 11, 12, 13, 14, 15};
-                            kind = rspick(templist, 10);
+                            if (temp2 < (long long int) ULTRAPOS * (1 + 1.0 / (1468 - 10 * unmet5_w))) {
+                                type = 2;
+                                five_count_w ++;
+                                unmet5_c ++;
+                                unmet5_w = 0;
+                                int templist[] = {6, 7, 8, 9, 10, 11, 12, 13, 14, 15};
+                                kind = rspick(templist, 10);
+                            }
+                            else {
+                                type = 1;
+                                five_count_c ++;
+                                unmet5_w ++;
+                                unmet5_c = 0;
+                                int templist[] = {1, 2, 3, 4, 5};
+                                kind = rspick(templist, 5);
+                            }
                         }
                     }
-                    else if (temp1 < 1 + ULTRAPOS/1000 * 57 + (five_star_assurance_number - 73) * ULTRAPOS/1000 * 60){
+                    else if (temp1 < ULTRAPOS/1000 * 57 + (five_star_assurance_number - 73) * ULTRAPOS/1000 * 60){
                         star = 4;
                         four_count = four_count + 1;
                         four_star_assurance_number = 0;
-                        if (temp2 < 1 + ULTRAPOS/2 * (int)(10 * (unmet - threshold))) {
-                            type = 1;
-                            unmet_count = 0;
-                            unmet = (double)17.1;
-                            int templist[] = {16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32};
-                            kind = rspick(templist, 17);
+                        if (unmet4_c < 18 && unmet4_w < 18) {
+                            if (temp2 < ULTRAPOS/2) {
+                                type = 1;
+                                four_count_c ++;
+                                unmet4_w ++;
+                                unmet4_c = 0;
+                                int templist[] = {16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32};
+                                kind = rspick(templist, 17);
+                            }
+                            else {
+                                type = 2;
+                                four_count_w ++;
+                                unmet4_c ++;
+                                unmet4_w = 0;
+                                int templist[] = {33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50};
+                                kind = rspick(templist, 18);
+                            }
+                        }
+                        else if (unmet4_c > 17) {
+                            if (temp2 < (long long int) ULTRAPOS * (1 + 1.0 / (168 - 10 * unmet4_c))) {
+                                type = 1;
+                                four_count_c ++;
+                                unmet4_w ++;
+                                unmet4_c = 0;
+                                int templist[] = {16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32};
+                                kind = rspick(templist, 17);
+                            }
+                            else {
+                                type = 2;
+                                four_count_w ++;
+                                unmet4_c ++;
+                                unmet4_w = 0;
+                                int templist[] = {33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50};
+                                kind = rspick(templist, 18);
+                            }
                         }
                         else {
-                            type = 2;
-                            unmet_count = unmet_count + 1;
-                            int templist[] = {33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50};
-                            kind = rspick(templist, 18);
+                            if (temp2 < (long long int) ULTRAPOS * (1 + 1.0 / (168 - 10 * unmet4_w))) {
+                                type = 2;
+                                four_count_w ++;
+                                unmet4_c ++;
+                                unmet4_w = 0;
+                                int templist[] = {33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50};
+                                kind = rspick(templist, 18);
+                            }
+                            else {
+                                type = 1;
+                                four_count_c ++;
+                                unmet4_w ++;
+                                unmet4_c = 0;
+                                int templist[] = {16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32};
+                                kind = rspick(templist, 17);
+                            }
                         }
                     }
                     else {
@@ -3125,40 +3469,125 @@ int main() {
                     }
                 }
                 else if (five_star_assurance_number < 90 && five_star_assurance_number > 73 && four_star_assurance_number == 9) {
-                    if (temp1 < 1 + ULTRAPOS/1000 * 6 + (five_star_assurance_number - 73) * ULTRAPOS/1000 * 60) {
+                    if (temp1 < ULTRAPOS/1000 * 6 + (five_star_assurance_number - 73) * ULTRAPOS/1000 * 60) {
                         star = 5;
                         five_count = five_count + 1;
                         ave_fives = ave_fives + five_star_assurance_number;
                         if (five_star_assurance_number > max_fives) { max_fives = five_star_assurance_number; max_fivesth = five_count; max_fivecount = count; }
                         if (five_star_assurance_number < min_fives) { min_fives = five_star_assurance_number; min_fivesth = five_count; min_fivecount = count; }
                         five_star_assurance_number = 0;
-                        if (temp2 < 1 + ULTRAPOS/2) {
-                            type = 1;
-                            int templist[] = {1, 2, 3, 4, 5};
-                            kind = rspick(templist, 5);
+                        if (unmet5_c < 148 && unmet5_w < 148) {
+                            if (temp2 < ULTRAPOS/2) {
+                                type = 1;
+                                five_count_c ++;
+                                unmet5_w ++;
+                                unmet5_c = 0;
+                                int templist[] = {1, 2, 3, 4, 5};
+                                kind = rspick(templist, 5);
+                            }
+                            else {
+                                type = 2;
+                                five_count_w ++;
+                                unmet5_c ++;
+                                unmet5_w = 0;
+                                int templist[] = {6, 7, 8, 9, 10, 11, 12, 13, 14, 15};
+                                kind = rspick(templist, 10);
+                            }
+                        }
+                        else if (unmet5_c > 147){
+                            if (temp2 < (long long int) ULTRAPOS * (1 + 1.0 / (1468 - 10 * unmet5_c))) {
+                                type = 1;
+                                five_count_c ++;
+                                unmet5_w ++;
+                                unmet5_c = 0;
+                                int templist[] = {1, 2, 3, 4, 5};
+                                kind = rspick(templist, 5);
+                            }
+                            else {
+                                type = 2;
+                                five_count_w ++;
+                                unmet5_c ++;
+                                unmet5_w = 0;
+                                int templist[] = {6, 7, 8, 9, 10, 11, 12, 13, 14, 15};
+                                kind = rspick(templist, 10);
+                            }
                         }
                         else {
-                            type = 2;
-                            int templist[] = {6, 7, 8, 9, 10, 11, 12, 13, 14, 15};
-                            kind = rspick(templist, 10);
+                            if (temp2 < (long long int) ULTRAPOS * (1 + 1.0 / (1468 - 10 * unmet5_w))) {
+                                type = 2;
+                                five_count_w ++;
+                                unmet5_c ++;
+                                unmet5_w = 0;
+                                int templist[] = {6, 7, 8, 9, 10, 11, 12, 13, 14, 15};
+                                kind = rspick(templist, 10);
+                            }
+                            else {
+                                type = 1;
+                                five_count_c ++;
+                                unmet5_w ++;
+                                unmet5_c = 0;
+                                int templist[] = {1, 2, 3, 4, 5};
+                                kind = rspick(templist, 5);
+                            }
                         }
                     }
-                    else if (temp1 < 1 + ULTRAPOS/1000 * 567 + (five_star_assurance_number - 73) * ULTRAPOS/1000 * 60) {
+                    else if (temp1 < ULTRAPOS/1000 * 567 + (five_star_assurance_number - 73) * ULTRAPOS/1000 * 60) {
                         star = 4;
                         four_count = four_count + 1;
                         four_star_assurance_number = 0;
-                        if (temp2 < 1 + ULTRAPOS/2 * (int)(10 * (unmet - threshold))) {
-                            type = 1;
-                            unmet_count = 0;
-                            unmet = (double)17.1;
-                            int templist[] = {16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32};
-                            kind = rspick(templist, 17);
+                        if (unmet4_c < 18 && unmet4_w < 18) {
+                            if (temp2 < ULTRAPOS/2) {
+                                type = 1;
+                                four_count_c ++;
+                                unmet4_w ++;
+                                unmet4_c = 0;
+                                int templist[] = {16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32};
+                                kind = rspick(templist, 17);
+                            }
+                            else {
+                                type = 2;
+                                four_count_w ++;
+                                unmet4_c ++;
+                                unmet4_w = 0;
+                                int templist[] = {33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50};
+                                kind = rspick(templist, 18);
+                            }
+                        }
+                        else if (unmet4_c > 17) {
+                            if (temp2 < (long long int) ULTRAPOS * (1 + 1.0 / (168 - 10 * unmet4_c))) {
+                                type = 1;
+                                four_count_c ++;
+                                unmet4_w ++;
+                                unmet4_c = 0;
+                                int templist[] = {16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32};
+                                kind = rspick(templist, 17);
+                            }
+                            else {
+                                type = 2;
+                                four_count_w ++;
+                                unmet4_c ++;
+                                unmet4_w = 0;
+                                int templist[] = {33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50};
+                                kind = rspick(templist, 18);
+                            }
                         }
                         else {
-                            type = 2;
-                            unmet_count = unmet_count + 1;
-                            int templist[] = {33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50};
-                            kind = rspick(templist, 18);
+                            if (temp2 < (long long int) ULTRAPOS * (1 + 1.0 / (168 - 10 * unmet4_w))) {
+                                type = 2;
+                                four_count_w ++;
+                                unmet4_c ++;
+                                unmet4_w = 0;
+                                int templist[] = {33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50};
+                                kind = rspick(templist, 18);
+                            }
+                            else {
+                                type = 1;
+                                four_count_c ++;
+                                unmet4_w ++;
+                                unmet4_c = 0;
+                                int templist[] = {16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32};
+                                kind = rspick(templist, 17);
+                            }
                         }
                     }
                     else {
@@ -3169,40 +3598,125 @@ int main() {
                     }
                 }
                 else if (five_star_assurance_number < 90 && five_star_assurance_number > 73 && four_star_assurance_number > 9) {
-                    if (temp1 < 1 + ULTRAPOS/1000 * 6 + (five_star_assurance_number - 73) * ULTRAPOS/1000 * 60) {
+                    if (temp1 < ULTRAPOS/1000 * 6 + (five_star_assurance_number - 73) * ULTRAPOS/1000 * 60) {
                         star = 5;
                         five_count = five_count + 1;
                         ave_fives = ave_fives + five_star_assurance_number;
                         if (five_star_assurance_number > max_fives) { max_fives = five_star_assurance_number; max_fivesth = five_count; max_fivecount = count; }
                         if (five_star_assurance_number < min_fives) { min_fives = five_star_assurance_number; min_fivesth = five_count; min_fivecount = count; }
                         five_star_assurance_number = 0;
-                        if (temp2 < 1 + ULTRAPOS/2) {
-                            type = 1;
-                            int templist[] = {1, 2, 3, 4, 5};
-                            kind = rspick(templist, 5);
+                        if (unmet5_c < 148 && unmet5_w < 148) {
+                            if (temp2 < ULTRAPOS/2) {
+                                type = 1;
+                                five_count_c ++;
+                                unmet5_w ++;
+                                unmet5_c = 0;
+                                int templist[] = {1, 2, 3, 4, 5};
+                                kind = rspick(templist, 5);
+                            }
+                            else {
+                                type = 2;
+                                five_count_w ++;
+                                unmet5_c ++;
+                                unmet5_w = 0;
+                                int templist[] = {6, 7, 8, 9, 10, 11, 12, 13, 14, 15};
+                                kind = rspick(templist, 10);
+                            }
+                        }
+                        else if (unmet5_c > 147){
+                            if (temp2 < (long long int) ULTRAPOS * (1 + 1.0 / (1468 - 10 * unmet5_c))) {
+                                type = 1;
+                                five_count_c ++;
+                                unmet5_w ++;
+                                unmet5_c = 0;
+                                int templist[] = {1, 2, 3, 4, 5};
+                                kind = rspick(templist, 5);
+                            }
+                            else {
+                                type = 2;
+                                five_count_w ++;
+                                unmet5_c ++;
+                                unmet5_w = 0;
+                                int templist[] = {6, 7, 8, 9, 10, 11, 12, 13, 14, 15};
+                                kind = rspick(templist, 10);
+                            }
                         }
                         else {
-                            type = 2;
-                            int templist[] = {6, 7, 8, 9, 10, 11, 12, 13, 14, 15};
-                            kind = rspick(templist, 10);
+                            if (temp2 < (long long int) ULTRAPOS * (1 + 1.0 / (1468 - 10 * unmet5_w))) {
+                                type = 2;
+                                five_count_w ++;
+                                unmet5_c ++;
+                                unmet5_w = 0;
+                                int templist[] = {6, 7, 8, 9, 10, 11, 12, 13, 14, 15};
+                                kind = rspick(templist, 10);
+                            }
+                            else {
+                                type = 1;
+                                five_count_c ++;
+                                unmet5_w ++;
+                                unmet5_c = 0;
+                                int templist[] = {1, 2, 3, 4, 5};
+                                kind = rspick(templist, 5);
+                            }
                         }
                     }
                     else {
                         star = 4;
                         four_count = four_count + 1;
                         four_star_assurance_number = 0;
-                        if (temp2 < 1 + ULTRAPOS/2 * (int)(10 * (unmet - threshold))) {
-                            type = 1;
-                            unmet_count = 0;
-                            unmet = (double)17.1;
-                            int templist[] = {16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32};
-                            kind = rspick(templist, 17);
+                        if (unmet4_c < 18 && unmet4_w < 18) {
+                            if (temp2 < ULTRAPOS/2) {
+                                type = 1;
+                                four_count_c ++;
+                                unmet4_w ++;
+                                unmet4_c = 0;
+                                int templist[] = {16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32};
+                                kind = rspick(templist, 17);
+                            }
+                            else {
+                                type = 2;
+                                four_count_w ++;
+                                unmet4_c ++;
+                                unmet4_w = 0;
+                                int templist[] = {33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50};
+                                kind = rspick(templist, 18);
+                            }
+                        }
+                        else if (unmet4_c > 17) {
+                            if (temp2 < (long long int) ULTRAPOS * (1 + 1.0 / (168 - 10 * unmet4_c))) {
+                                type = 1;
+                                four_count_c ++;
+                                unmet4_w ++;
+                                unmet4_c = 0;
+                                int templist[] = {16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32};
+                                kind = rspick(templist, 17);
+                            }
+                            else {
+                                type = 2;
+                                four_count_w ++;
+                                unmet4_c ++;
+                                unmet4_w = 0;
+                                int templist[] = {33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50};
+                                kind = rspick(templist, 18);
+                            }
                         }
                         else {
-                            type = 2;
-                            unmet_count = unmet_count + 1;
-                            int templist[] = {33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50};
-                            kind = rspick(templist, 18);
+                            if (temp2 < (long long int) ULTRAPOS * (1 + 1.0 / (168 - 10 * unmet4_w))) {
+                                type = 2;
+                                four_count_w ++;
+                                unmet4_c ++;
+                                unmet4_w = 0;
+                                int templist[] = {33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50};
+                                kind = rspick(templist, 18);
+                            }
+                            else {
+                                type = 1;
+                                four_count_c ++;
+                                unmet4_w ++;
+                                unmet4_c = 0;
+                                int templist[] = {16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32};
+                                kind = rspick(templist, 17);
+                            }
                         }
                     }
                 }
@@ -3213,15 +3727,59 @@ int main() {
                         if (five_star_assurance_number > max_fives) { max_fives = five_star_assurance_number; max_fivesth = five_count; max_fivecount = count; }
                         if (five_star_assurance_number < min_fives) { min_fives = five_star_assurance_number; min_fivesth = five_count; min_fivecount = count; }
                         five_star_assurance_number = 0;
-                        if (temp2 < 1 + ULTRAPOS/2) {
-                            type = 1;
-                            int templist[] = {1, 2, 3, 4, 5};
-                            kind = rspick(templist, 5);
+                        if (unmet5_c < 148 && unmet5_w < 148) {
+                            if (temp2 < ULTRAPOS/2) {
+                                type = 1;
+                                five_count_c ++;
+                                unmet5_w ++;
+                                unmet5_c = 0;
+                                int templist[] = {1, 2, 3, 4, 5};
+                                kind = rspick(templist, 5);
+                            }
+                            else {
+                                type = 2;
+                                five_count_w ++;
+                                unmet5_c ++;
+                                unmet5_w = 0;
+                                int templist[] = {6, 7, 8, 9, 10, 11, 12, 13, 14, 15};
+                                kind = rspick(templist, 10);
+                            }
+                        }
+                        else if (unmet5_c > 147){
+                            if (temp2 < (long long int) ULTRAPOS * (1 + 1.0 / (1468 - 10 * unmet5_c))) {
+                                type = 1;
+                                five_count_c ++;
+                                unmet5_w ++;
+                                unmet5_c = 0;
+                                int templist[] = {1, 2, 3, 4, 5};
+                                kind = rspick(templist, 5);
+                            }
+                            else {
+                                type = 2;
+                                five_count_w ++;
+                                unmet5_c ++;
+                                unmet5_w = 0;
+                                int templist[] = {6, 7, 8, 9, 10, 11, 12, 13, 14, 15};
+                                kind = rspick(templist, 10);
+                            }
                         }
                         else {
-                            type = 2;
-                            int templist[] = {6, 7, 8, 9, 10, 11, 12, 13, 14, 15};
-                            kind = rspick(templist, 10);
+                            if (temp2 < (long long int) ULTRAPOS * (1 + 1.0 / (1468 - 10 * unmet5_w))) {
+                                type = 2;
+                                five_count_w ++;
+                                unmet5_c ++;
+                                unmet5_w = 0;
+                                int templist[] = {6, 7, 8, 9, 10, 11, 12, 13, 14, 15};
+                                kind = rspick(templist, 10);
+                            }
+                            else {
+                                type = 1;
+                                five_count_c ++;
+                                unmet5_w ++;
+                                unmet5_c = 0;
+                                int templist[] = {1, 2, 3, 4, 5};
+                                kind = rspick(templist, 5);
+                            }
                         }
                 }
                 std::cout << count + 1 << "(" << five_star_assurance_number << ")" << " ";
@@ -3644,7 +4202,8 @@ int main() {
         if(five_count == 0){
             std::cout << endl << "You have pulled " << count << " wishes." << endl
             << "5-stars:   " << five_count << "  " << five_count * 100.0 / count << "%" << endl
-            << "4-stars:   " << four_count << "  " << four_count * 100.0 / count << "%" << endl;
+            << "4-stars:   " << four_count << "  " << four_count * 100.0 / count << "%" << endl
+            << "5-star-characters : 5-star-weapons : 4-star-characters: 4-star-weapons   " << five_count_c << " : " << five_count_w << " : " << four_count_c << " : " << four_count_w << endl << endl;
             }
         else{
             std::cout << endl << "You have pulled " << count << " wishes." << endl
@@ -3652,7 +4211,8 @@ int main() {
             << "4-stars:   " << four_count << "  " << four_count * 100.0 / count << "%" << endl
             << "max non-5-stars-max:   " << max_fives << " at " << max_fivesth << "-th non-5-stars  " << max_fivecount + 1 << "-th wishes" << endl
             << "min non-5-stars-max:   " << min_fives << " at " << min_fivesth << "-th non-5-stars  " << min_fivecount + 1 << "-th wishes" << endl
-            << "ave non-5-star-max:   "<< ave_fives * 1.0 / five_count << endl << endl;
+            << "ave non-5-star-max:   "<< ave_fives * 1.0 / five_count << endl 
+            << "5-star-characters : 5-star-weapons : 4-star-characters: 4-star-weapons   " << five_count_c << " : " << five_count_w << " : " << four_count_c << " : " << four_count_w << endl << endl;
         }
         for (int iout = 0; iout < 15; iout++){if (pcount[iout] > 0) std::cout << pname[iout] << "(" << pcount[iout] << ")" << " ";}
         for (int iout = 63; iout < 71; iout++){if (pcount[iout] > 0) std::cout << pname[iout] << "(" << pcount[iout] << ")" << " ";}
