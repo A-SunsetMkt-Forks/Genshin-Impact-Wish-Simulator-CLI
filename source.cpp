@@ -4436,9 +4436,9 @@ int main() {
         }
         if (chosen_banner == 4 && chosen_event == 1) {
             while (wishes_number > 0) {
-                long long int temp1 = generator() % ULTRAPOS + 1;
-                long long int temp2 = generator() % ULTRAPOS + 1;
-                long long int temp3 = generator() % ULTRAPOS + 1;
+                long long int temp1 = generator() % ULTRAPOS;
+                long long int temp2 = generator() % ULTRAPOS;
+                long long int temp3 = generator() % ULTRAPOS;
                 int star = 0; //4-star or 5-star
                 int type = 0; //Up or non-up, character or weapon
                 int kind = 0; //which exactly
@@ -4452,7 +4452,7 @@ int main() {
                     is_noelle = 0;
                 }
                 else if (four_star_assurance_number < 9) {
-                    if (temp1 < 1 + ULTRAPOS/1000 * 6) {
+                    if (temp1 < ULTRAPOS/1000 * 6) {
                         star = 5;
                         five_count = five_count + 1;
                         ave_fives = ave_fives + five_star_assurance_number;
@@ -4464,7 +4464,7 @@ int main() {
                         int templist[] = {1, 2, 3, 4, 5};
                         kind = rspick(templist, 5);
                     }
-                    else if (temp1 < 1 + ULTRAPOS / 1000 * 57) {
+                    else if (temp1 < ULTRAPOS / 1000 * 57) {
                         star = 4;
                         four_count = four_count + 1;
                         four_star_assurance_number = 0;
@@ -4482,7 +4482,7 @@ int main() {
                     }
                 }
                 else if (four_star_assurance_number == 9) {
-                    if (temp1 < 1 + ULTRAPOS/1000 * 6) {
+                    if (temp1 < ULTRAPOS/1000 * 6) {
                         star = 5;
                         five_count = five_count + 1;
                         type = 1;
@@ -4494,7 +4494,7 @@ int main() {
                         int templist[] = {1, 2, 3, 4, 5};
                         kind = rspick(templist, 5);
                     }
-                    else if (temp1 < 1 + ULTRAPOS/1000 * 567) {
+                    else if (temp1 < ULTRAPOS/1000 * 567) {
                         star = 4;
                         four_count = four_count + 1;
                         four_star_assurance_number = 0;
@@ -4512,7 +4512,7 @@ int main() {
                     }
                 }
                 else {
-                    if (temp1 < 1 + ULTRAPOS/1000 * 6) {
+                    if (temp1 < ULTRAPOS/1000 * 6) {
                         star = 5;
                         five_count = five_count + 1;
                         type = 1;
