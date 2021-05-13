@@ -147,7 +147,7 @@ int rspick(int* kindx, int sizekind) {
     int temp221 = 0;
     for (; index < sizekind; index++)
     {
-        temp221 = generator() % (static_cast<__int64>(index) + 1);
+        temp221 = generator() % (static_cast<__int64_t>(index) + 1);
         if (temp221 < 1)
             kindout = kindx[index];
     }
@@ -1989,7 +1989,7 @@ int main() {
                         }
                     }
                     else if (five_star_assurance_number < 90 && five_star_assurance_number > 73 && four_star_assurance_number < 9) {
-                        if (temp1 < static_cast<__int64>(ULTRAPOS / 1000 * 6) + static_cast<__int64>((static_cast<__int64>(five_star_assurance_number) - 73) * static_cast<__int64>(ULTRAPOS / 1000 * 60))) {
+                        if (temp1 < static_cast<__int64_t>(ULTRAPOS / 1000 * 6) + static_cast<__int64_t>((static_cast<__int64_t>(five_star_assurance_number) - 73) * static_cast<__int64_t>(ULTRAPOS / 1000 * 60))) {
                             star = 5;
                             five_count = five_count + 1;
                             ave_fives = ave_fives + five_star_assurance_number;
@@ -2063,7 +2063,7 @@ int main() {
                                 }
                             }
                         }
-                        else if (temp1 < static_cast<__int64>(ULTRAPOS / 1000 * 57) + static_cast<__int64>((static_cast<__int64>(five_star_assurance_number) - 73) * static_cast<__int64>(ULTRAPOS / 1000 * 60))) {
+                        else if (temp1 < static_cast<__int64_t>(ULTRAPOS / 1000 * 57) + static_cast<__int64_t>((static_cast<__int64_t>(five_star_assurance_number) - 73) * static_cast<__int64_t>(ULTRAPOS / 1000 * 60))) {
                             star = 4;
                             four_count = four_count + 1;
                             four_star_assurance_number = 0;
@@ -2142,7 +2142,7 @@ int main() {
                         }
                     }
                     else if (five_star_assurance_number < 90 && five_star_assurance_number > 73 && four_star_assurance_number == 9) {
-                        if (temp1 < static_cast<__int64>(ULTRAPOS / 1000 * 6) + static_cast<__int64>((static_cast<__int64>(five_star_assurance_number) - 73) * static_cast<__int64>(ULTRAPOS / 1000 * 60))) {
+                        if (temp1 < static_cast<__int64_t>(ULTRAPOS / 1000 * 6) + static_cast<__int64_t>((static_cast<__int64_t>(five_star_assurance_number) - 73) * static_cast<__int64_t>(ULTRAPOS / 1000 * 60))) {
                             star = 5;
                             five_count = five_count + 1;
                             ave_fives = ave_fives + five_star_assurance_number;
@@ -2216,7 +2216,7 @@ int main() {
                                 }
                             }
                         }
-                        else if (temp1 < static_cast<__int64>(ULTRAPOS / 1000 * 567) + (static_cast<__int64>(five_star_assurance_number) - 73) * static_cast<__int64>(ULTRAPOS / 1000 * 60)) {
+                        else if (temp1 < static_cast<__int64_t>(ULTRAPOS / 1000 * 567) + (static_cast<__int64_t>(five_star_assurance_number) - 73) * static_cast<__int64_t>(ULTRAPOS / 1000 * 60)) {
                             star = 4;
                             four_count = four_count + 1;
                             four_star_assurance_number = 0;
@@ -2295,7 +2295,7 @@ int main() {
                         }
                     }
                     else if (five_star_assurance_number < 90 && five_star_assurance_number > 73 && four_star_assurance_number > 9) {
-                        if (temp1 < static_cast<__int64>(ULTRAPOS / 1000 * 6) + (static_cast<__int64>(five_star_assurance_number) - 73) * static_cast<__int64>(ULTRAPOS / 1000 * 60)) {
+                        if (temp1 < static_cast<__int64_t>(ULTRAPOS / 1000 * 6) + (static_cast<__int64_t>(five_star_assurance_number) - 73) * static_cast<__int64_t>(ULTRAPOS / 1000 * 60)) {
                             star = 5;
                             five_count = five_count + 1;
                             ave_fives = ave_fives + five_star_assurance_number;
@@ -3114,7 +3114,7 @@ int main() {
                         }
                     }
                     else if (five_star_assurance_number < 90 && five_star_assurance_number > 73 && four_star_assurance_number < 9) {
-                        if (temp1 < static_cast<__int64>(ULTRAPOS / 1000 * 6) + (static_cast<__int64>(five_star_assurance_number) - 73) * static_cast<__int64>(ULTRAPOS / 1000 * 60)) {
+                        if (temp1 < static_cast<__int64_t>(ULTRAPOS / 1000 * 6) + (static_cast<__int64_t>(five_star_assurance_number) - 73) * static_cast<__int64_t>(ULTRAPOS / 1000 * 60)) {
                             star = 5;
                             five_count = five_count + 1;
                             ave_fives = ave_fives + five_star_assurance_number;
@@ -3188,7 +3188,7 @@ int main() {
                                 }
                             }
                         }
-                        else if (temp1 < static_cast<__int64>(ULTRAPOS / 1000 * 57) + (static_cast<__int64>(five_star_assurance_number) - 73) * static_cast<__int64>(ULTRAPOS / 1000 * 60)) {
+                        else if (temp1 < static_cast<__int64_t>(ULTRAPOS / 1000 * 57) + (static_cast<__int64_t>(five_star_assurance_number) - 73) * static_cast<__int64_t>(ULTRAPOS / 1000 * 60)) {
                             star = 4;
                             four_count = four_count + 1;
                             four_star_assurance_number = 0;
@@ -3267,7 +3267,7 @@ int main() {
                         }
                     }
                     else if (five_star_assurance_number < 90 && five_star_assurance_number > 73 && four_star_assurance_number == 9) {
-                        if (temp1 < static_cast<__int64>(ULTRAPOS / 1000 * 6) + (static_cast<__int64>(five_star_assurance_number) - 73) * static_cast<__int64>(ULTRAPOS / 1000 * 60)) {
+                        if (temp1 < static_cast<__int64_t>(ULTRAPOS / 1000 * 6) + (static_cast<__int64_t>(five_star_assurance_number) - 73) * static_cast<__int64_t>(ULTRAPOS / 1000 * 60)) {
                             star = 5;
                             five_count = five_count + 1;
                             ave_fives = ave_fives + five_star_assurance_number;
@@ -3341,7 +3341,7 @@ int main() {
                                 }
                             }
                         }
-                        else if (temp1 < static_cast<__int64>(ULTRAPOS / 1000 * 567) + (static_cast<__int64>(five_star_assurance_number) - 73) * static_cast<__int64>(ULTRAPOS / 1000 * 60)) {
+                        else if (temp1 < static_cast<__int64_t>(ULTRAPOS / 1000 * 567) + (static_cast<__int64_t>(five_star_assurance_number) - 73) * static_cast<__int64_t>(ULTRAPOS / 1000 * 60)) {
                             star = 4;
                             four_count = four_count + 1;
                             four_star_assurance_number = 0;
@@ -3420,7 +3420,7 @@ int main() {
                         }
                     }
                     else if (five_star_assurance_number < 90 && five_star_assurance_number > 73 && four_star_assurance_number > 9) {
-                        if (temp1 < static_cast<__int64>(ULTRAPOS / 1000 * 6) + (static_cast<__int64>(five_star_assurance_number) - 73) * static_cast<__int64>(ULTRAPOS / 1000 * 60)) {
+                        if (temp1 < static_cast<__int64_t>(ULTRAPOS / 1000 * 6) + (static_cast<__int64_t>(five_star_assurance_number) - 73) * static_cast<__int64_t>(ULTRAPOS / 1000 * 60)) {
                             star = 5;
                             five_count = five_count + 1;
                             ave_fives = ave_fives + five_star_assurance_number;
@@ -4239,7 +4239,7 @@ int main() {
                         }
                     }
                     else if (five_star_assurance_number < 90 && five_star_assurance_number > 73 && four_star_assurance_number < 9) {
-                        if (temp1 < static_cast<__int64>(ULTRAPOS / 1000 * 6) + (static_cast<__int64>(five_star_assurance_number) - 73) * static_cast<__int64>(ULTRAPOS / 1000 * 60)) {
+                        if (temp1 < static_cast<__int64_t>(ULTRAPOS / 1000 * 6) + (static_cast<__int64_t>(five_star_assurance_number) - 73) * static_cast<__int64_t>(ULTRAPOS / 1000 * 60)) {
                             star = 5;
                             five_count = five_count + 1;
                             ave_fives = ave_fives + five_star_assurance_number;
@@ -4313,7 +4313,7 @@ int main() {
                                 }
                             }
                         }
-                        else if (temp1 < static_cast<__int64>(ULTRAPOS / 1000 * 57) + (static_cast<__int64>(five_star_assurance_number) - 73) * static_cast<__int64>(ULTRAPOS / 1000 * 60)) {
+                        else if (temp1 < static_cast<__int64_t>(ULTRAPOS / 1000 * 57) + (static_cast<__int64_t>(five_star_assurance_number) - 73) * static_cast<__int64_t>(ULTRAPOS / 1000 * 60)) {
                             star = 4;
                             four_count = four_count + 1;
                             four_star_assurance_number = 0;
@@ -4392,7 +4392,7 @@ int main() {
                         }
                     }
                     else if (five_star_assurance_number < 90 && five_star_assurance_number > 73 && four_star_assurance_number == 9) {
-                        if (temp1 < static_cast<__int64>(ULTRAPOS / 1000 * 6) + (static_cast<__int64>(five_star_assurance_number) - 73) * static_cast<__int64>(ULTRAPOS / 1000 * 60)) {
+                        if (temp1 < static_cast<__int64_t>(ULTRAPOS / 1000 * 6) + (static_cast<__int64_t>(five_star_assurance_number) - 73) * static_cast<__int64_t>(ULTRAPOS / 1000 * 60)) {
                             star = 5;
                             five_count = five_count + 1;
                             ave_fives = ave_fives + five_star_assurance_number;
@@ -4466,7 +4466,7 @@ int main() {
                                 }
                             }
                         }
-                        else if (temp1 < static_cast<__int64>(ULTRAPOS / 1000 * 567) + (static_cast<__int64>(five_star_assurance_number) - 73) * static_cast<__int64>(ULTRAPOS / 1000 * 60)) {
+                        else if (temp1 < static_cast<__int64_t>(ULTRAPOS / 1000 * 567) + (static_cast<__int64_t>(five_star_assurance_number) - 73) * static_cast<__int64_t>(ULTRAPOS / 1000 * 60)) {
                             star = 4;
                             four_count = four_count + 1;
                             four_star_assurance_number = 0;
@@ -4545,7 +4545,7 @@ int main() {
                         }
                     }
                     else if (five_star_assurance_number < 90 && five_star_assurance_number > 73 && four_star_assurance_number > 9) {
-                        if (temp1 < static_cast<__int64>(ULTRAPOS / 1000 * 6) + (static_cast<__int64>(five_star_assurance_number) - 73) * static_cast<__int64>(ULTRAPOS / 1000 * 60)) {
+                        if (temp1 < static_cast<__int64_t>(ULTRAPOS / 1000 * 6) + (static_cast<__int64_t>(five_star_assurance_number) - 73) * static_cast<__int64_t>(ULTRAPOS / 1000 * 60)) {
                             star = 5;
                             five_count = five_count + 1;
                             ave_fives = ave_fives + five_star_assurance_number;
