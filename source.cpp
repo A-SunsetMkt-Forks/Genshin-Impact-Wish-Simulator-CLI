@@ -1547,9 +1547,6 @@ int main() {
                                 if (temp2 < ULTRAPOS / 2) {
                                     type = 1;
                                     five_count_c++;
-                                    unmet5_w++;
-                                    unmet4_c++;
-                                    unmet4_w++;
                                     unmet5_c = 0;
                                     int templist[] = { 1, 2, 3, 4, 5 };
                                     kind = rspick(templist, 5);
@@ -1557,9 +1554,6 @@ int main() {
                                 else {
                                     type = 2;
                                     five_count_w++;
-                                    unmet5_c++;
-                                    unmet4_c++;
-                                    unmet4_w++;
                                     unmet5_w = 0;
                                     int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                     kind = rspick(templist, 10);
@@ -1569,9 +1563,6 @@ int main() {
                                 if (temp2 < ULTRAPOS * (1 - 1.0 / (10 * unmet5_c - 1468))) {
                                     type = 1;
                                     five_count_c++;
-                                    unmet5_w++;
-                                    unmet4_c++;
-                                    unmet4_w++;
                                     unmet5_c = 0;
                                     int templist[] = { 1, 2, 3, 4, 5 };
                                     kind = rspick(templist, 5);
@@ -1579,9 +1570,6 @@ int main() {
                                 else {
                                     type = 2;
                                     five_count_w++;
-                                    unmet5_c++;
-                                    unmet4_c++;
-                                    unmet4_w++;
                                     unmet5_w = 0;
                                     int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                     kind = rspick(templist, 10);
@@ -1591,9 +1579,6 @@ int main() {
                                 if (temp2 < ULTRAPOS * (1 - 1.0 / (10 * unmet5_w - 1468))) {
                                     type = 2;
                                     five_count_w++;
-                                    unmet5_c++;
-                                    unmet4_c++;
-                                    unmet4_w++;
                                     unmet5_w = 0;
                                     int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                     kind = rspick(templist, 10);
@@ -1601,9 +1586,6 @@ int main() {
                                 else {
                                     type = 1;
                                     five_count_c++;
-                                    unmet5_w++;
-                                    unmet4_c++;
-                                    unmet4_w++;
                                     unmet5_c = 0;
                                     int templist[] = { 1, 2, 3, 4, 5 };
                                     kind = rspick(templist, 5);
@@ -1618,9 +1600,6 @@ int main() {
                                 if (temp2 < ULTRAPOS / 2) {
                                     type = 1;
                                     four_count_c++;
-                                    unmet4_w++;
-                                    unmet5_c++;
-                                    unmet5_w++;
                                     unmet4_c = 0;
                                     int templist[] = { 18, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32 };
                                     kind = rspick(templist, 14);
@@ -1628,9 +1607,6 @@ int main() {
                                 else {
                                     type = 2;
                                     four_count_w++;
-                                    unmet4_c++;
-                                    unmet5_c++;
-                                    unmet5_w++;
                                     unmet4_w = 0;
                                     int templist[] = { 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50 };
                                     kind = rspick(templist, 18);
@@ -1640,9 +1616,6 @@ int main() {
                                 if (temp2 < ULTRAPOS * (1 - 1.0 / (10 * unmet4_c - 168))) {
                                     type = 1;
                                     four_count_c++;
-                                    unmet4_w++;
-                                    unmet5_c++;
-                                    unmet5_w++;
                                     unmet4_c = 0;
                                     int templist[] = { 18, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32 };
                                     kind = rspick(templist, 14);
@@ -1650,9 +1623,6 @@ int main() {
                                 else {
                                     type = 2;
                                     four_count_w++;
-                                    unmet4_c++;
-                                    unmet5_c++;
-                                    unmet5_w++;
                                     unmet4_w = 0;
                                     int templist[] = { 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50 };
                                     kind = rspick(templist, 18);
@@ -1662,9 +1632,6 @@ int main() {
                                 if (temp2 < ULTRAPOS * (1 - 1.0 / (10 * unmet4_w - 168))) {
                                     type = 2;
                                     four_count_w++;
-                                    unmet4_c++;
-                                    unmet5_c++;
-                                    unmet5_w++;
                                     unmet4_w = 0;
                                     int templist[] = { 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50 };
                                     kind = rspick(templist, 18);
@@ -1672,9 +1639,6 @@ int main() {
                                 else {
                                     type = 1;
                                     four_count_c++;
-                                    unmet4_w++;
-                                    unmet5_c++;
-                                    unmet5_w++;
                                     unmet4_c = 0;
                                     int templist[] = { 18, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32 };
                                     kind = rspick(templist, 14);
@@ -1700,9 +1664,6 @@ int main() {
                                 if (temp2 < ULTRAPOS / 2) {
                                     type = 1;
                                     five_count_c++;
-                                    unmet5_w++;
-                                    unmet4_c++;
-                                    unmet4_w++;
                                     unmet5_c = 0;
                                     int templist[] = { 1, 2, 3, 4, 5 };
                                     kind = rspick(templist, 5);
@@ -1710,9 +1671,6 @@ int main() {
                                 else {
                                     type = 2;
                                     five_count_w++;
-                                    unmet5_c++;
-                                    unmet4_c++;
-                                    unmet4_w++;
                                     unmet5_w = 0;
                                     int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                     kind = rspick(templist, 10);
@@ -1722,9 +1680,6 @@ int main() {
                                 if (temp2 < ULTRAPOS * (1 - 1.0 / (10 * unmet5_c - 1468))) {
                                     type = 1;
                                     five_count_c++;
-                                    unmet5_w++;
-                                    unmet4_c++;
-                                    unmet4_w++;
                                     unmet5_c = 0;
                                     int templist[] = { 1, 2, 3, 4, 5 };
                                     kind = rspick(templist, 5);
@@ -1732,9 +1687,6 @@ int main() {
                                 else {
                                     type = 2;
                                     five_count_w++;
-                                    unmet5_c++;
-                                    unmet4_c++;
-                                    unmet4_w++;
                                     unmet5_w = 0;
                                     int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                     kind = rspick(templist, 10);
@@ -1744,9 +1696,6 @@ int main() {
                                 if (temp2 < ULTRAPOS * (1 - 1.0 / (10 * unmet5_w - 1468))) {
                                     type = 2;
                                     five_count_w++;
-                                    unmet5_c++;
-                                    unmet4_c++;
-                                    unmet4_w++;
                                     unmet5_w = 0;
                                     int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                     kind = rspick(templist, 10);
@@ -1754,9 +1703,6 @@ int main() {
                                 else {
                                     type = 1;
                                     five_count_c++;
-                                    unmet5_w++;
-                                    unmet4_c++;
-                                    unmet4_w++;
                                     unmet5_c = 0;
                                     int templist[] = { 1, 2, 3, 4, 5 };
                                     kind = rspick(templist, 5);
@@ -1771,9 +1717,6 @@ int main() {
                                 if (temp2 < ULTRAPOS / 2) {
                                     type = 1;
                                     four_count_c++;
-                                    unmet4_w++;
-                                    unmet5_c++;
-                                    unmet5_w++;
                                     unmet4_c = 0;
                                     int templist[] = { 18, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32 };
                                     kind = rspick(templist, 14);
@@ -1781,9 +1724,6 @@ int main() {
                                 else {
                                     type = 2;
                                     four_count_w++;
-                                    unmet4_c++;
-                                    unmet5_c++;
-                                    unmet5_w++;
                                     unmet4_w = 0;
                                     int templist[] = { 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50 };
                                     kind = rspick(templist, 18);
@@ -1793,9 +1733,6 @@ int main() {
                                 if (temp2 < ULTRAPOS * (1 - 1.0 / (10 * unmet4_c - 168))) {
                                     type = 1;
                                     four_count_c++;
-                                    unmet4_w++;
-                                    unmet5_c++;
-                                    unmet5_w++;
                                     unmet4_c = 0;
                                     int templist[] = { 18, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32 };
                                     kind = rspick(templist, 14);
@@ -1803,9 +1740,6 @@ int main() {
                                 else {
                                     type = 2;
                                     four_count_w++;
-                                    unmet4_c++;
-                                    unmet5_c++;
-                                    unmet5_w++;
                                     unmet4_w = 0;
                                     int templist[] = { 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50 };
                                     kind = rspick(templist, 18);
@@ -1815,9 +1749,6 @@ int main() {
                                 if (temp2 < ULTRAPOS * (1 - 1.0 / (10 * unmet4_w - 168))) {
                                     type = 2;
                                     four_count_w++;
-                                    unmet4_c++;
-                                    unmet5_c++;
-                                    unmet5_w++;
                                     unmet4_w = 0;
                                     int templist[] = { 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50 };
                                     kind = rspick(templist, 18);
@@ -1825,9 +1756,6 @@ int main() {
                                 else {
                                     type = 1;
                                     four_count_c++;
-                                    unmet4_w++;
-                                    unmet5_c++;
-                                    unmet5_w++;
                                     unmet4_c = 0;
                                     int templist[] = { 18, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32 };
                                     kind = rspick(templist, 14);
@@ -1853,9 +1781,6 @@ int main() {
                                 if (temp2 < ULTRAPOS / 2) {
                                     type = 1;
                                     five_count_c++;
-                                    unmet5_w++;
-                                    unmet4_c++;
-                                    unmet4_w++;
                                     unmet5_c = 0;
                                     int templist[] = { 1, 2, 3, 4, 5 };
                                     kind = rspick(templist, 5);
@@ -1863,9 +1788,6 @@ int main() {
                                 else {
                                     type = 2;
                                     five_count_w++;
-                                    unmet5_c++;
-                                    unmet4_c++;
-                                    unmet4_w++;
                                     unmet5_w = 0;
                                     int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                     kind = rspick(templist, 10);
@@ -1875,9 +1797,6 @@ int main() {
                                 if (temp2 < ULTRAPOS * (1 - 1.0 / (10 * unmet5_c - 1468))) {
                                     type = 1;
                                     five_count_c++;
-                                    unmet5_w++;
-                                    unmet4_c++;
-                                    unmet4_w++;
                                     unmet5_c = 0;
                                     int templist[] = { 1, 2, 3, 4, 5 };
                                     kind = rspick(templist, 5);
@@ -1885,9 +1804,6 @@ int main() {
                                 else {
                                     type = 2;
                                     five_count_w++;
-                                    unmet5_c++;
-                                    unmet4_c++;
-                                    unmet4_w++;
                                     unmet5_w = 0;
                                     int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                     kind = rspick(templist, 10);
@@ -1897,9 +1813,6 @@ int main() {
                                 if (temp2 < ULTRAPOS * (1 - 1.0 / (10 * unmet5_w - 1468))) {
                                     type = 2;
                                     five_count_w++;
-                                    unmet5_c++;
-                                    unmet4_c++;
-                                    unmet4_w++;
                                     unmet5_w = 0;
                                     int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                     kind = rspick(templist, 10);
@@ -1907,9 +1820,6 @@ int main() {
                                 else {
                                     type = 1;
                                     five_count_c++;
-                                    unmet5_w++;
-                                    unmet4_c++;
-                                    unmet4_w++;
                                     unmet5_c = 0;
                                     int templist[] = { 1, 2, 3, 4, 5 };
                                     kind = rspick(templist, 5);
@@ -1924,9 +1834,6 @@ int main() {
                                 if (temp2 < ULTRAPOS / 2) {
                                     type = 1;
                                     four_count_c++;
-                                    unmet4_w++;
-                                    unmet5_c++;
-                                    unmet5_w++;
                                     unmet4_c = 0;
                                     int templist[] = { 18, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32 };
                                     kind = rspick(templist, 14);
@@ -1934,9 +1841,6 @@ int main() {
                                 else {
                                     type = 2;
                                     four_count_w++;
-                                    unmet4_c++;
-                                    unmet5_c++;
-                                    unmet5_w++;
                                     unmet4_w = 0;
                                     int templist[] = { 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50 };
                                     kind = rspick(templist, 18);
@@ -1946,9 +1850,6 @@ int main() {
                                 if (temp2 < ULTRAPOS * (1 - 1.0 / (10 * unmet4_c - 168))) {
                                     type = 1;
                                     four_count_c++;
-                                    unmet4_w++;
-                                    unmet5_c++;
-                                    unmet5_w++;
                                     unmet4_c = 0;
                                     int templist[] = { 18, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32 };
                                     kind = rspick(templist, 14);
@@ -1956,9 +1857,6 @@ int main() {
                                 else {
                                     type = 2;
                                     four_count_w++;
-                                    unmet4_c++;
-                                    unmet5_c++;
-                                    unmet5_w++;
                                     unmet4_w = 0;
                                     int templist[] = { 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50 };
                                     kind = rspick(templist, 18);
@@ -1968,9 +1866,6 @@ int main() {
                                 if (temp2 < ULTRAPOS * (1 - 1.0 / (10 * unmet4_w - 168))) {
                                     type = 2;
                                     four_count_w++;
-                                    unmet4_c++;
-                                    unmet5_c++;
-                                    unmet5_w++;
                                     unmet4_w = 0;
                                     int templist[] = { 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50 };
                                     kind = rspick(templist, 18);
@@ -1978,9 +1873,6 @@ int main() {
                                 else {
                                     type = 1;
                                     four_count_c++;
-                                    unmet4_w++;
-                                    unmet5_c++;
-                                    unmet5_w++;
                                     unmet4_c = 0;
                                     int templist[] = { 18, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32 };
                                     kind = rspick(templist, 14);
@@ -2000,9 +1892,6 @@ int main() {
                                 if (temp2 < ULTRAPOS / 2) {
                                     type = 1;
                                     five_count_c++;
-                                    unmet5_w++;
-                                    unmet4_c++;
-                                    unmet4_w++;
                                     unmet5_c = 0;
                                     int templist[] = { 1, 2, 3, 4, 5 };
                                     kind = rspick(templist, 5);
@@ -2010,9 +1899,6 @@ int main() {
                                 else {
                                     type = 2;
                                     five_count_w++;
-                                    unmet5_c++;
-                                    unmet4_c++;
-                                    unmet4_w++;
                                     unmet5_w = 0;
                                     int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                     kind = rspick(templist, 10);
@@ -2022,9 +1908,6 @@ int main() {
                                 if (temp2 < ULTRAPOS * (1 - 1.0 / (10 * unmet5_c - 1468))) {
                                     type = 1;
                                     five_count_c++;
-                                    unmet5_w++;
-                                    unmet4_c++;
-                                    unmet4_w++;
                                     unmet5_c = 0;
                                     int templist[] = { 1, 2, 3, 4, 5 };
                                     kind = rspick(templist, 5);
@@ -2032,9 +1915,6 @@ int main() {
                                 else {
                                     type = 2;
                                     five_count_w++;
-                                    unmet5_c++;
-                                    unmet4_c++;
-                                    unmet4_w++;
                                     unmet5_w = 0;
                                     int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                     kind = rspick(templist, 10);
@@ -2044,9 +1924,6 @@ int main() {
                                 if (temp2 < ULTRAPOS * (1 - 1.0 / (10 * unmet5_w - 1468))) {
                                     type = 2;
                                     five_count_w++;
-                                    unmet5_c++;
-                                    unmet4_c++;
-                                    unmet4_w++;
                                     unmet5_w = 0;
                                     int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                     kind = rspick(templist, 10);
@@ -2054,9 +1931,6 @@ int main() {
                                 else {
                                     type = 1;
                                     five_count_c++;
-                                    unmet5_w++;
-                                    unmet4_c++;
-                                    unmet4_w++;
                                     unmet5_c = 0;
                                     int templist[] = { 1, 2, 3, 4, 5 };
                                     kind = rspick(templist, 5);
@@ -2071,9 +1945,6 @@ int main() {
                                 if (temp2 < ULTRAPOS / 2) {
                                     type = 1;
                                     four_count_c++;
-                                    unmet4_w++;
-                                    unmet5_c++;
-                                    unmet5_w++;
                                     unmet4_c = 0;
                                     int templist[] = { 18, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32 };
                                     kind = rspick(templist, 14);
@@ -2081,9 +1952,6 @@ int main() {
                                 else {
                                     type = 2;
                                     four_count_w++;
-                                    unmet4_c++;
-                                    unmet5_c++;
-                                    unmet5_w++;
                                     unmet4_w = 0;
                                     int templist[] = { 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50 };
                                     kind = rspick(templist, 18);
@@ -2093,9 +1961,6 @@ int main() {
                                 if (temp2 < ULTRAPOS * (1 - 1.0 / (10 * unmet4_c - 168))) {
                                     type = 1;
                                     four_count_c++;
-                                    unmet4_w++;
-                                    unmet5_c++;
-                                    unmet5_w++;
                                     unmet4_c = 0;
                                     int templist[] = { 18, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32 };
                                     kind = rspick(templist, 14);
@@ -2103,9 +1968,6 @@ int main() {
                                 else {
                                     type = 2;
                                     four_count_w++;
-                                    unmet4_c++;
-                                    unmet5_c++;
-                                    unmet5_w++;
                                     unmet4_w = 0;
                                     int templist[] = { 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50 };
                                     kind = rspick(templist, 18);
@@ -2115,9 +1977,6 @@ int main() {
                                 if (temp2 < ULTRAPOS * (1 - 1.0 / (10 * unmet4_w - 168))) {
                                     type = 2;
                                     four_count_w++;
-                                    unmet4_c++;
-                                    unmet5_c++;
-                                    unmet5_w++;
                                     unmet4_w = 0;
                                     int templist[] = { 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50 };
                                     kind = rspick(templist, 18);
@@ -2125,9 +1984,6 @@ int main() {
                                 else {
                                     type = 1;
                                     four_count_c++;
-                                    unmet4_w++;
-                                    unmet5_c++;
-                                    unmet5_w++;
                                     unmet4_c = 0;
                                     int templist[] = { 18, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32 };
                                     kind = rspick(templist, 14);
@@ -2153,9 +2009,6 @@ int main() {
                                 if (temp2 < ULTRAPOS / 2) {
                                     type = 1;
                                     five_count_c++;
-                                    unmet5_w++;
-                                    unmet4_c++;
-                                    unmet4_w++;
                                     unmet5_c = 0;
                                     int templist[] = { 1, 2, 3, 4, 5 };
                                     kind = rspick(templist, 5);
@@ -2163,9 +2016,6 @@ int main() {
                                 else {
                                     type = 2;
                                     five_count_w++;
-                                    unmet5_c++;
-                                    unmet4_c++;
-                                    unmet4_w++;
                                     unmet5_w = 0;
                                     int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                     kind = rspick(templist, 10);
@@ -2175,9 +2025,6 @@ int main() {
                                 if (temp2 < ULTRAPOS * (1 - 1.0 / (10 * unmet5_c - 1468))) {
                                     type = 1;
                                     five_count_c++;
-                                    unmet5_w++;
-                                    unmet4_c++;
-                                    unmet4_w++;
                                     unmet5_c = 0;
                                     int templist[] = { 1, 2, 3, 4, 5 };
                                     kind = rspick(templist, 5);
@@ -2185,9 +2032,6 @@ int main() {
                                 else {
                                     type = 2;
                                     five_count_w++;
-                                    unmet5_c++;
-                                    unmet4_c++;
-                                    unmet4_w++;
                                     unmet5_w = 0;
                                     int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                     kind = rspick(templist, 10);
@@ -2197,9 +2041,6 @@ int main() {
                                 if (temp2 < ULTRAPOS * (1 - 1.0 / (10 * unmet5_w - 1468))) {
                                     type = 2;
                                     five_count_w++;
-                                    unmet5_c++;
-                                    unmet4_c++;
-                                    unmet4_w++;
                                     unmet5_w = 0;
                                     int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                     kind = rspick(templist, 10);
@@ -2207,9 +2048,6 @@ int main() {
                                 else {
                                     type = 1;
                                     five_count_c++;
-                                    unmet5_w++;
-                                    unmet4_c++;
-                                    unmet4_w++;
                                     unmet5_c = 0;
                                     int templist[] = { 1, 2, 3, 4, 5 };
                                     kind = rspick(templist, 5);
@@ -2224,9 +2062,6 @@ int main() {
                                 if (temp2 < ULTRAPOS / 2) {
                                     type = 1;
                                     four_count_c++;
-                                    unmet4_w++;
-                                    unmet5_c++;
-                                    unmet5_w++;
                                     unmet4_c = 0;
                                     int templist[] = { 18, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32 };
                                     kind = rspick(templist, 14);
@@ -2234,9 +2069,6 @@ int main() {
                                 else {
                                     type = 2;
                                     four_count_w++;
-                                    unmet4_c++;
-                                    unmet5_c++;
-                                    unmet5_w++;
                                     unmet4_w = 0;
                                     int templist[] = { 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50 };
                                     kind = rspick(templist, 18);
@@ -2246,9 +2078,6 @@ int main() {
                                 if (temp2 < ULTRAPOS * (1 - 1.0 / (10 * unmet4_c - 168))) {
                                     type = 1;
                                     four_count_c++;
-                                    unmet4_w++;
-                                    unmet5_c++;
-                                    unmet5_w++;
                                     unmet4_c = 0;
                                     int templist[] = { 18, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32 };
                                     kind = rspick(templist, 14);
@@ -2256,9 +2085,6 @@ int main() {
                                 else {
                                     type = 2;
                                     four_count_w++;
-                                    unmet4_c++;
-                                    unmet5_c++;
-                                    unmet5_w++;
                                     unmet4_w = 0;
                                     int templist[] = { 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50 };
                                     kind = rspick(templist, 18);
@@ -2268,9 +2094,6 @@ int main() {
                                 if (temp2 < ULTRAPOS * (1 - 1.0 / (10 * unmet4_w - 168))) {
                                     type = 2;
                                     four_count_w++;
-                                    unmet4_c++;
-                                    unmet5_c++;
-                                    unmet5_w++;
                                     unmet4_w = 0;
                                     int templist[] = { 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50 };
                                     kind = rspick(templist, 18);
@@ -2278,9 +2101,6 @@ int main() {
                                 else {
                                     type = 1;
                                     four_count_c++;
-                                    unmet4_w++;
-                                    unmet5_c++;
-                                    unmet5_w++;
                                     unmet4_c = 0;
                                     int templist[] = { 18, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32 };
                                     kind = rspick(templist, 14);
@@ -2306,9 +2126,6 @@ int main() {
                                 if (temp2 < ULTRAPOS / 2) {
                                     type = 1;
                                     five_count_c++;
-                                    unmet5_w++;
-                                    unmet4_c++;
-                                    unmet4_w++;
                                     unmet5_c = 0;
                                     int templist[] = { 1, 2, 3, 4, 5 };
                                     kind = rspick(templist, 5);
@@ -2316,9 +2133,6 @@ int main() {
                                 else {
                                     type = 2;
                                     five_count_w++;
-                                    unmet5_c++;
-                                    unmet4_c++;
-                                    unmet4_w++;
                                     unmet5_w = 0;
                                     int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                     kind = rspick(templist, 10);
@@ -2328,9 +2142,6 @@ int main() {
                                 if (temp2 < ULTRAPOS * (1 - 1.0 / (10 * unmet5_c - 1468))) {
                                     type = 1;
                                     five_count_c++;
-                                    unmet5_w++;
-                                    unmet4_c++;
-                                    unmet4_w++;
                                     unmet5_c = 0;
                                     int templist[] = { 1, 2, 3, 4, 5 };
                                     kind = rspick(templist, 5);
@@ -2338,9 +2149,6 @@ int main() {
                                 else {
                                     type = 2;
                                     five_count_w++;
-                                    unmet5_c++;
-                                    unmet4_c++;
-                                    unmet4_w++;
                                     unmet5_w = 0;
                                     int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                     kind = rspick(templist, 10);
@@ -2350,9 +2158,6 @@ int main() {
                                 if (temp2 < ULTRAPOS * (1 - 1.0 / (10 * unmet5_w - 1468))) {
                                     type = 2;
                                     five_count_w++;
-                                    unmet5_c++;
-                                    unmet4_c++;
-                                    unmet4_w++;
                                     unmet5_w = 0;
                                     int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                     kind = rspick(templist, 10);
@@ -2360,9 +2165,6 @@ int main() {
                                 else {
                                     type = 1;
                                     five_count_c++;
-                                    unmet5_w++;
-                                    unmet4_c++;
-                                    unmet4_w++;
                                     unmet5_c = 0;
                                     int templist[] = { 1, 2, 3, 4, 5 };
                                     kind = rspick(templist, 5);
@@ -2377,9 +2179,6 @@ int main() {
                                 if (temp2 < ULTRAPOS / 2) {
                                     type = 1;
                                     four_count_c++;
-                                    unmet4_w++;
-                                    unmet5_c++;
-                                    unmet5_w++;
                                     unmet4_c = 0;
                                     int templist[] = { 18, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32 };
                                     kind = rspick(templist, 14);
@@ -2387,9 +2186,6 @@ int main() {
                                 else {
                                     type = 2;
                                     four_count_w++;
-                                    unmet4_c++;
-                                    unmet5_c++;
-                                    unmet5_w++;
                                     unmet4_w = 0;
                                     int templist[] = { 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50 };
                                     kind = rspick(templist, 18);
@@ -2399,9 +2195,6 @@ int main() {
                                 if (temp2 < ULTRAPOS * (1 - 1.0 / (10 * unmet4_c - 168))) {
                                     type = 1;
                                     four_count_c++;
-                                    unmet4_w++;
-                                    unmet5_c++;
-                                    unmet5_w++;
                                     unmet4_c = 0;
                                     int templist[] = { 18, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32 };
                                     kind = rspick(templist, 14);
@@ -2409,9 +2202,6 @@ int main() {
                                 else {
                                     type = 2;
                                     four_count_w++;
-                                    unmet4_c++;
-                                    unmet5_c++;
-                                    unmet5_w++;
                                     unmet4_w = 0;
                                     int templist[] = { 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50 };
                                     kind = rspick(templist, 18);
@@ -2421,9 +2211,6 @@ int main() {
                                 if (temp2 < ULTRAPOS * (1 - 1.0 / (10 * unmet4_w - 168))) {
                                     type = 2;
                                     four_count_w++;
-                                    unmet4_c++;
-                                    unmet5_c++;
-                                    unmet5_w++;
                                     unmet4_w = 0;
                                     int templist[] = { 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50 };
                                     kind = rspick(templist, 18);
@@ -2431,9 +2218,6 @@ int main() {
                                 else {
                                     type = 1;
                                     four_count_c++;
-                                    unmet4_w++;
-                                    unmet5_c++;
-                                    unmet5_w++;
                                     unmet4_c = 0;
                                     int templist[] = { 18, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32 };
                                     kind = rspick(templist, 14);
@@ -2452,9 +2236,9 @@ int main() {
                             if (temp2 < ULTRAPOS / 2) {
                                 type = 1;
                                 five_count_c++;
-                                unmet5_w++;
-                                unmet4_c++;
-                                unmet4_w++;
+                                
+                                
+                                
                                 unmet5_c = 0;
                                 int templist[] = { 1, 2, 3, 4, 5 };
                                 kind = rspick(templist, 5);
@@ -2462,9 +2246,9 @@ int main() {
                             else {
                                 type = 2;
                                 five_count_w++;
-                                unmet5_c++;
-                                unmet4_c++;
-                                unmet4_w++;
+                                
+                                
+                                
                                 unmet5_w = 0;
                                 int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                 kind = rspick(templist, 10);
@@ -2474,9 +2258,9 @@ int main() {
                             if (temp2 < ULTRAPOS * (1 - 1.0 / (10 * unmet5_c - 1468))) {
                                 type = 1;
                                 five_count_c++;
-                                unmet5_w++;
-                                unmet4_c++;
-                                unmet4_w++;
+                                
+                                
+                                
                                 unmet5_c = 0;
                                 int templist[] = { 1, 2, 3, 4, 5 };
                                 kind = rspick(templist, 5);
@@ -2484,9 +2268,9 @@ int main() {
                             else {
                                 type = 2;
                                 five_count_w++;
-                                unmet5_c++;
-                                unmet4_c++;
-                                unmet4_w++;
+                                
+                                
+                                
                                 unmet5_w = 0;
                                 int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                 kind = rspick(templist, 10);
@@ -2496,9 +2280,9 @@ int main() {
                             if (temp2 < ULTRAPOS * (1 - 1.0 / (10 * unmet5_w - 1468))) {
                                 type = 2;
                                 five_count_w++;
-                                unmet5_c++;
-                                unmet4_c++;
-                                unmet4_w++;
+                                
+                                
+                                
                                 unmet5_w = 0;
                                 int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                 kind = rspick(templist, 10);
@@ -2506,9 +2290,9 @@ int main() {
                             else {
                                 type = 1;
                                 five_count_c++;
-                                unmet5_w++;
-                                unmet4_c++;
-                                unmet4_w++;
+                                
+                                
+                                
                                 unmet5_c = 0;
                                 int templist[] = { 1, 2, 3, 4, 5 };
                                 kind = rspick(templist, 5);
@@ -2648,6 +2432,10 @@ int main() {
                     }
                     wishes_number = wishes_number - 1;
                     count = count + 1;
+                    if (!(star == 5 && type == 1)) unmet5_c++;
+                    if (!(star == 5 && type == 2)) unmet5_w++;
+                    if (!(star == 4 && type == 1)) unmet4_c++;
+                    if (!(star == 4 && type == 2)) unmet4_w++;
                     five_star_assurance_number = five_star_assurance_number + 1;
                     four_star_assurance_number = four_star_assurance_number + 1;
                 }
@@ -2672,9 +2460,6 @@ int main() {
                                 if (temp2 < ULTRAPOS / 2) {
                                     type = 1;
                                     five_count_c++;
-                                    unmet5_w++;
-                                    unmet4_c++;
-                                    unmet4_w++;
                                     unmet5_c = 0;
                                     int templist[] = { 1, 2, 3, 4, 5 };
                                     kind = rspick(templist, 5);
@@ -2682,9 +2467,6 @@ int main() {
                                 else {
                                     type = 2;
                                     five_count_w++;
-                                    unmet5_c++;
-                                    unmet4_c++;
-                                    unmet4_w++;
                                     unmet5_w = 0;
                                     int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                     kind = rspick(templist, 10);
@@ -2694,9 +2476,6 @@ int main() {
                                 if (temp2 < ULTRAPOS * (1 - 1.0 / (10 * unmet5_c - 1468))) {
                                     type = 1;
                                     five_count_c++;
-                                    unmet5_w++;
-                                    unmet4_c++;
-                                    unmet4_w++;
                                     unmet5_c = 0;
                                     int templist[] = { 1, 2, 3, 4, 5 };
                                     kind = rspick(templist, 5);
@@ -2704,9 +2483,6 @@ int main() {
                                 else {
                                     type = 2;
                                     five_count_w++;
-                                    unmet5_c++;
-                                    unmet4_c++;
-                                    unmet4_w++;
                                     unmet5_w = 0;
                                     int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                     kind = rspick(templist, 10);
@@ -2716,9 +2492,6 @@ int main() {
                                 if (temp2 < ULTRAPOS * (1 - 1.0 / (10 * unmet5_w - 1468))) {
                                     type = 2;
                                     five_count_w++;
-                                    unmet5_c++;
-                                    unmet4_c++;
-                                    unmet4_w++;
                                     unmet5_w = 0;
                                     int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                     kind = rspick(templist, 10);
@@ -2726,9 +2499,6 @@ int main() {
                                 else {
                                     type = 1;
                                     five_count_c++;
-                                    unmet5_w++;
-                                    unmet4_c++;
-                                    unmet4_w++;
                                     unmet5_c = 0;
                                     int templist[] = { 1, 2, 3, 4, 5 };
                                     kind = rspick(templist, 5);
@@ -2743,9 +2513,6 @@ int main() {
                                 if (temp2 < ULTRAPOS / 2) {
                                     type = 1;
                                     four_count_c++;
-                                    unmet4_w++;
-                                    unmet5_c++;
-                                    unmet5_w++;
                                     unmet4_c = 0;
                                     int templist[] = { 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32 };
                                     kind = rspick(templist, 16);
@@ -2753,9 +2520,6 @@ int main() {
                                 else {
                                     type = 2;
                                     four_count_w++;
-                                    unmet4_c++;
-                                    unmet5_c++;
-                                    unmet5_w++;
                                     unmet4_w = 0;
                                     int templist[] = { 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50 };
                                     kind = rspick(templist, 18);
@@ -2765,9 +2529,6 @@ int main() {
                                 if (temp2 < ULTRAPOS * (1 - 1.0 / (10 * unmet4_c - 168))) {
                                     type = 1;
                                     four_count_c++;
-                                    unmet4_w++;
-                                    unmet5_c++;
-                                    unmet5_w++;
                                     unmet4_c = 0;
                                     int templist[] = { 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32 };
                                     kind = rspick(templist, 16);
@@ -2775,9 +2536,6 @@ int main() {
                                 else {
                                     type = 2;
                                     four_count_w++;
-                                    unmet4_c++;
-                                    unmet5_c++;
-                                    unmet5_w++;
                                     unmet4_w = 0;
                                     int templist[] = { 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50 };
                                     kind = rspick(templist, 18);
@@ -2787,9 +2545,6 @@ int main() {
                                 if (temp2 < ULTRAPOS * (1 - 1.0 / (10 * unmet4_w - 168))) {
                                     type = 2;
                                     four_count_w++;
-                                    unmet4_c++;
-                                    unmet5_c++;
-                                    unmet5_w++;
                                     unmet4_w = 0;
                                     int templist[] = { 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50 };
                                     kind = rspick(templist, 18);
@@ -2797,9 +2552,6 @@ int main() {
                                 else {
                                     type = 1;
                                     four_count_c++;
-                                    unmet4_w++;
-                                    unmet5_c++;
-                                    unmet5_w++;
                                     unmet4_c = 0;
                                     int templist[] = { 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32 };
                                     kind = rspick(templist, 16);
@@ -2825,9 +2577,6 @@ int main() {
                                 if (temp2 < ULTRAPOS / 2) {
                                     type = 1;
                                     five_count_c++;
-                                    unmet5_w++;
-                                    unmet4_c++;
-                                    unmet4_w++;
                                     unmet5_c = 0;
                                     int templist[] = { 1, 2, 3, 4, 5 };
                                     kind = rspick(templist, 5);
@@ -2835,9 +2584,6 @@ int main() {
                                 else {
                                     type = 2;
                                     five_count_w++;
-                                    unmet5_c++;
-                                    unmet4_c++;
-                                    unmet4_w++;
                                     unmet5_w = 0;
                                     int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                     kind = rspick(templist, 10);
@@ -2847,9 +2593,6 @@ int main() {
                                 if (temp2 < ULTRAPOS * (1 - 1.0 / (10 * unmet5_c - 1468))) {
                                     type = 1;
                                     five_count_c++;
-                                    unmet5_w++;
-                                    unmet4_c++;
-                                    unmet4_w++;
                                     unmet5_c = 0;
                                     int templist[] = { 1, 2, 3, 4, 5 };
                                     kind = rspick(templist, 5);
@@ -2857,9 +2600,6 @@ int main() {
                                 else {
                                     type = 2;
                                     five_count_w++;
-                                    unmet5_c++;
-                                    unmet4_c++;
-                                    unmet4_w++;
                                     unmet5_w = 0;
                                     int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                     kind = rspick(templist, 10);
@@ -2869,9 +2609,6 @@ int main() {
                                 if (temp2 < ULTRAPOS * (1 - 1.0 / (10 * unmet5_w - 1468))) {
                                     type = 2;
                                     five_count_w++;
-                                    unmet5_c++;
-                                    unmet4_c++;
-                                    unmet4_w++;
                                     unmet5_w = 0;
                                     int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                     kind = rspick(templist, 10);
@@ -2879,9 +2616,6 @@ int main() {
                                 else {
                                     type = 1;
                                     five_count_c++;
-                                    unmet5_w++;
-                                    unmet4_c++;
-                                    unmet4_w++;
                                     unmet5_c = 0;
                                     int templist[] = { 1, 2, 3, 4, 5 };
                                     kind = rspick(templist, 5);
@@ -2896,9 +2630,6 @@ int main() {
                                 if (temp2 < ULTRAPOS / 2) {
                                     type = 1;
                                     four_count_c++;
-                                    unmet4_w++;
-                                    unmet5_c++;
-                                    unmet5_w++;
                                     unmet4_c = 0;
                                     int templist[] = { 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32 };
                                     kind = rspick(templist, 16);
@@ -2906,9 +2637,6 @@ int main() {
                                 else {
                                     type = 2;
                                     four_count_w++;
-                                    unmet4_c++;
-                                    unmet5_c++;
-                                    unmet5_w++;
                                     unmet4_w = 0;
                                     int templist[] = { 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50 };
                                     kind = rspick(templist, 18);
@@ -2918,9 +2646,6 @@ int main() {
                                 if (temp2 < ULTRAPOS * (1 - 1.0 / (10 * unmet4_c - 168))) {
                                     type = 1;
                                     four_count_c++;
-                                    unmet4_w++;
-                                    unmet5_c++;
-                                    unmet5_w++;
                                     unmet4_c = 0;
                                     int templist[] = { 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32 };
                                     kind = rspick(templist, 16);
@@ -2928,9 +2653,6 @@ int main() {
                                 else {
                                     type = 2;
                                     four_count_w++;
-                                    unmet4_c++;
-                                    unmet5_c++;
-                                    unmet5_w++;
                                     unmet4_w = 0;
                                     int templist[] = { 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50 };
                                     kind = rspick(templist, 18);
@@ -2940,9 +2662,6 @@ int main() {
                                 if (temp2 < ULTRAPOS * (1 - 1.0 / (10 * unmet4_w - 168))) {
                                     type = 2;
                                     four_count_w++;
-                                    unmet4_c++;
-                                    unmet5_c++;
-                                    unmet5_w++;
                                     unmet4_w = 0;
                                     int templist[] = { 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50 };
                                     kind = rspick(templist, 18);
@@ -2950,9 +2669,6 @@ int main() {
                                 else {
                                     type = 1;
                                     four_count_c++;
-                                    unmet4_w++;
-                                    unmet5_c++;
-                                    unmet5_w++;
                                     unmet4_c = 0;
                                     int templist[] = { 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32 };
                                     kind = rspick(templist, 16);
@@ -2978,9 +2694,6 @@ int main() {
                                 if (temp2 < ULTRAPOS / 2) {
                                     type = 1;
                                     five_count_c++;
-                                    unmet5_w++;
-                                    unmet4_c++;
-                                    unmet4_w++;
                                     unmet5_c = 0;
                                     int templist[] = { 1, 2, 3, 4, 5 };
                                     kind = rspick(templist, 5);
@@ -2988,9 +2701,6 @@ int main() {
                                 else {
                                     type = 2;
                                     five_count_w++;
-                                    unmet5_c++;
-                                    unmet4_c++;
-                                    unmet4_w++;
                                     unmet5_w = 0;
                                     int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                     kind = rspick(templist, 10);
@@ -3000,9 +2710,6 @@ int main() {
                                 if (temp2 < ULTRAPOS * (1 - 1.0 / (10 * unmet5_c - 1468))) {
                                     type = 1;
                                     five_count_c++;
-                                    unmet5_w++;
-                                    unmet4_c++;
-                                    unmet4_w++;
                                     unmet5_c = 0;
                                     int templist[] = { 1, 2, 3, 4, 5 };
                                     kind = rspick(templist, 5);
@@ -3010,9 +2717,6 @@ int main() {
                                 else {
                                     type = 2;
                                     five_count_w++;
-                                    unmet5_c++;
-                                    unmet4_c++;
-                                    unmet4_w++;
                                     unmet5_w = 0;
                                     int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                     kind = rspick(templist, 10);
@@ -3022,9 +2726,6 @@ int main() {
                                 if (temp2 < ULTRAPOS * (1 - 1.0 / (10 * unmet5_w - 1468))) {
                                     type = 2;
                                     five_count_w++;
-                                    unmet5_c++;
-                                    unmet4_c++;
-                                    unmet4_w++;
                                     unmet5_w = 0;
                                     int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                     kind = rspick(templist, 10);
@@ -3032,9 +2733,6 @@ int main() {
                                 else {
                                     type = 1;
                                     five_count_c++;
-                                    unmet5_w++;
-                                    unmet4_c++;
-                                    unmet4_w++;
                                     unmet5_c = 0;
                                     int templist[] = { 1, 2, 3, 4, 5 };
                                     kind = rspick(templist, 5);
@@ -3049,9 +2747,6 @@ int main() {
                                 if (temp2 < ULTRAPOS / 2) {
                                     type = 1;
                                     four_count_c++;
-                                    unmet4_w++;
-                                    unmet5_c++;
-                                    unmet5_w++;
                                     unmet4_c = 0;
                                     int templist[] = { 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32 };
                                     kind = rspick(templist, 16);
@@ -3059,9 +2754,6 @@ int main() {
                                 else {
                                     type = 2;
                                     four_count_w++;
-                                    unmet4_c++;
-                                    unmet5_c++;
-                                    unmet5_w++;
                                     unmet4_w = 0;
                                     int templist[] = { 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50 };
                                     kind = rspick(templist, 18);
@@ -3071,9 +2763,6 @@ int main() {
                                 if (temp2 < ULTRAPOS * (1 - 1.0 / (10 * unmet4_c - 168))) {
                                     type = 1;
                                     four_count_c++;
-                                    unmet4_w++;
-                                    unmet5_c++;
-                                    unmet5_w++;
                                     unmet4_c = 0;
                                     int templist[] = { 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32 };
                                     kind = rspick(templist, 16);
@@ -3081,9 +2770,6 @@ int main() {
                                 else {
                                     type = 2;
                                     four_count_w++;
-                                    unmet4_c++;
-                                    unmet5_c++;
-                                    unmet5_w++;
                                     unmet4_w = 0;
                                     int templist[] = { 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50 };
                                     kind = rspick(templist, 18);
@@ -3093,9 +2779,6 @@ int main() {
                                 if (temp2 < ULTRAPOS * (1 - 1.0 / (10 * unmet4_w - 168))) {
                                     type = 2;
                                     four_count_w++;
-                                    unmet4_c++;
-                                    unmet5_c++;
-                                    unmet5_w++;
                                     unmet4_w = 0;
                                     int templist[] = { 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50 };
                                     kind = rspick(templist, 18);
@@ -3103,9 +2786,6 @@ int main() {
                                 else {
                                     type = 1;
                                     four_count_c++;
-                                    unmet4_w++;
-                                    unmet5_c++;
-                                    unmet5_w++;
                                     unmet4_c = 0;
                                     int templist[] = { 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32 };
                                     kind = rspick(templist, 16);
@@ -3125,9 +2805,6 @@ int main() {
                                 if (temp2 < ULTRAPOS / 2) {
                                     type = 1;
                                     five_count_c++;
-                                    unmet5_w++;
-                                    unmet4_c++;
-                                    unmet4_w++;
                                     unmet5_c = 0;
                                     int templist[] = { 1, 2, 3, 4, 5 };
                                     kind = rspick(templist, 5);
@@ -3135,9 +2812,6 @@ int main() {
                                 else {
                                     type = 2;
                                     five_count_w++;
-                                    unmet5_c++;
-                                    unmet4_c++;
-                                    unmet4_w++;
                                     unmet5_w = 0;
                                     int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                     kind = rspick(templist, 10);
@@ -3147,9 +2821,6 @@ int main() {
                                 if (temp2 < ULTRAPOS * (1 - 1.0 / (10 * unmet5_c - 1468))) {
                                     type = 1;
                                     five_count_c++;
-                                    unmet5_w++;
-                                    unmet4_c++;
-                                    unmet4_w++;
                                     unmet5_c = 0;
                                     int templist[] = { 1, 2, 3, 4, 5 };
                                     kind = rspick(templist, 5);
@@ -3157,9 +2828,6 @@ int main() {
                                 else {
                                     type = 2;
                                     five_count_w++;
-                                    unmet5_c++;
-                                    unmet4_c++;
-                                    unmet4_w++;
                                     unmet5_w = 0;
                                     int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                     kind = rspick(templist, 10);
@@ -3169,9 +2837,6 @@ int main() {
                                 if (temp2 < ULTRAPOS * (1 - 1.0 / (10 * unmet5_w - 1468))) {
                                     type = 2;
                                     five_count_w++;
-                                    unmet5_c++;
-                                    unmet4_c++;
-                                    unmet4_w++;
                                     unmet5_w = 0;
                                     int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                     kind = rspick(templist, 10);
@@ -3179,9 +2844,6 @@ int main() {
                                 else {
                                     type = 1;
                                     five_count_c++;
-                                    unmet5_w++;
-                                    unmet4_c++;
-                                    unmet4_w++;
                                     unmet5_c = 0;
                                     int templist[] = { 1, 2, 3, 4, 5 };
                                     kind = rspick(templist, 5);
@@ -3196,9 +2858,6 @@ int main() {
                                 if (temp2 < ULTRAPOS / 2) {
                                     type = 1;
                                     four_count_c++;
-                                    unmet4_w++;
-                                    unmet5_c++;
-                                    unmet5_w++;
                                     unmet4_c = 0;
                                     int templist[] = { 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32 };
                                     kind = rspick(templist, 16);
@@ -3206,9 +2865,6 @@ int main() {
                                 else {
                                     type = 2;
                                     four_count_w++;
-                                    unmet4_c++;
-                                    unmet5_c++;
-                                    unmet5_w++;
                                     unmet4_w = 0;
                                     int templist[] = { 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50 };
                                     kind = rspick(templist, 18);
@@ -3218,9 +2874,6 @@ int main() {
                                 if (temp2 < ULTRAPOS * (1 - 1.0 / (10 * unmet4_c - 168))) {
                                     type = 1;
                                     four_count_c++;
-                                    unmet4_w++;
-                                    unmet5_c++;
-                                    unmet5_w++;
                                     unmet4_c = 0;
                                     int templist[] = { 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32 };
                                     kind = rspick(templist, 16);
@@ -3228,9 +2881,6 @@ int main() {
                                 else {
                                     type = 2;
                                     four_count_w++;
-                                    unmet4_c++;
-                                    unmet5_c++;
-                                    unmet5_w++;
                                     unmet4_w = 0;
                                     int templist[] = { 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50 };
                                     kind = rspick(templist, 18);
@@ -3240,9 +2890,6 @@ int main() {
                                 if (temp2 < ULTRAPOS * (1 - 1.0 / (10 * unmet4_w - 168))) {
                                     type = 2;
                                     four_count_w++;
-                                    unmet4_c++;
-                                    unmet5_c++;
-                                    unmet5_w++;
                                     unmet4_w = 0;
                                     int templist[] = { 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50 };
                                     kind = rspick(templist, 18);
@@ -3250,9 +2897,6 @@ int main() {
                                 else {
                                     type = 1;
                                     four_count_c++;
-                                    unmet4_w++;
-                                    unmet5_c++;
-                                    unmet5_w++;
                                     unmet4_c = 0;
                                     int templist[] = { 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32 };
                                     kind = rspick(templist, 16);
@@ -3278,9 +2922,6 @@ int main() {
                                 if (temp2 < ULTRAPOS / 2) {
                                     type = 1;
                                     five_count_c++;
-                                    unmet5_w++;
-                                    unmet4_c++;
-                                    unmet4_w++;
                                     unmet5_c = 0;
                                     int templist[] = { 1, 2, 3, 4, 5 };
                                     kind = rspick(templist, 5);
@@ -3288,9 +2929,6 @@ int main() {
                                 else {
                                     type = 2;
                                     five_count_w++;
-                                    unmet5_c++;
-                                    unmet4_c++;
-                                    unmet4_w++;
                                     unmet5_w = 0;
                                     int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                     kind = rspick(templist, 10);
@@ -3300,9 +2938,6 @@ int main() {
                                 if (temp2 < ULTRAPOS * (1 - 1.0 / (10 * unmet5_c - 1468))) {
                                     type = 1;
                                     five_count_c++;
-                                    unmet5_w++;
-                                    unmet4_c++;
-                                    unmet4_w++;
                                     unmet5_c = 0;
                                     int templist[] = { 1, 2, 3, 4, 5 };
                                     kind = rspick(templist, 5);
@@ -3310,9 +2945,6 @@ int main() {
                                 else {
                                     type = 2;
                                     five_count_w++;
-                                    unmet5_c++;
-                                    unmet4_c++;
-                                    unmet4_w++;
                                     unmet5_w = 0;
                                     int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                     kind = rspick(templist, 10);
@@ -3322,9 +2954,6 @@ int main() {
                                 if (temp2 < ULTRAPOS * (1 - 1.0 / (10 * unmet5_w - 1468))) {
                                     type = 2;
                                     five_count_w++;
-                                    unmet5_c++;
-                                    unmet4_c++;
-                                    unmet4_w++;
                                     unmet5_w = 0;
                                     int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                     kind = rspick(templist, 10);
@@ -3332,9 +2961,6 @@ int main() {
                                 else {
                                     type = 1;
                                     five_count_c++;
-                                    unmet5_w++;
-                                    unmet4_c++;
-                                    unmet4_w++;
                                     unmet5_c = 0;
                                     int templist[] = { 1, 2, 3, 4, 5 };
                                     kind = rspick(templist, 5);
@@ -3349,9 +2975,6 @@ int main() {
                                 if (temp2 < ULTRAPOS / 2) {
                                     type = 1;
                                     four_count_c++;
-                                    unmet4_w++;
-                                    unmet5_c++;
-                                    unmet5_w++;
                                     unmet4_c = 0;
                                     int templist[] = { 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32 };
                                     kind = rspick(templist, 16);
@@ -3359,9 +2982,6 @@ int main() {
                                 else {
                                     type = 2;
                                     four_count_w++;
-                                    unmet4_c++;
-                                    unmet5_c++;
-                                    unmet5_w++;
                                     unmet4_w = 0;
                                     int templist[] = { 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50 };
                                     kind = rspick(templist, 18);
@@ -3371,9 +2991,6 @@ int main() {
                                 if (temp2 < ULTRAPOS * (1 - 1.0 / (10 * unmet4_c - 168))) {
                                     type = 1;
                                     four_count_c++;
-                                    unmet4_w++;
-                                    unmet5_c++;
-                                    unmet5_w++;
                                     unmet4_c = 0;
                                     int templist[] = { 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32 };
                                     kind = rspick(templist, 16);
@@ -3381,9 +2998,6 @@ int main() {
                                 else {
                                     type = 2;
                                     four_count_w++;
-                                    unmet4_c++;
-                                    unmet5_c++;
-                                    unmet5_w++;
                                     unmet4_w = 0;
                                     int templist[] = { 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50 };
                                     kind = rspick(templist, 18);
@@ -3393,9 +3007,6 @@ int main() {
                                 if (temp2 < ULTRAPOS * (1 - 1.0 / (10 * unmet4_w - 168))) {
                                     type = 2;
                                     four_count_w++;
-                                    unmet4_c++;
-                                    unmet5_c++;
-                                    unmet5_w++;
                                     unmet4_w = 0;
                                     int templist[] = { 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50 };
                                     kind = rspick(templist, 18);
@@ -3403,9 +3014,6 @@ int main() {
                                 else {
                                     type = 1;
                                     four_count_c++;
-                                    unmet4_w++;
-                                    unmet5_c++;
-                                    unmet5_w++;
                                     unmet4_c = 0;
                                     int templist[] = { 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32 };
                                     kind = rspick(templist, 16);
@@ -3431,9 +3039,6 @@ int main() {
                                 if (temp2 < ULTRAPOS / 2) {
                                     type = 1;
                                     five_count_c++;
-                                    unmet5_w++;
-                                    unmet4_c++;
-                                    unmet4_w++;
                                     unmet5_c = 0;
                                     int templist[] = { 1, 2, 3, 4, 5 };
                                     kind = rspick(templist, 5);
@@ -3441,9 +3046,6 @@ int main() {
                                 else {
                                     type = 2;
                                     five_count_w++;
-                                    unmet5_c++;
-                                    unmet4_c++;
-                                    unmet4_w++;
                                     unmet5_w = 0;
                                     int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                     kind = rspick(templist, 10);
@@ -3453,9 +3055,6 @@ int main() {
                                 if (temp2 < ULTRAPOS * (1 - 1.0 / (10 * unmet5_c - 1468))) {
                                     type = 1;
                                     five_count_c++;
-                                    unmet5_w++;
-                                    unmet4_c++;
-                                    unmet4_w++;
                                     unmet5_c = 0;
                                     int templist[] = { 1, 2, 3, 4, 5 };
                                     kind = rspick(templist, 5);
@@ -3463,9 +3062,6 @@ int main() {
                                 else {
                                     type = 2;
                                     five_count_w++;
-                                    unmet5_c++;
-                                    unmet4_c++;
-                                    unmet4_w++;
                                     unmet5_w = 0;
                                     int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                     kind = rspick(templist, 10);
@@ -3475,9 +3071,6 @@ int main() {
                                 if (temp2 < ULTRAPOS * (1 - 1.0 / (10 * unmet5_w - 1468))) {
                                     type = 2;
                                     five_count_w++;
-                                    unmet5_c++;
-                                    unmet4_c++;
-                                    unmet4_w++;
                                     unmet5_w = 0;
                                     int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                     kind = rspick(templist, 10);
@@ -3485,9 +3078,6 @@ int main() {
                                 else {
                                     type = 1;
                                     five_count_c++;
-                                    unmet5_w++;
-                                    unmet4_c++;
-                                    unmet4_w++;
                                     unmet5_c = 0;
                                     int templist[] = { 1, 2, 3, 4, 5 };
                                     kind = rspick(templist, 5);
@@ -3502,9 +3092,6 @@ int main() {
                                 if (temp2 < ULTRAPOS / 2) {
                                     type = 1;
                                     four_count_c++;
-                                    unmet4_w++;
-                                    unmet5_c++;
-                                    unmet5_w++;
                                     unmet4_c = 0;
                                     int templist[] = { 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32 };
                                     kind = rspick(templist, 16);
@@ -3512,9 +3099,6 @@ int main() {
                                 else {
                                     type = 2;
                                     four_count_w++;
-                                    unmet4_c++;
-                                    unmet5_c++;
-                                    unmet5_w++;
                                     unmet4_w = 0;
                                     int templist[] = { 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50 };
                                     kind = rspick(templist, 18);
@@ -3524,9 +3108,6 @@ int main() {
                                 if (temp2 < ULTRAPOS * (1 - 1.0 / (10 * unmet4_c - 168))) {
                                     type = 1;
                                     four_count_c++;
-                                    unmet4_w++;
-                                    unmet5_c++;
-                                    unmet5_w++;
                                     unmet4_c = 0;
                                     int templist[] = { 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32 };
                                     kind = rspick(templist, 16);
@@ -3534,9 +3115,6 @@ int main() {
                                 else {
                                     type = 2;
                                     four_count_w++;
-                                    unmet4_c++;
-                                    unmet5_c++;
-                                    unmet5_w++;
                                     unmet4_w = 0;
                                     int templist[] = { 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50 };
                                     kind = rspick(templist, 18);
@@ -3546,9 +3124,6 @@ int main() {
                                 if (temp2 < ULTRAPOS * (1 - 1.0 / (10 * unmet4_w - 168))) {
                                     type = 2;
                                     four_count_w++;
-                                    unmet4_c++;
-                                    unmet5_c++;
-                                    unmet5_w++;
                                     unmet4_w = 0;
                                     int templist[] = { 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50 };
                                     kind = rspick(templist, 18);
@@ -3556,9 +3131,6 @@ int main() {
                                 else {
                                     type = 1;
                                     four_count_c++;
-                                    unmet4_w++;
-                                    unmet5_c++;
-                                    unmet5_w++;
                                     unmet4_c = 0;
                                     int templist[] = { 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32 };
                                     kind = rspick(templist, 16);
@@ -3577,9 +3149,9 @@ int main() {
                             if (temp2 < ULTRAPOS / 2) {
                                 type = 1;
                                 five_count_c++;
-                                unmet5_w++;
-                                unmet4_c++;
-                                unmet4_w++;
+                                
+                                
+                                
                                 unmet5_c = 0;
                                 int templist[] = { 1, 2, 3, 4, 5 };
                                 kind = rspick(templist, 5);
@@ -3587,9 +3159,9 @@ int main() {
                             else {
                                 type = 2;
                                 five_count_w++;
-                                unmet5_c++;
-                                unmet4_c++;
-                                unmet4_w++;
+                                
+                                
+                                
                                 unmet5_w = 0;
                                 int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                 kind = rspick(templist, 10);
@@ -3599,9 +3171,9 @@ int main() {
                             if (temp2 < ULTRAPOS * (1 - 1.0 / (10 * unmet5_c - 1468))) {
                                 type = 1;
                                 five_count_c++;
-                                unmet5_w++;
-                                unmet4_c++;
-                                unmet4_w++;
+                                
+                                
+                                
                                 unmet5_c = 0;
                                 int templist[] = { 1, 2, 3, 4, 5 };
                                 kind = rspick(templist, 5);
@@ -3609,9 +3181,9 @@ int main() {
                             else {
                                 type = 2;
                                 five_count_w++;
-                                unmet5_c++;
-                                unmet4_c++;
-                                unmet4_w++;
+                                
+                                
+                                
                                 unmet5_w = 0;
                                 int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                 kind = rspick(templist, 10);
@@ -3621,9 +3193,9 @@ int main() {
                             if (temp2 < ULTRAPOS * (1 - 1.0 / (10 * unmet5_w - 1468))) {
                                 type = 2;
                                 five_count_w++;
-                                unmet5_c++;
-                                unmet4_c++;
-                                unmet4_w++;
+                                
+                                
+                                
                                 unmet5_w = 0;
                                 int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                 kind = rspick(templist, 10);
@@ -3631,9 +3203,9 @@ int main() {
                             else {
                                 type = 1;
                                 five_count_c++;
-                                unmet5_w++;
-                                unmet4_c++;
-                                unmet4_w++;
+                                
+                                
+                                
                                 unmet5_c = 0;
                                 int templist[] = { 1, 2, 3, 4, 5 };
                                 kind = rspick(templist, 5);
@@ -3773,6 +3345,10 @@ int main() {
                     }
                     wishes_number = wishes_number - 1;
                     count = count + 1;
+                    if (!(star == 5 && type == 1)) unmet5_c++;
+                    if (!(star == 5 && type == 2)) unmet5_w++;
+                    if (!(star == 4 && type == 1)) unmet4_c++;
+                    if (!(star == 4 && type == 2)) unmet4_w++;
                     five_star_assurance_number = five_star_assurance_number + 1;
                     four_star_assurance_number = four_star_assurance_number + 1;
                 }
@@ -3797,9 +3373,6 @@ int main() {
                                 if (temp2 < ULTRAPOS / 2) {
                                     type = 1;
                                     five_count_c++;
-                                    unmet5_w++;
-                                    unmet4_c++;
-                                    unmet4_w++;
                                     unmet5_c = 0;
                                     int templist[] = { 1, 2, 3, 4, 5 };
                                     kind = rspick(templist, 5);
@@ -3807,9 +3380,6 @@ int main() {
                                 else {
                                     type = 2;
                                     five_count_w++;
-                                    unmet5_c++;
-                                    unmet4_c++;
-                                    unmet4_w++;
                                     unmet5_w = 0;
                                     int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                     kind = rspick(templist, 10);
@@ -3819,9 +3389,6 @@ int main() {
                                 if (temp2 < ULTRAPOS * (1 - 1.0 / (10 * unmet5_c - 1468))) {
                                     type = 1;
                                     five_count_c++;
-                                    unmet5_w++;
-                                    unmet4_c++;
-                                    unmet4_w++;
                                     unmet5_c = 0;
                                     int templist[] = { 1, 2, 3, 4, 5 };
                                     kind = rspick(templist, 5);
@@ -3829,9 +3396,6 @@ int main() {
                                 else {
                                     type = 2;
                                     five_count_w++;
-                                    unmet5_c++;
-                                    unmet4_c++;
-                                    unmet4_w++;
                                     unmet5_w = 0;
                                     int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                     kind = rspick(templist, 10);
@@ -3841,9 +3405,6 @@ int main() {
                                 if (temp2 < ULTRAPOS * (1 - 1.0 / (10 * unmet5_w - 1468))) {
                                     type = 2;
                                     five_count_w++;
-                                    unmet5_c++;
-                                    unmet4_c++;
-                                    unmet4_w++;
                                     unmet5_w = 0;
                                     int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                     kind = rspick(templist, 10);
@@ -3851,9 +3412,6 @@ int main() {
                                 else {
                                     type = 1;
                                     five_count_c++;
-                                    unmet5_w++;
-                                    unmet4_c++;
-                                    unmet4_w++;
                                     unmet5_c = 0;
                                     int templist[] = { 1, 2, 3, 4, 5 };
                                     kind = rspick(templist, 5);
@@ -3868,9 +3426,6 @@ int main() {
                                 if (temp2 < ULTRAPOS / 2) {
                                     type = 1;
                                     four_count_c++;
-                                    unmet4_w++;
-                                    unmet5_c++;
-                                    unmet5_w++;
                                     unmet4_c = 0;
                                     int templist[] = { 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32 };
                                     kind = rspick(templist, 17);
@@ -3878,9 +3433,6 @@ int main() {
                                 else {
                                     type = 2;
                                     four_count_w++;
-                                    unmet4_c++;
-                                    unmet5_c++;
-                                    unmet5_w++;
                                     unmet4_w = 0;
                                     int templist[] = { 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50 };
                                     kind = rspick(templist, 18);
@@ -3890,9 +3442,6 @@ int main() {
                                 if (temp2 < ULTRAPOS * (1 - 1.0 / (10 * unmet4_c - 168))) {
                                     type = 1;
                                     four_count_c++;
-                                    unmet4_w++;
-                                    unmet5_c++;
-                                    unmet5_w++;
                                     unmet4_c = 0;
                                     int templist[] = { 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32 };
                                     kind = rspick(templist, 17);
@@ -3900,9 +3449,6 @@ int main() {
                                 else {
                                     type = 2;
                                     four_count_w++;
-                                    unmet4_c++;
-                                    unmet5_c++;
-                                    unmet5_w++;
                                     unmet4_w = 0;
                                     int templist[] = { 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50 };
                                     kind = rspick(templist, 18);
@@ -3912,9 +3458,6 @@ int main() {
                                 if (temp2 < ULTRAPOS * (1 - 1.0 / (10 * unmet4_w - 168))) {
                                     type = 2;
                                     four_count_w++;
-                                    unmet4_c++;
-                                    unmet5_c++;
-                                    unmet5_w++;
                                     unmet4_w = 0;
                                     int templist[] = { 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50 };
                                     kind = rspick(templist, 18);
@@ -3922,9 +3465,6 @@ int main() {
                                 else {
                                     type = 1;
                                     four_count_c++;
-                                    unmet4_w++;
-                                    unmet5_c++;
-                                    unmet5_w++;
                                     unmet4_c = 0;
                                     int templist[] = { 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32 };
                                     kind = rspick(templist, 17);
@@ -3950,9 +3490,6 @@ int main() {
                                 if (temp2 < ULTRAPOS / 2) {
                                     type = 1;
                                     five_count_c++;
-                                    unmet5_w++;
-                                    unmet4_c++;
-                                    unmet4_w++;
                                     unmet5_c = 0;
                                     int templist[] = { 1, 2, 3, 4, 5 };
                                     kind = rspick(templist, 5);
@@ -3960,9 +3497,6 @@ int main() {
                                 else {
                                     type = 2;
                                     five_count_w++;
-                                    unmet5_c++;
-                                    unmet4_c++;
-                                    unmet4_w++;
                                     unmet5_w = 0;
                                     int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                     kind = rspick(templist, 10);
@@ -3972,9 +3506,6 @@ int main() {
                                 if (temp2 < ULTRAPOS * (1 - 1.0 / (10 * unmet5_c - 1468))) {
                                     type = 1;
                                     five_count_c++;
-                                    unmet5_w++;
-                                    unmet4_c++;
-                                    unmet4_w++;
                                     unmet5_c = 0;
                                     int templist[] = { 1, 2, 3, 4, 5 };
                                     kind = rspick(templist, 5);
@@ -3982,9 +3513,6 @@ int main() {
                                 else {
                                     type = 2;
                                     five_count_w++;
-                                    unmet5_c++;
-                                    unmet4_c++;
-                                    unmet4_w++;
                                     unmet5_w = 0;
                                     int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                     kind = rspick(templist, 10);
@@ -3994,9 +3522,6 @@ int main() {
                                 if (temp2 < ULTRAPOS * (1 - 1.0 / (10 * unmet5_w - 1468))) {
                                     type = 2;
                                     five_count_w++;
-                                    unmet5_c++;
-                                    unmet4_c++;
-                                    unmet4_w++;
                                     unmet5_w = 0;
                                     int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                     kind = rspick(templist, 10);
@@ -4004,9 +3529,6 @@ int main() {
                                 else {
                                     type = 1;
                                     five_count_c++;
-                                    unmet5_w++;
-                                    unmet4_c++;
-                                    unmet4_w++;
                                     unmet5_c = 0;
                                     int templist[] = { 1, 2, 3, 4, 5 };
                                     kind = rspick(templist, 5);
@@ -4021,9 +3543,6 @@ int main() {
                                 if (temp2 < ULTRAPOS / 2) {
                                     type = 1;
                                     four_count_c++;
-                                    unmet4_w++;
-                                    unmet5_c++;
-                                    unmet5_w++;
                                     unmet4_c = 0;
                                     int templist[] = { 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32 };
                                     kind = rspick(templist, 17);
@@ -4031,9 +3550,6 @@ int main() {
                                 else {
                                     type = 2;
                                     four_count_w++;
-                                    unmet4_c++;
-                                    unmet5_c++;
-                                    unmet5_w++;
                                     unmet4_w = 0;
                                     int templist[] = { 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50 };
                                     kind = rspick(templist, 18);
@@ -4043,9 +3559,6 @@ int main() {
                                 if (temp2 < ULTRAPOS * (1 - 1.0 / (10 * unmet4_c - 168))) {
                                     type = 1;
                                     four_count_c++;
-                                    unmet4_w++;
-                                    unmet5_c++;
-                                    unmet5_w++;
                                     unmet4_c = 0;
                                     int templist[] = { 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32 };
                                     kind = rspick(templist, 17);
@@ -4053,9 +3566,6 @@ int main() {
                                 else {
                                     type = 2;
                                     four_count_w++;
-                                    unmet4_c++;
-                                    unmet5_c++;
-                                    unmet5_w++;
                                     unmet4_w = 0;
                                     int templist[] = { 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50 };
                                     kind = rspick(templist, 18);
@@ -4065,9 +3575,6 @@ int main() {
                                 if (temp2 < ULTRAPOS * (1 - 1.0 / (10 * unmet4_w - 168))) {
                                     type = 2;
                                     four_count_w++;
-                                    unmet4_c++;
-                                    unmet5_c++;
-                                    unmet5_w++;
                                     unmet4_w = 0;
                                     int templist[] = { 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50 };
                                     kind = rspick(templist, 18);
@@ -4075,9 +3582,6 @@ int main() {
                                 else {
                                     type = 1;
                                     four_count_c++;
-                                    unmet4_w++;
-                                    unmet5_c++;
-                                    unmet5_w++;
                                     unmet4_c = 0;
                                     int templist[] = { 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32 };
                                     kind = rspick(templist, 17);
@@ -4103,9 +3607,6 @@ int main() {
                                 if (temp2 < ULTRAPOS / 2) {
                                     type = 1;
                                     five_count_c++;
-                                    unmet5_w++;
-                                    unmet4_c++;
-                                    unmet4_w++;
                                     unmet5_c = 0;
                                     int templist[] = { 1, 2, 3, 4, 5 };
                                     kind = rspick(templist, 5);
@@ -4113,9 +3614,6 @@ int main() {
                                 else {
                                     type = 2;
                                     five_count_w++;
-                                    unmet5_c++;
-                                    unmet4_c++;
-                                    unmet4_w++;
                                     unmet5_w = 0;
                                     int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                     kind = rspick(templist, 10);
@@ -4125,9 +3623,6 @@ int main() {
                                 if (temp2 < ULTRAPOS * (1 - 1.0 / (10 * unmet5_c - 1468))) {
                                     type = 1;
                                     five_count_c++;
-                                    unmet5_w++;
-                                    unmet4_c++;
-                                    unmet4_w++;
                                     unmet5_c = 0;
                                     int templist[] = { 1, 2, 3, 4, 5 };
                                     kind = rspick(templist, 5);
@@ -4135,9 +3630,6 @@ int main() {
                                 else {
                                     type = 2;
                                     five_count_w++;
-                                    unmet5_c++;
-                                    unmet4_c++;
-                                    unmet4_w++;
                                     unmet5_w = 0;
                                     int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                     kind = rspick(templist, 10);
@@ -4147,9 +3639,6 @@ int main() {
                                 if (temp2 < ULTRAPOS * (1 - 1.0 / (10 * unmet5_w - 1468))) {
                                     type = 2;
                                     five_count_w++;
-                                    unmet5_c++;
-                                    unmet4_c++;
-                                    unmet4_w++;
                                     unmet5_w = 0;
                                     int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                     kind = rspick(templist, 10);
@@ -4157,9 +3646,6 @@ int main() {
                                 else {
                                     type = 1;
                                     five_count_c++;
-                                    unmet5_w++;
-                                    unmet4_c++;
-                                    unmet4_w++;
                                     unmet5_c = 0;
                                     int templist[] = { 1, 2, 3, 4, 5 };
                                     kind = rspick(templist, 5);
@@ -4174,9 +3660,6 @@ int main() {
                                 if (temp2 < ULTRAPOS / 2) {
                                     type = 1;
                                     four_count_c++;
-                                    unmet4_w++;
-                                    unmet5_c++;
-                                    unmet5_w++;
                                     unmet4_c = 0;
                                     int templist[] = { 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32 };
                                     kind = rspick(templist, 17);
@@ -4184,9 +3667,6 @@ int main() {
                                 else {
                                     type = 2;
                                     four_count_w++;
-                                    unmet4_c++;
-                                    unmet5_c++;
-                                    unmet5_w++;
                                     unmet4_w = 0;
                                     int templist[] = { 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50 };
                                     kind = rspick(templist, 18);
@@ -4196,9 +3676,6 @@ int main() {
                                 if (temp2 < ULTRAPOS * (1 - 1.0 / (10 * unmet4_c - 168))) {
                                     type = 1;
                                     four_count_c++;
-                                    unmet4_w++;
-                                    unmet5_c++;
-                                    unmet5_w++;
                                     unmet4_c = 0;
                                     int templist[] = { 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32 };
                                     kind = rspick(templist, 17);
@@ -4206,9 +3683,6 @@ int main() {
                                 else {
                                     type = 2;
                                     four_count_w++;
-                                    unmet4_c++;
-                                    unmet5_c++;
-                                    unmet5_w++;
                                     unmet4_w = 0;
                                     int templist[] = { 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50 };
                                     kind = rspick(templist, 18);
@@ -4218,9 +3692,6 @@ int main() {
                                 if (temp2 < ULTRAPOS * (1 - 1.0 / (10 * unmet4_w - 168))) {
                                     type = 2;
                                     four_count_w++;
-                                    unmet4_c++;
-                                    unmet5_c++;
-                                    unmet5_w++;
                                     unmet4_w = 0;
                                     int templist[] = { 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50 };
                                     kind = rspick(templist, 18);
@@ -4228,9 +3699,6 @@ int main() {
                                 else {
                                     type = 1;
                                     four_count_c++;
-                                    unmet4_w++;
-                                    unmet5_c++;
-                                    unmet5_w++;
                                     unmet4_c = 0;
                                     int templist[] = { 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32 };
                                     kind = rspick(templist, 17);
@@ -4250,9 +3718,6 @@ int main() {
                                 if (temp2 < ULTRAPOS / 2) {
                                     type = 1;
                                     five_count_c++;
-                                    unmet5_w++;
-                                    unmet4_c++;
-                                    unmet4_w++;
                                     unmet5_c = 0;
                                     int templist[] = { 1, 2, 3, 4, 5 };
                                     kind = rspick(templist, 5);
@@ -4260,9 +3725,6 @@ int main() {
                                 else {
                                     type = 2;
                                     five_count_w++;
-                                    unmet5_c++;
-                                    unmet4_c++;
-                                    unmet4_w++;
                                     unmet5_w = 0;
                                     int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                     kind = rspick(templist, 10);
@@ -4272,9 +3734,6 @@ int main() {
                                 if (temp2 < ULTRAPOS * (1 - 1.0 / (10 * unmet5_c - 1468))) {
                                     type = 1;
                                     five_count_c++;
-                                    unmet5_w++;
-                                    unmet4_c++;
-                                    unmet4_w++;
                                     unmet5_c = 0;
                                     int templist[] = { 1, 2, 3, 4, 5 };
                                     kind = rspick(templist, 5);
@@ -4282,9 +3741,6 @@ int main() {
                                 else {
                                     type = 2;
                                     five_count_w++;
-                                    unmet5_c++;
-                                    unmet4_c++;
-                                    unmet4_w++;
                                     unmet5_w = 0;
                                     int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                     kind = rspick(templist, 10);
@@ -4294,9 +3750,6 @@ int main() {
                                 if (temp2 < ULTRAPOS * (1 - 1.0 / (10 * unmet5_w - 1468))) {
                                     type = 2;
                                     five_count_w++;
-                                    unmet5_c++;
-                                    unmet4_c++;
-                                    unmet4_w++;
                                     unmet5_w = 0;
                                     int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                     kind = rspick(templist, 10);
@@ -4304,9 +3757,6 @@ int main() {
                                 else {
                                     type = 1;
                                     five_count_c++;
-                                    unmet5_w++;
-                                    unmet4_c++;
-                                    unmet4_w++;
                                     unmet5_c = 0;
                                     int templist[] = { 1, 2, 3, 4, 5 };
                                     kind = rspick(templist, 5);
@@ -4321,9 +3771,6 @@ int main() {
                                 if (temp2 < ULTRAPOS / 2) {
                                     type = 1;
                                     four_count_c++;
-                                    unmet4_w++;
-                                    unmet5_c++;
-                                    unmet5_w++;
                                     unmet4_c = 0;
                                     int templist[] = { 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32 };
                                     kind = rspick(templist, 17);
@@ -4331,9 +3778,6 @@ int main() {
                                 else {
                                     type = 2;
                                     four_count_w++;
-                                    unmet4_c++;
-                                    unmet5_c++;
-                                    unmet5_w++;
                                     unmet4_w = 0;
                                     int templist[] = { 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50 };
                                     kind = rspick(templist, 18);
@@ -4343,9 +3787,6 @@ int main() {
                                 if (temp2 < ULTRAPOS * (1 - 1.0 / (10 * unmet4_c - 168))) {
                                     type = 1;
                                     four_count_c++;
-                                    unmet4_w++;
-                                    unmet5_c++;
-                                    unmet5_w++;
                                     unmet4_c = 0;
                                     int templist[] = { 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32 };
                                     kind = rspick(templist, 17);
@@ -4353,9 +3794,6 @@ int main() {
                                 else {
                                     type = 2;
                                     four_count_w++;
-                                    unmet4_c++;
-                                    unmet5_c++;
-                                    unmet5_w++;
                                     unmet4_w = 0;
                                     int templist[] = { 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50 };
                                     kind = rspick(templist, 18);
@@ -4365,9 +3803,6 @@ int main() {
                                 if (temp2 < ULTRAPOS * (1 - 1.0 / (10 * unmet4_w - 168))) {
                                     type = 2;
                                     four_count_w++;
-                                    unmet4_c++;
-                                    unmet5_c++;
-                                    unmet5_w++;
                                     unmet4_w = 0;
                                     int templist[] = { 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50 };
                                     kind = rspick(templist, 18);
@@ -4375,9 +3810,6 @@ int main() {
                                 else {
                                     type = 1;
                                     four_count_c++;
-                                    unmet4_w++;
-                                    unmet5_c++;
-                                    unmet5_w++;
                                     unmet4_c = 0;
                                     int templist[] = { 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32 };
                                     kind = rspick(templist, 17);
@@ -4403,9 +3835,6 @@ int main() {
                                 if (temp2 < ULTRAPOS / 2) {
                                     type = 1;
                                     five_count_c++;
-                                    unmet5_w++;
-                                    unmet4_c++;
-                                    unmet4_w++;
                                     unmet5_c = 0;
                                     int templist[] = { 1, 2, 3, 4, 5 };
                                     kind = rspick(templist, 5);
@@ -4413,9 +3842,6 @@ int main() {
                                 else {
                                     type = 2;
                                     five_count_w++;
-                                    unmet5_c++;
-                                    unmet4_c++;
-                                    unmet4_w++;
                                     unmet5_w = 0;
                                     int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                     kind = rspick(templist, 10);
@@ -4425,9 +3851,6 @@ int main() {
                                 if (temp2 < ULTRAPOS * (1 - 1.0 / (10 * unmet5_c - 1468))) {
                                     type = 1;
                                     five_count_c++;
-                                    unmet5_w++;
-                                    unmet4_c++;
-                                    unmet4_w++;
                                     unmet5_c = 0;
                                     int templist[] = { 1, 2, 3, 4, 5 };
                                     kind = rspick(templist, 5);
@@ -4435,9 +3858,6 @@ int main() {
                                 else {
                                     type = 2;
                                     five_count_w++;
-                                    unmet5_c++;
-                                    unmet4_c++;
-                                    unmet4_w++;
                                     unmet5_w = 0;
                                     int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                     kind = rspick(templist, 10);
@@ -4447,9 +3867,6 @@ int main() {
                                 if (temp2 < ULTRAPOS * (1 - 1.0 / (10 * unmet5_w - 1468))) {
                                     type = 2;
                                     five_count_w++;
-                                    unmet5_c++;
-                                    unmet4_c++;
-                                    unmet4_w++;
                                     unmet5_w = 0;
                                     int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                     kind = rspick(templist, 10);
@@ -4457,9 +3874,6 @@ int main() {
                                 else {
                                     type = 1;
                                     five_count_c++;
-                                    unmet5_w++;
-                                    unmet4_c++;
-                                    unmet4_w++;
                                     unmet5_c = 0;
                                     int templist[] = { 1, 2, 3, 4, 5 };
                                     kind = rspick(templist, 5);
@@ -4474,9 +3888,6 @@ int main() {
                                 if (temp2 < ULTRAPOS / 2) {
                                     type = 1;
                                     four_count_c++;
-                                    unmet4_w++;
-                                    unmet5_c++;
-                                    unmet5_w++;
                                     unmet4_c = 0;
                                     int templist[] = { 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32 };
                                     kind = rspick(templist, 17);
@@ -4484,9 +3895,6 @@ int main() {
                                 else {
                                     type = 2;
                                     four_count_w++;
-                                    unmet4_c++;
-                                    unmet5_c++;
-                                    unmet5_w++;
                                     unmet4_w = 0;
                                     int templist[] = { 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50 };
                                     kind = rspick(templist, 18);
@@ -4496,9 +3904,6 @@ int main() {
                                 if (temp2 < ULTRAPOS * (1 - 1.0 / (10 * unmet4_c - 168))) {
                                     type = 1;
                                     four_count_c++;
-                                    unmet4_w++;
-                                    unmet5_c++;
-                                    unmet5_w++;
                                     unmet4_c = 0;
                                     int templist[] = { 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32 };
                                     kind = rspick(templist, 17);
@@ -4506,9 +3911,6 @@ int main() {
                                 else {
                                     type = 2;
                                     four_count_w++;
-                                    unmet4_c++;
-                                    unmet5_c++;
-                                    unmet5_w++;
                                     unmet4_w = 0;
                                     int templist[] = { 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50 };
                                     kind = rspick(templist, 18);
@@ -4518,9 +3920,6 @@ int main() {
                                 if (temp2 < ULTRAPOS * (1 - 1.0 / (10 * unmet4_w - 168))) {
                                     type = 2;
                                     four_count_w++;
-                                    unmet4_c++;
-                                    unmet5_c++;
-                                    unmet5_w++;
                                     unmet4_w = 0;
                                     int templist[] = { 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50 };
                                     kind = rspick(templist, 18);
@@ -4528,9 +3927,6 @@ int main() {
                                 else {
                                     type = 1;
                                     four_count_c++;
-                                    unmet4_w++;
-                                    unmet5_c++;
-                                    unmet5_w++;
                                     unmet4_c = 0;
                                     int templist[] = { 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32 };
                                     kind = rspick(templist, 17);
@@ -4556,9 +3952,6 @@ int main() {
                                 if (temp2 < ULTRAPOS / 2) {
                                     type = 1;
                                     five_count_c++;
-                                    unmet5_w++;
-                                    unmet4_c++;
-                                    unmet4_w++;
                                     unmet5_c = 0;
                                     int templist[] = { 1, 2, 3, 4, 5 };
                                     kind = rspick(templist, 5);
@@ -4566,9 +3959,6 @@ int main() {
                                 else {
                                     type = 2;
                                     five_count_w++;
-                                    unmet5_c++;
-                                    unmet4_c++;
-                                    unmet4_w++;
                                     unmet5_w = 0;
                                     int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                     kind = rspick(templist, 10);
@@ -4578,9 +3968,6 @@ int main() {
                                 if (temp2 < ULTRAPOS * (1 - 1.0 / (10 * unmet5_c - 1468))) {
                                     type = 1;
                                     five_count_c++;
-                                    unmet5_w++;
-                                    unmet4_c++;
-                                    unmet4_w++;
                                     unmet5_c = 0;
                                     int templist[] = { 1, 2, 3, 4, 5 };
                                     kind = rspick(templist, 5);
@@ -4588,9 +3975,6 @@ int main() {
                                 else {
                                     type = 2;
                                     five_count_w++;
-                                    unmet5_c++;
-                                    unmet4_c++;
-                                    unmet4_w++;
                                     unmet5_w = 0;
                                     int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                     kind = rspick(templist, 10);
@@ -4600,9 +3984,6 @@ int main() {
                                 if (temp2 < ULTRAPOS * (1 - 1.0 / (10 * unmet5_w - 1468))) {
                                     type = 2;
                                     five_count_w++;
-                                    unmet5_c++;
-                                    unmet4_c++;
-                                    unmet4_w++;
                                     unmet5_w = 0;
                                     int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                     kind = rspick(templist, 10);
@@ -4610,9 +3991,6 @@ int main() {
                                 else {
                                     type = 1;
                                     five_count_c++;
-                                    unmet5_w++;
-                                    unmet4_c++;
-                                    unmet4_w++;
                                     unmet5_c = 0;
                                     int templist[] = { 1, 2, 3, 4, 5 };
                                     kind = rspick(templist, 5);
@@ -4627,9 +4005,6 @@ int main() {
                                 if (temp2 < ULTRAPOS / 2) {
                                     type = 1;
                                     four_count_c++;
-                                    unmet4_w++;
-                                    unmet5_c++;
-                                    unmet5_w++;
                                     unmet4_c = 0;
                                     int templist[] = { 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32 };
                                     kind = rspick(templist, 17);
@@ -4637,9 +4012,6 @@ int main() {
                                 else {
                                     type = 2;
                                     four_count_w++;
-                                    unmet4_c++;
-                                    unmet5_c++;
-                                    unmet5_w++;
                                     unmet4_w = 0;
                                     int templist[] = { 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50 };
                                     kind = rspick(templist, 18);
@@ -4649,9 +4021,6 @@ int main() {
                                 if (temp2 < ULTRAPOS * (1 - 1.0 / (10 * unmet4_c - 168))) {
                                     type = 1;
                                     four_count_c++;
-                                    unmet4_w++;
-                                    unmet5_c++;
-                                    unmet5_w++;
                                     unmet4_c = 0;
                                     int templist[] = { 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32 };
                                     kind = rspick(templist, 17);
@@ -4659,9 +4028,6 @@ int main() {
                                 else {
                                     type = 2;
                                     four_count_w++;
-                                    unmet4_c++;
-                                    unmet5_c++;
-                                    unmet5_w++;
                                     unmet4_w = 0;
                                     int templist[] = { 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50 };
                                     kind = rspick(templist, 18);
@@ -4671,9 +4037,6 @@ int main() {
                                 if (temp2 < ULTRAPOS * (1 - 1.0 / (10 * unmet4_w - 168))) {
                                     type = 2;
                                     four_count_w++;
-                                    unmet4_c++;
-                                    unmet5_c++;
-                                    unmet5_w++;
                                     unmet4_w = 0;
                                     int templist[] = { 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50 };
                                     kind = rspick(templist, 18);
@@ -4681,9 +4044,6 @@ int main() {
                                 else {
                                     type = 1;
                                     four_count_c++;
-                                    unmet4_w++;
-                                    unmet5_c++;
-                                    unmet5_w++;
                                     unmet4_c = 0;
                                     int templist[] = { 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32 };
                                     kind = rspick(templist, 17);
@@ -4702,9 +4062,9 @@ int main() {
                             if (temp2 < ULTRAPOS / 2) {
                                 type = 1;
                                 five_count_c++;
-                                unmet5_w++;
-                                unmet4_c++;
-                                unmet4_w++;
+                                
+                                
+                                
                                 unmet5_c = 0;
                                 int templist[] = { 1, 2, 3, 4, 5 };
                                 kind = rspick(templist, 5);
@@ -4712,9 +4072,9 @@ int main() {
                             else {
                                 type = 2;
                                 five_count_w++;
-                                unmet5_c++;
-                                unmet4_c++;
-                                unmet4_w++;
+                                
+                                
+                                
                                 unmet5_w = 0;
                                 int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                 kind = rspick(templist, 10);
@@ -4724,9 +4084,9 @@ int main() {
                             if (temp2 < ULTRAPOS * (1 - 1.0 / (10 * unmet5_c - 1468))) {
                                 type = 1;
                                 five_count_c++;
-                                unmet5_w++;
-                                unmet4_c++;
-                                unmet4_w++;
+                                
+                                
+                                
                                 unmet5_c = 0;
                                 int templist[] = { 1, 2, 3, 4, 5 };
                                 kind = rspick(templist, 5);
@@ -4734,9 +4094,9 @@ int main() {
                             else {
                                 type = 2;
                                 five_count_w++;
-                                unmet5_c++;
-                                unmet4_c++;
-                                unmet4_w++;
+                                
+                                
+                                
                                 unmet5_w = 0;
                                 int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                 kind = rspick(templist, 10);
@@ -4746,9 +4106,9 @@ int main() {
                             if (temp2 < ULTRAPOS * (1 - 1.0 / (10 * unmet5_w - 1468))) {
                                 type = 2;
                                 five_count_w++;
-                                unmet5_c++;
-                                unmet4_c++;
-                                unmet4_w++;
+                                
+                                
+                                
                                 unmet5_w = 0;
                                 int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                 kind = rspick(templist, 10);
@@ -4756,9 +4116,9 @@ int main() {
                             else {
                                 type = 1;
                                 five_count_c++;
-                                unmet5_w++;
-                                unmet4_c++;
-                                unmet4_w++;
+                                
+                                
+                                
                                 unmet5_c = 0;
                                 int templist[] = { 1, 2, 3, 4, 5 };
                                 kind = rspick(templist, 5);
@@ -4898,6 +4258,10 @@ int main() {
                     }
                     wishes_number = wishes_number - 1;
                     count = count + 1;
+                    if (!(star == 5 && type == 1)) unmet5_c++;
+                    if (!(star == 5 && type == 2)) unmet5_w++;
+                    if (!(star == 4 && type == 1)) unmet4_c++;
+                    if (!(star == 4 && type == 2)) unmet4_w++;
                     five_star_assurance_number = five_star_assurance_number + 1;
                     four_star_assurance_number = four_star_assurance_number + 1;
                 }
@@ -5136,6 +4500,10 @@ int main() {
                     }
                     wishes_number = wishes_number - 1;
                     count = count + 1;
+                    if (!(star == 5 && type == 1)) unmet5_c++;
+                    if (!(star == 5 && type == 2)) unmet5_w++;
+                    if (!(star == 4 && type == 1)) unmet4_c++;
+                    if (!(star == 4 && type == 2)) unmet4_w++;
                     five_star_assurance_number = five_star_assurance_number + 1;
                     four_star_assurance_number = four_star_assurance_number + 1;
                 }
