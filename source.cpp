@@ -2,12 +2,11 @@
 #include <chrono>
 #include <iostream>
 #include <random>
-#include <vector>
 #include <string>
 #define ULTRAPOS 437580000
 using namespace std;
 
-unsigned int seed = (unsigned int)std::chrono::high_resolution_clock::now().time_since_epoch().count();
+unsigned int seed = (unsigned int) std::chrono::high_resolution_clock::now().time_since_epoch().count();
 std::mt19937_64 generator(seed);
 
 string pname[128] = {
@@ -147,7 +146,7 @@ int rspick(int* kindx, int sizekind) {
     int temp221 = 0;
     for (; index < sizekind; index++)
     {
-        temp221 = generator() % (static_cast<__int64_t>(index) + 1);
+        temp221 = generator() % ((long long int)(index) + 1);
         if (temp221 < 1)
             kindout = kindx[index];
     }
@@ -262,7 +261,7 @@ int main() {
             std::cout << endl << "How many wishes?" << endl << "-1: Re-choose Wishes (Banners); 1: 1 Wish; 10: 10 Wishes" << endl << endl;
             std::cin >> wishes_number;
             std::cout << endl;
-            if (chosen_banner == 4 && chosen_event == 1 && wishes_number == -1) { wishes_number = 0; goto full_quit; }
+            if (chosen_banner == 4 && chosen_event == 1 && wishes_number == -1) { wishes_number = 0; goto enter_chosen_banner; }
             //if (chosen_banner == 4 && chosen_event == 1 && wishes_number != 10) { wishes_number = 0; std::cout << "Invalid number of wishes!" << endl; goto enter_wishes_number; }
             //if (!(wishes_number == -1||wishes_number == 10||wishes_number == 1)){ wishes_number = 0; std::cout << "Invalid number of wishes!" << endl; goto enter_wishes_number; }
             auto start = std::chrono::steady_clock::now();
@@ -1881,7 +1880,7 @@ int main() {
                         }
                     }
                     else if (five_star_assurance_number < 90 && five_star_assurance_number > 73 && four_star_assurance_number < 9) {
-                        if (temp1 < static_cast<__int64_t>(ULTRAPOS / 1000 * 6) + static_cast<__int64_t>((static_cast<__int64_t>(five_star_assurance_number) - 73) * static_cast<__int64_t>(ULTRAPOS / 1000 * 60))) {
+                        if (temp1 < (long long int)(ULTRAPOS / 1000 * 6) + (long long int)(((long long int)(five_star_assurance_number) - 73) * (long long int)(ULTRAPOS / 1000 * 60))) {
                             star = 5;
                             five_count = five_count + 1;
                             ave_fives = ave_fives + five_star_assurance_number;
@@ -1937,7 +1936,7 @@ int main() {
                                 }
                             }
                         }
-                        else if (temp1 < static_cast<__int64_t>(ULTRAPOS / 1000 * 57) + static_cast<__int64_t>((static_cast<__int64_t>(five_star_assurance_number) - 73) * static_cast<__int64_t>(ULTRAPOS / 1000 * 60))) {
+                        else if (temp1 < (long long int)(ULTRAPOS / 1000 * 57) + (long long int)(((long long int)(five_star_assurance_number) - 73) * (long long int)(ULTRAPOS / 1000 * 60))) {
                             star = 4;
                             four_count = four_count + 1;
                             four_star_assurance_number = 0;
@@ -1998,7 +1997,7 @@ int main() {
                         }
                     }
                     else if (five_star_assurance_number < 90 && five_star_assurance_number > 73 && four_star_assurance_number == 9) {
-                        if (temp1 < static_cast<__int64_t>(ULTRAPOS / 1000 * 6) + static_cast<__int64_t>((static_cast<__int64_t>(five_star_assurance_number) - 73) * static_cast<__int64_t>(ULTRAPOS / 1000 * 60))) {
+                        if (temp1 < (long long int)(ULTRAPOS / 1000 * 6) + (long long int)(((long long int)(five_star_assurance_number) - 73) * (long long int)(ULTRAPOS / 1000 * 60))) {
                             star = 5;
                             five_count = five_count + 1;
                             ave_fives = ave_fives + five_star_assurance_number;
@@ -2054,7 +2053,7 @@ int main() {
                                 }
                             }
                         }
-                        else if (temp1 < static_cast<__int64_t>(ULTRAPOS / 1000 * 567) + (static_cast<__int64_t>(five_star_assurance_number) - 73) * static_cast<__int64_t>(ULTRAPOS / 1000 * 60)) {
+                        else if (temp1 < (long long int)(ULTRAPOS / 1000 * 567) + ((long long int)(five_star_assurance_number) - 73) * (long long int)(ULTRAPOS / 1000 * 60)) {
                             star = 4;
                             four_count = four_count + 1;
                             four_star_assurance_number = 0;
@@ -2115,7 +2114,7 @@ int main() {
                         }
                     }
                     else if (five_star_assurance_number < 90 && five_star_assurance_number > 73 && four_star_assurance_number > 9) {
-                        if (temp1 < static_cast<__int64_t>(ULTRAPOS / 1000 * 6) + (static_cast<__int64_t>(five_star_assurance_number) - 73) * static_cast<__int64_t>(ULTRAPOS / 1000 * 60)) {
+                        if (temp1 < (long long int)(ULTRAPOS / 1000 * 6) + ((long long int)(five_star_assurance_number) - 73) * (long long int)(ULTRAPOS / 1000 * 60)) {
                             star = 5;
                             five_count = five_count + 1;
                             ave_fives = ave_fives + five_star_assurance_number;
@@ -2794,7 +2793,7 @@ int main() {
                         }
                     }
                     else if (five_star_assurance_number < 90 && five_star_assurance_number > 73 && four_star_assurance_number < 9) {
-                        if (temp1 < static_cast<__int64_t>(ULTRAPOS / 1000 * 6) + (static_cast<__int64_t>(five_star_assurance_number) - 73) * static_cast<__int64_t>(ULTRAPOS / 1000 * 60)) {
+                        if (temp1 < (long long int)(ULTRAPOS / 1000 * 6) + ((long long int)(five_star_assurance_number) - 73) * (long long int)(ULTRAPOS / 1000 * 60)) {
                             star = 5;
                             five_count = five_count + 1;
                             ave_fives = ave_fives + five_star_assurance_number;
@@ -2850,7 +2849,7 @@ int main() {
                                 }
                             }
                         }
-                        else if (temp1 < static_cast<__int64_t>(ULTRAPOS / 1000 * 57) + (static_cast<__int64_t>(five_star_assurance_number) - 73) * static_cast<__int64_t>(ULTRAPOS / 1000 * 60)) {
+                        else if (temp1 < (long long int)(ULTRAPOS / 1000 * 57) + ((long long int)(five_star_assurance_number) - 73) * (long long int)(ULTRAPOS / 1000 * 60)) {
                             star = 4;
                             four_count = four_count + 1;
                             four_star_assurance_number = 0;
@@ -2911,7 +2910,7 @@ int main() {
                         }
                     }
                     else if (five_star_assurance_number < 90 && five_star_assurance_number > 73 && four_star_assurance_number == 9) {
-                        if (temp1 < static_cast<__int64_t>(ULTRAPOS / 1000 * 6) + (static_cast<__int64_t>(five_star_assurance_number) - 73) * static_cast<__int64_t>(ULTRAPOS / 1000 * 60)) {
+                        if (temp1 < (long long int)(ULTRAPOS / 1000 * 6) + ((long long int)(five_star_assurance_number) - 73) * (long long int)(ULTRAPOS / 1000 * 60)) {
                             star = 5;
                             five_count = five_count + 1;
                             ave_fives = ave_fives + five_star_assurance_number;
@@ -2967,7 +2966,7 @@ int main() {
                                 }
                             }
                         }
-                        else if (temp1 < static_cast<__int64_t>(ULTRAPOS / 1000 * 567) + (static_cast<__int64_t>(five_star_assurance_number) - 73) * static_cast<__int64_t>(ULTRAPOS / 1000 * 60)) {
+                        else if (temp1 < (long long int)(ULTRAPOS / 1000 * 567) + ((long long int)(five_star_assurance_number) - 73) * (long long int)(ULTRAPOS / 1000 * 60)) {
                             star = 4;
                             four_count = four_count + 1;
                             four_star_assurance_number = 0;
@@ -3028,7 +3027,7 @@ int main() {
                         }
                     }
                     else if (five_star_assurance_number < 90 && five_star_assurance_number > 73 && four_star_assurance_number > 9) {
-                        if (temp1 < static_cast<__int64_t>(ULTRAPOS / 1000 * 6) + (static_cast<__int64_t>(five_star_assurance_number) - 73) * static_cast<__int64_t>(ULTRAPOS / 1000 * 60)) {
+                        if (temp1 < (long long int)(ULTRAPOS / 1000 * 6) + ((long long int)(five_star_assurance_number) - 73) * (long long int)(ULTRAPOS / 1000 * 60)) {
                             star = 5;
                             five_count = five_count + 1;
                             ave_fives = ave_fives + five_star_assurance_number;
@@ -3707,7 +3706,7 @@ int main() {
                         }
                     }
                     else if (five_star_assurance_number < 90 && five_star_assurance_number > 73 && four_star_assurance_number < 9) {
-                        if (temp1 < static_cast<__int64_t>(ULTRAPOS / 1000 * 6) + (static_cast<__int64_t>(five_star_assurance_number) - 73) * static_cast<__int64_t>(ULTRAPOS / 1000 * 60)) {
+                        if (temp1 < (long long int)(ULTRAPOS / 1000 * 6) + ((long long int)(five_star_assurance_number) - 73) * (long long int)(ULTRAPOS / 1000 * 60)) {
                             star = 5;
                             five_count = five_count + 1;
                             ave_fives = ave_fives + five_star_assurance_number;
@@ -3763,7 +3762,7 @@ int main() {
                                 }
                             }
                         }
-                        else if (temp1 < static_cast<__int64_t>(ULTRAPOS / 1000 * 57) + (static_cast<__int64_t>(five_star_assurance_number) - 73) * static_cast<__int64_t>(ULTRAPOS / 1000 * 60)) {
+                        else if (temp1 < (long long int)(ULTRAPOS / 1000 * 57) + ((long long int)(five_star_assurance_number) - 73) * (long long int)(ULTRAPOS / 1000 * 60)) {
                             star = 4;
                             four_count = four_count + 1;
                             four_star_assurance_number = 0;
@@ -3824,7 +3823,7 @@ int main() {
                         }
                     }
                     else if (five_star_assurance_number < 90 && five_star_assurance_number > 73 && four_star_assurance_number == 9) {
-                        if (temp1 < static_cast<__int64_t>(ULTRAPOS / 1000 * 6) + (static_cast<__int64_t>(five_star_assurance_number) - 73) * static_cast<__int64_t>(ULTRAPOS / 1000 * 60)) {
+                        if (temp1 < (long long int)(ULTRAPOS / 1000 * 6) + ((long long int)(five_star_assurance_number) - 73) * (long long int)(ULTRAPOS / 1000 * 60)) {
                             star = 5;
                             five_count = five_count + 1;
                             ave_fives = ave_fives + five_star_assurance_number;
@@ -3880,7 +3879,7 @@ int main() {
                                 }
                             }
                         }
-                        else if (temp1 < static_cast<__int64_t>(ULTRAPOS / 1000 * 567) + (static_cast<__int64_t>(five_star_assurance_number) - 73) * static_cast<__int64_t>(ULTRAPOS / 1000 * 60)) {
+                        else if (temp1 < (long long int)(ULTRAPOS / 1000 * 567) + ((long long int)(five_star_assurance_number) - 73) * (long long int)(ULTRAPOS / 1000 * 60)) {
                             star = 4;
                             four_count = four_count + 1;
                             four_star_assurance_number = 0;
@@ -3941,7 +3940,7 @@ int main() {
                         }
                     }
                     else if (five_star_assurance_number < 90 && five_star_assurance_number > 73 && four_star_assurance_number > 9) {
-                        if (temp1 < static_cast<__int64_t>(ULTRAPOS / 1000 * 6) + (static_cast<__int64_t>(five_star_assurance_number) - 73) * static_cast<__int64_t>(ULTRAPOS / 1000 * 60)) {
+                        if (temp1 < (long long int)(ULTRAPOS / 1000 * 6) + ((long long int)(five_star_assurance_number) - 73) * (long long int)(ULTRAPOS / 1000 * 60)) {
                             star = 5;
                             five_count = five_count + 1;
                             ave_fives = ave_fives + five_star_assurance_number;
@@ -4513,7 +4512,7 @@ int main() {
                     std::cout << endl << "You have pulled " << count << " wishes." << endl
                         << "5-stars:   " << five_count << "  " << five_count * 100.0 / count << "%" << endl
                         << "4-stars:   " << four_count << "  " << four_count * 100.0 / count << "%" << endl
-                        << "5-star-characters : 5-star-weapons : 4-star-characters: 4-star-weapons   " << five_count_c << " : " << five_count_w << " : " << four_count_c << " : " << four_count_w << endl << endl;
+                        << "5-star-characters : 5-star-weapons : 4-star-characters : 4-star-weapons   " << five_count_c << " : " << five_count_w << " : " << four_count_c << " : " << four_count_w << endl << endl;
                 }
                 else {
                     std::cout << endl << "You have pulled " << count << " wishes." << endl
@@ -4522,7 +4521,7 @@ int main() {
                         << "max non-5-stars-max:   " << max_fives << " at " << max_fivesth << "-th non-5-stars  " << max_fivecount + 1 << "-th wishes" << endl
                         << "min non-5-stars-max:   " << min_fives << " at " << min_fivesth << "-th non-5-stars  " << min_fivecount + 1 << "-th wishes" << endl
                         << "ave non-5-star-max:   " << ave_fives * 1.0 / five_count << endl
-                        << "5-star-characters : 5-star-weapons : 4-star-characters: 4-star-weapons   " << five_count_c << " : " << five_count_w << " : " << four_count_c << " : " << four_count_w << endl << endl;
+                        << "5-star-characters : 5-star-weapons : 4-star-characters : 4-star-weapons   " << five_count_c << " : " << five_count_w << " : " << four_count_c << " : " << four_count_w << endl << endl;
                 }
                 for (int iout = 0; iout < 15; iout++) { if (pcount[iout] > 0) std::cout << pname[iout] << "(" << pcount[iout] << ")" << " "; }
                 for (int iout = 63; iout < 71; iout++) { if (pcount[iout] > 0) std::cout << pname[iout] << "(" << pcount[iout] << ")" << " "; }
