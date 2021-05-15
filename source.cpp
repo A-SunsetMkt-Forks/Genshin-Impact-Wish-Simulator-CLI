@@ -283,7 +283,7 @@ int main() {
                             if (five_star_assurance_number < min_fives) { min_fives = five_star_assurance_number; min_fivesth = five_count; min_fivecount = count; }
                             five_star_assurance_number = 0;
                             if (five_star_guarantee_number == 1) { type = 1; kind = 66; five_star_guarantee_number = 0;}
-                            else if (temp2 < 1 + ULTRAPOS/2) {
+                            else if (temp2 < (long long int)1 + ULTRAPOS/2) {
                                 type = 1;
                                 kind = 66;
                                 five_star_guarantee_number = 0;
@@ -305,13 +305,13 @@ int main() {
                                 kind = rspick(templist, 3);
                                 four_star_guarantee_number = 0;
                                 }
-                            else if (temp2 < 1 + ULTRAPOS/2) {
+                            else if (temp2 < (long long int)1 + ULTRAPOS/2) {
                                 type = 1;
                                 int templist[] = {16, 23, 31};
                                 kind = rspick(templist, 3);
                                 four_star_guarantee_number = 0;
                             }
-                            else if (temp2 < 1 + ULTRAPOS/4 * (int)(10 * (unmet - threshold))) {
+                            else if (temp2 < (long long int)1 + ULTRAPOS/4 * (int)(10 * (unmet - threshold))) {
                                 type = 2;
                                 unmet_count = 0;
                                 unmet = (double)17.1;
@@ -343,7 +343,7 @@ int main() {
                             if (five_star_assurance_number < min_fives) { min_fives = five_star_assurance_number; min_fivesth = five_count; min_fivecount = count; }
                             five_star_assurance_number = 0;
                             if (five_star_guarantee_number == 1) { type = 1; kind = 66; five_star_guarantee_number = 0;}
-                            else if (temp2 < 1 + ULTRAPOS/2) {
+                            else if (temp2 < (long long int)1 + ULTRAPOS/2) {
                                 type = 1;
                                 kind = 66;
                                 five_star_guarantee_number = 0;
@@ -365,13 +365,13 @@ int main() {
                                 kind = rspick(templist, 3);
                                 four_star_guarantee_number = 0;
                                 }
-                            else if (temp2 < 1 + ULTRAPOS/2 * (int)(10 * (unmet - threshold))) {
+                            else if (temp2 < (long long int)1 + ULTRAPOS/2 * (int)(10 * (unmet - threshold))) {
                                 type = 1;
                                 int templist[] = {16, 23, 31};
                                 kind = rspick(templist, 3);
                                 four_star_guarantee_number = 0;
                             }
-                            else if (temp2 < 1 + ULTRAPOS/6 * 5) {
+                            else if (temp2 < (long long int)1 + ULTRAPOS/6 * 5) {
                                 type = 2;
                                 unmet_count = 0;
                                 unmet = (double)17.1;
@@ -403,7 +403,7 @@ int main() {
                             if (five_star_assurance_number < min_fives) { min_fives = five_star_assurance_number; min_fivesth = five_count; min_fivecount = count; }
                             five_star_assurance_number = 0;
                             if (five_star_guarantee_number == 1) { type = 1; kind = 66; five_star_guarantee_number = 0;}
-                            else if (temp2 < 1 + ULTRAPOS/2) {
+                            else if (temp2 < (long long int)1 + ULTRAPOS/2) {
                                 type = 1;
                                 kind = 66;
                                 five_star_guarantee_number = 0;
@@ -425,13 +425,13 @@ int main() {
                                 kind = rspick(templist, 3);
                                 four_star_guarantee_number = 0;
                                 }
-                            else if (temp2 < 1 + ULTRAPOS/2 * (int)(10 * (unmet - threshold))) {
+                            else if (temp2 < (long long int)1 + ULTRAPOS/2 * (int)(10 * (unmet - threshold))) {
                                 type = 1;
                                 int templist[] = {16, 23, 31};
                                 kind = rspick(templist, 3);
                                 four_star_guarantee_number = 0;
                             }
-                            else if (temp2 < 1 + ULTRAPOS/6 * 5) {
+                            else if (temp2 < (long long int)1 + ULTRAPOS/6 * 5) {
                                 type = 2;
                                 unmet_count = 0;
                                 unmet = (double)17.1;
@@ -457,7 +457,7 @@ int main() {
                             if (five_star_assurance_number < min_fives) { min_fives = five_star_assurance_number; min_fivesth = five_count; min_fivecount = count; }
                             five_star_assurance_number = 0;
                             if (five_star_guarantee_number == 1) { type = 1; kind = 66; five_star_guarantee_number = 0;}
-                            else if (temp2 < 1 + ULTRAPOS/2) {
+                            else if (temp2 < (long long int)1 + ULTRAPOS/2) {
                                 type = 1;
                                 kind = 66;
                                 five_star_guarantee_number = 0;
@@ -479,13 +479,13 @@ int main() {
                                 kind = rspick(templist, 3);
                                 four_star_guarantee_number = 0;
                                 }
-                            else if (temp2 < 1 + ULTRAPOS/2 * (int)(10 * (unmet - threshold))) {
+                            else if (temp2 < (long long int)1 + ULTRAPOS/2 * (int)(10 * (unmet - threshold))) {
                                 type = 1;
                                 int templist[] = {16, 23, 31};
                                 kind = rspick(templist, 3);
                                 four_star_guarantee_number = 0;
                             }
-                            else if (temp2 < 1 + ULTRAPOS/6 * 5) {
+                            else if (temp2 < (long long int)1 + ULTRAPOS/6 * 5) {
                                 type = 2;
                                 unmet_count = 0;
                                 unmet = (double)17.1;
@@ -517,7 +517,7 @@ int main() {
                             if (five_star_assurance_number < min_fives) { min_fives = five_star_assurance_number; min_fivesth = five_count; min_fivecount = count; }
                             five_star_assurance_number = 0;
                             if (five_star_guarantee_number == 1) { type = 1; kind = 66; five_star_guarantee_number = 0;}
-                            else if (temp2 < 1 + ULTRAPOS/2) {
+                            else if (temp2 < (long long int)1 + ULTRAPOS/2) {
                                 type = 1;
                                 kind = 66;
                                 five_star_guarantee_number = 0;
@@ -539,13 +539,13 @@ int main() {
                                 kind = rspick(templist, 3);
                                 four_star_guarantee_number = 0;
                                 }
-                            else if (temp2 < 1 + ULTRAPOS/2 * (int)(10 * (unmet - threshold))) {
+                            else if (temp2 < (long long int)1 + ULTRAPOS/2 * (int)(10 * (unmet - threshold))) {
                                 type = 1;
                                 int templist[] = {16, 23, 31};
                                 kind = rspick(templist, 3);
                                 four_star_guarantee_number = 0;
                             }
-                            else if (temp2 < 1 + ULTRAPOS/6 * 5) {
+                            else if (temp2 < (long long int)1 + ULTRAPOS/6 * 5) {
                                 type = 2;
                                 unmet_count = 0;
                                 unmet = (double)17.1;
@@ -577,7 +577,7 @@ int main() {
                             if (five_star_assurance_number < min_fives) { min_fives = five_star_assurance_number; min_fivesth = five_count; min_fivecount = count; }
                             five_star_assurance_number = 0;
                             if (five_star_guarantee_number == 1) { type = 1; kind = 66; five_star_guarantee_number = 0;}
-                            else if (temp2 < 1 + ULTRAPOS/2) {
+                            else if (temp2 < (long long int)1 + ULTRAPOS/2) {
                                 type = 1;
                                 kind = 66;
                                 five_star_guarantee_number = 0;
@@ -599,13 +599,13 @@ int main() {
                                 kind = rspick(templist, 3);
                                 four_star_guarantee_number = 0;
                                 }
-                            else if (temp2 < 1 + ULTRAPOS/2 * (int)(10 * (unmet - threshold))) {
+                            else if (temp2 < (long long int)1 + ULTRAPOS/2 * (int)(10 * (unmet - threshold))) {
                                 type = 1;
                                 int templist[] = {16, 23, 31};
                                 kind = rspick(templist, 3);
                                 four_star_guarantee_number = 0;
                             }
-                            else if (temp2 < 1 + ULTRAPOS/6 * 5) {
+                            else if (temp2 < (long long int)1 + ULTRAPOS/6 * 5) {
                                 type = 2;
                                 unmet_count = 0;
                                 unmet = (double)17.1;
@@ -630,7 +630,7 @@ int main() {
                             if (five_star_assurance_number < min_fives) { min_fives = five_star_assurance_number; min_fivesth = five_count; min_fivecount = count; }
                             five_star_assurance_number = 0;
                         if (five_star_guarantee_number == 1) { type = 1; kind = 66; five_star_guarantee_number = 0;}
-                        else if (temp2 < 1 + ULTRAPOS/2) {
+                        else if (temp2 < (long long int)1 + ULTRAPOS/2) {
                             type = 1;
                             kind = 66;
                             five_star_guarantee_number = 0;
@@ -796,7 +796,7 @@ int main() {
                             if (five_star_assurance_number < min_fives) { min_fives = five_star_assurance_number; min_fivesth = five_count; min_fivecount = count; }
                             five_star_assurance_number = 0;
                             if (five_star_guarantee_number == 1) { type = 1; five_count_c++; kind = 67; five_star_guarantee_number = 0;}
-                            else if (temp2 < ULTRAPOS/2) {
+                            else if (temp2 < (long long int)ULTRAPOS/2) {
                                 type = 1;
                                 five_count_c++;
                                 kind = 67;
@@ -822,7 +822,7 @@ int main() {
                                         kind = rspick(templist, 3);
                                         four_star_guarantee_number = 0;
                                     }
-                                    else if (temp2 < ULTRAPOS / 2) {
+                                    else if (temp2 < (long long int)ULTRAPOS / 2) {
                                         type = 1;
                                         four_count_c++;
                                         unmet4_c = 0;
@@ -832,7 +832,7 @@ int main() {
                                     }
                                     else {
                                         if (unmet4_c < 17 && unmet4_w < 17) {
-                                            if (temp2 > (long long) 3 * ULTRAPOS / 4 - 1) {
+                                            if (temp2 > (long long int) 3 * ULTRAPOS / 4 - 1) {
                                             type = 2;
                                             four_count_c++;
                                             unmet4_c = 0;
@@ -850,7 +850,7 @@ int main() {
                                         }
                                     }
                                 else if (unmet4_w > 16 ) {
-                                        if (temp2 > ULTRAPOS - ULTRAPOS / (20 * unmet4_c - 336) - 1) {
+                                        if (temp2 > (long long int) ULTRAPOS - ULTRAPOS / (20 * unmet4_c - 336) - 1) {
                                             type = 2;
                                             four_count_c++;
                                             unmet4_c = 0;
@@ -868,7 +868,7 @@ int main() {
                                         }
                                     }
                                 else {
-                                        if (temp2 > ULTRAPOS - ULTRAPOS / (20 * unmet4_w - 336) - 1) {
+                                        if (temp2 > (long long int) ULTRAPOS - ULTRAPOS / (20 * unmet4_w - 336) - 1) {
                                             type = 3;
                                             four_count_w++;
                                             unmet4_w = 0;
@@ -903,7 +903,7 @@ int main() {
                             if (five_star_assurance_number < min_fives) { min_fives = five_star_assurance_number; min_fivesth = five_count; min_fivecount = count; }
                             five_star_assurance_number = 0;
                             if (five_star_guarantee_number == 1) { type = 1; five_count_c++; kind = 67; five_star_guarantee_number = 0;}
-                            else if (temp2 < ULTRAPOS/2) {
+                            else if (temp2 < (long long int)ULTRAPOS/2) {
                                 type = 1;
                                 five_count_c++;
                                 kind = 67;
@@ -929,7 +929,7 @@ int main() {
                                         kind = rspick(templist, 3);
                                         four_star_guarantee_number = 0;
                                     }
-                                    else if (temp2 < ULTRAPOS / 2) {
+                                    else if (temp2 < (long long int)ULTRAPOS / 2) {
                                         type = 1;
                                         four_count_c++;
                                         unmet4_c = 0;
@@ -939,7 +939,7 @@ int main() {
                                     }
                                     else {
                                         if (unmet4_c < 17 && unmet4_w < 17) {
-                                            if (temp2 > (long long) 3 * ULTRAPOS / 4 - 1) {
+                                            if (temp2 > (long long int) 3 * ULTRAPOS / 4 - 1) {
                                             type = 2;
                                             four_count_c++;
                                             unmet4_c = 0;
@@ -957,7 +957,7 @@ int main() {
                                         }
                                     }
                                 else if (unmet4_w > 16 ) {
-                                        if (temp2 > ULTRAPOS - ULTRAPOS / (20 * unmet4_c - 336) - 1) {
+                                        if (temp2 > (long long int) ULTRAPOS - ULTRAPOS / (20 * unmet4_c - 336) - 1) {
                                             type = 2;
                                             four_count_c++;
                                             unmet4_c = 0;
@@ -975,7 +975,7 @@ int main() {
                                         }
                                     }
                                 else {
-                                        if (temp2 > ULTRAPOS - ULTRAPOS / (20 * unmet4_w - 336) - 1) {
+                                        if (temp2 > (long long int) ULTRAPOS - ULTRAPOS / (20 * unmet4_w - 336) - 1) {
                                             type = 3;
                                             four_count_w++;
                                             unmet4_w = 0;
@@ -1010,7 +1010,7 @@ int main() {
                             if (five_star_assurance_number < min_fives) { min_fives = five_star_assurance_number; min_fivesth = five_count; min_fivecount = count; }
                             five_star_assurance_number = 0;
                             if (five_star_guarantee_number == 1) { type = 1; five_count_c++; kind = 67; five_star_guarantee_number = 0;}
-                            else if (temp2 < ULTRAPOS/2) {
+                            else if (temp2 < (long long int)ULTRAPOS/2) {
                                 type = 1;
                                 five_count_c++;
                                 kind = 67;
@@ -1036,7 +1036,7 @@ int main() {
                                         kind = rspick(templist, 3);
                                         four_star_guarantee_number = 0;
                                     }
-                                    else if (temp2 < ULTRAPOS / 2) {
+                                    else if (temp2 < (long long int)ULTRAPOS / 2) {
                                         type = 1;
                                         four_count_c++;
                                         unmet4_c = 0;
@@ -1046,7 +1046,7 @@ int main() {
                                     }
                                     else {
                                         if (unmet4_c < 17 && unmet4_w < 17) {
-                                            if (temp2 > (long long) 3 * ULTRAPOS / 4 - 1) {
+                                            if (temp2 > (long long int) 3 * ULTRAPOS / 4 - 1) {
                                             type = 2;
                                             four_count_c++;
                                             unmet4_c = 0;
@@ -1064,7 +1064,7 @@ int main() {
                                         }
                                     }
                                 else if (unmet4_w > 16 ) {
-                                        if (temp2 > ULTRAPOS - ULTRAPOS / (20 * unmet4_c - 336) - 1) {
+                                        if (temp2 > (long long int) ULTRAPOS - ULTRAPOS / (20 * unmet4_c - 336) - 1) {
                                             type = 2;
                                             four_count_c++;
                                             unmet4_c = 0;
@@ -1082,7 +1082,7 @@ int main() {
                                         }
                                     }
                                 else {
-                                        if (temp2 > ULTRAPOS - ULTRAPOS / (20 * unmet4_w - 336) - 1) {
+                                        if (temp2 > (long long int) ULTRAPOS - ULTRAPOS / (20 * unmet4_w - 336) - 1) {
                                             type = 3;
                                             four_count_w++;
                                             unmet4_w = 0;
@@ -1111,7 +1111,7 @@ int main() {
                             if (five_star_assurance_number < min_fives) { min_fives = five_star_assurance_number; min_fivesth = five_count; min_fivecount = count; }
                             five_star_assurance_number = 0;
                             if (five_star_guarantee_number == 1) { type = 1; five_count_c++; kind = 67; five_star_guarantee_number = 0; }
-                            else if (temp2 < ULTRAPOS/2) {
+                            else if (temp2 < (long long int)ULTRAPOS/2) {
                                 type = 1;
                                 five_count_c++;
                                 kind = 67;
@@ -1138,7 +1138,7 @@ int main() {
                                     kind = rspick(templist, 3);
                                     four_star_guarantee_number = 0;
                                 }
-                                else if (temp2 < ULTRAPOS / 2) {
+                                else if (temp2 < (long long int)ULTRAPOS / 2) {
                                     type = 1;
                                     four_count_c++;
                                     unmet4_c = 0;
@@ -1146,7 +1146,7 @@ int main() {
                                     kind = rspick(templist, 3);
                                     four_star_guarantee_number = 0;
                                 }
-                                else if (temp2 > (long long) 3 * ULTRAPOS / 4 - 1) {
+                                else if (temp2 > (long long int) 3 * ULTRAPOS / 4 - 1) {
                                     type = 2;
                                     four_count_c++;
                                     unmet4_c = 0;
@@ -1172,7 +1172,7 @@ int main() {
                                     kind = rspick(templist, 3);
                                     four_star_guarantee_number = 0;
                                 }
-                                else if (temp2 < ULTRAPOS / 2) {
+                                else if (temp2 < (long long int)ULTRAPOS / 2) {
                                     type = 1;
                                     four_count_c++;
                                     unmet4_c = 0;
@@ -1180,7 +1180,7 @@ int main() {
                                     kind = rspick(templist, 3);
                                     four_star_guarantee_number = 0;
                                 }
-                                else if (temp2 > ULTRAPOS - ULTRAPOS / (20 * unmet4_c - 336) - 1) {
+                                else if (temp2 > (long long int) ULTRAPOS - ULTRAPOS / (20 * unmet4_c - 336) - 1) {
                                     type = 2;
                                     four_count_c++;
                                     unmet4_c = 0;
@@ -1206,7 +1206,7 @@ int main() {
                                     kind = rspick(templist, 3);
                                     four_star_guarantee_number = 0;
                                 }
-                                else if (temp2 < ULTRAPOS / 2) {
+                                else if (temp2 < (long long int)ULTRAPOS / 2) {
                                     type = 1;
                                     four_count_c++;
                                     unmet4_c = 0;
@@ -1214,7 +1214,7 @@ int main() {
                                     kind = rspick(templist, 3);
                                     four_star_guarantee_number = 0;
                                 }
-                                else if (temp2 > ULTRAPOS - ULTRAPOS / (20 * unmet4_w - 336) - 1) {
+                                else if (temp2 > (long long int) ULTRAPOS - ULTRAPOS / (20 * unmet4_w - 336) - 1) {
                                     type = 3;
                                     four_count_w++;
                                     unmet4_w = 0;
@@ -1248,7 +1248,7 @@ int main() {
                             if (five_star_assurance_number < min_fives) { min_fives = five_star_assurance_number; min_fivesth = five_count; min_fivecount = count; }
                             five_star_assurance_number = 0;
                             if (five_star_guarantee_number == 1) { type = 1; five_count_c++; kind = 67; five_star_guarantee_number = 0;}
-                            else if (temp2 < ULTRAPOS/2) {
+                            else if (temp2 < (long long int)ULTRAPOS/2) {
                                 type = 1;
                                 five_count_c++;
                                 kind = 67;
@@ -1274,7 +1274,7 @@ int main() {
                                         kind = rspick(templist, 3);
                                         four_star_guarantee_number = 0;
                                     }
-                                    else if (temp2 < ULTRAPOS / 2) {
+                                    else if (temp2 < (long long int)ULTRAPOS / 2) {
                                         type = 1;
                                         four_count_c++;
                                         unmet4_c = 0;
@@ -1284,7 +1284,7 @@ int main() {
                                     }
                                     else {
                                         if (unmet4_c < 17 && unmet4_w < 17) {
-                                            if (temp2 > (long long) 3 * ULTRAPOS / 4 - 1) {
+                                            if (temp2 > (long long int) 3 * ULTRAPOS / 4 - 1) {
                                             type = 2;
                                             four_count_c++;
                                             unmet4_c = 0;
@@ -1302,7 +1302,7 @@ int main() {
                                         }
                                     }
                                 else if (unmet4_w > 16 ) {
-                                        if (temp2 > ULTRAPOS - ULTRAPOS / (20 * unmet4_c - 336) - 1) {
+                                        if (temp2 > (long long int) ULTRAPOS - ULTRAPOS / (20 * unmet4_c - 336) - 1) {
                                             type = 2;
                                             four_count_c++;
                                             unmet4_c = 0;
@@ -1320,7 +1320,7 @@ int main() {
                                         }
                                     }
                                 else {
-                                        if (temp2 > ULTRAPOS - ULTRAPOS / (20 * unmet4_w - 336) - 1) {
+                                        if (temp2 > (long long int) ULTRAPOS - ULTRAPOS / (20 * unmet4_w - 336) - 1) {
                                             type = 3;
                                             four_count_w++;
                                             unmet4_w = 0;
@@ -1355,7 +1355,7 @@ int main() {
                             if (five_star_assurance_number < min_fives) { min_fives = five_star_assurance_number; min_fivesth = five_count; min_fivecount = count; }
                             five_star_assurance_number = 0;
                             if (five_star_guarantee_number == 1) { type = 1; five_count_c++; kind = 67; five_star_guarantee_number = 0;}
-                            else if (temp2 < ULTRAPOS/2) {
+                            else if (temp2 < (long long int)ULTRAPOS/2) {
                                 type = 1;
                                 five_count_c++;
                                 kind = 67;
@@ -1381,7 +1381,7 @@ int main() {
                                         kind = rspick(templist, 3);
                                         four_star_guarantee_number = 0;
                                     }
-                                    else if (temp2 < ULTRAPOS / 2) {
+                                    else if (temp2 < (long long int)ULTRAPOS / 2) {
                                         type = 1;
                                         four_count_c++;
                                         unmet4_c = 0;
@@ -1391,7 +1391,7 @@ int main() {
                                     }
                                     else {
                                         if (unmet4_c < 17 && unmet4_w < 17) {
-                                            if (temp2 > (long long) 3 * ULTRAPOS / 4 - 1) {
+                                            if (temp2 > (long long int) 3 * ULTRAPOS / 4 - 1) {
                                             type = 2;
                                             four_count_c++;
                                             unmet4_c = 0;
@@ -1409,7 +1409,7 @@ int main() {
                                         }
                                     }
                                 else if (unmet4_w > 16 ) {
-                                        if (temp2 > ULTRAPOS - ULTRAPOS / (20 * unmet4_c - 336) - 1) {
+                                        if (temp2 > (long long int) ULTRAPOS - ULTRAPOS / (20 * unmet4_c - 336) - 1) {
                                             type = 2;
                                             four_count_c++;
                                             unmet4_c = 0;
@@ -1427,7 +1427,7 @@ int main() {
                                         }
                                     }
                                 else {
-                                        if (temp2 > ULTRAPOS - ULTRAPOS / (20 * unmet4_w - 336) - 1) {
+                                        if (temp2 > (long long int) ULTRAPOS - ULTRAPOS / (20 * unmet4_w - 336) - 1) {
                                             type = 3;
                                             four_count_w++;
                                             unmet4_w = 0;
@@ -1455,7 +1455,7 @@ int main() {
                             if (five_star_assurance_number < min_fives) { min_fives = five_star_assurance_number; min_fivesth = five_count; min_fivecount = count; }
                             five_star_assurance_number = 0;
                         if (five_star_guarantee_number == 1) { type = 1; five_count_c++; kind = 67; five_star_guarantee_number = 0;}
-                        else if (temp2 < ULTRAPOS/2) {
+                        else if (temp2 < (long long int)ULTRAPOS/2) {
                             type = 1;
                             five_count_c++;
                             kind = 67;
@@ -1624,7 +1624,7 @@ int main() {
                             if (five_star_assurance_number < min_fives) { min_fives = five_star_assurance_number; min_fivesth = five_count; min_fivecount = count; }
                             five_star_assurance_number = 0;
                             if (unmet5_c < 148 && unmet5_w < 148) {
-                                if (temp2 < ULTRAPOS / 2) {
+                                if (temp2 < (long long int)ULTRAPOS / 2) {
                                     type = 1;
                                     five_count_c++;
                                     unmet5_c = 0;
@@ -1640,7 +1640,7 @@ int main() {
                                 }
                             }
                             else if (unmet5_c > 147) {
-                                if (temp2 < ULTRAPOS * (1 - 1.0 / (10 * unmet5_c - 1468))) {
+                                if (temp2 < (long long int)ULTRAPOS * (1 - 1.0 / (10 * unmet5_c - 1468))) {
                                     type = 1;
                                     five_count_c++;
                                     unmet5_c = 0;
@@ -1656,7 +1656,7 @@ int main() {
                                 }
                             }
                             else {
-                                if (temp2 < ULTRAPOS * (1 - 1.0 / (10 * unmet5_w - 1468))) {
+                                if (temp2 < (long long int)ULTRAPOS * (1 - 1.0 / (10 * unmet5_w - 1468))) {
                                     type = 2;
                                     five_count_w++;
                                     unmet5_w = 0;
@@ -1677,7 +1677,7 @@ int main() {
                             four_count = four_count + 1;
                             four_star_assurance_number = 0;
                             if (unmet4_c < 18 && unmet4_w < 18) {
-                                if (temp2 < ULTRAPOS / 2) {
+                                if (temp2 < (long long int)ULTRAPOS / 2) {
                                     type = 1;
                                     four_count_c++;
                                     unmet4_c = 0;
@@ -1693,7 +1693,7 @@ int main() {
                                 }
                             }
                             else if (unmet4_c > 17) {
-                                if (temp2 < ULTRAPOS * (1 - 1.0 / (10 * unmet4_c - 168))) {
+                                if (temp2 < (long long int)ULTRAPOS * (1 - 1.0 / (10 * unmet4_c - 168))) {
                                     type = 1;
                                     four_count_c++;
                                     unmet4_c = 0;
@@ -1709,7 +1709,7 @@ int main() {
                                 }
                             }
                             else {
-                                if (temp2 < ULTRAPOS * (1 - 1.0 / (10 * unmet4_w - 168))) {
+                                if (temp2 < (long long int)ULTRAPOS * (1 - 1.0 / (10 * unmet4_w - 168))) {
                                     type = 2;
                                     four_count_w++;
                                     unmet4_w = 0;
@@ -1741,7 +1741,7 @@ int main() {
                             if (five_star_assurance_number < min_fives) { min_fives = five_star_assurance_number; min_fivesth = five_count; min_fivecount = count; }
                             five_star_assurance_number = 0;
                             if (unmet5_c < 148 && unmet5_w < 148) {
-                                if (temp2 < ULTRAPOS / 2) {
+                                if (temp2 < (long long int)ULTRAPOS / 2) {
                                     type = 1;
                                     five_count_c++;
                                     unmet5_c = 0;
@@ -1757,7 +1757,7 @@ int main() {
                                 }
                             }
                             else if (unmet5_c > 147) {
-                                if (temp2 < ULTRAPOS * (1 - 1.0 / (10 * unmet5_c - 1468))) {
+                                if (temp2 < (long long int)ULTRAPOS * (1 - 1.0 / (10 * unmet5_c - 1468))) {
                                     type = 1;
                                     five_count_c++;
                                     unmet5_c = 0;
@@ -1773,7 +1773,7 @@ int main() {
                                 }
                             }
                             else {
-                                if (temp2 < ULTRAPOS * (1 - 1.0 / (10 * unmet5_w - 1468))) {
+                                if (temp2 < (long long int)ULTRAPOS * (1 - 1.0 / (10 * unmet5_w - 1468))) {
                                     type = 2;
                                     five_count_w++;
                                     unmet5_w = 0;
@@ -1794,7 +1794,7 @@ int main() {
                             four_count = four_count + 1;
                             four_star_assurance_number = 0;
                             if (unmet4_c < 18 && unmet4_w < 18) {
-                                if (temp2 < ULTRAPOS / 2) {
+                                if (temp2 < (long long int)ULTRAPOS / 2) {
                                     type = 1;
                                     four_count_c++;
                                     unmet4_c = 0;
@@ -1810,7 +1810,7 @@ int main() {
                                 }
                             }
                             else if (unmet4_c > 17) {
-                                if (temp2 < ULTRAPOS * (1 - 1.0 / (10 * unmet4_c - 168))) {
+                                if (temp2 < (long long int)ULTRAPOS * (1 - 1.0 / (10 * unmet4_c - 168))) {
                                     type = 1;
                                     four_count_c++;
                                     unmet4_c = 0;
@@ -1826,7 +1826,7 @@ int main() {
                                 }
                             }
                             else {
-                                if (temp2 < ULTRAPOS * (1 - 1.0 / (10 * unmet4_w - 168))) {
+                                if (temp2 < (long long int)ULTRAPOS * (1 - 1.0 / (10 * unmet4_w - 168))) {
                                     type = 2;
                                     four_count_w++;
                                     unmet4_w = 0;
@@ -1858,7 +1858,7 @@ int main() {
                             if (five_star_assurance_number < min_fives) { min_fives = five_star_assurance_number; min_fivesth = five_count; min_fivecount = count; }
                             five_star_assurance_number = 0;
                             if (unmet5_c < 148 && unmet5_w < 148) {
-                                if (temp2 < ULTRAPOS / 2) {
+                                if (temp2 < (long long int)ULTRAPOS / 2) {
                                     type = 1;
                                     five_count_c++;
                                     unmet5_c = 0;
@@ -1874,7 +1874,7 @@ int main() {
                                 }
                             }
                             else if (unmet5_c > 147) {
-                                if (temp2 < ULTRAPOS * (1 - 1.0 / (10 * unmet5_c - 1468))) {
+                                if (temp2 < (long long int)ULTRAPOS * (1 - 1.0 / (10 * unmet5_c - 1468))) {
                                     type = 1;
                                     five_count_c++;
                                     unmet5_c = 0;
@@ -1890,7 +1890,7 @@ int main() {
                                 }
                             }
                             else {
-                                if (temp2 < ULTRAPOS * (1 - 1.0 / (10 * unmet5_w - 1468))) {
+                                if (temp2 < (long long int)ULTRAPOS * (1 - 1.0 / (10 * unmet5_w - 1468))) {
                                     type = 2;
                                     five_count_w++;
                                     unmet5_w = 0;
@@ -1911,7 +1911,7 @@ int main() {
                             four_count = four_count + 1;
                             four_star_assurance_number = 0;
                             if (unmet4_c < 18 && unmet4_w < 18) {
-                                if (temp2 < ULTRAPOS / 2) {
+                                if (temp2 < (long long int)ULTRAPOS / 2) {
                                     type = 1;
                                     four_count_c++;
                                     unmet4_c = 0;
@@ -1927,7 +1927,7 @@ int main() {
                                 }
                             }
                             else if (unmet4_c > 17) {
-                                if (temp2 < ULTRAPOS * (1 - 1.0 / (10 * unmet4_c - 168))) {
+                                if (temp2 < (long long int)ULTRAPOS * (1 - 1.0 / (10 * unmet4_c - 168))) {
                                     type = 1;
                                     four_count_c++;
                                     unmet4_c = 0;
@@ -1943,7 +1943,7 @@ int main() {
                                 }
                             }
                             else {
-                                if (temp2 < ULTRAPOS * (1 - 1.0 / (10 * unmet4_w - 168))) {
+                                if (temp2 < (long long int)ULTRAPOS * (1 - 1.0 / (10 * unmet4_w - 168))) {
                                     type = 2;
                                     four_count_w++;
                                     unmet4_w = 0;
@@ -1969,7 +1969,7 @@ int main() {
                             if (five_star_assurance_number < min_fives) { min_fives = five_star_assurance_number; min_fivesth = five_count; min_fivecount = count; }
                             five_star_assurance_number = 0;
                             if (unmet5_c < 148 && unmet5_w < 148) {
-                                if (temp2 < ULTRAPOS / 2) {
+                                if (temp2 < (long long int)ULTRAPOS / 2) {
                                     type = 1;
                                     five_count_c++;
                                     unmet5_c = 0;
@@ -1985,7 +1985,7 @@ int main() {
                                 }
                             }
                             else if (unmet5_c > 147) {
-                                if (temp2 < ULTRAPOS * (1 - 1.0 / (10 * unmet5_c - 1468))) {
+                                if (temp2 < (long long int)ULTRAPOS * (1 - 1.0 / (10 * unmet5_c - 1468))) {
                                     type = 1;
                                     five_count_c++;
                                     unmet5_c = 0;
@@ -2001,7 +2001,7 @@ int main() {
                                 }
                             }
                             else {
-                                if (temp2 < ULTRAPOS * (1 - 1.0 / (10 * unmet5_w - 1468))) {
+                                if (temp2 < (long long int)ULTRAPOS * (1 - 1.0 / (10 * unmet5_w - 1468))) {
                                     type = 2;
                                     five_count_w++;
                                     unmet5_w = 0;
@@ -2022,7 +2022,7 @@ int main() {
                             four_count = four_count + 1;
                             four_star_assurance_number = 0;
                             if (unmet4_c < 18 && unmet4_w < 18) {
-                                if (temp2 < ULTRAPOS / 2) {
+                                if (temp2 < (long long int)ULTRAPOS / 2) {
                                     type = 1;
                                     four_count_c++;
                                     unmet4_c = 0;
@@ -2038,7 +2038,7 @@ int main() {
                                 }
                             }
                             else if (unmet4_c > 17) {
-                                if (temp2 < ULTRAPOS * (1 - 1.0 / (10 * unmet4_c - 168))) {
+                                if (temp2 < (long long int)ULTRAPOS * (1 - 1.0 / (10 * unmet4_c - 168))) {
                                     type = 1;
                                     four_count_c++;
                                     unmet4_c = 0;
@@ -2054,7 +2054,7 @@ int main() {
                                 }
                             }
                             else {
-                                if (temp2 < ULTRAPOS * (1 - 1.0 / (10 * unmet4_w - 168))) {
+                                if (temp2 < (long long int)ULTRAPOS * (1 - 1.0 / (10 * unmet4_w - 168))) {
                                     type = 2;
                                     four_count_w++;
                                     unmet4_w = 0;
@@ -2086,7 +2086,7 @@ int main() {
                             if (five_star_assurance_number < min_fives) { min_fives = five_star_assurance_number; min_fivesth = five_count; min_fivecount = count; }
                             five_star_assurance_number = 0;
                             if (unmet5_c < 148 && unmet5_w < 148) {
-                                if (temp2 < ULTRAPOS / 2) {
+                                if (temp2 < (long long int)ULTRAPOS / 2) {
                                     type = 1;
                                     five_count_c++;
                                     unmet5_c = 0;
@@ -2102,7 +2102,7 @@ int main() {
                                 }
                             }
                             else if (unmet5_c > 147) {
-                                if (temp2 < ULTRAPOS * (1 - 1.0 / (10 * unmet5_c - 1468))) {
+                                if (temp2 < (long long int)ULTRAPOS * (1 - 1.0 / (10 * unmet5_c - 1468))) {
                                     type = 1;
                                     five_count_c++;
                                     unmet5_c = 0;
@@ -2118,7 +2118,7 @@ int main() {
                                 }
                             }
                             else {
-                                if (temp2 < ULTRAPOS * (1 - 1.0 / (10 * unmet5_w - 1468))) {
+                                if (temp2 < (long long int)ULTRAPOS * (1 - 1.0 / (10 * unmet5_w - 1468))) {
                                     type = 2;
                                     five_count_w++;
                                     unmet5_w = 0;
@@ -2139,7 +2139,7 @@ int main() {
                             four_count = four_count + 1;
                             four_star_assurance_number = 0;
                             if (unmet4_c < 18 && unmet4_w < 18) {
-                                if (temp2 < ULTRAPOS / 2) {
+                                if (temp2 < (long long int)ULTRAPOS / 2) {
                                     type = 1;
                                     four_count_c++;
                                     unmet4_c = 0;
@@ -2155,7 +2155,7 @@ int main() {
                                 }
                             }
                             else if (unmet4_c > 17) {
-                                if (temp2 < ULTRAPOS * (1 - 1.0 / (10 * unmet4_c - 168))) {
+                                if (temp2 < (long long int)ULTRAPOS * (1 - 1.0 / (10 * unmet4_c - 168))) {
                                     type = 1;
                                     four_count_c++;
                                     unmet4_c = 0;
@@ -2171,7 +2171,7 @@ int main() {
                                 }
                             }
                             else {
-                                if (temp2 < ULTRAPOS * (1 - 1.0 / (10 * unmet4_w - 168))) {
+                                if (temp2 < (long long int)ULTRAPOS * (1 - 1.0 / (10 * unmet4_w - 168))) {
                                     type = 2;
                                     four_count_w++;
                                     unmet4_w = 0;
@@ -2203,7 +2203,7 @@ int main() {
                             if (five_star_assurance_number < min_fives) { min_fives = five_star_assurance_number; min_fivesth = five_count; min_fivecount = count; }
                             five_star_assurance_number = 0;
                             if (unmet5_c < 148 && unmet5_w < 148) {
-                                if (temp2 < ULTRAPOS / 2) {
+                                if (temp2 < (long long int)ULTRAPOS / 2) {
                                     type = 1;
                                     five_count_c++;
                                     unmet5_c = 0;
@@ -2219,7 +2219,7 @@ int main() {
                                 }
                             }
                             else if (unmet5_c > 147) {
-                                if (temp2 < ULTRAPOS * (1 - 1.0 / (10 * unmet5_c - 1468))) {
+                                if (temp2 < (long long int)ULTRAPOS * (1 - 1.0 / (10 * unmet5_c - 1468))) {
                                     type = 1;
                                     five_count_c++;
                                     unmet5_c = 0;
@@ -2235,7 +2235,7 @@ int main() {
                                 }
                             }
                             else {
-                                if (temp2 < ULTRAPOS * (1 - 1.0 / (10 * unmet5_w - 1468))) {
+                                if (temp2 < (long long int)ULTRAPOS * (1 - 1.0 / (10 * unmet5_w - 1468))) {
                                     type = 2;
                                     five_count_w++;
                                     unmet5_w = 0;
@@ -2256,7 +2256,7 @@ int main() {
                             four_count = four_count + 1;
                             four_star_assurance_number = 0;
                             if (unmet4_c < 18 && unmet4_w < 18) {
-                                if (temp2 < ULTRAPOS / 2) {
+                                if (temp2 < (long long int)ULTRAPOS / 2) {
                                     type = 1;
                                     four_count_c++;
                                     unmet4_c = 0;
@@ -2272,7 +2272,7 @@ int main() {
                                 }
                             }
                             else if (unmet4_c > 17) {
-                                if (temp2 < ULTRAPOS * (1 - 1.0 / (10 * unmet4_c - 168))) {
+                                if (temp2 < (long long int)ULTRAPOS * (1 - 1.0 / (10 * unmet4_c - 168))) {
                                     type = 1;
                                     four_count_c++;
                                     unmet4_c = 0;
@@ -2288,7 +2288,7 @@ int main() {
                                 }
                             }
                             else {
-                                if (temp2 < ULTRAPOS * (1 - 1.0 / (10 * unmet4_w - 168))) {
+                                if (temp2 < (long long int)ULTRAPOS * (1 - 1.0 / (10 * unmet4_w - 168))) {
                                     type = 2;
                                     four_count_w++;
                                     unmet4_w = 0;
@@ -2313,7 +2313,7 @@ int main() {
                         if (five_star_assurance_number < min_fives) { min_fives = five_star_assurance_number; min_fivesth = five_count; min_fivecount = count; }
                         five_star_assurance_number = 0;
                         if (unmet5_c < 148 && unmet5_w < 148) {
-                            if (temp2 < ULTRAPOS / 2) {
+                            if (temp2 < (long long int)ULTRAPOS / 2) {
                                 type = 1;
                                 five_count_c++;
                                 unmet5_c = 0;
@@ -2329,7 +2329,7 @@ int main() {
                             }
                         }
                         else if (unmet5_c > 147) {
-                            if (temp2 < ULTRAPOS * (1 - 1.0 / (10 * unmet5_c - 1468))) {
+                            if (temp2 < (long long int)ULTRAPOS * (1 - 1.0 / (10 * unmet5_c - 1468))) {
                                 type = 1;
                                 five_count_c++;
                                 unmet5_c = 0;
@@ -2345,7 +2345,7 @@ int main() {
                             }
                         }
                         else {
-                            if (temp2 < ULTRAPOS * (1 - 1.0 / (10 * unmet5_w - 1468))) {
+                            if (temp2 < (long long int)ULTRAPOS * (1 - 1.0 / (10 * unmet5_w - 1468))) {
                                 type = 2;
                                 five_count_w++;
                                 unmet5_w = 0;
@@ -2519,7 +2519,7 @@ int main() {
                             if (five_star_assurance_number < min_fives) { min_fives = five_star_assurance_number; min_fivesth = five_count; min_fivecount = count; }
                             five_star_assurance_number = 0;
                             if (unmet5_c < 148 && unmet5_w < 148) {
-                                if (temp2 < ULTRAPOS / 2) {
+                                if (temp2 < (long long int)ULTRAPOS / 2) {
                                     type = 1;
                                     five_count_c++;
                                     unmet5_c = 0;
@@ -2535,7 +2535,7 @@ int main() {
                                 }
                             }
                             else if (unmet5_c > 147) {
-                                if (temp2 < ULTRAPOS * (1 - 1.0 / (10 * unmet5_c - 1468))) {
+                                if (temp2 < (long long int)ULTRAPOS * (1 - 1.0 / (10 * unmet5_c - 1468))) {
                                     type = 1;
                                     five_count_c++;
                                     unmet5_c = 0;
@@ -2551,7 +2551,7 @@ int main() {
                                 }
                             }
                             else {
-                                if (temp2 < ULTRAPOS * (1 - 1.0 / (10 * unmet5_w - 1468))) {
+                                if (temp2 < (long long int)ULTRAPOS * (1 - 1.0 / (10 * unmet5_w - 1468))) {
                                     type = 2;
                                     five_count_w++;
                                     unmet5_w = 0;
@@ -2572,7 +2572,7 @@ int main() {
                             four_count = four_count + 1;
                             four_star_assurance_number = 0;
                             if (unmet4_c < 18 && unmet4_w < 18) {
-                                if (temp2 < ULTRAPOS / 2) {
+                                if (temp2 < (long long int)ULTRAPOS / 2) {
                                     type = 1;
                                     four_count_c++;
                                     unmet4_c = 0;
@@ -2588,7 +2588,7 @@ int main() {
                                 }
                             }
                             else if (unmet4_c > 17) {
-                                if (temp2 < ULTRAPOS * (1 - 1.0 / (10 * unmet4_c - 168))) {
+                                if (temp2 < (long long int)ULTRAPOS * (1 - 1.0 / (10 * unmet4_c - 168))) {
                                     type = 1;
                                     four_count_c++;
                                     unmet4_c = 0;
@@ -2604,7 +2604,7 @@ int main() {
                                 }
                             }
                             else {
-                                if (temp2 < ULTRAPOS * (1 - 1.0 / (10 * unmet4_w - 168))) {
+                                if (temp2 < (long long int)ULTRAPOS * (1 - 1.0 / (10 * unmet4_w - 168))) {
                                     type = 2;
                                     four_count_w++;
                                     unmet4_w = 0;
@@ -2636,7 +2636,7 @@ int main() {
                             if (five_star_assurance_number < min_fives) { min_fives = five_star_assurance_number; min_fivesth = five_count; min_fivecount = count; }
                             five_star_assurance_number = 0;
                             if (unmet5_c < 148 && unmet5_w < 148) {
-                                if (temp2 < ULTRAPOS / 2) {
+                                if (temp2 < (long long int)ULTRAPOS / 2) {
                                     type = 1;
                                     five_count_c++;
                                     unmet5_c = 0;
@@ -2652,7 +2652,7 @@ int main() {
                                 }
                             }
                             else if (unmet5_c > 147) {
-                                if (temp2 < ULTRAPOS * (1 - 1.0 / (10 * unmet5_c - 1468))) {
+                                if (temp2 < (long long int)ULTRAPOS * (1 - 1.0 / (10 * unmet5_c - 1468))) {
                                     type = 1;
                                     five_count_c++;
                                     unmet5_c = 0;
@@ -2668,7 +2668,7 @@ int main() {
                                 }
                             }
                             else {
-                                if (temp2 < ULTRAPOS * (1 - 1.0 / (10 * unmet5_w - 1468))) {
+                                if (temp2 < (long long int)ULTRAPOS * (1 - 1.0 / (10 * unmet5_w - 1468))) {
                                     type = 2;
                                     five_count_w++;
                                     unmet5_w = 0;
@@ -2689,7 +2689,7 @@ int main() {
                             four_count = four_count + 1;
                             four_star_assurance_number = 0;
                             if (unmet4_c < 18 && unmet4_w < 18) {
-                                if (temp2 < ULTRAPOS / 2) {
+                                if (temp2 < (long long int)ULTRAPOS / 2) {
                                     type = 1;
                                     four_count_c++;
                                     unmet4_c = 0;
@@ -2705,7 +2705,7 @@ int main() {
                                 }
                             }
                             else if (unmet4_c > 17) {
-                                if (temp2 < ULTRAPOS * (1 - 1.0 / (10 * unmet4_c - 168))) {
+                                if (temp2 < (long long int)ULTRAPOS * (1 - 1.0 / (10 * unmet4_c - 168))) {
                                     type = 1;
                                     four_count_c++;
                                     unmet4_c = 0;
@@ -2721,7 +2721,7 @@ int main() {
                                 }
                             }
                             else {
-                                if (temp2 < ULTRAPOS * (1 - 1.0 / (10 * unmet4_w - 168))) {
+                                if (temp2 < (long long int)ULTRAPOS * (1 - 1.0 / (10 * unmet4_w - 168))) {
                                     type = 2;
                                     four_count_w++;
                                     unmet4_w = 0;
@@ -2753,7 +2753,7 @@ int main() {
                             if (five_star_assurance_number < min_fives) { min_fives = five_star_assurance_number; min_fivesth = five_count; min_fivecount = count; }
                             five_star_assurance_number = 0;
                             if (unmet5_c < 148 && unmet5_w < 148) {
-                                if (temp2 < ULTRAPOS / 2) {
+                                if (temp2 < (long long int)ULTRAPOS / 2) {
                                     type = 1;
                                     five_count_c++;
                                     unmet5_c = 0;
@@ -2769,7 +2769,7 @@ int main() {
                                 }
                             }
                             else if (unmet5_c > 147) {
-                                if (temp2 < ULTRAPOS * (1 - 1.0 / (10 * unmet5_c - 1468))) {
+                                if (temp2 < (long long int)ULTRAPOS * (1 - 1.0 / (10 * unmet5_c - 1468))) {
                                     type = 1;
                                     five_count_c++;
                                     unmet5_c = 0;
@@ -2785,7 +2785,7 @@ int main() {
                                 }
                             }
                             else {
-                                if (temp2 < ULTRAPOS * (1 - 1.0 / (10 * unmet5_w - 1468))) {
+                                if (temp2 < (long long int)ULTRAPOS * (1 - 1.0 / (10 * unmet5_w - 1468))) {
                                     type = 2;
                                     five_count_w++;
                                     unmet5_w = 0;
@@ -2806,7 +2806,7 @@ int main() {
                             four_count = four_count + 1;
                             four_star_assurance_number = 0;
                             if (unmet4_c < 18 && unmet4_w < 18) {
-                                if (temp2 < ULTRAPOS / 2) {
+                                if (temp2 < (long long int)ULTRAPOS / 2) {
                                     type = 1;
                                     four_count_c++;
                                     unmet4_c = 0;
@@ -2822,7 +2822,7 @@ int main() {
                                 }
                             }
                             else if (unmet4_c > 17) {
-                                if (temp2 < ULTRAPOS * (1 - 1.0 / (10 * unmet4_c - 168))) {
+                                if (temp2 < (long long int)ULTRAPOS * (1 - 1.0 / (10 * unmet4_c - 168))) {
                                     type = 1;
                                     four_count_c++;
                                     unmet4_c = 0;
@@ -2838,7 +2838,7 @@ int main() {
                                 }
                             }
                             else {
-                                if (temp2 < ULTRAPOS * (1 - 1.0 / (10 * unmet4_w - 168))) {
+                                if (temp2 < (long long int)ULTRAPOS * (1 - 1.0 / (10 * unmet4_w - 168))) {
                                     type = 2;
                                     four_count_w++;
                                     unmet4_w = 0;
@@ -2864,7 +2864,7 @@ int main() {
                             if (five_star_assurance_number < min_fives) { min_fives = five_star_assurance_number; min_fivesth = five_count; min_fivecount = count; }
                             five_star_assurance_number = 0;
                             if (unmet5_c < 148 && unmet5_w < 148) {
-                                if (temp2 < ULTRAPOS / 2) {
+                                if (temp2 < (long long int)ULTRAPOS / 2) {
                                     type = 1;
                                     five_count_c++;
                                     unmet5_c = 0;
@@ -2880,7 +2880,7 @@ int main() {
                                 }
                             }
                             else if (unmet5_c > 147) {
-                                if (temp2 < ULTRAPOS * (1 - 1.0 / (10 * unmet5_c - 1468))) {
+                                if (temp2 < (long long int)ULTRAPOS * (1 - 1.0 / (10 * unmet5_c - 1468))) {
                                     type = 1;
                                     five_count_c++;
                                     unmet5_c = 0;
@@ -2896,7 +2896,7 @@ int main() {
                                 }
                             }
                             else {
-                                if (temp2 < ULTRAPOS * (1 - 1.0 / (10 * unmet5_w - 1468))) {
+                                if (temp2 < (long long int)ULTRAPOS * (1 - 1.0 / (10 * unmet5_w - 1468))) {
                                     type = 2;
                                     five_count_w++;
                                     unmet5_w = 0;
@@ -2917,7 +2917,7 @@ int main() {
                             four_count = four_count + 1;
                             four_star_assurance_number = 0;
                             if (unmet4_c < 18 && unmet4_w < 18) {
-                                if (temp2 < ULTRAPOS / 2) {
+                                if (temp2 < (long long int)ULTRAPOS / 2) {
                                     type = 1;
                                     four_count_c++;
                                     unmet4_c = 0;
@@ -2933,7 +2933,7 @@ int main() {
                                 }
                             }
                             else if (unmet4_c > 17) {
-                                if (temp2 < ULTRAPOS * (1 - 1.0 / (10 * unmet4_c - 168))) {
+                                if (temp2 < (long long int)ULTRAPOS * (1 - 1.0 / (10 * unmet4_c - 168))) {
                                     type = 1;
                                     four_count_c++;
                                     unmet4_c = 0;
@@ -2949,7 +2949,7 @@ int main() {
                                 }
                             }
                             else {
-                                if (temp2 < ULTRAPOS * (1 - 1.0 / (10 * unmet4_w - 168))) {
+                                if (temp2 < (long long int)ULTRAPOS * (1 - 1.0 / (10 * unmet4_w - 168))) {
                                     type = 2;
                                     four_count_w++;
                                     unmet4_w = 0;
@@ -2981,7 +2981,7 @@ int main() {
                             if (five_star_assurance_number < min_fives) { min_fives = five_star_assurance_number; min_fivesth = five_count; min_fivecount = count; }
                             five_star_assurance_number = 0;
                             if (unmet5_c < 148 && unmet5_w < 148) {
-                                if (temp2 < ULTRAPOS / 2) {
+                                if (temp2 < (long long int)ULTRAPOS / 2) {
                                     type = 1;
                                     five_count_c++;
                                     unmet5_c = 0;
@@ -2997,7 +2997,7 @@ int main() {
                                 }
                             }
                             else if (unmet5_c > 147) {
-                                if (temp2 < ULTRAPOS * (1 - 1.0 / (10 * unmet5_c - 1468))) {
+                                if (temp2 < (long long int)ULTRAPOS * (1 - 1.0 / (10 * unmet5_c - 1468))) {
                                     type = 1;
                                     five_count_c++;
                                     unmet5_c = 0;
@@ -3013,7 +3013,7 @@ int main() {
                                 }
                             }
                             else {
-                                if (temp2 < ULTRAPOS * (1 - 1.0 / (10 * unmet5_w - 1468))) {
+                                if (temp2 < (long long int)ULTRAPOS * (1 - 1.0 / (10 * unmet5_w - 1468))) {
                                     type = 2;
                                     five_count_w++;
                                     unmet5_w = 0;
@@ -3034,7 +3034,7 @@ int main() {
                             four_count = four_count + 1;
                             four_star_assurance_number = 0;
                             if (unmet4_c < 18 && unmet4_w < 18) {
-                                if (temp2 < ULTRAPOS / 2) {
+                                if (temp2 < (long long int)ULTRAPOS / 2) {
                                     type = 1;
                                     four_count_c++;
                                     unmet4_c = 0;
@@ -3050,7 +3050,7 @@ int main() {
                                 }
                             }
                             else if (unmet4_c > 17) {
-                                if (temp2 < ULTRAPOS * (1 - 1.0 / (10 * unmet4_c - 168))) {
+                                if (temp2 < (long long int)ULTRAPOS * (1 - 1.0 / (10 * unmet4_c - 168))) {
                                     type = 1;
                                     four_count_c++;
                                     unmet4_c = 0;
@@ -3066,7 +3066,7 @@ int main() {
                                 }
                             }
                             else {
-                                if (temp2 < ULTRAPOS * (1 - 1.0 / (10 * unmet4_w - 168))) {
+                                if (temp2 < (long long int)ULTRAPOS * (1 - 1.0 / (10 * unmet4_w - 168))) {
                                     type = 2;
                                     four_count_w++;
                                     unmet4_w = 0;
@@ -3098,7 +3098,7 @@ int main() {
                             if (five_star_assurance_number < min_fives) { min_fives = five_star_assurance_number; min_fivesth = five_count; min_fivecount = count; }
                             five_star_assurance_number = 0;
                             if (unmet5_c < 148 && unmet5_w < 148) {
-                                if (temp2 < ULTRAPOS / 2) {
+                                if (temp2 < (long long int)ULTRAPOS / 2) {
                                     type = 1;
                                     five_count_c++;
                                     unmet5_c = 0;
@@ -3114,7 +3114,7 @@ int main() {
                                 }
                             }
                             else if (unmet5_c > 147) {
-                                if (temp2 < ULTRAPOS * (1 - 1.0 / (10 * unmet5_c - 1468))) {
+                                if (temp2 < (long long int)ULTRAPOS * (1 - 1.0 / (10 * unmet5_c - 1468))) {
                                     type = 1;
                                     five_count_c++;
                                     unmet5_c = 0;
@@ -3130,7 +3130,7 @@ int main() {
                                 }
                             }
                             else {
-                                if (temp2 < ULTRAPOS * (1 - 1.0 / (10 * unmet5_w - 1468))) {
+                                if (temp2 < (long long int)ULTRAPOS * (1 - 1.0 / (10 * unmet5_w - 1468))) {
                                     type = 2;
                                     five_count_w++;
                                     unmet5_w = 0;
@@ -3151,7 +3151,7 @@ int main() {
                             four_count = four_count + 1;
                             four_star_assurance_number = 0;
                             if (unmet4_c < 18 && unmet4_w < 18) {
-                                if (temp2 < ULTRAPOS / 2) {
+                                if (temp2 < (long long int)ULTRAPOS / 2) {
                                     type = 1;
                                     four_count_c++;
                                     unmet4_c = 0;
@@ -3167,7 +3167,7 @@ int main() {
                                 }
                             }
                             else if (unmet4_c > 17) {
-                                if (temp2 < ULTRAPOS * (1 - 1.0 / (10 * unmet4_c - 168))) {
+                                if (temp2 < (long long int)ULTRAPOS * (1 - 1.0 / (10 * unmet4_c - 168))) {
                                     type = 1;
                                     four_count_c++;
                                     unmet4_c = 0;
@@ -3183,7 +3183,7 @@ int main() {
                                 }
                             }
                             else {
-                                if (temp2 < ULTRAPOS * (1 - 1.0 / (10 * unmet4_w - 168))) {
+                                if (temp2 < (long long int)ULTRAPOS * (1 - 1.0 / (10 * unmet4_w - 168))) {
                                     type = 2;
                                     four_count_w++;
                                     unmet4_w = 0;
@@ -3208,7 +3208,7 @@ int main() {
                         if (five_star_assurance_number < min_fives) { min_fives = five_star_assurance_number; min_fivesth = five_count; min_fivecount = count; }
                         five_star_assurance_number = 0;
                         if (unmet5_c < 148 && unmet5_w < 148) {
-                            if (temp2 < ULTRAPOS / 2) {
+                            if (temp2 < (long long int)ULTRAPOS / 2) {
                                 type = 1;
                                 five_count_c++;
                                 
@@ -3230,7 +3230,7 @@ int main() {
                             }
                         }
                         else if (unmet5_c > 147) {
-                            if (temp2 < ULTRAPOS * (1 - 1.0 / (10 * unmet5_c - 1468))) {
+                            if (temp2 < (long long int)ULTRAPOS * (1 - 1.0 / (10 * unmet5_c - 1468))) {
                                 type = 1;
                                 five_count_c++;
                                 
@@ -3252,7 +3252,7 @@ int main() {
                             }
                         }
                         else {
-                            if (temp2 < ULTRAPOS * (1 - 1.0 / (10 * unmet5_w - 1468))) {
+                            if (temp2 < (long long int)ULTRAPOS * (1 - 1.0 / (10 * unmet5_w - 1468))) {
                                 type = 2;
                                 five_count_w++;
                                 
@@ -3432,7 +3432,7 @@ int main() {
                             if (five_star_assurance_number < min_fives) { min_fives = five_star_assurance_number; min_fivesth = five_count; min_fivecount = count; }
                             five_star_assurance_number = 0;
                             if (unmet5_c < 148 && unmet5_w < 148) {
-                                if (temp2 < ULTRAPOS / 2) {
+                                if (temp2 < (long long int)ULTRAPOS / 2) {
                                     type = 1;
                                     five_count_c++;
                                     unmet5_c = 0;
@@ -3448,7 +3448,7 @@ int main() {
                                 }
                             }
                             else if (unmet5_c > 147) {
-                                if (temp2 < ULTRAPOS * (1 - 1.0 / (10 * unmet5_c - 1468))) {
+                                if (temp2 < (long long int)ULTRAPOS * (1 - 1.0 / (10 * unmet5_c - 1468))) {
                                     type = 1;
                                     five_count_c++;
                                     unmet5_c = 0;
@@ -3464,7 +3464,7 @@ int main() {
                                 }
                             }
                             else {
-                                if (temp2 < ULTRAPOS * (1 - 1.0 / (10 * unmet5_w - 1468))) {
+                                if (temp2 < (long long int)ULTRAPOS * (1 - 1.0 / (10 * unmet5_w - 1468))) {
                                     type = 2;
                                     five_count_w++;
                                     unmet5_w = 0;
@@ -3485,7 +3485,7 @@ int main() {
                             four_count = four_count + 1;
                             four_star_assurance_number = 0;
                             if (unmet4_c < 18 && unmet4_w < 18) {
-                                if (temp2 < ULTRAPOS / 2) {
+                                if (temp2 < (long long int)ULTRAPOS / 2) {
                                     type = 1;
                                     four_count_c++;
                                     unmet4_c = 0;
@@ -3501,7 +3501,7 @@ int main() {
                                 }
                             }
                             else if (unmet4_c > 17) {
-                                if (temp2 < ULTRAPOS * (1 - 1.0 / (10 * unmet4_c - 168))) {
+                                if (temp2 < (long long int)ULTRAPOS * (1 - 1.0 / (10 * unmet4_c - 168))) {
                                     type = 1;
                                     four_count_c++;
                                     unmet4_c = 0;
@@ -3517,7 +3517,7 @@ int main() {
                                 }
                             }
                             else {
-                                if (temp2 < ULTRAPOS * (1 - 1.0 / (10 * unmet4_w - 168))) {
+                                if (temp2 < (long long int)ULTRAPOS * (1 - 1.0 / (10 * unmet4_w - 168))) {
                                     type = 2;
                                     four_count_w++;
                                     unmet4_w = 0;
@@ -3549,7 +3549,7 @@ int main() {
                             if (five_star_assurance_number < min_fives) { min_fives = five_star_assurance_number; min_fivesth = five_count; min_fivecount = count; }
                             five_star_assurance_number = 0;
                             if (unmet5_c < 148 && unmet5_w < 148) {
-                                if (temp2 < ULTRAPOS / 2) {
+                                if (temp2 < (long long int)ULTRAPOS / 2) {
                                     type = 1;
                                     five_count_c++;
                                     unmet5_c = 0;
@@ -3565,7 +3565,7 @@ int main() {
                                 }
                             }
                             else if (unmet5_c > 147) {
-                                if (temp2 < ULTRAPOS * (1 - 1.0 / (10 * unmet5_c - 1468))) {
+                                if (temp2 < (long long int)ULTRAPOS * (1 - 1.0 / (10 * unmet5_c - 1468))) {
                                     type = 1;
                                     five_count_c++;
                                     unmet5_c = 0;
@@ -3581,7 +3581,7 @@ int main() {
                                 }
                             }
                             else {
-                                if (temp2 < ULTRAPOS * (1 - 1.0 / (10 * unmet5_w - 1468))) {
+                                if (temp2 < (long long int)ULTRAPOS * (1 - 1.0 / (10 * unmet5_w - 1468))) {
                                     type = 2;
                                     five_count_w++;
                                     unmet5_w = 0;
@@ -3602,7 +3602,7 @@ int main() {
                             four_count = four_count + 1;
                             four_star_assurance_number = 0;
                             if (unmet4_c < 18 && unmet4_w < 18) {
-                                if (temp2 < ULTRAPOS / 2) {
+                                if (temp2 < (long long int)ULTRAPOS / 2) {
                                     type = 1;
                                     four_count_c++;
                                     unmet4_c = 0;
@@ -3618,7 +3618,7 @@ int main() {
                                 }
                             }
                             else if (unmet4_c > 17) {
-                                if (temp2 < ULTRAPOS * (1 - 1.0 / (10 * unmet4_c - 168))) {
+                                if (temp2 < (long long int)ULTRAPOS * (1 - 1.0 / (10 * unmet4_c - 168))) {
                                     type = 1;
                                     four_count_c++;
                                     unmet4_c = 0;
@@ -3634,7 +3634,7 @@ int main() {
                                 }
                             }
                             else {
-                                if (temp2 < ULTRAPOS * (1 - 1.0 / (10 * unmet4_w - 168))) {
+                                if (temp2 < (long long int)ULTRAPOS * (1 - 1.0 / (10 * unmet4_w - 168))) {
                                     type = 2;
                                     four_count_w++;
                                     unmet4_w = 0;
@@ -3666,7 +3666,7 @@ int main() {
                             if (five_star_assurance_number < min_fives) { min_fives = five_star_assurance_number; min_fivesth = five_count; min_fivecount = count; }
                             five_star_assurance_number = 0;
                             if (unmet5_c < 148 && unmet5_w < 148) {
-                                if (temp2 < ULTRAPOS / 2) {
+                                if (temp2 < (long long int)ULTRAPOS / 2) {
                                     type = 1;
                                     five_count_c++;
                                     unmet5_c = 0;
@@ -3682,7 +3682,7 @@ int main() {
                                 }
                             }
                             else if (unmet5_c > 147) {
-                                if (temp2 < ULTRAPOS * (1 - 1.0 / (10 * unmet5_c - 1468))) {
+                                if (temp2 < (long long int)ULTRAPOS * (1 - 1.0 / (10 * unmet5_c - 1468))) {
                                     type = 1;
                                     five_count_c++;
                                     unmet5_c = 0;
@@ -3698,7 +3698,7 @@ int main() {
                                 }
                             }
                             else {
-                                if (temp2 < ULTRAPOS * (1 - 1.0 / (10 * unmet5_w - 1468))) {
+                                if (temp2 < (long long int)ULTRAPOS * (1 - 1.0 / (10 * unmet5_w - 1468))) {
                                     type = 2;
                                     five_count_w++;
                                     unmet5_w = 0;
@@ -3719,7 +3719,7 @@ int main() {
                             four_count = four_count + 1;
                             four_star_assurance_number = 0;
                             if (unmet4_c < 18 && unmet4_w < 18) {
-                                if (temp2 < ULTRAPOS / 2) {
+                                if (temp2 < (long long int)ULTRAPOS / 2) {
                                     type = 1;
                                     four_count_c++;
                                     unmet4_c = 0;
@@ -3735,7 +3735,7 @@ int main() {
                                 }
                             }
                             else if (unmet4_c > 17) {
-                                if (temp2 < ULTRAPOS * (1 - 1.0 / (10 * unmet4_c - 168))) {
+                                if (temp2 < (long long int)ULTRAPOS * (1 - 1.0 / (10 * unmet4_c - 168))) {
                                     type = 1;
                                     four_count_c++;
                                     unmet4_c = 0;
@@ -3751,7 +3751,7 @@ int main() {
                                 }
                             }
                             else {
-                                if (temp2 < ULTRAPOS * (1 - 1.0 / (10 * unmet4_w - 168))) {
+                                if (temp2 < (long long int)ULTRAPOS * (1 - 1.0 / (10 * unmet4_w - 168))) {
                                     type = 2;
                                     four_count_w++;
                                     unmet4_w = 0;
@@ -3777,7 +3777,7 @@ int main() {
                             if (five_star_assurance_number < min_fives) { min_fives = five_star_assurance_number; min_fivesth = five_count; min_fivecount = count; }
                             five_star_assurance_number = 0;
                             if (unmet5_c < 148 && unmet5_w < 148) {
-                                if (temp2 < ULTRAPOS / 2) {
+                                if (temp2 < (long long int)ULTRAPOS / 2) {
                                     type = 1;
                                     five_count_c++;
                                     unmet5_c = 0;
@@ -3793,7 +3793,7 @@ int main() {
                                 }
                             }
                             else if (unmet5_c > 147) {
-                                if (temp2 < ULTRAPOS * (1 - 1.0 / (10 * unmet5_c - 1468))) {
+                                if (temp2 < (long long int)ULTRAPOS * (1 - 1.0 / (10 * unmet5_c - 1468))) {
                                     type = 1;
                                     five_count_c++;
                                     unmet5_c = 0;
@@ -3809,7 +3809,7 @@ int main() {
                                 }
                             }
                             else {
-                                if (temp2 < ULTRAPOS * (1 - 1.0 / (10 * unmet5_w - 1468))) {
+                                if (temp2 < (long long int)ULTRAPOS * (1 - 1.0 / (10 * unmet5_w - 1468))) {
                                     type = 2;
                                     five_count_w++;
                                     unmet5_w = 0;
@@ -3830,7 +3830,7 @@ int main() {
                             four_count = four_count + 1;
                             four_star_assurance_number = 0;
                             if (unmet4_c < 18 && unmet4_w < 18) {
-                                if (temp2 < ULTRAPOS / 2) {
+                                if (temp2 < (long long int)ULTRAPOS / 2) {
                                     type = 1;
                                     four_count_c++;
                                     unmet4_c = 0;
@@ -3846,7 +3846,7 @@ int main() {
                                 }
                             }
                             else if (unmet4_c > 17) {
-                                if (temp2 < ULTRAPOS * (1 - 1.0 / (10 * unmet4_c - 168))) {
+                                if (temp2 < (long long int)ULTRAPOS * (1 - 1.0 / (10 * unmet4_c - 168))) {
                                     type = 1;
                                     four_count_c++;
                                     unmet4_c = 0;
@@ -3862,7 +3862,7 @@ int main() {
                                 }
                             }
                             else {
-                                if (temp2 < ULTRAPOS * (1 - 1.0 / (10 * unmet4_w - 168))) {
+                                if (temp2 < (long long int)ULTRAPOS * (1 - 1.0 / (10 * unmet4_w - 168))) {
                                     type = 2;
                                     four_count_w++;
                                     unmet4_w = 0;
@@ -3894,7 +3894,7 @@ int main() {
                             if (five_star_assurance_number < min_fives) { min_fives = five_star_assurance_number; min_fivesth = five_count; min_fivecount = count; }
                             five_star_assurance_number = 0;
                             if (unmet5_c < 148 && unmet5_w < 148) {
-                                if (temp2 < ULTRAPOS / 2) {
+                                if (temp2 < (long long int)ULTRAPOS / 2) {
                                     type = 1;
                                     five_count_c++;
                                     unmet5_c = 0;
@@ -3910,7 +3910,7 @@ int main() {
                                 }
                             }
                             else if (unmet5_c > 147) {
-                                if (temp2 < ULTRAPOS * (1 - 1.0 / (10 * unmet5_c - 1468))) {
+                                if (temp2 < (long long int)ULTRAPOS * (1 - 1.0 / (10 * unmet5_c - 1468))) {
                                     type = 1;
                                     five_count_c++;
                                     unmet5_c = 0;
@@ -3926,7 +3926,7 @@ int main() {
                                 }
                             }
                             else {
-                                if (temp2 < ULTRAPOS * (1 - 1.0 / (10 * unmet5_w - 1468))) {
+                                if (temp2 < (long long int)ULTRAPOS * (1 - 1.0 / (10 * unmet5_w - 1468))) {
                                     type = 2;
                                     five_count_w++;
                                     unmet5_w = 0;
@@ -3947,7 +3947,7 @@ int main() {
                             four_count = four_count + 1;
                             four_star_assurance_number = 0;
                             if (unmet4_c < 18 && unmet4_w < 18) {
-                                if (temp2 < ULTRAPOS / 2) {
+                                if (temp2 < (long long int)ULTRAPOS / 2) {
                                     type = 1;
                                     four_count_c++;
                                     unmet4_c = 0;
@@ -3963,7 +3963,7 @@ int main() {
                                 }
                             }
                             else if (unmet4_c > 17) {
-                                if (temp2 < ULTRAPOS * (1 - 1.0 / (10 * unmet4_c - 168))) {
+                                if (temp2 < (long long int)ULTRAPOS * (1 - 1.0 / (10 * unmet4_c - 168))) {
                                     type = 1;
                                     four_count_c++;
                                     unmet4_c = 0;
@@ -3979,7 +3979,7 @@ int main() {
                                 }
                             }
                             else {
-                                if (temp2 < ULTRAPOS * (1 - 1.0 / (10 * unmet4_w - 168))) {
+                                if (temp2 < (long long int)ULTRAPOS * (1 - 1.0 / (10 * unmet4_w - 168))) {
                                     type = 2;
                                     four_count_w++;
                                     unmet4_w = 0;
@@ -4011,7 +4011,7 @@ int main() {
                             if (five_star_assurance_number < min_fives) { min_fives = five_star_assurance_number; min_fivesth = five_count; min_fivecount = count; }
                             five_star_assurance_number = 0;
                             if (unmet5_c < 148 && unmet5_w < 148) {
-                                if (temp2 < ULTRAPOS / 2) {
+                                if (temp2 < (long long int)ULTRAPOS / 2) {
                                     type = 1;
                                     five_count_c++;
                                     unmet5_c = 0;
@@ -4027,7 +4027,7 @@ int main() {
                                 }
                             }
                             else if (unmet5_c > 147) {
-                                if (temp2 < ULTRAPOS * (1 - 1.0 / (10 * unmet5_c - 1468))) {
+                                if (temp2 < (long long int)ULTRAPOS * (1 - 1.0 / (10 * unmet5_c - 1468))) {
                                     type = 1;
                                     five_count_c++;
                                     unmet5_c = 0;
@@ -4043,7 +4043,7 @@ int main() {
                                 }
                             }
                             else {
-                                if (temp2 < ULTRAPOS * (1 - 1.0 / (10 * unmet5_w - 1468))) {
+                                if (temp2 < (long long int)ULTRAPOS * (1 - 1.0 / (10 * unmet5_w - 1468))) {
                                     type = 2;
                                     five_count_w++;
                                     unmet5_w = 0;
@@ -4064,7 +4064,7 @@ int main() {
                             four_count = four_count + 1;
                             four_star_assurance_number = 0;
                             if (unmet4_c < 18 && unmet4_w < 18) {
-                                if (temp2 < ULTRAPOS / 2) {
+                                if (temp2 < (long long int)ULTRAPOS / 2) {
                                     type = 1;
                                     four_count_c++;
                                     unmet4_c = 0;
@@ -4080,7 +4080,7 @@ int main() {
                                 }
                             }
                             else if (unmet4_c > 17) {
-                                if (temp2 < ULTRAPOS * (1 - 1.0 / (10 * unmet4_c - 168))) {
+                                if (temp2 < (long long int)ULTRAPOS * (1 - 1.0 / (10 * unmet4_c - 168))) {
                                     type = 1;
                                     four_count_c++;
                                     unmet4_c = 0;
@@ -4096,7 +4096,7 @@ int main() {
                                 }
                             }
                             else {
-                                if (temp2 < ULTRAPOS * (1 - 1.0 / (10 * unmet4_w - 168))) {
+                                if (temp2 < (long long int)ULTRAPOS * (1 - 1.0 / (10 * unmet4_w - 168))) {
                                     type = 2;
                                     four_count_w++;
                                     unmet4_w = 0;
@@ -4121,7 +4121,7 @@ int main() {
                         if (five_star_assurance_number < min_fives) { min_fives = five_star_assurance_number; min_fivesth = five_count; min_fivecount = count; }
                         five_star_assurance_number = 0;
                         if (unmet5_c < 148 && unmet5_w < 148) {
-                            if (temp2 < ULTRAPOS / 2) {
+                            if (temp2 < (long long int)ULTRAPOS / 2) {
                                 type = 1;
                                 five_count_c++;
                                 
@@ -4143,7 +4143,7 @@ int main() {
                             }
                         }
                         else if (unmet5_c > 147) {
-                            if (temp2 < ULTRAPOS * (1 - 1.0 / (10 * unmet5_c - 1468))) {
+                            if (temp2 < (long long int)ULTRAPOS * (1 - 1.0 / (10 * unmet5_c - 1468))) {
                                 type = 1;
                                 five_count_c++;
                                 
@@ -4165,7 +4165,7 @@ int main() {
                             }
                         }
                         else {
-                            if (temp2 < ULTRAPOS * (1 - 1.0 / (10 * unmet5_w - 1468))) {
+                            if (temp2 < (long long int)ULTRAPOS * (1 - 1.0 / (10 * unmet5_w - 1468))) {
                                 type = 2;
                                 five_count_w++;
                                 
