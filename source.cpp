@@ -185,14 +185,14 @@ int main() {
         long long int unmet5_w = 0;
         long long int pcount[128] = { 0 };
         int luck = 0;
-        long long int lucklocation[10] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
+        long long int lucklocation[10] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
         long long int lucksublocation[10] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
-        int luckkind[10] = {51, 51, 51, 51, 51, 51, 51, 51, 51, 51};
+        int luckkind[10] = {127, 127, 127, 127, 127, 127, 127, 127, 127, 127};
         int luckstar[10] = {3, 3, 3, 3, 3, 3, 3, 3, 3, 3};
         int luckiest = 0;
-        long long int luckiestlocation[10] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
+        long long int luckiestlocation[10] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
         long long int luckiestsublocation[10] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
-        int luckiestkind[10] = {51, 51, 51, 51, 51, 51, 51, 51, 51, 51};
+        int luckiestkind[10] = {127, 127, 127, 127, 127, 127, 127, 127, 127, 127};
         enter_chosen_banner:
         chosen_banner = 0;
         std::cout << "Choose Your Wishes (Banners):" << endl;
@@ -271,7 +271,7 @@ int main() {
             std::cin >> wishes_number;
             std::cout << endl;
             if (wishes_number == -2){
-                //if(luckiestlocation[0] == 0) {std::cout << "Default" << endl; goto enter_wishes_number; }
+                if(count < 10) {std::cout << "Default" << endl; goto enter_wishes_number; }
                 for (int templuck = 0; templuck < 10; templuck ++){
                     std::cout << luckiestlocation[templuck] << "(" << luckiestsublocation[templuck] << ")" << " ";
                     switch (luckiestkind[templuck]) {
@@ -405,6 +405,7 @@ int main() {
                     case 128: { std::cout << "Placeholder" << endl; } break;
                     }
                 }
+                goto enter_wishes_number;
             }
             if (chosen_banner == 4 && chosen_event == 1 && wishes_number == -1) { wishes_number = 0; goto enter_chosen_banner; }
             //if (chosen_banner == 4 && chosen_event == 1 && wishes_number != 10) { wishes_number = 0; std::cout << "Invalid number of wishes!" << endl; goto enter_wishes_number; }
@@ -1224,6 +1225,14 @@ int main() {
                         else luck += 0;
                         }
                     }
+                    if(count == 10){
+                        luckiest = luck;
+                        for(int templuck = 0; templuck < 10; templuck++){
+                        luckiestlocation[templuck] = lucklocation[templuck];
+                        luckiestsublocation[templuck] = lucksublocation[templuck];
+                        luckiestkind[templuck] = luckkind[templuck];
+                        }
+                    }
                     if(luck > luckiest) {
                         luckiest = luck;
                         for(int templuck = 0; templuck < 10; templuck++){
@@ -2037,14 +2046,24 @@ int main() {
                         luckstar[templuck] = luckstar[templuck + 1];
                     }
                     lucklocation[9] = count;
-                    lucksublocation[9] = five_star_assurance_number - 1;
+                    lucksublocation[9] = (long long int) five_star_assurance_number - 1;
                     luckkind[9] = kind;
                     luckstar[9] = star;
-                    for(int templuck = 0; templuck < 10; templuck++){
-                        luck = 0;
-                        if(luckstar[templuck] == 5) luck += 625;
+                    luck = 0;
+                    if(star == 4 || star == 5){
+                        for (int templuck = 0; templuck < 10; templuck++) {
+                        if (luckstar[templuck] == 5) luck += 625;
                         else if (luckstar[templuck] == 4) luck += 77;
                         else luck += 0;
+                        }
+                    }
+                    if(count == 10){
+                        luckiest = luck;
+                        for(int templuck = 0; templuck < 10; templuck++){
+                        luckiestlocation[templuck] = lucklocation[templuck];
+                        luckiestsublocation[templuck] = lucksublocation[templuck];
+                        luckiestkind[templuck] = luckkind[templuck];
+                        }
                     }
                     if(luck > luckiest) {
                         luckiest = luck;
@@ -2859,13 +2878,24 @@ int main() {
                         luckstar[templuck] = luckstar[templuck + 1];
                     }
                     lucklocation[9] = count;
-                    lucksublocation[9] = five_star_assurance_number - 1;
+                    lucksublocation[9] = (long long int) five_star_assurance_number - 1;
                     luckkind[9] = kind;
                     luckstar[9] = star;
-                    for(int templuck = 0; templuck < 10; templuck++){
-                        if(luckstar[templuck] == 5) luck += 625;
+                    luck = 0;
+                    if(star == 4 || star == 5){
+                        for (int templuck = 0; templuck < 10; templuck++) {
+                        if (luckstar[templuck] == 5) luck += 625;
                         else if (luckstar[templuck] == 4) luck += 77;
                         else luck += 0;
+                        }
+                    }
+                    if(count == 10){
+                        luckiest = luck;
+                        for(int templuck = 0; templuck < 10; templuck++){
+                        luckiestlocation[templuck] = lucklocation[templuck];
+                        luckiestsublocation[templuck] = lucksublocation[templuck];
+                        luckiestkind[templuck] = luckkind[templuck];
+                        }
                     }
                     if(luck > luckiest) {
                         luckiest = luck;
@@ -3680,13 +3710,24 @@ int main() {
                         luckstar[templuck] = luckstar[templuck + 1];
                     }
                     lucklocation[9] = count;
-                    lucksublocation[9] = five_star_assurance_number - 1;
+                    lucksublocation[9] = (long long int) five_star_assurance_number - 1;
                     luckkind[9] = kind;
                     luckstar[9] = star;
-                    for(int templuck = 0; templuck < 10; templuck++){
-                        if(luckstar[templuck] == 5) luck += 625;
+                    luck = 0;
+                    if(star == 4 || star == 5){
+                        for (int templuck = 0; templuck < 10; templuck++) {
+                        if (luckstar[templuck] == 5) luck += 625;
                         else if (luckstar[templuck] == 4) luck += 77;
                         else luck += 0;
+                        }
+                    }
+                    if(count == 10){
+                        luckiest = luck;
+                        for(int templuck = 0; templuck < 10; templuck++){
+                        luckiestlocation[templuck] = lucklocation[templuck];
+                        luckiestsublocation[templuck] = lucksublocation[templuck];
+                        luckiestkind[templuck] = luckkind[templuck];
+                        }
                     }
                     if(luck > luckiest) {
                         luckiest = luck;
@@ -4501,13 +4542,24 @@ int main() {
                         luckstar[templuck] = luckstar[templuck + 1];
                     }
                     lucklocation[9] = count;
-                    lucksublocation[9] = five_star_assurance_number - 1;
+                    lucksublocation[9] = (long long int) five_star_assurance_number - 1;
                     luckkind[9] = kind;
                     luckstar[9] = star;
-                    for(int templuck = 0; templuck < 10; templuck++){
-                        if(luckstar[templuck] == 5) luck += 625;
+                    luck = 0;
+                    if(star == 4 || star == 5){
+                        for (int templuck = 0; templuck < 10; templuck++) {
+                        if (luckstar[templuck] == 5) luck += 625;
                         else if (luckstar[templuck] == 4) luck += 77;
                         else luck += 0;
+                        }
+                    }
+                    if(count == 10){
+                        luckiest = luck;
+                        for(int templuck = 0; templuck < 10; templuck++){
+                        luckiestlocation[templuck] = lucklocation[templuck];
+                        luckiestsublocation[templuck] = lucksublocation[templuck];
+                        luckiestkind[templuck] = luckkind[templuck];
+                        }
                     }
                     if(luck > luckiest) {
                         luckiest = luck;
@@ -5322,13 +5374,24 @@ int main() {
                         luckstar[templuck] = luckstar[templuck + 1];
                     }
                     lucklocation[9] = count;
-                    lucksublocation[9] = five_star_assurance_number - 1;
+                    lucksublocation[9] = (long long int) five_star_assurance_number - 1;
                     luckkind[9] = kind;
                     luckstar[9] = star;
-                    for(int templuck = 0; templuck < 10; templuck++){
-                        if(luckstar[templuck] == 5) luck += 625;
+                    luck = 0;
+                    if(star == 4 || star == 5){
+                        for (int templuck = 0; templuck < 10; templuck++) {
+                        if (luckstar[templuck] == 5) luck += 625;
                         else if (luckstar[templuck] == 4) luck += 77;
                         else luck += 0;
+                        }
+                    }
+                    if(count == 10){
+                        luckiest = luck;
+                        for(int templuck = 0; templuck < 10; templuck++){
+                        luckiestlocation[templuck] = lucklocation[templuck];
+                        luckiestsublocation[templuck] = lucksublocation[templuck];
+                        luckiestkind[templuck] = luckkind[templuck];
+                        }
                     }
                     if(luck > luckiest) {
                         luckiest = luck;
@@ -6143,13 +6206,24 @@ int main() {
                         luckstar[templuck] = luckstar[templuck + 1];
                     }
                     lucklocation[9] = count;
-                    lucksublocation[9] = five_star_assurance_number - 1;
+                    lucksublocation[9] = (long long int) five_star_assurance_number - 1;
                     luckkind[9] = kind;
                     luckstar[9] = star;
-                    for(int templuck = 0; templuck < 10; templuck++){
-                        if(luckstar[templuck] == 5) luck += 625;
+                    luck = 0;
+                    if(star == 4 || star == 5){
+                        for (int templuck = 0; templuck < 10; templuck++) {
+                        if (luckstar[templuck] == 5) luck += 625;
                         else if (luckstar[templuck] == 4) luck += 77;
                         else luck += 0;
+                        }
+                    }
+                    if(count == 10){
+                        luckiest = luck;
+                        for(int templuck = 0; templuck < 10; templuck++){
+                        luckiestlocation[templuck] = lucklocation[templuck];
+                        luckiestsublocation[templuck] = lucksublocation[templuck];
+                        luckiestkind[templuck] = luckkind[templuck];
+                        }
                     }
                     if(luck > luckiest) {
                         luckiest = luck;
@@ -6964,13 +7038,24 @@ int main() {
                         luckstar[templuck] = luckstar[templuck + 1];
                     }
                     lucklocation[9] = count;
-                    lucksublocation[9] = five_star_assurance_number - 1;
+                    lucksublocation[9] = (long long int) five_star_assurance_number - 1;
                     luckkind[9] = kind;
                     luckstar[9] = star;
-                    for(int templuck = 0; templuck < 10; templuck++){
-                        if(luckstar[templuck] == 5) luck += 625;
+                    luck = 0;
+                    if(star == 4 || star == 5){
+                        for (int templuck = 0; templuck < 10; templuck++) {
+                        if (luckstar[templuck] == 5) luck += 625;
                         else if (luckstar[templuck] == 4) luck += 77;
                         else luck += 0;
+                        }
+                    }
+                    if(count == 10){
+                        luckiest = luck;
+                        for(int templuck = 0; templuck < 10; templuck++){
+                        luckiestlocation[templuck] = lucklocation[templuck];
+                        luckiestsublocation[templuck] = lucksublocation[templuck];
+                        luckiestkind[templuck] = luckkind[templuck];
+                        }
                     }
                     if(luck > luckiest) {
                         luckiest = luck;
@@ -7785,13 +7870,24 @@ int main() {
                         luckstar[templuck] = luckstar[templuck + 1];
                     }
                     lucklocation[9] = count;
-                    lucksublocation[9] = five_star_assurance_number - 1;
+                    lucksublocation[9] = (long long int) five_star_assurance_number - 1;
                     luckkind[9] = kind;
                     luckstar[9] = star;
-                    for(int templuck = 0; templuck < 10; templuck++){
-                        if(luckstar[templuck] == 5) luck += 625;
+                    luck = 0;
+                    if(star == 4 || star == 5){
+                        for (int templuck = 0; templuck < 10; templuck++) {
+                        if (luckstar[templuck] == 5) luck += 625;
                         else if (luckstar[templuck] == 4) luck += 77;
                         else luck += 0;
+                        }
+                    }
+                    if(count == 10){
+                        luckiest = luck;
+                        for(int templuck = 0; templuck < 10; templuck++){
+                        luckiestlocation[templuck] = lucklocation[templuck];
+                        luckiestsublocation[templuck] = lucksublocation[templuck];
+                        luckiestkind[templuck] = luckkind[templuck];
+                        }
                     }
                     if(luck > luckiest) {
                         luckiest = luck;
@@ -8606,13 +8702,24 @@ int main() {
                         luckstar[templuck] = luckstar[templuck + 1];
                     }
                     lucklocation[9] = count;
-                    lucksublocation[9] = five_star_assurance_number - 1;
+                    lucksublocation[9] = (long long int) five_star_assurance_number - 1;
                     luckkind[9] = kind;
                     luckstar[9] = star;
-                    for(int templuck = 0; templuck < 10; templuck++){
-                        if(luckstar[templuck] == 5) luck += 625;
+                    luck = 0;
+                    if(star == 4 || star == 5){
+                        for (int templuck = 0; templuck < 10; templuck++) {
+                        if (luckstar[templuck] == 5) luck += 625;
                         else if (luckstar[templuck] == 4) luck += 77;
                         else luck += 0;
+                        }
+                    }
+                    if(count == 10){
+                        luckiest = luck;
+                        for(int templuck = 0; templuck < 10; templuck++){
+                        luckiestlocation[templuck] = lucklocation[templuck];
+                        luckiestsublocation[templuck] = lucksublocation[templuck];
+                        luckiestkind[templuck] = luckkind[templuck];
+                        }
                     }
                     if(luck > luckiest) {
                         luckiest = luck;
@@ -9427,13 +9534,24 @@ int main() {
                         luckstar[templuck] = luckstar[templuck + 1];
                     }
                     lucklocation[9] = count;
-                    lucksublocation[9] = five_star_assurance_number - 1;
+                    lucksublocation[9] = (long long int) five_star_assurance_number - 1;
                     luckkind[9] = kind;
                     luckstar[9] = star;
-                    for(int templuck = 0; templuck < 10; templuck++){
-                        if(luckstar[templuck] == 5) luck += 625;
+                    luck = 0;
+                    if(star == 4 || star == 5){
+                        for (int templuck = 0; templuck < 10; templuck++) {
+                        if (luckstar[templuck] == 5) luck += 625;
                         else if (luckstar[templuck] == 4) luck += 77;
                         else luck += 0;
+                        }
+                    }
+                    if(count == 10){
+                        luckiest = luck;
+                        for(int templuck = 0; templuck < 10; templuck++){
+                        luckiestlocation[templuck] = lucklocation[templuck];
+                        luckiestsublocation[templuck] = lucksublocation[templuck];
+                        luckiestkind[templuck] = luckkind[templuck];
+                        }
                     }
                     if(luck > luckiest) {
                         luckiest = luck;
@@ -10248,13 +10366,24 @@ int main() {
                         luckstar[templuck] = luckstar[templuck + 1];
                     }
                     lucklocation[9] = count;
-                    lucksublocation[9] = five_star_assurance_number - 1;
+                    lucksublocation[9] = (long long int) five_star_assurance_number - 1;
                     luckkind[9] = kind;
                     luckstar[9] = star;
-                    for(int templuck = 0; templuck < 10; templuck++){
-                        if(luckstar[templuck] == 5) luck += 625;
+                    luck = 0;
+                    if(star == 4 || star == 5){
+                        for (int templuck = 0; templuck < 10; templuck++) {
+                        if (luckstar[templuck] == 5) luck += 625;
                         else if (luckstar[templuck] == 4) luck += 77;
                         else luck += 0;
+                        }
+                    }
+                    if(count == 10){
+                        luckiest = luck;
+                        for(int templuck = 0; templuck < 10; templuck++){
+                        luckiestlocation[templuck] = lucklocation[templuck];
+                        luckiestsublocation[templuck] = lucksublocation[templuck];
+                        luckiestkind[templuck] = luckkind[templuck];
+                        }
                     }
                     if(luck > luckiest) {
                         luckiest = luck;
@@ -11165,13 +11294,24 @@ int main() {
                         luckstar[templuck] = luckstar[templuck + 1];
                     }
                     lucklocation[9] = count;
-                    lucksublocation[9] = five_star_assurance_number - 1;
+                    lucksublocation[9] = (long long int) five_star_assurance_number - 1;
                     luckkind[9] = kind;
                     luckstar[9] = star;
-                    for(int templuck = 0; templuck < 10; templuck++){
-                        if(luckstar[templuck] == 5) luck += 625;
+                    luck = 0;
+                    if(star == 4 || star == 5){
+                        for (int templuck = 0; templuck < 10; templuck++) {
+                        if (luckstar[templuck] == 5) luck += 625;
                         else if (luckstar[templuck] == 4) luck += 77;
                         else luck += 0;
+                        }
+                    }
+                    if(count == 10){
+                        luckiest = luck;
+                        for(int templuck = 0; templuck < 10; templuck++){
+                        luckiestlocation[templuck] = lucklocation[templuck];
+                        luckiestsublocation[templuck] = lucksublocation[templuck];
+                        luckiestkind[templuck] = luckkind[templuck];
+                        }
                     }
                     if(luck > luckiest) {
                         luckiest = luck;
@@ -12100,13 +12240,24 @@ int main() {
                         luckstar[templuck] = luckstar[templuck + 1];
                     }
                     lucklocation[9] = count;
-                    lucksublocation[9] = five_star_assurance_number - 1;
+                    lucksublocation[9] = (long long int) five_star_assurance_number - 1;
                     luckkind[9] = kind;
                     luckstar[9] = star;
-                    for(int templuck = 0; templuck < 10; templuck++){
-                        if(luckstar[templuck] == 5) luck += 625;
+                    luck = 0;
+                    if(star == 4 || star == 5){
+                        for (int templuck = 0; templuck < 10; templuck++) {
+                        if (luckstar[templuck] == 5) luck += 625;
                         else if (luckstar[templuck] == 4) luck += 77;
                         else luck += 0;
+                        }
+                    }
+                    if(count == 10){
+                        luckiest = luck;
+                        for(int templuck = 0; templuck < 10; templuck++){
+                        luckiestlocation[templuck] = lucklocation[templuck];
+                        luckiestsublocation[templuck] = lucksublocation[templuck];
+                        luckiestkind[templuck] = luckkind[templuck];
+                        }
                     }
                     if(luck > luckiest) {
                         luckiest = luck;
@@ -13035,13 +13186,24 @@ int main() {
                         luckstar[templuck] = luckstar[templuck + 1];
                     }
                     lucklocation[9] = count;
-                    lucksublocation[9] = five_star_assurance_number - 1;
+                    lucksublocation[9] = (long long int) five_star_assurance_number - 1;
                     luckkind[9] = kind;
                     luckstar[9] = star;
-                    for(int templuck = 0; templuck < 10; templuck++){
-                        if(luckstar[templuck] == 5) luck += 625;
+                    luck = 0;
+                    if(star == 4 || star == 5){
+                        for (int templuck = 0; templuck < 10; templuck++) {
+                        if (luckstar[templuck] == 5) luck += 625;
                         else if (luckstar[templuck] == 4) luck += 77;
                         else luck += 0;
+                        }
+                    }
+                    if(count == 10){
+                        luckiest = luck;
+                        for(int templuck = 0; templuck < 10; templuck++){
+                        luckiestlocation[templuck] = lucklocation[templuck];
+                        luckiestsublocation[templuck] = lucksublocation[templuck];
+                        luckiestkind[templuck] = luckkind[templuck];
+                        }
                     }
                     if(luck > luckiest) {
                         luckiest = luck;
@@ -13300,13 +13462,24 @@ int main() {
                         luckstar[templuck] = luckstar[templuck + 1];
                     }
                     lucklocation[9] = count;
-                    lucksublocation[9] = five_star_assurance_number - 1;
+                    lucksublocation[9] = (long long int) five_star_assurance_number - 1;
                     luckkind[9] = kind;
                     luckstar[9] = star;
-                    for(int templuck = 0; templuck < 10; templuck++){
-                        if(luckstar[templuck] == 5) luck += 625;
+                    luck = 0;
+                    if(star == 4 || star == 5){
+                        for (int templuck = 0; templuck < 10; templuck++) {
+                        if (luckstar[templuck] == 5) luck += 625;
                         else if (luckstar[templuck] == 4) luck += 77;
                         else luck += 0;
+                        }
+                    }
+                    if(count == 10){
+                        luckiest = luck;
+                        for(int templuck = 0; templuck < 10; templuck++){
+                        luckiestlocation[templuck] = lucklocation[templuck];
+                        luckiestsublocation[templuck] = lucksublocation[templuck];
+                        luckiestkind[templuck] = luckkind[templuck];
+                        }
                     }
                     if(luck > luckiest) {
                         luckiest = luck;
