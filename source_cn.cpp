@@ -184,7 +184,16 @@ int main() {
         long long int unmet5_c = 0;
         long long int unmet5_w = 0;
         long long int pcount[128] = { 0 };
-    enter_chosen_banner:
+        int luck = 0;
+        long long int lucklocation[10] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+        long long int lucksublocation[10] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+        int luckkind[10] = {127, 127, 127, 127, 127, 127, 127, 127, 127, 127};
+        int luckstar[10] = {3, 3, 3, 3, 3, 3, 3, 3, 3, 3};
+        int luckiest = 0;
+        long long int luckiestlocation[10] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+        long long int luckiestsublocation[10] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+        int luckiestkind[10] = {127, 127, 127, 127, 127, 127, 127, 127, 127, 127};
+        enter_chosen_banner:
         chosen_banner = 0;
         std::cout << "Ñ¡Ôñ¿¨³ØÀàÐÍ:" << endl;
         std::cout << "-1: ÍË³ö; 1: ½ÇÉ«»î¶¯ÆíÔ¸; 2: ÎäÆ÷»î¶¯ÆíÔ¸; 3: ³£×¤ÆíÔ¸; 4: ÐÂÊÖÆíÔ¸;" << endl << endl;
@@ -258,9 +267,146 @@ int main() {
         while (wishes_number >= 0) {
             if (quit == 1) goto full_quit;
             enter_wishes_number:
-            std::cout << endl << "³é¼¸·¢?" << endl << "-1: ÖØÐÂÑ¡Ôñ¿¨³ØÀàÐÍ; 1: 1·¢; 10: 10·¢" << endl << endl;
+            std::cout << endl << "³é¼¸·¢?" << endl << "-1: ÖØÐÂÑ¡Ôñ¿¨³ØÀàÐÍ; 1: 1·¢; 10: 10·¢; -2: ÏÔÊ¾ÔËÆø×îºÃµÄÁ¬ÐøÊ®·¢" << endl << endl;
             std::cin >> wishes_number;
             std::cout << endl;
+            if (wishes_number == -2){
+                if(count < 10) {std::cout << "Default" << endl; goto enter_wishes_number; }
+                for (int templuck = 0; templuck < 10; templuck ++){
+                    std::cout << luckiestlocation[templuck] << "(" << luckiestsublocation[templuck] << ")" << " ";
+                    switch (luckiestkind[templuck]) {
+                    case 1: { std::cout << "!!!!!*****¿ÌÇç" << endl; } break;
+                    case 2: { std::cout << "!!!!!*****ÄªÄÈ" << endl; } break;
+                    case 3: { std::cout << "!!!!!*****ÆßÆß" << endl; } break;
+                    case 4: { std::cout << "!!!!!*****µÏÂ¬¿Ë" << endl; } break;
+                    case 5: { std::cout << "!!!!!*****ÇÙ" << endl; } break;
+                    case 6: { std::cout << "!!!!!*****°¢ÄªË¹Ö®¹­" << endl; } break;
+                    case 7: { std::cout << "!!!!!*****Ìì¿ÕÖ®Òí" << endl; } break;
+                    case 8: { std::cout << "!!!!!*****ËÄ·çÔ­µä" << endl; } break;
+                    case 9: { std::cout << "!!!!!*****Ìì¿ÕÖ®¾í" << endl; } break;
+                    case 10: { std::cout << "!!!!!*****ºÍè±ð°" << endl; } break;
+                    case 11: { std::cout << "!!!!!*****Ìì¿ÕÖ®¼¹" << endl; } break;
+                    case 12: { std::cout << "!!!!!*****ÀÇµÄÄ©Â·" << endl; } break;
+                    case 13: { std::cout << "!!!!!*****Ìì¿ÕÖ®°Á" << endl; } break;
+                    case 14: { std::cout << "!!!!!*****Ìì¿ÕÖ®ÈÐ" << endl; } break;
+                    case 15: { std::cout << "!!!!!*****·çÓ¥½£" << endl; } break;
+                    case 16: { std::cout << "!!****ÂÞÉ¯ÀòÑÇ" << endl; } break;
+                    case 17: { std::cout << "!!****ÐÁìÍ" << endl; } break;
+                    case 18: { std::cout << "!!****É°ÌÇ" << endl; } break;
+                    case 19: { std::cout << "!!****µÏ°ÂÄÈ" << endl; } break;
+                    case 20: { std::cout << "!!****ÖØÔÆ" << endl; } break;
+                    case 21: { std::cout << "!!****Åµ°¬¶û" << endl; } break;
+                    case 22: { std::cout << "!!****°àÄáÌØ" << endl; } break;
+                    case 23: { std::cout << "!!****·ÆÐ»¶û" << endl; } break;
+                    case 24: { std::cout << "!!****Äý¹â" << endl; } break;
+                    case 25: { std::cout << "!!****ÐÐÇï" << endl; } break;
+                    case 26: { std::cout << "!!****±±¶·" << endl; } break;
+                    case 27: { std::cout << "!!****ÏãÁâ" << endl; } break;
+                    case 28: { std::cout << "!!****°²°Ø" << endl; } break;
+                    case 29: { std::cout << "!!****À×Ôó" << endl; } break;
+                    case 30: { std::cout << "!!****¿­ÑÇ" << endl; } break;
+                    case 31: { std::cout << "!!****°Å°ÅÀ­" << endl; } break;
+                    case 32: { std::cout << "!!****ÀöÉ¯" << endl; } break;
+                    case 33: { std::cout << "!!****¹­²Ø" << endl; } break;
+                    case 34: { std::cout << "!!****¼ÀÀñ¹­" << endl; } break;
+                    case 35: { std::cout << "!!****¾øÏÒ" << endl; } break;
+                    case 36: { std::cout << "!!****Î÷·çÁÔ¹­" << endl; } break;
+                    case 37: { std::cout << "!!****ÕÑÐÄ" << endl; } break;
+                    case 38: { std::cout << "!!****¼ÀÀñ²ÐÕÂ" << endl; } break;
+                    case 39: { std::cout << "!!****Á÷ÀËÀÖÕÂ" << endl; } break;
+                    case 40: { std::cout << "!!****Î÷·çÃØµä" << endl; } break;
+                    case 41: { std::cout << "!!****Î÷·ç³¤Ç¹" << endl; } break;
+                    case 42: { std::cout << "!!****Ï»ÀïÃð³½" << endl; } break;
+                    case 43: { std::cout << "!!****Óê²Ã" << endl; } break;
+                    case 44: { std::cout << "!!****¼ÀÀñ´ó½£" << endl; } break;
+                    case 45: { std::cout << "!!****ÖÓ½£" << endl; } break;
+                    case 46: { std::cout << "!!****Î÷·ç´ó½£" << endl; } break;
+                    case 47: { std::cout << "!!****Ï»ÀïÁúÒ÷" << endl; } break;
+                    case 48: { std::cout << "!!****¼ÀÀñ½£" << endl; } break;
+                    case 49: { std::cout << "!!****µÑ½£" << endl; } break;
+                    case 50: { std::cout << "!!****Î÷·ç½£" << endl; } break;
+                    case 51: { std::cout << "***ÁÔ¹­" << endl; } break;
+                    case 52: { std::cout << "***ÉñÉäÊÖÖ®ÊÄ" << endl; } break;
+                    case 53: { std::cout << "***Ñ»Óð¹­" << endl; } break;
+                    case 54: { std::cout << "***ôäÓñ·¨Çò" << endl; } break;
+                    case 55: { std::cout << "***ÌÖÁúÓ¢½ÜÌ·" << endl; } break;
+                    case 56: { std::cout << "***Ä§µ¼Ð÷ÂÛ" << endl; } break;
+                    case 57: { std::cout << "***ºÚÓ§Ç¹" << endl; } break;
+                    case 58: { std::cout << "***ÒÔÀí·þÈË" << endl; } break;
+                    case 59: { std::cout << "***ãåÔ¡ÁúÑªµÄ½£" << endl; } break;
+                    case 60: { std::cout << "***ÌúÓ°À«½£" << endl; } break;
+                    case 61: { std::cout << "***·ÉÌìÓù½£" << endl; } break;
+                    case 62: { std::cout << "***ÀèÃ÷Éñ½£" << endl; } break;
+                    case 63: { std::cout << "***ÀäÈÐ" << endl; } break;
+                    case 64: { std::cout << "!!!!!*****ÎÂµÏ" << endl; } break;
+                    case 65: { std::cout << "!!!!!*****¿ÉÀò" << endl; } break;
+                    case 66: { std::cout << "!!!!!*****´ï´ïÀûÑÇ" << endl; } break;
+                    case 67: { std::cout << "!!!!!*****ÖÓÀë" << endl; } break;
+                    case 68: { std::cout << "!!!!!*****°¢±´¶à" << endl; } break;
+                    case 69: { std::cout << "!!!!!*****¸ÊÓê" << endl; } break;
+                    case 70: { std::cout << "!!!!!*****÷Ì" << endl; } break;
+                    case 71: { std::cout << "!!!!!*****ºúÌÒ" << endl; } break;
+                    case 72: { std::cout << "!!****ÑÌç³" << endl; } break;
+                    case 73: { std::cout << "!!****ÓÅÇ‰" << endl; } break;
+                    case 74: { std::cout << "!!!!!*****³¾ÊÀÖ®Ëø" << endl; } break;
+                    case 75: { std::cout << "!!!!!*****¹áºçÖ®éÃ" << endl; } break;
+                    case 76: { std::cout << "!!!!!*****ÎÞ¹¤Ö®½£" << endl; } break;
+                    case 77: { std::cout << "!!!!!*****í½·åÖ®ÈÐ" << endl; } break;
+                    case 78: { std::cout << "!!!!!*****ÅÍÑÒ½áÂÌ" << endl; } break;
+                    case 79: { std::cout << "!!!!!*****»¤Ä¦Ö®ÕÈ" << endl; } break;
+                    case 80: { std::cout << "!!****Ç§ÑÒ¹Å½£" << endl; } break;
+                    case 81: { std::cout << "!!****Ç§ÑÒ³¤Ç¹" << endl; } break;
+                    case 82: { std::cout << "!!!!!*****ÖÕÄ©àµÌ¾Ö®Ê«" << endl; } break;
+                    case 83: { std::cout << "!!****°µÏïÉÁ¹â" << endl; } break;
+                    case 84: { std::cout << "!!****°µÏïµÄ¾ÆÓëÊ«" << endl; } break;
+                    case 85: { std::cout << "!!****°µÏïÁÔÊÖ" << endl; } break;
+                    case 86: { std::cout << "Placeholder" << endl; } break;
+                    case 87: { std::cout << "Placeholder" << endl; } break;
+                    case 88: { std::cout << "Placeholder" << endl; } break;
+                    case 89: { std::cout << "Placeholder" << endl; } break;
+                    case 90: { std::cout << "Placeholder" << endl; } break;
+                    case 91: { std::cout << "Placeholder" << endl; } break;
+                    case 92: { std::cout << "Placeholder" << endl; } break;
+                    case 93: { std::cout << "Placeholder" << endl; } break;
+                    case 94: { std::cout << "Placeholder" << endl; } break;
+                    case 95: { std::cout << "Placeholder" << endl; } break;
+                    case 96: { std::cout << "Placeholder" << endl; } break;
+                    case 97: { std::cout << "Placeholder" << endl; } break;
+                    case 98: { std::cout << "Placeholder" << endl; } break;
+                    case 99: { std::cout << "Placeholder" << endl; } break;
+                    case 100: { std::cout << "Placeholder" << endl; } break;
+                    case 101: { std::cout << "Placeholder" << endl; } break;
+                    case 102: { std::cout << "Placeholder" << endl; } break;
+                    case 103: { std::cout << "Placeholder" << endl; } break;
+                    case 104: { std::cout << "Placeholder" << endl; } break;
+                    case 105: { std::cout << "Placeholder" << endl; } break;
+                    case 106: { std::cout << "Placeholder" << endl; } break;
+                    case 107: { std::cout << "Placeholder" << endl; } break;
+                    case 108: { std::cout << "Placeholder" << endl; } break;
+                    case 109: { std::cout << "Placeholder" << endl; } break;
+                    case 110: { std::cout << "Placeholder" << endl; } break;
+                    case 111: { std::cout << "Placeholder" << endl; } break;
+                    case 112: { std::cout << "Placeholder" << endl; } break;
+                    case 113: { std::cout << "Placeholder" << endl; } break;
+                    case 114: { std::cout << "Placeholder" << endl; } break;
+                    case 115: { std::cout << "Placeholder" << endl; } break;
+                    case 116: { std::cout << "Placeholder" << endl; } break;
+                    case 117: { std::cout << "Placeholder" << endl; } break;
+                    case 118: { std::cout << "Placeholder" << endl; } break;
+                    case 119: { std::cout << "Placeholder" << endl; } break;
+                    case 120: { std::cout << "Placeholder" << endl; } break;
+                    case 121: { std::cout << "Placeholder" << endl; } break;
+                    case 122: { std::cout << "Placeholder" << endl; } break;
+                    case 123: { std::cout << "Placeholder" << endl; } break;
+                    case 124: { std::cout << "Placeholder" << endl; } break;
+                    case 125: { std::cout << "Placeholder" << endl; } break;
+                    case 126: { std::cout << "Placeholder" << endl; } break;
+                    case 127: { std::cout << "Placeholder" << endl; } break;
+                    case 128: { std::cout << "Placeholder" << endl; } break;
+                    }
+                }
+                goto enter_wishes_number;
+            }
             if (chosen_banner == 4 && chosen_event == 1 && wishes_number == -1) { wishes_number = 0; goto enter_chosen_banner; }
             //if (chosen_banner == 4 && chosen_event == 1 && wishes_number != 10) { wishes_number = 0; std::cout << "Invalid number of wishes!" << endl; goto enter_wishes_number; }
             //if (!(wishes_number == -1||wishes_number == 10||wishes_number == 1)){ wishes_number = 0; std::cout << "Invalid number of wishes!" << endl; goto enter_wishes_number; }
@@ -1061,6 +1207,40 @@ int main() {
                     if (!(star == 4 && type == 3)) unmet4_w++;
                     five_star_assurance_number = five_star_assurance_number + 1;
                     four_star_assurance_number = four_star_assurance_number + 1;
+                    for(int templuck = 0; templuck < 9; templuck++){
+                        lucklocation[templuck] = lucklocation[templuck + 1];
+                        lucksublocation[templuck] = lucksublocation[templuck + 1];
+                        luckkind[templuck] = luckkind[templuck + 1];
+                        luckstar[templuck] = luckstar[templuck + 1];
+                    }
+                    lucklocation[9] = count;
+                    lucksublocation[9] = (long long int) five_star_assurance_number - 1;
+                    luckkind[9] = kind;
+                    luckstar[9] = star;
+                    luck = 0;
+                    if(star == 4 || star == 5){
+                        for (int templuck = 0; templuck < 10; templuck++) {
+                        if (luckstar[templuck] == 5) luck += 625;
+                        else if (luckstar[templuck] == 4) luck += 77;
+                        else luck += 0;
+                        }
+                    }
+                    if(count == 10){
+                        luckiest = luck;
+                        for(int templuck = 0; templuck < 10; templuck++){
+                        luckiestlocation[templuck] = lucklocation[templuck];
+                        luckiestsublocation[templuck] = lucksublocation[templuck];
+                        luckiestkind[templuck] = luckkind[templuck];
+                        }
+                    }
+                    if(luck > luckiest) {
+                        luckiest = luck;
+                        for(int templuck = 0; templuck < 10; templuck++){
+                        luckiestlocation[templuck] = lucklocation[templuck];
+                        luckiestsublocation[templuck] = lucksublocation[templuck];
+                        luckiestkind[templuck] = luckkind[templuck];
+                        }
+                    }
                 }
             }
             if (chosen_banner == 1 && chosen_event == 2) {
@@ -1859,6 +2039,40 @@ int main() {
                     if (!(star == 4 && type == 3)) unmet4_w++;
                     five_star_assurance_number = five_star_assurance_number + 1;
                     four_star_assurance_number = four_star_assurance_number + 1;
+                    for(int templuck = 0; templuck < 9; templuck++){
+                        lucklocation[templuck] = lucklocation[templuck + 1];
+                        lucksublocation[templuck] = lucksublocation[templuck + 1];
+                        luckkind[templuck] = luckkind[templuck + 1];
+                        luckstar[templuck] = luckstar[templuck + 1];
+                    }
+                    lucklocation[9] = count;
+                    lucksublocation[9] = (long long int) five_star_assurance_number - 1;
+                    luckkind[9] = kind;
+                    luckstar[9] = star;
+                    luck = 0;
+                    if(star == 4 || star == 5){
+                        for (int templuck = 0; templuck < 10; templuck++) {
+                        if (luckstar[templuck] == 5) luck += 625;
+                        else if (luckstar[templuck] == 4) luck += 77;
+                        else luck += 0;
+                        }
+                    }
+                    if(count == 10){
+                        luckiest = luck;
+                        for(int templuck = 0; templuck < 10; templuck++){
+                        luckiestlocation[templuck] = lucklocation[templuck];
+                        luckiestsublocation[templuck] = lucksublocation[templuck];
+                        luckiestkind[templuck] = luckkind[templuck];
+                        }
+                    }
+                    if(luck > luckiest) {
+                        luckiest = luck;
+                        for(int templuck = 0; templuck < 10; templuck++){
+                        luckiestlocation[templuck] = lucklocation[templuck];
+                        luckiestsublocation[templuck] = lucksublocation[templuck];
+                        luckiestkind[templuck] = luckkind[templuck];
+                        }
+                    }
                 }
             }
             if (chosen_banner == 1 && chosen_event == 3) {
@@ -2657,6 +2871,40 @@ int main() {
                     if (!(star == 4 && type == 3)) unmet4_w++;
                     five_star_assurance_number = five_star_assurance_number + 1;
                     four_star_assurance_number = four_star_assurance_number + 1;
+                    for(int templuck = 0; templuck < 9; templuck++){
+                        lucklocation[templuck] = lucklocation[templuck + 1];
+                        lucksublocation[templuck] = lucksublocation[templuck + 1];
+                        luckkind[templuck] = luckkind[templuck + 1];
+                        luckstar[templuck] = luckstar[templuck + 1];
+                    }
+                    lucklocation[9] = count;
+                    lucksublocation[9] = (long long int) five_star_assurance_number - 1;
+                    luckkind[9] = kind;
+                    luckstar[9] = star;
+                    luck = 0;
+                    if(star == 4 || star == 5){
+                        for (int templuck = 0; templuck < 10; templuck++) {
+                        if (luckstar[templuck] == 5) luck += 625;
+                        else if (luckstar[templuck] == 4) luck += 77;
+                        else luck += 0;
+                        }
+                    }
+                    if(count == 10){
+                        luckiest = luck;
+                        for(int templuck = 0; templuck < 10; templuck++){
+                        luckiestlocation[templuck] = lucklocation[templuck];
+                        luckiestsublocation[templuck] = lucksublocation[templuck];
+                        luckiestkind[templuck] = luckkind[templuck];
+                        }
+                    }
+                    if(luck > luckiest) {
+                        luckiest = luck;
+                        for(int templuck = 0; templuck < 10; templuck++){
+                        luckiestlocation[templuck] = lucklocation[templuck];
+                        luckiestsublocation[templuck] = lucksublocation[templuck];
+                        luckiestkind[templuck] = luckkind[templuck];
+                        }
+                    }
                 }
             }
             if (chosen_banner == 1 && chosen_event == 4) {
@@ -3455,6 +3703,40 @@ int main() {
                     if (!(star == 4 && type == 3)) unmet4_w++;
                     five_star_assurance_number = five_star_assurance_number + 1;
                     four_star_assurance_number = four_star_assurance_number + 1;
+                    for(int templuck = 0; templuck < 9; templuck++){
+                        lucklocation[templuck] = lucklocation[templuck + 1];
+                        lucksublocation[templuck] = lucksublocation[templuck + 1];
+                        luckkind[templuck] = luckkind[templuck + 1];
+                        luckstar[templuck] = luckstar[templuck + 1];
+                    }
+                    lucklocation[9] = count;
+                    lucksublocation[9] = (long long int) five_star_assurance_number - 1;
+                    luckkind[9] = kind;
+                    luckstar[9] = star;
+                    luck = 0;
+                    if(star == 4 || star == 5){
+                        for (int templuck = 0; templuck < 10; templuck++) {
+                        if (luckstar[templuck] == 5) luck += 625;
+                        else if (luckstar[templuck] == 4) luck += 77;
+                        else luck += 0;
+                        }
+                    }
+                    if(count == 10){
+                        luckiest = luck;
+                        for(int templuck = 0; templuck < 10; templuck++){
+                        luckiestlocation[templuck] = lucklocation[templuck];
+                        luckiestsublocation[templuck] = lucksublocation[templuck];
+                        luckiestkind[templuck] = luckkind[templuck];
+                        }
+                    }
+                    if(luck > luckiest) {
+                        luckiest = luck;
+                        for(int templuck = 0; templuck < 10; templuck++){
+                        luckiestlocation[templuck] = lucklocation[templuck];
+                        luckiestsublocation[templuck] = lucksublocation[templuck];
+                        luckiestkind[templuck] = luckkind[templuck];
+                        }
+                    }
                 }
             }
             if (chosen_banner == 1 && chosen_event == 5) {
@@ -4253,6 +4535,40 @@ int main() {
                     if (!(star == 4 && type == 3)) unmet4_w++;
                     five_star_assurance_number = five_star_assurance_number + 1;
                     four_star_assurance_number = four_star_assurance_number + 1;
+                    for(int templuck = 0; templuck < 9; templuck++){
+                        lucklocation[templuck] = lucklocation[templuck + 1];
+                        lucksublocation[templuck] = lucksublocation[templuck + 1];
+                        luckkind[templuck] = luckkind[templuck + 1];
+                        luckstar[templuck] = luckstar[templuck + 1];
+                    }
+                    lucklocation[9] = count;
+                    lucksublocation[9] = (long long int) five_star_assurance_number - 1;
+                    luckkind[9] = kind;
+                    luckstar[9] = star;
+                    luck = 0;
+                    if(star == 4 || star == 5){
+                        for (int templuck = 0; templuck < 10; templuck++) {
+                        if (luckstar[templuck] == 5) luck += 625;
+                        else if (luckstar[templuck] == 4) luck += 77;
+                        else luck += 0;
+                        }
+                    }
+                    if(count == 10){
+                        luckiest = luck;
+                        for(int templuck = 0; templuck < 10; templuck++){
+                        luckiestlocation[templuck] = lucklocation[templuck];
+                        luckiestsublocation[templuck] = lucksublocation[templuck];
+                        luckiestkind[templuck] = luckkind[templuck];
+                        }
+                    }
+                    if(luck > luckiest) {
+                        luckiest = luck;
+                        for(int templuck = 0; templuck < 10; templuck++){
+                        luckiestlocation[templuck] = lucklocation[templuck];
+                        luckiestsublocation[templuck] = lucksublocation[templuck];
+                        luckiestkind[templuck] = luckkind[templuck];
+                        }
+                    }
                 }
             }
             if (chosen_banner == 1 && chosen_event == 6) {
@@ -5051,6 +5367,40 @@ int main() {
                     if (!(star == 4 && type == 3)) unmet4_w++;
                     five_star_assurance_number = five_star_assurance_number + 1;
                     four_star_assurance_number = four_star_assurance_number + 1;
+                    for(int templuck = 0; templuck < 9; templuck++){
+                        lucklocation[templuck] = lucklocation[templuck + 1];
+                        lucksublocation[templuck] = lucksublocation[templuck + 1];
+                        luckkind[templuck] = luckkind[templuck + 1];
+                        luckstar[templuck] = luckstar[templuck + 1];
+                    }
+                    lucklocation[9] = count;
+                    lucksublocation[9] = (long long int) five_star_assurance_number - 1;
+                    luckkind[9] = kind;
+                    luckstar[9] = star;
+                    luck = 0;
+                    if(star == 4 || star == 5){
+                        for (int templuck = 0; templuck < 10; templuck++) {
+                        if (luckstar[templuck] == 5) luck += 625;
+                        else if (luckstar[templuck] == 4) luck += 77;
+                        else luck += 0;
+                        }
+                    }
+                    if(count == 10){
+                        luckiest = luck;
+                        for(int templuck = 0; templuck < 10; templuck++){
+                        luckiestlocation[templuck] = lucklocation[templuck];
+                        luckiestsublocation[templuck] = lucksublocation[templuck];
+                        luckiestkind[templuck] = luckkind[templuck];
+                        }
+                    }
+                    if(luck > luckiest) {
+                        luckiest = luck;
+                        for(int templuck = 0; templuck < 10; templuck++){
+                        luckiestlocation[templuck] = lucklocation[templuck];
+                        luckiestsublocation[templuck] = lucksublocation[templuck];
+                        luckiestkind[templuck] = luckkind[templuck];
+                        }
+                    }
                 }
             }
             if (chosen_banner == 1 && chosen_event == 7) {
@@ -5849,6 +6199,40 @@ int main() {
                     if (!(star == 4 && type == 3)) unmet4_w++;
                     five_star_assurance_number = five_star_assurance_number + 1;
                     four_star_assurance_number = four_star_assurance_number + 1;
+                    for(int templuck = 0; templuck < 9; templuck++){
+                        lucklocation[templuck] = lucklocation[templuck + 1];
+                        lucksublocation[templuck] = lucksublocation[templuck + 1];
+                        luckkind[templuck] = luckkind[templuck + 1];
+                        luckstar[templuck] = luckstar[templuck + 1];
+                    }
+                    lucklocation[9] = count;
+                    lucksublocation[9] = (long long int) five_star_assurance_number - 1;
+                    luckkind[9] = kind;
+                    luckstar[9] = star;
+                    luck = 0;
+                    if(star == 4 || star == 5){
+                        for (int templuck = 0; templuck < 10; templuck++) {
+                        if (luckstar[templuck] == 5) luck += 625;
+                        else if (luckstar[templuck] == 4) luck += 77;
+                        else luck += 0;
+                        }
+                    }
+                    if(count == 10){
+                        luckiest = luck;
+                        for(int templuck = 0; templuck < 10; templuck++){
+                        luckiestlocation[templuck] = lucklocation[templuck];
+                        luckiestsublocation[templuck] = lucksublocation[templuck];
+                        luckiestkind[templuck] = luckkind[templuck];
+                        }
+                    }
+                    if(luck > luckiest) {
+                        luckiest = luck;
+                        for(int templuck = 0; templuck < 10; templuck++){
+                        luckiestlocation[templuck] = lucklocation[templuck];
+                        luckiestsublocation[templuck] = lucksublocation[templuck];
+                        luckiestkind[templuck] = luckkind[templuck];
+                        }
+                    }
                 }
             }
             if (chosen_banner == 1 && chosen_event == 8) {
@@ -6647,6 +7031,40 @@ int main() {
                     if (!(star == 4 && type == 3)) unmet4_w++;
                     five_star_assurance_number = five_star_assurance_number + 1;
                     four_star_assurance_number = four_star_assurance_number + 1;
+                    for(int templuck = 0; templuck < 9; templuck++){
+                        lucklocation[templuck] = lucklocation[templuck + 1];
+                        lucksublocation[templuck] = lucksublocation[templuck + 1];
+                        luckkind[templuck] = luckkind[templuck + 1];
+                        luckstar[templuck] = luckstar[templuck + 1];
+                    }
+                    lucklocation[9] = count;
+                    lucksublocation[9] = (long long int) five_star_assurance_number - 1;
+                    luckkind[9] = kind;
+                    luckstar[9] = star;
+                    luck = 0;
+                    if(star == 4 || star == 5){
+                        for (int templuck = 0; templuck < 10; templuck++) {
+                        if (luckstar[templuck] == 5) luck += 625;
+                        else if (luckstar[templuck] == 4) luck += 77;
+                        else luck += 0;
+                        }
+                    }
+                    if(count == 10){
+                        luckiest = luck;
+                        for(int templuck = 0; templuck < 10; templuck++){
+                        luckiestlocation[templuck] = lucklocation[templuck];
+                        luckiestsublocation[templuck] = lucksublocation[templuck];
+                        luckiestkind[templuck] = luckkind[templuck];
+                        }
+                    }
+                    if(luck > luckiest) {
+                        luckiest = luck;
+                        for(int templuck = 0; templuck < 10; templuck++){
+                        luckiestlocation[templuck] = lucklocation[templuck];
+                        luckiestsublocation[templuck] = lucksublocation[templuck];
+                        luckiestkind[templuck] = luckkind[templuck];
+                        }
+                    }
                 }
             }
             if (chosen_banner == 1 && chosen_event == 9) {
@@ -7445,6 +7863,40 @@ int main() {
                     if (!(star == 4 && type == 3)) unmet4_w++;
                     five_star_assurance_number = five_star_assurance_number + 1;
                     four_star_assurance_number = four_star_assurance_number + 1;
+                    for(int templuck = 0; templuck < 9; templuck++){
+                        lucklocation[templuck] = lucklocation[templuck + 1];
+                        lucksublocation[templuck] = lucksublocation[templuck + 1];
+                        luckkind[templuck] = luckkind[templuck + 1];
+                        luckstar[templuck] = luckstar[templuck + 1];
+                    }
+                    lucklocation[9] = count;
+                    lucksublocation[9] = (long long int) five_star_assurance_number - 1;
+                    luckkind[9] = kind;
+                    luckstar[9] = star;
+                    luck = 0;
+                    if(star == 4 || star == 5){
+                        for (int templuck = 0; templuck < 10; templuck++) {
+                        if (luckstar[templuck] == 5) luck += 625;
+                        else if (luckstar[templuck] == 4) luck += 77;
+                        else luck += 0;
+                        }
+                    }
+                    if(count == 10){
+                        luckiest = luck;
+                        for(int templuck = 0; templuck < 10; templuck++){
+                        luckiestlocation[templuck] = lucklocation[templuck];
+                        luckiestsublocation[templuck] = lucksublocation[templuck];
+                        luckiestkind[templuck] = luckkind[templuck];
+                        }
+                    }
+                    if(luck > luckiest) {
+                        luckiest = luck;
+                        for(int templuck = 0; templuck < 10; templuck++){
+                        luckiestlocation[templuck] = lucklocation[templuck];
+                        luckiestsublocation[templuck] = lucksublocation[templuck];
+                        luckiestkind[templuck] = luckkind[templuck];
+                        }
+                    }
                 }
             }
             if (chosen_banner == 1 && chosen_event == 10) {
@@ -8243,6 +8695,40 @@ int main() {
                     if (!(star == 4 && type == 3)) unmet4_w++;
                     five_star_assurance_number = five_star_assurance_number + 1;
                     four_star_assurance_number = four_star_assurance_number + 1;
+                    for(int templuck = 0; templuck < 9; templuck++){
+                        lucklocation[templuck] = lucklocation[templuck + 1];
+                        lucksublocation[templuck] = lucksublocation[templuck + 1];
+                        luckkind[templuck] = luckkind[templuck + 1];
+                        luckstar[templuck] = luckstar[templuck + 1];
+                    }
+                    lucklocation[9] = count;
+                    lucksublocation[9] = (long long int) five_star_assurance_number - 1;
+                    luckkind[9] = kind;
+                    luckstar[9] = star;
+                    luck = 0;
+                    if(star == 4 || star == 5){
+                        for (int templuck = 0; templuck < 10; templuck++) {
+                        if (luckstar[templuck] == 5) luck += 625;
+                        else if (luckstar[templuck] == 4) luck += 77;
+                        else luck += 0;
+                        }
+                    }
+                    if(count == 10){
+                        luckiest = luck;
+                        for(int templuck = 0; templuck < 10; templuck++){
+                        luckiestlocation[templuck] = lucklocation[templuck];
+                        luckiestsublocation[templuck] = lucksublocation[templuck];
+                        luckiestkind[templuck] = luckkind[templuck];
+                        }
+                    }
+                    if(luck > luckiest) {
+                        luckiest = luck;
+                        for(int templuck = 0; templuck < 10; templuck++){
+                        luckiestlocation[templuck] = lucklocation[templuck];
+                        luckiestsublocation[templuck] = lucksublocation[templuck];
+                        luckiestkind[templuck] = luckkind[templuck];
+                        }
+                    }
                 }
             }
             if (chosen_banner == 1 && chosen_event == 11) {
@@ -9041,6 +9527,40 @@ int main() {
                     if (!(star == 4 && type == 3)) unmet4_w++;
                     five_star_assurance_number = five_star_assurance_number + 1;
                     four_star_assurance_number = four_star_assurance_number + 1;
+                    for(int templuck = 0; templuck < 9; templuck++){
+                        lucklocation[templuck] = lucklocation[templuck + 1];
+                        lucksublocation[templuck] = lucksublocation[templuck + 1];
+                        luckkind[templuck] = luckkind[templuck + 1];
+                        luckstar[templuck] = luckstar[templuck + 1];
+                    }
+                    lucklocation[9] = count;
+                    lucksublocation[9] = (long long int) five_star_assurance_number - 1;
+                    luckkind[9] = kind;
+                    luckstar[9] = star;
+                    luck = 0;
+                    if(star == 4 || star == 5){
+                        for (int templuck = 0; templuck < 10; templuck++) {
+                        if (luckstar[templuck] == 5) luck += 625;
+                        else if (luckstar[templuck] == 4) luck += 77;
+                        else luck += 0;
+                        }
+                    }
+                    if(count == 10){
+                        luckiest = luck;
+                        for(int templuck = 0; templuck < 10; templuck++){
+                        luckiestlocation[templuck] = lucklocation[templuck];
+                        luckiestsublocation[templuck] = lucksublocation[templuck];
+                        luckiestkind[templuck] = luckkind[templuck];
+                        }
+                    }
+                    if(luck > luckiest) {
+                        luckiest = luck;
+                        for(int templuck = 0; templuck < 10; templuck++){
+                        luckiestlocation[templuck] = lucklocation[templuck];
+                        luckiestsublocation[templuck] = lucksublocation[templuck];
+                        luckiestkind[templuck] = luckkind[templuck];
+                        }
+                    }
                 }
             }
             if (chosen_banner == 1 && chosen_event == 12) {
@@ -9839,6 +10359,40 @@ int main() {
                     if (!(star == 4 && type == 3)) unmet4_w++;
                     five_star_assurance_number = five_star_assurance_number + 1;
                     four_star_assurance_number = four_star_assurance_number + 1;
+                    for(int templuck = 0; templuck < 9; templuck++){
+                        lucklocation[templuck] = lucklocation[templuck + 1];
+                        lucksublocation[templuck] = lucksublocation[templuck + 1];
+                        luckkind[templuck] = luckkind[templuck + 1];
+                        luckstar[templuck] = luckstar[templuck + 1];
+                    }
+                    lucklocation[9] = count;
+                    lucksublocation[9] = (long long int) five_star_assurance_number - 1;
+                    luckkind[9] = kind;
+                    luckstar[9] = star;
+                    luck = 0;
+                    if(star == 4 || star == 5){
+                        for (int templuck = 0; templuck < 10; templuck++) {
+                        if (luckstar[templuck] == 5) luck += 625;
+                        else if (luckstar[templuck] == 4) luck += 77;
+                        else luck += 0;
+                        }
+                    }
+                    if(count == 10){
+                        luckiest = luck;
+                        for(int templuck = 0; templuck < 10; templuck++){
+                        luckiestlocation[templuck] = lucklocation[templuck];
+                        luckiestsublocation[templuck] = lucksublocation[templuck];
+                        luckiestkind[templuck] = luckkind[templuck];
+                        }
+                    }
+                    if(luck > luckiest) {
+                        luckiest = luck;
+                        for(int templuck = 0; templuck < 10; templuck++){
+                        luckiestlocation[templuck] = lucklocation[templuck];
+                        luckiestsublocation[templuck] = lucksublocation[templuck];
+                        luckiestkind[templuck] = luckkind[templuck];
+                        }
+                    }
                 }
             }
             if (chosen_banner == 3 && chosen_event == 1) {
