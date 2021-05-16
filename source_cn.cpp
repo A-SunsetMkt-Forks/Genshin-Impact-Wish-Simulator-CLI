@@ -11351,7 +11351,7 @@ int main() {
                     if(star == 4 || star == 5){
                         for (int templuck = 0; templuck < 10; templuck++) {
                         if (luckstar[templuck] == 5) luck += 6229;
-                        else if (luckstar[templuck] == 4) luck += 766;
+                        else if (luckstar[templuck] == 4) luck += 2297;
                         else luck += 0;
                         }
                     }
@@ -12297,7 +12297,7 @@ int main() {
                     if(star == 4 || star == 5){
                         for (int templuck = 0; templuck < 10; templuck++) {
                         if (luckstar[templuck] == 5) luck += 6229;
-                        else if (luckstar[templuck] == 4) luck += 766;
+                        else if (luckstar[templuck] == 4) luck += 2297;
                         else luck += 0;
                         }
                     }
@@ -13243,7 +13243,7 @@ int main() {
                     if(star == 4 || star == 5){
                         for (int templuck = 0; templuck < 10; templuck++) {
                         if (luckstar[templuck] == 5) luck += 6229;
-                        else if (luckstar[templuck] == 4) luck += 766;
+                        else if (luckstar[templuck] == 4) luck += 2297;
                         else luck += 0;
                         }
                     }
@@ -13519,7 +13519,7 @@ int main() {
                     if(star == 4 || star == 5){
                         for (int templuck = 0; templuck < 10; templuck++) {
                         if (luckstar[templuck] == 5) luck += 16667;
-                        else if (luckstar[templuck] == 4) luck += 766;
+                        else if (luckstar[templuck] == 4) luck += 2297;
                         else luck += 0;
                         }
                     }
