@@ -273,6 +273,7 @@ int main() {
             std::cout << endl;
             if (wishes_number == -2){
                 if(count < 10) {std::cout << "默认空数据" << endl; goto enter_wishes_number; }
+                std::cout << "好运参考值: " << luckiest << endl;
                 for (int templuck = 0; templuck < 10; templuck ++){
                     std::cout << luckiestlocation[templuck] << "(" << luckiestsublocation[templuck] << ")" << " ";
                     switch (luckiestkind[templuck]) {
