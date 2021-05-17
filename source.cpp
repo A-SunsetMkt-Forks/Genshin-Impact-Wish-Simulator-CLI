@@ -217,7 +217,7 @@ int main() {
                 << "9: Moment of Bloom/20210302-20210316 (Hu Tao, Xingqiu, Xiangling, Chongyun)" << endl
                 << "10: Ballad in Goblets/20210317-20210406 (Venti, Sucrose, Razor, Noelle)" << endl
                 << "11: Farewell of Snezhnaya/20210406-20210427 (Tartaglia, Rosaria, Barbara, Fischl)" << endl
-                << "12: Gentry of Hermitage/20210428-20210518 (Zhongli, Yanfei, Noelle, Diona)" << endl 
+                << "12: Gentry of Hermitage/20210428-20210518 (Zhongli, Yanfei, Noelle, Diona)" << endl
                 << "13: Born of Ocean Swell/20210518-20210608 (EUla, Xinyan, Xingqiu, Beidou)" << endl << endl;
             std::cin >> chosen_event;
             if (chosen_event == -1) { chosen_event = 0; std::cout << endl; goto enter_chosen_banner; }
