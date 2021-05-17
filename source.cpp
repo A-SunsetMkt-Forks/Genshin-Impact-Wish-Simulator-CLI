@@ -1207,11 +1207,11 @@ int main() {
                     default: break;
                     }
                     wishes_number --;
-                    count = count + 1;
+                    count ++;
                     if (!((star == 4 && type == 1) || (star == 4 && type == 2))) unmet4_c++;
                     if (!(star == 4 && type == 3)) unmet4_w++;
                     five_star_assurance_number ++;
-                    five_star_assurance_number ++;
+                    four_star_assurance_number ++;
                     for(int templuck = 0; templuck < 9; templuck++){
                         lucklocation[templuck] = lucklocation[templuck + 1];
                         lucksublocation[templuck] = lucksublocation[templuck + 1];
@@ -2044,11 +2044,11 @@ int main() {
                     default: break;
                     }
                     wishes_number --;
-                    count = count + 1;
+                    count ++;
                     if (!((star == 4 && type == 1) || (star == 4 && type == 2))) unmet4_c++;
                     if (!(star == 4 && type == 3)) unmet4_w++;
                     five_star_assurance_number ++;
-                    five_star_assurance_number ++;
+                    four_star_assurance_number ++;
                     for(int templuck = 0; templuck < 9; templuck++){
                         lucklocation[templuck] = lucklocation[templuck + 1];
                         lucksublocation[templuck] = lucksublocation[templuck + 1];
@@ -2881,11 +2881,11 @@ int main() {
                     default: break;
                     }
                     wishes_number --;
-                    count = count + 1;
+                    count ++;
                     if (!((star == 4 && type == 1) || (star == 4 && type == 2))) unmet4_c++;
                     if (!(star == 4 && type == 3)) unmet4_w++;
                     five_star_assurance_number ++;
-                    five_star_assurance_number ++;
+                    four_star_assurance_number ++;
                     for(int templuck = 0; templuck < 9; templuck++){
                         lucklocation[templuck] = lucklocation[templuck + 1];
                         lucksublocation[templuck] = lucksublocation[templuck + 1];
@@ -3718,11 +3718,11 @@ int main() {
                     default: break;
                     }
                     wishes_number --;
-                    count = count + 1;
+                    count ++;
                     if (!((star == 4 && type == 1) || (star == 4 && type == 2))) unmet4_c++;
                     if (!(star == 4 && type == 3)) unmet4_w++;
                     five_star_assurance_number ++;
-                    five_star_assurance_number ++;
+                    four_star_assurance_number ++;
                     for(int templuck = 0; templuck < 9; templuck++){
                         lucklocation[templuck] = lucklocation[templuck + 1];
                         lucksublocation[templuck] = lucksublocation[templuck + 1];
@@ -4555,11 +4555,11 @@ int main() {
                     default: break;
                     }
                     wishes_number --;
-                    count = count + 1;
+                    count ++;
                     if (!((star == 4 && type == 1) || (star == 4 && type == 2))) unmet4_c++;
                     if (!(star == 4 && type == 3)) unmet4_w++;
                     five_star_assurance_number ++;
-                    five_star_assurance_number ++;
+                    four_star_assurance_number ++;
                     for(int templuck = 0; templuck < 9; templuck++){
                         lucklocation[templuck] = lucklocation[templuck + 1];
                         lucksublocation[templuck] = lucksublocation[templuck + 1];
@@ -5392,11 +5392,11 @@ int main() {
                     default: break;
                     }
                     wishes_number --;
-                    count = count + 1;
+                    count ++;
                     if (!((star == 4 && type == 1) || (star == 4 && type == 2))) unmet4_c++;
                     if (!(star == 4 && type == 3)) unmet4_w++;
                     five_star_assurance_number ++;
-                    five_star_assurance_number ++;
+                    four_star_assurance_number ++;
                     for(int templuck = 0; templuck < 9; templuck++){
                         lucklocation[templuck] = lucklocation[templuck + 1];
                         lucksublocation[templuck] = lucksublocation[templuck + 1];
@@ -6229,11 +6229,11 @@ int main() {
                     default: break;
                     }
                     wishes_number --;
-                    count = count + 1;
+                    count ++;
                     if (!((star == 4 && type == 1) || (star == 4 && type == 2))) unmet4_c++;
                     if (!(star == 4 && type == 3)) unmet4_w++;
                     five_star_assurance_number ++;
-                    five_star_assurance_number ++;
+                    four_star_assurance_number ++;
                     for(int templuck = 0; templuck < 9; templuck++){
                         lucklocation[templuck] = lucklocation[templuck + 1];
                         lucksublocation[templuck] = lucksublocation[templuck + 1];
@@ -7066,11 +7066,11 @@ int main() {
                     default: break;
                     }
                     wishes_number --;
-                    count = count + 1;
+                    count ++;
                     if (!((star == 4 && type == 1) || (star == 4 && type == 2))) unmet4_c++;
                     if (!(star == 4 && type == 3)) unmet4_w++;
                     five_star_assurance_number ++;
-                    five_star_assurance_number ++;
+                    four_star_assurance_number ++;
                     for(int templuck = 0; templuck < 9; templuck++){
                         lucklocation[templuck] = lucklocation[templuck + 1];
                         lucksublocation[templuck] = lucksublocation[templuck + 1];
@@ -7903,11 +7903,11 @@ int main() {
                     default: break;
                     }
                     wishes_number --;
-                    count = count + 1;
+                    count ++;
                     if (!((star == 4 && type == 1) || (star == 4 && type == 2))) unmet4_c++;
                     if (!(star == 4 && type == 3)) unmet4_w++;
                     five_star_assurance_number ++;
-                    five_star_assurance_number ++;
+                    four_star_assurance_number ++;
                     for(int templuck = 0; templuck < 9; templuck++){
                         lucklocation[templuck] = lucklocation[templuck + 1];
                         lucksublocation[templuck] = lucksublocation[templuck + 1];
@@ -8740,11 +8740,11 @@ int main() {
                     default: break;
                     }
                     wishes_number --;
-                    count = count + 1;
+                    count ++;
                     if (!((star == 4 && type == 1) || (star == 4 && type == 2))) unmet4_c++;
                     if (!(star == 4 && type == 3)) unmet4_w++;
                     five_star_assurance_number ++;
-                    five_star_assurance_number ++;
+                    four_star_assurance_number ++;
                     for(int templuck = 0; templuck < 9; templuck++){
                         lucklocation[templuck] = lucklocation[templuck + 1];
                         lucksublocation[templuck] = lucksublocation[templuck + 1];
@@ -9577,11 +9577,11 @@ int main() {
                     default: break;
                     }
                     wishes_number --;
-                    count = count + 1;
+                    count ++;
                     if (!((star == 4 && type == 1) || (star == 4 && type == 2))) unmet4_c++;
                     if (!(star == 4 && type == 3)) unmet4_w++;
                     five_star_assurance_number ++;
-                    five_star_assurance_number ++;
+                    four_star_assurance_number ++;
                     for(int templuck = 0; templuck < 9; templuck++){
                         lucklocation[templuck] = lucklocation[templuck + 1];
                         lucksublocation[templuck] = lucksublocation[templuck + 1];
@@ -10414,11 +10414,11 @@ int main() {
                     default: break;
                     }
                     wishes_number --;
-                    count = count + 1;
+                    count ++;
                     if (!((star == 4 && type == 1) || (star == 4 && type == 2))) unmet4_c++;
                     if (!(star == 4 && type == 3)) unmet4_w++;
                     five_star_assurance_number ++;
-                    five_star_assurance_number ++;
+                    four_star_assurance_number ++;
                     for(int templuck = 0; templuck < 9; templuck++){
                         lucklocation[templuck] = lucklocation[templuck + 1];
                         lucksublocation[templuck] = lucksublocation[templuck + 1];
@@ -11251,11 +11251,11 @@ int main() {
                     default: break;
                     }
                     wishes_number --;
-                    count = count + 1;
+                    count ++;
                     if (!((star == 4 && type == 1) || (star == 4 && type == 2))) unmet4_c++;
                     if (!(star == 4 && type == 3)) unmet4_w++;
                     five_star_assurance_number ++;
-                    five_star_assurance_number ++;
+                    four_star_assurance_number ++;
                     for(int templuck = 0; templuck < 9; templuck++){
                         lucklocation[templuck] = lucklocation[templuck + 1];
                         lucksublocation[templuck] = lucksublocation[templuck + 1];
@@ -12103,19 +12103,26 @@ int main() {
                             if (five_star_assurance_number > max_fives) { max_fives = five_star_assurance_number; max_fivesth = five_count; max_fivecount = count; }
                             if (five_star_assurance_number < min_fives) { min_fives = five_star_assurance_number; min_fivesth = five_count; min_fivecount = count; }
                             five_star_assurance_number = 0;
-                            if (five_star_guarantee_number == 1) { type = 1; five_count_c++; kind = 67; five_star_guarantee_number = 0;}
-                            else if (temp2 < (long long int) ULTRAPOS/2) {
+                            if (five_star_guarantee_number == 1) {
                                 type = 1;
                                 five_count_c++;
-                                kind = 67;
+                                int templist[] = {15, 86};
+                                kind = rspick(templist,2);
+                                five_star_guarantee_number = 0;
+                                }
+                            else if (temp2 < (long long int) ULTRAPOS/4 * 3) {
+                                type = 1;
+                                five_count_c++;
+                                int templist[] = {15, 86};
+                                kind = rspick(templist,2);
                                 five_star_guarantee_number = 0;
                             }
                             else {
                                 type = 2;
                                 five_count_c++;
                                 five_star_guarantee_number = 1;
-                                int templist[] = { 1, 2, 3, 4, 5 };
-                                kind = rspick(templist, 5);
+                                int templist[] = {6, 7, 8, 9, 10, 11, 12, 13, 14, 15};
+                                kind = rspick(templist, 10);
                             }
                         }
                         else {
@@ -12546,19 +12553,26 @@ int main() {
                             if (five_star_assurance_number > max_fives) { max_fives = five_star_assurance_number; max_fivesth = five_count; max_fivecount = count; }
                             if (five_star_assurance_number < min_fives) { min_fives = five_star_assurance_number; min_fivesth = five_count; min_fivecount = count; }
                             five_star_assurance_number = 0;
-                            if (five_star_guarantee_number == 1) { type = 1; five_count_c++; kind = 67; five_star_guarantee_number = 0;}
-                            else if (temp2 < (long long int) ULTRAPOS/2) {
+                            if (five_star_guarantee_number == 1) {
                                 type = 1;
                                 five_count_c++;
-                                kind = 67;
+                                int templist[] = {15, 86};
+                                kind = rspick(templist,2);
+                                five_star_guarantee_number = 0;
+                                }
+                            else if (temp2 < (long long int) ULTRAPOS/4 * 3) {
+                                type = 1;
+                                five_count_c++;
+                                int templist[] = {15, 86};
+                                kind = rspick(templist,2);
                                 five_star_guarantee_number = 0;
                             }
                             else {
                                 type = 2;
                                 five_count_c++;
                                 five_star_guarantee_number = 1;
-                                int templist[] = { 1, 2, 3, 4, 5 };
-                                kind = rspick(templist, 5);
+                                int templist[] = {6, 7, 8, 9, 10, 11, 12, 13, 14, 15};
+                                kind = rspick(templist, 10);
                             }
                         }
                         else {
@@ -12641,25 +12655,32 @@ int main() {
                     }
                     else {
                         star = 5;
-                            five_count ++;
-                            ave_fives += five_star_assurance_number;
-                            if (five_star_assurance_number > max_fives) { max_fives = five_star_assurance_number; max_fivesth = five_count; max_fivecount = count; }
-                            if (five_star_assurance_number < min_fives) { min_fives = five_star_assurance_number; min_fivesth = five_count; min_fivecount = count; }
-                            five_star_assurance_number = 0;
-                        if (five_star_guarantee_number == 1) { type = 1; five_count_c++; kind = 67; five_star_guarantee_number = 0;}
-                        else if (temp2 < (long long int) ULTRAPOS/2) {
+                        five_count ++;
+                        ave_fives += five_star_assurance_number;
+                        if (five_star_assurance_number > max_fives) { max_fives = five_star_assurance_number; max_fivesth = five_count; max_fivecount = count; }
+                        if (five_star_assurance_number < min_fives) { min_fives = five_star_assurance_number; min_fivesth = five_count; min_fivecount = count; }
+                        five_star_assurance_number = 0;
+                        if (five_star_guarantee_number == 1) {
                             type = 1;
                             five_count_c++;
-                            kind = 67;
+                            int templist[] = {15, 86};
+                            kind = rspick(templist,2);
+                            five_star_guarantee_number = 0;
+                            }
+                        else if (temp2 < (long long int) ULTRAPOS/4 * 3) {
+                            type = 1;
+                            five_count_c++;
+                            int templist[] = {15, 86};
+                            kind = rspick(templist,2);
                             five_star_guarantee_number = 0;
                         }
                         else {
                             type = 2;
                             five_count_c++;
                             five_star_guarantee_number = 1;
-                            int templist[] = { 1, 2, 3, 4, 5 };
-                            kind = rspick(templist, 5);
-                        }
+                            int templist[] = {6, 7, 8, 9, 10, 11, 12, 13, 14, 15};
+                            kind = rspick(templist, 10);
+                            }
                     }
                     std::cout << count + 1 << "(" << five_star_assurance_number << ")" << " ";
                     switch (kind) {
@@ -12794,11 +12815,11 @@ int main() {
                     default: break;
                     }
                     wishes_number --;
-                    count = count + 1;
+                    count ++;
                     if (!((star == 4 && type == 1) || (star == 4 && type == 2))) unmet4_c++;
                     if (!(star == 4 && type == 3)) unmet4_w++;
                     five_star_assurance_number ++;
-                    five_star_assurance_number ++;
+                    four_star_assurance_number ++;
                     for(int templuck = 0; templuck < 9; templuck++){
                         lucklocation[templuck] = lucklocation[templuck + 1];
                         lucksublocation[templuck] = lucksublocation[templuck + 1];
@@ -13725,13 +13746,13 @@ int main() {
                     default: break;
                     }
                     wishes_number --;
-                    count = count + 1;
+                    count ++;
                     if (!(star == 5 && type == 1)) unmet5_c++;
                     if (!(star == 5 && type == 2)) unmet5_w++;
                     if (!(star == 4 && type == 1)) unmet4_c++;
                     if (!(star == 4 && type == 2)) unmet4_w++;
                     five_star_assurance_number ++;
-                    five_star_assurance_number ++;
+                    four_star_assurance_number ++;
                     for(int templuck = 0; templuck < 9; templuck++){
                         lucklocation[templuck] = lucklocation[templuck + 1];
                         lucksublocation[templuck] = lucksublocation[templuck + 1];
@@ -14654,13 +14675,13 @@ int main() {
                     default: break;
                     }
                     wishes_number --;
-                    count = count + 1;
+                    count ++;
                     if (!(star == 5 && type == 1)) unmet5_c++;
                     if (!(star == 5 && type == 2)) unmet5_w++;
                     if (!(star == 4 && type == 1)) unmet4_c++;
                     if (!(star == 4 && type == 2)) unmet4_w++;
                     five_star_assurance_number ++;
-                    five_star_assurance_number ++;
+                    four_star_assurance_number ++;
                     for(int templuck = 0; templuck < 9; templuck++){
                         lucklocation[templuck] = lucklocation[templuck + 1];
                         lucksublocation[templuck] = lucksublocation[templuck + 1];
@@ -15583,13 +15604,13 @@ int main() {
                     default: break;
                     }
                     wishes_number --;
-                    count = count + 1;
+                    count ++;
                     if (!(star == 5 && type == 1)) unmet5_c++;
                     if (!(star == 5 && type == 2)) unmet5_w++;
                     if (!(star == 4 && type == 1)) unmet4_c++;
                     if (!(star == 4 && type == 2)) unmet4_w++;
                     five_star_assurance_number ++;
-                    five_star_assurance_number ++;
+                    four_star_assurance_number ++;
                     for(int templuck = 0; templuck < 9; templuck++){
                         lucklocation[templuck] = lucklocation[templuck + 1];
                         lucksublocation[templuck] = lucksublocation[templuck + 1];
@@ -15860,13 +15881,13 @@ int main() {
                     default: break;
                     }
                     wishes_number --;
-                    count = count + 1;
+                    count ++;
                     if (!(star == 5 && type == 1)) unmet5_c++;
                     if (!(star == 5 && type == 2)) unmet5_w++;
                     if (!(star == 4 && type == 1)) unmet4_c++;
                     if (!(star == 4 && type == 2)) unmet4_w++;
                     five_star_assurance_number ++;
-                    five_star_assurance_number ++;
+                    four_star_assurance_number ++;
                     for(int templuck = 0; templuck < 9; templuck++){
                         lucklocation[templuck] = lucklocation[templuck + 1];
                         lucksublocation[templuck] = lucksublocation[templuck + 1];
@@ -15921,12 +15942,12 @@ int main() {
                 }
                 for (int iout = 0; iout < 15; iout++) { if (pcount[iout] > 0) std::cout << pname[iout] << "(" << pcount[iout] << ")" << " "; }
                 for (int iout = 63; iout < 71; iout++) { if (pcount[iout] > 0) std::cout << pname[iout] << "(" << pcount[iout] << ")" << " "; }
-                for (int iout = 73; iout < 79; iout++) { if (pcount[iout] > 0) std::cout << pname[iout] << "(" << pcount[iout] << ")" << " "; }
-                if (pcount[81] > 0) std::cout << 81 << "(" << pcount[81] << ")" << " ";
+                for (int iout = 72; iout < 79; iout++) { if (pcount[iout] > 0) std::cout << pname[iout] << "(" << pcount[iout] << ")" << " "; }
+                if (pcount[81] > 0) std::cout << pname[80] << "(" << pcount[81] << ")" << " ";
+                if (pcount[85] > 0) std::cout << pname[85] << "(" << pcount[85] << ")" << " ";
                 std::cout << endl << endl;
                 for (int iout = 15; iout < 50; iout++) { if (pcount[iout] > 0) std::cout << pname[iout] << "(" << pcount[iout] << ")" << " "; }
                 if (pcount[71] > 0) std::cout << pname[71] << "(" << pcount[71] << ")" << " ";
-                if (pcount[72] > 0) std::cout << pname[72] << "(" << pcount[72] << ")" << " ";
                 if (pcount[79] > 0) std::cout << pname[79] << "(" << pcount[79] << ")" << " ";
                 if (pcount[80] > 0) std::cout << pname[80] << "(" << pcount[80] << ")" << " ";
                 for (int iout = 82; iout < 85; iout++) { if (pcount[iout] > 0) std::cout << pname[iout] << "(" << pcount[iout] << ")" << " "; }
