@@ -71,7 +71,7 @@ switch (kind) {
                 case 70: std::cout << "!!!!!*****Xiao" << endl; break;
                 case 71: std::cout << "!!!!!*****Hu Tao" << endl; break;
                 case 72: std::cout << "!!****Yanfei" << endl; break;
-                case 73: std::cout << "!!****Eula" << endl; break;
+                case 73: std::cout << "!!!!!*****Eula" << endl; break;
                 case 74: std::cout << "!!!!!*****Memory of Dust" << endl; break;
                 case 75: std::cout << "!!!!!*****Vortex Vanquisher" << endl; break;
                 case 76: std::cout << "!!!!!*****The Unforged" << endl; break;
@@ -84,7 +84,7 @@ switch (kind) {
                 case 83: std::cout << "!!****The Alley Flash" << endl; break;
                 case 84: std::cout << "!!****Wine and Song" << endl; break;
                 case 85: std::cout << "!!****Alley Hunter" << endl; break;
-                case 86: std::cout << "Placeholder" << endl; break;
+                case 86: std::cout << "!!!!!*****Song of Broken Pines" << endl; break;
                 case 87: std::cout << "Placeholder" << endl; break;
                 case 88: std::cout << "Placeholder" << endl; break;
                 case 89: std::cout << "Placeholder" << endl; break;
