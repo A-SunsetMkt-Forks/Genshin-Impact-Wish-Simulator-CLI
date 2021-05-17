@@ -11313,21 +11313,21 @@ int main() {
                             five_star_assurance_number = 0;
                             if (five_star_guarantee_number == 1) {
                                 type = 1;
-                                five_count_c++;
+                                five_count_w++;
                                 int templist[] = {15, 86};
                                 kind = rspick(templist,2);
                                 five_star_guarantee_number = 0;
                                 }
                             else if (temp2 < (long long int) ULTRAPOS/4 * 3) {
                                 type = 1;
-                                five_count_c++;
+                                five_count_w++;
                                 int templist[] = {15, 86};
                                 kind = rspick(templist,2);
                                 five_star_guarantee_number = 0;
                             }
                             else {
                                 type = 2;
-                                five_count_c++;
+                                five_count_w++;
                                 five_star_guarantee_number = 1;
                                 int templist[] = {6, 7, 8, 9, 10, 11, 12, 13, 14, 15};
                                 kind = rspick(templist, 10);
@@ -11339,7 +11339,7 @@ int main() {
                                 four_star_assurance_number = 0;
                                 if (four_star_guarantee_number == 1) {
                                         type = 1;
-                                        four_count_c++;
+                                        four_count_w++;
                                         unmet4_c = 0;
                                         int templist[] = { 33, 38, 42, 43, 48 };
                                         kind = rspick(templist, 5);
@@ -11347,7 +11347,7 @@ int main() {
                                     }
                                     else if (temp2 < (long long int) ULTRAPOS / 4 * 3) {
                                         type = 1;
-                                        four_count_c++;
+                                        four_count_w++;
                                         unmet4_c = 0;
                                         int templist[] = { 33, 38, 42, 43, 48 };
                                         kind = rspick(templist, 5);
@@ -11427,21 +11427,21 @@ int main() {
                             five_star_assurance_number = 0;
                             if (five_star_guarantee_number == 1) {
                                 type = 1;
-                                five_count_c++;
+                                five_count_w++;
                                 int templist[] = {15, 86};
                                 kind = rspick(templist,2);
                                 five_star_guarantee_number = 0;
                                 }
                             else if (temp2 < (long long int) ULTRAPOS/4 * 3) {
                                 type = 1;
-                                five_count_c++;
+                                five_count_w++;
                                 int templist[] = {15, 86};
                                 kind = rspick(templist,2);
                                 five_star_guarantee_number = 0;
                             }
                             else {
                                 type = 2;
-                                five_count_c++;
+                                five_count_w++;
                                 five_star_guarantee_number = 1;
                                 int templist[] = {6, 7, 8, 9, 10, 11, 12, 13, 14, 15};
                                 kind = rspick(templist, 10);
@@ -11453,7 +11453,7 @@ int main() {
                                 four_star_assurance_number = 0;
                                 if (four_star_guarantee_number == 1) {
                                         type = 1;
-                                        four_count_c++;
+                                        four_count_w++;
                                         unmet4_c = 0;
                                         int templist[] = { 33, 38, 42, 43, 48 };
                                         kind = rspick(templist, 5);
@@ -11461,7 +11461,7 @@ int main() {
                                     }
                                     else if (temp2 < (long long int) ULTRAPOS / 4 * 3) {
                                         type = 1;
-                                        four_count_c++;
+                                        four_count_w++;
                                         unmet4_c = 0;
                                         int templist[] = { 33, 38, 42, 43, 48 };
                                         kind = rspick(templist, 5);
@@ -11541,21 +11541,21 @@ int main() {
                             five_star_assurance_number = 0;
                             if (five_star_guarantee_number == 1) {
                                 type = 1;
-                                five_count_c++;
+                                five_count_w++;
                                 int templist[] = {15, 86};
                                 kind = rspick(templist,2);
                                 five_star_guarantee_number = 0;
                                 }
                             else if (temp2 < (long long int) ULTRAPOS/4 * 3) {
                                 type = 1;
-                                five_count_c++;
+                                five_count_w++;
                                 int templist[] = {15, 86};
                                 kind = rspick(templist,2);
                                 five_star_guarantee_number = 0;
                             }
                             else {
                                 type = 2;
-                                five_count_c++;
+                                five_count_w++;
                                 five_star_guarantee_number = 1;
                                 int templist[] = {6, 7, 8, 9, 10, 11, 12, 13, 14, 15};
                                 kind = rspick(templist, 10);
@@ -11567,7 +11567,7 @@ int main() {
                                 four_star_assurance_number = 0;
                                 if (four_star_guarantee_number == 1) {
                                         type = 1;
-                                        four_count_c++;
+                                        four_count_w++;
                                         unmet4_c = 0;
                                         int templist[] = { 33, 38, 42, 43, 48 };
                                         kind = rspick(templist, 5);
@@ -11575,7 +11575,7 @@ int main() {
                                     }
                                     else if (temp2 < (long long int) ULTRAPOS / 4 * 3) {
                                         type = 1;
-                                        four_count_c++;
+                                        four_count_w++;
                                         unmet4_c = 0;
                                         int templist[] = { 33, 38, 42, 43, 48 };
                                         kind = rspick(templist, 5);
@@ -11655,21 +11655,21 @@ int main() {
                             five_star_assurance_number = 0;
                             if (five_star_guarantee_number == 1) {
                                 type = 1;
-                                five_count_c++;
+                                five_count_w++;
                                 int templist[] = {15, 86};
                                 kind = rspick(templist,2);
                                 five_star_guarantee_number = 0;
                                 }
                             else if (temp2 < (long long int) ULTRAPOS/4 * 3) {
                                 type = 1;
-                                five_count_c++;
+                                five_count_w++;
                                 int templist[] = {15, 86};
                                 kind = rspick(templist,2);
                                 five_star_guarantee_number = 0;
                             }
                             else {
                                 type = 2;
-                                five_count_c++;
+                                five_count_w++;
                                 five_star_guarantee_number = 1;
                                 int templist[] = {6, 7, 8, 9, 10, 11, 12, 13, 14, 15};
                                 kind = rspick(templist, 10);
@@ -11681,7 +11681,7 @@ int main() {
                                 four_star_assurance_number = 0;
                                 if (four_star_guarantee_number == 1) {
                                         type = 1;
-                                        four_count_c++;
+                                        four_count_w++;
                                         unmet4_c = 0;
                                         int templist[] = { 33, 38, 42, 43, 48 };
                                         kind = rspick(templist, 5);
@@ -11689,7 +11689,7 @@ int main() {
                                     }
                                     else if (temp2 < (long long int) ULTRAPOS / 4 * 3) {
                                         type = 1;
-                                        four_count_c++;
+                                        four_count_w++;
                                         unmet4_c = 0;
                                         int templist[] = { 33, 38, 42, 43, 48 };
                                         kind = rspick(templist, 5);
@@ -11763,21 +11763,21 @@ int main() {
                             five_star_assurance_number = 0;
                             if (five_star_guarantee_number == 1) {
                                 type = 1;
-                                five_count_c++;
+                                five_count_w++;
                                 int templist[] = {15, 86};
                                 kind = rspick(templist,2);
                                 five_star_guarantee_number = 0;
                                 }
                             else if (temp2 < (long long int) ULTRAPOS/4 * 3) {
                                 type = 1;
-                                five_count_c++;
+                                five_count_w++;
                                 int templist[] = {15, 86};
                                 kind = rspick(templist,2);
                                 five_star_guarantee_number = 0;
                             }
                             else {
                                 type = 2;
-                                five_count_c++;
+                                five_count_w++;
                                 five_star_guarantee_number = 1;
                                 int templist[] = {6, 7, 8, 9, 10, 11, 12, 13, 14, 15};
                                 kind = rspick(templist, 10);
@@ -11789,7 +11789,7 @@ int main() {
                                 four_star_assurance_number = 0;
                                 if (four_star_guarantee_number == 1) {
                                         type = 1;
-                                        four_count_c++;
+                                        four_count_w++;
                                         unmet4_c = 0;
                                         int templist[] = { 33, 38, 42, 43, 48 };
                                         kind = rspick(templist, 5);
@@ -11797,7 +11797,7 @@ int main() {
                                     }
                                     else if (temp2 < (long long int) ULTRAPOS / 4 * 3) {
                                         type = 1;
-                                        four_count_c++;
+                                        four_count_w++;
                                         unmet4_c = 0;
                                         int templist[] = { 33, 38, 42, 43, 48 };
                                         kind = rspick(templist, 5);
@@ -11877,21 +11877,21 @@ int main() {
                             five_star_assurance_number = 0;
                             if (five_star_guarantee_number == 1) {
                                 type = 1;
-                                five_count_c++;
+                                five_count_w++;
                                 int templist[] = {15, 86};
                                 kind = rspick(templist,2);
                                 five_star_guarantee_number = 0;
                                 }
                             else if (temp2 < (long long int) ULTRAPOS/4 * 3) {
                                 type = 1;
-                                five_count_c++;
+                                five_count_w++;
                                 int templist[] = {15, 86};
                                 kind = rspick(templist,2);
                                 five_star_guarantee_number = 0;
                             }
                             else {
                                 type = 2;
-                                five_count_c++;
+                                five_count_w++;
                                 five_star_guarantee_number = 1;
                                 int templist[] = {6, 7, 8, 9, 10, 11, 12, 13, 14, 15};
                                 kind = rspick(templist, 10);
@@ -11903,7 +11903,7 @@ int main() {
                                 four_star_assurance_number = 0;
                                 if (four_star_guarantee_number == 1) {
                                         type = 1;
-                                        four_count_c++;
+                                        four_count_w++;
                                         unmet4_c = 0;
                                         int templist[] = { 33, 38, 42, 43, 48 };
                                         kind = rspick(templist, 5);
@@ -11911,7 +11911,7 @@ int main() {
                                     }
                                     else if (temp2 < (long long int) ULTRAPOS / 4 * 3) {
                                         type = 1;
-                                        four_count_c++;
+                                        four_count_w++;
                                         unmet4_c = 0;
                                         int templist[] = { 33, 38, 42, 43, 48 };
                                         kind = rspick(templist, 5);
@@ -11991,21 +11991,21 @@ int main() {
                             five_star_assurance_number = 0;
                             if (five_star_guarantee_number == 1) {
                                 type = 1;
-                                five_count_c++;
+                                five_count_w++;
                                 int templist[] = {15, 86};
                                 kind = rspick(templist,2);
                                 five_star_guarantee_number = 0;
                                 }
                             else if (temp2 < (long long int) ULTRAPOS/4 * 3) {
                                 type = 1;
-                                five_count_c++;
+                                five_count_w++;
                                 int templist[] = {15, 86};
                                 kind = rspick(templist,2);
                                 five_star_guarantee_number = 0;
                             }
                             else {
                                 type = 2;
-                                five_count_c++;
+                                five_count_w++;
                                 five_star_guarantee_number = 1;
                                 int templist[] = {6, 7, 8, 9, 10, 11, 12, 13, 14, 15};
                                 kind = rspick(templist, 10);
@@ -12017,7 +12017,7 @@ int main() {
                                 four_star_assurance_number = 0;
                                 if (four_star_guarantee_number == 1) {
                                         type = 1;
-                                        four_count_c++;
+                                        four_count_w++;
                                         unmet4_c = 0;
                                         int templist[] = { 33, 38, 42, 43, 48 };
                                         kind = rspick(templist, 5);
@@ -12025,7 +12025,7 @@ int main() {
                                     }
                                     else if (temp2 < (long long int) ULTRAPOS / 4 * 3) {
                                         type = 1;
-                                        four_count_c++;
+                                        four_count_w++;
                                         unmet4_c = 0;
                                         int templist[] = { 33, 38, 42, 43, 48 };
                                         kind = rspick(templist, 5);
@@ -12105,21 +12105,21 @@ int main() {
                             five_star_assurance_number = 0;
                             if (five_star_guarantee_number == 1) {
                                 type = 1;
-                                five_count_c++;
+                                five_count_w++;
                                 int templist[] = {15, 86};
                                 kind = rspick(templist,2);
                                 five_star_guarantee_number = 0;
                                 }
                             else if (temp2 < (long long int) ULTRAPOS/4 * 3) {
                                 type = 1;
-                                five_count_c++;
+                                five_count_w++;
                                 int templist[] = {15, 86};
                                 kind = rspick(templist,2);
                                 five_star_guarantee_number = 0;
                             }
                             else {
                                 type = 2;
-                                five_count_c++;
+                                five_count_w++;
                                 five_star_guarantee_number = 1;
                                 int templist[] = {6, 7, 8, 9, 10, 11, 12, 13, 14, 15};
                                 kind = rspick(templist, 10);
@@ -12131,7 +12131,7 @@ int main() {
                                 four_star_assurance_number = 0;
                                 if (four_star_guarantee_number == 1) {
                                         type = 1;
-                                        four_count_c++;
+                                        four_count_w++;
                                         unmet4_c = 0;
                                         int templist[] = { 33, 38, 42, 43, 48 };
                                         kind = rspick(templist, 5);
@@ -12139,7 +12139,7 @@ int main() {
                                     }
                                     else if (temp2 < (long long int) ULTRAPOS / 4 * 3) {
                                         type = 1;
-                                        four_count_c++;
+                                        four_count_w++;
                                         unmet4_c = 0;
                                         int templist[] = { 33, 38, 42, 43, 48 };
                                         kind = rspick(templist, 5);
@@ -12213,21 +12213,21 @@ int main() {
                             five_star_assurance_number = 0;
                             if (five_star_guarantee_number == 1) {
                                 type = 1;
-                                five_count_c++;
+                                five_count_w++;
                                 int templist[] = {15, 86};
                                 kind = rspick(templist,2);
                                 five_star_guarantee_number = 0;
                                 }
                             else if (temp2 < (long long int) ULTRAPOS/4 * 3) {
                                 type = 1;
-                                five_count_c++;
+                                five_count_w++;
                                 int templist[] = {15, 86};
                                 kind = rspick(templist,2);
                                 five_star_guarantee_number = 0;
                             }
                             else {
                                 type = 2;
-                                five_count_c++;
+                                five_count_w++;
                                 five_star_guarantee_number = 1;
                                 int templist[] = {6, 7, 8, 9, 10, 11, 12, 13, 14, 15};
                                 kind = rspick(templist, 10);
@@ -12239,7 +12239,7 @@ int main() {
                                 four_star_assurance_number = 0;
                                 if (four_star_guarantee_number == 1) {
                                         type = 1;
-                                        four_count_c++;
+                                        four_count_w++;
                                         unmet4_c = 0;
                                         int templist[] = { 33, 38, 42, 43, 48 };
                                         kind = rspick(templist, 5);
@@ -12247,7 +12247,7 @@ int main() {
                                     }
                                     else if (temp2 < (long long int) ULTRAPOS / 4 * 3) {
                                         type = 1;
-                                        four_count_c++;
+                                        four_count_w++;
                                         unmet4_c = 0;
                                         int templist[] = { 33, 38, 42, 43, 48 };
                                         kind = rspick(templist, 5);
@@ -12327,21 +12327,21 @@ int main() {
                             five_star_assurance_number = 0;
                             if (five_star_guarantee_number == 1) {
                                 type = 1;
-                                five_count_c++;
+                                five_count_w++;
                                 int templist[] = {15, 86};
                                 kind = rspick(templist,2);
                                 five_star_guarantee_number = 0;
                                 }
                             else if (temp2 < (long long int) ULTRAPOS/4 * 3) {
                                 type = 1;
-                                five_count_c++;
+                                five_count_w++;
                                 int templist[] = {15, 86};
                                 kind = rspick(templist,2);
                                 five_star_guarantee_number = 0;
                             }
                             else {
                                 type = 2;
-                                five_count_c++;
+                                five_count_w++;
                                 five_star_guarantee_number = 1;
                                 int templist[] = {6, 7, 8, 9, 10, 11, 12, 13, 14, 15};
                                 kind = rspick(templist, 10);
@@ -12353,7 +12353,7 @@ int main() {
                                 four_star_assurance_number = 0;
                                 if (four_star_guarantee_number == 1) {
                                         type = 1;
-                                        four_count_c++;
+                                        four_count_w++;
                                         unmet4_c = 0;
                                         int templist[] = { 33, 38, 42, 43, 48 };
                                         kind = rspick(templist, 5);
@@ -12361,7 +12361,7 @@ int main() {
                                     }
                                     else if (temp2 < (long long int) ULTRAPOS / 4 * 3) {
                                         type = 1;
-                                        four_count_c++;
+                                        four_count_w++;
                                         unmet4_c = 0;
                                         int templist[] = { 33, 38, 42, 43, 48 };
                                         kind = rspick(templist, 5);
@@ -12441,21 +12441,21 @@ int main() {
                             five_star_assurance_number = 0;
                             if (five_star_guarantee_number == 1) {
                                 type = 1;
-                                five_count_c++;
+                                five_count_w++;
                                 int templist[] = {15, 86};
                                 kind = rspick(templist,2);
                                 five_star_guarantee_number = 0;
                                 }
                             else if (temp2 < (long long int) ULTRAPOS/4 * 3) {
                                 type = 1;
-                                five_count_c++;
+                                five_count_w++;
                                 int templist[] = {15, 86};
                                 kind = rspick(templist,2);
                                 five_star_guarantee_number = 0;
                             }
                             else {
                                 type = 2;
-                                five_count_c++;
+                                five_count_w++;
                                 five_star_guarantee_number = 1;
                                 int templist[] = {6, 7, 8, 9, 10, 11, 12, 13, 14, 15};
                                 kind = rspick(templist, 10);
@@ -12467,7 +12467,7 @@ int main() {
                                 four_star_assurance_number = 0;
                                 if (four_star_guarantee_number == 1) {
                                         type = 1;
-                                        four_count_c++;
+                                        four_count_w++;
                                         unmet4_c = 0;
                                         int templist[] = { 33, 38, 42, 43, 48 };
                                         kind = rspick(templist, 5);
@@ -12475,7 +12475,7 @@ int main() {
                                     }
                                     else if (temp2 < (long long int) ULTRAPOS / 4 * 3) {
                                         type = 1;
-                                        four_count_c++;
+                                        four_count_w++;
                                         unmet4_c = 0;
                                         int templist[] = { 33, 38, 42, 43, 48 };
                                         kind = rspick(templist, 5);
@@ -12555,21 +12555,21 @@ int main() {
                             five_star_assurance_number = 0;
                             if (five_star_guarantee_number == 1) {
                                 type = 1;
-                                five_count_c++;
+                                five_count_w++;
                                 int templist[] = {15, 86};
                                 kind = rspick(templist,2);
                                 five_star_guarantee_number = 0;
                                 }
                             else if (temp2 < (long long int) ULTRAPOS/4 * 3) {
                                 type = 1;
-                                five_count_c++;
+                                five_count_w++;
                                 int templist[] = {15, 86};
                                 kind = rspick(templist,2);
                                 five_star_guarantee_number = 0;
                             }
                             else {
                                 type = 2;
-                                five_count_c++;
+                                five_count_w++;
                                 five_star_guarantee_number = 1;
                                 int templist[] = {6, 7, 8, 9, 10, 11, 12, 13, 14, 15};
                                 kind = rspick(templist, 10);
@@ -12581,7 +12581,7 @@ int main() {
                                 four_star_assurance_number = 0;
                                 if (four_star_guarantee_number == 1) {
                                         type = 1;
-                                        four_count_c++;
+                                        four_count_w++;
                                         unmet4_c = 0;
                                         int templist[] = { 33, 38, 42, 43, 48 };
                                         kind = rspick(templist, 5);
@@ -12589,7 +12589,7 @@ int main() {
                                     }
                                     else if (temp2 < (long long int) ULTRAPOS / 4 * 3) {
                                         type = 1;
-                                        four_count_c++;
+                                        four_count_w++;
                                         unmet4_c = 0;
                                         int templist[] = { 33, 38, 42, 43, 48 };
                                         kind = rspick(templist, 5);
@@ -12662,21 +12662,21 @@ int main() {
                         five_star_assurance_number = 0;
                         if (five_star_guarantee_number == 1) {
                             type = 1;
-                            five_count_c++;
+                            five_count_w++;
                             int templist[] = {15, 86};
                             kind = rspick(templist,2);
                             five_star_guarantee_number = 0;
                             }
                         else if (temp2 < (long long int) ULTRAPOS/4 * 3) {
                             type = 1;
-                            five_count_c++;
+                            five_count_w++;
                             int templist[] = {15, 86};
                             kind = rspick(templist,2);
                             five_star_guarantee_number = 0;
                         }
                         else {
                             type = 2;
-                            five_count_c++;
+                            five_count_w++;
                             five_star_guarantee_number = 1;
                             int templist[] = {6, 7, 8, 9, 10, 11, 12, 13, 14, 15};
                             kind = rspick(templist, 10);
