@@ -33140,7 +33140,7 @@ int main() {
                 long long int microseconds = std::chrono::duration_cast<std::chrono::microseconds>(elapsed).count();
                 std::cout << microseconds * 1.0 / 1000000 << " seconds elapsed." << endl;
             }
-            if (chosen_banner == 4 && chosen_event == 1 && count == 20) goto full_quit;
+            //if (chosen_banner == 4 && chosen_event == 1 && count == 20) goto full_quit;
         }
     }
 full_quit:
