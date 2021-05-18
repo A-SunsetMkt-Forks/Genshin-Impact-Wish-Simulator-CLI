@@ -199,6 +199,7 @@ int main() {
         std::cout << "Choose Your Wishes (Banners):" << endl;
         std::cout << "-1: Quit; 1: Character Event Wish; 2: Weapon Event Wish; 3: Permanent Wish; 4: Novice Wish;" << endl << endl;
         std::cin >> chosen_banner;
+        if (cin.fail()) {chosen_banner = 0; std::cout << endl << "Illegal character!" << endl; cin.clear(); cin.ignore(32767,'\n'); goto enter_chosen_banner;}
         switch (chosen_banner) {
         case -1: goto full_quit;
         case 1: {
@@ -220,6 +221,7 @@ int main() {
                 << "12: Gentry of Hermitage/20210428-20210518 (Zhongli, Yanfei, Noelle, Diona)" << endl
                 << "13: Born of Ocean Swell/20210518-20210608 (EUla, Xinyan, Xingqiu, Beidou)" << endl << endl;
             std::cin >> chosen_event;
+            if (cin.fail()) {chosen_event = 0; std::cout << endl << "Illegal character!" << endl; cin.clear(); cin.ignore(32767,'\n'); goto enter_chosen_event_1;}
             if (chosen_event == -1) { chosen_event = 0; std::cout << endl; goto enter_chosen_banner; }
             if (chosen_event > 0 && chosen_event < 14 && chosen_event == (int)chosen_event) quit = 0; else { std::cout << endl << "Invalid event!" << endl << endl; goto enter_chosen_event_1; }
         } break;
@@ -241,6 +243,7 @@ int main() {
                 << "11: Epitome Invocation/20210428-20210518 (Summit Shaper, Memory of Dust, The Flute, Lithic Blade, Lithic Spear, Eye of Perception, Sacrificial Bow)" << endl
                 << "12: Epitome Invocation/20210518-20210608 (Song of Broken Pines, Aquila Favonia, Sacrificial Sword, Rainslasher, Dragon's Bane, Sacrificial Fragments, Rust)" << endl << endl;
             std::cin >> chosen_event;
+            if (cin.fail()) {chosen_event = 0; std::cout << endl << "Illegal character!" << endl; cin.clear(); cin.ignore(32767,'\n'); goto enter_chosen_event_2;}
             if (chosen_event == -1) { chosen_event = 0; std::cout << endl; goto enter_chosen_banner; }
             if (chosen_event > 0 && chosen_event < 13 && chosen_event == (int)chosen_event) quit = 0; else { std::cout << endl << "Invalid event!" << endl << endl; goto enter_chosen_event_2; }
         } break;
@@ -253,6 +256,7 @@ int main() {
                 << "2: Wanderlust Invocation/20201223-20210427 (Adds Diona and Xinyan)" << endl
                 << "3: Wanderlust Invocation/20210428- (Adds Rosaria)" << endl << endl;
             std::cin >> chosen_event;
+            if (cin.fail()) {chosen_event = 0; std::cout << endl << "Illegal character!" << endl; cin.clear(); cin.ignore(32767,'\n'); goto enter_chosen_event_3;}
             if (chosen_event == -1) { chosen_event = 0; std::cout << endl; goto enter_chosen_banner; }
             if (chosen_event > 0 && chosen_event < 4 && chosen_event == (int)chosen_event) quit = 0; else { std::cout << endl << "Invalid event!" << endl << endl; goto enter_chosen_event_3; }
         } break;
@@ -262,7 +266,7 @@ int main() {
             std::cout << endl << "Choose Your Events:" << endl
                 << "-1: Re-choose Wishes (Banners)" << endl
                 << "1: Beginners' wish" << endl << endl;
-            std::cin >> chosen_event; quit = 0; } break;
+            std::cin >> chosen_event; if (cin.fail()) {chosen_event = 0; std::cout << endl << "Illegal character!" << endl; cin.clear(); cin.ignore(32767,'\n'); goto enter_chosen_event_4;} quit = 0; } break;
             if (chosen_event == -1) { chosen_event = 0; std::cout << endl; goto enter_chosen_banner; }
             if (chosen_event == 1 && chosen_event == (int)chosen_event) quit = 0; else { std::cout << endl << "Invalid event!" << endl << endl; goto enter_chosen_event_4; }
         default: {chosen_banner = 0; chosen_event = 0; quit = 1; std::cout << "Invalid banner!" << endl << endl; goto enter_chosen_banner; }
@@ -272,6 +276,7 @@ int main() {
             enter_wishes_number:
             std::cout << endl << "How many wishes?" << endl << "-1: Re-choose Wishes (Banners); 1: 1 Wish; 10: 10 Wishes; -2: Show Luckiest 10 Pulls" << endl << endl;
             std::cin >> wishes_number;
+            if (cin.fail()) {wishes_number = 0; std::cout << endl << "Illegal character!" << endl; cin.clear(); cin.ignore(32767,'\n'); goto enter_wishes_number;}
             std::cout << endl;
             if (wishes_number == -2){
                 if(count < 10) {std::cout << "Default" << endl; goto enter_wishes_number; }

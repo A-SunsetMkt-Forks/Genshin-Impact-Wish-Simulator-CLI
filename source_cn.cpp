@@ -199,6 +199,7 @@ int main() {
         std::cout << "选择卡池类型:" << endl;
         std::cout << "-1: 退出; 1: 角色活动祈愿; 2: 武器活动祈愿; 3: 常驻祈愿; 4: 新手祈愿;" << endl << endl;
         std::cin >> chosen_banner;
+        if (cin.fail()) {chosen_banner = 0; std::cout << endl << "非法字符!" << endl; cin.clear(); cin.ignore(32767,'\n'); goto enter_chosen_banner;}
         switch (chosen_banner) {
         case -1: goto full_quit;
         case 1: {
@@ -220,6 +221,7 @@ int main() {
                 << "12: 陵薮市朝/20210428-20210518 (钟离, 烟绯, 诺艾尔, 迪奥娜)" << endl
                 << "13: 浪涌之瞬/20210518-20210608 (优菈, 辛焱, 行秋, 北斗)" << endl << endl;
             std::cin >> chosen_event;
+            if (cin.fail()) {chosen_event = 0; std::cout << endl << "非法字符!" << endl; cin.clear(); cin.ignore(32767,'\n'); goto enter_chosen_event_1;}
             if (chosen_event == -1) { chosen_event = 0; std::cout << endl; goto enter_chosen_banner; }
             if (chosen_event > 0 && chosen_event < 14 && chosen_event == (int)chosen_event) quit = 0; else { std::cout << endl << "无效活动类型!" << endl << endl; goto enter_chosen_event_1; }
         } break;
@@ -241,6 +243,7 @@ int main() {
                 << "11: 神铸赋形/20210428-20210518 (斫峰之刃, 尘世之锁, 笛剑, 千岩古剑, 千岩长枪, 昭心, 祭礼弓)" << endl
                 << "12: 神铸赋形/20210518-20210608 (松籁响起之时, 风鹰剑, 祭礼剑, 雨裁, 匣里灭辰, 祭礼残章, 弓藏)" << endl << endl;
             std::cin >> chosen_event;
+            if (cin.fail()) {chosen_event = 0; std::cout << endl << "非法字符!" << endl; cin.clear(); cin.ignore(32767,'\n'); goto enter_chosen_event_2;}
             if (chosen_event == -1) { chosen_event = 0; std::cout << endl; goto enter_chosen_banner; }
             if (chosen_event > 0 && chosen_event < 13 && chosen_event == (int)chosen_event) quit = 0; else { std::cout << endl << "无效活动类型!" << endl << endl; goto enter_chosen_event_2; }
         } break;
@@ -253,6 +256,7 @@ int main() {
                 << "2: 奔行世间/20201223-20210427 (新增迪奥娜和辛焱)" << endl
                 << "3: 奔行世间/20210428- (新增罗莎莉亚)" << endl << endl;
             std::cin >> chosen_event;
+            if (cin.fail()) {chosen_event = 0; std::cout << endl << "非法字符!" << endl; cin.clear(); cin.ignore(32767,'\n'); goto enter_chosen_event_3;}
             if (chosen_event == -1) { chosen_event = 0; std::cout << endl; goto enter_chosen_banner; }
             if (chosen_event > 0 && chosen_event < 4 && chosen_event == (int)chosen_event) quit = 0; else { std::cout << endl << "无效活动类型!" << endl << endl; goto enter_chosen_event_3; }
         } break;
@@ -262,7 +266,7 @@ int main() {
             std::cout << endl << "选择活动类型:" << endl
                 << "-1: 重新选择卡池类型" << endl
                 << "1: 新手祈愿" << endl << endl;
-            std::cin >> chosen_event; quit = 0; } break;
+            std::cin >> chosen_event; if (cin.fail()) {chosen_event = 0; std::cout << endl << "非法字符!" << endl; cin.clear(); cin.ignore(32767,'\n'); goto enter_chosen_event_4;} quit = 0; } break;
             if (chosen_event == -1) { chosen_event = 0; std::cout << endl; goto enter_chosen_banner; }
             if (chosen_event == 1 && chosen_event == (int)chosen_event) quit = 0; else { std::cout << endl << "无效活动类型!" << endl << endl; goto enter_chosen_event_4; }
         default: {chosen_banner = 0; chosen_event = 0; quit = 1; std::cout << "无效卡池类型!" << endl << endl; goto enter_chosen_banner; }
@@ -272,6 +276,7 @@ int main() {
             enter_wishes_number:
             std::cout << endl << "抽几发?" << endl << "-1: 重新选择卡池类型; 1: 1发; 10: 10发; -2: 显示运气最好的连续十发" << endl << endl;
             std::cin >> wishes_number;
+            if (cin.fail()) {wishes_number = 0; std::cout << endl << "非法字符!" << endl; cin.clear(); cin.ignore(32767,'\n'); goto enter_wishes_number;}
             std::cout << endl;
             if (wishes_number == -2){
                 if(count < 10) {std::cout << "默认空数据" << endl; goto enter_wishes_number; }
