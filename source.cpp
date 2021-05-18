@@ -154,7 +154,7 @@ int rspick(int* kindx, int sizekind) {
 }
 
 int main() {
-    std::cout << "WELCOME TO GENSHIN IMPACT WISH SIMULATOR CLI" << endl << endl;
+    std::cout << "WELCOME TO GENSHIN IMPACT WISH SIMULATOR CLI V1.5.4" << endl << endl;
     while (1) {
         int chosen_banner = 0;
         int chosen_event = 0;

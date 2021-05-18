@@ -154,7 +154,7 @@ int rspick(int* kindx, int sizekind) {
 }
 
 int main() {
-    std::cout << "Ô­ÉñÆíÔ¸Ä£ÄâÆ÷£¨ÃüÁîĞĞ£©" << endl << endl;
+    std::cout << "Ô­ÉñÆíÔ¸Ä£ÄâÆ÷£¨ÃüÁîĞĞ£©V1.5.4" << endl << endl;
     while (1) {
         int chosen_banner = 0;
         int chosen_event = 0;
