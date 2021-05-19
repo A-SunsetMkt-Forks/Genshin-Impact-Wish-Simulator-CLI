@@ -5,7 +5,7 @@ This is a CLI Wish Simulator for Genshin Impact players.
 Features:\
 Unlimited number of wishes in one go;\
 Statistics;\
-Show the luckiest succession of 10 wishes
+Showing the luckiest succession of 10 wishes
 
 Supported banners:
 
