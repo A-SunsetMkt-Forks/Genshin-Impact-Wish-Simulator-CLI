@@ -275,7 +275,7 @@ int main() {
         while (wishes_number >= 0) {
             if (quit == 1) goto full_quit;
             enter_wishes_number:
-            std::cout << endl << "How many wishes?" << endl << "-1: Re-choose Wishes (Banners); 1: 1 Wish; 10: 10 Wishes; -2: Show Luckiest 10 Pulls" << endl << endl;
+            std::cout << endl << "How many wishes?" << endl << "-1: Re-choose Wishes (Banners); 1: 1 Wish; 10: 10 Wishes; -2: Show Luckiest 10 Pulls (unbroken)" << endl << endl;
             std::cin >> wishes_number;
             if (cin.fail()) {wishes_number = 0; std::cout << endl << "Illegal character!" << endl; cin.clear(); cin.ignore(32767,'\n'); goto enter_wishes_number;}
             std::cout << endl;
