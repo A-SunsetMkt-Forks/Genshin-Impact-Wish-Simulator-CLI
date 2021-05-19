@@ -154,7 +154,7 @@ int rspick(int* kindx, int sizekind) {
 }
 
 int main() {
-    std::cout << "原神祈愿模拟器（命令行）V1.5.4" << endl << endl;
+    std::cout << "原神祈愿模拟器（命令行）V1.5.5" << endl << endl;
     while (1) {
         int chosen_banner = 0;
         int chosen_event = 0;
@@ -232,7 +232,7 @@ int main() {
                 << "-1: 重新选择卡池类型" << endl
                 << "1: 神铸赋形/20200928-20201018 (风鹰剑, 阿莫斯之弓, 笛剑, 钟剑, 流浪乐章, 绝弦, 西风长枪)" << endl
                 << "2: 神铸赋形/20201020-20201109 (四风原典, 狼的末路, 祭礼剑, 祭礼弓, 祭礼大剑, 祭礼残章, 匣里灭辰)" << endl
-                << "3: 神铸赋形/20201111-20201201 (尘世之锁, 天空之翼, 雨裁, 昭心, 弓藏, 西风长枪)" << endl
+                << "3: 神铸赋形/20201111-20201201 (尘世之锁, 天空之翼, 雨裁, 昭心, 弓藏, 西风长枪, 笛剑)" << endl
                 << "4: 神铸赋形/20201201-20201222 (贯虹之槊, 无工之剑, 匣里龙吟, 钟剑, 西风秘典, 西风猎弓, 匣里灭辰)" << endl
                 << "5: 神铸赋形/20201223-20210112 (斫峰之刃, 天空之卷, 西风剑, 西风大剑, 西风长枪, 祭礼残章, 绝弦)" << endl
                 << "6: 神铸赋形/20210112-20210202 (天空之傲, 阿莫斯之弓, 祭礼剑, 钟剑, 匣里灭辰, 昭心, 西风猎弓)" << endl
@@ -275,7 +275,7 @@ int main() {
         while (wishes_number >= 0) {
             if (quit == 1) goto full_quit;
             enter_wishes_number:
-            std::cout << endl << "抽几发?" << endl << "-1: 重新选择卡池类型; 1: 1发; 10: 10发; -2: 显示运气最好的连续十发" << endl << endl;
+            std::cout << endl << "抽几发?" << endl << "-1: 重新选择卡池类型; 1: 1发; 10: 10发; -2: 显示运气最佳的连续十发" << endl << endl;
             std::cin >> wishes_number;
             if (cin.fail()) {wishes_number = 0; std::cout << endl << "非法字符!" << endl; cin.clear(); cin.ignore(32767,'\n'); goto enter_wishes_number;}
             std::cout << endl;
