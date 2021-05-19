@@ -9,20 +9,20 @@ Show the luckiest succession of 10 wishes
 
 Supported banners:
 
-I Character Event Wish
-1: Ballad in Goblets/20200928-20201018 (Venti, Barbara, Fischl, Xiangling)
-2: Sparkling Steps/20201020-20201110 (Klee, Xingqiu, Noelle, Sucrose)
-3: Farewell of Snezhnaya/20201111-20201201 (Tartaglia, Diona, Beidou, Ningguang)
-4: Gentry of Hermitage/20201201-20201222 (Zhongli, Xinyan, Razor, Chongyun)
-5: Secretum Secretorum/20201223-20210112 (Albedo, Fischl, Sucrose, Bennett)
-6: Adrift in the Harbor/20210112-20210202 (Ganyu, Xiangling, Xingqiu, Noelle)
-7: Invitation to Mundane Life/20210203-20210217 (Xiao, Diona, Beidou, Xinyan)
-8: Dance of Lanterns/20210217-20210302 (Keqing, Ningguang, Bennett, Barbara)
-9: Moment of Bloom/20210302-20210316 (Hu Tao, Xingqiu, Xiangling, Chongyun)
-10: Ballad in Goblets/20210317-20210406 (Venti, Sucrose, Razor, Noelle)
-11: Farewell of Snezhnaya/20210406-20210427 (Tartaglia, Rosaria, Barbara, Fischl)
-12: Gentry of Hermitage/20210428-20210518 (Zhongli, Yanfei, Noelle, Diona)
-13: Born of Ocean Swell/20210518-20210608 (EUla, Xinyan, Xingqiu, Beidou)
+I Character Event Wish\
+1: Ballad in Goblets/20200928-20201018 (Venti, Barbara, Fischl, Xiangling)\
+2: Sparkling Steps/20201020-20201110 (Klee, Xingqiu, Noelle, Sucrose)\
+3: Farewell of Snezhnaya/20201111-20201201 (Tartaglia, Diona, Beidou, Ningguang)\
+4: Gentry of Hermitage/20201201-20201222 (Zhongli, Xinyan, Razor, Chongyun)\
+5: Secretum Secretorum/20201223-20210112 (Albedo, Fischl, Sucrose, Bennett)\
+6: Adrift in the Harbor/20210112-20210202 (Ganyu, Xiangling, Xingqiu, Noelle)\
+7: Invitation to Mundane Life/20210203-20210217 (Xiao, Diona, Beidou, Xinyan)\
+8: Dance of Lanterns/20210217-20210302 (Keqing, Ningguang, Bennett, Barbara)\
+9: Moment of Bloom/20210302-20210316 (Hu Tao, Xingqiu, Xiangling, Chongyun)\
+10: Ballad in Goblets/20210317-20210406 (Venti, Sucrose, Razor, Noelle)\
+11: Farewell of Snezhnaya/20210406-20210427 (Tartaglia, Rosaria, Barbara, Fischl)\
+12: Gentry of Hermitage/20210428-20210518 (Zhongli, Yanfei, Noelle, Diona)\
+13: Born of Ocean Swell/20210518-20210608 (EUla, Xinyan, Xingqiu, Beidou)\
 
 II Weapon Event Wish
 1: Epitome Invocation/20200928-20201018 (Aquila Favonia, Amos' Bow, The Flute, The Bell, The Widsith, The Stringless, Favonius Lance)
