@@ -357,7 +357,7 @@ int main() {
                     case 70: { std::cout << "!!!!!*****÷Ì" << endl; } break;
                     case 71: { std::cout << "!!!!!*****ºúÌÒ" << endl; } break;
                     case 72: { std::cout << "!!****ÑÌç³" << endl; } break;
-                    case 73: { std::cout << "!!****ÓÅÇ‰" << endl; } break;
+                    case 73: { std::cout << "!!!!!****ÓÅÇ‰" << endl; } break;
                     case 74: { std::cout << "!!!!!*****³¾ÊÀÖ®Ëø" << endl; } break;
                     case 75: { std::cout << "!!!!!*****¹áºçÖ®éÃ" << endl; } break;
                     case 76: { std::cout << "!!!!!*****ÎŞ¹¤Ö®½£" << endl; } break;
@@ -1153,7 +1153,7 @@ int main() {
                     case 70: { std::cout << "!!!!!*****÷Ì" << endl; pcount[69]++; } break;
                     case 71: { std::cout << "!!!!!*****ºúÌÒ" << endl; pcount[70]++; } break;
                     case 72: { std::cout << "!!****ÑÌç³" << endl; pcount[71]++; } break;
-                    case 73: { std::cout << "!!****ÓÅÇ‰" << endl; pcount[72]++; } break;
+                    case 73: { std::cout << "!!!!!****ÓÅÇ‰" << endl; pcount[72]++; } break;
                     case 74: { std::cout << "!!!!!*****³¾ÊÀÖ®Ëø" << endl; pcount[73]++; } break;
                     case 75: { std::cout << "!!!!!*****¹áºçÖ®éÃ" << endl; pcount[74]++; } break;
                     case 76: { std::cout << "!!!!!*****ÎŞ¹¤Ö®½£" << endl; pcount[75]++; } break;
@@ -1990,7 +1990,7 @@ int main() {
                     case 70: { std::cout << "!!!!!*****÷Ì" << endl; pcount[69]++; } break;
                     case 71: { std::cout << "!!!!!*****ºúÌÒ" << endl; pcount[70]++; } break;
                     case 72: { std::cout << "!!****ÑÌç³" << endl; pcount[71]++; } break;
-                    case 73: { std::cout << "!!****ÓÅÇ‰" << endl; pcount[72]++; } break;
+                    case 73: { std::cout << "!!!!!****ÓÅÇ‰" << endl; pcount[72]++; } break;
                     case 74: { std::cout << "!!!!!*****³¾ÊÀÖ®Ëø" << endl; pcount[73]++; } break;
                     case 75: { std::cout << "!!!!!*****¹áºçÖ®éÃ" << endl; pcount[74]++; } break;
                     case 76: { std::cout << "!!!!!*****ÎŞ¹¤Ö®½£" << endl; pcount[75]++; } break;
@@ -2827,7 +2827,7 @@ int main() {
                     case 70: { std::cout << "!!!!!*****÷Ì" << endl; pcount[69]++; } break;
                     case 71: { std::cout << "!!!!!*****ºúÌÒ" << endl; pcount[70]++; } break;
                     case 72: { std::cout << "!!****ÑÌç³" << endl; pcount[71]++; } break;
-                    case 73: { std::cout << "!!****ÓÅÇ‰" << endl; pcount[72]++; } break;
+                    case 73: { std::cout << "!!!!!****ÓÅÇ‰" << endl; pcount[72]++; } break;
                     case 74: { std::cout << "!!!!!*****³¾ÊÀÖ®Ëø" << endl; pcount[73]++; } break;
                     case 75: { std::cout << "!!!!!*****¹áºçÖ®éÃ" << endl; pcount[74]++; } break;
                     case 76: { std::cout << "!!!!!*****ÎŞ¹¤Ö®½£" << endl; pcount[75]++; } break;
@@ -3664,7 +3664,7 @@ int main() {
                     case 70: { std::cout << "!!!!!*****÷Ì" << endl; pcount[69]++; } break;
                     case 71: { std::cout << "!!!!!*****ºúÌÒ" << endl; pcount[70]++; } break;
                     case 72: { std::cout << "!!****ÑÌç³" << endl; pcount[71]++; } break;
-                    case 73: { std::cout << "!!****ÓÅÇ‰" << endl; pcount[72]++; } break;
+                    case 73: { std::cout << "!!!!!****ÓÅÇ‰" << endl; pcount[72]++; } break;
                     case 74: { std::cout << "!!!!!*****³¾ÊÀÖ®Ëø" << endl; pcount[73]++; } break;
                     case 75: { std::cout << "!!!!!*****¹áºçÖ®éÃ" << endl; pcount[74]++; } break;
                     case 76: { std::cout << "!!!!!*****ÎŞ¹¤Ö®½£" << endl; pcount[75]++; } break;
@@ -4501,7 +4501,7 @@ int main() {
                     case 70: { std::cout << "!!!!!*****÷Ì" << endl; pcount[69]++; } break;
                     case 71: { std::cout << "!!!!!*****ºúÌÒ" << endl; pcount[70]++; } break;
                     case 72: { std::cout << "!!****ÑÌç³" << endl; pcount[71]++; } break;
-                    case 73: { std::cout << "!!****ÓÅÇ‰" << endl; pcount[72]++; } break;
+                    case 73: { std::cout << "!!!!!****ÓÅÇ‰" << endl; pcount[72]++; } break;
                     case 74: { std::cout << "!!!!!*****³¾ÊÀÖ®Ëø" << endl; pcount[73]++; } break;
                     case 75: { std::cout << "!!!!!*****¹áºçÖ®éÃ" << endl; pcount[74]++; } break;
                     case 76: { std::cout << "!!!!!*****ÎŞ¹¤Ö®½£" << endl; pcount[75]++; } break;
@@ -5338,7 +5338,7 @@ int main() {
                     case 70: { std::cout << "!!!!!*****÷Ì" << endl; pcount[69]++; } break;
                     case 71: { std::cout << "!!!!!*****ºúÌÒ" << endl; pcount[70]++; } break;
                     case 72: { std::cout << "!!****ÑÌç³" << endl; pcount[71]++; } break;
-                    case 73: { std::cout << "!!****ÓÅÇ‰" << endl; pcount[72]++; } break;
+                    case 73: { std::cout << "!!!!!****ÓÅÇ‰" << endl; pcount[72]++; } break;
                     case 74: { std::cout << "!!!!!*****³¾ÊÀÖ®Ëø" << endl; pcount[73]++; } break;
                     case 75: { std::cout << "!!!!!*****¹áºçÖ®éÃ" << endl; pcount[74]++; } break;
                     case 76: { std::cout << "!!!!!*****ÎŞ¹¤Ö®½£" << endl; pcount[75]++; } break;
@@ -6175,7 +6175,7 @@ int main() {
                     case 70: { std::cout << "!!!!!*****÷Ì" << endl; pcount[69]++; } break;
                     case 71: { std::cout << "!!!!!*****ºúÌÒ" << endl; pcount[70]++; } break;
                     case 72: { std::cout << "!!****ÑÌç³" << endl; pcount[71]++; } break;
-                    case 73: { std::cout << "!!****ÓÅÇ‰" << endl; pcount[72]++; } break;
+                    case 73: { std::cout << "!!!!!****ÓÅÇ‰" << endl; pcount[72]++; } break;
                     case 74: { std::cout << "!!!!!*****³¾ÊÀÖ®Ëø" << endl; pcount[73]++; } break;
                     case 75: { std::cout << "!!!!!*****¹áºçÖ®éÃ" << endl; pcount[74]++; } break;
                     case 76: { std::cout << "!!!!!*****ÎŞ¹¤Ö®½£" << endl; pcount[75]++; } break;
@@ -7012,7 +7012,7 @@ int main() {
                     case 70: { std::cout << "!!!!!*****÷Ì" << endl; pcount[69]++; } break;
                     case 71: { std::cout << "!!!!!*****ºúÌÒ" << endl; pcount[70]++; } break;
                     case 72: { std::cout << "!!****ÑÌç³" << endl; pcount[71]++; } break;
-                    case 73: { std::cout << "!!****ÓÅÇ‰" << endl; pcount[72]++; } break;
+                    case 73: { std::cout << "!!!!!****ÓÅÇ‰" << endl; pcount[72]++; } break;
                     case 74: { std::cout << "!!!!!*****³¾ÊÀÖ®Ëø" << endl; pcount[73]++; } break;
                     case 75: { std::cout << "!!!!!*****¹áºçÖ®éÃ" << endl; pcount[74]++; } break;
                     case 76: { std::cout << "!!!!!*****ÎŞ¹¤Ö®½£" << endl; pcount[75]++; } break;
@@ -7849,7 +7849,7 @@ int main() {
                     case 70: { std::cout << "!!!!!*****÷Ì" << endl; pcount[69]++; } break;
                     case 71: { std::cout << "!!!!!*****ºúÌÒ" << endl; pcount[70]++; } break;
                     case 72: { std::cout << "!!****ÑÌç³" << endl; pcount[71]++; } break;
-                    case 73: { std::cout << "!!****ÓÅÇ‰" << endl; pcount[72]++; } break;
+                    case 73: { std::cout << "!!!!!****ÓÅÇ‰" << endl; pcount[72]++; } break;
                     case 74: { std::cout << "!!!!!*****³¾ÊÀÖ®Ëø" << endl; pcount[73]++; } break;
                     case 75: { std::cout << "!!!!!*****¹áºçÖ®éÃ" << endl; pcount[74]++; } break;
                     case 76: { std::cout << "!!!!!*****ÎŞ¹¤Ö®½£" << endl; pcount[75]++; } break;
@@ -8686,7 +8686,7 @@ int main() {
                     case 70: { std::cout << "!!!!!*****÷Ì" << endl; pcount[69]++; } break;
                     case 71: { std::cout << "!!!!!*****ºúÌÒ" << endl; pcount[70]++; } break;
                     case 72: { std::cout << "!!****ÑÌç³" << endl; pcount[71]++; } break;
-                    case 73: { std::cout << "!!****ÓÅÇ‰" << endl; pcount[72]++; } break;
+                    case 73: { std::cout << "!!!!!****ÓÅÇ‰" << endl; pcount[72]++; } break;
                     case 74: { std::cout << "!!!!!*****³¾ÊÀÖ®Ëø" << endl; pcount[73]++; } break;
                     case 75: { std::cout << "!!!!!*****¹áºçÖ®éÃ" << endl; pcount[74]++; } break;
                     case 76: { std::cout << "!!!!!*****ÎŞ¹¤Ö®½£" << endl; pcount[75]++; } break;
@@ -9523,7 +9523,7 @@ int main() {
                     case 70: { std::cout << "!!!!!*****÷Ì" << endl; pcount[69]++; } break;
                     case 71: { std::cout << "!!!!!*****ºúÌÒ" << endl; pcount[70]++; } break;
                     case 72: { std::cout << "!!****ÑÌç³" << endl; pcount[71]++; } break;
-                    case 73: { std::cout << "!!****ÓÅÇ‰" << endl; pcount[72]++; } break;
+                    case 73: { std::cout << "!!!!!****ÓÅÇ‰" << endl; pcount[72]++; } break;
                     case 74: { std::cout << "!!!!!*****³¾ÊÀÖ®Ëø" << endl; pcount[73]++; } break;
                     case 75: { std::cout << "!!!!!*****¹áºçÖ®éÃ" << endl; pcount[74]++; } break;
                     case 76: { std::cout << "!!!!!*****ÎŞ¹¤Ö®½£" << endl; pcount[75]++; } break;
@@ -10360,7 +10360,7 @@ int main() {
                     case 70: { std::cout << "!!!!!*****÷Ì" << endl; pcount[69]++; } break;
                     case 71: { std::cout << "!!!!!*****ºúÌÒ" << endl; pcount[70]++; } break;
                     case 72: { std::cout << "!!****ÑÌç³" << endl; pcount[71]++; } break;
-                    case 73: { std::cout << "!!****ÓÅÇ‰" << endl; pcount[72]++; } break;
+                    case 73: { std::cout << "!!!!!****ÓÅÇ‰" << endl; pcount[72]++; } break;
                     case 74: { std::cout << "!!!!!*****³¾ÊÀÖ®Ëø" << endl; pcount[73]++; } break;
                     case 75: { std::cout << "!!!!!*****¹áºçÖ®éÃ" << endl; pcount[74]++; } break;
                     case 76: { std::cout << "!!!!!*****ÎŞ¹¤Ö®½£" << endl; pcount[75]++; } break;
@@ -11197,7 +11197,7 @@ int main() {
                     case 70: { std::cout << "!!!!!*****÷Ì" << endl; pcount[69]++; } break;
                     case 71: { std::cout << "!!!!!*****ºúÌÒ" << endl; pcount[70]++; } break;
                     case 72: { std::cout << "!!****ÑÌç³" << endl; pcount[71]++; } break;
-                    case 73: { std::cout << "!!****ÓÅÇ‰" << endl; pcount[72]++; } break;
+                    case 73: { std::cout << "!!!!!****ÓÅÇ‰" << endl; pcount[72]++; } break;
                     case 74: { std::cout << "!!!!!*****³¾ÊÀÖ®Ëø" << endl; pcount[73]++; } break;
                     case 75: { std::cout << "!!!!!*****¹áºçÖ®éÃ" << endl; pcount[74]++; } break;
                     case 76: { std::cout << "!!!!!*****ÎŞ¹¤Ö®½£" << endl; pcount[75]++; } break;
@@ -12761,7 +12761,7 @@ int main() {
                     case 70: { std::cout << "!!!!!*****÷Ì" << endl; pcount[69]++; } break;
                     case 71: { std::cout << "!!!!!*****ºúÌÒ" << endl; pcount[70]++; } break;
                     case 72: { std::cout << "!!****ÑÌç³" << endl; pcount[71]++; } break;
-                    case 73: { std::cout << "!!****ÓÅÇ‰" << endl; pcount[72]++; } break;
+                    case 73: { std::cout << "!!!!!****ÓÅÇ‰" << endl; pcount[72]++; } break;
                     case 74: { std::cout << "!!!!!*****³¾ÊÀÖ®Ëø" << endl; pcount[73]++; } break;
                     case 75: { std::cout << "!!!!!*****¹áºçÖ®éÃ" << endl; pcount[74]++; } break;
                     case 76: { std::cout << "!!!!!*****ÎŞ¹¤Ö®½£" << endl; pcount[75]++; } break;
@@ -14323,7 +14323,7 @@ int main() {
                     case 70: { std::cout << "!!!!!*****÷Ì" << endl; pcount[69]++; } break;
                     case 71: { std::cout << "!!!!!*****ºúÌÒ" << endl; pcount[70]++; } break;
                     case 72: { std::cout << "!!****ÑÌç³" << endl; pcount[71]++; } break;
-                    case 73: { std::cout << "!!****ÓÅÇ‰" << endl; pcount[72]++; } break;
+                    case 73: { std::cout << "!!!!!****ÓÅÇ‰" << endl; pcount[72]++; } break;
                     case 74: { std::cout << "!!!!!*****³¾ÊÀÖ®Ëø" << endl; pcount[73]++; } break;
                     case 75: { std::cout << "!!!!!*****¹áºçÖ®éÃ" << endl; pcount[74]++; } break;
                     case 76: { std::cout << "!!!!!*****ÎŞ¹¤Ö®½£" << endl; pcount[75]++; } break;
@@ -15885,7 +15885,7 @@ int main() {
                     case 70: { std::cout << "!!!!!*****÷Ì" << endl; pcount[69]++; } break;
                     case 71: { std::cout << "!!!!!*****ºúÌÒ" << endl; pcount[70]++; } break;
                     case 72: { std::cout << "!!****ÑÌç³" << endl; pcount[71]++; } break;
-                    case 73: { std::cout << "!!****ÓÅÇ‰" << endl; pcount[72]++; } break;
+                    case 73: { std::cout << "!!!!!****ÓÅÇ‰" << endl; pcount[72]++; } break;
                     case 74: { std::cout << "!!!!!*****³¾ÊÀÖ®Ëø" << endl; pcount[73]++; } break;
                     case 75: { std::cout << "!!!!!*****¹áºçÖ®éÃ" << endl; pcount[74]++; } break;
                     case 76: { std::cout << "!!!!!*****ÎŞ¹¤Ö®½£" << endl; pcount[75]++; } break;
@@ -17447,7 +17447,7 @@ int main() {
                     case 70: { std::cout << "!!!!!*****÷Ì" << endl; pcount[69]++; } break;
                     case 71: { std::cout << "!!!!!*****ºúÌÒ" << endl; pcount[70]++; } break;
                     case 72: { std::cout << "!!****ÑÌç³" << endl; pcount[71]++; } break;
-                    case 73: { std::cout << "!!****ÓÅÇ‰" << endl; pcount[72]++; } break;
+                    case 73: { std::cout << "!!!!!****ÓÅÇ‰" << endl; pcount[72]++; } break;
                     case 74: { std::cout << "!!!!!*****³¾ÊÀÖ®Ëø" << endl; pcount[73]++; } break;
                     case 75: { std::cout << "!!!!!*****¹áºçÖ®éÃ" << endl; pcount[74]++; } break;
                     case 76: { std::cout << "!!!!!*****ÎŞ¹¤Ö®½£" << endl; pcount[75]++; } break;
@@ -19009,7 +19009,7 @@ int main() {
                     case 70: { std::cout << "!!!!!*****÷Ì" << endl; pcount[69]++; } break;
                     case 71: { std::cout << "!!!!!*****ºúÌÒ" << endl; pcount[70]++; } break;
                     case 72: { std::cout << "!!****ÑÌç³" << endl; pcount[71]++; } break;
-                    case 73: { std::cout << "!!****ÓÅÇ‰" << endl; pcount[72]++; } break;
+                    case 73: { std::cout << "!!!!!****ÓÅÇ‰" << endl; pcount[72]++; } break;
                     case 74: { std::cout << "!!!!!*****³¾ÊÀÖ®Ëø" << endl; pcount[73]++; } break;
                     case 75: { std::cout << "!!!!!*****¹áºçÖ®éÃ" << endl; pcount[74]++; } break;
                     case 76: { std::cout << "!!!!!*****ÎŞ¹¤Ö®½£" << endl; pcount[75]++; } break;
@@ -20571,7 +20571,7 @@ int main() {
                     case 70: { std::cout << "!!!!!*****÷Ì" << endl; pcount[69]++; } break;
                     case 71: { std::cout << "!!!!!*****ºúÌÒ" << endl; pcount[70]++; } break;
                     case 72: { std::cout << "!!****ÑÌç³" << endl; pcount[71]++; } break;
-                    case 73: { std::cout << "!!****ÓÅÇ‰" << endl; pcount[72]++; } break;
+                    case 73: { std::cout << "!!!!!****ÓÅÇ‰" << endl; pcount[72]++; } break;
                     case 74: { std::cout << "!!!!!*****³¾ÊÀÖ®Ëø" << endl; pcount[73]++; } break;
                     case 75: { std::cout << "!!!!!*****¹áºçÖ®éÃ" << endl; pcount[74]++; } break;
                     case 76: { std::cout << "!!!!!*****ÎŞ¹¤Ö®½£" << endl; pcount[75]++; } break;
@@ -22133,7 +22133,7 @@ int main() {
                     case 70: { std::cout << "!!!!!*****÷Ì" << endl; pcount[69]++; } break;
                     case 71: { std::cout << "!!!!!*****ºúÌÒ" << endl; pcount[70]++; } break;
                     case 72: { std::cout << "!!****ÑÌç³" << endl; pcount[71]++; } break;
-                    case 73: { std::cout << "!!****ÓÅÇ‰" << endl; pcount[72]++; } break;
+                    case 73: { std::cout << "!!!!!****ÓÅÇ‰" << endl; pcount[72]++; } break;
                     case 74: { std::cout << "!!!!!*****³¾ÊÀÖ®Ëø" << endl; pcount[73]++; } break;
                     case 75: { std::cout << "!!!!!*****¹áºçÖ®éÃ" << endl; pcount[74]++; } break;
                     case 76: { std::cout << "!!!!!*****ÎŞ¹¤Ö®½£" << endl; pcount[75]++; } break;
@@ -23695,7 +23695,7 @@ int main() {
                     case 70: { std::cout << "!!!!!*****÷Ì" << endl; pcount[69]++; } break;
                     case 71: { std::cout << "!!!!!*****ºúÌÒ" << endl; pcount[70]++; } break;
                     case 72: { std::cout << "!!****ÑÌç³" << endl; pcount[71]++; } break;
-                    case 73: { std::cout << "!!****ÓÅÇ‰" << endl; pcount[72]++; } break;
+                    case 73: { std::cout << "!!!!!****ÓÅÇ‰" << endl; pcount[72]++; } break;
                     case 74: { std::cout << "!!!!!*****³¾ÊÀÖ®Ëø" << endl; pcount[73]++; } break;
                     case 75: { std::cout << "!!!!!*****¹áºçÖ®éÃ" << endl; pcount[74]++; } break;
                     case 76: { std::cout << "!!!!!*****ÎŞ¹¤Ö®½£" << endl; pcount[75]++; } break;
@@ -25257,7 +25257,7 @@ int main() {
                     case 70: { std::cout << "!!!!!*****÷Ì" << endl; pcount[69]++; } break;
                     case 71: { std::cout << "!!!!!*****ºúÌÒ" << endl; pcount[70]++; } break;
                     case 72: { std::cout << "!!****ÑÌç³" << endl; pcount[71]++; } break;
-                    case 73: { std::cout << "!!****ÓÅÇ‰" << endl; pcount[72]++; } break;
+                    case 73: { std::cout << "!!!!!****ÓÅÇ‰" << endl; pcount[72]++; } break;
                     case 74: { std::cout << "!!!!!*****³¾ÊÀÖ®Ëø" << endl; pcount[73]++; } break;
                     case 75: { std::cout << "!!!!!*****¹áºçÖ®éÃ" << endl; pcount[74]++; } break;
                     case 76: { std::cout << "!!!!!*****ÎŞ¹¤Ö®½£" << endl; pcount[75]++; } break;
@@ -26819,7 +26819,7 @@ int main() {
                     case 70: { std::cout << "!!!!!*****÷Ì" << endl; pcount[69]++; } break;
                     case 71: { std::cout << "!!!!!*****ºúÌÒ" << endl; pcount[70]++; } break;
                     case 72: { std::cout << "!!****ÑÌç³" << endl; pcount[71]++; } break;
-                    case 73: { std::cout << "!!****ÓÅÇ‰" << endl; pcount[72]++; } break;
+                    case 73: { std::cout << "!!!!!****ÓÅÇ‰" << endl; pcount[72]++; } break;
                     case 74: { std::cout << "!!!!!*****³¾ÊÀÖ®Ëø" << endl; pcount[73]++; } break;
                     case 75: { std::cout << "!!!!!*****¹áºçÖ®éÃ" << endl; pcount[74]++; } break;
                     case 76: { std::cout << "!!!!!*****ÎŞ¹¤Ö®½£" << endl; pcount[75]++; } break;
@@ -28381,7 +28381,7 @@ int main() {
                     case 70: { std::cout << "!!!!!*****÷Ì" << endl; pcount[69]++; } break;
                     case 71: { std::cout << "!!!!!*****ºúÌÒ" << endl; pcount[70]++; } break;
                     case 72: { std::cout << "!!****ÑÌç³" << endl; pcount[71]++; } break;
-                    case 73: { std::cout << "!!****ÓÅÇ‰" << endl; pcount[72]++; } break;
+                    case 73: { std::cout << "!!!!!****ÓÅÇ‰" << endl; pcount[72]++; } break;
                     case 74: { std::cout << "!!!!!*****³¾ÊÀÖ®Ëø" << endl; pcount[73]++; } break;
                     case 75: { std::cout << "!!!!!*****¹áºçÖ®éÃ" << endl; pcount[74]++; } break;
                     case 76: { std::cout << "!!!!!*****ÎŞ¹¤Ö®½£" << endl; pcount[75]++; } break;
@@ -29943,7 +29943,7 @@ int main() {
                     case 70: { std::cout << "!!!!!*****÷Ì" << endl; pcount[69]++; } break;
                     case 71: { std::cout << "!!!!!*****ºúÌÒ" << endl; pcount[70]++; } break;
                     case 72: { std::cout << "!!****ÑÌç³" << endl; pcount[71]++; } break;
-                    case 73: { std::cout << "!!****ÓÅÇ‰" << endl; pcount[72]++; } break;
+                    case 73: { std::cout << "!!!!!****ÓÅÇ‰" << endl; pcount[72]++; } break;
                     case 74: { std::cout << "!!!!!*****³¾ÊÀÖ®Ëø" << endl; pcount[73]++; } break;
                     case 75: { std::cout << "!!!!!*****¹áºçÖ®éÃ" << endl; pcount[74]++; } break;
                     case 76: { std::cout << "!!!!!*****ÎŞ¹¤Ö®½£" << endl; pcount[75]++; } break;
@@ -30872,7 +30872,7 @@ int main() {
                     case 70: { std::cout << "!!!!!*****÷Ì" << endl; pcount[69]++; } break;
                     case 71: { std::cout << "!!!!!*****ºúÌÒ" << endl; pcount[70]++; } break;
                     case 72: { std::cout << "!!****ÑÌç³" << endl; pcount[71]++; } break;
-                    case 73: { std::cout << "!!****ÓÅÇ‰" << endl; pcount[72]++; } break;
+                    case 73: { std::cout << "!!!!!****ÓÅÇ‰" << endl; pcount[72]++; } break;
                     case 74: { std::cout << "!!!!!*****³¾ÊÀÖ®Ëø" << endl; pcount[73]++; } break;
                     case 75: { std::cout << "!!!!!*****¹áºçÖ®éÃ" << endl; pcount[74]++; } break;
                     case 76: { std::cout << "!!!!!*****ÎŞ¹¤Ö®½£" << endl; pcount[75]++; } break;
@@ -31801,7 +31801,7 @@ int main() {
                     case 70: { std::cout << "!!!!!*****÷Ì" << endl; pcount[69]++; } break;
                     case 71: { std::cout << "!!!!!*****ºúÌÒ" << endl; pcount[70]++; } break;
                     case 72: { std::cout << "!!****ÑÌç³" << endl; pcount[71]++; } break;
-                    case 73: { std::cout << "!!****ÓÅÇ‰" << endl; pcount[72]++; } break;
+                    case 73: { std::cout << "!!!!!****ÓÅÇ‰" << endl; pcount[72]++; } break;
                     case 74: { std::cout << "!!!!!*****³¾ÊÀÖ®Ëø" << endl; pcount[73]++; } break;
                     case 75: { std::cout << "!!!!!*****¹áºçÖ®éÃ" << endl; pcount[74]++; } break;
                     case 76: { std::cout << "!!!!!*****ÎŞ¹¤Ö®½£" << endl; pcount[75]++; } break;
@@ -32730,7 +32730,7 @@ int main() {
                     case 70: { std::cout << "!!!!!*****÷Ì" << endl; pcount[69]++; } break;
                     case 71: { std::cout << "!!!!!*****ºúÌÒ" << endl; pcount[70]++; } break;
                     case 72: { std::cout << "!!****ÑÌç³" << endl; pcount[71]++; } break;
-                    case 73: { std::cout << "!!****ÓÅÇ‰" << endl; pcount[72]++; } break;
+                    case 73: { std::cout << "!!!!!****ÓÅÇ‰" << endl; pcount[72]++; } break;
                     case 74: { std::cout << "!!!!!*****³¾ÊÀÖ®Ëø" << endl; pcount[73]++; } break;
                     case 75: { std::cout << "!!!!!*****¹áºçÖ®éÃ" << endl; pcount[74]++; } break;
                     case 76: { std::cout << "!!!!!*****ÎŞ¹¤Ö®½£" << endl; pcount[75]++; } break;
@@ -33007,7 +33007,7 @@ int main() {
                     case 70: { std::cout << "!!!!!*****÷Ì" << endl; pcount[69]++; } break;
                     case 71: { std::cout << "!!!!!*****ºúÌÒ" << endl; pcount[70]++; } break;
                     case 72: { std::cout << "!!****ÑÌç³" << endl; pcount[71]++; } break;
-                    case 73: { std::cout << "!!****ÓÅÇ‰" << endl; pcount[72]++; } break;
+                    case 73: { std::cout << "!!!!!****ÓÅÇ‰" << endl; pcount[72]++; } break;
                     case 74: { std::cout << "!!!!!*****³¾ÊÀÖ®Ëø" << endl; pcount[73]++; } break;
                     case 75: { std::cout << "!!!!!*****¹áºçÖ®éÃ" << endl; pcount[74]++; } break;
                     case 76: { std::cout << "!!!!!*****ÎŞ¹¤Ö®½£" << endl; pcount[75]++; } break;
