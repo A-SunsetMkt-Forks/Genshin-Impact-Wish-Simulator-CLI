@@ -266,9 +266,10 @@ int main() {
             std::cout << endl << "Choose Your Events:" << endl
                 << "-1: Re-choose Wishes (Banners)" << endl
                 << "1: Beginners' wish" << endl << endl;
-            std::cin >> chosen_event; if (cin.fail()) {chosen_event = 0; std::cout << endl << "Illegal character!" << endl; cin.clear(); cin.ignore(32767,'\n'); goto enter_chosen_event_4;} quit = 0; } break;
+            std::cin >> chosen_event;
+            if (cin.fail()) {chosen_event = 0; std::cout << endl << "Illegal character!" << endl; cin.clear(); cin.ignore(32767,'\n'); goto enter_chosen_event_4;}
             if (chosen_event == -1) { chosen_event = 0; std::cout << endl; goto enter_chosen_banner; }
-            if (chosen_event == 1 && chosen_event == (int)chosen_event) quit = 0; else { std::cout << endl << "Invalid event!" << endl << endl; goto enter_chosen_event_4; }
+            if (chosen_event == 1 && chosen_event == (int)chosen_event) quit = 0; else { std::cout << endl << "Invalid event!" << endl << endl; goto enter_chosen_event_4; } } break;
         default: {chosen_banner = 0; chosen_event = 0; quit = 1; std::cout << "Invalid banner!" << endl << endl; goto enter_chosen_banner; }
         }
         while (wishes_number >= 0) {
@@ -416,7 +417,6 @@ int main() {
                 }
                 goto enter_wishes_number;
             }
-            if (chosen_banner == 4 && chosen_event == 1 && wishes_number == -1) { wishes_number = 0; goto enter_chosen_banner; }
             //if (chosen_banner == 4 && chosen_event == 1 && wishes_number != 10) { wishes_number = 0; std::cout << "Invalid number of wishes!" << endl; goto enter_wishes_number; }
             //if (!(wishes_number == -1||wishes_number == 10||wishes_number == 1)){ wishes_number = 0; std::cout << "Invalid number of wishes!" << endl; goto enter_wishes_number; }
             auto start = std::chrono::steady_clock::now();
@@ -33067,10 +33067,6 @@ int main() {
                     }
                     wishes_number --;
                     count ++;
-                    if (!(star == 5 && type == 1)) unmet5_c++;
-                    if (!(star == 5 && type == 2)) unmet5_w++;
-                    if (!(star == 4 && type == 1)) unmet4_c++;
-                    if (!(star == 4 && type == 2)) unmet4_w++;
                     five_star_assurance_number ++;
                     four_star_assurance_number ++;
                     for(int templuck = 0; templuck < 9; templuck++){
@@ -33146,4 +33142,5 @@ int main() {
 full_quit:
     int prepause = getchar();
     int pause = getchar();
+    return 0;
 }
