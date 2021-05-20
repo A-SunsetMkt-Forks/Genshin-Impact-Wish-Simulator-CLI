@@ -156,6 +156,7 @@ int rspick(int* kindx, int sizekind) {
 int main() {
     std::cout << "WELCOME TO GENSHIN IMPACT WISH SIMULATOR CLI V1.5.5" << endl << endl;
     while (1) {
+        enter_chosen_banner:
         int chosen_banner = 0;
         int chosen_event = 0;
         int wishes_number = 0;
@@ -194,19 +195,18 @@ int main() {
         long long int luckiestlocation[10] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
         long long int luckiestsublocation[10] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
         int luckiestkind[10] = {127, 127, 127, 127, 127, 127, 127, 127, 127, 127};
-        enter_chosen_banner:
         chosen_banner = 0;
         std::cout << "Choose Your Wishes (Banners):" << endl;
         std::cout << "-1: Quit; 1: Character Event Wish; 2: Weapon Event Wish; 3: Permanent Wish; 4: Novice Wish;" << endl << endl;
         std::cin >> chosen_banner;
         if (cin.fail()) {chosen_banner = 0; std::cout << endl << "Character(s) cannot be read!" << endl; cin.clear(); cin.ignore(32767,'\n'); goto enter_chosen_banner;}
+        enter_chosen_event:
         switch (chosen_banner) {
         case -1: goto full_quit;
         case 1: {
-        enter_chosen_event_1:
             chosen_event = 0;
             std::cout << endl << "Choose Your Events:" << endl
-                << "-1: Re-choose Wishes (Banners)" << endl
+                << "-1: Re-choose Wishes (Banners) (Records will be reset!)" << endl
                 << "1: Ballad in Goblets/20200928-20201018 (Venti, Barbara, Fischl, Xiangling)" << endl
                 << "2: Sparkling Steps/20201020-20201110 (Klee, Xingqiu, Noelle, Sucrose)" << endl
                 << "3: Farewell of Snezhnaya/20201111-20201201 (Tartaglia, Diona, Beidou, Ningguang)" << endl
@@ -221,15 +221,14 @@ int main() {
                 << "12: Gentry of Hermitage/20210428-20210518 (Zhongli, Yanfei, Noelle, Diona)" << endl
                 << "13: Born of Ocean Swell/20210518-20210608 (EUla, Xinyan, Xingqiu, Beidou)" << endl << endl;
             std::cin >> chosen_event;
-            if (cin.fail()) {chosen_event = 0; std::cout << endl << "Character(s) cannot be read!" << endl; cin.clear(); cin.ignore(32767,'\n'); goto enter_chosen_event_1;}
+            if (cin.fail()) {chosen_event = 0; std::cout << endl << "Character(s) cannot be read!" << endl; cin.clear(); cin.ignore(32767,'\n'); goto enter_chosen_event;}
             if (chosen_event == -1) { chosen_event = 0; std::cout << endl; goto enter_chosen_banner; }
-            if (chosen_event > 0 && chosen_event < 14 && chosen_event == (int)chosen_event) quit = 0; else { std::cout << endl << "Invalid event!" << endl << endl; goto enter_chosen_event_1; }
+            if (chosen_event > 0 && chosen_event < 14 && chosen_event == (int)chosen_event) quit = 0; else { std::cout << endl << "Invalid event!" << endl << endl; goto enter_chosen_event; }
         } break;
         case 2: {
-        enter_chosen_event_2:
             chosen_event = 0;
             std::cout << endl << "Choose Your Events:" << endl
-                << "-1: Re-choose Wishes (Banners)" << endl
+                << "-1: Re-choose Wishes (Banners) (Records will be reset!)" << endl
                 << "1: Epitome Invocation/20200928-20201018 (Aquila Favonia, Amos' Bow, The Flute, The Bell, The Widsith, The Stringless, Favonius Lance)" << endl
                 << "2: Epitome Invocation/20201020-20201109 (Lost Prayer to the Sacred Winds, Wolf's Gravestone, Sacrificial Sword, Sacrificial Bow, Sacrificial Greatsword, Sacrificial Fragments, Dragon's Bane)" << endl
                 << "3: Epitome Invocation/20201111-20201201 (Memory of Dust, Skyward Harp, Rainslasher, Eye of Perception, Rust, Favonius Lance, The Flute)" << endl
@@ -243,42 +242,41 @@ int main() {
                 << "11: Epitome Invocation/20210428-20210518 (Summit Shaper, Memory of Dust, The Flute, Lithic Blade, Lithic Spear, Eye of Perception, Sacrificial Bow)" << endl
                 << "12: Epitome Invocation/20210518-20210608 (Song of Broken Pines, Aquila Favonia, Sacrificial Sword, Rainslasher, Dragon's Bane, Sacrificial Fragments, Rust)" << endl << endl;
             std::cin >> chosen_event;
-            if (cin.fail()) {chosen_event = 0; std::cout << endl << "Character(s) cannot be read!" << endl; cin.clear(); cin.ignore(32767,'\n'); goto enter_chosen_event_2;}
+            if (cin.fail()) {chosen_event = 0; std::cout << endl << "Character(s) cannot be read!" << endl; cin.clear(); cin.ignore(32767,'\n'); goto enter_chosen_event;}
             if (chosen_event == -1) { chosen_event = 0; std::cout << endl; goto enter_chosen_banner; }
-            if (chosen_event > 0 && chosen_event < 13 && chosen_event == (int)chosen_event) quit = 0; else { std::cout << endl << "Invalid event!" << endl << endl; goto enter_chosen_event_2; }
+            if (chosen_event > 0 && chosen_event < 13 && chosen_event == (int)chosen_event) quit = 0; else { std::cout << endl << "Invalid event!" << endl << endl; goto enter_chosen_event; }
         } break;
         case 3: {
-        enter_chosen_event_3:
             chosen_event = 0;
             std::cout << endl << "Choose Your Events:" << endl
-                << "-1: Re-choose Wishes (Banners)" << endl
+                << "-1: Re-choose Wishes (Banners) (Records will be reset!)" << endl
                 << "1: Wanderlust Invocation/20200928-20201222 (Released)" << endl
                 << "2: Wanderlust Invocation/20201223-20210427 (Adds Diona and Xinyan)" << endl
                 << "3: Wanderlust Invocation/20210428- (Adds Rosaria)" << endl << endl;
             std::cin >> chosen_event;
-            if (cin.fail()) {chosen_event = 0; std::cout << endl << "Character(s) cannot be read!" << endl; cin.clear(); cin.ignore(32767,'\n'); goto enter_chosen_event_3;}
+            if (cin.fail()) {chosen_event = 0; std::cout << endl << "Character(s) cannot be read!" << endl; cin.clear(); cin.ignore(32767,'\n'); goto enter_chosen_event;}
             if (chosen_event == -1) { chosen_event = 0; std::cout << endl; goto enter_chosen_banner; }
-            if (chosen_event > 0 && chosen_event < 4 && chosen_event == (int)chosen_event) quit = 0; else { std::cout << endl << "Invalid event!" << endl << endl; goto enter_chosen_event_3; }
+            if (chosen_event > 0 && chosen_event < 4 && chosen_event == (int)chosen_event) quit = 0; else { std::cout << endl << "Invalid event!" << endl << endl; goto enter_chosen_event; }
         } break;
         case 4: {
-        enter_chosen_event_4:
             chosen_event = 0;
             std::cout << endl << "Choose Your Events:" << endl
-                << "-1: Re-choose Wishes (Banners)" << endl
+                << "-1: Re-choose Wishes (Banners) (Records will be reset!)" << endl
                 << "1: Beginners' wish" << endl << endl;
             std::cin >> chosen_event;
-            if (cin.fail()) {chosen_event = 0; std::cout << endl << "Character(s) cannot be read!" << endl; cin.clear(); cin.ignore(32767,'\n'); goto enter_chosen_event_4;}
+            if (cin.fail()) {chosen_event = 0; std::cout << endl << "Character(s) cannot be read!" << endl; cin.clear(); cin.ignore(32767,'\n'); goto enter_chosen_event;}
             if (chosen_event == -1) { chosen_event = 0; std::cout << endl; goto enter_chosen_banner; }
-            if (chosen_event == 1 && chosen_event == (int)chosen_event) quit = 0; else { std::cout << endl << "Invalid event!" << endl << endl; goto enter_chosen_event_4; } } break;
+            if (chosen_event == 1 && chosen_event == (int)chosen_event) quit = 0; else { std::cout << endl << "Invalid event!" << endl << endl; goto enter_chosen_event; } } break;
         default: {chosen_banner = 0; chosen_event = 0; quit = 1; std::cout << "Invalid banner!" << endl << endl; goto enter_chosen_banner; }
         }
-        while (wishes_number >= 0) {
+        while (1) {
             if (quit == 1) goto full_quit;
             enter_wishes_number:
-            std::cout << endl << "How many wishes?" << endl << "-1: Re-choose Wishes (Banners); 1: 1 Wish; 10: 10 Wishes; -2: Show Luckiest 10 Pulls (unbroken)" << endl << endl;
+            std::cout << endl << "How many wishes?" << endl << "-1: Re-choose Wishes (Banners); 1: 1 Wish; 10: 10 Wishes; -2: Show Luckiest 10 Pulls (unbroken); -3: Reset records" << endl << endl;
             std::cin >> wishes_number;
             if (cin.fail()) {wishes_number = 0; std::cout << endl << "Character(s) cannot be read!" << endl; cin.clear(); cin.ignore(32767,'\n'); goto enter_wishes_number;}
             std::cout << endl;
+            if (wishes_number == -1){wishes_number = 0; goto enter_chosen_event;}
             if (wishes_number == -2){
                 if(count < 10) {std::cout << "Default" << endl; goto enter_wishes_number; }
                 std::cout << "Luckiness: " << luckiest << endl;
@@ -417,8 +415,46 @@ int main() {
                 }
                 goto enter_wishes_number;
             }
+            if (wishes_number == -3){
+                wishes_number = 0;
+                four_star_assurance_number = 1;
+                five_star_assurance_number = 1;
+                five_star_guarantee_number = 0;
+                four_star_guarantee_number = 0;
+                count = 0;
+                five_count = 0;
+                five_count_c = 0;
+                five_count_w = 0;
+                four_count = 0;
+                four_count_c = 0;
+                four_count_w = 0;
+                is_noelle = 1;
+                ave_fives = 0;
+                max_fives = 1;
+                min_fives = 90;
+                max_fivesth = 1;
+                min_fivesth = 1;
+                max_fivecount = 1;
+                min_fivecount = 1;
+                unmet4_c = 0;
+                unmet4_w = 0;
+                unmet5_c = 0;
+                unmet5_w = 0;
+                for(int ini = 0; ini < 128; ini ++) {pcount[ini] = 0;}
+                luck = 0;
+                for(int ini = 0; ini < 10; ini ++) {lucklocation[ini] = ini + 1;}
+                for(int ini = 0; ini < 10; ini ++) {lucksublocation[ini] = ini + 1;}
+                for(int ini = 0; ini < 10; ini ++) {luckkind[ini] = 127;}
+                for(int ini = 0; ini < 10; ini ++) {luckstar[ini] = 3;}
+                for(int ini = 0; ini < 10; ini ++) {lucktype[ini] = 1;}
+                luckiest = 0;
+                for(int ini = 0; ini < 10; ini ++) {luckiestlocation[ini] = ini + 1;}
+                for(int ini = 0; ini < 10; ini ++) {luckiestsublocation[ini] = ini + 1;}
+                for(int ini = 0; ini < 10; ini ++) {luckiestkind[ini] = 127;}
+                goto enter_wishes_number;
+            }
             //if (chosen_banner == 4 && chosen_event == 1 && wishes_number != 10) { wishes_number = 0; std::cout << "Invalid number of wishes!" << endl; goto enter_wishes_number; }
-            //if (!(wishes_number == -1||wishes_number == 10||wishes_number == 1)){ wishes_number = 0; std::cout << "Invalid number of wishes!" << endl; goto enter_wishes_number; }
+            //if (!(wishes_number == -1||wishes_number == 1||wishes_number == 10||wishes_number == -2||wishes_number == -3)){ wishes_number = 0; std::cout << "Invalid number of wishes!" << endl; goto enter_wishes_number; }
             auto start = std::chrono::steady_clock::now();
             if (chosen_banner == 1 && chosen_event == 1) {
                 while (wishes_number > 0) {

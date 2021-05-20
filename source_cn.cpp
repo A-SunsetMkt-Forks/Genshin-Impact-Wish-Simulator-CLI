@@ -156,6 +156,7 @@ int rspick(int* kindx, int sizekind) {
 int main() {
     std::cout << "原神祈愿模拟器（命令行）V1.5.5" << endl << endl;
     while (1) {
+        enter_chosen_banner:
         int chosen_banner = 0;
         int chosen_event = 0;
         int wishes_number = 0;
@@ -194,19 +195,18 @@ int main() {
         long long int luckiestlocation[10] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
         long long int luckiestsublocation[10] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
         int luckiestkind[10] = {127, 127, 127, 127, 127, 127, 127, 127, 127, 127};
-        enter_chosen_banner:
         chosen_banner = 0;
         std::cout << "选择卡池类型:" << endl;
         std::cout << "-1: 退出; 1: 角色活动祈愿; 2: 武器活动祈愿; 3: 常驻祈愿; 4: 新手祈愿;" << endl << endl;
         std::cin >> chosen_banner;
         if (cin.fail()) {chosen_banner = 0; std::cout << endl << "非法字符!" << endl; cin.clear(); cin.ignore(32767,'\n'); goto enter_chosen_banner;}
+        enter_chosen_event:
         switch (chosen_banner) {
         case -1: goto full_quit;
         case 1: {
-        enter_chosen_event_1:
             chosen_event = 0;
             std::cout << endl << "选择活动类型:" << endl
-                << "-1: 重新选择卡池类型" << endl
+                << "-1: 重新选择卡池类型 (将重置记录)" << endl
                 << "1: 杯装之诗/20200928-20201018 (温迪, 芭芭拉, 菲谢尔, 香菱)" << endl
                 << "2: 闪焰的驻足/20201020-20201110 (可莉, 行秋, 诺艾尔, 砂糖)" << endl
                 << "3: 暂别冬都/20201111-20201201 (达达利亚, 迪奥娜, 北斗, 凝光)" << endl
@@ -221,15 +221,14 @@ int main() {
                 << "12: 陵薮市朝/20210428-20210518 (钟离, 烟绯, 诺艾尔, 迪奥娜)" << endl
                 << "13: 浪涌之瞬/20210518-20210608 (优菈, 辛焱, 行秋, 北斗)" << endl << endl;
             std::cin >> chosen_event;
-            if (cin.fail()) {chosen_event = 0; std::cout << endl << "非法字符!" << endl; cin.clear(); cin.ignore(32767,'\n'); goto enter_chosen_event_1;}
+            if (cin.fail()) {chosen_event = 0; std::cout << endl << "非法字符!" << endl; cin.clear(); cin.ignore(32767,'\n'); goto enter_chosen_event;}
             if (chosen_event == -1) { chosen_event = 0; std::cout << endl; goto enter_chosen_banner; }
-            if (chosen_event > 0 && chosen_event < 14 && chosen_event == (int)chosen_event) quit = 0; else { std::cout << endl << "无效活动类型!" << endl << endl; goto enter_chosen_event_1; }
+            if (chosen_event > 0 && chosen_event < 14 && chosen_event == (int)chosen_event) quit = 0; else { std::cout << endl << "无效活动类型!" << endl << endl; goto enter_chosen_event; }
         } break;
         case 2: {
-        enter_chosen_event_2:
             chosen_event = 0;
             std::cout << endl << "选择活动类型:" << endl
-                << "-1: 重新选择卡池类型" << endl
+                << "-1: 重新选择卡池类型 (将重置记录)" << endl
                 << "1: 神铸赋形/20200928-20201018 (风鹰剑, 阿莫斯之弓, 笛剑, 钟剑, 流浪乐章, 绝弦, 西风长枪)" << endl
                 << "2: 神铸赋形/20201020-20201109 (四风原典, 狼的末路, 祭礼剑, 祭礼弓, 祭礼大剑, 祭礼残章, 匣里灭辰)" << endl
                 << "3: 神铸赋形/20201111-20201201 (尘世之锁, 天空之翼, 雨裁, 昭心, 弓藏, 西风长枪, 笛剑)" << endl
@@ -243,42 +242,41 @@ int main() {
                 << "11: 神铸赋形/20210428-20210518 (斫峰之刃, 尘世之锁, 笛剑, 千岩古剑, 千岩长枪, 昭心, 祭礼弓)" << endl
                 << "12: 神铸赋形/20210518-20210608 (松籁响起之时, 风鹰剑, 祭礼剑, 雨裁, 匣里灭辰, 祭礼残章, 弓藏)" << endl << endl;
             std::cin >> chosen_event;
-            if (cin.fail()) {chosen_event = 0; std::cout << endl << "非法字符!" << endl; cin.clear(); cin.ignore(32767,'\n'); goto enter_chosen_event_2;}
+            if (cin.fail()) {chosen_event = 0; std::cout << endl << "非法字符!" << endl; cin.clear(); cin.ignore(32767,'\n'); goto enter_chosen_event;}
             if (chosen_event == -1) { chosen_event = 0; std::cout << endl; goto enter_chosen_banner; }
-            if (chosen_event > 0 && chosen_event < 13 && chosen_event == (int)chosen_event) quit = 0; else { std::cout << endl << "无效活动类型!" << endl << endl; goto enter_chosen_event_2; }
+            if (chosen_event > 0 && chosen_event < 13 && chosen_event == (int)chosen_event) quit = 0; else { std::cout << endl << "无效活动类型!" << endl << endl; goto enter_chosen_event; }
         } break;
         case 3: {
-        enter_chosen_event_3:
             chosen_event = 0;
             std::cout << endl << "选择活动类型:" << endl
-                << "-1: 重新选择卡池类型" << endl
+                << "-1: 重新选择卡池类型 (将重置记录)" << endl
                 << "1: 奔行世间/20200928-20201222 (公测)" << endl
                 << "2: 奔行世间/20201223-20210427 (新增迪奥娜和辛焱)" << endl
                 << "3: 奔行世间/20210428- (新增罗莎莉亚)" << endl << endl;
             std::cin >> chosen_event;
-            if (cin.fail()) {chosen_event = 0; std::cout << endl << "非法字符!" << endl; cin.clear(); cin.ignore(32767,'\n'); goto enter_chosen_event_3;}
+            if (cin.fail()) {chosen_event = 0; std::cout << endl << "非法字符!" << endl; cin.clear(); cin.ignore(32767,'\n'); goto enter_chosen_event;}
             if (chosen_event == -1) { chosen_event = 0; std::cout << endl; goto enter_chosen_banner; }
-            if (chosen_event > 0 && chosen_event < 4 && chosen_event == (int)chosen_event) quit = 0; else { std::cout << endl << "无效活动类型!" << endl << endl; goto enter_chosen_event_3; }
+            if (chosen_event > 0 && chosen_event < 4 && chosen_event == (int)chosen_event) quit = 0; else { std::cout << endl << "无效活动类型!" << endl << endl; goto enter_chosen_event; }
         } break;
         case 4: {
-        enter_chosen_event_4:
             chosen_event = 0;
             std::cout << endl << "选择活动类型:" << endl
-                << "-1: 重新选择卡池类型" << endl
+                << "-1: 重新选择卡池类型 (将重置记录)" << endl
                 << "1: 新手祈愿" << endl << endl;
             std::cin >> chosen_event;
-            if (cin.fail()) {chosen_event = 0; std::cout << endl << "非法字符!" << endl; cin.clear(); cin.ignore(32767,'\n'); goto enter_chosen_event_4;}
+            if (cin.fail()) {chosen_event = 0; std::cout << endl << "非法字符!" << endl; cin.clear(); cin.ignore(32767,'\n'); goto enter_chosen_event;}
             if (chosen_event == -1) { chosen_event = 0; std::cout << endl; goto enter_chosen_banner; }
-            if (chosen_event == 1 && chosen_event == (int)chosen_event) quit = 0; else { std::cout << endl << "无效活动类型!" << endl << endl; goto enter_chosen_event_4; } } break;
+            if (chosen_event == 1 && chosen_event == (int)chosen_event) quit = 0; else { std::cout << endl << "无效活动类型!" << endl << endl; goto enter_chosen_event; } } break;
         default: {chosen_banner = 0; chosen_event = 0; quit = 1; std::cout << "无效卡池类型!" << endl << endl; goto enter_chosen_banner; }
         }
-        while (wishes_number >= 0) {
+        while (1) {
             if (quit == 1) goto full_quit;
             enter_wishes_number:
-            std::cout << endl << "抽几发?" << endl << "-1: 重新选择卡池类型; 1: 1发; 10: 10发; -2: 显示运气最佳的连续十发" << endl << endl;
+            std::cout << endl << "抽几发?" << endl << "-1: 重新选择卡池类型; 1: 1发; 10: 10发; -2: 显示运气最佳的连续十发; -3: 重置记录" << endl << endl;
             std::cin >> wishes_number;
             if (cin.fail()) {wishes_number = 0; std::cout << endl << "非法字符!" << endl; cin.clear(); cin.ignore(32767,'\n'); goto enter_wishes_number;}
             std::cout << endl;
+            if (wishes_number == -1){wishes_number = 0; goto enter_chosen_event;}
             if (wishes_number == -2){
                 if(count < 10) {std::cout << "默认空数据" << endl; goto enter_wishes_number; }
                 std::cout << "好运参考值: " << luckiest << endl;
@@ -417,8 +415,46 @@ int main() {
                 }
                 goto enter_wishes_number;
             }
+            if (wishes_number == -3){
+                wishes_number = 0;
+                four_star_assurance_number = 1;
+                five_star_assurance_number = 1;
+                five_star_guarantee_number = 0;
+                four_star_guarantee_number = 0;
+                count = 0;
+                five_count = 0;
+                five_count_c = 0;
+                five_count_w = 0;
+                four_count = 0;
+                four_count_c = 0;
+                four_count_w = 0;
+                is_noelle = 1;
+                ave_fives = 0;
+                max_fives = 1;
+                min_fives = 90;
+                max_fivesth = 1;
+                min_fivesth = 1;
+                max_fivecount = 1;
+                min_fivecount = 1;
+                unmet4_c = 0;
+                unmet4_w = 0;
+                unmet5_c = 0;
+                unmet5_w = 0;
+                for(int ini = 0; ini < 128; ini ++) {pcount[ini] = 0;}
+                luck = 0;
+                for(int ini = 0; ini < 10; ini ++) {lucklocation[ini] = ini + 1;}
+                for(int ini = 0; ini < 10; ini ++) {lucksublocation[ini] = ini + 1;}
+                for(int ini = 0; ini < 10; ini ++) {luckkind[ini] = 127;}
+                for(int ini = 0; ini < 10; ini ++) {luckstar[ini] = 3;}
+                for(int ini = 0; ini < 10; ini ++) {lucktype[ini] = 1;}
+                luckiest = 0;
+                for(int ini = 0; ini < 10; ini ++) {luckiestlocation[ini] = ini + 1;}
+                for(int ini = 0; ini < 10; ini ++) {luckiestsublocation[ini] = ini + 1;}
+                for(int ini = 0; ini < 10; ini ++) {luckiestkind[ini] = 127;}
+                goto enter_wishes_number;
+            }
             //if (chosen_banner == 4 && chosen_event == 1 && wishes_number != 10) { wishes_number = 0; std::cout << "Invalid number of wishes!" << endl; goto enter_wishes_number; }
-            //if (!(wishes_number == -1||wishes_number == 10||wishes_number == 1)){ wishes_number = 0; std::cout << "Invalid number of wishes!" << endl; goto enter_wishes_number; }
+            //if (!(wishes_number == -1||wishes_number == 1||wishes_number == 10||wishes_number == -2||wishes_number == -3)){ wishes_number = 0; std::cout << "Invalid number of wishes!" << endl; goto enter_wishes_number; }
             auto start = std::chrono::steady_clock::now();
             if (chosen_banner == 1 && chosen_event == 1) {
                 while (wishes_number > 0) {
@@ -33116,8 +33152,8 @@ int main() {
                     std::cout << endl << "你已经抽了 " << count << " 发。" << endl
                         << "五星角色或武器:   " << five_count << "  " << five_count * 100.0 / count << "%" << endl
                         << "四星角色或武器:   " << four_count << "  " << four_count * 100.0 / count << "%" << endl
-                        << "连续非五星最高纪录:   " << max_fives << " 发。发生在第 " << max_fivesth << " 次保底单元。即第 " << max_fivecount + 1 << " 次祈愿。" << endl
-                        << "连续非五星最低纪录:   " << min_fives << " 发。发生在第 " << min_fivesth << " 次保底单元。即第 " << min_fivecount + 1 << " 次祈愿。" << endl
+                        << "连续非五星最高纪录:   " << max_fives << " 发。发生在第 " << max_fivesth << " 个保底单元, 即第 " << max_fivecount + 1 << " 次祈愿。" << endl
+                        << "连续非五星最低纪录:   " << min_fives << " 发。发生在第 " << min_fivesth << " 个保底单元, 即第 " << min_fivecount + 1 << " 次祈愿。" << endl
                         << "连续非五星平均祈愿数:   " << ave_fives * 1.0 / five_count << endl
                         << "五星角色 : 五星武器 : 四星角色 : 四星武器   " << five_count_c << " : " << five_count_w << " : " << four_count_c << " : " << four_count_w << endl << endl;
                 }
