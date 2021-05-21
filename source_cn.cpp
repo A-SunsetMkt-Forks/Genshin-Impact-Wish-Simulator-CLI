@@ -6,7 +6,7 @@
 #define ULTRAPOS 437580000
 using namespace std;
 
-unsigned int seed = (unsigned int) std::chrono::high_resolution_clock::now().time_since_epoch().count();
+unsigned long long int seed = (unsigned long long int) std::chrono::high_resolution_clock::now().time_since_epoch().count();
 std::mt19937_64 generator(seed);
 
 string pname[128] = {
@@ -143,7 +143,7 @@ string pname[128] = {
 int rspick(int* kindx, int sizekind) {
     int kindout = kindx[1];
     int index = 0;
-    int temp221 = 0;
+    long long int temp221 = 0;
     for (; index < sizekind; index++)
     {
         temp221 = generator() % ((long long int)(index) + 1);
@@ -442,14 +442,14 @@ int main() {
                 unmet5_w = 0;
                 for(int ini = 0; ini < 128; ini ++) {pcount[ini] = 0;}
                 luck = 0;
-                for(int ini = 0; ini < 10; ini ++) {lucklocation[ini] = ini + 1;}
-                for(int ini = 0; ini < 10; ini ++) {lucksublocation[ini] = ini + 1;}
+                for(int ini = 0; ini < 10; ini ++) {lucklocation[ini] = (long long int) ini + 1;}
+                for(int ini = 0; ini < 10; ini ++) {lucksublocation[ini] = (long long int) ini + 1;}
                 for(int ini = 0; ini < 10; ini ++) {luckkind[ini] = 127;}
                 for(int ini = 0; ini < 10; ini ++) {luckstar[ini] = 3;}
                 for(int ini = 0; ini < 10; ini ++) {lucktype[ini] = 1;}
                 luckiest = 0;
-                for(int ini = 0; ini < 10; ini ++) {luckiestlocation[ini] = ini + 1;}
-                for(int ini = 0; ini < 10; ini ++) {luckiestsublocation[ini] = ini + 1;}
+                for(int ini = 0; ini < 10; ini ++) {luckiestlocation[ini] = (long long int) ini + 1;}
+                for(int ini = 0; ini < 10; ini ++) {luckiestsublocation[ini] = (long long int) ini + 1;}
                 for(int ini = 0; ini < 10; ini ++) {luckiestkind[ini] = 127;}
                 goto enter_wishes_number;
             }
