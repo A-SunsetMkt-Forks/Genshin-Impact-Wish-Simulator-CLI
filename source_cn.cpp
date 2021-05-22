@@ -154,7 +154,7 @@ int rspick(int* kindx, int sizekind) {
 }
 
 int main() {
-    std::cout << "原神祈愿模拟器（命令行）V1.5.5.1" << endl << endl;
+    std::cout << "原神祈愿模拟器（命令行）V1.5.5.2" << endl << endl;
     while (1) {
     enter_chosen_banner:
         int chosen_banner = 0;
