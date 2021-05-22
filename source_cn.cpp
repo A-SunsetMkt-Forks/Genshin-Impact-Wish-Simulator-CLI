@@ -10,92 +10,92 @@ unsigned long long int seed = (unsigned long long int) std::chrono::high_resolut
 std::mt19937_64 generator(seed);
 
 string pname[128] = {
-                "¿ÌÇç",
-                "ÄªÄÈ",
-                "ÆßÆß",
-                "µÏÂ¬¿Ë",
-                "ÇÙ",
-                "°¢ÄªË¹Ö®¹­",
-                "Ìì¿ÕÖ®Òí",
-                "ËÄ·çÔ­µä",
-                "Ìì¿ÕÖ®¾í",
-                "ºÍè±ğ°",
-                "Ìì¿ÕÖ®¼¹",
-                "ÀÇµÄÄ©Â·",
-                "Ìì¿ÕÖ®°Á",
-                "Ìì¿ÕÖ®ÈĞ",
-                "·çÓ¥½£",
-                "ÂŞÉ¯ÀòÑÇ",
-                "ĞÁìÍ",
-                "É°ÌÇ",
-                "µÏ°ÂÄÈ",
-                "ÖØÔÆ",
-                "Åµ°¬¶û",
-                "°àÄáÌØ",
-                "·ÆĞ»¶û",
-                "Äı¹â",
-                "ĞĞÇï",
-                "±±¶·",
-                "ÏãÁâ",
-                "°²°Ø",
-                "À×Ôó",
-                "¿­ÑÇ",
-                "°Å°ÅÀ­",
-                "ÀöÉ¯",
-                "¹­²Ø",
-                "¼ÀÀñ¹­",
-                "¾øÏÒ",
-                "Î÷·çÁÔ¹­",
-                "ÕÑĞÄ",
-                "¼ÀÀñ²ĞÕÂ",
-                "Á÷ÀËÀÖÕÂ",
-                "Î÷·çÃØµä",
-                "Î÷·ç³¤Ç¹",
-                "Ï»ÀïÃğ³½",
-                "Óê²Ã",
-                "¼ÀÀñ´ó½£",
-                "ÖÓ½£",
-                "Î÷·ç´ó½£",
-                "Ï»ÀïÁúÒ÷",
-                "¼ÀÀñ½£",
-                "µÑ½£",
-                "Î÷·ç½£",
-                "ÁÔ¹­",
-                "ÉñÉäÊÖÖ®ÊÄ",
-                "Ñ»Óğ¹­",
-                "ôäÓñ·¨Çò",
-                "ÌÖÁúÓ¢½ÜÌ·",
-                "Ä§µ¼Ğ÷ÂÛ",
-                "ºÚÓ§Ç¹",
-                "ÒÔÀí·şÈË",
-                "ãåÔ¡ÁúÑªµÄ½£",
-                "ÌúÓ°À«½£",
-                "·ÉÌìÓù½£",
-                "ÀèÃ÷Éñ½£",
-                "ÀäÈĞ",
-                "ÎÂµÏ",
-                "¿ÉÀò",
-                "´ï´ïÀûÑÇ",
-                "ÖÓÀë",
-                "°¢±´¶à",
-                "¸ÊÓê",
-                "÷Ì",
-                "ºúÌÒ",
-                "ÑÌç³",
-                "ÓÅÇ‰",
-                "³¾ÊÀÖ®Ëø",
-                "¹áºçÖ®éÃ",
-                "ÎŞ¹¤Ö®½£",
-                "í½·åÖ®ÈĞ",
-                "ÅÍÑÒ½áÂÌ",
-                "»¤Ä¦Ö®ÕÈ",
-                "Ç§ÑÒ¹Å½£",
-                "Ç§ÑÒ³¤Ç¹",
-                "ÖÕÄ©àµÌ¾Ö®Ê«",
-                "°µÏïÉÁ¹â",
-                "°µÏïµÄ¾ÆÓëÊ«",
-                "°µÏïÁÔÊÖ",
-                "ËÉô¥ÏìÆğÖ®Ê±",
+                "åˆ»æ™´",
+                "è«å¨œ",
+                "ä¸ƒä¸ƒ",
+                "è¿ªå¢å…‹",
+                "ç´",
+                "é˜¿è«æ–¯ä¹‹å¼“",
+                "å¤©ç©ºä¹‹ç¿¼",
+                "å››é£åŸå…¸",
+                "å¤©ç©ºä¹‹å·",
+                "å’Œç’é¸¢",
+                "å¤©ç©ºä¹‹è„Š",
+                "ç‹¼çš„æœ«è·¯",
+                "å¤©ç©ºä¹‹å‚²",
+                "å¤©ç©ºä¹‹åˆƒ",
+                "é£é¹°å‰‘",
+                "ç½—èè‰äºš",
+                "è¾›ç„±",
+                "ç ‚ç³–",
+                "è¿ªå¥¥å¨œ",
+                "é‡äº‘",
+                "è¯ºè‰¾å°”",
+                "ç­å°¼ç‰¹",
+                "è²è°¢å°”",
+                "å‡å…‰",
+                "è¡Œç§‹",
+                "åŒ—æ–—",
+                "é¦™è±",
+                "å®‰æŸ",
+                "é›·æ³½",
+                "å‡¯äºš",
+                "èŠ­èŠ­æ‹‰",
+                "ä¸½è",
+                "å¼“è—",
+                "ç¥­ç¤¼å¼“",
+                "ç»å¼¦",
+                "è¥¿é£çŒå¼“",
+                "æ˜­å¿ƒ",
+                "ç¥­ç¤¼æ®‹ç« ",
+                "æµæµªä¹ç« ",
+                "è¥¿é£ç§˜å…¸",
+                "è¥¿é£é•¿æª",
+                "åŒ£é‡Œç­è¾°",
+                "é›¨è£",
+                "ç¥­ç¤¼å¤§å‰‘",
+                "é’Ÿå‰‘",
+                "è¥¿é£å¤§å‰‘",
+                "åŒ£é‡Œé¾™åŸ",
+                "ç¥­ç¤¼å‰‘",
+                "ç¬›å‰‘",
+                "è¥¿é£å‰‘",
+                "çŒå¼“",
+                "ç¥å°„æ‰‹ä¹‹èª“",
+                "é¸¦ç¾½å¼“",
+                "ç¿¡ç‰æ³•çƒ",
+                "è®¨é¾™è‹±æ°è°­",
+                "é­”å¯¼ç»ªè®º",
+                "é»‘ç¼¨æª",
+                "ä»¥ç†æœäºº",
+                "æ²æµ´é¾™è¡€çš„å‰‘",
+                "é“å½±é˜”å‰‘",
+                "é£å¤©å¾¡å‰‘",
+                "é»æ˜ç¥å‰‘",
+                "å†·åˆƒ",
+                "æ¸©è¿ª",
+                "å¯è‰",
+                "è¾¾è¾¾åˆ©äºš",
+                "é’Ÿç¦»",
+                "é˜¿è´å¤š",
+                "ç”˜é›¨",
+                "é­ˆ",
+                "èƒ¡æ¡ƒ",
+                "çƒŸç»¯",
+                "ä¼˜èˆ",
+                "å°˜ä¸–ä¹‹é”",
+                "è´¯è™¹ä¹‹æ§Š",
+                "æ— å·¥ä¹‹å‰‘",
+                "æ–«å³°ä¹‹åˆƒ",
+                "ç£å²©ç»“ç»¿",
+                "æŠ¤æ‘©ä¹‹æ–",
+                "åƒå²©å¤å‰‘",
+                "åƒå²©é•¿æª",
+                "ç»ˆæœ«å—Ÿå¹ä¹‹è¯—",
+                "æš—å··é—ªå…‰",
+                "æš—å··çš„é…’ä¸è¯—",
+                "æš—å··çŒæ‰‹",
+                "æ¾ç±å“èµ·ä¹‹æ—¶",
                 "Placeholder",
                 "Placeholder",
                 "Placeholder",
@@ -154,7 +154,7 @@ int rspick(int* kindx, int sizekind) {
 }
 
 int main() {
-    std::cout << "Ô­ÉñÆíÔ¸Ä£ÄâÆ÷£¨ÃüÁîĞĞ£©V1.5.5.1" << endl << endl;
+    std::cout << "åŸç¥ç¥ˆæ„¿æ¨¡æ‹Ÿå™¨ï¼ˆå‘½ä»¤è¡Œï¼‰V1.5.5.1" << endl << endl;
     while (1) {
     enter_chosen_banner:
         int chosen_banner = 0;
@@ -208,80 +208,80 @@ int main() {
         int size_nup_four_c = 1;
         int size_nup_four_w = 1;
         int three_g[18] = { 0 };
-        int five_check[8] = { 0 };
+        int five_check[8] = { 127 };
         int four_check[8] = { 127 };
-        std::cout << "Ñ¡Ôñ¿¨³ØÀàĞÍ:" << endl;
-        std::cout << "-1: ÍË³ö; 1: ½ÇÉ«»î¶¯ÆíÔ¸; 2: ÎäÆ÷»î¶¯ÆíÔ¸; 3: ³£×¤ÆíÔ¸; 4: ĞÂÊÖÆíÔ¸;" << endl << endl;
+        std::cout << "é€‰æ‹©å¡æ± ç±»å‹:" << endl;
+        std::cout << "-1: é€€å‡º; 1: è§’è‰²æ´»åŠ¨ç¥ˆæ„¿; 2: æ­¦å™¨æ´»åŠ¨ç¥ˆæ„¿; 3: å¸¸é©»ç¥ˆæ„¿; 4: æ–°æ‰‹ç¥ˆæ„¿;" << endl << endl;
         std::cin >> chosen_banner;
-        if (cin.fail()) { chosen_banner = 0; std::cout << endl << "·Ç·¨×Ö·û!" << endl; cin.clear(); cin.ignore(32767, '\n'); goto enter_chosen_banner; }
+        if (cin.fail()) { chosen_banner = 0; std::cout << endl << "éæ³•å­—ç¬¦!" << endl; cin.clear(); cin.ignore(32767, '\n'); goto enter_chosen_banner; }
         enter_chosen_event:
         switch (chosen_banner) {
         case -1: goto full_quit;
         case 1: {
             chosen_event = 0;
-            std::cout << endl << "Ñ¡Ôñ»î¶¯ÀàĞÍ:" << endl
-                << "-1: ÖØĞÂÑ¡Ôñ¿¨³ØÀàĞÍ (½«ÖØÖÃ¼ÇÂ¼)" << endl
-                << "1: ±­×°Ö®Ê«/20200928-20201018 (ÎÂµÏ, °Å°ÅÀ­, ·ÆĞ»¶û, ÏãÁâ)" << endl
-                << "2: ÉÁÑæµÄ×¤×ã/20201020-20201110 (¿ÉÀò, ĞĞÇï, Åµ°¬¶û, É°ÌÇ)" << endl
-                << "3: Ôİ±ğ¶¬¶¼/20201111-20201201 (´ï´ïÀûÑÇ, µÏ°ÂÄÈ, ±±¶·, Äı¹â)" << endl
-                << "4: ÁêŞ´ÊĞ³¯/20201201-20201222 (ÖÓÀë, ĞÁìÍ, À×Ôó, ÖØÔÆ)" << endl
-                << "5: ÉîÃØÖ®Ï¢/20201223-20210112 (°¢±´¶à, ·ÆĞ»¶û, É°ÌÇ, °àÄáÌØ)" << endl
-                << "6: ¸¡ÉúÊëÀ´/20210112-20210202 (¸ÊÓê, ÏãÁâ, ĞĞÇï, Åµ°¬¶û)" << endl
-                << "7: ÑÌ»ğÖ®Ñû/20210203-20210217 (÷Ì, µÏ°ÂÄÈ, ±±¶·, ĞÁìÍ)" << endl
-                << "8: ÓãÁúµÆÖç/20210217-20210302 (¿ÌÇç, Äı¹â, °àÄáÌØ, °Å°ÅÀ­)" << endl
-                << "9: ³àÍÅ¿ªÊ±/20210302-20210316 (ºúÌÒ, ĞĞÇï, ÏãÁâ, ÖØÔÆ)" << endl
-                << "10: ±­×°Ö®Ê«/20210317-20210406 (ÎÂµÏ, É°ÌÇ, À×Ôó, Åµ°¬¶û)" << endl
-                << "11: Ôİ±ğ¶¬¶¼/20210406-20210427 (´ï´ïÀûÑÇ, ÂŞÉ¯ÀòÑÇ, °Å°ÅÀ­, ·ÆĞ»¶û)" << endl
-                << "12: ÁêŞ´ÊĞ³¯/20210428-20210518 (ÖÓÀë, ÑÌç³, Åµ°¬¶û, µÏ°ÂÄÈ)" << endl
-                << "13: ÀËÓ¿Ö®Ë²/20210518-20210608 (ÓÅÇ‰, ĞÁìÍ, ĞĞÇï, ±±¶·)" << endl << endl;
+            std::cout << endl << "é€‰æ‹©æ´»åŠ¨ç±»å‹:" << endl
+                << "-1: é‡æ–°é€‰æ‹©å¡æ± ç±»å‹ (å°†é‡ç½®è®°å½•)" << endl
+                << "1: æ¯è£…ä¹‹è¯—/20200928-20201018 (æ¸©è¿ª, èŠ­èŠ­æ‹‰, è²è°¢å°”, é¦™è±)" << endl
+                << "2: é—ªç„°çš„é©»è¶³/20201020-20201110 (å¯è‰, è¡Œç§‹, è¯ºè‰¾å°”, ç ‚ç³–)" << endl
+                << "3: æš‚åˆ«å†¬éƒ½/20201111-20201201 (è¾¾è¾¾åˆ©äºš, è¿ªå¥¥å¨œ, åŒ—æ–—, å‡å…‰)" << endl
+                << "4: é™µè–®å¸‚æœ/20201201-20201222 (é’Ÿç¦», è¾›ç„±, é›·æ³½, é‡äº‘)" << endl
+                << "5: æ·±ç§˜ä¹‹æ¯/20201223-20210112 (é˜¿è´å¤š, è²è°¢å°”, ç ‚ç³–, ç­å°¼ç‰¹)" << endl
+                << "6: æµ®ç”Ÿå­°æ¥/20210112-20210202 (ç”˜é›¨, é¦™è±, è¡Œç§‹, è¯ºè‰¾å°”)" << endl
+                << "7: çƒŸç«ä¹‹é‚€/20210203-20210217 (é­ˆ, è¿ªå¥¥å¨œ, åŒ—æ–—, è¾›ç„±)" << endl
+                << "8: é±¼é¾™ç¯æ˜¼/20210217-20210302 (åˆ»æ™´, å‡å…‰, ç­å°¼ç‰¹, èŠ­èŠ­æ‹‰)" << endl
+                << "9: èµ¤å›¢å¼€æ—¶/20210302-20210316 (èƒ¡æ¡ƒ, è¡Œç§‹, é¦™è±, é‡äº‘)" << endl
+                << "10: æ¯è£…ä¹‹è¯—/20210317-20210406 (æ¸©è¿ª, ç ‚ç³–, é›·æ³½, è¯ºè‰¾å°”)" << endl
+                << "11: æš‚åˆ«å†¬éƒ½/20210406-20210427 (è¾¾è¾¾åˆ©äºš, ç½—èè‰äºš, èŠ­èŠ­æ‹‰, è²è°¢å°”)" << endl
+                << "12: é™µè–®å¸‚æœ/20210428-20210518 (é’Ÿç¦», çƒŸç»¯, è¯ºè‰¾å°”, è¿ªå¥¥å¨œ)" << endl
+                << "13: æµªæ¶Œä¹‹ç¬/20210518-20210608 (ä¼˜èˆ, è¾›ç„±, è¡Œç§‹, åŒ—æ–—)" << endl << endl;
             std::cin >> chosen_event;
-            if (cin.fail()) { chosen_event = 0; std::cout << endl << "·Ç·¨×Ö·û!" << endl; cin.clear(); cin.ignore(32767, '\n'); goto enter_chosen_event; }
+            if (cin.fail()) { chosen_event = 0; std::cout << endl << "éæ³•å­—ç¬¦!" << endl; cin.clear(); cin.ignore(32767, '\n'); goto enter_chosen_event; }
             if (chosen_event == -1) { chosen_event = 0; std::cout << endl; goto enter_chosen_banner; }
-            if (chosen_event > 0 && chosen_event < 14 && chosen_event == (int)chosen_event) quit = 0; else { std::cout << endl << "ÎŞĞ§»î¶¯ÀàĞÍ!" << endl << endl; goto enter_chosen_event; }
+            if (chosen_event > 0 && chosen_event < 14 && chosen_event == (int)chosen_event) quit = 0; else { std::cout << endl << "æ— æ•ˆæ´»åŠ¨ç±»å‹!" << endl << endl; goto enter_chosen_event; }
         } break;
         case 2: {
             chosen_event = 0;
-            std::cout << endl << "Ñ¡Ôñ»î¶¯ÀàĞÍ:" << endl
-                << "-1: ÖØĞÂÑ¡Ôñ¿¨³ØÀàĞÍ (½«ÖØÖÃ¼ÇÂ¼)" << endl
-                << "1: ÉñÖı¸³ĞÎ/20200928-20201018 (·çÓ¥½£, °¢ÄªË¹Ö®¹­, µÑ½£, ÖÓ½£, Á÷ÀËÀÖÕÂ, ¾øÏÒ, Î÷·ç³¤Ç¹)" << endl
-                << "2: ÉñÖı¸³ĞÎ/20201020-20201109 (ËÄ·çÔ­µä, ÀÇµÄÄ©Â·, ¼ÀÀñ½£, ¼ÀÀñ¹­, ¼ÀÀñ´ó½£, ¼ÀÀñ²ĞÕÂ, Ï»ÀïÃğ³½)" << endl
-                << "3: ÉñÖı¸³ĞÎ/20201111-20201201 (³¾ÊÀÖ®Ëø, Ìì¿ÕÖ®Òí, Óê²Ã, ÕÑĞÄ, ¹­²Ø, Î÷·ç³¤Ç¹, µÑ½£)" << endl
-                << "4: ÉñÖı¸³ĞÎ/20201201-20201222 (¹áºçÖ®éÃ, ÎŞ¹¤Ö®½£, Ï»ÀïÁúÒ÷, ÖÓ½£, Î÷·çÃØµä, Î÷·çÁÔ¹­, Ï»ÀïÃğ³½)" << endl
-                << "5: ÉñÖı¸³ĞÎ/20201223-20210112 (í½·åÖ®ÈĞ, Ìì¿ÕÖ®¾í, Î÷·ç½£, Î÷·ç´ó½£, Î÷·ç³¤Ç¹, ¼ÀÀñ²ĞÕÂ, ¾øÏÒ)" << endl
-                << "6: ÉñÖı¸³ĞÎ/20210112-20210202 (Ìì¿ÕÖ®°Á, °¢ÄªË¹Ö®¹­, ¼ÀÀñ½£, ÖÓ½£, Ï»ÀïÃğ³½, ÕÑĞÄ, Î÷·çÁÔ¹­)" << endl
-                << "7: ÉñÖı¸³ĞÎ/20210203-20210223 (ÅÍÑÒ½áÂÌ, ºÍè±ğ°, ¹­²Ø, ÕÑĞÄ, Î÷·ç³¤Ç¹, ¼ÀÀñ´ó½£, µÑ½£)" << endl
-                << "8: ÉñÖı¸³ĞÎ/20210223-20210316 (»¤Ä¦Ö®ÕÈ, ÀÇµÄÄ©Â·, Ç§ÑÒ¹Å½£, Ç§ÑÒ³¤Ç¹, ¼ÀÀñ¹­, Á÷ÀËÀÖÕÂ, Ï»ÀïÁúÒ÷)" << endl
-                << "9: ÉñÖı¸³ĞÎ/20210317-20210406 (ÖÕÄ©àµÌ¾Ö®Ê«, Ìì¿ÕÖ®ÈĞ, °µÏïÉÁ¹â, °µÏïµÄ¾ÆÓëÊ«, Î÷·ç´ó½£, Î÷·çÁÔ¹­, Ï»ÀïÃğ³½)" << endl
-                << "10: ÉñÖı¸³ĞÎ/20210406-20210427 (Ìì¿ÕÖ®Òí, ËÄ·çÔ­µä, °µÏïÁÔÊÖ, Î÷·ç½£, ¼ÀÀñ´ó½£, Î÷·çÃØµä, Î÷·ç³¤Ç¹)" << endl
-                << "11: ÉñÖı¸³ĞÎ/20210428-20210518 (í½·åÖ®ÈĞ, ³¾ÊÀÖ®Ëø, µÑ½£, Ç§ÑÒ¹Å½£, Ç§ÑÒ³¤Ç¹, ÕÑĞÄ, ¼ÀÀñ¹­)" << endl
-                << "12: ÉñÖı¸³ĞÎ/20210518-20210608 (ËÉô¥ÏìÆğÖ®Ê±, ·çÓ¥½£, ¼ÀÀñ½£, Óê²Ã, Ï»ÀïÃğ³½, ¼ÀÀñ²ĞÕÂ, ¹­²Ø)" << endl << endl;
+            std::cout << endl << "é€‰æ‹©æ´»åŠ¨ç±»å‹:" << endl
+                << "-1: é‡æ–°é€‰æ‹©å¡æ± ç±»å‹ (å°†é‡ç½®è®°å½•)" << endl
+                << "1: ç¥é“¸èµ‹å½¢/20200928-20201018 (é£é¹°å‰‘, é˜¿è«æ–¯ä¹‹å¼“, ç¬›å‰‘, é’Ÿå‰‘, æµæµªä¹ç« , ç»å¼¦, è¥¿é£é•¿æª)" << endl
+                << "2: ç¥é“¸èµ‹å½¢/20201020-20201109 (å››é£åŸå…¸, ç‹¼çš„æœ«è·¯, ç¥­ç¤¼å‰‘, ç¥­ç¤¼å¼“, ç¥­ç¤¼å¤§å‰‘, ç¥­ç¤¼æ®‹ç« , åŒ£é‡Œç­è¾°)" << endl
+                << "3: ç¥é“¸èµ‹å½¢/20201111-20201201 (å°˜ä¸–ä¹‹é”, å¤©ç©ºä¹‹ç¿¼, é›¨è£, æ˜­å¿ƒ, å¼“è—, è¥¿é£é•¿æª, ç¬›å‰‘)" << endl
+                << "4: ç¥é“¸èµ‹å½¢/20201201-20201222 (è´¯è™¹ä¹‹æ§Š, æ— å·¥ä¹‹å‰‘, åŒ£é‡Œé¾™åŸ, é’Ÿå‰‘, è¥¿é£ç§˜å…¸, è¥¿é£çŒå¼“, åŒ£é‡Œç­è¾°)" << endl
+                << "5: ç¥é“¸èµ‹å½¢/20201223-20210112 (æ–«å³°ä¹‹åˆƒ, å¤©ç©ºä¹‹å·, è¥¿é£å‰‘, è¥¿é£å¤§å‰‘, è¥¿é£é•¿æª, ç¥­ç¤¼æ®‹ç« , ç»å¼¦)" << endl
+                << "6: ç¥é“¸èµ‹å½¢/20210112-20210202 (å¤©ç©ºä¹‹å‚², é˜¿è«æ–¯ä¹‹å¼“, ç¥­ç¤¼å‰‘, é’Ÿå‰‘, åŒ£é‡Œç­è¾°, æ˜­å¿ƒ, è¥¿é£çŒå¼“)" << endl
+                << "7: ç¥é“¸èµ‹å½¢/20210203-20210223 (ç£å²©ç»“ç»¿, å’Œç’é¸¢, å¼“è—, æ˜­å¿ƒ, è¥¿é£é•¿æª, ç¥­ç¤¼å¤§å‰‘, ç¬›å‰‘)" << endl
+                << "8: ç¥é“¸èµ‹å½¢/20210223-20210316 (æŠ¤æ‘©ä¹‹æ–, ç‹¼çš„æœ«è·¯, åƒå²©å¤å‰‘, åƒå²©é•¿æª, ç¥­ç¤¼å¼“, æµæµªä¹ç« , åŒ£é‡Œé¾™åŸ)" << endl
+                << "9: ç¥é“¸èµ‹å½¢/20210317-20210406 (ç»ˆæœ«å—Ÿå¹ä¹‹è¯—, å¤©ç©ºä¹‹åˆƒ, æš—å··é—ªå…‰, æš—å··çš„é…’ä¸è¯—, è¥¿é£å¤§å‰‘, è¥¿é£çŒå¼“, åŒ£é‡Œç­è¾°)" << endl
+                << "10: ç¥é“¸èµ‹å½¢/20210406-20210427 (å¤©ç©ºä¹‹ç¿¼, å››é£åŸå…¸, æš—å··çŒæ‰‹, è¥¿é£å‰‘, ç¥­ç¤¼å¤§å‰‘, è¥¿é£ç§˜å…¸, è¥¿é£é•¿æª)" << endl
+                << "11: ç¥é“¸èµ‹å½¢/20210428-20210518 (æ–«å³°ä¹‹åˆƒ, å°˜ä¸–ä¹‹é”, ç¬›å‰‘, åƒå²©å¤å‰‘, åƒå²©é•¿æª, æ˜­å¿ƒ, ç¥­ç¤¼å¼“)" << endl
+                << "12: ç¥é“¸èµ‹å½¢/20210518-20210608 (æ¾ç±å“èµ·ä¹‹æ—¶, é£é¹°å‰‘, ç¥­ç¤¼å‰‘, é›¨è£, åŒ£é‡Œç­è¾°, ç¥­ç¤¼æ®‹ç« , å¼“è—)" << endl << endl;
             std::cin >> chosen_event;
-            if (cin.fail()) { chosen_event = 0; std::cout << endl << "·Ç·¨×Ö·û!" << endl; cin.clear(); cin.ignore(32767, '\n'); goto enter_chosen_event; }
+            if (cin.fail()) { chosen_event = 0; std::cout << endl << "éæ³•å­—ç¬¦!" << endl; cin.clear(); cin.ignore(32767, '\n'); goto enter_chosen_event; }
             if (chosen_event == -1) { chosen_event = 0; std::cout << endl; goto enter_chosen_banner; }
-            if (chosen_event > 0 && chosen_event < 13 && chosen_event == (int)chosen_event) quit = 0; else { std::cout << endl << "ÎŞĞ§»î¶¯ÀàĞÍ!" << endl << endl; goto enter_chosen_event; }
+            if (chosen_event > 0 && chosen_event < 13 && chosen_event == (int)chosen_event) quit = 0; else { std::cout << endl << "æ— æ•ˆæ´»åŠ¨ç±»å‹!" << endl << endl; goto enter_chosen_event; }
         } break;
         case 3: {
             chosen_event = 0;
-            std::cout << endl << "Ñ¡Ôñ»î¶¯ÀàĞÍ:" << endl
-                << "-1: ÖØĞÂÑ¡Ôñ¿¨³ØÀàĞÍ (½«ÖØÖÃ¼ÇÂ¼)" << endl
-                << "1: ±¼ĞĞÊÀ¼ä/20200928-20201222 (¹«²â)" << endl
-                << "2: ±¼ĞĞÊÀ¼ä/20201223-20210427 (ĞÂÔöµÏ°ÂÄÈºÍĞÁìÍ)" << endl
-                << "3: ±¼ĞĞÊÀ¼ä/20210428- (ĞÂÔöÂŞÉ¯ÀòÑÇ)" << endl << endl;
+            std::cout << endl << "é€‰æ‹©æ´»åŠ¨ç±»å‹:" << endl
+                << "-1: é‡æ–°é€‰æ‹©å¡æ± ç±»å‹ (å°†é‡ç½®è®°å½•)" << endl
+                << "1: å¥”è¡Œä¸–é—´/20200928-20201222 (å…¬æµ‹)" << endl
+                << "2: å¥”è¡Œä¸–é—´/20201223-20210427 (æ–°å¢è¿ªå¥¥å¨œå’Œè¾›ç„±)" << endl
+                << "3: å¥”è¡Œä¸–é—´/20210428- (æ–°å¢ç½—èè‰äºš)" << endl << endl;
             std::cin >> chosen_event;
-            if (cin.fail()) { chosen_event = 0; std::cout << endl << "·Ç·¨×Ö·û!" << endl; cin.clear(); cin.ignore(32767, '\n'); goto enter_chosen_event; }
+            if (cin.fail()) { chosen_event = 0; std::cout << endl << "éæ³•å­—ç¬¦!" << endl; cin.clear(); cin.ignore(32767, '\n'); goto enter_chosen_event; }
             if (chosen_event == -1) { chosen_event = 0; std::cout << endl; goto enter_chosen_banner; }
-            if (chosen_event > 0 && chosen_event < 4 && chosen_event == (int)chosen_event) quit = 0; else { std::cout << endl << "ÎŞĞ§»î¶¯ÀàĞÍ!" << endl << endl; goto enter_chosen_event; }
+            if (chosen_event > 0 && chosen_event < 4 && chosen_event == (int)chosen_event) quit = 0; else { std::cout << endl << "æ— æ•ˆæ´»åŠ¨ç±»å‹!" << endl << endl; goto enter_chosen_event; }
         } break;
         case 4: {
             chosen_event = 0;
-            std::cout << endl << "Ñ¡Ôñ»î¶¯ÀàĞÍ:" << endl
-                << "-1: ÖØĞÂÑ¡Ôñ¿¨³ØÀàĞÍ (½«ÖØÖÃ¼ÇÂ¼)" << endl
-                << "1: ĞÂÊÖÆíÔ¸" << endl << endl;
+            std::cout << endl << "é€‰æ‹©æ´»åŠ¨ç±»å‹:" << endl
+                << "-1: é‡æ–°é€‰æ‹©å¡æ± ç±»å‹ (å°†é‡ç½®è®°å½•)" << endl
+                << "1: æ–°æ‰‹ç¥ˆæ„¿" << endl << endl;
             std::cin >> chosen_event;
-            if (cin.fail()) { chosen_event = 0; std::cout << endl << "·Ç·¨×Ö·û!" << endl; cin.clear(); cin.ignore(32767, '\n'); goto enter_chosen_event; }
+            if (cin.fail()) { chosen_event = 0; std::cout << endl << "éæ³•å­—ç¬¦!" << endl; cin.clear(); cin.ignore(32767, '\n'); goto enter_chosen_event; }
             if (chosen_event == -1) { chosen_event = 0; std::cout << endl; goto enter_chosen_banner; }
-            if (chosen_event == 1 && chosen_event == (int)chosen_event) quit = 0; else { std::cout << endl << "ÎŞĞ§»î¶¯ÀàĞÍ!" << endl << endl; goto enter_chosen_event; } } break;
-        default: {chosen_banner = 0; chosen_event = 0; quit = 1; std::cout << "ÎŞĞ§¿¨³ØÀàĞÍ!" << endl << endl; goto enter_chosen_banner; }
+            if (chosen_event == 1 && chosen_event == (int)chosen_event) quit = 0; else { std::cout << endl << "æ— æ•ˆæ´»åŠ¨ç±»å‹!" << endl << endl; goto enter_chosen_event; } } break;
+        default: {chosen_banner = 0; chosen_event = 0; quit = 1; std::cout << "æ— æ•ˆå¡æ± ç±»å‹!" << endl << endl; goto enter_chosen_banner; }
         }
         if (chosen_banner == 1) {
             switch (chosen_event) {
@@ -420,6 +420,7 @@ int main() {
                 for (int temp399 = 0; temp399 < 18; temp399++) three_g[temp399] = tempg4[temp399];
                 int tempg5[8] = { 22, 24, 31, 0, 0, 0, 0, 0 };
                 for (int temp399 = 0; temp399 < 8; temp399++) four_check[temp399] = tempg5[temp399];
+                five_check[1] = 1;
             } break;
             case 9: {
                 up_five = 71;
@@ -508,106 +509,146 @@ int main() {
             } break;
             }
         }
+        if (chosen_banner == 3) {
+            switch (chosen_event) {
+            case 1: {
+                size_nup_four_c = 11;
+                size_nup_four_w = 18;
+                int tempg0[5] = { 1, 2, 3, 4, 5 };
+                for (int temp399 = 0; temp399 < 5; temp399++) nup_five_c[temp399] = tempg0[temp399];
+                int tempg2[11] = { 18, 20, 21, 22, 23, 24, 25, 26, 27, 29, 31 };
+                for (int temp399 = 0; temp399 < 11; temp399++) nup_four_c[temp399] = tempg2[temp399];
+                int tempg3[18] = { 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50 };
+                for (int temp399 = 0; temp399 < 18; temp399++) nup_four_w[temp399] = tempg3[temp399];
+                int tempg4[18] = { 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63 };
+                for (int temp399 = 0; temp399 < 18; temp399++) three_g[temp399] = tempg4[temp399];
+            } break;
+            case 2: {
+                size_nup_four_c = 13;
+                size_nup_four_w = 18;
+                int tempg0[5] = { 1, 2, 3, 4, 5 };
+                for (int temp399 = 0; temp399 < 5; temp399++) nup_five_c[temp399] = tempg0[temp399];
+                int tempg2[11] = { 18, 20, 21, 22, 23, 24, 25, 26, 27, 29, 31 };
+                for (int temp399 = 0; temp399 < 11; temp399++) nup_four_c[temp399] = tempg2[temp399];
+                int tempg3[18] = { 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50 };
+                for (int temp399 = 0; temp399 < 18; temp399++) nup_four_w[temp399] = tempg3[temp399];
+                int tempg4[18] = { 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63 };
+                for (int temp399 = 0; temp399 < 18; temp399++) three_g[temp399] = tempg4[temp399];
+            } break;
+            case 3: {
+                size_nup_four_c = 14;
+                size_nup_four_w = 18;
+                int tempg0[5] = { 1, 2, 3, 4, 5 };
+                for (int temp399 = 0; temp399 < 5; temp399++) nup_five_c[temp399] = tempg0[temp399];
+                int tempg2[11] = { 18, 20, 21, 22, 23, 24, 25, 26, 27, 29, 31 };
+                for (int temp399 = 0; temp399 < 11; temp399++) nup_four_c[temp399] = tempg2[temp399];
+                int tempg3[18] = { 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50 };
+                for (int temp399 = 0; temp399 < 18; temp399++) nup_four_w[temp399] = tempg3[temp399];
+                int tempg4[18] = { 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63 };
+                for (int temp399 = 0; temp399 < 18; temp399++) three_g[temp399] = tempg4[temp399];
+            } break;
+            }
+        }
         while (1) {
             if (quit == 1) goto full_quit;
             enter_wishes_number:
-            std::cout << endl << "³é¼¸·¢?" << endl << "-1: ÖØĞÂÑ¡Ôñ¿¨³ØÀàĞÍ; 1: 1·¢; 10: 10·¢; -2: ÏÔÊ¾ÔËÆø×î¼ÑµÄÁ¬ĞøÊ®·¢; -3: ÖØÖÃ¼ÇÂ¼" << endl << endl;
+            std::cout << endl << "æŠ½å‡ å‘?" << endl << "-1: é‡æ–°é€‰æ‹©å¡æ± ç±»å‹; 1: 1å‘; 10: 10å‘; -2: æ˜¾ç¤ºè¿æ°”æœ€ä½³çš„è¿ç»­åå‘; -3: é‡ç½®è®°å½•" << endl << endl;
             std::cin >> wishes_number;
-            if (cin.fail()) { wishes_number = 0; std::cout << endl << "·Ç·¨×Ö·û!" << endl; cin.clear(); cin.ignore(32767, '\n'); goto enter_wishes_number; }
+            if (cin.fail()) { wishes_number = 0; std::cout << endl << "éæ³•å­—ç¬¦!" << endl; cin.clear(); cin.ignore(32767, '\n'); goto enter_wishes_number; }
             std::cout << endl;
             if (wishes_number == -1) { wishes_number = 0; goto enter_chosen_event; }
             if (wishes_number == -2) {
-                if (count < 10) { std::cout << "Ä¬ÈÏ¿ÕÊı¾İ" << endl; goto enter_wishes_number; }
-                std::cout << "ºÃÔË²Î¿¼Öµ: " << luckiest << endl;
+                if (count < 10) { std::cout << "é»˜è®¤ç©ºæ•°æ®" << endl; goto enter_wishes_number; }
+                std::cout << "å¥½è¿å‚è€ƒå€¼: " << luckiest << endl;
                 for (int templuck = 0; templuck < 10; templuck++) {
                     std::cout << luckiestlocation[templuck] << "(" << luckiestsublocation[templuck] << ")" << " ";
                     switch (luckiestkind[templuck]) {
-                    case 1: { std::cout << "!!!!!*****¿ÌÇç" << endl; } break;
-                    case 2: { std::cout << "!!!!!*****ÄªÄÈ" << endl; } break;
-                    case 3: { std::cout << "!!!!!*****ÆßÆß" << endl; } break;
-                    case 4: { std::cout << "!!!!!*****µÏÂ¬¿Ë" << endl; } break;
-                    case 5: { std::cout << "!!!!!*****ÇÙ" << endl; } break;
-                    case 6: { std::cout << "!!!!!*****°¢ÄªË¹Ö®¹­" << endl; } break;
-                    case 7: { std::cout << "!!!!!*****Ìì¿ÕÖ®Òí" << endl; } break;
-                    case 8: { std::cout << "!!!!!*****ËÄ·çÔ­µä" << endl; } break;
-                    case 9: { std::cout << "!!!!!*****Ìì¿ÕÖ®¾í" << endl; } break;
-                    case 10: { std::cout << "!!!!!*****ºÍè±ğ°" << endl; } break;
-                    case 11: { std::cout << "!!!!!*****Ìì¿ÕÖ®¼¹" << endl; } break;
-                    case 12: { std::cout << "!!!!!*****ÀÇµÄÄ©Â·" << endl; } break;
-                    case 13: { std::cout << "!!!!!*****Ìì¿ÕÖ®°Á" << endl; } break;
-                    case 14: { std::cout << "!!!!!*****Ìì¿ÕÖ®ÈĞ" << endl; } break;
-                    case 15: { std::cout << "!!!!!*****·çÓ¥½£" << endl; } break;
-                    case 16: { std::cout << "!!****ÂŞÉ¯ÀòÑÇ" << endl; } break;
-                    case 17: { std::cout << "!!****ĞÁìÍ" << endl; } break;
-                    case 18: { std::cout << "!!****É°ÌÇ" << endl; } break;
-                    case 19: { std::cout << "!!****µÏ°ÂÄÈ" << endl; } break;
-                    case 20: { std::cout << "!!****ÖØÔÆ" << endl; } break;
-                    case 21: { std::cout << "!!****Åµ°¬¶û" << endl; } break;
-                    case 22: { std::cout << "!!****°àÄáÌØ" << endl; } break;
-                    case 23: { std::cout << "!!****·ÆĞ»¶û" << endl; } break;
-                    case 24: { std::cout << "!!****Äı¹â" << endl; } break;
-                    case 25: { std::cout << "!!****ĞĞÇï" << endl; } break;
-                    case 26: { std::cout << "!!****±±¶·" << endl; } break;
-                    case 27: { std::cout << "!!****ÏãÁâ" << endl; } break;
-                    case 28: { std::cout << "!!****°²°Ø" << endl; } break;
-                    case 29: { std::cout << "!!****À×Ôó" << endl; } break;
-                    case 30: { std::cout << "!!****¿­ÑÇ" << endl; } break;
-                    case 31: { std::cout << "!!****°Å°ÅÀ­" << endl; } break;
-                    case 32: { std::cout << "!!****ÀöÉ¯" << endl; } break;
-                    case 33: { std::cout << "!!****¹­²Ø" << endl; } break;
-                    case 34: { std::cout << "!!****¼ÀÀñ¹­" << endl; } break;
-                    case 35: { std::cout << "!!****¾øÏÒ" << endl; } break;
-                    case 36: { std::cout << "!!****Î÷·çÁÔ¹­" << endl; } break;
-                    case 37: { std::cout << "!!****ÕÑĞÄ" << endl; } break;
-                    case 38: { std::cout << "!!****¼ÀÀñ²ĞÕÂ" << endl; } break;
-                    case 39: { std::cout << "!!****Á÷ÀËÀÖÕÂ" << endl; } break;
-                    case 40: { std::cout << "!!****Î÷·çÃØµä" << endl; } break;
-                    case 41: { std::cout << "!!****Î÷·ç³¤Ç¹" << endl; } break;
-                    case 42: { std::cout << "!!****Ï»ÀïÃğ³½" << endl; } break;
-                    case 43: { std::cout << "!!****Óê²Ã" << endl; } break;
-                    case 44: { std::cout << "!!****¼ÀÀñ´ó½£" << endl; } break;
-                    case 45: { std::cout << "!!****ÖÓ½£" << endl; } break;
-                    case 46: { std::cout << "!!****Î÷·ç´ó½£" << endl; } break;
-                    case 47: { std::cout << "!!****Ï»ÀïÁúÒ÷" << endl; } break;
-                    case 48: { std::cout << "!!****¼ÀÀñ½£" << endl; } break;
-                    case 49: { std::cout << "!!****µÑ½£" << endl; } break;
-                    case 50: { std::cout << "!!****Î÷·ç½£" << endl; } break;
-                    case 51: { std::cout << "***ÁÔ¹­" << endl; } break;
-                    case 52: { std::cout << "***ÉñÉäÊÖÖ®ÊÄ" << endl; } break;
-                    case 53: { std::cout << "***Ñ»Óğ¹­" << endl; } break;
-                    case 54: { std::cout << "***ôäÓñ·¨Çò" << endl; } break;
-                    case 55: { std::cout << "***ÌÖÁúÓ¢½ÜÌ·" << endl; } break;
-                    case 56: { std::cout << "***Ä§µ¼Ğ÷ÂÛ" << endl; } break;
-                    case 57: { std::cout << "***ºÚÓ§Ç¹" << endl; } break;
-                    case 58: { std::cout << "***ÒÔÀí·şÈË" << endl; } break;
-                    case 59: { std::cout << "***ãåÔ¡ÁúÑªµÄ½£" << endl; } break;
-                    case 60: { std::cout << "***ÌúÓ°À«½£" << endl; } break;
-                    case 61: { std::cout << "***·ÉÌìÓù½£" << endl; } break;
-                    case 62: { std::cout << "***ÀèÃ÷Éñ½£" << endl; } break;
-                    case 63: { std::cout << "***ÀäÈĞ" << endl; } break;
-                    case 64: { std::cout << "!!!!!*****ÎÂµÏ" << endl; } break;
-                    case 65: { std::cout << "!!!!!*****¿ÉÀò" << endl; } break;
-                    case 66: { std::cout << "!!!!!*****´ï´ïÀûÑÇ" << endl; } break;
-                    case 67: { std::cout << "!!!!!*****ÖÓÀë" << endl; } break;
-                    case 68: { std::cout << "!!!!!*****°¢±´¶à" << endl; } break;
-                    case 69: { std::cout << "!!!!!*****¸ÊÓê" << endl; } break;
-                    case 70: { std::cout << "!!!!!*****÷Ì" << endl; } break;
-                    case 71: { std::cout << "!!!!!*****ºúÌÒ" << endl; } break;
-                    case 72: { std::cout << "!!****ÑÌç³" << endl; } break;
-                    case 73: { std::cout << "!!!!!*****ÓÅÇ‰" << endl; } break;
-                    case 74: { std::cout << "!!!!!*****³¾ÊÀÖ®Ëø" << endl; } break;
-                    case 75: { std::cout << "!!!!!*****¹áºçÖ®éÃ" << endl; } break;
-                    case 76: { std::cout << "!!!!!*****ÎŞ¹¤Ö®½£" << endl; } break;
-                    case 77: { std::cout << "!!!!!*****í½·åÖ®ÈĞ" << endl; } break;
-                    case 78: { std::cout << "!!!!!*****ÅÍÑÒ½áÂÌ" << endl; } break;
-                    case 79: { std::cout << "!!!!!*****»¤Ä¦Ö®ÕÈ" << endl; } break;
-                    case 80: { std::cout << "!!****Ç§ÑÒ¹Å½£" << endl; } break;
-                    case 81: { std::cout << "!!****Ç§ÑÒ³¤Ç¹" << endl; } break;
-                    case 82: { std::cout << "!!!!!*****ÖÕÄ©àµÌ¾Ö®Ê«" << endl; } break;
-                    case 83: { std::cout << "!!****°µÏïÉÁ¹â" << endl; } break;
-                    case 84: { std::cout << "!!****°µÏïµÄ¾ÆÓëÊ«" << endl; } break;
-                    case 85: { std::cout << "!!****°µÏïÁÔÊÖ" << endl; } break;
-                    case 86: { std::cout << "!!!!!*****ËÉô¥ÏìÆğÖ®Ê±" << endl; } break;
+                    case 1: { std::cout << "!!!!!*****åˆ»æ™´" << endl; } break;
+                    case 2: { std::cout << "!!!!!*****è«å¨œ" << endl; } break;
+                    case 3: { std::cout << "!!!!!*****ä¸ƒä¸ƒ" << endl; } break;
+                    case 4: { std::cout << "!!!!!*****è¿ªå¢å…‹" << endl; } break;
+                    case 5: { std::cout << "!!!!!*****ç´" << endl; } break;
+                    case 6: { std::cout << "!!!!!*****é˜¿è«æ–¯ä¹‹å¼“" << endl; } break;
+                    case 7: { std::cout << "!!!!!*****å¤©ç©ºä¹‹ç¿¼" << endl; } break;
+                    case 8: { std::cout << "!!!!!*****å››é£åŸå…¸" << endl; } break;
+                    case 9: { std::cout << "!!!!!*****å¤©ç©ºä¹‹å·" << endl; } break;
+                    case 10: { std::cout << "!!!!!*****å’Œç’é¸¢" << endl; } break;
+                    case 11: { std::cout << "!!!!!*****å¤©ç©ºä¹‹è„Š" << endl; } break;
+                    case 12: { std::cout << "!!!!!*****ç‹¼çš„æœ«è·¯" << endl; } break;
+                    case 13: { std::cout << "!!!!!*****å¤©ç©ºä¹‹å‚²" << endl; } break;
+                    case 14: { std::cout << "!!!!!*****å¤©ç©ºä¹‹åˆƒ" << endl; } break;
+                    case 15: { std::cout << "!!!!!*****é£é¹°å‰‘" << endl; } break;
+                    case 16: { std::cout << "!!****ç½—èè‰äºš" << endl; } break;
+                    case 17: { std::cout << "!!****è¾›ç„±" << endl; } break;
+                    case 18: { std::cout << "!!****ç ‚ç³–" << endl; } break;
+                    case 19: { std::cout << "!!****è¿ªå¥¥å¨œ" << endl; } break;
+                    case 20: { std::cout << "!!****é‡äº‘" << endl; } break;
+                    case 21: { std::cout << "!!****è¯ºè‰¾å°”" << endl; } break;
+                    case 22: { std::cout << "!!****ç­å°¼ç‰¹" << endl; } break;
+                    case 23: { std::cout << "!!****è²è°¢å°”" << endl; } break;
+                    case 24: { std::cout << "!!****å‡å…‰" << endl; } break;
+                    case 25: { std::cout << "!!****è¡Œç§‹" << endl; } break;
+                    case 26: { std::cout << "!!****åŒ—æ–—" << endl; } break;
+                    case 27: { std::cout << "!!****é¦™è±" << endl; } break;
+                    case 28: { std::cout << "!!****å®‰æŸ" << endl; } break;
+                    case 29: { std::cout << "!!****é›·æ³½" << endl; } break;
+                    case 30: { std::cout << "!!****å‡¯äºš" << endl; } break;
+                    case 31: { std::cout << "!!****èŠ­èŠ­æ‹‰" << endl; } break;
+                    case 32: { std::cout << "!!****ä¸½è" << endl; } break;
+                    case 33: { std::cout << "!!****å¼“è—" << endl; } break;
+                    case 34: { std::cout << "!!****ç¥­ç¤¼å¼“" << endl; } break;
+                    case 35: { std::cout << "!!****ç»å¼¦" << endl; } break;
+                    case 36: { std::cout << "!!****è¥¿é£çŒå¼“" << endl; } break;
+                    case 37: { std::cout << "!!****æ˜­å¿ƒ" << endl; } break;
+                    case 38: { std::cout << "!!****ç¥­ç¤¼æ®‹ç« " << endl; } break;
+                    case 39: { std::cout << "!!****æµæµªä¹ç« " << endl; } break;
+                    case 40: { std::cout << "!!****è¥¿é£ç§˜å…¸" << endl; } break;
+                    case 41: { std::cout << "!!****è¥¿é£é•¿æª" << endl; } break;
+                    case 42: { std::cout << "!!****åŒ£é‡Œç­è¾°" << endl; } break;
+                    case 43: { std::cout << "!!****é›¨è£" << endl; } break;
+                    case 44: { std::cout << "!!****ç¥­ç¤¼å¤§å‰‘" << endl; } break;
+                    case 45: { std::cout << "!!****é’Ÿå‰‘" << endl; } break;
+                    case 46: { std::cout << "!!****è¥¿é£å¤§å‰‘" << endl; } break;
+                    case 47: { std::cout << "!!****åŒ£é‡Œé¾™åŸ" << endl; } break;
+                    case 48: { std::cout << "!!****ç¥­ç¤¼å‰‘" << endl; } break;
+                    case 49: { std::cout << "!!****ç¬›å‰‘" << endl; } break;
+                    case 50: { std::cout << "!!****è¥¿é£å‰‘" << endl; } break;
+                    case 51: { std::cout << "***çŒå¼“" << endl; } break;
+                    case 52: { std::cout << "***ç¥å°„æ‰‹ä¹‹èª“" << endl; } break;
+                    case 53: { std::cout << "***é¸¦ç¾½å¼“" << endl; } break;
+                    case 54: { std::cout << "***ç¿¡ç‰æ³•çƒ" << endl; } break;
+                    case 55: { std::cout << "***è®¨é¾™è‹±æ°è°­" << endl; } break;
+                    case 56: { std::cout << "***é­”å¯¼ç»ªè®º" << endl; } break;
+                    case 57: { std::cout << "***é»‘ç¼¨æª" << endl; } break;
+                    case 58: { std::cout << "***ä»¥ç†æœäºº" << endl; } break;
+                    case 59: { std::cout << "***æ²æµ´é¾™è¡€çš„å‰‘" << endl; } break;
+                    case 60: { std::cout << "***é“å½±é˜”å‰‘" << endl; } break;
+                    case 61: { std::cout << "***é£å¤©å¾¡å‰‘" << endl; } break;
+                    case 62: { std::cout << "***é»æ˜ç¥å‰‘" << endl; } break;
+                    case 63: { std::cout << "***å†·åˆƒ" << endl; } break;
+                    case 64: { std::cout << "!!!!!*****æ¸©è¿ª" << endl; } break;
+                    case 65: { std::cout << "!!!!!*****å¯è‰" << endl; } break;
+                    case 66: { std::cout << "!!!!!*****è¾¾è¾¾åˆ©äºš" << endl; } break;
+                    case 67: { std::cout << "!!!!!*****é’Ÿç¦»" << endl; } break;
+                    case 68: { std::cout << "!!!!!*****é˜¿è´å¤š" << endl; } break;
+                    case 69: { std::cout << "!!!!!*****ç”˜é›¨" << endl; } break;
+                    case 70: { std::cout << "!!!!!*****é­ˆ" << endl; } break;
+                    case 71: { std::cout << "!!!!!*****èƒ¡æ¡ƒ" << endl; } break;
+                    case 72: { std::cout << "!!****çƒŸç»¯" << endl; } break;
+                    case 73: { std::cout << "!!!!!*****ä¼˜èˆ" << endl; } break;
+                    case 74: { std::cout << "!!!!!*****å°˜ä¸–ä¹‹é”" << endl; } break;
+                    case 75: { std::cout << "!!!!!*****è´¯è™¹ä¹‹æ§Š" << endl; } break;
+                    case 76: { std::cout << "!!!!!*****æ— å·¥ä¹‹å‰‘" << endl; } break;
+                    case 77: { std::cout << "!!!!!*****æ–«å³°ä¹‹åˆƒ" << endl; } break;
+                    case 78: { std::cout << "!!!!!*****ç£å²©ç»“ç»¿" << endl; } break;
+                    case 79: { std::cout << "!!!!!*****æŠ¤æ‘©ä¹‹æ–" << endl; } break;
+                    case 80: { std::cout << "!!****åƒå²©å¤å‰‘" << endl; } break;
+                    case 81: { std::cout << "!!****åƒå²©é•¿æª" << endl; } break;
+                    case 82: { std::cout << "!!!!!*****ç»ˆæœ«å—Ÿå¹ä¹‹è¯—" << endl; } break;
+                    case 83: { std::cout << "!!****æš—å··é—ªå…‰" << endl; } break;
+                    case 84: { std::cout << "!!****æš—å··çš„é…’ä¸è¯—" << endl; } break;
+                    case 85: { std::cout << "!!****æš—å··çŒæ‰‹" << endl; } break;
+                    case 86: { std::cout << "!!!!!*****æ¾ç±å“èµ·ä¹‹æ—¶" << endl; } break;
                     case 87: { std::cout << "Placeholder" << endl; } break;
                     case 88: { std::cout << "Placeholder" << endl; } break;
                     case 89: { std::cout << "Placeholder" << endl; } break;
@@ -720,8 +761,8 @@ int main() {
                             else {
                                 type = 2;
                                 five_count_c++;
-                                five_star_guarantee_number = 1;
                                 kind = rspick(nup_five_c, 5);
+                                if(five_check[1] == 1) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
                             }
                         }
                         else if (temp1 < (long long int) ULTRAPOS / 1000 * 57) {
@@ -817,8 +858,8 @@ int main() {
                             else {
                                 type = 2;
                                 five_count_c++;
-                                five_star_guarantee_number = 1;
                                 kind = rspick(nup_five_c, 5);
+                                if(five_check[1] == 1) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
                             }
                         }
                         else if (temp1 < (long long int) ULTRAPOS / 1000 * 567) {
@@ -914,8 +955,8 @@ int main() {
                             else {
                                 type = 2;
                                 five_count_c++;
-                                five_star_guarantee_number = 1;
                                 kind = rspick(nup_five_c, 5);
+                                if(five_check[1] == 1) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
                             }
                         }
                         else {
@@ -1006,8 +1047,8 @@ int main() {
                             else {
                                 type = 2;
                                 five_count_c++;
-                                five_star_guarantee_number = 1;
                                 kind = rspick(nup_five_c, 5);
+                                if(five_check[1] == 1) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
                             }
                         }
                         else if (temp1 < (long long int) (ULTRAPOS / 1000 * 57) + ((long long int)(five_star_assurance_number) - 73) * (long long int)(ULTRAPOS / 1000 * 60)) {
@@ -1103,8 +1144,8 @@ int main() {
                             else {
                                 type = 2;
                                 five_count_c++;
-                                five_star_guarantee_number = 1;
                                 kind = rspick(nup_five_c, 5);
+                                if(five_check[1] == 1) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
                             }
                         }
                         else if (temp1 < (long long int) (ULTRAPOS / 1000 * 567) + ((long long int)(five_star_assurance_number) - 73) * (long long int)(ULTRAPOS / 1000 * 60)) {
@@ -1200,8 +1241,8 @@ int main() {
                             else {
                                 type = 2;
                                 five_count_c++;
-                                five_star_guarantee_number = 1;
                                 kind = rspick(nup_five_c, 5);
+                                if(five_check[1] == 1) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
                             }
                         }
                         else {
@@ -1291,99 +1332,99 @@ int main() {
                         else {
                             type = 2;
                             five_count_c++;
-                            five_star_guarantee_number = 1;
+                            if(five_check[1] == 1) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
                             int templist[] = { 1, 2, 3, 4, 5 };
                             kind = rspick(templist, 5);
                         }
                     }
                     std::cout << count + 1 << "(" << five_star_assurance_number << ")" << " ";
                     switch (kind) {
-                    case 1: { std::cout << "!!!!!*****¿ÌÇç" << endl; pcount[0]++; } break;
-                    case 2: { std::cout << "!!!!!*****ÄªÄÈ" << endl; pcount[1]++; } break;
-                    case 3: { std::cout << "!!!!!*****ÆßÆß" << endl; pcount[2]++; } break;
-                    case 4: { std::cout << "!!!!!*****µÏÂ¬¿Ë" << endl; pcount[3]++; } break;
-                    case 5: { std::cout << "!!!!!*****ÇÙ" << endl; pcount[4]++; } break;
-                    case 6: { std::cout << "!!!!!*****°¢ÄªË¹Ö®¹­" << endl; pcount[5]++; } break;
-                    case 7: { std::cout << "!!!!!*****Ìì¿ÕÖ®Òí" << endl; pcount[6]++; } break;
-                    case 8: { std::cout << "!!!!!*****ËÄ·çÔ­µä" << endl; pcount[7]++; } break;
-                    case 9: { std::cout << "!!!!!*****Ìì¿ÕÖ®¾í" << endl; pcount[8]++; } break;
-                    case 10: { std::cout << "!!!!!*****ºÍè±ğ°" << endl; pcount[9]++; } break;
-                    case 11: { std::cout << "!!!!!*****Ìì¿ÕÖ®¼¹" << endl; pcount[10]++; } break;
-                    case 12: { std::cout << "!!!!!*****ÀÇµÄÄ©Â·" << endl; pcount[11]++; } break;
-                    case 13: { std::cout << "!!!!!*****Ìì¿ÕÖ®°Á" << endl; pcount[12]++; } break;
-                    case 14: { std::cout << "!!!!!*****Ìì¿ÕÖ®ÈĞ" << endl; pcount[13]++; } break;
-                    case 15: { std::cout << "!!!!!*****·çÓ¥½£" << endl; pcount[14]++; } break;
-                    case 16: { std::cout << "!!****ÂŞÉ¯ÀòÑÇ" << endl; pcount[15]++; } break;
-                    case 17: { std::cout << "!!****ĞÁìÍ" << endl; pcount[16]++; } break;
-                    case 18: { std::cout << "!!****É°ÌÇ" << endl; pcount[17]++; } break;
-                    case 19: { std::cout << "!!****µÏ°ÂÄÈ" << endl; pcount[18]++; } break;
-                    case 20: { std::cout << "!!****ÖØÔÆ" << endl; pcount[19]++; } break;
-                    case 21: { std::cout << "!!****Åµ°¬¶û" << endl; pcount[20]++; } break;
-                    case 22: { std::cout << "!!****°àÄáÌØ" << endl; pcount[21]++; } break;
-                    case 23: { std::cout << "!!****·ÆĞ»¶û" << endl; pcount[22]++; } break;
-                    case 24: { std::cout << "!!****Äı¹â" << endl; pcount[23]++; } break;
-                    case 25: { std::cout << "!!****ĞĞÇï" << endl; pcount[24]++; } break;
-                    case 26: { std::cout << "!!****±±¶·" << endl; pcount[25]++; } break;
-                    case 27: { std::cout << "!!****ÏãÁâ" << endl; pcount[26]++; } break;
-                    case 28: { std::cout << "!!****°²°Ø" << endl; pcount[27]++; } break;
-                    case 29: { std::cout << "!!****À×Ôó" << endl; pcount[28]++; } break;
-                    case 30: { std::cout << "!!****¿­ÑÇ" << endl; pcount[29]++; } break;
-                    case 31: { std::cout << "!!****°Å°ÅÀ­" << endl; pcount[30]++; } break;
-                    case 32: { std::cout << "!!****ÀöÉ¯" << endl; pcount[31]++; } break;
-                    case 33: { std::cout << "!!****¹­²Ø" << endl; pcount[32]++; } break;
-                    case 34: { std::cout << "!!****¼ÀÀñ¹­" << endl; pcount[33]++; } break;
-                    case 35: { std::cout << "!!****¾øÏÒ" << endl; pcount[34]++; } break;
-                    case 36: { std::cout << "!!****Î÷·çÁÔ¹­" << endl; pcount[35]++; } break;
-                    case 37: { std::cout << "!!****ÕÑĞÄ" << endl; pcount[36]++; } break;
-                    case 38: { std::cout << "!!****¼ÀÀñ²ĞÕÂ" << endl; pcount[37]++; } break;
-                    case 39: { std::cout << "!!****Á÷ÀËÀÖÕÂ" << endl; pcount[38]++; } break;
-                    case 40: { std::cout << "!!****Î÷·çÃØµä" << endl; pcount[39]++; } break;
-                    case 41: { std::cout << "!!****Î÷·ç³¤Ç¹" << endl; pcount[40]++; } break;
-                    case 42: { std::cout << "!!****Ï»ÀïÃğ³½" << endl; pcount[41]++; } break;
-                    case 43: { std::cout << "!!****Óê²Ã" << endl; pcount[42]++; } break;
-                    case 44: { std::cout << "!!****¼ÀÀñ´ó½£" << endl; pcount[43]++; } break;
-                    case 45: { std::cout << "!!****ÖÓ½£" << endl; pcount[44]++; } break;
-                    case 46: { std::cout << "!!****Î÷·ç´ó½£" << endl; pcount[45]++; } break;
-                    case 47: { std::cout << "!!****Ï»ÀïÁúÒ÷" << endl; pcount[46]++; } break;
-                    case 48: { std::cout << "!!****¼ÀÀñ½£" << endl; pcount[47]++; } break;
-                    case 49: { std::cout << "!!****µÑ½£" << endl; pcount[48]++; } break;
-                    case 50: { std::cout << "!!****Î÷·ç½£" << endl; pcount[49]++; } break;
-                    case 51: { std::cout << "***ÁÔ¹­" << endl; pcount[50]++; } break;
-                    case 52: { std::cout << "***ÉñÉäÊÖÖ®ÊÄ" << endl; pcount[51]++; } break;
-                    case 53: { std::cout << "***Ñ»Óğ¹­" << endl; pcount[52]++; } break;
-                    case 54: { std::cout << "***ôäÓñ·¨Çò" << endl; pcount[53]++; } break;
-                    case 55: { std::cout << "***ÌÖÁúÓ¢½ÜÌ·" << endl; pcount[54]++; } break;
-                    case 56: { std::cout << "***Ä§µ¼Ğ÷ÂÛ" << endl; pcount[55]++; } break;
-                    case 57: { std::cout << "***ºÚÓ§Ç¹" << endl; pcount[56]++; } break;
-                    case 58: { std::cout << "***ÒÔÀí·şÈË" << endl; pcount[57]++; } break;
-                    case 59: { std::cout << "***ãåÔ¡ÁúÑªµÄ½£" << endl; pcount[58]++; } break;
-                    case 60: { std::cout << "***ÌúÓ°À«½£" << endl; pcount[59]++; } break;
-                    case 61: { std::cout << "***·ÉÌìÓù½£" << endl; pcount[60]++; } break;
-                    case 62: { std::cout << "***ÀèÃ÷Éñ½£" << endl; pcount[61]++; } break;
-                    case 63: { std::cout << "***ÀäÈĞ" << endl; pcount[62]++; } break;
-                    case 64: { std::cout << "!!!!!*****ÎÂµÏ" << endl; pcount[63]++; } break;
-                    case 65: { std::cout << "!!!!!*****¿ÉÀò" << endl; pcount[64]++; } break;
-                    case 66: { std::cout << "!!!!!*****´ï´ïÀûÑÇ" << endl; pcount[65]++; } break;
-                    case 67: { std::cout << "!!!!!*****ÖÓÀë" << endl; pcount[66]++; } break;
-                    case 68: { std::cout << "!!!!!*****°¢±´¶à" << endl; pcount[67]++; } break;
-                    case 69: { std::cout << "!!!!!*****¸ÊÓê" << endl; pcount[68]++; } break;
-                    case 70: { std::cout << "!!!!!*****÷Ì" << endl; pcount[69]++; } break;
-                    case 71: { std::cout << "!!!!!*****ºúÌÒ" << endl; pcount[70]++; } break;
-                    case 72: { std::cout << "!!****ÑÌç³" << endl; pcount[71]++; } break;
-                    case 73: { std::cout << "!!!!!*****ÓÅÇ‰" << endl; pcount[72]++; } break;
-                    case 74: { std::cout << "!!!!!*****³¾ÊÀÖ®Ëø" << endl; pcount[73]++; } break;
-                    case 75: { std::cout << "!!!!!*****¹áºçÖ®éÃ" << endl; pcount[74]++; } break;
-                    case 76: { std::cout << "!!!!!*****ÎŞ¹¤Ö®½£" << endl; pcount[75]++; } break;
-                    case 77: { std::cout << "!!!!!*****í½·åÖ®ÈĞ" << endl; pcount[76]++; } break;
-                    case 78: { std::cout << "!!!!!*****ÅÍÑÒ½áÂÌ" << endl; pcount[77]++; } break;
-                    case 79: { std::cout << "!!!!!*****»¤Ä¦Ö®ÕÈ" << endl; pcount[78]++; } break;
-                    case 80: { std::cout << "!!****Ç§ÑÒ¹Å½£" << endl; pcount[79]++; } break;
-                    case 81: { std::cout << "!!****Ç§ÑÒ³¤Ç¹" << endl; pcount[80]++; } break;
-                    case 82: { std::cout << "!!!!!*****ÖÕÄ©àµÌ¾Ö®Ê«" << endl; pcount[81]++; } break;
-                    case 83: { std::cout << "!!****°µÏïÉÁ¹â" << endl; pcount[82]++; } break;
-                    case 84: { std::cout << "!!****°µÏïµÄ¾ÆÓëÊ«" << endl; pcount[83]++; } break;
-                    case 85: { std::cout << "!!****°µÏïÁÔÊÖ" << endl; pcount[84]++; } break;
-                    case 86: { std::cout << "!!!!!*****ËÉô¥ÏìÆğÖ®Ê±" << endl; pcount[85]++; } break;
+                    case 1: { std::cout << "!!!!!*****åˆ»æ™´" << endl; pcount[0]++; } break;
+                    case 2: { std::cout << "!!!!!*****è«å¨œ" << endl; pcount[1]++; } break;
+                    case 3: { std::cout << "!!!!!*****ä¸ƒä¸ƒ" << endl; pcount[2]++; } break;
+                    case 4: { std::cout << "!!!!!*****è¿ªå¢å…‹" << endl; pcount[3]++; } break;
+                    case 5: { std::cout << "!!!!!*****ç´" << endl; pcount[4]++; } break;
+                    case 6: { std::cout << "!!!!!*****é˜¿è«æ–¯ä¹‹å¼“" << endl; pcount[5]++; } break;
+                    case 7: { std::cout << "!!!!!*****å¤©ç©ºä¹‹ç¿¼" << endl; pcount[6]++; } break;
+                    case 8: { std::cout << "!!!!!*****å››é£åŸå…¸" << endl; pcount[7]++; } break;
+                    case 9: { std::cout << "!!!!!*****å¤©ç©ºä¹‹å·" << endl; pcount[8]++; } break;
+                    case 10: { std::cout << "!!!!!*****å’Œç’é¸¢" << endl; pcount[9]++; } break;
+                    case 11: { std::cout << "!!!!!*****å¤©ç©ºä¹‹è„Š" << endl; pcount[10]++; } break;
+                    case 12: { std::cout << "!!!!!*****ç‹¼çš„æœ«è·¯" << endl; pcount[11]++; } break;
+                    case 13: { std::cout << "!!!!!*****å¤©ç©ºä¹‹å‚²" << endl; pcount[12]++; } break;
+                    case 14: { std::cout << "!!!!!*****å¤©ç©ºä¹‹åˆƒ" << endl; pcount[13]++; } break;
+                    case 15: { std::cout << "!!!!!*****é£é¹°å‰‘" << endl; pcount[14]++; } break;
+                    case 16: { std::cout << "!!****ç½—èè‰äºš" << endl; pcount[15]++; } break;
+                    case 17: { std::cout << "!!****è¾›ç„±" << endl; pcount[16]++; } break;
+                    case 18: { std::cout << "!!****ç ‚ç³–" << endl; pcount[17]++; } break;
+                    case 19: { std::cout << "!!****è¿ªå¥¥å¨œ" << endl; pcount[18]++; } break;
+                    case 20: { std::cout << "!!****é‡äº‘" << endl; pcount[19]++; } break;
+                    case 21: { std::cout << "!!****è¯ºè‰¾å°”" << endl; pcount[20]++; } break;
+                    case 22: { std::cout << "!!****ç­å°¼ç‰¹" << endl; pcount[21]++; } break;
+                    case 23: { std::cout << "!!****è²è°¢å°”" << endl; pcount[22]++; } break;
+                    case 24: { std::cout << "!!****å‡å…‰" << endl; pcount[23]++; } break;
+                    case 25: { std::cout << "!!****è¡Œç§‹" << endl; pcount[24]++; } break;
+                    case 26: { std::cout << "!!****åŒ—æ–—" << endl; pcount[25]++; } break;
+                    case 27: { std::cout << "!!****é¦™è±" << endl; pcount[26]++; } break;
+                    case 28: { std::cout << "!!****å®‰æŸ" << endl; pcount[27]++; } break;
+                    case 29: { std::cout << "!!****é›·æ³½" << endl; pcount[28]++; } break;
+                    case 30: { std::cout << "!!****å‡¯äºš" << endl; pcount[29]++; } break;
+                    case 31: { std::cout << "!!****èŠ­èŠ­æ‹‰" << endl; pcount[30]++; } break;
+                    case 32: { std::cout << "!!****ä¸½è" << endl; pcount[31]++; } break;
+                    case 33: { std::cout << "!!****å¼“è—" << endl; pcount[32]++; } break;
+                    case 34: { std::cout << "!!****ç¥­ç¤¼å¼“" << endl; pcount[33]++; } break;
+                    case 35: { std::cout << "!!****ç»å¼¦" << endl; pcount[34]++; } break;
+                    case 36: { std::cout << "!!****è¥¿é£çŒå¼“" << endl; pcount[35]++; } break;
+                    case 37: { std::cout << "!!****æ˜­å¿ƒ" << endl; pcount[36]++; } break;
+                    case 38: { std::cout << "!!****ç¥­ç¤¼æ®‹ç« " << endl; pcount[37]++; } break;
+                    case 39: { std::cout << "!!****æµæµªä¹ç« " << endl; pcount[38]++; } break;
+                    case 40: { std::cout << "!!****è¥¿é£ç§˜å…¸" << endl; pcount[39]++; } break;
+                    case 41: { std::cout << "!!****è¥¿é£é•¿æª" << endl; pcount[40]++; } break;
+                    case 42: { std::cout << "!!****åŒ£é‡Œç­è¾°" << endl; pcount[41]++; } break;
+                    case 43: { std::cout << "!!****é›¨è£" << endl; pcount[42]++; } break;
+                    case 44: { std::cout << "!!****ç¥­ç¤¼å¤§å‰‘" << endl; pcount[43]++; } break;
+                    case 45: { std::cout << "!!****é’Ÿå‰‘" << endl; pcount[44]++; } break;
+                    case 46: { std::cout << "!!****è¥¿é£å¤§å‰‘" << endl; pcount[45]++; } break;
+                    case 47: { std::cout << "!!****åŒ£é‡Œé¾™åŸ" << endl; pcount[46]++; } break;
+                    case 48: { std::cout << "!!****ç¥­ç¤¼å‰‘" << endl; pcount[47]++; } break;
+                    case 49: { std::cout << "!!****ç¬›å‰‘" << endl; pcount[48]++; } break;
+                    case 50: { std::cout << "!!****è¥¿é£å‰‘" << endl; pcount[49]++; } break;
+                    case 51: { std::cout << "***çŒå¼“" << endl; pcount[50]++; } break;
+                    case 52: { std::cout << "***ç¥å°„æ‰‹ä¹‹èª“" << endl; pcount[51]++; } break;
+                    case 53: { std::cout << "***é¸¦ç¾½å¼“" << endl; pcount[52]++; } break;
+                    case 54: { std::cout << "***ç¿¡ç‰æ³•çƒ" << endl; pcount[53]++; } break;
+                    case 55: { std::cout << "***è®¨é¾™è‹±æ°è°­" << endl; pcount[54]++; } break;
+                    case 56: { std::cout << "***é­”å¯¼ç»ªè®º" << endl; pcount[55]++; } break;
+                    case 57: { std::cout << "***é»‘ç¼¨æª" << endl; pcount[56]++; } break;
+                    case 58: { std::cout << "***ä»¥ç†æœäºº" << endl; pcount[57]++; } break;
+                    case 59: { std::cout << "***æ²æµ´é¾™è¡€çš„å‰‘" << endl; pcount[58]++; } break;
+                    case 60: { std::cout << "***é“å½±é˜”å‰‘" << endl; pcount[59]++; } break;
+                    case 61: { std::cout << "***é£å¤©å¾¡å‰‘" << endl; pcount[60]++; } break;
+                    case 62: { std::cout << "***é»æ˜ç¥å‰‘" << endl; pcount[61]++; } break;
+                    case 63: { std::cout << "***å†·åˆƒ" << endl; pcount[62]++; } break;
+                    case 64: { std::cout << "!!!!!*****æ¸©è¿ª" << endl; pcount[63]++; } break;
+                    case 65: { std::cout << "!!!!!*****å¯è‰" << endl; pcount[64]++; } break;
+                    case 66: { std::cout << "!!!!!*****è¾¾è¾¾åˆ©äºš" << endl; pcount[65]++; } break;
+                    case 67: { std::cout << "!!!!!*****é’Ÿç¦»" << endl; pcount[66]++; } break;
+                    case 68: { std::cout << "!!!!!*****é˜¿è´å¤š" << endl; pcount[67]++; } break;
+                    case 69: { std::cout << "!!!!!*****ç”˜é›¨" << endl; pcount[68]++; } break;
+                    case 70: { std::cout << "!!!!!*****é­ˆ" << endl; pcount[69]++; } break;
+                    case 71: { std::cout << "!!!!!*****èƒ¡æ¡ƒ" << endl; pcount[70]++; } break;
+                    case 72: { std::cout << "!!****çƒŸç»¯" << endl; pcount[71]++; } break;
+                    case 73: { std::cout << "!!!!!*****ä¼˜èˆ" << endl; pcount[72]++; } break;
+                    case 74: { std::cout << "!!!!!*****å°˜ä¸–ä¹‹é”" << endl; pcount[73]++; } break;
+                    case 75: { std::cout << "!!!!!*****è´¯è™¹ä¹‹æ§Š" << endl; pcount[74]++; } break;
+                    case 76: { std::cout << "!!!!!*****æ— å·¥ä¹‹å‰‘" << endl; pcount[75]++; } break;
+                    case 77: { std::cout << "!!!!!*****æ–«å³°ä¹‹åˆƒ" << endl; pcount[76]++; } break;
+                    case 78: { std::cout << "!!!!!*****ç£å²©ç»“ç»¿" << endl; pcount[77]++; } break;
+                    case 79: { std::cout << "!!!!!*****æŠ¤æ‘©ä¹‹æ–" << endl; pcount[78]++; } break;
+                    case 80: { std::cout << "!!****åƒå²©å¤å‰‘" << endl; pcount[79]++; } break;
+                    case 81: { std::cout << "!!****åƒå²©é•¿æª" << endl; pcount[80]++; } break;
+                    case 82: { std::cout << "!!!!!*****ç»ˆæœ«å—Ÿå¹ä¹‹è¯—" << endl; pcount[81]++; } break;
+                    case 83: { std::cout << "!!****æš—å··é—ªå…‰" << endl; pcount[82]++; } break;
+                    case 84: { std::cout << "!!****æš—å··çš„é…’ä¸è¯—" << endl; pcount[83]++; } break;
+                    case 85: { std::cout << "!!****æš—å··çŒæ‰‹" << endl; pcount[84]++; } break;
+                    case 86: { std::cout << "!!!!!*****æ¾ç±å“èµ·ä¹‹æ—¶" << endl; pcount[85]++; } break;
                     case 87: { std::cout << "Placeholder" << endl; pcount[86]++; } break;
                     case 88: { std::cout << "Placeholder" << endl; pcount[87]++; } break;
                     case 89: { std::cout << "Placeholder" << endl; pcount[88]++; } break;
@@ -1508,7 +1549,7 @@ int main() {
                                 five_count_w++;
                                 int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                 kind = rspick(templist, 10);
-                                if (kind == 15 || kind == 6) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
+                                if (kind == 15 || kind == 6) five_star_guarantee_number = 0; else if(five_check[1] == 1) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
                             }
                         }
                         else if (temp1 < (long long int) ULTRAPOS / 1000 * 67) {
@@ -1618,7 +1659,7 @@ int main() {
                                 five_count_w++;
                                 int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                 kind = rspick(templist, 10);
-                                if (kind == 15 || kind == 6) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
+                                if (kind == 15 || kind == 6) five_star_guarantee_number = 0; else if(five_check[1] == 1) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
                             }
                         }
                         else if (temp1 < (long long int) ULTRAPOS / 1000 * 667) {
@@ -1728,7 +1769,7 @@ int main() {
                                 five_count_w++;
                                 int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                 kind = rspick(templist, 10);
-                                if (kind == 15 || kind == 6) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
+                                if (kind == 15 || kind == 6) five_star_guarantee_number = 0; else if(five_check[1] == 1) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
                             }
                         }
                         else if (temp1 < (long long int) ULTRAPOS / 1000 * 967) {
@@ -1838,7 +1879,7 @@ int main() {
                                 five_count_w++;
                                 int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                 kind = rspick(templist, 10);
-                                if (kind == 15 || kind == 6) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
+                                if (kind == 15 || kind == 6) five_star_guarantee_number = 0; else if(five_check[1] == 1) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
                             }
                         }
                         else {
@@ -1943,7 +1984,7 @@ int main() {
                                 five_count_w++;
                                 int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                 kind = rspick(templist, 10);
-                                if (kind == 15 || kind == 6) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
+                                if (kind == 15 || kind == 6) five_star_guarantee_number = 0; else if(five_check[1] == 1) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
                             }
                         }
                         else if (temp1 < (long long int) (ULTRAPOS / 1000 * 67) + ((long long int)(five_star_assurance_number) - 62) * (long long int)(ULTRAPOS / 1000 * 70)) {
@@ -2053,7 +2094,7 @@ int main() {
                                 five_count_w++;
                                 int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                 kind = rspick(templist, 10);
-                                if (kind == 15 || kind == 6) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
+                                if (kind == 15 || kind == 6) five_star_guarantee_number = 0; else if(five_check[1] == 1) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
                             }
                         }
                         else if (temp1 < (long long int) (ULTRAPOS / 1000 * 667) + ((long long int)(five_star_assurance_number) - 62) * (long long int)(ULTRAPOS / 1000 * 70)) {
@@ -2163,7 +2204,7 @@ int main() {
                                 five_count_w++;
                                 int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                 kind = rspick(templist, 10);
-                                if (kind == 15 || kind == 6) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
+                                if (kind == 15 || kind == 6) five_star_guarantee_number = 0; else if(five_check[1] == 1) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
                             }
                         }
                         else if (temp1 < (long long int) (ULTRAPOS / 1000 * 967) + ((long long int)(five_star_assurance_number) - 62) * (long long int)(ULTRAPOS / 1000 * 70)) {
@@ -2273,7 +2314,7 @@ int main() {
                                 five_count_w++;
                                 int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                 kind = rspick(templist, 10);
-                                if (kind == 15 || kind == 6) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
+                                if (kind == 15 || kind == 6) five_star_guarantee_number = 0; else if(five_check[1] == 1) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
                             }
                         }
                         else {
@@ -2378,7 +2419,7 @@ int main() {
                                 five_count_w++;
                                 int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                 kind = rspick(templist, 10);
-                                if (kind == 15 || kind == 6) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
+                                if (kind == 15 || kind == 6) five_star_guarantee_number = 0; else if(five_check[1] == 1) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
                             }
                         }
                         else if (temp1 < (long long int) (ULTRAPOS / 1000 * 837) + ((long long int)(five_star_assurance_number) - 73) * (long long int)(ULTRAPOS / 1000 * 35)) {
@@ -2488,7 +2529,7 @@ int main() {
                                 five_count_w++;
                                 int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                 kind = rspick(templist, 10);
-                                if (kind == 15 || kind == 6) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
+                                if (kind == 15 || kind == 6) five_star_guarantee_number = 0; else if(five_check[1] == 1) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
                             }
                         }
                         else if (temp1 < (long long int) (ULTRAPOS / 1000 * 1437) + ((long long int)(five_star_assurance_number) - 73) * (long long int)(ULTRAPOS / 1000 * 35)) {
@@ -2598,7 +2639,7 @@ int main() {
                                 five_count_w++;
                                 int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                 kind = rspick(templist, 10);
-                                if (kind == 15 || kind == 6) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
+                                if (kind == 15 || kind == 6) five_star_guarantee_number = 0; else if(five_check[1] == 1) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
                             }
                         }
                         else if (temp1 < (long long int) (ULTRAPOS / 1000 * 1737) + ((long long int)(five_star_assurance_number) - 73) * (long long int)(ULTRAPOS / 1000 * 35)) {
@@ -2708,7 +2749,7 @@ int main() {
                                 five_count_w++;
                                 int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                 kind = rspick(templist, 10);
-                                if (kind == 15 || kind == 6) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
+                                if (kind == 15 || kind == 6) five_star_guarantee_number = 0; else if(five_check[1] == 1) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
                             }
                         }
                         else {
@@ -2810,99 +2851,99 @@ int main() {
                         else {
                             type = 2;
                             five_count_w++;
-                            five_star_guarantee_number = 1;
+                            if(five_check[1] == 1) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
                             int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                             kind = rspick(templist, 10);
                         }
                     }
                     std::cout << count + 1 << "(" << five_star_assurance_number << ")" << " ";
                     switch (kind) {
-                    case 1: { std::cout << "!!!!!*****¿ÌÇç" << endl; pcount[0]++; } break;
-                    case 2: { std::cout << "!!!!!*****ÄªÄÈ" << endl; pcount[1]++; } break;
-                    case 3: { std::cout << "!!!!!*****ÆßÆß" << endl; pcount[2]++; } break;
-                    case 4: { std::cout << "!!!!!*****µÏÂ¬¿Ë" << endl; pcount[3]++; } break;
-                    case 5: { std::cout << "!!!!!*****ÇÙ" << endl; pcount[4]++; } break;
-                    case 6: { std::cout << "!!!!!*****°¢ÄªË¹Ö®¹­" << endl; pcount[5]++; } break;
-                    case 7: { std::cout << "!!!!!*****Ìì¿ÕÖ®Òí" << endl; pcount[6]++; } break;
-                    case 8: { std::cout << "!!!!!*****ËÄ·çÔ­µä" << endl; pcount[7]++; } break;
-                    case 9: { std::cout << "!!!!!*****Ìì¿ÕÖ®¾í" << endl; pcount[8]++; } break;
-                    case 10: { std::cout << "!!!!!*****ºÍè±ğ°" << endl; pcount[9]++; } break;
-                    case 11: { std::cout << "!!!!!*****Ìì¿ÕÖ®¼¹" << endl; pcount[10]++; } break;
-                    case 12: { std::cout << "!!!!!*****ÀÇµÄÄ©Â·" << endl; pcount[11]++; } break;
-                    case 13: { std::cout << "!!!!!*****Ìì¿ÕÖ®°Á" << endl; pcount[12]++; } break;
-                    case 14: { std::cout << "!!!!!*****Ìì¿ÕÖ®ÈĞ" << endl; pcount[13]++; } break;
-                    case 15: { std::cout << "!!!!!*****·çÓ¥½£" << endl; pcount[14]++; } break;
-                    case 16: { std::cout << "!!****ÂŞÉ¯ÀòÑÇ" << endl; pcount[15]++; } break;
-                    case 17: { std::cout << "!!****ĞÁìÍ" << endl; pcount[16]++; } break;
-                    case 18: { std::cout << "!!****É°ÌÇ" << endl; pcount[17]++; } break;
-                    case 19: { std::cout << "!!****µÏ°ÂÄÈ" << endl; pcount[18]++; } break;
-                    case 20: { std::cout << "!!****ÖØÔÆ" << endl; pcount[19]++; } break;
-                    case 21: { std::cout << "!!****Åµ°¬¶û" << endl; pcount[20]++; } break;
-                    case 22: { std::cout << "!!****°àÄáÌØ" << endl; pcount[21]++; } break;
-                    case 23: { std::cout << "!!****·ÆĞ»¶û" << endl; pcount[22]++; } break;
-                    case 24: { std::cout << "!!****Äı¹â" << endl; pcount[23]++; } break;
-                    case 25: { std::cout << "!!****ĞĞÇï" << endl; pcount[24]++; } break;
-                    case 26: { std::cout << "!!****±±¶·" << endl; pcount[25]++; } break;
-                    case 27: { std::cout << "!!****ÏãÁâ" << endl; pcount[26]++; } break;
-                    case 28: { std::cout << "!!****°²°Ø" << endl; pcount[27]++; } break;
-                    case 29: { std::cout << "!!****À×Ôó" << endl; pcount[28]++; } break;
-                    case 30: { std::cout << "!!****¿­ÑÇ" << endl; pcount[29]++; } break;
-                    case 31: { std::cout << "!!****°Å°ÅÀ­" << endl; pcount[30]++; } break;
-                    case 32: { std::cout << "!!****ÀöÉ¯" << endl; pcount[31]++; } break;
-                    case 33: { std::cout << "!!****¹­²Ø" << endl; pcount[32]++; } break;
-                    case 34: { std::cout << "!!****¼ÀÀñ¹­" << endl; pcount[33]++; } break;
-                    case 35: { std::cout << "!!****¾øÏÒ" << endl; pcount[34]++; } break;
-                    case 36: { std::cout << "!!****Î÷·çÁÔ¹­" << endl; pcount[35]++; } break;
-                    case 37: { std::cout << "!!****ÕÑĞÄ" << endl; pcount[36]++; } break;
-                    case 38: { std::cout << "!!****¼ÀÀñ²ĞÕÂ" << endl; pcount[37]++; } break;
-                    case 39: { std::cout << "!!****Á÷ÀËÀÖÕÂ" << endl; pcount[38]++; } break;
-                    case 40: { std::cout << "!!****Î÷·çÃØµä" << endl; pcount[39]++; } break;
-                    case 41: { std::cout << "!!****Î÷·ç³¤Ç¹" << endl; pcount[40]++; } break;
-                    case 42: { std::cout << "!!****Ï»ÀïÃğ³½" << endl; pcount[41]++; } break;
-                    case 43: { std::cout << "!!****Óê²Ã" << endl; pcount[42]++; } break;
-                    case 44: { std::cout << "!!****¼ÀÀñ´ó½£" << endl; pcount[43]++; } break;
-                    case 45: { std::cout << "!!****ÖÓ½£" << endl; pcount[44]++; } break;
-                    case 46: { std::cout << "!!****Î÷·ç´ó½£" << endl; pcount[45]++; } break;
-                    case 47: { std::cout << "!!****Ï»ÀïÁúÒ÷" << endl; pcount[46]++; } break;
-                    case 48: { std::cout << "!!****¼ÀÀñ½£" << endl; pcount[47]++; } break;
-                    case 49: { std::cout << "!!****µÑ½£" << endl; pcount[48]++; } break;
-                    case 50: { std::cout << "!!****Î÷·ç½£" << endl; pcount[49]++; } break;
-                    case 51: { std::cout << "***ÁÔ¹­" << endl; pcount[50]++; } break;
-                    case 52: { std::cout << "***ÉñÉäÊÖÖ®ÊÄ" << endl; pcount[51]++; } break;
-                    case 53: { std::cout << "***Ñ»Óğ¹­" << endl; pcount[52]++; } break;
-                    case 54: { std::cout << "***ôäÓñ·¨Çò" << endl; pcount[53]++; } break;
-                    case 55: { std::cout << "***ÌÖÁúÓ¢½ÜÌ·" << endl; pcount[54]++; } break;
-                    case 56: { std::cout << "***Ä§µ¼Ğ÷ÂÛ" << endl; pcount[55]++; } break;
-                    case 57: { std::cout << "***ºÚÓ§Ç¹" << endl; pcount[56]++; } break;
-                    case 58: { std::cout << "***ÒÔÀí·şÈË" << endl; pcount[57]++; } break;
-                    case 59: { std::cout << "***ãåÔ¡ÁúÑªµÄ½£" << endl; pcount[58]++; } break;
-                    case 60: { std::cout << "***ÌúÓ°À«½£" << endl; pcount[59]++; } break;
-                    case 61: { std::cout << "***·ÉÌìÓù½£" << endl; pcount[60]++; } break;
-                    case 62: { std::cout << "***ÀèÃ÷Éñ½£" << endl; pcount[61]++; } break;
-                    case 63: { std::cout << "***ÀäÈĞ" << endl; pcount[62]++; } break;
-                    case 64: { std::cout << "!!!!!*****ÎÂµÏ" << endl; pcount[63]++; } break;
-                    case 65: { std::cout << "!!!!!*****¿ÉÀò" << endl; pcount[64]++; } break;
-                    case 66: { std::cout << "!!!!!*****´ï´ïÀûÑÇ" << endl; pcount[65]++; } break;
-                    case 67: { std::cout << "!!!!!*****ÖÓÀë" << endl; pcount[66]++; } break;
-                    case 68: { std::cout << "!!!!!*****°¢±´¶à" << endl; pcount[67]++; } break;
-                    case 69: { std::cout << "!!!!!*****¸ÊÓê" << endl; pcount[68]++; } break;
-                    case 70: { std::cout << "!!!!!*****÷Ì" << endl; pcount[69]++; } break;
-                    case 71: { std::cout << "!!!!!*****ºúÌÒ" << endl; pcount[70]++; } break;
-                    case 72: { std::cout << "!!****ÑÌç³" << endl; pcount[71]++; } break;
-                    case 73: { std::cout << "!!!!!*****ÓÅÇ‰" << endl; pcount[72]++; } break;
-                    case 74: { std::cout << "!!!!!*****³¾ÊÀÖ®Ëø" << endl; pcount[73]++; } break;
-                    case 75: { std::cout << "!!!!!*****¹áºçÖ®éÃ" << endl; pcount[74]++; } break;
-                    case 76: { std::cout << "!!!!!*****ÎŞ¹¤Ö®½£" << endl; pcount[75]++; } break;
-                    case 77: { std::cout << "!!!!!*****í½·åÖ®ÈĞ" << endl; pcount[76]++; } break;
-                    case 78: { std::cout << "!!!!!*****ÅÍÑÒ½áÂÌ" << endl; pcount[77]++; } break;
-                    case 79: { std::cout << "!!!!!*****»¤Ä¦Ö®ÕÈ" << endl; pcount[78]++; } break;
-                    case 80: { std::cout << "!!****Ç§ÑÒ¹Å½£" << endl; pcount[79]++; } break;
-                    case 81: { std::cout << "!!****Ç§ÑÒ³¤Ç¹" << endl; pcount[80]++; } break;
-                    case 82: { std::cout << "!!!!!*****ÖÕÄ©àµÌ¾Ö®Ê«" << endl; pcount[81]++; } break;
-                    case 83: { std::cout << "!!****°µÏïÉÁ¹â" << endl; pcount[82]++; } break;
-                    case 84: { std::cout << "!!****°µÏïµÄ¾ÆÓëÊ«" << endl; pcount[83]++; } break;
-                    case 85: { std::cout << "!!****°µÏïÁÔÊÖ" << endl; pcount[84]++; } break;
-                    case 86: { std::cout << "!!!!!*****ËÉô¥ÏìÆğÖ®Ê±" << endl; pcount[85]++; } break;
+                    case 1: { std::cout << "!!!!!*****åˆ»æ™´" << endl; pcount[0]++; } break;
+                    case 2: { std::cout << "!!!!!*****è«å¨œ" << endl; pcount[1]++; } break;
+                    case 3: { std::cout << "!!!!!*****ä¸ƒä¸ƒ" << endl; pcount[2]++; } break;
+                    case 4: { std::cout << "!!!!!*****è¿ªå¢å…‹" << endl; pcount[3]++; } break;
+                    case 5: { std::cout << "!!!!!*****ç´" << endl; pcount[4]++; } break;
+                    case 6: { std::cout << "!!!!!*****é˜¿è«æ–¯ä¹‹å¼“" << endl; pcount[5]++; } break;
+                    case 7: { std::cout << "!!!!!*****å¤©ç©ºä¹‹ç¿¼" << endl; pcount[6]++; } break;
+                    case 8: { std::cout << "!!!!!*****å››é£åŸå…¸" << endl; pcount[7]++; } break;
+                    case 9: { std::cout << "!!!!!*****å¤©ç©ºä¹‹å·" << endl; pcount[8]++; } break;
+                    case 10: { std::cout << "!!!!!*****å’Œç’é¸¢" << endl; pcount[9]++; } break;
+                    case 11: { std::cout << "!!!!!*****å¤©ç©ºä¹‹è„Š" << endl; pcount[10]++; } break;
+                    case 12: { std::cout << "!!!!!*****ç‹¼çš„æœ«è·¯" << endl; pcount[11]++; } break;
+                    case 13: { std::cout << "!!!!!*****å¤©ç©ºä¹‹å‚²" << endl; pcount[12]++; } break;
+                    case 14: { std::cout << "!!!!!*****å¤©ç©ºä¹‹åˆƒ" << endl; pcount[13]++; } break;
+                    case 15: { std::cout << "!!!!!*****é£é¹°å‰‘" << endl; pcount[14]++; } break;
+                    case 16: { std::cout << "!!****ç½—èè‰äºš" << endl; pcount[15]++; } break;
+                    case 17: { std::cout << "!!****è¾›ç„±" << endl; pcount[16]++; } break;
+                    case 18: { std::cout << "!!****ç ‚ç³–" << endl; pcount[17]++; } break;
+                    case 19: { std::cout << "!!****è¿ªå¥¥å¨œ" << endl; pcount[18]++; } break;
+                    case 20: { std::cout << "!!****é‡äº‘" << endl; pcount[19]++; } break;
+                    case 21: { std::cout << "!!****è¯ºè‰¾å°”" << endl; pcount[20]++; } break;
+                    case 22: { std::cout << "!!****ç­å°¼ç‰¹" << endl; pcount[21]++; } break;
+                    case 23: { std::cout << "!!****è²è°¢å°”" << endl; pcount[22]++; } break;
+                    case 24: { std::cout << "!!****å‡å…‰" << endl; pcount[23]++; } break;
+                    case 25: { std::cout << "!!****è¡Œç§‹" << endl; pcount[24]++; } break;
+                    case 26: { std::cout << "!!****åŒ—æ–—" << endl; pcount[25]++; } break;
+                    case 27: { std::cout << "!!****é¦™è±" << endl; pcount[26]++; } break;
+                    case 28: { std::cout << "!!****å®‰æŸ" << endl; pcount[27]++; } break;
+                    case 29: { std::cout << "!!****é›·æ³½" << endl; pcount[28]++; } break;
+                    case 30: { std::cout << "!!****å‡¯äºš" << endl; pcount[29]++; } break;
+                    case 31: { std::cout << "!!****èŠ­èŠ­æ‹‰" << endl; pcount[30]++; } break;
+                    case 32: { std::cout << "!!****ä¸½è" << endl; pcount[31]++; } break;
+                    case 33: { std::cout << "!!****å¼“è—" << endl; pcount[32]++; } break;
+                    case 34: { std::cout << "!!****ç¥­ç¤¼å¼“" << endl; pcount[33]++; } break;
+                    case 35: { std::cout << "!!****ç»å¼¦" << endl; pcount[34]++; } break;
+                    case 36: { std::cout << "!!****è¥¿é£çŒå¼“" << endl; pcount[35]++; } break;
+                    case 37: { std::cout << "!!****æ˜­å¿ƒ" << endl; pcount[36]++; } break;
+                    case 38: { std::cout << "!!****ç¥­ç¤¼æ®‹ç« " << endl; pcount[37]++; } break;
+                    case 39: { std::cout << "!!****æµæµªä¹ç« " << endl; pcount[38]++; } break;
+                    case 40: { std::cout << "!!****è¥¿é£ç§˜å…¸" << endl; pcount[39]++; } break;
+                    case 41: { std::cout << "!!****è¥¿é£é•¿æª" << endl; pcount[40]++; } break;
+                    case 42: { std::cout << "!!****åŒ£é‡Œç­è¾°" << endl; pcount[41]++; } break;
+                    case 43: { std::cout << "!!****é›¨è£" << endl; pcount[42]++; } break;
+                    case 44: { std::cout << "!!****ç¥­ç¤¼å¤§å‰‘" << endl; pcount[43]++; } break;
+                    case 45: { std::cout << "!!****é’Ÿå‰‘" << endl; pcount[44]++; } break;
+                    case 46: { std::cout << "!!****è¥¿é£å¤§å‰‘" << endl; pcount[45]++; } break;
+                    case 47: { std::cout << "!!****åŒ£é‡Œé¾™åŸ" << endl; pcount[46]++; } break;
+                    case 48: { std::cout << "!!****ç¥­ç¤¼å‰‘" << endl; pcount[47]++; } break;
+                    case 49: { std::cout << "!!****ç¬›å‰‘" << endl; pcount[48]++; } break;
+                    case 50: { std::cout << "!!****è¥¿é£å‰‘" << endl; pcount[49]++; } break;
+                    case 51: { std::cout << "***çŒå¼“" << endl; pcount[50]++; } break;
+                    case 52: { std::cout << "***ç¥å°„æ‰‹ä¹‹èª“" << endl; pcount[51]++; } break;
+                    case 53: { std::cout << "***é¸¦ç¾½å¼“" << endl; pcount[52]++; } break;
+                    case 54: { std::cout << "***ç¿¡ç‰æ³•çƒ" << endl; pcount[53]++; } break;
+                    case 55: { std::cout << "***è®¨é¾™è‹±æ°è°­" << endl; pcount[54]++; } break;
+                    case 56: { std::cout << "***é­”å¯¼ç»ªè®º" << endl; pcount[55]++; } break;
+                    case 57: { std::cout << "***é»‘ç¼¨æª" << endl; pcount[56]++; } break;
+                    case 58: { std::cout << "***ä»¥ç†æœäºº" << endl; pcount[57]++; } break;
+                    case 59: { std::cout << "***æ²æµ´é¾™è¡€çš„å‰‘" << endl; pcount[58]++; } break;
+                    case 60: { std::cout << "***é“å½±é˜”å‰‘" << endl; pcount[59]++; } break;
+                    case 61: { std::cout << "***é£å¤©å¾¡å‰‘" << endl; pcount[60]++; } break;
+                    case 62: { std::cout << "***é»æ˜ç¥å‰‘" << endl; pcount[61]++; } break;
+                    case 63: { std::cout << "***å†·åˆƒ" << endl; pcount[62]++; } break;
+                    case 64: { std::cout << "!!!!!*****æ¸©è¿ª" << endl; pcount[63]++; } break;
+                    case 65: { std::cout << "!!!!!*****å¯è‰" << endl; pcount[64]++; } break;
+                    case 66: { std::cout << "!!!!!*****è¾¾è¾¾åˆ©äºš" << endl; pcount[65]++; } break;
+                    case 67: { std::cout << "!!!!!*****é’Ÿç¦»" << endl; pcount[66]++; } break;
+                    case 68: { std::cout << "!!!!!*****é˜¿è´å¤š" << endl; pcount[67]++; } break;
+                    case 69: { std::cout << "!!!!!*****ç”˜é›¨" << endl; pcount[68]++; } break;
+                    case 70: { std::cout << "!!!!!*****é­ˆ" << endl; pcount[69]++; } break;
+                    case 71: { std::cout << "!!!!!*****èƒ¡æ¡ƒ" << endl; pcount[70]++; } break;
+                    case 72: { std::cout << "!!****çƒŸç»¯" << endl; pcount[71]++; } break;
+                    case 73: { std::cout << "!!!!!*****ä¼˜èˆ" << endl; pcount[72]++; } break;
+                    case 74: { std::cout << "!!!!!*****å°˜ä¸–ä¹‹é”" << endl; pcount[73]++; } break;
+                    case 75: { std::cout << "!!!!!*****è´¯è™¹ä¹‹æ§Š" << endl; pcount[74]++; } break;
+                    case 76: { std::cout << "!!!!!*****æ— å·¥ä¹‹å‰‘" << endl; pcount[75]++; } break;
+                    case 77: { std::cout << "!!!!!*****æ–«å³°ä¹‹åˆƒ" << endl; pcount[76]++; } break;
+                    case 78: { std::cout << "!!!!!*****ç£å²©ç»“ç»¿" << endl; pcount[77]++; } break;
+                    case 79: { std::cout << "!!!!!*****æŠ¤æ‘©ä¹‹æ–" << endl; pcount[78]++; } break;
+                    case 80: { std::cout << "!!****åƒå²©å¤å‰‘" << endl; pcount[79]++; } break;
+                    case 81: { std::cout << "!!****åƒå²©é•¿æª" << endl; pcount[80]++; } break;
+                    case 82: { std::cout << "!!!!!*****ç»ˆæœ«å—Ÿå¹ä¹‹è¯—" << endl; pcount[81]++; } break;
+                    case 83: { std::cout << "!!****æš—å··é—ªå…‰" << endl; pcount[82]++; } break;
+                    case 84: { std::cout << "!!****æš—å··çš„é…’ä¸è¯—" << endl; pcount[83]++; } break;
+                    case 85: { std::cout << "!!****æš—å··çŒæ‰‹" << endl; pcount[84]++; } break;
+                    case 86: { std::cout << "!!!!!*****æ¾ç±å“èµ·ä¹‹æ—¶" << endl; pcount[85]++; } break;
                     case 87: { std::cout << "Placeholder" << endl; pcount[86]++; } break;
                     case 88: { std::cout << "Placeholder" << endl; pcount[87]++; } break;
                     case 89: { std::cout << "Placeholder" << endl; pcount[88]++; } break;
@@ -3025,7 +3066,7 @@ int main() {
                                 five_count_w++;
                                 int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                 kind = rspick(templist, 10);
-                                if (kind == 12 || kind == 8) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
+                                if (kind == 12 || kind == 8) five_star_guarantee_number = 0; else if(five_check[1] == 1) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
                             }
                         }
                         else if (temp1 < (long long int) ULTRAPOS / 1000 * 67) {
@@ -3135,7 +3176,7 @@ int main() {
                                 five_count_w++;
                                 int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                 kind = rspick(templist, 10);
-                                if (kind == 12 || kind == 8) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
+                                if (kind == 12 || kind == 8) five_star_guarantee_number = 0; else if(five_check[1] == 1) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
                             }
                         }
                         else if (temp1 < (long long int) ULTRAPOS / 1000 * 667) {
@@ -3245,7 +3286,7 @@ int main() {
                                 five_count_w++;
                                 int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                 kind = rspick(templist, 10);
-                                if (kind == 12 || kind == 8) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
+                                if (kind == 12 || kind == 8) five_star_guarantee_number = 0; else if(five_check[1] == 1) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
                             }
                         }
                         else if (temp1 < (long long int) ULTRAPOS / 1000 * 967) {
@@ -3355,7 +3396,7 @@ int main() {
                                 five_count_w++;
                                 int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                 kind = rspick(templist, 10);
-                                if (kind == 12 || kind == 8) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
+                                if (kind == 12 || kind == 8) five_star_guarantee_number = 0; else if(five_check[1] == 1) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
                             }
                         }
                         else {
@@ -3460,7 +3501,7 @@ int main() {
                                 five_count_w++;
                                 int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                 kind = rspick(templist, 10);
-                                if (kind == 12 || kind == 8) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
+                                if (kind == 12 || kind == 8) five_star_guarantee_number = 0; else if(five_check[1] == 1) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
                             }
                         }
                         else if (temp1 < (long long int) (ULTRAPOS / 1000 * 67) + ((long long int)(five_star_assurance_number) - 62) * (long long int)(ULTRAPOS / 1000 * 70)) {
@@ -3570,7 +3611,7 @@ int main() {
                                 five_count_w++;
                                 int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                 kind = rspick(templist, 10);
-                                if (kind == 12 || kind == 8) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
+                                if (kind == 12 || kind == 8) five_star_guarantee_number = 0; else if(five_check[1] == 1) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
                             }
                         }
                         else if (temp1 < (long long int) (ULTRAPOS / 1000 * 667) + ((long long int)(five_star_assurance_number) - 62) * (long long int)(ULTRAPOS / 1000 * 70)) {
@@ -3680,7 +3721,7 @@ int main() {
                                 five_count_w++;
                                 int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                 kind = rspick(templist, 10);
-                                if (kind == 12 || kind == 8) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
+                                if (kind == 12 || kind == 8) five_star_guarantee_number = 0; else if(five_check[1] == 1) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
                             }
                         }
                         else if (temp1 < (long long int) (ULTRAPOS / 1000 * 967) + ((long long int)(five_star_assurance_number) - 62) * (long long int)(ULTRAPOS / 1000 * 70)) {
@@ -3790,7 +3831,7 @@ int main() {
                                 five_count_w++;
                                 int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                 kind = rspick(templist, 10);
-                                if (kind == 12 || kind == 8) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
+                                if (kind == 12 || kind == 8) five_star_guarantee_number = 0; else if(five_check[1] == 1) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
                             }
                         }
                         else {
@@ -3895,7 +3936,7 @@ int main() {
                                 five_count_w++;
                                 int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                 kind = rspick(templist, 10);
-                                if (kind == 12 || kind == 8) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
+                                if (kind == 12 || kind == 8) five_star_guarantee_number = 0; else if(five_check[1] == 1) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
                             }
                         }
                         else if (temp1 < (long long int) (ULTRAPOS / 1000 * 837) + ((long long int)(five_star_assurance_number) - 73) * (long long int)(ULTRAPOS / 1000 * 35)) {
@@ -4005,7 +4046,7 @@ int main() {
                                 five_count_w++;
                                 int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                 kind = rspick(templist, 10);
-                                if (kind == 12 || kind == 8) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
+                                if (kind == 12 || kind == 8) five_star_guarantee_number = 0; else if(five_check[1] == 1) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
                             }
                         }
                         else if (temp1 < (long long int) (ULTRAPOS / 1000 * 1437) + ((long long int)(five_star_assurance_number) - 73) * (long long int)(ULTRAPOS / 1000 * 35)) {
@@ -4115,7 +4156,7 @@ int main() {
                                 five_count_w++;
                                 int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                 kind = rspick(templist, 10);
-                                if (kind == 12 || kind == 8) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
+                                if (kind == 12 || kind == 8) five_star_guarantee_number = 0; else if(five_check[1] == 1) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
                             }
                         }
                         else if (temp1 < (long long int) (ULTRAPOS / 1000 * 1737) + ((long long int)(five_star_assurance_number) - 73) * (long long int)(ULTRAPOS / 1000 * 35)) {
@@ -4225,7 +4266,7 @@ int main() {
                                 five_count_w++;
                                 int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                 kind = rspick(templist, 10);
-                                if (kind == 12 || kind == 8) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
+                                if (kind == 12 || kind == 8) five_star_guarantee_number = 0; else if(five_check[1] == 1) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
                             }
                         }
                         else {
@@ -4327,99 +4368,99 @@ int main() {
                         else {
                             type = 2;
                             five_count_w++;
-                            five_star_guarantee_number = 1;
+                            if(five_check[1] == 1) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
                             int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                             kind = rspick(templist, 10);
                         }
                     }
                     std::cout << count + 1 << "(" << five_star_assurance_number << ")" << " ";
                     switch (kind) {
-                    case 1: { std::cout << "!!!!!*****¿ÌÇç" << endl; pcount[0]++; } break;
-                    case 2: { std::cout << "!!!!!*****ÄªÄÈ" << endl; pcount[1]++; } break;
-                    case 3: { std::cout << "!!!!!*****ÆßÆß" << endl; pcount[2]++; } break;
-                    case 4: { std::cout << "!!!!!*****µÏÂ¬¿Ë" << endl; pcount[3]++; } break;
-                    case 5: { std::cout << "!!!!!*****ÇÙ" << endl; pcount[4]++; } break;
-                    case 6: { std::cout << "!!!!!*****°¢ÄªË¹Ö®¹­" << endl; pcount[5]++; } break;
-                    case 7: { std::cout << "!!!!!*****Ìì¿ÕÖ®Òí" << endl; pcount[6]++; } break;
-                    case 8: { std::cout << "!!!!!*****ËÄ·çÔ­µä" << endl; pcount[7]++; } break;
-                    case 9: { std::cout << "!!!!!*****Ìì¿ÕÖ®¾í" << endl; pcount[8]++; } break;
-                    case 10: { std::cout << "!!!!!*****ºÍè±ğ°" << endl; pcount[9]++; } break;
-                    case 11: { std::cout << "!!!!!*****Ìì¿ÕÖ®¼¹" << endl; pcount[10]++; } break;
-                    case 12: { std::cout << "!!!!!*****ÀÇµÄÄ©Â·" << endl; pcount[11]++; } break;
-                    case 13: { std::cout << "!!!!!*****Ìì¿ÕÖ®°Á" << endl; pcount[12]++; } break;
-                    case 14: { std::cout << "!!!!!*****Ìì¿ÕÖ®ÈĞ" << endl; pcount[13]++; } break;
-                    case 15: { std::cout << "!!!!!*****·çÓ¥½£" << endl; pcount[14]++; } break;
-                    case 16: { std::cout << "!!****ÂŞÉ¯ÀòÑÇ" << endl; pcount[15]++; } break;
-                    case 17: { std::cout << "!!****ĞÁìÍ" << endl; pcount[16]++; } break;
-                    case 18: { std::cout << "!!****É°ÌÇ" << endl; pcount[17]++; } break;
-                    case 19: { std::cout << "!!****µÏ°ÂÄÈ" << endl; pcount[18]++; } break;
-                    case 20: { std::cout << "!!****ÖØÔÆ" << endl; pcount[19]++; } break;
-                    case 21: { std::cout << "!!****Åµ°¬¶û" << endl; pcount[20]++; } break;
-                    case 22: { std::cout << "!!****°àÄáÌØ" << endl; pcount[21]++; } break;
-                    case 23: { std::cout << "!!****·ÆĞ»¶û" << endl; pcount[22]++; } break;
-                    case 24: { std::cout << "!!****Äı¹â" << endl; pcount[23]++; } break;
-                    case 25: { std::cout << "!!****ĞĞÇï" << endl; pcount[24]++; } break;
-                    case 26: { std::cout << "!!****±±¶·" << endl; pcount[25]++; } break;
-                    case 27: { std::cout << "!!****ÏãÁâ" << endl; pcount[26]++; } break;
-                    case 28: { std::cout << "!!****°²°Ø" << endl; pcount[27]++; } break;
-                    case 29: { std::cout << "!!****À×Ôó" << endl; pcount[28]++; } break;
-                    case 30: { std::cout << "!!****¿­ÑÇ" << endl; pcount[29]++; } break;
-                    case 31: { std::cout << "!!****°Å°ÅÀ­" << endl; pcount[30]++; } break;
-                    case 32: { std::cout << "!!****ÀöÉ¯" << endl; pcount[31]++; } break;
-                    case 33: { std::cout << "!!****¹­²Ø" << endl; pcount[32]++; } break;
-                    case 34: { std::cout << "!!****¼ÀÀñ¹­" << endl; pcount[33]++; } break;
-                    case 35: { std::cout << "!!****¾øÏÒ" << endl; pcount[34]++; } break;
-                    case 36: { std::cout << "!!****Î÷·çÁÔ¹­" << endl; pcount[35]++; } break;
-                    case 37: { std::cout << "!!****ÕÑĞÄ" << endl; pcount[36]++; } break;
-                    case 38: { std::cout << "!!****¼ÀÀñ²ĞÕÂ" << endl; pcount[37]++; } break;
-                    case 39: { std::cout << "!!****Á÷ÀËÀÖÕÂ" << endl; pcount[38]++; } break;
-                    case 40: { std::cout << "!!****Î÷·çÃØµä" << endl; pcount[39]++; } break;
-                    case 41: { std::cout << "!!****Î÷·ç³¤Ç¹" << endl; pcount[40]++; } break;
-                    case 42: { std::cout << "!!****Ï»ÀïÃğ³½" << endl; pcount[41]++; } break;
-                    case 43: { std::cout << "!!****Óê²Ã" << endl; pcount[42]++; } break;
-                    case 44: { std::cout << "!!****¼ÀÀñ´ó½£" << endl; pcount[43]++; } break;
-                    case 45: { std::cout << "!!****ÖÓ½£" << endl; pcount[44]++; } break;
-                    case 46: { std::cout << "!!****Î÷·ç´ó½£" << endl; pcount[45]++; } break;
-                    case 47: { std::cout << "!!****Ï»ÀïÁúÒ÷" << endl; pcount[46]++; } break;
-                    case 48: { std::cout << "!!****¼ÀÀñ½£" << endl; pcount[47]++; } break;
-                    case 49: { std::cout << "!!****µÑ½£" << endl; pcount[48]++; } break;
-                    case 50: { std::cout << "!!****Î÷·ç½£" << endl; pcount[49]++; } break;
-                    case 51: { std::cout << "***ÁÔ¹­" << endl; pcount[50]++; } break;
-                    case 52: { std::cout << "***ÉñÉäÊÖÖ®ÊÄ" << endl; pcount[51]++; } break;
-                    case 53: { std::cout << "***Ñ»Óğ¹­" << endl; pcount[52]++; } break;
-                    case 54: { std::cout << "***ôäÓñ·¨Çò" << endl; pcount[53]++; } break;
-                    case 55: { std::cout << "***ÌÖÁúÓ¢½ÜÌ·" << endl; pcount[54]++; } break;
-                    case 56: { std::cout << "***Ä§µ¼Ğ÷ÂÛ" << endl; pcount[55]++; } break;
-                    case 57: { std::cout << "***ºÚÓ§Ç¹" << endl; pcount[56]++; } break;
-                    case 58: { std::cout << "***ÒÔÀí·şÈË" << endl; pcount[57]++; } break;
-                    case 59: { std::cout << "***ãåÔ¡ÁúÑªµÄ½£" << endl; pcount[58]++; } break;
-                    case 60: { std::cout << "***ÌúÓ°À«½£" << endl; pcount[59]++; } break;
-                    case 61: { std::cout << "***·ÉÌìÓù½£" << endl; pcount[60]++; } break;
-                    case 62: { std::cout << "***ÀèÃ÷Éñ½£" << endl; pcount[61]++; } break;
-                    case 63: { std::cout << "***ÀäÈĞ" << endl; pcount[62]++; } break;
-                    case 64: { std::cout << "!!!!!*****ÎÂµÏ" << endl; pcount[63]++; } break;
-                    case 65: { std::cout << "!!!!!*****¿ÉÀò" << endl; pcount[64]++; } break;
-                    case 66: { std::cout << "!!!!!*****´ï´ïÀûÑÇ" << endl; pcount[65]++; } break;
-                    case 67: { std::cout << "!!!!!*****ÖÓÀë" << endl; pcount[66]++; } break;
-                    case 68: { std::cout << "!!!!!*****°¢±´¶à" << endl; pcount[67]++; } break;
-                    case 69: { std::cout << "!!!!!*****¸ÊÓê" << endl; pcount[68]++; } break;
-                    case 70: { std::cout << "!!!!!*****÷Ì" << endl; pcount[69]++; } break;
-                    case 71: { std::cout << "!!!!!*****ºúÌÒ" << endl; pcount[70]++; } break;
-                    case 72: { std::cout << "!!****ÑÌç³" << endl; pcount[71]++; } break;
-                    case 73: { std::cout << "!!!!!*****ÓÅÇ‰" << endl; pcount[72]++; } break;
-                    case 74: { std::cout << "!!!!!*****³¾ÊÀÖ®Ëø" << endl; pcount[73]++; } break;
-                    case 75: { std::cout << "!!!!!*****¹áºçÖ®éÃ" << endl; pcount[74]++; } break;
-                    case 76: { std::cout << "!!!!!*****ÎŞ¹¤Ö®½£" << endl; pcount[75]++; } break;
-                    case 77: { std::cout << "!!!!!*****í½·åÖ®ÈĞ" << endl; pcount[76]++; } break;
-                    case 78: { std::cout << "!!!!!*****ÅÍÑÒ½áÂÌ" << endl; pcount[77]++; } break;
-                    case 79: { std::cout << "!!!!!*****»¤Ä¦Ö®ÕÈ" << endl; pcount[78]++; } break;
-                    case 80: { std::cout << "!!****Ç§ÑÒ¹Å½£" << endl; pcount[79]++; } break;
-                    case 81: { std::cout << "!!****Ç§ÑÒ³¤Ç¹" << endl; pcount[80]++; } break;
-                    case 82: { std::cout << "!!!!!*****ÖÕÄ©àµÌ¾Ö®Ê«" << endl; pcount[81]++; } break;
-                    case 83: { std::cout << "!!****°µÏïÉÁ¹â" << endl; pcount[82]++; } break;
-                    case 84: { std::cout << "!!****°µÏïµÄ¾ÆÓëÊ«" << endl; pcount[83]++; } break;
-                    case 85: { std::cout << "!!****°µÏïÁÔÊÖ" << endl; pcount[84]++; } break;
-                    case 86: { std::cout << "!!!!!*****ËÉô¥ÏìÆğÖ®Ê±" << endl; pcount[85]++; } break;
+                    case 1: { std::cout << "!!!!!*****åˆ»æ™´" << endl; pcount[0]++; } break;
+                    case 2: { std::cout << "!!!!!*****è«å¨œ" << endl; pcount[1]++; } break;
+                    case 3: { std::cout << "!!!!!*****ä¸ƒä¸ƒ" << endl; pcount[2]++; } break;
+                    case 4: { std::cout << "!!!!!*****è¿ªå¢å…‹" << endl; pcount[3]++; } break;
+                    case 5: { std::cout << "!!!!!*****ç´" << endl; pcount[4]++; } break;
+                    case 6: { std::cout << "!!!!!*****é˜¿è«æ–¯ä¹‹å¼“" << endl; pcount[5]++; } break;
+                    case 7: { std::cout << "!!!!!*****å¤©ç©ºä¹‹ç¿¼" << endl; pcount[6]++; } break;
+                    case 8: { std::cout << "!!!!!*****å››é£åŸå…¸" << endl; pcount[7]++; } break;
+                    case 9: { std::cout << "!!!!!*****å¤©ç©ºä¹‹å·" << endl; pcount[8]++; } break;
+                    case 10: { std::cout << "!!!!!*****å’Œç’é¸¢" << endl; pcount[9]++; } break;
+                    case 11: { std::cout << "!!!!!*****å¤©ç©ºä¹‹è„Š" << endl; pcount[10]++; } break;
+                    case 12: { std::cout << "!!!!!*****ç‹¼çš„æœ«è·¯" << endl; pcount[11]++; } break;
+                    case 13: { std::cout << "!!!!!*****å¤©ç©ºä¹‹å‚²" << endl; pcount[12]++; } break;
+                    case 14: { std::cout << "!!!!!*****å¤©ç©ºä¹‹åˆƒ" << endl; pcount[13]++; } break;
+                    case 15: { std::cout << "!!!!!*****é£é¹°å‰‘" << endl; pcount[14]++; } break;
+                    case 16: { std::cout << "!!****ç½—èè‰äºš" << endl; pcount[15]++; } break;
+                    case 17: { std::cout << "!!****è¾›ç„±" << endl; pcount[16]++; } break;
+                    case 18: { std::cout << "!!****ç ‚ç³–" << endl; pcount[17]++; } break;
+                    case 19: { std::cout << "!!****è¿ªå¥¥å¨œ" << endl; pcount[18]++; } break;
+                    case 20: { std::cout << "!!****é‡äº‘" << endl; pcount[19]++; } break;
+                    case 21: { std::cout << "!!****è¯ºè‰¾å°”" << endl; pcount[20]++; } break;
+                    case 22: { std::cout << "!!****ç­å°¼ç‰¹" << endl; pcount[21]++; } break;
+                    case 23: { std::cout << "!!****è²è°¢å°”" << endl; pcount[22]++; } break;
+                    case 24: { std::cout << "!!****å‡å…‰" << endl; pcount[23]++; } break;
+                    case 25: { std::cout << "!!****è¡Œç§‹" << endl; pcount[24]++; } break;
+                    case 26: { std::cout << "!!****åŒ—æ–—" << endl; pcount[25]++; } break;
+                    case 27: { std::cout << "!!****é¦™è±" << endl; pcount[26]++; } break;
+                    case 28: { std::cout << "!!****å®‰æŸ" << endl; pcount[27]++; } break;
+                    case 29: { std::cout << "!!****é›·æ³½" << endl; pcount[28]++; } break;
+                    case 30: { std::cout << "!!****å‡¯äºš" << endl; pcount[29]++; } break;
+                    case 31: { std::cout << "!!****èŠ­èŠ­æ‹‰" << endl; pcount[30]++; } break;
+                    case 32: { std::cout << "!!****ä¸½è" << endl; pcount[31]++; } break;
+                    case 33: { std::cout << "!!****å¼“è—" << endl; pcount[32]++; } break;
+                    case 34: { std::cout << "!!****ç¥­ç¤¼å¼“" << endl; pcount[33]++; } break;
+                    case 35: { std::cout << "!!****ç»å¼¦" << endl; pcount[34]++; } break;
+                    case 36: { std::cout << "!!****è¥¿é£çŒå¼“" << endl; pcount[35]++; } break;
+                    case 37: { std::cout << "!!****æ˜­å¿ƒ" << endl; pcount[36]++; } break;
+                    case 38: { std::cout << "!!****ç¥­ç¤¼æ®‹ç« " << endl; pcount[37]++; } break;
+                    case 39: { std::cout << "!!****æµæµªä¹ç« " << endl; pcount[38]++; } break;
+                    case 40: { std::cout << "!!****è¥¿é£ç§˜å…¸" << endl; pcount[39]++; } break;
+                    case 41: { std::cout << "!!****è¥¿é£é•¿æª" << endl; pcount[40]++; } break;
+                    case 42: { std::cout << "!!****åŒ£é‡Œç­è¾°" << endl; pcount[41]++; } break;
+                    case 43: { std::cout << "!!****é›¨è£" << endl; pcount[42]++; } break;
+                    case 44: { std::cout << "!!****ç¥­ç¤¼å¤§å‰‘" << endl; pcount[43]++; } break;
+                    case 45: { std::cout << "!!****é’Ÿå‰‘" << endl; pcount[44]++; } break;
+                    case 46: { std::cout << "!!****è¥¿é£å¤§å‰‘" << endl; pcount[45]++; } break;
+                    case 47: { std::cout << "!!****åŒ£é‡Œé¾™åŸ" << endl; pcount[46]++; } break;
+                    case 48: { std::cout << "!!****ç¥­ç¤¼å‰‘" << endl; pcount[47]++; } break;
+                    case 49: { std::cout << "!!****ç¬›å‰‘" << endl; pcount[48]++; } break;
+                    case 50: { std::cout << "!!****è¥¿é£å‰‘" << endl; pcount[49]++; } break;
+                    case 51: { std::cout << "***çŒå¼“" << endl; pcount[50]++; } break;
+                    case 52: { std::cout << "***ç¥å°„æ‰‹ä¹‹èª“" << endl; pcount[51]++; } break;
+                    case 53: { std::cout << "***é¸¦ç¾½å¼“" << endl; pcount[52]++; } break;
+                    case 54: { std::cout << "***ç¿¡ç‰æ³•çƒ" << endl; pcount[53]++; } break;
+                    case 55: { std::cout << "***è®¨é¾™è‹±æ°è°­" << endl; pcount[54]++; } break;
+                    case 56: { std::cout << "***é­”å¯¼ç»ªè®º" << endl; pcount[55]++; } break;
+                    case 57: { std::cout << "***é»‘ç¼¨æª" << endl; pcount[56]++; } break;
+                    case 58: { std::cout << "***ä»¥ç†æœäºº" << endl; pcount[57]++; } break;
+                    case 59: { std::cout << "***æ²æµ´é¾™è¡€çš„å‰‘" << endl; pcount[58]++; } break;
+                    case 60: { std::cout << "***é“å½±é˜”å‰‘" << endl; pcount[59]++; } break;
+                    case 61: { std::cout << "***é£å¤©å¾¡å‰‘" << endl; pcount[60]++; } break;
+                    case 62: { std::cout << "***é»æ˜ç¥å‰‘" << endl; pcount[61]++; } break;
+                    case 63: { std::cout << "***å†·åˆƒ" << endl; pcount[62]++; } break;
+                    case 64: { std::cout << "!!!!!*****æ¸©è¿ª" << endl; pcount[63]++; } break;
+                    case 65: { std::cout << "!!!!!*****å¯è‰" << endl; pcount[64]++; } break;
+                    case 66: { std::cout << "!!!!!*****è¾¾è¾¾åˆ©äºš" << endl; pcount[65]++; } break;
+                    case 67: { std::cout << "!!!!!*****é’Ÿç¦»" << endl; pcount[66]++; } break;
+                    case 68: { std::cout << "!!!!!*****é˜¿è´å¤š" << endl; pcount[67]++; } break;
+                    case 69: { std::cout << "!!!!!*****ç”˜é›¨" << endl; pcount[68]++; } break;
+                    case 70: { std::cout << "!!!!!*****é­ˆ" << endl; pcount[69]++; } break;
+                    case 71: { std::cout << "!!!!!*****èƒ¡æ¡ƒ" << endl; pcount[70]++; } break;
+                    case 72: { std::cout << "!!****çƒŸç»¯" << endl; pcount[71]++; } break;
+                    case 73: { std::cout << "!!!!!*****ä¼˜èˆ" << endl; pcount[72]++; } break;
+                    case 74: { std::cout << "!!!!!*****å°˜ä¸–ä¹‹é”" << endl; pcount[73]++; } break;
+                    case 75: { std::cout << "!!!!!*****è´¯è™¹ä¹‹æ§Š" << endl; pcount[74]++; } break;
+                    case 76: { std::cout << "!!!!!*****æ— å·¥ä¹‹å‰‘" << endl; pcount[75]++; } break;
+                    case 77: { std::cout << "!!!!!*****æ–«å³°ä¹‹åˆƒ" << endl; pcount[76]++; } break;
+                    case 78: { std::cout << "!!!!!*****ç£å²©ç»“ç»¿" << endl; pcount[77]++; } break;
+                    case 79: { std::cout << "!!!!!*****æŠ¤æ‘©ä¹‹æ–" << endl; pcount[78]++; } break;
+                    case 80: { std::cout << "!!****åƒå²©å¤å‰‘" << endl; pcount[79]++; } break;
+                    case 81: { std::cout << "!!****åƒå²©é•¿æª" << endl; pcount[80]++; } break;
+                    case 82: { std::cout << "!!!!!*****ç»ˆæœ«å—Ÿå¹ä¹‹è¯—" << endl; pcount[81]++; } break;
+                    case 83: { std::cout << "!!****æš—å··é—ªå…‰" << endl; pcount[82]++; } break;
+                    case 84: { std::cout << "!!****æš—å··çš„é…’ä¸è¯—" << endl; pcount[83]++; } break;
+                    case 85: { std::cout << "!!****æš—å··çŒæ‰‹" << endl; pcount[84]++; } break;
+                    case 86: { std::cout << "!!!!!*****æ¾ç±å“èµ·ä¹‹æ—¶" << endl; pcount[85]++; } break;
                     case 87: { std::cout << "Placeholder" << endl; pcount[86]++; } break;
                     case 88: { std::cout << "Placeholder" << endl; pcount[87]++; } break;
                     case 89: { std::cout << "Placeholder" << endl; pcount[88]++; } break;
@@ -4542,7 +4583,7 @@ int main() {
                                 five_count_w++;
                                 int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                 kind = rspick(templist, 10);
-                                if (kind == 7) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
+                                if (kind == 7) five_star_guarantee_number = 0; else if(five_check[1] == 1) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
                             }
                         }
                         else if (temp1 < (long long int) ULTRAPOS / 1000 * 67) {
@@ -4652,7 +4693,7 @@ int main() {
                                 five_count_w++;
                                 int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                 kind = rspick(templist, 10);
-                                if (kind == 7) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
+                                if (kind == 7) five_star_guarantee_number = 0; else if(five_check[1] == 1) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
                             }
                         }
                         else if (temp1 < (long long int) ULTRAPOS / 1000 * 667) {
@@ -4762,7 +4803,7 @@ int main() {
                                 five_count_w++;
                                 int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                 kind = rspick(templist, 10);
-                                if (kind == 7) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
+                                if (kind == 7) five_star_guarantee_number = 0; else if(five_check[1] == 1) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
                             }
                         }
                         else if (temp1 < (long long int) ULTRAPOS / 1000 * 967) {
@@ -4872,7 +4913,7 @@ int main() {
                                 five_count_w++;
                                 int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                 kind = rspick(templist, 10);
-                                if (kind == 7) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
+                                if (kind == 7) five_star_guarantee_number = 0; else if(five_check[1] == 1) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
                             }
                         }
                         else {
@@ -4977,7 +5018,7 @@ int main() {
                                 five_count_w++;
                                 int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                 kind = rspick(templist, 10);
-                                if (kind == 7) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
+                                if (kind == 7) five_star_guarantee_number = 0; else if(five_check[1] == 1) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
                             }
                         }
                         else if (temp1 < (long long int) (ULTRAPOS / 1000 * 67) + ((long long int)(five_star_assurance_number) - 62) * (long long int)(ULTRAPOS / 1000 * 70)) {
@@ -5087,7 +5128,7 @@ int main() {
                                 five_count_w++;
                                 int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                 kind = rspick(templist, 10);
-                                if (kind == 7) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
+                                if (kind == 7) five_star_guarantee_number = 0; else if(five_check[1] == 1) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
                             }
                         }
                         else if (temp1 < (long long int) (ULTRAPOS / 1000 * 667) + ((long long int)(five_star_assurance_number) - 62) * (long long int)(ULTRAPOS / 1000 * 70)) {
@@ -5197,7 +5238,7 @@ int main() {
                                 five_count_w++;
                                 int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                 kind = rspick(templist, 10);
-                                if (kind == 7) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
+                                if (kind == 7) five_star_guarantee_number = 0; else if(five_check[1] == 1) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
                             }
                         }
                         else if (temp1 < (long long int) (ULTRAPOS / 1000 * 967) + ((long long int)(five_star_assurance_number) - 62) * (long long int)(ULTRAPOS / 1000 * 70)) {
@@ -5307,7 +5348,7 @@ int main() {
                                 five_count_w++;
                                 int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                 kind = rspick(templist, 10);
-                                if (kind == 7) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
+                                if (kind == 7) five_star_guarantee_number = 0; else if(five_check[1] == 1) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
                             }
                         }
                         else {
@@ -5412,7 +5453,7 @@ int main() {
                                 five_count_w++;
                                 int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                 kind = rspick(templist, 10);
-                                if (kind == 7) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
+                                if (kind == 7) five_star_guarantee_number = 0; else if(five_check[1] == 1) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
                             }
                         }
                         else if (temp1 < (long long int) (ULTRAPOS / 1000 * 837) + ((long long int)(five_star_assurance_number) - 73) * (long long int)(ULTRAPOS / 1000 * 35)) {
@@ -5522,7 +5563,7 @@ int main() {
                                 five_count_w++;
                                 int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                 kind = rspick(templist, 10);
-                                if (kind == 7) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
+                                if (kind == 7) five_star_guarantee_number = 0; else if(five_check[1] == 1) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
                             }
                         }
                         else if (temp1 < (long long int) (ULTRAPOS / 1000 * 1437) + ((long long int)(five_star_assurance_number) - 73) * (long long int)(ULTRAPOS / 1000 * 35)) {
@@ -5632,7 +5673,7 @@ int main() {
                                 five_count_w++;
                                 int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                 kind = rspick(templist, 10);
-                                if (kind == 7) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
+                                if (kind == 7) five_star_guarantee_number = 0; else if(five_check[1] == 1) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
                             }
                         }
                         else if (temp1 < (long long int) (ULTRAPOS / 1000 * 1737) + ((long long int)(five_star_assurance_number) - 73) * (long long int)(ULTRAPOS / 1000 * 35)) {
@@ -5742,7 +5783,7 @@ int main() {
                                 five_count_w++;
                                 int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                 kind = rspick(templist, 10);
-                                if (kind == 7) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
+                                if (kind == 7) five_star_guarantee_number = 0; else if(five_check[1] == 1) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
                             }
                         }
                         else {
@@ -5844,99 +5885,99 @@ int main() {
                         else {
                             type = 2;
                             five_count_w++;
-                            five_star_guarantee_number = 1;
+                            if(five_check[1] == 1) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
                             int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                             kind = rspick(templist, 10);
                         }
                     }
                     std::cout << count + 1 << "(" << five_star_assurance_number << ")" << " ";
                     switch (kind) {
-                    case 1: { std::cout << "!!!!!*****¿ÌÇç" << endl; pcount[0]++; } break;
-                    case 2: { std::cout << "!!!!!*****ÄªÄÈ" << endl; pcount[1]++; } break;
-                    case 3: { std::cout << "!!!!!*****ÆßÆß" << endl; pcount[2]++; } break;
-                    case 4: { std::cout << "!!!!!*****µÏÂ¬¿Ë" << endl; pcount[3]++; } break;
-                    case 5: { std::cout << "!!!!!*****ÇÙ" << endl; pcount[4]++; } break;
-                    case 6: { std::cout << "!!!!!*****°¢ÄªË¹Ö®¹­" << endl; pcount[5]++; } break;
-                    case 7: { std::cout << "!!!!!*****Ìì¿ÕÖ®Òí" << endl; pcount[6]++; } break;
-                    case 8: { std::cout << "!!!!!*****ËÄ·çÔ­µä" << endl; pcount[7]++; } break;
-                    case 9: { std::cout << "!!!!!*****Ìì¿ÕÖ®¾í" << endl; pcount[8]++; } break;
-                    case 10: { std::cout << "!!!!!*****ºÍè±ğ°" << endl; pcount[9]++; } break;
-                    case 11: { std::cout << "!!!!!*****Ìì¿ÕÖ®¼¹" << endl; pcount[10]++; } break;
-                    case 12: { std::cout << "!!!!!*****ÀÇµÄÄ©Â·" << endl; pcount[11]++; } break;
-                    case 13: { std::cout << "!!!!!*****Ìì¿ÕÖ®°Á" << endl; pcount[12]++; } break;
-                    case 14: { std::cout << "!!!!!*****Ìì¿ÕÖ®ÈĞ" << endl; pcount[13]++; } break;
-                    case 15: { std::cout << "!!!!!*****·çÓ¥½£" << endl; pcount[14]++; } break;
-                    case 16: { std::cout << "!!****ÂŞÉ¯ÀòÑÇ" << endl; pcount[15]++; } break;
-                    case 17: { std::cout << "!!****ĞÁìÍ" << endl; pcount[16]++; } break;
-                    case 18: { std::cout << "!!****É°ÌÇ" << endl; pcount[17]++; } break;
-                    case 19: { std::cout << "!!****µÏ°ÂÄÈ" << endl; pcount[18]++; } break;
-                    case 20: { std::cout << "!!****ÖØÔÆ" << endl; pcount[19]++; } break;
-                    case 21: { std::cout << "!!****Åµ°¬¶û" << endl; pcount[20]++; } break;
-                    case 22: { std::cout << "!!****°àÄáÌØ" << endl; pcount[21]++; } break;
-                    case 23: { std::cout << "!!****·ÆĞ»¶û" << endl; pcount[22]++; } break;
-                    case 24: { std::cout << "!!****Äı¹â" << endl; pcount[23]++; } break;
-                    case 25: { std::cout << "!!****ĞĞÇï" << endl; pcount[24]++; } break;
-                    case 26: { std::cout << "!!****±±¶·" << endl; pcount[25]++; } break;
-                    case 27: { std::cout << "!!****ÏãÁâ" << endl; pcount[26]++; } break;
-                    case 28: { std::cout << "!!****°²°Ø" << endl; pcount[27]++; } break;
-                    case 29: { std::cout << "!!****À×Ôó" << endl; pcount[28]++; } break;
-                    case 30: { std::cout << "!!****¿­ÑÇ" << endl; pcount[29]++; } break;
-                    case 31: { std::cout << "!!****°Å°ÅÀ­" << endl; pcount[30]++; } break;
-                    case 32: { std::cout << "!!****ÀöÉ¯" << endl; pcount[31]++; } break;
-                    case 33: { std::cout << "!!****¹­²Ø" << endl; pcount[32]++; } break;
-                    case 34: { std::cout << "!!****¼ÀÀñ¹­" << endl; pcount[33]++; } break;
-                    case 35: { std::cout << "!!****¾øÏÒ" << endl; pcount[34]++; } break;
-                    case 36: { std::cout << "!!****Î÷·çÁÔ¹­" << endl; pcount[35]++; } break;
-                    case 37: { std::cout << "!!****ÕÑĞÄ" << endl; pcount[36]++; } break;
-                    case 38: { std::cout << "!!****¼ÀÀñ²ĞÕÂ" << endl; pcount[37]++; } break;
-                    case 39: { std::cout << "!!****Á÷ÀËÀÖÕÂ" << endl; pcount[38]++; } break;
-                    case 40: { std::cout << "!!****Î÷·çÃØµä" << endl; pcount[39]++; } break;
-                    case 41: { std::cout << "!!****Î÷·ç³¤Ç¹" << endl; pcount[40]++; } break;
-                    case 42: { std::cout << "!!****Ï»ÀïÃğ³½" << endl; pcount[41]++; } break;
-                    case 43: { std::cout << "!!****Óê²Ã" << endl; pcount[42]++; } break;
-                    case 44: { std::cout << "!!****¼ÀÀñ´ó½£" << endl; pcount[43]++; } break;
-                    case 45: { std::cout << "!!****ÖÓ½£" << endl; pcount[44]++; } break;
-                    case 46: { std::cout << "!!****Î÷·ç´ó½£" << endl; pcount[45]++; } break;
-                    case 47: { std::cout << "!!****Ï»ÀïÁúÒ÷" << endl; pcount[46]++; } break;
-                    case 48: { std::cout << "!!****¼ÀÀñ½£" << endl; pcount[47]++; } break;
-                    case 49: { std::cout << "!!****µÑ½£" << endl; pcount[48]++; } break;
-                    case 50: { std::cout << "!!****Î÷·ç½£" << endl; pcount[49]++; } break;
-                    case 51: { std::cout << "***ÁÔ¹­" << endl; pcount[50]++; } break;
-                    case 52: { std::cout << "***ÉñÉäÊÖÖ®ÊÄ" << endl; pcount[51]++; } break;
-                    case 53: { std::cout << "***Ñ»Óğ¹­" << endl; pcount[52]++; } break;
-                    case 54: { std::cout << "***ôäÓñ·¨Çò" << endl; pcount[53]++; } break;
-                    case 55: { std::cout << "***ÌÖÁúÓ¢½ÜÌ·" << endl; pcount[54]++; } break;
-                    case 56: { std::cout << "***Ä§µ¼Ğ÷ÂÛ" << endl; pcount[55]++; } break;
-                    case 57: { std::cout << "***ºÚÓ§Ç¹" << endl; pcount[56]++; } break;
-                    case 58: { std::cout << "***ÒÔÀí·şÈË" << endl; pcount[57]++; } break;
-                    case 59: { std::cout << "***ãåÔ¡ÁúÑªµÄ½£" << endl; pcount[58]++; } break;
-                    case 60: { std::cout << "***ÌúÓ°À«½£" << endl; pcount[59]++; } break;
-                    case 61: { std::cout << "***·ÉÌìÓù½£" << endl; pcount[60]++; } break;
-                    case 62: { std::cout << "***ÀèÃ÷Éñ½£" << endl; pcount[61]++; } break;
-                    case 63: { std::cout << "***ÀäÈĞ" << endl; pcount[62]++; } break;
-                    case 64: { std::cout << "!!!!!*****ÎÂµÏ" << endl; pcount[63]++; } break;
-                    case 65: { std::cout << "!!!!!*****¿ÉÀò" << endl; pcount[64]++; } break;
-                    case 66: { std::cout << "!!!!!*****´ï´ïÀûÑÇ" << endl; pcount[65]++; } break;
-                    case 67: { std::cout << "!!!!!*****ÖÓÀë" << endl; pcount[66]++; } break;
-                    case 68: { std::cout << "!!!!!*****°¢±´¶à" << endl; pcount[67]++; } break;
-                    case 69: { std::cout << "!!!!!*****¸ÊÓê" << endl; pcount[68]++; } break;
-                    case 70: { std::cout << "!!!!!*****÷Ì" << endl; pcount[69]++; } break;
-                    case 71: { std::cout << "!!!!!*****ºúÌÒ" << endl; pcount[70]++; } break;
-                    case 72: { std::cout << "!!****ÑÌç³" << endl; pcount[71]++; } break;
-                    case 73: { std::cout << "!!!!!*****ÓÅÇ‰" << endl; pcount[72]++; } break;
-                    case 74: { std::cout << "!!!!!*****³¾ÊÀÖ®Ëø" << endl; pcount[73]++; } break;
-                    case 75: { std::cout << "!!!!!*****¹áºçÖ®éÃ" << endl; pcount[74]++; } break;
-                    case 76: { std::cout << "!!!!!*****ÎŞ¹¤Ö®½£" << endl; pcount[75]++; } break;
-                    case 77: { std::cout << "!!!!!*****í½·åÖ®ÈĞ" << endl; pcount[76]++; } break;
-                    case 78: { std::cout << "!!!!!*****ÅÍÑÒ½áÂÌ" << endl; pcount[77]++; } break;
-                    case 79: { std::cout << "!!!!!*****»¤Ä¦Ö®ÕÈ" << endl; pcount[78]++; } break;
-                    case 80: { std::cout << "!!****Ç§ÑÒ¹Å½£" << endl; pcount[79]++; } break;
-                    case 81: { std::cout << "!!****Ç§ÑÒ³¤Ç¹" << endl; pcount[80]++; } break;
-                    case 82: { std::cout << "!!!!!*****ÖÕÄ©àµÌ¾Ö®Ê«" << endl; pcount[81]++; } break;
-                    case 83: { std::cout << "!!****°µÏïÉÁ¹â" << endl; pcount[82]++; } break;
-                    case 84: { std::cout << "!!****°µÏïµÄ¾ÆÓëÊ«" << endl; pcount[83]++; } break;
-                    case 85: { std::cout << "!!****°µÏïÁÔÊÖ" << endl; pcount[84]++; } break;
-                    case 86: { std::cout << "!!!!!*****ËÉô¥ÏìÆğÖ®Ê±" << endl; pcount[85]++; } break;
+                    case 1: { std::cout << "!!!!!*****åˆ»æ™´" << endl; pcount[0]++; } break;
+                    case 2: { std::cout << "!!!!!*****è«å¨œ" << endl; pcount[1]++; } break;
+                    case 3: { std::cout << "!!!!!*****ä¸ƒä¸ƒ" << endl; pcount[2]++; } break;
+                    case 4: { std::cout << "!!!!!*****è¿ªå¢å…‹" << endl; pcount[3]++; } break;
+                    case 5: { std::cout << "!!!!!*****ç´" << endl; pcount[4]++; } break;
+                    case 6: { std::cout << "!!!!!*****é˜¿è«æ–¯ä¹‹å¼“" << endl; pcount[5]++; } break;
+                    case 7: { std::cout << "!!!!!*****å¤©ç©ºä¹‹ç¿¼" << endl; pcount[6]++; } break;
+                    case 8: { std::cout << "!!!!!*****å››é£åŸå…¸" << endl; pcount[7]++; } break;
+                    case 9: { std::cout << "!!!!!*****å¤©ç©ºä¹‹å·" << endl; pcount[8]++; } break;
+                    case 10: { std::cout << "!!!!!*****å’Œç’é¸¢" << endl; pcount[9]++; } break;
+                    case 11: { std::cout << "!!!!!*****å¤©ç©ºä¹‹è„Š" << endl; pcount[10]++; } break;
+                    case 12: { std::cout << "!!!!!*****ç‹¼çš„æœ«è·¯" << endl; pcount[11]++; } break;
+                    case 13: { std::cout << "!!!!!*****å¤©ç©ºä¹‹å‚²" << endl; pcount[12]++; } break;
+                    case 14: { std::cout << "!!!!!*****å¤©ç©ºä¹‹åˆƒ" << endl; pcount[13]++; } break;
+                    case 15: { std::cout << "!!!!!*****é£é¹°å‰‘" << endl; pcount[14]++; } break;
+                    case 16: { std::cout << "!!****ç½—èè‰äºš" << endl; pcount[15]++; } break;
+                    case 17: { std::cout << "!!****è¾›ç„±" << endl; pcount[16]++; } break;
+                    case 18: { std::cout << "!!****ç ‚ç³–" << endl; pcount[17]++; } break;
+                    case 19: { std::cout << "!!****è¿ªå¥¥å¨œ" << endl; pcount[18]++; } break;
+                    case 20: { std::cout << "!!****é‡äº‘" << endl; pcount[19]++; } break;
+                    case 21: { std::cout << "!!****è¯ºè‰¾å°”" << endl; pcount[20]++; } break;
+                    case 22: { std::cout << "!!****ç­å°¼ç‰¹" << endl; pcount[21]++; } break;
+                    case 23: { std::cout << "!!****è²è°¢å°”" << endl; pcount[22]++; } break;
+                    case 24: { std::cout << "!!****å‡å…‰" << endl; pcount[23]++; } break;
+                    case 25: { std::cout << "!!****è¡Œç§‹" << endl; pcount[24]++; } break;
+                    case 26: { std::cout << "!!****åŒ—æ–—" << endl; pcount[25]++; } break;
+                    case 27: { std::cout << "!!****é¦™è±" << endl; pcount[26]++; } break;
+                    case 28: { std::cout << "!!****å®‰æŸ" << endl; pcount[27]++; } break;
+                    case 29: { std::cout << "!!****é›·æ³½" << endl; pcount[28]++; } break;
+                    case 30: { std::cout << "!!****å‡¯äºš" << endl; pcount[29]++; } break;
+                    case 31: { std::cout << "!!****èŠ­èŠ­æ‹‰" << endl; pcount[30]++; } break;
+                    case 32: { std::cout << "!!****ä¸½è" << endl; pcount[31]++; } break;
+                    case 33: { std::cout << "!!****å¼“è—" << endl; pcount[32]++; } break;
+                    case 34: { std::cout << "!!****ç¥­ç¤¼å¼“" << endl; pcount[33]++; } break;
+                    case 35: { std::cout << "!!****ç»å¼¦" << endl; pcount[34]++; } break;
+                    case 36: { std::cout << "!!****è¥¿é£çŒå¼“" << endl; pcount[35]++; } break;
+                    case 37: { std::cout << "!!****æ˜­å¿ƒ" << endl; pcount[36]++; } break;
+                    case 38: { std::cout << "!!****ç¥­ç¤¼æ®‹ç« " << endl; pcount[37]++; } break;
+                    case 39: { std::cout << "!!****æµæµªä¹ç« " << endl; pcount[38]++; } break;
+                    case 40: { std::cout << "!!****è¥¿é£ç§˜å…¸" << endl; pcount[39]++; } break;
+                    case 41: { std::cout << "!!****è¥¿é£é•¿æª" << endl; pcount[40]++; } break;
+                    case 42: { std::cout << "!!****åŒ£é‡Œç­è¾°" << endl; pcount[41]++; } break;
+                    case 43: { std::cout << "!!****é›¨è£" << endl; pcount[42]++; } break;
+                    case 44: { std::cout << "!!****ç¥­ç¤¼å¤§å‰‘" << endl; pcount[43]++; } break;
+                    case 45: { std::cout << "!!****é’Ÿå‰‘" << endl; pcount[44]++; } break;
+                    case 46: { std::cout << "!!****è¥¿é£å¤§å‰‘" << endl; pcount[45]++; } break;
+                    case 47: { std::cout << "!!****åŒ£é‡Œé¾™åŸ" << endl; pcount[46]++; } break;
+                    case 48: { std::cout << "!!****ç¥­ç¤¼å‰‘" << endl; pcount[47]++; } break;
+                    case 49: { std::cout << "!!****ç¬›å‰‘" << endl; pcount[48]++; } break;
+                    case 50: { std::cout << "!!****è¥¿é£å‰‘" << endl; pcount[49]++; } break;
+                    case 51: { std::cout << "***çŒå¼“" << endl; pcount[50]++; } break;
+                    case 52: { std::cout << "***ç¥å°„æ‰‹ä¹‹èª“" << endl; pcount[51]++; } break;
+                    case 53: { std::cout << "***é¸¦ç¾½å¼“" << endl; pcount[52]++; } break;
+                    case 54: { std::cout << "***ç¿¡ç‰æ³•çƒ" << endl; pcount[53]++; } break;
+                    case 55: { std::cout << "***è®¨é¾™è‹±æ°è°­" << endl; pcount[54]++; } break;
+                    case 56: { std::cout << "***é­”å¯¼ç»ªè®º" << endl; pcount[55]++; } break;
+                    case 57: { std::cout << "***é»‘ç¼¨æª" << endl; pcount[56]++; } break;
+                    case 58: { std::cout << "***ä»¥ç†æœäºº" << endl; pcount[57]++; } break;
+                    case 59: { std::cout << "***æ²æµ´é¾™è¡€çš„å‰‘" << endl; pcount[58]++; } break;
+                    case 60: { std::cout << "***é“å½±é˜”å‰‘" << endl; pcount[59]++; } break;
+                    case 61: { std::cout << "***é£å¤©å¾¡å‰‘" << endl; pcount[60]++; } break;
+                    case 62: { std::cout << "***é»æ˜ç¥å‰‘" << endl; pcount[61]++; } break;
+                    case 63: { std::cout << "***å†·åˆƒ" << endl; pcount[62]++; } break;
+                    case 64: { std::cout << "!!!!!*****æ¸©è¿ª" << endl; pcount[63]++; } break;
+                    case 65: { std::cout << "!!!!!*****å¯è‰" << endl; pcount[64]++; } break;
+                    case 66: { std::cout << "!!!!!*****è¾¾è¾¾åˆ©äºš" << endl; pcount[65]++; } break;
+                    case 67: { std::cout << "!!!!!*****é’Ÿç¦»" << endl; pcount[66]++; } break;
+                    case 68: { std::cout << "!!!!!*****é˜¿è´å¤š" << endl; pcount[67]++; } break;
+                    case 69: { std::cout << "!!!!!*****ç”˜é›¨" << endl; pcount[68]++; } break;
+                    case 70: { std::cout << "!!!!!*****é­ˆ" << endl; pcount[69]++; } break;
+                    case 71: { std::cout << "!!!!!*****èƒ¡æ¡ƒ" << endl; pcount[70]++; } break;
+                    case 72: { std::cout << "!!****çƒŸç»¯" << endl; pcount[71]++; } break;
+                    case 73: { std::cout << "!!!!!*****ä¼˜èˆ" << endl; pcount[72]++; } break;
+                    case 74: { std::cout << "!!!!!*****å°˜ä¸–ä¹‹é”" << endl; pcount[73]++; } break;
+                    case 75: { std::cout << "!!!!!*****è´¯è™¹ä¹‹æ§Š" << endl; pcount[74]++; } break;
+                    case 76: { std::cout << "!!!!!*****æ— å·¥ä¹‹å‰‘" << endl; pcount[75]++; } break;
+                    case 77: { std::cout << "!!!!!*****æ–«å³°ä¹‹åˆƒ" << endl; pcount[76]++; } break;
+                    case 78: { std::cout << "!!!!!*****ç£å²©ç»“ç»¿" << endl; pcount[77]++; } break;
+                    case 79: { std::cout << "!!!!!*****æŠ¤æ‘©ä¹‹æ–" << endl; pcount[78]++; } break;
+                    case 80: { std::cout << "!!****åƒå²©å¤å‰‘" << endl; pcount[79]++; } break;
+                    case 81: { std::cout << "!!****åƒå²©é•¿æª" << endl; pcount[80]++; } break;
+                    case 82: { std::cout << "!!!!!*****ç»ˆæœ«å—Ÿå¹ä¹‹è¯—" << endl; pcount[81]++; } break;
+                    case 83: { std::cout << "!!****æš—å··é—ªå…‰" << endl; pcount[82]++; } break;
+                    case 84: { std::cout << "!!****æš—å··çš„é…’ä¸è¯—" << endl; pcount[83]++; } break;
+                    case 85: { std::cout << "!!****æš—å··çŒæ‰‹" << endl; pcount[84]++; } break;
+                    case 86: { std::cout << "!!!!!*****æ¾ç±å“èµ·ä¹‹æ—¶" << endl; pcount[85]++; } break;
                     case 87: { std::cout << "Placeholder" << endl; pcount[86]++; } break;
                     case 88: { std::cout << "Placeholder" << endl; pcount[87]++; } break;
                     case 89: { std::cout << "Placeholder" << endl; pcount[88]++; } break;
@@ -6059,7 +6100,7 @@ int main() {
                                 five_count_w++;
                                 int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                 kind = rspick(templist, 10);
-                                five_star_guarantee_number = 1;
+                                if(five_check[1] == 1) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
                             }
                         }
                         else if (temp1 < (long long int) ULTRAPOS / 1000 * 67) {
@@ -6169,7 +6210,7 @@ int main() {
                                 five_count_w++;
                                 int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                 kind = rspick(templist, 10);
-                                five_star_guarantee_number = 1;
+                                if(five_check[1] == 1) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
                             }
                         }
                         else if (temp1 < (long long int) ULTRAPOS / 1000 * 667) {
@@ -6279,7 +6320,7 @@ int main() {
                                 five_count_w++;
                                 int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                 kind = rspick(templist, 10);
-                                five_star_guarantee_number = 1;
+                                if(five_check[1] == 1) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
                             }
                         }
                         else if (temp1 < (long long int) ULTRAPOS / 1000 * 967) {
@@ -6389,7 +6430,7 @@ int main() {
                                 five_count_w++;
                                 int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                 kind = rspick(templist, 10);
-                                five_star_guarantee_number = 1;
+                                if(five_check[1] == 1) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
                             }
                         }
                         else {
@@ -6494,7 +6535,7 @@ int main() {
                                 five_count_w++;
                                 int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                 kind = rspick(templist, 10);
-                                five_star_guarantee_number = 1;
+                                if(five_check[1] == 1) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
                             }
                         }
                         else if (temp1 < (long long int) (ULTRAPOS / 1000 * 67) + ((long long int)(five_star_assurance_number) - 62) * (long long int)(ULTRAPOS / 1000 * 70)) {
@@ -6604,7 +6645,7 @@ int main() {
                                 five_count_w++;
                                 int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                 kind = rspick(templist, 10);
-                                five_star_guarantee_number = 1;
+                                if(five_check[1] == 1) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
                             }
                         }
                         else if (temp1 < (long long int) (ULTRAPOS / 1000 * 667) + ((long long int)(five_star_assurance_number) - 62) * (long long int)(ULTRAPOS / 1000 * 70)) {
@@ -6714,7 +6755,7 @@ int main() {
                                 five_count_w++;
                                 int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                 kind = rspick(templist, 10);
-                                five_star_guarantee_number = 1;
+                                if(five_check[1] == 1) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
                             }
                         }
                         else if (temp1 < (long long int) (ULTRAPOS / 1000 * 967) + ((long long int)(five_star_assurance_number) - 62) * (long long int)(ULTRAPOS / 1000 * 70)) {
@@ -6824,7 +6865,7 @@ int main() {
                                 five_count_w++;
                                 int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                 kind = rspick(templist, 10);
-                                five_star_guarantee_number = 1;
+                                if(five_check[1] == 1) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
                             }
                         }
                         else {
@@ -6929,7 +6970,7 @@ int main() {
                                 five_count_w++;
                                 int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                 kind = rspick(templist, 10);
-                                five_star_guarantee_number = 1;
+                                if(five_check[1] == 1) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
                             }
                         }
                         else if (temp1 < (long long int) (ULTRAPOS / 1000 * 837) + ((long long int)(five_star_assurance_number) - 73) * (long long int)(ULTRAPOS / 1000 * 35)) {
@@ -7039,7 +7080,7 @@ int main() {
                                 five_count_w++;
                                 int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                 kind = rspick(templist, 10);
-                                five_star_guarantee_number = 1;
+                                if(five_check[1] == 1) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
                             }
                         }
                         else if (temp1 < (long long int) (ULTRAPOS / 1000 * 1437) + ((long long int)(five_star_assurance_number) - 73) * (long long int)(ULTRAPOS / 1000 * 35)) {
@@ -7149,7 +7190,7 @@ int main() {
                                 five_count_w++;
                                 int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                 kind = rspick(templist, 10);
-                                five_star_guarantee_number = 1;
+                                if(five_check[1] == 1) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
                             }
                         }
                         else if (temp1 < (long long int) (ULTRAPOS / 1000 * 1737) + ((long long int)(five_star_assurance_number) - 73) * (long long int)(ULTRAPOS / 1000 * 35)) {
@@ -7259,7 +7300,7 @@ int main() {
                                 five_count_w++;
                                 int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                 kind = rspick(templist, 10);
-                                five_star_guarantee_number = 1;
+                                if(five_check[1] == 1) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
                             }
                         }
                         else {
@@ -7361,99 +7402,99 @@ int main() {
                         else {
                             type = 2;
                             five_count_w++;
-                            five_star_guarantee_number = 1;
+                            if(five_check[1] == 1) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
                             int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                             kind = rspick(templist, 10);
                         }
                     }
                     std::cout << count + 1 << "(" << five_star_assurance_number << ")" << " ";
                     switch (kind) {
-                    case 1: { std::cout << "!!!!!*****¿ÌÇç" << endl; pcount[0]++; } break;
-                    case 2: { std::cout << "!!!!!*****ÄªÄÈ" << endl; pcount[1]++; } break;
-                    case 3: { std::cout << "!!!!!*****ÆßÆß" << endl; pcount[2]++; } break;
-                    case 4: { std::cout << "!!!!!*****µÏÂ¬¿Ë" << endl; pcount[3]++; } break;
-                    case 5: { std::cout << "!!!!!*****ÇÙ" << endl; pcount[4]++; } break;
-                    case 6: { std::cout << "!!!!!*****°¢ÄªË¹Ö®¹­" << endl; pcount[5]++; } break;
-                    case 7: { std::cout << "!!!!!*****Ìì¿ÕÖ®Òí" << endl; pcount[6]++; } break;
-                    case 8: { std::cout << "!!!!!*****ËÄ·çÔ­µä" << endl; pcount[7]++; } break;
-                    case 9: { std::cout << "!!!!!*****Ìì¿ÕÖ®¾í" << endl; pcount[8]++; } break;
-                    case 10: { std::cout << "!!!!!*****ºÍè±ğ°" << endl; pcount[9]++; } break;
-                    case 11: { std::cout << "!!!!!*****Ìì¿ÕÖ®¼¹" << endl; pcount[10]++; } break;
-                    case 12: { std::cout << "!!!!!*****ÀÇµÄÄ©Â·" << endl; pcount[11]++; } break;
-                    case 13: { std::cout << "!!!!!*****Ìì¿ÕÖ®°Á" << endl; pcount[12]++; } break;
-                    case 14: { std::cout << "!!!!!*****Ìì¿ÕÖ®ÈĞ" << endl; pcount[13]++; } break;
-                    case 15: { std::cout << "!!!!!*****·çÓ¥½£" << endl; pcount[14]++; } break;
-                    case 16: { std::cout << "!!****ÂŞÉ¯ÀòÑÇ" << endl; pcount[15]++; } break;
-                    case 17: { std::cout << "!!****ĞÁìÍ" << endl; pcount[16]++; } break;
-                    case 18: { std::cout << "!!****É°ÌÇ" << endl; pcount[17]++; } break;
-                    case 19: { std::cout << "!!****µÏ°ÂÄÈ" << endl; pcount[18]++; } break;
-                    case 20: { std::cout << "!!****ÖØÔÆ" << endl; pcount[19]++; } break;
-                    case 21: { std::cout << "!!****Åµ°¬¶û" << endl; pcount[20]++; } break;
-                    case 22: { std::cout << "!!****°àÄáÌØ" << endl; pcount[21]++; } break;
-                    case 23: { std::cout << "!!****·ÆĞ»¶û" << endl; pcount[22]++; } break;
-                    case 24: { std::cout << "!!****Äı¹â" << endl; pcount[23]++; } break;
-                    case 25: { std::cout << "!!****ĞĞÇï" << endl; pcount[24]++; } break;
-                    case 26: { std::cout << "!!****±±¶·" << endl; pcount[25]++; } break;
-                    case 27: { std::cout << "!!****ÏãÁâ" << endl; pcount[26]++; } break;
-                    case 28: { std::cout << "!!****°²°Ø" << endl; pcount[27]++; } break;
-                    case 29: { std::cout << "!!****À×Ôó" << endl; pcount[28]++; } break;
-                    case 30: { std::cout << "!!****¿­ÑÇ" << endl; pcount[29]++; } break;
-                    case 31: { std::cout << "!!****°Å°ÅÀ­" << endl; pcount[30]++; } break;
-                    case 32: { std::cout << "!!****ÀöÉ¯" << endl; pcount[31]++; } break;
-                    case 33: { std::cout << "!!****¹­²Ø" << endl; pcount[32]++; } break;
-                    case 34: { std::cout << "!!****¼ÀÀñ¹­" << endl; pcount[33]++; } break;
-                    case 35: { std::cout << "!!****¾øÏÒ" << endl; pcount[34]++; } break;
-                    case 36: { std::cout << "!!****Î÷·çÁÔ¹­" << endl; pcount[35]++; } break;
-                    case 37: { std::cout << "!!****ÕÑĞÄ" << endl; pcount[36]++; } break;
-                    case 38: { std::cout << "!!****¼ÀÀñ²ĞÕÂ" << endl; pcount[37]++; } break;
-                    case 39: { std::cout << "!!****Á÷ÀËÀÖÕÂ" << endl; pcount[38]++; } break;
-                    case 40: { std::cout << "!!****Î÷·çÃØµä" << endl; pcount[39]++; } break;
-                    case 41: { std::cout << "!!****Î÷·ç³¤Ç¹" << endl; pcount[40]++; } break;
-                    case 42: { std::cout << "!!****Ï»ÀïÃğ³½" << endl; pcount[41]++; } break;
-                    case 43: { std::cout << "!!****Óê²Ã" << endl; pcount[42]++; } break;
-                    case 44: { std::cout << "!!****¼ÀÀñ´ó½£" << endl; pcount[43]++; } break;
-                    case 45: { std::cout << "!!****ÖÓ½£" << endl; pcount[44]++; } break;
-                    case 46: { std::cout << "!!****Î÷·ç´ó½£" << endl; pcount[45]++; } break;
-                    case 47: { std::cout << "!!****Ï»ÀïÁúÒ÷" << endl; pcount[46]++; } break;
-                    case 48: { std::cout << "!!****¼ÀÀñ½£" << endl; pcount[47]++; } break;
-                    case 49: { std::cout << "!!****µÑ½£" << endl; pcount[48]++; } break;
-                    case 50: { std::cout << "!!****Î÷·ç½£" << endl; pcount[49]++; } break;
-                    case 51: { std::cout << "***ÁÔ¹­" << endl; pcount[50]++; } break;
-                    case 52: { std::cout << "***ÉñÉäÊÖÖ®ÊÄ" << endl; pcount[51]++; } break;
-                    case 53: { std::cout << "***Ñ»Óğ¹­" << endl; pcount[52]++; } break;
-                    case 54: { std::cout << "***ôäÓñ·¨Çò" << endl; pcount[53]++; } break;
-                    case 55: { std::cout << "***ÌÖÁúÓ¢½ÜÌ·" << endl; pcount[54]++; } break;
-                    case 56: { std::cout << "***Ä§µ¼Ğ÷ÂÛ" << endl; pcount[55]++; } break;
-                    case 57: { std::cout << "***ºÚÓ§Ç¹" << endl; pcount[56]++; } break;
-                    case 58: { std::cout << "***ÒÔÀí·şÈË" << endl; pcount[57]++; } break;
-                    case 59: { std::cout << "***ãåÔ¡ÁúÑªµÄ½£" << endl; pcount[58]++; } break;
-                    case 60: { std::cout << "***ÌúÓ°À«½£" << endl; pcount[59]++; } break;
-                    case 61: { std::cout << "***·ÉÌìÓù½£" << endl; pcount[60]++; } break;
-                    case 62: { std::cout << "***ÀèÃ÷Éñ½£" << endl; pcount[61]++; } break;
-                    case 63: { std::cout << "***ÀäÈĞ" << endl; pcount[62]++; } break;
-                    case 64: { std::cout << "!!!!!*****ÎÂµÏ" << endl; pcount[63]++; } break;
-                    case 65: { std::cout << "!!!!!*****¿ÉÀò" << endl; pcount[64]++; } break;
-                    case 66: { std::cout << "!!!!!*****´ï´ïÀûÑÇ" << endl; pcount[65]++; } break;
-                    case 67: { std::cout << "!!!!!*****ÖÓÀë" << endl; pcount[66]++; } break;
-                    case 68: { std::cout << "!!!!!*****°¢±´¶à" << endl; pcount[67]++; } break;
-                    case 69: { std::cout << "!!!!!*****¸ÊÓê" << endl; pcount[68]++; } break;
-                    case 70: { std::cout << "!!!!!*****÷Ì" << endl; pcount[69]++; } break;
-                    case 71: { std::cout << "!!!!!*****ºúÌÒ" << endl; pcount[70]++; } break;
-                    case 72: { std::cout << "!!****ÑÌç³" << endl; pcount[71]++; } break;
-                    case 73: { std::cout << "!!!!!*****ÓÅÇ‰" << endl; pcount[72]++; } break;
-                    case 74: { std::cout << "!!!!!*****³¾ÊÀÖ®Ëø" << endl; pcount[73]++; } break;
-                    case 75: { std::cout << "!!!!!*****¹áºçÖ®éÃ" << endl; pcount[74]++; } break;
-                    case 76: { std::cout << "!!!!!*****ÎŞ¹¤Ö®½£" << endl; pcount[75]++; } break;
-                    case 77: { std::cout << "!!!!!*****í½·åÖ®ÈĞ" << endl; pcount[76]++; } break;
-                    case 78: { std::cout << "!!!!!*****ÅÍÑÒ½áÂÌ" << endl; pcount[77]++; } break;
-                    case 79: { std::cout << "!!!!!*****»¤Ä¦Ö®ÕÈ" << endl; pcount[78]++; } break;
-                    case 80: { std::cout << "!!****Ç§ÑÒ¹Å½£" << endl; pcount[79]++; } break;
-                    case 81: { std::cout << "!!****Ç§ÑÒ³¤Ç¹" << endl; pcount[80]++; } break;
-                    case 82: { std::cout << "!!!!!*****ÖÕÄ©àµÌ¾Ö®Ê«" << endl; pcount[81]++; } break;
-                    case 83: { std::cout << "!!****°µÏïÉÁ¹â" << endl; pcount[82]++; } break;
-                    case 84: { std::cout << "!!****°µÏïµÄ¾ÆÓëÊ«" << endl; pcount[83]++; } break;
-                    case 85: { std::cout << "!!****°µÏïÁÔÊÖ" << endl; pcount[84]++; } break;
-                    case 86: { std::cout << "!!!!!*****ËÉô¥ÏìÆğÖ®Ê±" << endl; pcount[85]++; } break;
+                    case 1: { std::cout << "!!!!!*****åˆ»æ™´" << endl; pcount[0]++; } break;
+                    case 2: { std::cout << "!!!!!*****è«å¨œ" << endl; pcount[1]++; } break;
+                    case 3: { std::cout << "!!!!!*****ä¸ƒä¸ƒ" << endl; pcount[2]++; } break;
+                    case 4: { std::cout << "!!!!!*****è¿ªå¢å…‹" << endl; pcount[3]++; } break;
+                    case 5: { std::cout << "!!!!!*****ç´" << endl; pcount[4]++; } break;
+                    case 6: { std::cout << "!!!!!*****é˜¿è«æ–¯ä¹‹å¼“" << endl; pcount[5]++; } break;
+                    case 7: { std::cout << "!!!!!*****å¤©ç©ºä¹‹ç¿¼" << endl; pcount[6]++; } break;
+                    case 8: { std::cout << "!!!!!*****å››é£åŸå…¸" << endl; pcount[7]++; } break;
+                    case 9: { std::cout << "!!!!!*****å¤©ç©ºä¹‹å·" << endl; pcount[8]++; } break;
+                    case 10: { std::cout << "!!!!!*****å’Œç’é¸¢" << endl; pcount[9]++; } break;
+                    case 11: { std::cout << "!!!!!*****å¤©ç©ºä¹‹è„Š" << endl; pcount[10]++; } break;
+                    case 12: { std::cout << "!!!!!*****ç‹¼çš„æœ«è·¯" << endl; pcount[11]++; } break;
+                    case 13: { std::cout << "!!!!!*****å¤©ç©ºä¹‹å‚²" << endl; pcount[12]++; } break;
+                    case 14: { std::cout << "!!!!!*****å¤©ç©ºä¹‹åˆƒ" << endl; pcount[13]++; } break;
+                    case 15: { std::cout << "!!!!!*****é£é¹°å‰‘" << endl; pcount[14]++; } break;
+                    case 16: { std::cout << "!!****ç½—èè‰äºš" << endl; pcount[15]++; } break;
+                    case 17: { std::cout << "!!****è¾›ç„±" << endl; pcount[16]++; } break;
+                    case 18: { std::cout << "!!****ç ‚ç³–" << endl; pcount[17]++; } break;
+                    case 19: { std::cout << "!!****è¿ªå¥¥å¨œ" << endl; pcount[18]++; } break;
+                    case 20: { std::cout << "!!****é‡äº‘" << endl; pcount[19]++; } break;
+                    case 21: { std::cout << "!!****è¯ºè‰¾å°”" << endl; pcount[20]++; } break;
+                    case 22: { std::cout << "!!****ç­å°¼ç‰¹" << endl; pcount[21]++; } break;
+                    case 23: { std::cout << "!!****è²è°¢å°”" << endl; pcount[22]++; } break;
+                    case 24: { std::cout << "!!****å‡å…‰" << endl; pcount[23]++; } break;
+                    case 25: { std::cout << "!!****è¡Œç§‹" << endl; pcount[24]++; } break;
+                    case 26: { std::cout << "!!****åŒ—æ–—" << endl; pcount[25]++; } break;
+                    case 27: { std::cout << "!!****é¦™è±" << endl; pcount[26]++; } break;
+                    case 28: { std::cout << "!!****å®‰æŸ" << endl; pcount[27]++; } break;
+                    case 29: { std::cout << "!!****é›·æ³½" << endl; pcount[28]++; } break;
+                    case 30: { std::cout << "!!****å‡¯äºš" << endl; pcount[29]++; } break;
+                    case 31: { std::cout << "!!****èŠ­èŠ­æ‹‰" << endl; pcount[30]++; } break;
+                    case 32: { std::cout << "!!****ä¸½è" << endl; pcount[31]++; } break;
+                    case 33: { std::cout << "!!****å¼“è—" << endl; pcount[32]++; } break;
+                    case 34: { std::cout << "!!****ç¥­ç¤¼å¼“" << endl; pcount[33]++; } break;
+                    case 35: { std::cout << "!!****ç»å¼¦" << endl; pcount[34]++; } break;
+                    case 36: { std::cout << "!!****è¥¿é£çŒå¼“" << endl; pcount[35]++; } break;
+                    case 37: { std::cout << "!!****æ˜­å¿ƒ" << endl; pcount[36]++; } break;
+                    case 38: { std::cout << "!!****ç¥­ç¤¼æ®‹ç« " << endl; pcount[37]++; } break;
+                    case 39: { std::cout << "!!****æµæµªä¹ç« " << endl; pcount[38]++; } break;
+                    case 40: { std::cout << "!!****è¥¿é£ç§˜å…¸" << endl; pcount[39]++; } break;
+                    case 41: { std::cout << "!!****è¥¿é£é•¿æª" << endl; pcount[40]++; } break;
+                    case 42: { std::cout << "!!****åŒ£é‡Œç­è¾°" << endl; pcount[41]++; } break;
+                    case 43: { std::cout << "!!****é›¨è£" << endl; pcount[42]++; } break;
+                    case 44: { std::cout << "!!****ç¥­ç¤¼å¤§å‰‘" << endl; pcount[43]++; } break;
+                    case 45: { std::cout << "!!****é’Ÿå‰‘" << endl; pcount[44]++; } break;
+                    case 46: { std::cout << "!!****è¥¿é£å¤§å‰‘" << endl; pcount[45]++; } break;
+                    case 47: { std::cout << "!!****åŒ£é‡Œé¾™åŸ" << endl; pcount[46]++; } break;
+                    case 48: { std::cout << "!!****ç¥­ç¤¼å‰‘" << endl; pcount[47]++; } break;
+                    case 49: { std::cout << "!!****ç¬›å‰‘" << endl; pcount[48]++; } break;
+                    case 50: { std::cout << "!!****è¥¿é£å‰‘" << endl; pcount[49]++; } break;
+                    case 51: { std::cout << "***çŒå¼“" << endl; pcount[50]++; } break;
+                    case 52: { std::cout << "***ç¥å°„æ‰‹ä¹‹èª“" << endl; pcount[51]++; } break;
+                    case 53: { std::cout << "***é¸¦ç¾½å¼“" << endl; pcount[52]++; } break;
+                    case 54: { std::cout << "***ç¿¡ç‰æ³•çƒ" << endl; pcount[53]++; } break;
+                    case 55: { std::cout << "***è®¨é¾™è‹±æ°è°­" << endl; pcount[54]++; } break;
+                    case 56: { std::cout << "***é­”å¯¼ç»ªè®º" << endl; pcount[55]++; } break;
+                    case 57: { std::cout << "***é»‘ç¼¨æª" << endl; pcount[56]++; } break;
+                    case 58: { std::cout << "***ä»¥ç†æœäºº" << endl; pcount[57]++; } break;
+                    case 59: { std::cout << "***æ²æµ´é¾™è¡€çš„å‰‘" << endl; pcount[58]++; } break;
+                    case 60: { std::cout << "***é“å½±é˜”å‰‘" << endl; pcount[59]++; } break;
+                    case 61: { std::cout << "***é£å¤©å¾¡å‰‘" << endl; pcount[60]++; } break;
+                    case 62: { std::cout << "***é»æ˜ç¥å‰‘" << endl; pcount[61]++; } break;
+                    case 63: { std::cout << "***å†·åˆƒ" << endl; pcount[62]++; } break;
+                    case 64: { std::cout << "!!!!!*****æ¸©è¿ª" << endl; pcount[63]++; } break;
+                    case 65: { std::cout << "!!!!!*****å¯è‰" << endl; pcount[64]++; } break;
+                    case 66: { std::cout << "!!!!!*****è¾¾è¾¾åˆ©äºš" << endl; pcount[65]++; } break;
+                    case 67: { std::cout << "!!!!!*****é’Ÿç¦»" << endl; pcount[66]++; } break;
+                    case 68: { std::cout << "!!!!!*****é˜¿è´å¤š" << endl; pcount[67]++; } break;
+                    case 69: { std::cout << "!!!!!*****ç”˜é›¨" << endl; pcount[68]++; } break;
+                    case 70: { std::cout << "!!!!!*****é­ˆ" << endl; pcount[69]++; } break;
+                    case 71: { std::cout << "!!!!!*****èƒ¡æ¡ƒ" << endl; pcount[70]++; } break;
+                    case 72: { std::cout << "!!****çƒŸç»¯" << endl; pcount[71]++; } break;
+                    case 73: { std::cout << "!!!!!*****ä¼˜èˆ" << endl; pcount[72]++; } break;
+                    case 74: { std::cout << "!!!!!*****å°˜ä¸–ä¹‹é”" << endl; pcount[73]++; } break;
+                    case 75: { std::cout << "!!!!!*****è´¯è™¹ä¹‹æ§Š" << endl; pcount[74]++; } break;
+                    case 76: { std::cout << "!!!!!*****æ— å·¥ä¹‹å‰‘" << endl; pcount[75]++; } break;
+                    case 77: { std::cout << "!!!!!*****æ–«å³°ä¹‹åˆƒ" << endl; pcount[76]++; } break;
+                    case 78: { std::cout << "!!!!!*****ç£å²©ç»“ç»¿" << endl; pcount[77]++; } break;
+                    case 79: { std::cout << "!!!!!*****æŠ¤æ‘©ä¹‹æ–" << endl; pcount[78]++; } break;
+                    case 80: { std::cout << "!!****åƒå²©å¤å‰‘" << endl; pcount[79]++; } break;
+                    case 81: { std::cout << "!!****åƒå²©é•¿æª" << endl; pcount[80]++; } break;
+                    case 82: { std::cout << "!!!!!*****ç»ˆæœ«å—Ÿå¹ä¹‹è¯—" << endl; pcount[81]++; } break;
+                    case 83: { std::cout << "!!****æš—å··é—ªå…‰" << endl; pcount[82]++; } break;
+                    case 84: { std::cout << "!!****æš—å··çš„é…’ä¸è¯—" << endl; pcount[83]++; } break;
+                    case 85: { std::cout << "!!****æš—å··çŒæ‰‹" << endl; pcount[84]++; } break;
+                    case 86: { std::cout << "!!!!!*****æ¾ç±å“èµ·ä¹‹æ—¶" << endl; pcount[85]++; } break;
                     case 87: { std::cout << "Placeholder" << endl; pcount[86]++; } break;
                     case 88: { std::cout << "Placeholder" << endl; pcount[87]++; } break;
                     case 89: { std::cout << "Placeholder" << endl; pcount[88]++; } break;
@@ -7576,7 +7617,7 @@ int main() {
                                 five_count_w++;
                                 int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                 kind = rspick(templist, 10);
-                                if (kind == 9) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
+                                if (kind == 9) five_star_guarantee_number = 0; else if(five_check[1] == 1) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
                             }
                         }
                         else if (temp1 < (long long int) ULTRAPOS / 1000 * 67) {
@@ -7686,7 +7727,7 @@ int main() {
                                 five_count_w++;
                                 int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                 kind = rspick(templist, 10);
-                                if (kind == 9) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
+                                if (kind == 9) five_star_guarantee_number = 0; else if(five_check[1] == 1) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
                             }
                         }
                         else if (temp1 < (long long int) ULTRAPOS / 1000 * 667) {
@@ -7796,7 +7837,7 @@ int main() {
                                 five_count_w++;
                                 int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                 kind = rspick(templist, 10);
-                                if (kind == 9) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
+                                if (kind == 9) five_star_guarantee_number = 0; else if(five_check[1] == 1) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
                             }
                         }
                         else if (temp1 < (long long int) ULTRAPOS / 1000 * 967) {
@@ -7906,7 +7947,7 @@ int main() {
                                 five_count_w++;
                                 int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                 kind = rspick(templist, 10);
-                                if (kind == 9) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
+                                if (kind == 9) five_star_guarantee_number = 0; else if(five_check[1] == 1) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
                             }
                         }
                         else {
@@ -8011,7 +8052,7 @@ int main() {
                                 five_count_w++;
                                 int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                 kind = rspick(templist, 10);
-                                if (kind == 9) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
+                                if (kind == 9) five_star_guarantee_number = 0; else if(five_check[1] == 1) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
                             }
                         }
                         else if (temp1 < (long long int) (ULTRAPOS / 1000 * 67) + ((long long int)(five_star_assurance_number) - 62) * (long long int)(ULTRAPOS / 1000 * 70)) {
@@ -8121,7 +8162,7 @@ int main() {
                                 five_count_w++;
                                 int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                 kind = rspick(templist, 10);
-                                if (kind == 9) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
+                                if (kind == 9) five_star_guarantee_number = 0; else if(five_check[1] == 1) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
                             }
                         }
                         else if (temp1 < (long long int) (ULTRAPOS / 1000 * 667) + ((long long int)(five_star_assurance_number) - 62) * (long long int)(ULTRAPOS / 1000 * 70)) {
@@ -8231,7 +8272,7 @@ int main() {
                                 five_count_w++;
                                 int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                 kind = rspick(templist, 10);
-                                if (kind == 9) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
+                                if (kind == 9) five_star_guarantee_number = 0; else if(five_check[1] == 1) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
                             }
                         }
                         else if (temp1 < (long long int) (ULTRAPOS / 1000 * 967) + ((long long int)(five_star_assurance_number) - 62) * (long long int)(ULTRAPOS / 1000 * 70)) {
@@ -8341,7 +8382,7 @@ int main() {
                                 five_count_w++;
                                 int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                 kind = rspick(templist, 10);
-                                if (kind == 9) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
+                                if (kind == 9) five_star_guarantee_number = 0; else if(five_check[1] == 1) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
                             }
                         }
                         else {
@@ -8446,7 +8487,7 @@ int main() {
                                 five_count_w++;
                                 int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                 kind = rspick(templist, 10);
-                                if (kind == 9) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
+                                if (kind == 9) five_star_guarantee_number = 0; else if(five_check[1] == 1) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
                             }
                         }
                         else if (temp1 < (long long int) (ULTRAPOS / 1000 * 837) + ((long long int)(five_star_assurance_number) - 73) * (long long int)(ULTRAPOS / 1000 * 35)) {
@@ -8556,7 +8597,7 @@ int main() {
                                 five_count_w++;
                                 int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                 kind = rspick(templist, 10);
-                                if (kind == 9) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
+                                if (kind == 9) five_star_guarantee_number = 0; else if(five_check[1] == 1) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
                             }
                         }
                         else if (temp1 < (long long int) (ULTRAPOS / 1000 * 1437) + ((long long int)(five_star_assurance_number) - 73) * (long long int)(ULTRAPOS / 1000 * 35)) {
@@ -8666,7 +8707,7 @@ int main() {
                                 five_count_w++;
                                 int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                 kind = rspick(templist, 10);
-                                if (kind == 9) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
+                                if (kind == 9) five_star_guarantee_number = 0; else if(five_check[1] == 1) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
                             }
                         }
                         else if (temp1 < (long long int) (ULTRAPOS / 1000 * 1737) + ((long long int)(five_star_assurance_number) - 73) * (long long int)(ULTRAPOS / 1000 * 35)) {
@@ -8776,7 +8817,7 @@ int main() {
                                 five_count_w++;
                                 int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                 kind = rspick(templist, 10);
-                                if (kind == 9) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
+                                if (kind == 9) five_star_guarantee_number = 0; else if(five_check[1] == 1) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
                             }
                         }
                         else {
@@ -8878,99 +8919,99 @@ int main() {
                         else {
                             type = 2;
                             five_count_w++;
-                            five_star_guarantee_number = 1;
+                            if(five_check[1] == 1) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
                             int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                             kind = rspick(templist, 10);
                         }
                     }
                     std::cout << count + 1 << "(" << five_star_assurance_number << ")" << " ";
                     switch (kind) {
-                    case 1: { std::cout << "!!!!!*****¿ÌÇç" << endl; pcount[0]++; } break;
-                    case 2: { std::cout << "!!!!!*****ÄªÄÈ" << endl; pcount[1]++; } break;
-                    case 3: { std::cout << "!!!!!*****ÆßÆß" << endl; pcount[2]++; } break;
-                    case 4: { std::cout << "!!!!!*****µÏÂ¬¿Ë" << endl; pcount[3]++; } break;
-                    case 5: { std::cout << "!!!!!*****ÇÙ" << endl; pcount[4]++; } break;
-                    case 6: { std::cout << "!!!!!*****°¢ÄªË¹Ö®¹­" << endl; pcount[5]++; } break;
-                    case 7: { std::cout << "!!!!!*****Ìì¿ÕÖ®Òí" << endl; pcount[6]++; } break;
-                    case 8: { std::cout << "!!!!!*****ËÄ·çÔ­µä" << endl; pcount[7]++; } break;
-                    case 9: { std::cout << "!!!!!*****Ìì¿ÕÖ®¾í" << endl; pcount[8]++; } break;
-                    case 10: { std::cout << "!!!!!*****ºÍè±ğ°" << endl; pcount[9]++; } break;
-                    case 11: { std::cout << "!!!!!*****Ìì¿ÕÖ®¼¹" << endl; pcount[10]++; } break;
-                    case 12: { std::cout << "!!!!!*****ÀÇµÄÄ©Â·" << endl; pcount[11]++; } break;
-                    case 13: { std::cout << "!!!!!*****Ìì¿ÕÖ®°Á" << endl; pcount[12]++; } break;
-                    case 14: { std::cout << "!!!!!*****Ìì¿ÕÖ®ÈĞ" << endl; pcount[13]++; } break;
-                    case 15: { std::cout << "!!!!!*****·çÓ¥½£" << endl; pcount[14]++; } break;
-                    case 16: { std::cout << "!!****ÂŞÉ¯ÀòÑÇ" << endl; pcount[15]++; } break;
-                    case 17: { std::cout << "!!****ĞÁìÍ" << endl; pcount[16]++; } break;
-                    case 18: { std::cout << "!!****É°ÌÇ" << endl; pcount[17]++; } break;
-                    case 19: { std::cout << "!!****µÏ°ÂÄÈ" << endl; pcount[18]++; } break;
-                    case 20: { std::cout << "!!****ÖØÔÆ" << endl; pcount[19]++; } break;
-                    case 21: { std::cout << "!!****Åµ°¬¶û" << endl; pcount[20]++; } break;
-                    case 22: { std::cout << "!!****°àÄáÌØ" << endl; pcount[21]++; } break;
-                    case 23: { std::cout << "!!****·ÆĞ»¶û" << endl; pcount[22]++; } break;
-                    case 24: { std::cout << "!!****Äı¹â" << endl; pcount[23]++; } break;
-                    case 25: { std::cout << "!!****ĞĞÇï" << endl; pcount[24]++; } break;
-                    case 26: { std::cout << "!!****±±¶·" << endl; pcount[25]++; } break;
-                    case 27: { std::cout << "!!****ÏãÁâ" << endl; pcount[26]++; } break;
-                    case 28: { std::cout << "!!****°²°Ø" << endl; pcount[27]++; } break;
-                    case 29: { std::cout << "!!****À×Ôó" << endl; pcount[28]++; } break;
-                    case 30: { std::cout << "!!****¿­ÑÇ" << endl; pcount[29]++; } break;
-                    case 31: { std::cout << "!!****°Å°ÅÀ­" << endl; pcount[30]++; } break;
-                    case 32: { std::cout << "!!****ÀöÉ¯" << endl; pcount[31]++; } break;
-                    case 33: { std::cout << "!!****¹­²Ø" << endl; pcount[32]++; } break;
-                    case 34: { std::cout << "!!****¼ÀÀñ¹­" << endl; pcount[33]++; } break;
-                    case 35: { std::cout << "!!****¾øÏÒ" << endl; pcount[34]++; } break;
-                    case 36: { std::cout << "!!****Î÷·çÁÔ¹­" << endl; pcount[35]++; } break;
-                    case 37: { std::cout << "!!****ÕÑĞÄ" << endl; pcount[36]++; } break;
-                    case 38: { std::cout << "!!****¼ÀÀñ²ĞÕÂ" << endl; pcount[37]++; } break;
-                    case 39: { std::cout << "!!****Á÷ÀËÀÖÕÂ" << endl; pcount[38]++; } break;
-                    case 40: { std::cout << "!!****Î÷·çÃØµä" << endl; pcount[39]++; } break;
-                    case 41: { std::cout << "!!****Î÷·ç³¤Ç¹" << endl; pcount[40]++; } break;
-                    case 42: { std::cout << "!!****Ï»ÀïÃğ³½" << endl; pcount[41]++; } break;
-                    case 43: { std::cout << "!!****Óê²Ã" << endl; pcount[42]++; } break;
-                    case 44: { std::cout << "!!****¼ÀÀñ´ó½£" << endl; pcount[43]++; } break;
-                    case 45: { std::cout << "!!****ÖÓ½£" << endl; pcount[44]++; } break;
-                    case 46: { std::cout << "!!****Î÷·ç´ó½£" << endl; pcount[45]++; } break;
-                    case 47: { std::cout << "!!****Ï»ÀïÁúÒ÷" << endl; pcount[46]++; } break;
-                    case 48: { std::cout << "!!****¼ÀÀñ½£" << endl; pcount[47]++; } break;
-                    case 49: { std::cout << "!!****µÑ½£" << endl; pcount[48]++; } break;
-                    case 50: { std::cout << "!!****Î÷·ç½£" << endl; pcount[49]++; } break;
-                    case 51: { std::cout << "***ÁÔ¹­" << endl; pcount[50]++; } break;
-                    case 52: { std::cout << "***ÉñÉäÊÖÖ®ÊÄ" << endl; pcount[51]++; } break;
-                    case 53: { std::cout << "***Ñ»Óğ¹­" << endl; pcount[52]++; } break;
-                    case 54: { std::cout << "***ôäÓñ·¨Çò" << endl; pcount[53]++; } break;
-                    case 55: { std::cout << "***ÌÖÁúÓ¢½ÜÌ·" << endl; pcount[54]++; } break;
-                    case 56: { std::cout << "***Ä§µ¼Ğ÷ÂÛ" << endl; pcount[55]++; } break;
-                    case 57: { std::cout << "***ºÚÓ§Ç¹" << endl; pcount[56]++; } break;
-                    case 58: { std::cout << "***ÒÔÀí·şÈË" << endl; pcount[57]++; } break;
-                    case 59: { std::cout << "***ãåÔ¡ÁúÑªµÄ½£" << endl; pcount[58]++; } break;
-                    case 60: { std::cout << "***ÌúÓ°À«½£" << endl; pcount[59]++; } break;
-                    case 61: { std::cout << "***·ÉÌìÓù½£" << endl; pcount[60]++; } break;
-                    case 62: { std::cout << "***ÀèÃ÷Éñ½£" << endl; pcount[61]++; } break;
-                    case 63: { std::cout << "***ÀäÈĞ" << endl; pcount[62]++; } break;
-                    case 64: { std::cout << "!!!!!*****ÎÂµÏ" << endl; pcount[63]++; } break;
-                    case 65: { std::cout << "!!!!!*****¿ÉÀò" << endl; pcount[64]++; } break;
-                    case 66: { std::cout << "!!!!!*****´ï´ïÀûÑÇ" << endl; pcount[65]++; } break;
-                    case 67: { std::cout << "!!!!!*****ÖÓÀë" << endl; pcount[66]++; } break;
-                    case 68: { std::cout << "!!!!!*****°¢±´¶à" << endl; pcount[67]++; } break;
-                    case 69: { std::cout << "!!!!!*****¸ÊÓê" << endl; pcount[68]++; } break;
-                    case 70: { std::cout << "!!!!!*****÷Ì" << endl; pcount[69]++; } break;
-                    case 71: { std::cout << "!!!!!*****ºúÌÒ" << endl; pcount[70]++; } break;
-                    case 72: { std::cout << "!!****ÑÌç³" << endl; pcount[71]++; } break;
-                    case 73: { std::cout << "!!!!!*****ÓÅÇ‰" << endl; pcount[72]++; } break;
-                    case 74: { std::cout << "!!!!!*****³¾ÊÀÖ®Ëø" << endl; pcount[73]++; } break;
-                    case 75: { std::cout << "!!!!!*****¹áºçÖ®éÃ" << endl; pcount[74]++; } break;
-                    case 76: { std::cout << "!!!!!*****ÎŞ¹¤Ö®½£" << endl; pcount[75]++; } break;
-                    case 77: { std::cout << "!!!!!*****í½·åÖ®ÈĞ" << endl; pcount[76]++; } break;
-                    case 78: { std::cout << "!!!!!*****ÅÍÑÒ½áÂÌ" << endl; pcount[77]++; } break;
-                    case 79: { std::cout << "!!!!!*****»¤Ä¦Ö®ÕÈ" << endl; pcount[78]++; } break;
-                    case 80: { std::cout << "!!****Ç§ÑÒ¹Å½£" << endl; pcount[79]++; } break;
-                    case 81: { std::cout << "!!****Ç§ÑÒ³¤Ç¹" << endl; pcount[80]++; } break;
-                    case 82: { std::cout << "!!!!!*****ÖÕÄ©àµÌ¾Ö®Ê«" << endl; pcount[81]++; } break;
-                    case 83: { std::cout << "!!****°µÏïÉÁ¹â" << endl; pcount[82]++; } break;
-                    case 84: { std::cout << "!!****°µÏïµÄ¾ÆÓëÊ«" << endl; pcount[83]++; } break;
-                    case 85: { std::cout << "!!****°µÏïÁÔÊÖ" << endl; pcount[84]++; } break;
-                    case 86: { std::cout << "!!!!!*****ËÉô¥ÏìÆğÖ®Ê±" << endl; pcount[85]++; } break;
+                    case 1: { std::cout << "!!!!!*****åˆ»æ™´" << endl; pcount[0]++; } break;
+                    case 2: { std::cout << "!!!!!*****è«å¨œ" << endl; pcount[1]++; } break;
+                    case 3: { std::cout << "!!!!!*****ä¸ƒä¸ƒ" << endl; pcount[2]++; } break;
+                    case 4: { std::cout << "!!!!!*****è¿ªå¢å…‹" << endl; pcount[3]++; } break;
+                    case 5: { std::cout << "!!!!!*****ç´" << endl; pcount[4]++; } break;
+                    case 6: { std::cout << "!!!!!*****é˜¿è«æ–¯ä¹‹å¼“" << endl; pcount[5]++; } break;
+                    case 7: { std::cout << "!!!!!*****å¤©ç©ºä¹‹ç¿¼" << endl; pcount[6]++; } break;
+                    case 8: { std::cout << "!!!!!*****å››é£åŸå…¸" << endl; pcount[7]++; } break;
+                    case 9: { std::cout << "!!!!!*****å¤©ç©ºä¹‹å·" << endl; pcount[8]++; } break;
+                    case 10: { std::cout << "!!!!!*****å’Œç’é¸¢" << endl; pcount[9]++; } break;
+                    case 11: { std::cout << "!!!!!*****å¤©ç©ºä¹‹è„Š" << endl; pcount[10]++; } break;
+                    case 12: { std::cout << "!!!!!*****ç‹¼çš„æœ«è·¯" << endl; pcount[11]++; } break;
+                    case 13: { std::cout << "!!!!!*****å¤©ç©ºä¹‹å‚²" << endl; pcount[12]++; } break;
+                    case 14: { std::cout << "!!!!!*****å¤©ç©ºä¹‹åˆƒ" << endl; pcount[13]++; } break;
+                    case 15: { std::cout << "!!!!!*****é£é¹°å‰‘" << endl; pcount[14]++; } break;
+                    case 16: { std::cout << "!!****ç½—èè‰äºš" << endl; pcount[15]++; } break;
+                    case 17: { std::cout << "!!****è¾›ç„±" << endl; pcount[16]++; } break;
+                    case 18: { std::cout << "!!****ç ‚ç³–" << endl; pcount[17]++; } break;
+                    case 19: { std::cout << "!!****è¿ªå¥¥å¨œ" << endl; pcount[18]++; } break;
+                    case 20: { std::cout << "!!****é‡äº‘" << endl; pcount[19]++; } break;
+                    case 21: { std::cout << "!!****è¯ºè‰¾å°”" << endl; pcount[20]++; } break;
+                    case 22: { std::cout << "!!****ç­å°¼ç‰¹" << endl; pcount[21]++; } break;
+                    case 23: { std::cout << "!!****è²è°¢å°”" << endl; pcount[22]++; } break;
+                    case 24: { std::cout << "!!****å‡å…‰" << endl; pcount[23]++; } break;
+                    case 25: { std::cout << "!!****è¡Œç§‹" << endl; pcount[24]++; } break;
+                    case 26: { std::cout << "!!****åŒ—æ–—" << endl; pcount[25]++; } break;
+                    case 27: { std::cout << "!!****é¦™è±" << endl; pcount[26]++; } break;
+                    case 28: { std::cout << "!!****å®‰æŸ" << endl; pcount[27]++; } break;
+                    case 29: { std::cout << "!!****é›·æ³½" << endl; pcount[28]++; } break;
+                    case 30: { std::cout << "!!****å‡¯äºš" << endl; pcount[29]++; } break;
+                    case 31: { std::cout << "!!****èŠ­èŠ­æ‹‰" << endl; pcount[30]++; } break;
+                    case 32: { std::cout << "!!****ä¸½è" << endl; pcount[31]++; } break;
+                    case 33: { std::cout << "!!****å¼“è—" << endl; pcount[32]++; } break;
+                    case 34: { std::cout << "!!****ç¥­ç¤¼å¼“" << endl; pcount[33]++; } break;
+                    case 35: { std::cout << "!!****ç»å¼¦" << endl; pcount[34]++; } break;
+                    case 36: { std::cout << "!!****è¥¿é£çŒå¼“" << endl; pcount[35]++; } break;
+                    case 37: { std::cout << "!!****æ˜­å¿ƒ" << endl; pcount[36]++; } break;
+                    case 38: { std::cout << "!!****ç¥­ç¤¼æ®‹ç« " << endl; pcount[37]++; } break;
+                    case 39: { std::cout << "!!****æµæµªä¹ç« " << endl; pcount[38]++; } break;
+                    case 40: { std::cout << "!!****è¥¿é£ç§˜å…¸" << endl; pcount[39]++; } break;
+                    case 41: { std::cout << "!!****è¥¿é£é•¿æª" << endl; pcount[40]++; } break;
+                    case 42: { std::cout << "!!****åŒ£é‡Œç­è¾°" << endl; pcount[41]++; } break;
+                    case 43: { std::cout << "!!****é›¨è£" << endl; pcount[42]++; } break;
+                    case 44: { std::cout << "!!****ç¥­ç¤¼å¤§å‰‘" << endl; pcount[43]++; } break;
+                    case 45: { std::cout << "!!****é’Ÿå‰‘" << endl; pcount[44]++; } break;
+                    case 46: { std::cout << "!!****è¥¿é£å¤§å‰‘" << endl; pcount[45]++; } break;
+                    case 47: { std::cout << "!!****åŒ£é‡Œé¾™åŸ" << endl; pcount[46]++; } break;
+                    case 48: { std::cout << "!!****ç¥­ç¤¼å‰‘" << endl; pcount[47]++; } break;
+                    case 49: { std::cout << "!!****ç¬›å‰‘" << endl; pcount[48]++; } break;
+                    case 50: { std::cout << "!!****è¥¿é£å‰‘" << endl; pcount[49]++; } break;
+                    case 51: { std::cout << "***çŒå¼“" << endl; pcount[50]++; } break;
+                    case 52: { std::cout << "***ç¥å°„æ‰‹ä¹‹èª“" << endl; pcount[51]++; } break;
+                    case 53: { std::cout << "***é¸¦ç¾½å¼“" << endl; pcount[52]++; } break;
+                    case 54: { std::cout << "***ç¿¡ç‰æ³•çƒ" << endl; pcount[53]++; } break;
+                    case 55: { std::cout << "***è®¨é¾™è‹±æ°è°­" << endl; pcount[54]++; } break;
+                    case 56: { std::cout << "***é­”å¯¼ç»ªè®º" << endl; pcount[55]++; } break;
+                    case 57: { std::cout << "***é»‘ç¼¨æª" << endl; pcount[56]++; } break;
+                    case 58: { std::cout << "***ä»¥ç†æœäºº" << endl; pcount[57]++; } break;
+                    case 59: { std::cout << "***æ²æµ´é¾™è¡€çš„å‰‘" << endl; pcount[58]++; } break;
+                    case 60: { std::cout << "***é“å½±é˜”å‰‘" << endl; pcount[59]++; } break;
+                    case 61: { std::cout << "***é£å¤©å¾¡å‰‘" << endl; pcount[60]++; } break;
+                    case 62: { std::cout << "***é»æ˜ç¥å‰‘" << endl; pcount[61]++; } break;
+                    case 63: { std::cout << "***å†·åˆƒ" << endl; pcount[62]++; } break;
+                    case 64: { std::cout << "!!!!!*****æ¸©è¿ª" << endl; pcount[63]++; } break;
+                    case 65: { std::cout << "!!!!!*****å¯è‰" << endl; pcount[64]++; } break;
+                    case 66: { std::cout << "!!!!!*****è¾¾è¾¾åˆ©äºš" << endl; pcount[65]++; } break;
+                    case 67: { std::cout << "!!!!!*****é’Ÿç¦»" << endl; pcount[66]++; } break;
+                    case 68: { std::cout << "!!!!!*****é˜¿è´å¤š" << endl; pcount[67]++; } break;
+                    case 69: { std::cout << "!!!!!*****ç”˜é›¨" << endl; pcount[68]++; } break;
+                    case 70: { std::cout << "!!!!!*****é­ˆ" << endl; pcount[69]++; } break;
+                    case 71: { std::cout << "!!!!!*****èƒ¡æ¡ƒ" << endl; pcount[70]++; } break;
+                    case 72: { std::cout << "!!****çƒŸç»¯" << endl; pcount[71]++; } break;
+                    case 73: { std::cout << "!!!!!*****ä¼˜èˆ" << endl; pcount[72]++; } break;
+                    case 74: { std::cout << "!!!!!*****å°˜ä¸–ä¹‹é”" << endl; pcount[73]++; } break;
+                    case 75: { std::cout << "!!!!!*****è´¯è™¹ä¹‹æ§Š" << endl; pcount[74]++; } break;
+                    case 76: { std::cout << "!!!!!*****æ— å·¥ä¹‹å‰‘" << endl; pcount[75]++; } break;
+                    case 77: { std::cout << "!!!!!*****æ–«å³°ä¹‹åˆƒ" << endl; pcount[76]++; } break;
+                    case 78: { std::cout << "!!!!!*****ç£å²©ç»“ç»¿" << endl; pcount[77]++; } break;
+                    case 79: { std::cout << "!!!!!*****æŠ¤æ‘©ä¹‹æ–" << endl; pcount[78]++; } break;
+                    case 80: { std::cout << "!!****åƒå²©å¤å‰‘" << endl; pcount[79]++; } break;
+                    case 81: { std::cout << "!!****åƒå²©é•¿æª" << endl; pcount[80]++; } break;
+                    case 82: { std::cout << "!!!!!*****ç»ˆæœ«å—Ÿå¹ä¹‹è¯—" << endl; pcount[81]++; } break;
+                    case 83: { std::cout << "!!****æš—å··é—ªå…‰" << endl; pcount[82]++; } break;
+                    case 84: { std::cout << "!!****æš—å··çš„é…’ä¸è¯—" << endl; pcount[83]++; } break;
+                    case 85: { std::cout << "!!****æš—å··çŒæ‰‹" << endl; pcount[84]++; } break;
+                    case 86: { std::cout << "!!!!!*****æ¾ç±å“èµ·ä¹‹æ—¶" << endl; pcount[85]++; } break;
                     case 87: { std::cout << "Placeholder" << endl; pcount[86]++; } break;
                     case 88: { std::cout << "Placeholder" << endl; pcount[87]++; } break;
                     case 89: { std::cout << "Placeholder" << endl; pcount[88]++; } break;
@@ -9093,7 +9134,7 @@ int main() {
                                 five_count_w++;
                                 int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                 kind = rspick(templist, 10);
-                                if (kind == 6 || kind == 13) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
+                                if (kind == 6 || kind == 13) five_star_guarantee_number = 0; else if(five_check[1] == 1) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
                             }
                         }
                         else if (temp1 < (long long int) ULTRAPOS / 1000 * 67) {
@@ -9203,7 +9244,7 @@ int main() {
                                 five_count_w++;
                                 int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                 kind = rspick(templist, 10);
-                                if (kind == 6 || kind == 13) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
+                                if (kind == 6 || kind == 13) five_star_guarantee_number = 0; else if(five_check[1] == 1) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
                             }
                         }
                         else if (temp1 < (long long int) ULTRAPOS / 1000 * 667) {
@@ -9313,7 +9354,7 @@ int main() {
                                 five_count_w++;
                                 int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                 kind = rspick(templist, 10);
-                                if (kind == 6 || kind == 13) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
+                                if (kind == 6 || kind == 13) five_star_guarantee_number = 0; else if(five_check[1] == 1) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
                             }
                         }
                         else if (temp1 < (long long int) ULTRAPOS / 1000 * 967) {
@@ -9423,7 +9464,7 @@ int main() {
                                 five_count_w++;
                                 int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                 kind = rspick(templist, 10);
-                                if (kind == 6 || kind == 13) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
+                                if (kind == 6 || kind == 13) five_star_guarantee_number = 0; else if(five_check[1] == 1) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
                             }
                         }
                         else {
@@ -9528,7 +9569,7 @@ int main() {
                                 five_count_w++;
                                 int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                 kind = rspick(templist, 10);
-                                if (kind == 6 || kind == 13) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
+                                if (kind == 6 || kind == 13) five_star_guarantee_number = 0; else if(five_check[1] == 1) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
                             }
                         }
                         else if (temp1 < (long long int) (ULTRAPOS / 1000 * 67) + ((long long int)(five_star_assurance_number) - 62) * (long long int)(ULTRAPOS / 1000 * 70)) {
@@ -9638,7 +9679,7 @@ int main() {
                                 five_count_w++;
                                 int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                 kind = rspick(templist, 10);
-                                if (kind == 6 || kind == 13) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
+                                if (kind == 6 || kind == 13) five_star_guarantee_number = 0; else if(five_check[1] == 1) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
                             }
                         }
                         else if (temp1 < (long long int) (ULTRAPOS / 1000 * 667) + ((long long int)(five_star_assurance_number) - 62) * (long long int)(ULTRAPOS / 1000 * 70)) {
@@ -9748,7 +9789,7 @@ int main() {
                                 five_count_w++;
                                 int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                 kind = rspick(templist, 10);
-                                if (kind == 6 || kind == 13) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
+                                if (kind == 6 || kind == 13) five_star_guarantee_number = 0; else if(five_check[1] == 1) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
                             }
                         }
                         else if (temp1 < (long long int) (ULTRAPOS / 1000 * 967) + ((long long int)(five_star_assurance_number) - 62) * (long long int)(ULTRAPOS / 1000 * 70)) {
@@ -9858,7 +9899,7 @@ int main() {
                                 five_count_w++;
                                 int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                 kind = rspick(templist, 10);
-                                if (kind == 6 || kind == 13) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
+                                if (kind == 6 || kind == 13) five_star_guarantee_number = 0; else if(five_check[1] == 1) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
                             }
                         }
                         else {
@@ -9963,7 +10004,7 @@ int main() {
                                 five_count_w++;
                                 int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                 kind = rspick(templist, 10);
-                                if (kind == 6 || kind == 13) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
+                                if (kind == 6 || kind == 13) five_star_guarantee_number = 0; else if(five_check[1] == 1) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
                             }
                         }
                         else if (temp1 < (long long int) (ULTRAPOS / 1000 * 837) + ((long long int)(five_star_assurance_number) - 73) * (long long int)(ULTRAPOS / 1000 * 35)) {
@@ -10073,7 +10114,7 @@ int main() {
                                 five_count_w++;
                                 int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                 kind = rspick(templist, 10);
-                                if (kind == 6 || kind == 13) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
+                                if (kind == 6 || kind == 13) five_star_guarantee_number = 0; else if(five_check[1] == 1) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
                             }
                         }
                         else if (temp1 < (long long int) (ULTRAPOS / 1000 * 1437) + ((long long int)(five_star_assurance_number) - 73) * (long long int)(ULTRAPOS / 1000 * 35)) {
@@ -10183,7 +10224,7 @@ int main() {
                                 five_count_w++;
                                 int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                 kind = rspick(templist, 10);
-                                if (kind == 6 || kind == 13) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
+                                if (kind == 6 || kind == 13) five_star_guarantee_number = 0; else if(five_check[1] == 1) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
                             }
                         }
                         else if (temp1 < (long long int) (ULTRAPOS / 1000 * 1737) + ((long long int)(five_star_assurance_number) - 73) * (long long int)(ULTRAPOS / 1000 * 35)) {
@@ -10293,7 +10334,7 @@ int main() {
                                 five_count_w++;
                                 int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                 kind = rspick(templist, 10);
-                                if (kind == 6 || kind == 13) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
+                                if (kind == 6 || kind == 13) five_star_guarantee_number = 0; else if(five_check[1] == 1) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
                             }
                         }
                         else {
@@ -10395,99 +10436,99 @@ int main() {
                         else {
                             type = 2;
                             five_count_w++;
-                            five_star_guarantee_number = 1;
+                            if(five_check[1] == 1) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
                             int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                             kind = rspick(templist, 10);
                         }
                     }
                     std::cout << count + 1 << "(" << five_star_assurance_number << ")" << " ";
                     switch (kind) {
-                    case 1: { std::cout << "!!!!!*****¿ÌÇç" << endl; pcount[0]++; } break;
-                    case 2: { std::cout << "!!!!!*****ÄªÄÈ" << endl; pcount[1]++; } break;
-                    case 3: { std::cout << "!!!!!*****ÆßÆß" << endl; pcount[2]++; } break;
-                    case 4: { std::cout << "!!!!!*****µÏÂ¬¿Ë" << endl; pcount[3]++; } break;
-                    case 5: { std::cout << "!!!!!*****ÇÙ" << endl; pcount[4]++; } break;
-                    case 6: { std::cout << "!!!!!*****°¢ÄªË¹Ö®¹­" << endl; pcount[5]++; } break;
-                    case 7: { std::cout << "!!!!!*****Ìì¿ÕÖ®Òí" << endl; pcount[6]++; } break;
-                    case 8: { std::cout << "!!!!!*****ËÄ·çÔ­µä" << endl; pcount[7]++; } break;
-                    case 9: { std::cout << "!!!!!*****Ìì¿ÕÖ®¾í" << endl; pcount[8]++; } break;
-                    case 10: { std::cout << "!!!!!*****ºÍè±ğ°" << endl; pcount[9]++; } break;
-                    case 11: { std::cout << "!!!!!*****Ìì¿ÕÖ®¼¹" << endl; pcount[10]++; } break;
-                    case 12: { std::cout << "!!!!!*****ÀÇµÄÄ©Â·" << endl; pcount[11]++; } break;
-                    case 13: { std::cout << "!!!!!*****Ìì¿ÕÖ®°Á" << endl; pcount[12]++; } break;
-                    case 14: { std::cout << "!!!!!*****Ìì¿ÕÖ®ÈĞ" << endl; pcount[13]++; } break;
-                    case 15: { std::cout << "!!!!!*****·çÓ¥½£" << endl; pcount[14]++; } break;
-                    case 16: { std::cout << "!!****ÂŞÉ¯ÀòÑÇ" << endl; pcount[15]++; } break;
-                    case 17: { std::cout << "!!****ĞÁìÍ" << endl; pcount[16]++; } break;
-                    case 18: { std::cout << "!!****É°ÌÇ" << endl; pcount[17]++; } break;
-                    case 19: { std::cout << "!!****µÏ°ÂÄÈ" << endl; pcount[18]++; } break;
-                    case 20: { std::cout << "!!****ÖØÔÆ" << endl; pcount[19]++; } break;
-                    case 21: { std::cout << "!!****Åµ°¬¶û" << endl; pcount[20]++; } break;
-                    case 22: { std::cout << "!!****°àÄáÌØ" << endl; pcount[21]++; } break;
-                    case 23: { std::cout << "!!****·ÆĞ»¶û" << endl; pcount[22]++; } break;
-                    case 24: { std::cout << "!!****Äı¹â" << endl; pcount[23]++; } break;
-                    case 25: { std::cout << "!!****ĞĞÇï" << endl; pcount[24]++; } break;
-                    case 26: { std::cout << "!!****±±¶·" << endl; pcount[25]++; } break;
-                    case 27: { std::cout << "!!****ÏãÁâ" << endl; pcount[26]++; } break;
-                    case 28: { std::cout << "!!****°²°Ø" << endl; pcount[27]++; } break;
-                    case 29: { std::cout << "!!****À×Ôó" << endl; pcount[28]++; } break;
-                    case 30: { std::cout << "!!****¿­ÑÇ" << endl; pcount[29]++; } break;
-                    case 31: { std::cout << "!!****°Å°ÅÀ­" << endl; pcount[30]++; } break;
-                    case 32: { std::cout << "!!****ÀöÉ¯" << endl; pcount[31]++; } break;
-                    case 33: { std::cout << "!!****¹­²Ø" << endl; pcount[32]++; } break;
-                    case 34: { std::cout << "!!****¼ÀÀñ¹­" << endl; pcount[33]++; } break;
-                    case 35: { std::cout << "!!****¾øÏÒ" << endl; pcount[34]++; } break;
-                    case 36: { std::cout << "!!****Î÷·çÁÔ¹­" << endl; pcount[35]++; } break;
-                    case 37: { std::cout << "!!****ÕÑĞÄ" << endl; pcount[36]++; } break;
-                    case 38: { std::cout << "!!****¼ÀÀñ²ĞÕÂ" << endl; pcount[37]++; } break;
-                    case 39: { std::cout << "!!****Á÷ÀËÀÖÕÂ" << endl; pcount[38]++; } break;
-                    case 40: { std::cout << "!!****Î÷·çÃØµä" << endl; pcount[39]++; } break;
-                    case 41: { std::cout << "!!****Î÷·ç³¤Ç¹" << endl; pcount[40]++; } break;
-                    case 42: { std::cout << "!!****Ï»ÀïÃğ³½" << endl; pcount[41]++; } break;
-                    case 43: { std::cout << "!!****Óê²Ã" << endl; pcount[42]++; } break;
-                    case 44: { std::cout << "!!****¼ÀÀñ´ó½£" << endl; pcount[43]++; } break;
-                    case 45: { std::cout << "!!****ÖÓ½£" << endl; pcount[44]++; } break;
-                    case 46: { std::cout << "!!****Î÷·ç´ó½£" << endl; pcount[45]++; } break;
-                    case 47: { std::cout << "!!****Ï»ÀïÁúÒ÷" << endl; pcount[46]++; } break;
-                    case 48: { std::cout << "!!****¼ÀÀñ½£" << endl; pcount[47]++; } break;
-                    case 49: { std::cout << "!!****µÑ½£" << endl; pcount[48]++; } break;
-                    case 50: { std::cout << "!!****Î÷·ç½£" << endl; pcount[49]++; } break;
-                    case 51: { std::cout << "***ÁÔ¹­" << endl; pcount[50]++; } break;
-                    case 52: { std::cout << "***ÉñÉäÊÖÖ®ÊÄ" << endl; pcount[51]++; } break;
-                    case 53: { std::cout << "***Ñ»Óğ¹­" << endl; pcount[52]++; } break;
-                    case 54: { std::cout << "***ôäÓñ·¨Çò" << endl; pcount[53]++; } break;
-                    case 55: { std::cout << "***ÌÖÁúÓ¢½ÜÌ·" << endl; pcount[54]++; } break;
-                    case 56: { std::cout << "***Ä§µ¼Ğ÷ÂÛ" << endl; pcount[55]++; } break;
-                    case 57: { std::cout << "***ºÚÓ§Ç¹" << endl; pcount[56]++; } break;
-                    case 58: { std::cout << "***ÒÔÀí·şÈË" << endl; pcount[57]++; } break;
-                    case 59: { std::cout << "***ãåÔ¡ÁúÑªµÄ½£" << endl; pcount[58]++; } break;
-                    case 60: { std::cout << "***ÌúÓ°À«½£" << endl; pcount[59]++; } break;
-                    case 61: { std::cout << "***·ÉÌìÓù½£" << endl; pcount[60]++; } break;
-                    case 62: { std::cout << "***ÀèÃ÷Éñ½£" << endl; pcount[61]++; } break;
-                    case 63: { std::cout << "***ÀäÈĞ" << endl; pcount[62]++; } break;
-                    case 64: { std::cout << "!!!!!*****ÎÂµÏ" << endl; pcount[63]++; } break;
-                    case 65: { std::cout << "!!!!!*****¿ÉÀò" << endl; pcount[64]++; } break;
-                    case 66: { std::cout << "!!!!!*****´ï´ïÀûÑÇ" << endl; pcount[65]++; } break;
-                    case 67: { std::cout << "!!!!!*****ÖÓÀë" << endl; pcount[66]++; } break;
-                    case 68: { std::cout << "!!!!!*****°¢±´¶à" << endl; pcount[67]++; } break;
-                    case 69: { std::cout << "!!!!!*****¸ÊÓê" << endl; pcount[68]++; } break;
-                    case 70: { std::cout << "!!!!!*****÷Ì" << endl; pcount[69]++; } break;
-                    case 71: { std::cout << "!!!!!*****ºúÌÒ" << endl; pcount[70]++; } break;
-                    case 72: { std::cout << "!!****ÑÌç³" << endl; pcount[71]++; } break;
-                    case 73: { std::cout << "!!!!!*****ÓÅÇ‰" << endl; pcount[72]++; } break;
-                    case 74: { std::cout << "!!!!!*****³¾ÊÀÖ®Ëø" << endl; pcount[73]++; } break;
-                    case 75: { std::cout << "!!!!!*****¹áºçÖ®éÃ" << endl; pcount[74]++; } break;
-                    case 76: { std::cout << "!!!!!*****ÎŞ¹¤Ö®½£" << endl; pcount[75]++; } break;
-                    case 77: { std::cout << "!!!!!*****í½·åÖ®ÈĞ" << endl; pcount[76]++; } break;
-                    case 78: { std::cout << "!!!!!*****ÅÍÑÒ½áÂÌ" << endl; pcount[77]++; } break;
-                    case 79: { std::cout << "!!!!!*****»¤Ä¦Ö®ÕÈ" << endl; pcount[78]++; } break;
-                    case 80: { std::cout << "!!****Ç§ÑÒ¹Å½£" << endl; pcount[79]++; } break;
-                    case 81: { std::cout << "!!****Ç§ÑÒ³¤Ç¹" << endl; pcount[80]++; } break;
-                    case 82: { std::cout << "!!!!!*****ÖÕÄ©àµÌ¾Ö®Ê«" << endl; pcount[81]++; } break;
-                    case 83: { std::cout << "!!****°µÏïÉÁ¹â" << endl; pcount[82]++; } break;
-                    case 84: { std::cout << "!!****°µÏïµÄ¾ÆÓëÊ«" << endl; pcount[83]++; } break;
-                    case 85: { std::cout << "!!****°µÏïÁÔÊÖ" << endl; pcount[84]++; } break;
-                    case 86: { std::cout << "!!!!!*****ËÉô¥ÏìÆğÖ®Ê±" << endl; pcount[85]++; } break;
+                    case 1: { std::cout << "!!!!!*****åˆ»æ™´" << endl; pcount[0]++; } break;
+                    case 2: { std::cout << "!!!!!*****è«å¨œ" << endl; pcount[1]++; } break;
+                    case 3: { std::cout << "!!!!!*****ä¸ƒä¸ƒ" << endl; pcount[2]++; } break;
+                    case 4: { std::cout << "!!!!!*****è¿ªå¢å…‹" << endl; pcount[3]++; } break;
+                    case 5: { std::cout << "!!!!!*****ç´" << endl; pcount[4]++; } break;
+                    case 6: { std::cout << "!!!!!*****é˜¿è«æ–¯ä¹‹å¼“" << endl; pcount[5]++; } break;
+                    case 7: { std::cout << "!!!!!*****å¤©ç©ºä¹‹ç¿¼" << endl; pcount[6]++; } break;
+                    case 8: { std::cout << "!!!!!*****å››é£åŸå…¸" << endl; pcount[7]++; } break;
+                    case 9: { std::cout << "!!!!!*****å¤©ç©ºä¹‹å·" << endl; pcount[8]++; } break;
+                    case 10: { std::cout << "!!!!!*****å’Œç’é¸¢" << endl; pcount[9]++; } break;
+                    case 11: { std::cout << "!!!!!*****å¤©ç©ºä¹‹è„Š" << endl; pcount[10]++; } break;
+                    case 12: { std::cout << "!!!!!*****ç‹¼çš„æœ«è·¯" << endl; pcount[11]++; } break;
+                    case 13: { std::cout << "!!!!!*****å¤©ç©ºä¹‹å‚²" << endl; pcount[12]++; } break;
+                    case 14: { std::cout << "!!!!!*****å¤©ç©ºä¹‹åˆƒ" << endl; pcount[13]++; } break;
+                    case 15: { std::cout << "!!!!!*****é£é¹°å‰‘" << endl; pcount[14]++; } break;
+                    case 16: { std::cout << "!!****ç½—èè‰äºš" << endl; pcount[15]++; } break;
+                    case 17: { std::cout << "!!****è¾›ç„±" << endl; pcount[16]++; } break;
+                    case 18: { std::cout << "!!****ç ‚ç³–" << endl; pcount[17]++; } break;
+                    case 19: { std::cout << "!!****è¿ªå¥¥å¨œ" << endl; pcount[18]++; } break;
+                    case 20: { std::cout << "!!****é‡äº‘" << endl; pcount[19]++; } break;
+                    case 21: { std::cout << "!!****è¯ºè‰¾å°”" << endl; pcount[20]++; } break;
+                    case 22: { std::cout << "!!****ç­å°¼ç‰¹" << endl; pcount[21]++; } break;
+                    case 23: { std::cout << "!!****è²è°¢å°”" << endl; pcount[22]++; } break;
+                    case 24: { std::cout << "!!****å‡å…‰" << endl; pcount[23]++; } break;
+                    case 25: { std::cout << "!!****è¡Œç§‹" << endl; pcount[24]++; } break;
+                    case 26: { std::cout << "!!****åŒ—æ–—" << endl; pcount[25]++; } break;
+                    case 27: { std::cout << "!!****é¦™è±" << endl; pcount[26]++; } break;
+                    case 28: { std::cout << "!!****å®‰æŸ" << endl; pcount[27]++; } break;
+                    case 29: { std::cout << "!!****é›·æ³½" << endl; pcount[28]++; } break;
+                    case 30: { std::cout << "!!****å‡¯äºš" << endl; pcount[29]++; } break;
+                    case 31: { std::cout << "!!****èŠ­èŠ­æ‹‰" << endl; pcount[30]++; } break;
+                    case 32: { std::cout << "!!****ä¸½è" << endl; pcount[31]++; } break;
+                    case 33: { std::cout << "!!****å¼“è—" << endl; pcount[32]++; } break;
+                    case 34: { std::cout << "!!****ç¥­ç¤¼å¼“" << endl; pcount[33]++; } break;
+                    case 35: { std::cout << "!!****ç»å¼¦" << endl; pcount[34]++; } break;
+                    case 36: { std::cout << "!!****è¥¿é£çŒå¼“" << endl; pcount[35]++; } break;
+                    case 37: { std::cout << "!!****æ˜­å¿ƒ" << endl; pcount[36]++; } break;
+                    case 38: { std::cout << "!!****ç¥­ç¤¼æ®‹ç« " << endl; pcount[37]++; } break;
+                    case 39: { std::cout << "!!****æµæµªä¹ç« " << endl; pcount[38]++; } break;
+                    case 40: { std::cout << "!!****è¥¿é£ç§˜å…¸" << endl; pcount[39]++; } break;
+                    case 41: { std::cout << "!!****è¥¿é£é•¿æª" << endl; pcount[40]++; } break;
+                    case 42: { std::cout << "!!****åŒ£é‡Œç­è¾°" << endl; pcount[41]++; } break;
+                    case 43: { std::cout << "!!****é›¨è£" << endl; pcount[42]++; } break;
+                    case 44: { std::cout << "!!****ç¥­ç¤¼å¤§å‰‘" << endl; pcount[43]++; } break;
+                    case 45: { std::cout << "!!****é’Ÿå‰‘" << endl; pcount[44]++; } break;
+                    case 46: { std::cout << "!!****è¥¿é£å¤§å‰‘" << endl; pcount[45]++; } break;
+                    case 47: { std::cout << "!!****åŒ£é‡Œé¾™åŸ" << endl; pcount[46]++; } break;
+                    case 48: { std::cout << "!!****ç¥­ç¤¼å‰‘" << endl; pcount[47]++; } break;
+                    case 49: { std::cout << "!!****ç¬›å‰‘" << endl; pcount[48]++; } break;
+                    case 50: { std::cout << "!!****è¥¿é£å‰‘" << endl; pcount[49]++; } break;
+                    case 51: { std::cout << "***çŒå¼“" << endl; pcount[50]++; } break;
+                    case 52: { std::cout << "***ç¥å°„æ‰‹ä¹‹èª“" << endl; pcount[51]++; } break;
+                    case 53: { std::cout << "***é¸¦ç¾½å¼“" << endl; pcount[52]++; } break;
+                    case 54: { std::cout << "***ç¿¡ç‰æ³•çƒ" << endl; pcount[53]++; } break;
+                    case 55: { std::cout << "***è®¨é¾™è‹±æ°è°­" << endl; pcount[54]++; } break;
+                    case 56: { std::cout << "***é­”å¯¼ç»ªè®º" << endl; pcount[55]++; } break;
+                    case 57: { std::cout << "***é»‘ç¼¨æª" << endl; pcount[56]++; } break;
+                    case 58: { std::cout << "***ä»¥ç†æœäºº" << endl; pcount[57]++; } break;
+                    case 59: { std::cout << "***æ²æµ´é¾™è¡€çš„å‰‘" << endl; pcount[58]++; } break;
+                    case 60: { std::cout << "***é“å½±é˜”å‰‘" << endl; pcount[59]++; } break;
+                    case 61: { std::cout << "***é£å¤©å¾¡å‰‘" << endl; pcount[60]++; } break;
+                    case 62: { std::cout << "***é»æ˜ç¥å‰‘" << endl; pcount[61]++; } break;
+                    case 63: { std::cout << "***å†·åˆƒ" << endl; pcount[62]++; } break;
+                    case 64: { std::cout << "!!!!!*****æ¸©è¿ª" << endl; pcount[63]++; } break;
+                    case 65: { std::cout << "!!!!!*****å¯è‰" << endl; pcount[64]++; } break;
+                    case 66: { std::cout << "!!!!!*****è¾¾è¾¾åˆ©äºš" << endl; pcount[65]++; } break;
+                    case 67: { std::cout << "!!!!!*****é’Ÿç¦»" << endl; pcount[66]++; } break;
+                    case 68: { std::cout << "!!!!!*****é˜¿è´å¤š" << endl; pcount[67]++; } break;
+                    case 69: { std::cout << "!!!!!*****ç”˜é›¨" << endl; pcount[68]++; } break;
+                    case 70: { std::cout << "!!!!!*****é­ˆ" << endl; pcount[69]++; } break;
+                    case 71: { std::cout << "!!!!!*****èƒ¡æ¡ƒ" << endl; pcount[70]++; } break;
+                    case 72: { std::cout << "!!****çƒŸç»¯" << endl; pcount[71]++; } break;
+                    case 73: { std::cout << "!!!!!*****ä¼˜èˆ" << endl; pcount[72]++; } break;
+                    case 74: { std::cout << "!!!!!*****å°˜ä¸–ä¹‹é”" << endl; pcount[73]++; } break;
+                    case 75: { std::cout << "!!!!!*****è´¯è™¹ä¹‹æ§Š" << endl; pcount[74]++; } break;
+                    case 76: { std::cout << "!!!!!*****æ— å·¥ä¹‹å‰‘" << endl; pcount[75]++; } break;
+                    case 77: { std::cout << "!!!!!*****æ–«å³°ä¹‹åˆƒ" << endl; pcount[76]++; } break;
+                    case 78: { std::cout << "!!!!!*****ç£å²©ç»“ç»¿" << endl; pcount[77]++; } break;
+                    case 79: { std::cout << "!!!!!*****æŠ¤æ‘©ä¹‹æ–" << endl; pcount[78]++; } break;
+                    case 80: { std::cout << "!!****åƒå²©å¤å‰‘" << endl; pcount[79]++; } break;
+                    case 81: { std::cout << "!!****åƒå²©é•¿æª" << endl; pcount[80]++; } break;
+                    case 82: { std::cout << "!!!!!*****ç»ˆæœ«å—Ÿå¹ä¹‹è¯—" << endl; pcount[81]++; } break;
+                    case 83: { std::cout << "!!****æš—å··é—ªå…‰" << endl; pcount[82]++; } break;
+                    case 84: { std::cout << "!!****æš—å··çš„é…’ä¸è¯—" << endl; pcount[83]++; } break;
+                    case 85: { std::cout << "!!****æš—å··çŒæ‰‹" << endl; pcount[84]++; } break;
+                    case 86: { std::cout << "!!!!!*****æ¾ç±å“èµ·ä¹‹æ—¶" << endl; pcount[85]++; } break;
                     case 87: { std::cout << "Placeholder" << endl; pcount[86]++; } break;
                     case 88: { std::cout << "Placeholder" << endl; pcount[87]++; } break;
                     case 89: { std::cout << "Placeholder" << endl; pcount[88]++; } break;
@@ -10610,7 +10651,7 @@ int main() {
                                 five_count_w++;
                                 int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                 kind = rspick(templist, 10);
-                                if (kind == 10) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
+                                if (kind == 10) five_star_guarantee_number = 0; else if(five_check[1] == 1) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
                             }
                         }
                         else if (temp1 < (long long int) ULTRAPOS / 1000 * 67) {
@@ -10720,7 +10761,7 @@ int main() {
                                 five_count_w++;
                                 int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                 kind = rspick(templist, 10);
-                                if (kind == 10) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
+                                if (kind == 10) five_star_guarantee_number = 0; else if(five_check[1] == 1) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
                             }
                         }
                         else if (temp1 < (long long int) ULTRAPOS / 1000 * 667) {
@@ -10830,7 +10871,7 @@ int main() {
                                 five_count_w++;
                                 int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                 kind = rspick(templist, 10);
-                                if (kind == 10) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
+                                if (kind == 10) five_star_guarantee_number = 0; else if(five_check[1] == 1) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
                             }
                         }
                         else if (temp1 < (long long int) ULTRAPOS / 1000 * 967) {
@@ -10940,7 +10981,7 @@ int main() {
                                 five_count_w++;
                                 int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                 kind = rspick(templist, 10);
-                                if (kind == 10) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
+                                if (kind == 10) five_star_guarantee_number = 0; else if(five_check[1] == 1) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
                             }
                         }
                         else {
@@ -11045,7 +11086,7 @@ int main() {
                                 five_count_w++;
                                 int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                 kind = rspick(templist, 10);
-                                if (kind == 10) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
+                                if (kind == 10) five_star_guarantee_number = 0; else if(five_check[1] == 1) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
                             }
                         }
                         else if (temp1 < (long long int) (ULTRAPOS / 1000 * 67) + ((long long int)(five_star_assurance_number) - 62) * (long long int)(ULTRAPOS / 1000 * 70)) {
@@ -11155,7 +11196,7 @@ int main() {
                                 five_count_w++;
                                 int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                 kind = rspick(templist, 10);
-                                if (kind == 10) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
+                                if (kind == 10) five_star_guarantee_number = 0; else if(five_check[1] == 1) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
                             }
                         }
                         else if (temp1 < (long long int) (ULTRAPOS / 1000 * 667) + ((long long int)(five_star_assurance_number) - 62) * (long long int)(ULTRAPOS / 1000 * 70)) {
@@ -11265,7 +11306,7 @@ int main() {
                                 five_count_w++;
                                 int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                 kind = rspick(templist, 10);
-                                if (kind == 10) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
+                                if (kind == 10) five_star_guarantee_number = 0; else if(five_check[1] == 1) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
                             }
                         }
                         else if (temp1 < (long long int) (ULTRAPOS / 1000 * 967) + ((long long int)(five_star_assurance_number) - 62) * (long long int)(ULTRAPOS / 1000 * 70)) {
@@ -11375,7 +11416,7 @@ int main() {
                                 five_count_w++;
                                 int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                 kind = rspick(templist, 10);
-                                if (kind == 10) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
+                                if (kind == 10) five_star_guarantee_number = 0; else if(five_check[1] == 1) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
                             }
                         }
                         else {
@@ -11480,7 +11521,7 @@ int main() {
                                 five_count_w++;
                                 int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                 kind = rspick(templist, 10);
-                                if (kind == 10) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
+                                if (kind == 10) five_star_guarantee_number = 0; else if(five_check[1] == 1) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
                             }
                         }
                         else if (temp1 < (long long int) (ULTRAPOS / 1000 * 837) + ((long long int)(five_star_assurance_number) - 73) * (long long int)(ULTRAPOS / 1000 * 35)) {
@@ -11590,7 +11631,7 @@ int main() {
                                 five_count_w++;
                                 int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                 kind = rspick(templist, 10);
-                                if (kind == 10) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
+                                if (kind == 10) five_star_guarantee_number = 0; else if(five_check[1] == 1) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
                             }
                         }
                         else if (temp1 < (long long int) (ULTRAPOS / 1000 * 1437) + ((long long int)(five_star_assurance_number) - 73) * (long long int)(ULTRAPOS / 1000 * 35)) {
@@ -11700,7 +11741,7 @@ int main() {
                                 five_count_w++;
                                 int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                 kind = rspick(templist, 10);
-                                if (kind == 10) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
+                                if (kind == 10) five_star_guarantee_number = 0; else if(five_check[1] == 1) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
                             }
                         }
                         else if (temp1 < (long long int) (ULTRAPOS / 1000 * 1737) + ((long long int)(five_star_assurance_number) - 73) * (long long int)(ULTRAPOS / 1000 * 35)) {
@@ -11810,7 +11851,7 @@ int main() {
                                 five_count_w++;
                                 int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                 kind = rspick(templist, 10);
-                                if (kind == 10) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
+                                if (kind == 10) five_star_guarantee_number = 0; else if(five_check[1] == 1) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
                             }
                         }
                         else {
@@ -11912,99 +11953,99 @@ int main() {
                         else {
                             type = 2;
                             five_count_w++;
-                            five_star_guarantee_number = 1;
+                            if(five_check[1] == 1) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
                             int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                             kind = rspick(templist, 10);
                         }
                     }
                     std::cout << count + 1 << "(" << five_star_assurance_number << ")" << " ";
                     switch (kind) {
-                    case 1: { std::cout << "!!!!!*****¿ÌÇç" << endl; pcount[0]++; } break;
-                    case 2: { std::cout << "!!!!!*****ÄªÄÈ" << endl; pcount[1]++; } break;
-                    case 3: { std::cout << "!!!!!*****ÆßÆß" << endl; pcount[2]++; } break;
-                    case 4: { std::cout << "!!!!!*****µÏÂ¬¿Ë" << endl; pcount[3]++; } break;
-                    case 5: { std::cout << "!!!!!*****ÇÙ" << endl; pcount[4]++; } break;
-                    case 6: { std::cout << "!!!!!*****°¢ÄªË¹Ö®¹­" << endl; pcount[5]++; } break;
-                    case 7: { std::cout << "!!!!!*****Ìì¿ÕÖ®Òí" << endl; pcount[6]++; } break;
-                    case 8: { std::cout << "!!!!!*****ËÄ·çÔ­µä" << endl; pcount[7]++; } break;
-                    case 9: { std::cout << "!!!!!*****Ìì¿ÕÖ®¾í" << endl; pcount[8]++; } break;
-                    case 10: { std::cout << "!!!!!*****ºÍè±ğ°" << endl; pcount[9]++; } break;
-                    case 11: { std::cout << "!!!!!*****Ìì¿ÕÖ®¼¹" << endl; pcount[10]++; } break;
-                    case 12: { std::cout << "!!!!!*****ÀÇµÄÄ©Â·" << endl; pcount[11]++; } break;
-                    case 13: { std::cout << "!!!!!*****Ìì¿ÕÖ®°Á" << endl; pcount[12]++; } break;
-                    case 14: { std::cout << "!!!!!*****Ìì¿ÕÖ®ÈĞ" << endl; pcount[13]++; } break;
-                    case 15: { std::cout << "!!!!!*****·çÓ¥½£" << endl; pcount[14]++; } break;
-                    case 16: { std::cout << "!!****ÂŞÉ¯ÀòÑÇ" << endl; pcount[15]++; } break;
-                    case 17: { std::cout << "!!****ĞÁìÍ" << endl; pcount[16]++; } break;
-                    case 18: { std::cout << "!!****É°ÌÇ" << endl; pcount[17]++; } break;
-                    case 19: { std::cout << "!!****µÏ°ÂÄÈ" << endl; pcount[18]++; } break;
-                    case 20: { std::cout << "!!****ÖØÔÆ" << endl; pcount[19]++; } break;
-                    case 21: { std::cout << "!!****Åµ°¬¶û" << endl; pcount[20]++; } break;
-                    case 22: { std::cout << "!!****°àÄáÌØ" << endl; pcount[21]++; } break;
-                    case 23: { std::cout << "!!****·ÆĞ»¶û" << endl; pcount[22]++; } break;
-                    case 24: { std::cout << "!!****Äı¹â" << endl; pcount[23]++; } break;
-                    case 25: { std::cout << "!!****ĞĞÇï" << endl; pcount[24]++; } break;
-                    case 26: { std::cout << "!!****±±¶·" << endl; pcount[25]++; } break;
-                    case 27: { std::cout << "!!****ÏãÁâ" << endl; pcount[26]++; } break;
-                    case 28: { std::cout << "!!****°²°Ø" << endl; pcount[27]++; } break;
-                    case 29: { std::cout << "!!****À×Ôó" << endl; pcount[28]++; } break;
-                    case 30: { std::cout << "!!****¿­ÑÇ" << endl; pcount[29]++; } break;
-                    case 31: { std::cout << "!!****°Å°ÅÀ­" << endl; pcount[30]++; } break;
-                    case 32: { std::cout << "!!****ÀöÉ¯" << endl; pcount[31]++; } break;
-                    case 33: { std::cout << "!!****¹­²Ø" << endl; pcount[32]++; } break;
-                    case 34: { std::cout << "!!****¼ÀÀñ¹­" << endl; pcount[33]++; } break;
-                    case 35: { std::cout << "!!****¾øÏÒ" << endl; pcount[34]++; } break;
-                    case 36: { std::cout << "!!****Î÷·çÁÔ¹­" << endl; pcount[35]++; } break;
-                    case 37: { std::cout << "!!****ÕÑĞÄ" << endl; pcount[36]++; } break;
-                    case 38: { std::cout << "!!****¼ÀÀñ²ĞÕÂ" << endl; pcount[37]++; } break;
-                    case 39: { std::cout << "!!****Á÷ÀËÀÖÕÂ" << endl; pcount[38]++; } break;
-                    case 40: { std::cout << "!!****Î÷·çÃØµä" << endl; pcount[39]++; } break;
-                    case 41: { std::cout << "!!****Î÷·ç³¤Ç¹" << endl; pcount[40]++; } break;
-                    case 42: { std::cout << "!!****Ï»ÀïÃğ³½" << endl; pcount[41]++; } break;
-                    case 43: { std::cout << "!!****Óê²Ã" << endl; pcount[42]++; } break;
-                    case 44: { std::cout << "!!****¼ÀÀñ´ó½£" << endl; pcount[43]++; } break;
-                    case 45: { std::cout << "!!****ÖÓ½£" << endl; pcount[44]++; } break;
-                    case 46: { std::cout << "!!****Î÷·ç´ó½£" << endl; pcount[45]++; } break;
-                    case 47: { std::cout << "!!****Ï»ÀïÁúÒ÷" << endl; pcount[46]++; } break;
-                    case 48: { std::cout << "!!****¼ÀÀñ½£" << endl; pcount[47]++; } break;
-                    case 49: { std::cout << "!!****µÑ½£" << endl; pcount[48]++; } break;
-                    case 50: { std::cout << "!!****Î÷·ç½£" << endl; pcount[49]++; } break;
-                    case 51: { std::cout << "***ÁÔ¹­" << endl; pcount[50]++; } break;
-                    case 52: { std::cout << "***ÉñÉäÊÖÖ®ÊÄ" << endl; pcount[51]++; } break;
-                    case 53: { std::cout << "***Ñ»Óğ¹­" << endl; pcount[52]++; } break;
-                    case 54: { std::cout << "***ôäÓñ·¨Çò" << endl; pcount[53]++; } break;
-                    case 55: { std::cout << "***ÌÖÁúÓ¢½ÜÌ·" << endl; pcount[54]++; } break;
-                    case 56: { std::cout << "***Ä§µ¼Ğ÷ÂÛ" << endl; pcount[55]++; } break;
-                    case 57: { std::cout << "***ºÚÓ§Ç¹" << endl; pcount[56]++; } break;
-                    case 58: { std::cout << "***ÒÔÀí·şÈË" << endl; pcount[57]++; } break;
-                    case 59: { std::cout << "***ãåÔ¡ÁúÑªµÄ½£" << endl; pcount[58]++; } break;
-                    case 60: { std::cout << "***ÌúÓ°À«½£" << endl; pcount[59]++; } break;
-                    case 61: { std::cout << "***·ÉÌìÓù½£" << endl; pcount[60]++; } break;
-                    case 62: { std::cout << "***ÀèÃ÷Éñ½£" << endl; pcount[61]++; } break;
-                    case 63: { std::cout << "***ÀäÈĞ" << endl; pcount[62]++; } break;
-                    case 64: { std::cout << "!!!!!*****ÎÂµÏ" << endl; pcount[63]++; } break;
-                    case 65: { std::cout << "!!!!!*****¿ÉÀò" << endl; pcount[64]++; } break;
-                    case 66: { std::cout << "!!!!!*****´ï´ïÀûÑÇ" << endl; pcount[65]++; } break;
-                    case 67: { std::cout << "!!!!!*****ÖÓÀë" << endl; pcount[66]++; } break;
-                    case 68: { std::cout << "!!!!!*****°¢±´¶à" << endl; pcount[67]++; } break;
-                    case 69: { std::cout << "!!!!!*****¸ÊÓê" << endl; pcount[68]++; } break;
-                    case 70: { std::cout << "!!!!!*****÷Ì" << endl; pcount[69]++; } break;
-                    case 71: { std::cout << "!!!!!*****ºúÌÒ" << endl; pcount[70]++; } break;
-                    case 72: { std::cout << "!!****ÑÌç³" << endl; pcount[71]++; } break;
-                    case 73: { std::cout << "!!!!!*****ÓÅÇ‰" << endl; pcount[72]++; } break;
-                    case 74: { std::cout << "!!!!!*****³¾ÊÀÖ®Ëø" << endl; pcount[73]++; } break;
-                    case 75: { std::cout << "!!!!!*****¹áºçÖ®éÃ" << endl; pcount[74]++; } break;
-                    case 76: { std::cout << "!!!!!*****ÎŞ¹¤Ö®½£" << endl; pcount[75]++; } break;
-                    case 77: { std::cout << "!!!!!*****í½·åÖ®ÈĞ" << endl; pcount[76]++; } break;
-                    case 78: { std::cout << "!!!!!*****ÅÍÑÒ½áÂÌ" << endl; pcount[77]++; } break;
-                    case 79: { std::cout << "!!!!!*****»¤Ä¦Ö®ÕÈ" << endl; pcount[78]++; } break;
-                    case 80: { std::cout << "!!****Ç§ÑÒ¹Å½£" << endl; pcount[79]++; } break;
-                    case 81: { std::cout << "!!****Ç§ÑÒ³¤Ç¹" << endl; pcount[80]++; } break;
-                    case 82: { std::cout << "!!!!!*****ÖÕÄ©àµÌ¾Ö®Ê«" << endl; pcount[81]++; } break;
-                    case 83: { std::cout << "!!****°µÏïÉÁ¹â" << endl; pcount[82]++; } break;
-                    case 84: { std::cout << "!!****°µÏïµÄ¾ÆÓëÊ«" << endl; pcount[83]++; } break;
-                    case 85: { std::cout << "!!****°µÏïÁÔÊÖ" << endl; pcount[84]++; } break;
-                    case 86: { std::cout << "!!!!!*****ËÉô¥ÏìÆğÖ®Ê±" << endl; pcount[85]++; } break;
+                    case 1: { std::cout << "!!!!!*****åˆ»æ™´" << endl; pcount[0]++; } break;
+                    case 2: { std::cout << "!!!!!*****è«å¨œ" << endl; pcount[1]++; } break;
+                    case 3: { std::cout << "!!!!!*****ä¸ƒä¸ƒ" << endl; pcount[2]++; } break;
+                    case 4: { std::cout << "!!!!!*****è¿ªå¢å…‹" << endl; pcount[3]++; } break;
+                    case 5: { std::cout << "!!!!!*****ç´" << endl; pcount[4]++; } break;
+                    case 6: { std::cout << "!!!!!*****é˜¿è«æ–¯ä¹‹å¼“" << endl; pcount[5]++; } break;
+                    case 7: { std::cout << "!!!!!*****å¤©ç©ºä¹‹ç¿¼" << endl; pcount[6]++; } break;
+                    case 8: { std::cout << "!!!!!*****å››é£åŸå…¸" << endl; pcount[7]++; } break;
+                    case 9: { std::cout << "!!!!!*****å¤©ç©ºä¹‹å·" << endl; pcount[8]++; } break;
+                    case 10: { std::cout << "!!!!!*****å’Œç’é¸¢" << endl; pcount[9]++; } break;
+                    case 11: { std::cout << "!!!!!*****å¤©ç©ºä¹‹è„Š" << endl; pcount[10]++; } break;
+                    case 12: { std::cout << "!!!!!*****ç‹¼çš„æœ«è·¯" << endl; pcount[11]++; } break;
+                    case 13: { std::cout << "!!!!!*****å¤©ç©ºä¹‹å‚²" << endl; pcount[12]++; } break;
+                    case 14: { std::cout << "!!!!!*****å¤©ç©ºä¹‹åˆƒ" << endl; pcount[13]++; } break;
+                    case 15: { std::cout << "!!!!!*****é£é¹°å‰‘" << endl; pcount[14]++; } break;
+                    case 16: { std::cout << "!!****ç½—èè‰äºš" << endl; pcount[15]++; } break;
+                    case 17: { std::cout << "!!****è¾›ç„±" << endl; pcount[16]++; } break;
+                    case 18: { std::cout << "!!****ç ‚ç³–" << endl; pcount[17]++; } break;
+                    case 19: { std::cout << "!!****è¿ªå¥¥å¨œ" << endl; pcount[18]++; } break;
+                    case 20: { std::cout << "!!****é‡äº‘" << endl; pcount[19]++; } break;
+                    case 21: { std::cout << "!!****è¯ºè‰¾å°”" << endl; pcount[20]++; } break;
+                    case 22: { std::cout << "!!****ç­å°¼ç‰¹" << endl; pcount[21]++; } break;
+                    case 23: { std::cout << "!!****è²è°¢å°”" << endl; pcount[22]++; } break;
+                    case 24: { std::cout << "!!****å‡å…‰" << endl; pcount[23]++; } break;
+                    case 25: { std::cout << "!!****è¡Œç§‹" << endl; pcount[24]++; } break;
+                    case 26: { std::cout << "!!****åŒ—æ–—" << endl; pcount[25]++; } break;
+                    case 27: { std::cout << "!!****é¦™è±" << endl; pcount[26]++; } break;
+                    case 28: { std::cout << "!!****å®‰æŸ" << endl; pcount[27]++; } break;
+                    case 29: { std::cout << "!!****é›·æ³½" << endl; pcount[28]++; } break;
+                    case 30: { std::cout << "!!****å‡¯äºš" << endl; pcount[29]++; } break;
+                    case 31: { std::cout << "!!****èŠ­èŠ­æ‹‰" << endl; pcount[30]++; } break;
+                    case 32: { std::cout << "!!****ä¸½è" << endl; pcount[31]++; } break;
+                    case 33: { std::cout << "!!****å¼“è—" << endl; pcount[32]++; } break;
+                    case 34: { std::cout << "!!****ç¥­ç¤¼å¼“" << endl; pcount[33]++; } break;
+                    case 35: { std::cout << "!!****ç»å¼¦" << endl; pcount[34]++; } break;
+                    case 36: { std::cout << "!!****è¥¿é£çŒå¼“" << endl; pcount[35]++; } break;
+                    case 37: { std::cout << "!!****æ˜­å¿ƒ" << endl; pcount[36]++; } break;
+                    case 38: { std::cout << "!!****ç¥­ç¤¼æ®‹ç« " << endl; pcount[37]++; } break;
+                    case 39: { std::cout << "!!****æµæµªä¹ç« " << endl; pcount[38]++; } break;
+                    case 40: { std::cout << "!!****è¥¿é£ç§˜å…¸" << endl; pcount[39]++; } break;
+                    case 41: { std::cout << "!!****è¥¿é£é•¿æª" << endl; pcount[40]++; } break;
+                    case 42: { std::cout << "!!****åŒ£é‡Œç­è¾°" << endl; pcount[41]++; } break;
+                    case 43: { std::cout << "!!****é›¨è£" << endl; pcount[42]++; } break;
+                    case 44: { std::cout << "!!****ç¥­ç¤¼å¤§å‰‘" << endl; pcount[43]++; } break;
+                    case 45: { std::cout << "!!****é’Ÿå‰‘" << endl; pcount[44]++; } break;
+                    case 46: { std::cout << "!!****è¥¿é£å¤§å‰‘" << endl; pcount[45]++; } break;
+                    case 47: { std::cout << "!!****åŒ£é‡Œé¾™åŸ" << endl; pcount[46]++; } break;
+                    case 48: { std::cout << "!!****ç¥­ç¤¼å‰‘" << endl; pcount[47]++; } break;
+                    case 49: { std::cout << "!!****ç¬›å‰‘" << endl; pcount[48]++; } break;
+                    case 50: { std::cout << "!!****è¥¿é£å‰‘" << endl; pcount[49]++; } break;
+                    case 51: { std::cout << "***çŒå¼“" << endl; pcount[50]++; } break;
+                    case 52: { std::cout << "***ç¥å°„æ‰‹ä¹‹èª“" << endl; pcount[51]++; } break;
+                    case 53: { std::cout << "***é¸¦ç¾½å¼“" << endl; pcount[52]++; } break;
+                    case 54: { std::cout << "***ç¿¡ç‰æ³•çƒ" << endl; pcount[53]++; } break;
+                    case 55: { std::cout << "***è®¨é¾™è‹±æ°è°­" << endl; pcount[54]++; } break;
+                    case 56: { std::cout << "***é­”å¯¼ç»ªè®º" << endl; pcount[55]++; } break;
+                    case 57: { std::cout << "***é»‘ç¼¨æª" << endl; pcount[56]++; } break;
+                    case 58: { std::cout << "***ä»¥ç†æœäºº" << endl; pcount[57]++; } break;
+                    case 59: { std::cout << "***æ²æµ´é¾™è¡€çš„å‰‘" << endl; pcount[58]++; } break;
+                    case 60: { std::cout << "***é“å½±é˜”å‰‘" << endl; pcount[59]++; } break;
+                    case 61: { std::cout << "***é£å¤©å¾¡å‰‘" << endl; pcount[60]++; } break;
+                    case 62: { std::cout << "***é»æ˜ç¥å‰‘" << endl; pcount[61]++; } break;
+                    case 63: { std::cout << "***å†·åˆƒ" << endl; pcount[62]++; } break;
+                    case 64: { std::cout << "!!!!!*****æ¸©è¿ª" << endl; pcount[63]++; } break;
+                    case 65: { std::cout << "!!!!!*****å¯è‰" << endl; pcount[64]++; } break;
+                    case 66: { std::cout << "!!!!!*****è¾¾è¾¾åˆ©äºš" << endl; pcount[65]++; } break;
+                    case 67: { std::cout << "!!!!!*****é’Ÿç¦»" << endl; pcount[66]++; } break;
+                    case 68: { std::cout << "!!!!!*****é˜¿è´å¤š" << endl; pcount[67]++; } break;
+                    case 69: { std::cout << "!!!!!*****ç”˜é›¨" << endl; pcount[68]++; } break;
+                    case 70: { std::cout << "!!!!!*****é­ˆ" << endl; pcount[69]++; } break;
+                    case 71: { std::cout << "!!!!!*****èƒ¡æ¡ƒ" << endl; pcount[70]++; } break;
+                    case 72: { std::cout << "!!****çƒŸç»¯" << endl; pcount[71]++; } break;
+                    case 73: { std::cout << "!!!!!*****ä¼˜èˆ" << endl; pcount[72]++; } break;
+                    case 74: { std::cout << "!!!!!*****å°˜ä¸–ä¹‹é”" << endl; pcount[73]++; } break;
+                    case 75: { std::cout << "!!!!!*****è´¯è™¹ä¹‹æ§Š" << endl; pcount[74]++; } break;
+                    case 76: { std::cout << "!!!!!*****æ— å·¥ä¹‹å‰‘" << endl; pcount[75]++; } break;
+                    case 77: { std::cout << "!!!!!*****æ–«å³°ä¹‹åˆƒ" << endl; pcount[76]++; } break;
+                    case 78: { std::cout << "!!!!!*****ç£å²©ç»“ç»¿" << endl; pcount[77]++; } break;
+                    case 79: { std::cout << "!!!!!*****æŠ¤æ‘©ä¹‹æ–" << endl; pcount[78]++; } break;
+                    case 80: { std::cout << "!!****åƒå²©å¤å‰‘" << endl; pcount[79]++; } break;
+                    case 81: { std::cout << "!!****åƒå²©é•¿æª" << endl; pcount[80]++; } break;
+                    case 82: { std::cout << "!!!!!*****ç»ˆæœ«å—Ÿå¹ä¹‹è¯—" << endl; pcount[81]++; } break;
+                    case 83: { std::cout << "!!****æš—å··é—ªå…‰" << endl; pcount[82]++; } break;
+                    case 84: { std::cout << "!!****æš—å··çš„é…’ä¸è¯—" << endl; pcount[83]++; } break;
+                    case 85: { std::cout << "!!****æš—å··çŒæ‰‹" << endl; pcount[84]++; } break;
+                    case 86: { std::cout << "!!!!!*****æ¾ç±å“èµ·ä¹‹æ—¶" << endl; pcount[85]++; } break;
                     case 87: { std::cout << "Placeholder" << endl; pcount[86]++; } break;
                     case 88: { std::cout << "Placeholder" << endl; pcount[87]++; } break;
                     case 89: { std::cout << "Placeholder" << endl; pcount[88]++; } break;
@@ -12127,7 +12168,7 @@ int main() {
                                 five_count_w++;
                                 int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                 kind = rspick(templist, 10);
-                                if (kind == 12) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
+                                if (kind == 12) five_star_guarantee_number = 0; else if(five_check[1] == 1) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
                             }
                         }
                         else if (temp1 < (long long int) ULTRAPOS / 1000 * 67) {
@@ -12237,7 +12278,7 @@ int main() {
                                 five_count_w++;
                                 int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                 kind = rspick(templist, 10);
-                                if (kind == 12) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
+                                if (kind == 12) five_star_guarantee_number = 0; else if(five_check[1] == 1) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
                             }
                         }
                         else if (temp1 < (long long int) ULTRAPOS / 1000 * 667) {
@@ -12347,7 +12388,7 @@ int main() {
                                 five_count_w++;
                                 int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                 kind = rspick(templist, 10);
-                                if (kind == 12) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
+                                if (kind == 12) five_star_guarantee_number = 0; else if(five_check[1] == 1) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
                             }
                         }
                         else if (temp1 < (long long int) ULTRAPOS / 1000 * 967) {
@@ -12457,7 +12498,7 @@ int main() {
                                 five_count_w++;
                                 int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                 kind = rspick(templist, 10);
-                                if (kind == 12) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
+                                if (kind == 12) five_star_guarantee_number = 0; else if(five_check[1] == 1) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
                             }
                         }
                         else {
@@ -12562,7 +12603,7 @@ int main() {
                                 five_count_w++;
                                 int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                 kind = rspick(templist, 10);
-                                if (kind == 12) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
+                                if (kind == 12) five_star_guarantee_number = 0; else if(five_check[1] == 1) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
                             }
                         }
                         else if (temp1 < (long long int) (ULTRAPOS / 1000 * 67) + ((long long int)(five_star_assurance_number) - 62) * (long long int)(ULTRAPOS / 1000 * 70)) {
@@ -12672,7 +12713,7 @@ int main() {
                                 five_count_w++;
                                 int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                 kind = rspick(templist, 10);
-                                if (kind == 12) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
+                                if (kind == 12) five_star_guarantee_number = 0; else if(five_check[1] == 1) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
                             }
                         }
                         else if (temp1 < (long long int) (ULTRAPOS / 1000 * 667) + ((long long int)(five_star_assurance_number) - 62) * (long long int)(ULTRAPOS / 1000 * 70)) {
@@ -12782,7 +12823,7 @@ int main() {
                                 five_count_w++;
                                 int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                 kind = rspick(templist, 10);
-                                if (kind == 12) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
+                                if (kind == 12) five_star_guarantee_number = 0; else if(five_check[1] == 1) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
                             }
                         }
                         else if (temp1 < (long long int) (ULTRAPOS / 1000 * 967) + ((long long int)(five_star_assurance_number) - 62) * (long long int)(ULTRAPOS / 1000 * 70)) {
@@ -12892,7 +12933,7 @@ int main() {
                                 five_count_w++;
                                 int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                 kind = rspick(templist, 10);
-                                if (kind == 12) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
+                                if (kind == 12) five_star_guarantee_number = 0; else if(five_check[1] == 1) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
                             }
                         }
                         else {
@@ -12997,7 +13038,7 @@ int main() {
                                 five_count_w++;
                                 int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                 kind = rspick(templist, 10);
-                                if (kind == 12) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
+                                if (kind == 12) five_star_guarantee_number = 0; else if(five_check[1] == 1) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
                             }
                         }
                         else if (temp1 < (long long int) (ULTRAPOS / 1000 * 837) + ((long long int)(five_star_assurance_number) - 73) * (long long int)(ULTRAPOS / 1000 * 35)) {
@@ -13107,7 +13148,7 @@ int main() {
                                 five_count_w++;
                                 int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                 kind = rspick(templist, 10);
-                                if (kind == 12) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
+                                if (kind == 12) five_star_guarantee_number = 0; else if(five_check[1] == 1) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
                             }
                         }
                         else if (temp1 < (long long int) (ULTRAPOS / 1000 * 1437) + ((long long int)(five_star_assurance_number) - 73) * (long long int)(ULTRAPOS / 1000 * 35)) {
@@ -13217,7 +13258,7 @@ int main() {
                                 five_count_w++;
                                 int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                 kind = rspick(templist, 10);
-                                if (kind == 12) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
+                                if (kind == 12) five_star_guarantee_number = 0; else if(five_check[1] == 1) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
                             }
                         }
                         else if (temp1 < (long long int) (ULTRAPOS / 1000 * 1737) + ((long long int)(five_star_assurance_number) - 73) * (long long int)(ULTRAPOS / 1000 * 35)) {
@@ -13327,7 +13368,7 @@ int main() {
                                 five_count_w++;
                                 int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                 kind = rspick(templist, 10);
-                                if (kind == 12) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
+                                if (kind == 12) five_star_guarantee_number = 0; else if(five_check[1] == 1) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
                             }
                         }
                         else {
@@ -13429,99 +13470,99 @@ int main() {
                         else {
                             type = 2;
                             five_count_w++;
-                            five_star_guarantee_number = 1;
+                            if(five_check[1] == 1) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
                             int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                             kind = rspick(templist, 10);
                         }
                     }
                     std::cout << count + 1 << "(" << five_star_assurance_number << ")" << " ";
                     switch (kind) {
-                    case 1: { std::cout << "!!!!!*****¿ÌÇç" << endl; pcount[0]++; } break;
-                    case 2: { std::cout << "!!!!!*****ÄªÄÈ" << endl; pcount[1]++; } break;
-                    case 3: { std::cout << "!!!!!*****ÆßÆß" << endl; pcount[2]++; } break;
-                    case 4: { std::cout << "!!!!!*****µÏÂ¬¿Ë" << endl; pcount[3]++; } break;
-                    case 5: { std::cout << "!!!!!*****ÇÙ" << endl; pcount[4]++; } break;
-                    case 6: { std::cout << "!!!!!*****°¢ÄªË¹Ö®¹­" << endl; pcount[5]++; } break;
-                    case 7: { std::cout << "!!!!!*****Ìì¿ÕÖ®Òí" << endl; pcount[6]++; } break;
-                    case 8: { std::cout << "!!!!!*****ËÄ·çÔ­µä" << endl; pcount[7]++; } break;
-                    case 9: { std::cout << "!!!!!*****Ìì¿ÕÖ®¾í" << endl; pcount[8]++; } break;
-                    case 10: { std::cout << "!!!!!*****ºÍè±ğ°" << endl; pcount[9]++; } break;
-                    case 11: { std::cout << "!!!!!*****Ìì¿ÕÖ®¼¹" << endl; pcount[10]++; } break;
-                    case 12: { std::cout << "!!!!!*****ÀÇµÄÄ©Â·" << endl; pcount[11]++; } break;
-                    case 13: { std::cout << "!!!!!*****Ìì¿ÕÖ®°Á" << endl; pcount[12]++; } break;
-                    case 14: { std::cout << "!!!!!*****Ìì¿ÕÖ®ÈĞ" << endl; pcount[13]++; } break;
-                    case 15: { std::cout << "!!!!!*****·çÓ¥½£" << endl; pcount[14]++; } break;
-                    case 16: { std::cout << "!!****ÂŞÉ¯ÀòÑÇ" << endl; pcount[15]++; } break;
-                    case 17: { std::cout << "!!****ĞÁìÍ" << endl; pcount[16]++; } break;
-                    case 18: { std::cout << "!!****É°ÌÇ" << endl; pcount[17]++; } break;
-                    case 19: { std::cout << "!!****µÏ°ÂÄÈ" << endl; pcount[18]++; } break;
-                    case 20: { std::cout << "!!****ÖØÔÆ" << endl; pcount[19]++; } break;
-                    case 21: { std::cout << "!!****Åµ°¬¶û" << endl; pcount[20]++; } break;
-                    case 22: { std::cout << "!!****°àÄáÌØ" << endl; pcount[21]++; } break;
-                    case 23: { std::cout << "!!****·ÆĞ»¶û" << endl; pcount[22]++; } break;
-                    case 24: { std::cout << "!!****Äı¹â" << endl; pcount[23]++; } break;
-                    case 25: { std::cout << "!!****ĞĞÇï" << endl; pcount[24]++; } break;
-                    case 26: { std::cout << "!!****±±¶·" << endl; pcount[25]++; } break;
-                    case 27: { std::cout << "!!****ÏãÁâ" << endl; pcount[26]++; } break;
-                    case 28: { std::cout << "!!****°²°Ø" << endl; pcount[27]++; } break;
-                    case 29: { std::cout << "!!****À×Ôó" << endl; pcount[28]++; } break;
-                    case 30: { std::cout << "!!****¿­ÑÇ" << endl; pcount[29]++; } break;
-                    case 31: { std::cout << "!!****°Å°ÅÀ­" << endl; pcount[30]++; } break;
-                    case 32: { std::cout << "!!****ÀöÉ¯" << endl; pcount[31]++; } break;
-                    case 33: { std::cout << "!!****¹­²Ø" << endl; pcount[32]++; } break;
-                    case 34: { std::cout << "!!****¼ÀÀñ¹­" << endl; pcount[33]++; } break;
-                    case 35: { std::cout << "!!****¾øÏÒ" << endl; pcount[34]++; } break;
-                    case 36: { std::cout << "!!****Î÷·çÁÔ¹­" << endl; pcount[35]++; } break;
-                    case 37: { std::cout << "!!****ÕÑĞÄ" << endl; pcount[36]++; } break;
-                    case 38: { std::cout << "!!****¼ÀÀñ²ĞÕÂ" << endl; pcount[37]++; } break;
-                    case 39: { std::cout << "!!****Á÷ÀËÀÖÕÂ" << endl; pcount[38]++; } break;
-                    case 40: { std::cout << "!!****Î÷·çÃØµä" << endl; pcount[39]++; } break;
-                    case 41: { std::cout << "!!****Î÷·ç³¤Ç¹" << endl; pcount[40]++; } break;
-                    case 42: { std::cout << "!!****Ï»ÀïÃğ³½" << endl; pcount[41]++; } break;
-                    case 43: { std::cout << "!!****Óê²Ã" << endl; pcount[42]++; } break;
-                    case 44: { std::cout << "!!****¼ÀÀñ´ó½£" << endl; pcount[43]++; } break;
-                    case 45: { std::cout << "!!****ÖÓ½£" << endl; pcount[44]++; } break;
-                    case 46: { std::cout << "!!****Î÷·ç´ó½£" << endl; pcount[45]++; } break;
-                    case 47: { std::cout << "!!****Ï»ÀïÁúÒ÷" << endl; pcount[46]++; } break;
-                    case 48: { std::cout << "!!****¼ÀÀñ½£" << endl; pcount[47]++; } break;
-                    case 49: { std::cout << "!!****µÑ½£" << endl; pcount[48]++; } break;
-                    case 50: { std::cout << "!!****Î÷·ç½£" << endl; pcount[49]++; } break;
-                    case 51: { std::cout << "***ÁÔ¹­" << endl; pcount[50]++; } break;
-                    case 52: { std::cout << "***ÉñÉäÊÖÖ®ÊÄ" << endl; pcount[51]++; } break;
-                    case 53: { std::cout << "***Ñ»Óğ¹­" << endl; pcount[52]++; } break;
-                    case 54: { std::cout << "***ôäÓñ·¨Çò" << endl; pcount[53]++; } break;
-                    case 55: { std::cout << "***ÌÖÁúÓ¢½ÜÌ·" << endl; pcount[54]++; } break;
-                    case 56: { std::cout << "***Ä§µ¼Ğ÷ÂÛ" << endl; pcount[55]++; } break;
-                    case 57: { std::cout << "***ºÚÓ§Ç¹" << endl; pcount[56]++; } break;
-                    case 58: { std::cout << "***ÒÔÀí·şÈË" << endl; pcount[57]++; } break;
-                    case 59: { std::cout << "***ãåÔ¡ÁúÑªµÄ½£" << endl; pcount[58]++; } break;
-                    case 60: { std::cout << "***ÌúÓ°À«½£" << endl; pcount[59]++; } break;
-                    case 61: { std::cout << "***·ÉÌìÓù½£" << endl; pcount[60]++; } break;
-                    case 62: { std::cout << "***ÀèÃ÷Éñ½£" << endl; pcount[61]++; } break;
-                    case 63: { std::cout << "***ÀäÈĞ" << endl; pcount[62]++; } break;
-                    case 64: { std::cout << "!!!!!*****ÎÂµÏ" << endl; pcount[63]++; } break;
-                    case 65: { std::cout << "!!!!!*****¿ÉÀò" << endl; pcount[64]++; } break;
-                    case 66: { std::cout << "!!!!!*****´ï´ïÀûÑÇ" << endl; pcount[65]++; } break;
-                    case 67: { std::cout << "!!!!!*****ÖÓÀë" << endl; pcount[66]++; } break;
-                    case 68: { std::cout << "!!!!!*****°¢±´¶à" << endl; pcount[67]++; } break;
-                    case 69: { std::cout << "!!!!!*****¸ÊÓê" << endl; pcount[68]++; } break;
-                    case 70: { std::cout << "!!!!!*****÷Ì" << endl; pcount[69]++; } break;
-                    case 71: { std::cout << "!!!!!*****ºúÌÒ" << endl; pcount[70]++; } break;
-                    case 72: { std::cout << "!!****ÑÌç³" << endl; pcount[71]++; } break;
-                    case 73: { std::cout << "!!!!!*****ÓÅÇ‰" << endl; pcount[72]++; } break;
-                    case 74: { std::cout << "!!!!!*****³¾ÊÀÖ®Ëø" << endl; pcount[73]++; } break;
-                    case 75: { std::cout << "!!!!!*****¹áºçÖ®éÃ" << endl; pcount[74]++; } break;
-                    case 76: { std::cout << "!!!!!*****ÎŞ¹¤Ö®½£" << endl; pcount[75]++; } break;
-                    case 77: { std::cout << "!!!!!*****í½·åÖ®ÈĞ" << endl; pcount[76]++; } break;
-                    case 78: { std::cout << "!!!!!*****ÅÍÑÒ½áÂÌ" << endl; pcount[77]++; } break;
-                    case 79: { std::cout << "!!!!!*****»¤Ä¦Ö®ÕÈ" << endl; pcount[78]++; } break;
-                    case 80: { std::cout << "!!****Ç§ÑÒ¹Å½£" << endl; pcount[79]++; } break;
-                    case 81: { std::cout << "!!****Ç§ÑÒ³¤Ç¹" << endl; pcount[80]++; } break;
-                    case 82: { std::cout << "!!!!!*****ÖÕÄ©àµÌ¾Ö®Ê«" << endl; pcount[81]++; } break;
-                    case 83: { std::cout << "!!****°µÏïÉÁ¹â" << endl; pcount[82]++; } break;
-                    case 84: { std::cout << "!!****°µÏïµÄ¾ÆÓëÊ«" << endl; pcount[83]++; } break;
-                    case 85: { std::cout << "!!****°µÏïÁÔÊÖ" << endl; pcount[84]++; } break;
-                    case 86: { std::cout << "!!!!!*****ËÉô¥ÏìÆğÖ®Ê±" << endl; pcount[85]++; } break;
+                    case 1: { std::cout << "!!!!!*****åˆ»æ™´" << endl; pcount[0]++; } break;
+                    case 2: { std::cout << "!!!!!*****è«å¨œ" << endl; pcount[1]++; } break;
+                    case 3: { std::cout << "!!!!!*****ä¸ƒä¸ƒ" << endl; pcount[2]++; } break;
+                    case 4: { std::cout << "!!!!!*****è¿ªå¢å…‹" << endl; pcount[3]++; } break;
+                    case 5: { std::cout << "!!!!!*****ç´" << endl; pcount[4]++; } break;
+                    case 6: { std::cout << "!!!!!*****é˜¿è«æ–¯ä¹‹å¼“" << endl; pcount[5]++; } break;
+                    case 7: { std::cout << "!!!!!*****å¤©ç©ºä¹‹ç¿¼" << endl; pcount[6]++; } break;
+                    case 8: { std::cout << "!!!!!*****å››é£åŸå…¸" << endl; pcount[7]++; } break;
+                    case 9: { std::cout << "!!!!!*****å¤©ç©ºä¹‹å·" << endl; pcount[8]++; } break;
+                    case 10: { std::cout << "!!!!!*****å’Œç’é¸¢" << endl; pcount[9]++; } break;
+                    case 11: { std::cout << "!!!!!*****å¤©ç©ºä¹‹è„Š" << endl; pcount[10]++; } break;
+                    case 12: { std::cout << "!!!!!*****ç‹¼çš„æœ«è·¯" << endl; pcount[11]++; } break;
+                    case 13: { std::cout << "!!!!!*****å¤©ç©ºä¹‹å‚²" << endl; pcount[12]++; } break;
+                    case 14: { std::cout << "!!!!!*****å¤©ç©ºä¹‹åˆƒ" << endl; pcount[13]++; } break;
+                    case 15: { std::cout << "!!!!!*****é£é¹°å‰‘" << endl; pcount[14]++; } break;
+                    case 16: { std::cout << "!!****ç½—èè‰äºš" << endl; pcount[15]++; } break;
+                    case 17: { std::cout << "!!****è¾›ç„±" << endl; pcount[16]++; } break;
+                    case 18: { std::cout << "!!****ç ‚ç³–" << endl; pcount[17]++; } break;
+                    case 19: { std::cout << "!!****è¿ªå¥¥å¨œ" << endl; pcount[18]++; } break;
+                    case 20: { std::cout << "!!****é‡äº‘" << endl; pcount[19]++; } break;
+                    case 21: { std::cout << "!!****è¯ºè‰¾å°”" << endl; pcount[20]++; } break;
+                    case 22: { std::cout << "!!****ç­å°¼ç‰¹" << endl; pcount[21]++; } break;
+                    case 23: { std::cout << "!!****è²è°¢å°”" << endl; pcount[22]++; } break;
+                    case 24: { std::cout << "!!****å‡å…‰" << endl; pcount[23]++; } break;
+                    case 25: { std::cout << "!!****è¡Œç§‹" << endl; pcount[24]++; } break;
+                    case 26: { std::cout << "!!****åŒ—æ–—" << endl; pcount[25]++; } break;
+                    case 27: { std::cout << "!!****é¦™è±" << endl; pcount[26]++; } break;
+                    case 28: { std::cout << "!!****å®‰æŸ" << endl; pcount[27]++; } break;
+                    case 29: { std::cout << "!!****é›·æ³½" << endl; pcount[28]++; } break;
+                    case 30: { std::cout << "!!****å‡¯äºš" << endl; pcount[29]++; } break;
+                    case 31: { std::cout << "!!****èŠ­èŠ­æ‹‰" << endl; pcount[30]++; } break;
+                    case 32: { std::cout << "!!****ä¸½è" << endl; pcount[31]++; } break;
+                    case 33: { std::cout << "!!****å¼“è—" << endl; pcount[32]++; } break;
+                    case 34: { std::cout << "!!****ç¥­ç¤¼å¼“" << endl; pcount[33]++; } break;
+                    case 35: { std::cout << "!!****ç»å¼¦" << endl; pcount[34]++; } break;
+                    case 36: { std::cout << "!!****è¥¿é£çŒå¼“" << endl; pcount[35]++; } break;
+                    case 37: { std::cout << "!!****æ˜­å¿ƒ" << endl; pcount[36]++; } break;
+                    case 38: { std::cout << "!!****ç¥­ç¤¼æ®‹ç« " << endl; pcount[37]++; } break;
+                    case 39: { std::cout << "!!****æµæµªä¹ç« " << endl; pcount[38]++; } break;
+                    case 40: { std::cout << "!!****è¥¿é£ç§˜å…¸" << endl; pcount[39]++; } break;
+                    case 41: { std::cout << "!!****è¥¿é£é•¿æª" << endl; pcount[40]++; } break;
+                    case 42: { std::cout << "!!****åŒ£é‡Œç­è¾°" << endl; pcount[41]++; } break;
+                    case 43: { std::cout << "!!****é›¨è£" << endl; pcount[42]++; } break;
+                    case 44: { std::cout << "!!****ç¥­ç¤¼å¤§å‰‘" << endl; pcount[43]++; } break;
+                    case 45: { std::cout << "!!****é’Ÿå‰‘" << endl; pcount[44]++; } break;
+                    case 46: { std::cout << "!!****è¥¿é£å¤§å‰‘" << endl; pcount[45]++; } break;
+                    case 47: { std::cout << "!!****åŒ£é‡Œé¾™åŸ" << endl; pcount[46]++; } break;
+                    case 48: { std::cout << "!!****ç¥­ç¤¼å‰‘" << endl; pcount[47]++; } break;
+                    case 49: { std::cout << "!!****ç¬›å‰‘" << endl; pcount[48]++; } break;
+                    case 50: { std::cout << "!!****è¥¿é£å‰‘" << endl; pcount[49]++; } break;
+                    case 51: { std::cout << "***çŒå¼“" << endl; pcount[50]++; } break;
+                    case 52: { std::cout << "***ç¥å°„æ‰‹ä¹‹èª“" << endl; pcount[51]++; } break;
+                    case 53: { std::cout << "***é¸¦ç¾½å¼“" << endl; pcount[52]++; } break;
+                    case 54: { std::cout << "***ç¿¡ç‰æ³•çƒ" << endl; pcount[53]++; } break;
+                    case 55: { std::cout << "***è®¨é¾™è‹±æ°è°­" << endl; pcount[54]++; } break;
+                    case 56: { std::cout << "***é­”å¯¼ç»ªè®º" << endl; pcount[55]++; } break;
+                    case 57: { std::cout << "***é»‘ç¼¨æª" << endl; pcount[56]++; } break;
+                    case 58: { std::cout << "***ä»¥ç†æœäºº" << endl; pcount[57]++; } break;
+                    case 59: { std::cout << "***æ²æµ´é¾™è¡€çš„å‰‘" << endl; pcount[58]++; } break;
+                    case 60: { std::cout << "***é“å½±é˜”å‰‘" << endl; pcount[59]++; } break;
+                    case 61: { std::cout << "***é£å¤©å¾¡å‰‘" << endl; pcount[60]++; } break;
+                    case 62: { std::cout << "***é»æ˜ç¥å‰‘" << endl; pcount[61]++; } break;
+                    case 63: { std::cout << "***å†·åˆƒ" << endl; pcount[62]++; } break;
+                    case 64: { std::cout << "!!!!!*****æ¸©è¿ª" << endl; pcount[63]++; } break;
+                    case 65: { std::cout << "!!!!!*****å¯è‰" << endl; pcount[64]++; } break;
+                    case 66: { std::cout << "!!!!!*****è¾¾è¾¾åˆ©äºš" << endl; pcount[65]++; } break;
+                    case 67: { std::cout << "!!!!!*****é’Ÿç¦»" << endl; pcount[66]++; } break;
+                    case 68: { std::cout << "!!!!!*****é˜¿è´å¤š" << endl; pcount[67]++; } break;
+                    case 69: { std::cout << "!!!!!*****ç”˜é›¨" << endl; pcount[68]++; } break;
+                    case 70: { std::cout << "!!!!!*****é­ˆ" << endl; pcount[69]++; } break;
+                    case 71: { std::cout << "!!!!!*****èƒ¡æ¡ƒ" << endl; pcount[70]++; } break;
+                    case 72: { std::cout << "!!****çƒŸç»¯" << endl; pcount[71]++; } break;
+                    case 73: { std::cout << "!!!!!*****ä¼˜èˆ" << endl; pcount[72]++; } break;
+                    case 74: { std::cout << "!!!!!*****å°˜ä¸–ä¹‹é”" << endl; pcount[73]++; } break;
+                    case 75: { std::cout << "!!!!!*****è´¯è™¹ä¹‹æ§Š" << endl; pcount[74]++; } break;
+                    case 76: { std::cout << "!!!!!*****æ— å·¥ä¹‹å‰‘" << endl; pcount[75]++; } break;
+                    case 77: { std::cout << "!!!!!*****æ–«å³°ä¹‹åˆƒ" << endl; pcount[76]++; } break;
+                    case 78: { std::cout << "!!!!!*****ç£å²©ç»“ç»¿" << endl; pcount[77]++; } break;
+                    case 79: { std::cout << "!!!!!*****æŠ¤æ‘©ä¹‹æ–" << endl; pcount[78]++; } break;
+                    case 80: { std::cout << "!!****åƒå²©å¤å‰‘" << endl; pcount[79]++; } break;
+                    case 81: { std::cout << "!!****åƒå²©é•¿æª" << endl; pcount[80]++; } break;
+                    case 82: { std::cout << "!!!!!*****ç»ˆæœ«å—Ÿå¹ä¹‹è¯—" << endl; pcount[81]++; } break;
+                    case 83: { std::cout << "!!****æš—å··é—ªå…‰" << endl; pcount[82]++; } break;
+                    case 84: { std::cout << "!!****æš—å··çš„é…’ä¸è¯—" << endl; pcount[83]++; } break;
+                    case 85: { std::cout << "!!****æš—å··çŒæ‰‹" << endl; pcount[84]++; } break;
+                    case 86: { std::cout << "!!!!!*****æ¾ç±å“èµ·ä¹‹æ—¶" << endl; pcount[85]++; } break;
                     case 87: { std::cout << "Placeholder" << endl; pcount[86]++; } break;
                     case 88: { std::cout << "Placeholder" << endl; pcount[87]++; } break;
                     case 89: { std::cout << "Placeholder" << endl; pcount[88]++; } break;
@@ -13644,7 +13685,7 @@ int main() {
                                 five_count_w++;
                                 int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                 kind = rspick(templist, 10);
-                                if (kind == 14) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
+                                if (kind == 14) five_star_guarantee_number = 0; else if(five_check[1] == 1) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
                             }
                         }
                         else if (temp1 < (long long int) ULTRAPOS / 1000 * 67) {
@@ -13754,7 +13795,7 @@ int main() {
                                 five_count_w++;
                                 int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                 kind = rspick(templist, 10);
-                                if (kind == 14) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
+                                if (kind == 14) five_star_guarantee_number = 0; else if(five_check[1] == 1) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
                             }
                         }
                         else if (temp1 < (long long int) ULTRAPOS / 1000 * 667) {
@@ -13864,7 +13905,7 @@ int main() {
                                 five_count_w++;
                                 int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                 kind = rspick(templist, 10);
-                                if (kind == 14) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
+                                if (kind == 14) five_star_guarantee_number = 0; else if(five_check[1] == 1) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
                             }
                         }
                         else if (temp1 < (long long int) ULTRAPOS / 1000 * 967) {
@@ -13974,7 +14015,7 @@ int main() {
                                 five_count_w++;
                                 int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                 kind = rspick(templist, 10);
-                                if (kind == 14) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
+                                if (kind == 14) five_star_guarantee_number = 0; else if(five_check[1] == 1) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
                             }
                         }
                         else {
@@ -14079,7 +14120,7 @@ int main() {
                                 five_count_w++;
                                 int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                 kind = rspick(templist, 10);
-                                if (kind == 14) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
+                                if (kind == 14) five_star_guarantee_number = 0; else if(five_check[1] == 1) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
                             }
                         }
                         else if (temp1 < (long long int) (ULTRAPOS / 1000 * 67) + ((long long int)(five_star_assurance_number) - 62) * (long long int)(ULTRAPOS / 1000 * 70)) {
@@ -14189,7 +14230,7 @@ int main() {
                                 five_count_w++;
                                 int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                 kind = rspick(templist, 10);
-                                if (kind == 14) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
+                                if (kind == 14) five_star_guarantee_number = 0; else if(five_check[1] == 1) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
                             }
                         }
                         else if (temp1 < (long long int) (ULTRAPOS / 1000 * 667) + ((long long int)(five_star_assurance_number) - 62) * (long long int)(ULTRAPOS / 1000 * 70)) {
@@ -14299,7 +14340,7 @@ int main() {
                                 five_count_w++;
                                 int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                 kind = rspick(templist, 10);
-                                if (kind == 14) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
+                                if (kind == 14) five_star_guarantee_number = 0; else if(five_check[1] == 1) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
                             }
                         }
                         else if (temp1 < (long long int) (ULTRAPOS / 1000 * 967) + ((long long int)(five_star_assurance_number) - 62) * (long long int)(ULTRAPOS / 1000 * 70)) {
@@ -14409,7 +14450,7 @@ int main() {
                                 five_count_w++;
                                 int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                 kind = rspick(templist, 10);
-                                if (kind == 14) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
+                                if (kind == 14) five_star_guarantee_number = 0; else if(five_check[1] == 1) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
                             }
                         }
                         else {
@@ -14514,7 +14555,7 @@ int main() {
                                 five_count_w++;
                                 int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                 kind = rspick(templist, 10);
-                                if (kind == 14) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
+                                if (kind == 14) five_star_guarantee_number = 0; else if(five_check[1] == 1) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
                             }
                         }
                         else if (temp1 < (long long int) (ULTRAPOS / 1000 * 837) + ((long long int)(five_star_assurance_number) - 73) * (long long int)(ULTRAPOS / 1000 * 35)) {
@@ -14624,7 +14665,7 @@ int main() {
                                 five_count_w++;
                                 int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                 kind = rspick(templist, 10);
-                                if (kind == 14) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
+                                if (kind == 14) five_star_guarantee_number = 0; else if(five_check[1] == 1) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
                             }
                         }
                         else if (temp1 < (long long int) (ULTRAPOS / 1000 * 1437) + ((long long int)(five_star_assurance_number) - 73) * (long long int)(ULTRAPOS / 1000 * 35)) {
@@ -14734,7 +14775,7 @@ int main() {
                                 five_count_w++;
                                 int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                 kind = rspick(templist, 10);
-                                if (kind == 14) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
+                                if (kind == 14) five_star_guarantee_number = 0; else if(five_check[1] == 1) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
                             }
                         }
                         else if (temp1 < (long long int) (ULTRAPOS / 1000 * 1737) + ((long long int)(five_star_assurance_number) - 73) * (long long int)(ULTRAPOS / 1000 * 35)) {
@@ -14844,7 +14885,7 @@ int main() {
                                 five_count_w++;
                                 int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                 kind = rspick(templist, 10);
-                                if (kind == 14) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
+                                if (kind == 14) five_star_guarantee_number = 0; else if(five_check[1] == 1) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
                             }
                         }
                         else {
@@ -14946,99 +14987,99 @@ int main() {
                         else {
                             type = 2;
                             five_count_w++;
-                            five_star_guarantee_number = 1;
+                            if(five_check[1] == 1) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
                             int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                             kind = rspick(templist, 10);
                         }
                     }
                     std::cout << count + 1 << "(" << five_star_assurance_number << ")" << " ";
                     switch (kind) {
-                    case 1: { std::cout << "!!!!!*****¿ÌÇç" << endl; pcount[0]++; } break;
-                    case 2: { std::cout << "!!!!!*****ÄªÄÈ" << endl; pcount[1]++; } break;
-                    case 3: { std::cout << "!!!!!*****ÆßÆß" << endl; pcount[2]++; } break;
-                    case 4: { std::cout << "!!!!!*****µÏÂ¬¿Ë" << endl; pcount[3]++; } break;
-                    case 5: { std::cout << "!!!!!*****ÇÙ" << endl; pcount[4]++; } break;
-                    case 6: { std::cout << "!!!!!*****°¢ÄªË¹Ö®¹­" << endl; pcount[5]++; } break;
-                    case 7: { std::cout << "!!!!!*****Ìì¿ÕÖ®Òí" << endl; pcount[6]++; } break;
-                    case 8: { std::cout << "!!!!!*****ËÄ·çÔ­µä" << endl; pcount[7]++; } break;
-                    case 9: { std::cout << "!!!!!*****Ìì¿ÕÖ®¾í" << endl; pcount[8]++; } break;
-                    case 10: { std::cout << "!!!!!*****ºÍè±ğ°" << endl; pcount[9]++; } break;
-                    case 11: { std::cout << "!!!!!*****Ìì¿ÕÖ®¼¹" << endl; pcount[10]++; } break;
-                    case 12: { std::cout << "!!!!!*****ÀÇµÄÄ©Â·" << endl; pcount[11]++; } break;
-                    case 13: { std::cout << "!!!!!*****Ìì¿ÕÖ®°Á" << endl; pcount[12]++; } break;
-                    case 14: { std::cout << "!!!!!*****Ìì¿ÕÖ®ÈĞ" << endl; pcount[13]++; } break;
-                    case 15: { std::cout << "!!!!!*****·çÓ¥½£" << endl; pcount[14]++; } break;
-                    case 16: { std::cout << "!!****ÂŞÉ¯ÀòÑÇ" << endl; pcount[15]++; } break;
-                    case 17: { std::cout << "!!****ĞÁìÍ" << endl; pcount[16]++; } break;
-                    case 18: { std::cout << "!!****É°ÌÇ" << endl; pcount[17]++; } break;
-                    case 19: { std::cout << "!!****µÏ°ÂÄÈ" << endl; pcount[18]++; } break;
-                    case 20: { std::cout << "!!****ÖØÔÆ" << endl; pcount[19]++; } break;
-                    case 21: { std::cout << "!!****Åµ°¬¶û" << endl; pcount[20]++; } break;
-                    case 22: { std::cout << "!!****°àÄáÌØ" << endl; pcount[21]++; } break;
-                    case 23: { std::cout << "!!****·ÆĞ»¶û" << endl; pcount[22]++; } break;
-                    case 24: { std::cout << "!!****Äı¹â" << endl; pcount[23]++; } break;
-                    case 25: { std::cout << "!!****ĞĞÇï" << endl; pcount[24]++; } break;
-                    case 26: { std::cout << "!!****±±¶·" << endl; pcount[25]++; } break;
-                    case 27: { std::cout << "!!****ÏãÁâ" << endl; pcount[26]++; } break;
-                    case 28: { std::cout << "!!****°²°Ø" << endl; pcount[27]++; } break;
-                    case 29: { std::cout << "!!****À×Ôó" << endl; pcount[28]++; } break;
-                    case 30: { std::cout << "!!****¿­ÑÇ" << endl; pcount[29]++; } break;
-                    case 31: { std::cout << "!!****°Å°ÅÀ­" << endl; pcount[30]++; } break;
-                    case 32: { std::cout << "!!****ÀöÉ¯" << endl; pcount[31]++; } break;
-                    case 33: { std::cout << "!!****¹­²Ø" << endl; pcount[32]++; } break;
-                    case 34: { std::cout << "!!****¼ÀÀñ¹­" << endl; pcount[33]++; } break;
-                    case 35: { std::cout << "!!****¾øÏÒ" << endl; pcount[34]++; } break;
-                    case 36: { std::cout << "!!****Î÷·çÁÔ¹­" << endl; pcount[35]++; } break;
-                    case 37: { std::cout << "!!****ÕÑĞÄ" << endl; pcount[36]++; } break;
-                    case 38: { std::cout << "!!****¼ÀÀñ²ĞÕÂ" << endl; pcount[37]++; } break;
-                    case 39: { std::cout << "!!****Á÷ÀËÀÖÕÂ" << endl; pcount[38]++; } break;
-                    case 40: { std::cout << "!!****Î÷·çÃØµä" << endl; pcount[39]++; } break;
-                    case 41: { std::cout << "!!****Î÷·ç³¤Ç¹" << endl; pcount[40]++; } break;
-                    case 42: { std::cout << "!!****Ï»ÀïÃğ³½" << endl; pcount[41]++; } break;
-                    case 43: { std::cout << "!!****Óê²Ã" << endl; pcount[42]++; } break;
-                    case 44: { std::cout << "!!****¼ÀÀñ´ó½£" << endl; pcount[43]++; } break;
-                    case 45: { std::cout << "!!****ÖÓ½£" << endl; pcount[44]++; } break;
-                    case 46: { std::cout << "!!****Î÷·ç´ó½£" << endl; pcount[45]++; } break;
-                    case 47: { std::cout << "!!****Ï»ÀïÁúÒ÷" << endl; pcount[46]++; } break;
-                    case 48: { std::cout << "!!****¼ÀÀñ½£" << endl; pcount[47]++; } break;
-                    case 49: { std::cout << "!!****µÑ½£" << endl; pcount[48]++; } break;
-                    case 50: { std::cout << "!!****Î÷·ç½£" << endl; pcount[49]++; } break;
-                    case 51: { std::cout << "***ÁÔ¹­" << endl; pcount[50]++; } break;
-                    case 52: { std::cout << "***ÉñÉäÊÖÖ®ÊÄ" << endl; pcount[51]++; } break;
-                    case 53: { std::cout << "***Ñ»Óğ¹­" << endl; pcount[52]++; } break;
-                    case 54: { std::cout << "***ôäÓñ·¨Çò" << endl; pcount[53]++; } break;
-                    case 55: { std::cout << "***ÌÖÁúÓ¢½ÜÌ·" << endl; pcount[54]++; } break;
-                    case 56: { std::cout << "***Ä§µ¼Ğ÷ÂÛ" << endl; pcount[55]++; } break;
-                    case 57: { std::cout << "***ºÚÓ§Ç¹" << endl; pcount[56]++; } break;
-                    case 58: { std::cout << "***ÒÔÀí·şÈË" << endl; pcount[57]++; } break;
-                    case 59: { std::cout << "***ãåÔ¡ÁúÑªµÄ½£" << endl; pcount[58]++; } break;
-                    case 60: { std::cout << "***ÌúÓ°À«½£" << endl; pcount[59]++; } break;
-                    case 61: { std::cout << "***·ÉÌìÓù½£" << endl; pcount[60]++; } break;
-                    case 62: { std::cout << "***ÀèÃ÷Éñ½£" << endl; pcount[61]++; } break;
-                    case 63: { std::cout << "***ÀäÈĞ" << endl; pcount[62]++; } break;
-                    case 64: { std::cout << "!!!!!*****ÎÂµÏ" << endl; pcount[63]++; } break;
-                    case 65: { std::cout << "!!!!!*****¿ÉÀò" << endl; pcount[64]++; } break;
-                    case 66: { std::cout << "!!!!!*****´ï´ïÀûÑÇ" << endl; pcount[65]++; } break;
-                    case 67: { std::cout << "!!!!!*****ÖÓÀë" << endl; pcount[66]++; } break;
-                    case 68: { std::cout << "!!!!!*****°¢±´¶à" << endl; pcount[67]++; } break;
-                    case 69: { std::cout << "!!!!!*****¸ÊÓê" << endl; pcount[68]++; } break;
-                    case 70: { std::cout << "!!!!!*****÷Ì" << endl; pcount[69]++; } break;
-                    case 71: { std::cout << "!!!!!*****ºúÌÒ" << endl; pcount[70]++; } break;
-                    case 72: { std::cout << "!!****ÑÌç³" << endl; pcount[71]++; } break;
-                    case 73: { std::cout << "!!!!!*****ÓÅÇ‰" << endl; pcount[72]++; } break;
-                    case 74: { std::cout << "!!!!!*****³¾ÊÀÖ®Ëø" << endl; pcount[73]++; } break;
-                    case 75: { std::cout << "!!!!!*****¹áºçÖ®éÃ" << endl; pcount[74]++; } break;
-                    case 76: { std::cout << "!!!!!*****ÎŞ¹¤Ö®½£" << endl; pcount[75]++; } break;
-                    case 77: { std::cout << "!!!!!*****í½·åÖ®ÈĞ" << endl; pcount[76]++; } break;
-                    case 78: { std::cout << "!!!!!*****ÅÍÑÒ½áÂÌ" << endl; pcount[77]++; } break;
-                    case 79: { std::cout << "!!!!!*****»¤Ä¦Ö®ÕÈ" << endl; pcount[78]++; } break;
-                    case 80: { std::cout << "!!****Ç§ÑÒ¹Å½£" << endl; pcount[79]++; } break;
-                    case 81: { std::cout << "!!****Ç§ÑÒ³¤Ç¹" << endl; pcount[80]++; } break;
-                    case 82: { std::cout << "!!!!!*****ÖÕÄ©àµÌ¾Ö®Ê«" << endl; pcount[81]++; } break;
-                    case 83: { std::cout << "!!****°µÏïÉÁ¹â" << endl; pcount[82]++; } break;
-                    case 84: { std::cout << "!!****°µÏïµÄ¾ÆÓëÊ«" << endl; pcount[83]++; } break;
-                    case 85: { std::cout << "!!****°µÏïÁÔÊÖ" << endl; pcount[84]++; } break;
-                    case 86: { std::cout << "!!!!!*****ËÉô¥ÏìÆğÖ®Ê±" << endl; pcount[85]++; } break;
+                    case 1: { std::cout << "!!!!!*****åˆ»æ™´" << endl; pcount[0]++; } break;
+                    case 2: { std::cout << "!!!!!*****è«å¨œ" << endl; pcount[1]++; } break;
+                    case 3: { std::cout << "!!!!!*****ä¸ƒä¸ƒ" << endl; pcount[2]++; } break;
+                    case 4: { std::cout << "!!!!!*****è¿ªå¢å…‹" << endl; pcount[3]++; } break;
+                    case 5: { std::cout << "!!!!!*****ç´" << endl; pcount[4]++; } break;
+                    case 6: { std::cout << "!!!!!*****é˜¿è«æ–¯ä¹‹å¼“" << endl; pcount[5]++; } break;
+                    case 7: { std::cout << "!!!!!*****å¤©ç©ºä¹‹ç¿¼" << endl; pcount[6]++; } break;
+                    case 8: { std::cout << "!!!!!*****å››é£åŸå…¸" << endl; pcount[7]++; } break;
+                    case 9: { std::cout << "!!!!!*****å¤©ç©ºä¹‹å·" << endl; pcount[8]++; } break;
+                    case 10: { std::cout << "!!!!!*****å’Œç’é¸¢" << endl; pcount[9]++; } break;
+                    case 11: { std::cout << "!!!!!*****å¤©ç©ºä¹‹è„Š" << endl; pcount[10]++; } break;
+                    case 12: { std::cout << "!!!!!*****ç‹¼çš„æœ«è·¯" << endl; pcount[11]++; } break;
+                    case 13: { std::cout << "!!!!!*****å¤©ç©ºä¹‹å‚²" << endl; pcount[12]++; } break;
+                    case 14: { std::cout << "!!!!!*****å¤©ç©ºä¹‹åˆƒ" << endl; pcount[13]++; } break;
+                    case 15: { std::cout << "!!!!!*****é£é¹°å‰‘" << endl; pcount[14]++; } break;
+                    case 16: { std::cout << "!!****ç½—èè‰äºš" << endl; pcount[15]++; } break;
+                    case 17: { std::cout << "!!****è¾›ç„±" << endl; pcount[16]++; } break;
+                    case 18: { std::cout << "!!****ç ‚ç³–" << endl; pcount[17]++; } break;
+                    case 19: { std::cout << "!!****è¿ªå¥¥å¨œ" << endl; pcount[18]++; } break;
+                    case 20: { std::cout << "!!****é‡äº‘" << endl; pcount[19]++; } break;
+                    case 21: { std::cout << "!!****è¯ºè‰¾å°”" << endl; pcount[20]++; } break;
+                    case 22: { std::cout << "!!****ç­å°¼ç‰¹" << endl; pcount[21]++; } break;
+                    case 23: { std::cout << "!!****è²è°¢å°”" << endl; pcount[22]++; } break;
+                    case 24: { std::cout << "!!****å‡å…‰" << endl; pcount[23]++; } break;
+                    case 25: { std::cout << "!!****è¡Œç§‹" << endl; pcount[24]++; } break;
+                    case 26: { std::cout << "!!****åŒ—æ–—" << endl; pcount[25]++; } break;
+                    case 27: { std::cout << "!!****é¦™è±" << endl; pcount[26]++; } break;
+                    case 28: { std::cout << "!!****å®‰æŸ" << endl; pcount[27]++; } break;
+                    case 29: { std::cout << "!!****é›·æ³½" << endl; pcount[28]++; } break;
+                    case 30: { std::cout << "!!****å‡¯äºš" << endl; pcount[29]++; } break;
+                    case 31: { std::cout << "!!****èŠ­èŠ­æ‹‰" << endl; pcount[30]++; } break;
+                    case 32: { std::cout << "!!****ä¸½è" << endl; pcount[31]++; } break;
+                    case 33: { std::cout << "!!****å¼“è—" << endl; pcount[32]++; } break;
+                    case 34: { std::cout << "!!****ç¥­ç¤¼å¼“" << endl; pcount[33]++; } break;
+                    case 35: { std::cout << "!!****ç»å¼¦" << endl; pcount[34]++; } break;
+                    case 36: { std::cout << "!!****è¥¿é£çŒå¼“" << endl; pcount[35]++; } break;
+                    case 37: { std::cout << "!!****æ˜­å¿ƒ" << endl; pcount[36]++; } break;
+                    case 38: { std::cout << "!!****ç¥­ç¤¼æ®‹ç« " << endl; pcount[37]++; } break;
+                    case 39: { std::cout << "!!****æµæµªä¹ç« " << endl; pcount[38]++; } break;
+                    case 40: { std::cout << "!!****è¥¿é£ç§˜å…¸" << endl; pcount[39]++; } break;
+                    case 41: { std::cout << "!!****è¥¿é£é•¿æª" << endl; pcount[40]++; } break;
+                    case 42: { std::cout << "!!****åŒ£é‡Œç­è¾°" << endl; pcount[41]++; } break;
+                    case 43: { std::cout << "!!****é›¨è£" << endl; pcount[42]++; } break;
+                    case 44: { std::cout << "!!****ç¥­ç¤¼å¤§å‰‘" << endl; pcount[43]++; } break;
+                    case 45: { std::cout << "!!****é’Ÿå‰‘" << endl; pcount[44]++; } break;
+                    case 46: { std::cout << "!!****è¥¿é£å¤§å‰‘" << endl; pcount[45]++; } break;
+                    case 47: { std::cout << "!!****åŒ£é‡Œé¾™åŸ" << endl; pcount[46]++; } break;
+                    case 48: { std::cout << "!!****ç¥­ç¤¼å‰‘" << endl; pcount[47]++; } break;
+                    case 49: { std::cout << "!!****ç¬›å‰‘" << endl; pcount[48]++; } break;
+                    case 50: { std::cout << "!!****è¥¿é£å‰‘" << endl; pcount[49]++; } break;
+                    case 51: { std::cout << "***çŒå¼“" << endl; pcount[50]++; } break;
+                    case 52: { std::cout << "***ç¥å°„æ‰‹ä¹‹èª“" << endl; pcount[51]++; } break;
+                    case 53: { std::cout << "***é¸¦ç¾½å¼“" << endl; pcount[52]++; } break;
+                    case 54: { std::cout << "***ç¿¡ç‰æ³•çƒ" << endl; pcount[53]++; } break;
+                    case 55: { std::cout << "***è®¨é¾™è‹±æ°è°­" << endl; pcount[54]++; } break;
+                    case 56: { std::cout << "***é­”å¯¼ç»ªè®º" << endl; pcount[55]++; } break;
+                    case 57: { std::cout << "***é»‘ç¼¨æª" << endl; pcount[56]++; } break;
+                    case 58: { std::cout << "***ä»¥ç†æœäºº" << endl; pcount[57]++; } break;
+                    case 59: { std::cout << "***æ²æµ´é¾™è¡€çš„å‰‘" << endl; pcount[58]++; } break;
+                    case 60: { std::cout << "***é“å½±é˜”å‰‘" << endl; pcount[59]++; } break;
+                    case 61: { std::cout << "***é£å¤©å¾¡å‰‘" << endl; pcount[60]++; } break;
+                    case 62: { std::cout << "***é»æ˜ç¥å‰‘" << endl; pcount[61]++; } break;
+                    case 63: { std::cout << "***å†·åˆƒ" << endl; pcount[62]++; } break;
+                    case 64: { std::cout << "!!!!!*****æ¸©è¿ª" << endl; pcount[63]++; } break;
+                    case 65: { std::cout << "!!!!!*****å¯è‰" << endl; pcount[64]++; } break;
+                    case 66: { std::cout << "!!!!!*****è¾¾è¾¾åˆ©äºš" << endl; pcount[65]++; } break;
+                    case 67: { std::cout << "!!!!!*****é’Ÿç¦»" << endl; pcount[66]++; } break;
+                    case 68: { std::cout << "!!!!!*****é˜¿è´å¤š" << endl; pcount[67]++; } break;
+                    case 69: { std::cout << "!!!!!*****ç”˜é›¨" << endl; pcount[68]++; } break;
+                    case 70: { std::cout << "!!!!!*****é­ˆ" << endl; pcount[69]++; } break;
+                    case 71: { std::cout << "!!!!!*****èƒ¡æ¡ƒ" << endl; pcount[70]++; } break;
+                    case 72: { std::cout << "!!****çƒŸç»¯" << endl; pcount[71]++; } break;
+                    case 73: { std::cout << "!!!!!*****ä¼˜èˆ" << endl; pcount[72]++; } break;
+                    case 74: { std::cout << "!!!!!*****å°˜ä¸–ä¹‹é”" << endl; pcount[73]++; } break;
+                    case 75: { std::cout << "!!!!!*****è´¯è™¹ä¹‹æ§Š" << endl; pcount[74]++; } break;
+                    case 76: { std::cout << "!!!!!*****æ— å·¥ä¹‹å‰‘" << endl; pcount[75]++; } break;
+                    case 77: { std::cout << "!!!!!*****æ–«å³°ä¹‹åˆƒ" << endl; pcount[76]++; } break;
+                    case 78: { std::cout << "!!!!!*****ç£å²©ç»“ç»¿" << endl; pcount[77]++; } break;
+                    case 79: { std::cout << "!!!!!*****æŠ¤æ‘©ä¹‹æ–" << endl; pcount[78]++; } break;
+                    case 80: { std::cout << "!!****åƒå²©å¤å‰‘" << endl; pcount[79]++; } break;
+                    case 81: { std::cout << "!!****åƒå²©é•¿æª" << endl; pcount[80]++; } break;
+                    case 82: { std::cout << "!!!!!*****ç»ˆæœ«å—Ÿå¹ä¹‹è¯—" << endl; pcount[81]++; } break;
+                    case 83: { std::cout << "!!****æš—å··é—ªå…‰" << endl; pcount[82]++; } break;
+                    case 84: { std::cout << "!!****æš—å··çš„é…’ä¸è¯—" << endl; pcount[83]++; } break;
+                    case 85: { std::cout << "!!****æš—å··çŒæ‰‹" << endl; pcount[84]++; } break;
+                    case 86: { std::cout << "!!!!!*****æ¾ç±å“èµ·ä¹‹æ—¶" << endl; pcount[85]++; } break;
                     case 87: { std::cout << "Placeholder" << endl; pcount[86]++; } break;
                     case 88: { std::cout << "Placeholder" << endl; pcount[87]++; } break;
                     case 89: { std::cout << "Placeholder" << endl; pcount[88]++; } break;
@@ -15161,7 +15202,7 @@ int main() {
                                 five_count_w++;
                                 int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                 kind = rspick(templist, 10);
-                                if (kind == 7 || kind == 8) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
+                                if (kind == 7 || kind == 8) five_star_guarantee_number = 0; else if(five_check[1] == 1) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
                             }
                         }
                         else if (temp1 < (long long int) ULTRAPOS / 1000 * 67) {
@@ -15271,7 +15312,7 @@ int main() {
                                 five_count_w++;
                                 int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                 kind = rspick(templist, 10);
-                                if (kind == 7 || kind == 8) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
+                                if (kind == 7 || kind == 8) five_star_guarantee_number = 0; else if(five_check[1] == 1) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
                             }
                         }
                         else if (temp1 < (long long int) ULTRAPOS / 1000 * 667) {
@@ -15381,7 +15422,7 @@ int main() {
                                 five_count_w++;
                                 int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                 kind = rspick(templist, 10);
-                                if (kind == 7 || kind == 8) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
+                                if (kind == 7 || kind == 8) five_star_guarantee_number = 0; else if(five_check[1] == 1) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
                             }
                         }
                         else if (temp1 < (long long int) ULTRAPOS / 1000 * 967) {
@@ -15491,7 +15532,7 @@ int main() {
                                 five_count_w++;
                                 int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                 kind = rspick(templist, 10);
-                                if (kind == 7 || kind == 8) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
+                                if (kind == 7 || kind == 8) five_star_guarantee_number = 0; else if(five_check[1] == 1) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
                             }
                         }
                         else {
@@ -15596,7 +15637,7 @@ int main() {
                                 five_count_w++;
                                 int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                 kind = rspick(templist, 10);
-                                if (kind == 7 || kind == 8) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
+                                if (kind == 7 || kind == 8) five_star_guarantee_number = 0; else if(five_check[1] == 1) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
                             }
                         }
                         else if (temp1 < (long long int) (ULTRAPOS / 1000 * 67) + ((long long int)(five_star_assurance_number) - 62) * (long long int)(ULTRAPOS / 1000 * 70)) {
@@ -15706,7 +15747,7 @@ int main() {
                                 five_count_w++;
                                 int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                 kind = rspick(templist, 10);
-                                if (kind == 7 || kind == 8) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
+                                if (kind == 7 || kind == 8) five_star_guarantee_number = 0; else if(five_check[1] == 1) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
                             }
                         }
                         else if (temp1 < (long long int) (ULTRAPOS / 1000 * 667) + ((long long int)(five_star_assurance_number) - 62) * (long long int)(ULTRAPOS / 1000 * 70)) {
@@ -15816,7 +15857,7 @@ int main() {
                                 five_count_w++;
                                 int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                 kind = rspick(templist, 10);
-                                if (kind == 7 || kind == 8) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
+                                if (kind == 7 || kind == 8) five_star_guarantee_number = 0; else if(five_check[1] == 1) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
                             }
                         }
                         else if (temp1 < (long long int) (ULTRAPOS / 1000 * 967) + ((long long int)(five_star_assurance_number) - 62) * (long long int)(ULTRAPOS / 1000 * 70)) {
@@ -15926,7 +15967,7 @@ int main() {
                                 five_count_w++;
                                 int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                 kind = rspick(templist, 10);
-                                if (kind == 7 || kind == 8) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
+                                if (kind == 7 || kind == 8) five_star_guarantee_number = 0; else if(five_check[1] == 1) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
                             }
                         }
                         else {
@@ -16031,7 +16072,7 @@ int main() {
                                 five_count_w++;
                                 int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                 kind = rspick(templist, 10);
-                                if (kind == 7 || kind == 8) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
+                                if (kind == 7 || kind == 8) five_star_guarantee_number = 0; else if(five_check[1] == 1) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
                             }
                         }
                         else if (temp1 < (long long int) (ULTRAPOS / 1000 * 837) + ((long long int)(five_star_assurance_number) - 73) * (long long int)(ULTRAPOS / 1000 * 35)) {
@@ -16141,7 +16182,7 @@ int main() {
                                 five_count_w++;
                                 int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                 kind = rspick(templist, 10);
-                                if (kind == 7 || kind == 8) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
+                                if (kind == 7 || kind == 8) five_star_guarantee_number = 0; else if(five_check[1] == 1) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
                             }
                         }
                         else if (temp1 < (long long int) (ULTRAPOS / 1000 * 1437) + ((long long int)(five_star_assurance_number) - 73) * (long long int)(ULTRAPOS / 1000 * 35)) {
@@ -16251,7 +16292,7 @@ int main() {
                                 five_count_w++;
                                 int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                 kind = rspick(templist, 10);
-                                if (kind == 7 || kind == 8) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
+                                if (kind == 7 || kind == 8) five_star_guarantee_number = 0; else if(five_check[1] == 1) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
                             }
                         }
                         else if (temp1 < (long long int) (ULTRAPOS / 1000 * 1737) + ((long long int)(five_star_assurance_number) - 73) * (long long int)(ULTRAPOS / 1000 * 35)) {
@@ -16361,7 +16402,7 @@ int main() {
                                 five_count_w++;
                                 int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                 kind = rspick(templist, 10);
-                                if (kind == 7 || kind == 8) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
+                                if (kind == 7 || kind == 8) five_star_guarantee_number = 0; else if(five_check[1] == 1) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
                             }
                         }
                         else {
@@ -16463,99 +16504,99 @@ int main() {
                         else {
                             type = 2;
                             five_count_w++;
-                            five_star_guarantee_number = 1;
+                            if(five_check[1] == 1) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
                             int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                             kind = rspick(templist, 10);
                         }
                     }
                     std::cout << count + 1 << "(" << five_star_assurance_number << ")" << " ";
                     switch (kind) {
-                    case 1: { std::cout << "!!!!!*****¿ÌÇç" << endl; pcount[0]++; } break;
-                    case 2: { std::cout << "!!!!!*****ÄªÄÈ" << endl; pcount[1]++; } break;
-                    case 3: { std::cout << "!!!!!*****ÆßÆß" << endl; pcount[2]++; } break;
-                    case 4: { std::cout << "!!!!!*****µÏÂ¬¿Ë" << endl; pcount[3]++; } break;
-                    case 5: { std::cout << "!!!!!*****ÇÙ" << endl; pcount[4]++; } break;
-                    case 6: { std::cout << "!!!!!*****°¢ÄªË¹Ö®¹­" << endl; pcount[5]++; } break;
-                    case 7: { std::cout << "!!!!!*****Ìì¿ÕÖ®Òí" << endl; pcount[6]++; } break;
-                    case 8: { std::cout << "!!!!!*****ËÄ·çÔ­µä" << endl; pcount[7]++; } break;
-                    case 9: { std::cout << "!!!!!*****Ìì¿ÕÖ®¾í" << endl; pcount[8]++; } break;
-                    case 10: { std::cout << "!!!!!*****ºÍè±ğ°" << endl; pcount[9]++; } break;
-                    case 11: { std::cout << "!!!!!*****Ìì¿ÕÖ®¼¹" << endl; pcount[10]++; } break;
-                    case 12: { std::cout << "!!!!!*****ÀÇµÄÄ©Â·" << endl; pcount[11]++; } break;
-                    case 13: { std::cout << "!!!!!*****Ìì¿ÕÖ®°Á" << endl; pcount[12]++; } break;
-                    case 14: { std::cout << "!!!!!*****Ìì¿ÕÖ®ÈĞ" << endl; pcount[13]++; } break;
-                    case 15: { std::cout << "!!!!!*****·çÓ¥½£" << endl; pcount[14]++; } break;
-                    case 16: { std::cout << "!!****ÂŞÉ¯ÀòÑÇ" << endl; pcount[15]++; } break;
-                    case 17: { std::cout << "!!****ĞÁìÍ" << endl; pcount[16]++; } break;
-                    case 18: { std::cout << "!!****É°ÌÇ" << endl; pcount[17]++; } break;
-                    case 19: { std::cout << "!!****µÏ°ÂÄÈ" << endl; pcount[18]++; } break;
-                    case 20: { std::cout << "!!****ÖØÔÆ" << endl; pcount[19]++; } break;
-                    case 21: { std::cout << "!!****Åµ°¬¶û" << endl; pcount[20]++; } break;
-                    case 22: { std::cout << "!!****°àÄáÌØ" << endl; pcount[21]++; } break;
-                    case 23: { std::cout << "!!****·ÆĞ»¶û" << endl; pcount[22]++; } break;
-                    case 24: { std::cout << "!!****Äı¹â" << endl; pcount[23]++; } break;
-                    case 25: { std::cout << "!!****ĞĞÇï" << endl; pcount[24]++; } break;
-                    case 26: { std::cout << "!!****±±¶·" << endl; pcount[25]++; } break;
-                    case 27: { std::cout << "!!****ÏãÁâ" << endl; pcount[26]++; } break;
-                    case 28: { std::cout << "!!****°²°Ø" << endl; pcount[27]++; } break;
-                    case 29: { std::cout << "!!****À×Ôó" << endl; pcount[28]++; } break;
-                    case 30: { std::cout << "!!****¿­ÑÇ" << endl; pcount[29]++; } break;
-                    case 31: { std::cout << "!!****°Å°ÅÀ­" << endl; pcount[30]++; } break;
-                    case 32: { std::cout << "!!****ÀöÉ¯" << endl; pcount[31]++; } break;
-                    case 33: { std::cout << "!!****¹­²Ø" << endl; pcount[32]++; } break;
-                    case 34: { std::cout << "!!****¼ÀÀñ¹­" << endl; pcount[33]++; } break;
-                    case 35: { std::cout << "!!****¾øÏÒ" << endl; pcount[34]++; } break;
-                    case 36: { std::cout << "!!****Î÷·çÁÔ¹­" << endl; pcount[35]++; } break;
-                    case 37: { std::cout << "!!****ÕÑĞÄ" << endl; pcount[36]++; } break;
-                    case 38: { std::cout << "!!****¼ÀÀñ²ĞÕÂ" << endl; pcount[37]++; } break;
-                    case 39: { std::cout << "!!****Á÷ÀËÀÖÕÂ" << endl; pcount[38]++; } break;
-                    case 40: { std::cout << "!!****Î÷·çÃØµä" << endl; pcount[39]++; } break;
-                    case 41: { std::cout << "!!****Î÷·ç³¤Ç¹" << endl; pcount[40]++; } break;
-                    case 42: { std::cout << "!!****Ï»ÀïÃğ³½" << endl; pcount[41]++; } break;
-                    case 43: { std::cout << "!!****Óê²Ã" << endl; pcount[42]++; } break;
-                    case 44: { std::cout << "!!****¼ÀÀñ´ó½£" << endl; pcount[43]++; } break;
-                    case 45: { std::cout << "!!****ÖÓ½£" << endl; pcount[44]++; } break;
-                    case 46: { std::cout << "!!****Î÷·ç´ó½£" << endl; pcount[45]++; } break;
-                    case 47: { std::cout << "!!****Ï»ÀïÁúÒ÷" << endl; pcount[46]++; } break;
-                    case 48: { std::cout << "!!****¼ÀÀñ½£" << endl; pcount[47]++; } break;
-                    case 49: { std::cout << "!!****µÑ½£" << endl; pcount[48]++; } break;
-                    case 50: { std::cout << "!!****Î÷·ç½£" << endl; pcount[49]++; } break;
-                    case 51: { std::cout << "***ÁÔ¹­" << endl; pcount[50]++; } break;
-                    case 52: { std::cout << "***ÉñÉäÊÖÖ®ÊÄ" << endl; pcount[51]++; } break;
-                    case 53: { std::cout << "***Ñ»Óğ¹­" << endl; pcount[52]++; } break;
-                    case 54: { std::cout << "***ôäÓñ·¨Çò" << endl; pcount[53]++; } break;
-                    case 55: { std::cout << "***ÌÖÁúÓ¢½ÜÌ·" << endl; pcount[54]++; } break;
-                    case 56: { std::cout << "***Ä§µ¼Ğ÷ÂÛ" << endl; pcount[55]++; } break;
-                    case 57: { std::cout << "***ºÚÓ§Ç¹" << endl; pcount[56]++; } break;
-                    case 58: { std::cout << "***ÒÔÀí·şÈË" << endl; pcount[57]++; } break;
-                    case 59: { std::cout << "***ãåÔ¡ÁúÑªµÄ½£" << endl; pcount[58]++; } break;
-                    case 60: { std::cout << "***ÌúÓ°À«½£" << endl; pcount[59]++; } break;
-                    case 61: { std::cout << "***·ÉÌìÓù½£" << endl; pcount[60]++; } break;
-                    case 62: { std::cout << "***ÀèÃ÷Éñ½£" << endl; pcount[61]++; } break;
-                    case 63: { std::cout << "***ÀäÈĞ" << endl; pcount[62]++; } break;
-                    case 64: { std::cout << "!!!!!*****ÎÂµÏ" << endl; pcount[63]++; } break;
-                    case 65: { std::cout << "!!!!!*****¿ÉÀò" << endl; pcount[64]++; } break;
-                    case 66: { std::cout << "!!!!!*****´ï´ïÀûÑÇ" << endl; pcount[65]++; } break;
-                    case 67: { std::cout << "!!!!!*****ÖÓÀë" << endl; pcount[66]++; } break;
-                    case 68: { std::cout << "!!!!!*****°¢±´¶à" << endl; pcount[67]++; } break;
-                    case 69: { std::cout << "!!!!!*****¸ÊÓê" << endl; pcount[68]++; } break;
-                    case 70: { std::cout << "!!!!!*****÷Ì" << endl; pcount[69]++; } break;
-                    case 71: { std::cout << "!!!!!*****ºúÌÒ" << endl; pcount[70]++; } break;
-                    case 72: { std::cout << "!!****ÑÌç³" << endl; pcount[71]++; } break;
-                    case 73: { std::cout << "!!!!!*****ÓÅÇ‰" << endl; pcount[72]++; } break;
-                    case 74: { std::cout << "!!!!!*****³¾ÊÀÖ®Ëø" << endl; pcount[73]++; } break;
-                    case 75: { std::cout << "!!!!!*****¹áºçÖ®éÃ" << endl; pcount[74]++; } break;
-                    case 76: { std::cout << "!!!!!*****ÎŞ¹¤Ö®½£" << endl; pcount[75]++; } break;
-                    case 77: { std::cout << "!!!!!*****í½·åÖ®ÈĞ" << endl; pcount[76]++; } break;
-                    case 78: { std::cout << "!!!!!*****ÅÍÑÒ½áÂÌ" << endl; pcount[77]++; } break;
-                    case 79: { std::cout << "!!!!!*****»¤Ä¦Ö®ÕÈ" << endl; pcount[78]++; } break;
-                    case 80: { std::cout << "!!****Ç§ÑÒ¹Å½£" << endl; pcount[79]++; } break;
-                    case 81: { std::cout << "!!****Ç§ÑÒ³¤Ç¹" << endl; pcount[80]++; } break;
-                    case 82: { std::cout << "!!!!!*****ÖÕÄ©àµÌ¾Ö®Ê«" << endl; pcount[81]++; } break;
-                    case 83: { std::cout << "!!****°µÏïÉÁ¹â" << endl; pcount[82]++; } break;
-                    case 84: { std::cout << "!!****°µÏïµÄ¾ÆÓëÊ«" << endl; pcount[83]++; } break;
-                    case 85: { std::cout << "!!****°µÏïÁÔÊÖ" << endl; pcount[84]++; } break;
-                    case 86: { std::cout << "!!!!!*****ËÉô¥ÏìÆğÖ®Ê±" << endl; pcount[85]++; } break;
+                    case 1: { std::cout << "!!!!!*****åˆ»æ™´" << endl; pcount[0]++; } break;
+                    case 2: { std::cout << "!!!!!*****è«å¨œ" << endl; pcount[1]++; } break;
+                    case 3: { std::cout << "!!!!!*****ä¸ƒä¸ƒ" << endl; pcount[2]++; } break;
+                    case 4: { std::cout << "!!!!!*****è¿ªå¢å…‹" << endl; pcount[3]++; } break;
+                    case 5: { std::cout << "!!!!!*****ç´" << endl; pcount[4]++; } break;
+                    case 6: { std::cout << "!!!!!*****é˜¿è«æ–¯ä¹‹å¼“" << endl; pcount[5]++; } break;
+                    case 7: { std::cout << "!!!!!*****å¤©ç©ºä¹‹ç¿¼" << endl; pcount[6]++; } break;
+                    case 8: { std::cout << "!!!!!*****å››é£åŸå…¸" << endl; pcount[7]++; } break;
+                    case 9: { std::cout << "!!!!!*****å¤©ç©ºä¹‹å·" << endl; pcount[8]++; } break;
+                    case 10: { std::cout << "!!!!!*****å’Œç’é¸¢" << endl; pcount[9]++; } break;
+                    case 11: { std::cout << "!!!!!*****å¤©ç©ºä¹‹è„Š" << endl; pcount[10]++; } break;
+                    case 12: { std::cout << "!!!!!*****ç‹¼çš„æœ«è·¯" << endl; pcount[11]++; } break;
+                    case 13: { std::cout << "!!!!!*****å¤©ç©ºä¹‹å‚²" << endl; pcount[12]++; } break;
+                    case 14: { std::cout << "!!!!!*****å¤©ç©ºä¹‹åˆƒ" << endl; pcount[13]++; } break;
+                    case 15: { std::cout << "!!!!!*****é£é¹°å‰‘" << endl; pcount[14]++; } break;
+                    case 16: { std::cout << "!!****ç½—èè‰äºš" << endl; pcount[15]++; } break;
+                    case 17: { std::cout << "!!****è¾›ç„±" << endl; pcount[16]++; } break;
+                    case 18: { std::cout << "!!****ç ‚ç³–" << endl; pcount[17]++; } break;
+                    case 19: { std::cout << "!!****è¿ªå¥¥å¨œ" << endl; pcount[18]++; } break;
+                    case 20: { std::cout << "!!****é‡äº‘" << endl; pcount[19]++; } break;
+                    case 21: { std::cout << "!!****è¯ºè‰¾å°”" << endl; pcount[20]++; } break;
+                    case 22: { std::cout << "!!****ç­å°¼ç‰¹" << endl; pcount[21]++; } break;
+                    case 23: { std::cout << "!!****è²è°¢å°”" << endl; pcount[22]++; } break;
+                    case 24: { std::cout << "!!****å‡å…‰" << endl; pcount[23]++; } break;
+                    case 25: { std::cout << "!!****è¡Œç§‹" << endl; pcount[24]++; } break;
+                    case 26: { std::cout << "!!****åŒ—æ–—" << endl; pcount[25]++; } break;
+                    case 27: { std::cout << "!!****é¦™è±" << endl; pcount[26]++; } break;
+                    case 28: { std::cout << "!!****å®‰æŸ" << endl; pcount[27]++; } break;
+                    case 29: { std::cout << "!!****é›·æ³½" << endl; pcount[28]++; } break;
+                    case 30: { std::cout << "!!****å‡¯äºš" << endl; pcount[29]++; } break;
+                    case 31: { std::cout << "!!****èŠ­èŠ­æ‹‰" << endl; pcount[30]++; } break;
+                    case 32: { std::cout << "!!****ä¸½è" << endl; pcount[31]++; } break;
+                    case 33: { std::cout << "!!****å¼“è—" << endl; pcount[32]++; } break;
+                    case 34: { std::cout << "!!****ç¥­ç¤¼å¼“" << endl; pcount[33]++; } break;
+                    case 35: { std::cout << "!!****ç»å¼¦" << endl; pcount[34]++; } break;
+                    case 36: { std::cout << "!!****è¥¿é£çŒå¼“" << endl; pcount[35]++; } break;
+                    case 37: { std::cout << "!!****æ˜­å¿ƒ" << endl; pcount[36]++; } break;
+                    case 38: { std::cout << "!!****ç¥­ç¤¼æ®‹ç« " << endl; pcount[37]++; } break;
+                    case 39: { std::cout << "!!****æµæµªä¹ç« " << endl; pcount[38]++; } break;
+                    case 40: { std::cout << "!!****è¥¿é£ç§˜å…¸" << endl; pcount[39]++; } break;
+                    case 41: { std::cout << "!!****è¥¿é£é•¿æª" << endl; pcount[40]++; } break;
+                    case 42: { std::cout << "!!****åŒ£é‡Œç­è¾°" << endl; pcount[41]++; } break;
+                    case 43: { std::cout << "!!****é›¨è£" << endl; pcount[42]++; } break;
+                    case 44: { std::cout << "!!****ç¥­ç¤¼å¤§å‰‘" << endl; pcount[43]++; } break;
+                    case 45: { std::cout << "!!****é’Ÿå‰‘" << endl; pcount[44]++; } break;
+                    case 46: { std::cout << "!!****è¥¿é£å¤§å‰‘" << endl; pcount[45]++; } break;
+                    case 47: { std::cout << "!!****åŒ£é‡Œé¾™åŸ" << endl; pcount[46]++; } break;
+                    case 48: { std::cout << "!!****ç¥­ç¤¼å‰‘" << endl; pcount[47]++; } break;
+                    case 49: { std::cout << "!!****ç¬›å‰‘" << endl; pcount[48]++; } break;
+                    case 50: { std::cout << "!!****è¥¿é£å‰‘" << endl; pcount[49]++; } break;
+                    case 51: { std::cout << "***çŒå¼“" << endl; pcount[50]++; } break;
+                    case 52: { std::cout << "***ç¥å°„æ‰‹ä¹‹èª“" << endl; pcount[51]++; } break;
+                    case 53: { std::cout << "***é¸¦ç¾½å¼“" << endl; pcount[52]++; } break;
+                    case 54: { std::cout << "***ç¿¡ç‰æ³•çƒ" << endl; pcount[53]++; } break;
+                    case 55: { std::cout << "***è®¨é¾™è‹±æ°è°­" << endl; pcount[54]++; } break;
+                    case 56: { std::cout << "***é­”å¯¼ç»ªè®º" << endl; pcount[55]++; } break;
+                    case 57: { std::cout << "***é»‘ç¼¨æª" << endl; pcount[56]++; } break;
+                    case 58: { std::cout << "***ä»¥ç†æœäºº" << endl; pcount[57]++; } break;
+                    case 59: { std::cout << "***æ²æµ´é¾™è¡€çš„å‰‘" << endl; pcount[58]++; } break;
+                    case 60: { std::cout << "***é“å½±é˜”å‰‘" << endl; pcount[59]++; } break;
+                    case 61: { std::cout << "***é£å¤©å¾¡å‰‘" << endl; pcount[60]++; } break;
+                    case 62: { std::cout << "***é»æ˜ç¥å‰‘" << endl; pcount[61]++; } break;
+                    case 63: { std::cout << "***å†·åˆƒ" << endl; pcount[62]++; } break;
+                    case 64: { std::cout << "!!!!!*****æ¸©è¿ª" << endl; pcount[63]++; } break;
+                    case 65: { std::cout << "!!!!!*****å¯è‰" << endl; pcount[64]++; } break;
+                    case 66: { std::cout << "!!!!!*****è¾¾è¾¾åˆ©äºš" << endl; pcount[65]++; } break;
+                    case 67: { std::cout << "!!!!!*****é’Ÿç¦»" << endl; pcount[66]++; } break;
+                    case 68: { std::cout << "!!!!!*****é˜¿è´å¤š" << endl; pcount[67]++; } break;
+                    case 69: { std::cout << "!!!!!*****ç”˜é›¨" << endl; pcount[68]++; } break;
+                    case 70: { std::cout << "!!!!!*****é­ˆ" << endl; pcount[69]++; } break;
+                    case 71: { std::cout << "!!!!!*****èƒ¡æ¡ƒ" << endl; pcount[70]++; } break;
+                    case 72: { std::cout << "!!****çƒŸç»¯" << endl; pcount[71]++; } break;
+                    case 73: { std::cout << "!!!!!*****ä¼˜èˆ" << endl; pcount[72]++; } break;
+                    case 74: { std::cout << "!!!!!*****å°˜ä¸–ä¹‹é”" << endl; pcount[73]++; } break;
+                    case 75: { std::cout << "!!!!!*****è´¯è™¹ä¹‹æ§Š" << endl; pcount[74]++; } break;
+                    case 76: { std::cout << "!!!!!*****æ— å·¥ä¹‹å‰‘" << endl; pcount[75]++; } break;
+                    case 77: { std::cout << "!!!!!*****æ–«å³°ä¹‹åˆƒ" << endl; pcount[76]++; } break;
+                    case 78: { std::cout << "!!!!!*****ç£å²©ç»“ç»¿" << endl; pcount[77]++; } break;
+                    case 79: { std::cout << "!!!!!*****æŠ¤æ‘©ä¹‹æ–" << endl; pcount[78]++; } break;
+                    case 80: { std::cout << "!!****åƒå²©å¤å‰‘" << endl; pcount[79]++; } break;
+                    case 81: { std::cout << "!!****åƒå²©é•¿æª" << endl; pcount[80]++; } break;
+                    case 82: { std::cout << "!!!!!*****ç»ˆæœ«å—Ÿå¹ä¹‹è¯—" << endl; pcount[81]++; } break;
+                    case 83: { std::cout << "!!****æš—å··é—ªå…‰" << endl; pcount[82]++; } break;
+                    case 84: { std::cout << "!!****æš—å··çš„é…’ä¸è¯—" << endl; pcount[83]++; } break;
+                    case 85: { std::cout << "!!****æš—å··çŒæ‰‹" << endl; pcount[84]++; } break;
+                    case 86: { std::cout << "!!!!!*****æ¾ç±å“èµ·ä¹‹æ—¶" << endl; pcount[85]++; } break;
                     case 87: { std::cout << "Placeholder" << endl; pcount[86]++; } break;
                     case 88: { std::cout << "Placeholder" << endl; pcount[87]++; } break;
                     case 89: { std::cout << "Placeholder" << endl; pcount[88]++; } break;
@@ -16676,7 +16717,7 @@ int main() {
                             else {
                                 type = 2;
                                 five_count_w++;
-                                five_star_guarantee_number = 1;
+                                if(five_check[1] == 1) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
                                 int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                 kind = rspick(templist, 10);
                             }
@@ -16783,7 +16824,7 @@ int main() {
                             else {
                                 type = 2;
                                 five_count_w++;
-                                five_star_guarantee_number = 1;
+                                if(five_check[1] == 1) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
                                 int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                 kind = rspick(templist, 10);
                             }
@@ -16890,7 +16931,7 @@ int main() {
                             else {
                                 type = 2;
                                 five_count_w++;
-                                five_star_guarantee_number = 1;
+                                if(five_check[1] == 1) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
                                 int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                 kind = rspick(templist, 10);
                             }
@@ -16997,7 +17038,7 @@ int main() {
                             else {
                                 type = 2;
                                 five_count_w++;
-                                five_star_guarantee_number = 1;
+                                if(five_check[1] == 1) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
                                 int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                 kind = rspick(templist, 10);
                             }
@@ -17099,7 +17140,7 @@ int main() {
                             else {
                                 type = 2;
                                 five_count_w++;
-                                five_star_guarantee_number = 1;
+                                if(five_check[1] == 1) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
                                 int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                 kind = rspick(templist, 10);
                             }
@@ -17206,7 +17247,7 @@ int main() {
                             else {
                                 type = 2;
                                 five_count_w++;
-                                five_star_guarantee_number = 1;
+                                if(five_check[1] == 1) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
                                 int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                 kind = rspick(templist, 10);
                             }
@@ -17313,7 +17354,7 @@ int main() {
                             else {
                                 type = 2;
                                 five_count_w++;
-                                five_star_guarantee_number = 1;
+                                if(five_check[1] == 1) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
                                 int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                 kind = rspick(templist, 10);
                             }
@@ -17420,7 +17461,7 @@ int main() {
                             else {
                                 type = 2;
                                 five_count_w++;
-                                five_star_guarantee_number = 1;
+                                if(five_check[1] == 1) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
                                 int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                 kind = rspick(templist, 10);
                             }
@@ -17522,7 +17563,7 @@ int main() {
                             else {
                                 type = 2;
                                 five_count_w++;
-                                five_star_guarantee_number = 1;
+                                if(five_check[1] == 1) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
                                 int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                 kind = rspick(templist, 10);
                             }
@@ -17629,7 +17670,7 @@ int main() {
                             else {
                                 type = 2;
                                 five_count_w++;
-                                five_star_guarantee_number = 1;
+                                if(five_check[1] == 1) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
                                 int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                 kind = rspick(templist, 10);
                             }
@@ -17736,7 +17777,7 @@ int main() {
                             else {
                                 type = 2;
                                 five_count_w++;
-                                five_star_guarantee_number = 1;
+                                if(five_check[1] == 1) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
                                 int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                 kind = rspick(templist, 10);
                             }
@@ -17843,7 +17884,7 @@ int main() {
                             else {
                                 type = 2;
                                 five_count_w++;
-                                five_star_guarantee_number = 1;
+                                if(five_check[1] == 1) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
                                 int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                 kind = rspick(templist, 10);
                             }
@@ -17944,99 +17985,99 @@ int main() {
                         else {
                             type = 2;
                             five_count_w++;
-                            five_star_guarantee_number = 1;
+                            if(five_check[1] == 1) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
                             int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                             kind = rspick(templist, 10);
                         }
                     }
                     std::cout << count + 1 << "(" << five_star_assurance_number << ")" << " ";
                     switch (kind) {
-                    case 1: { std::cout << "!!!!!*****¿ÌÇç" << endl; pcount[0]++; } break;
-                    case 2: { std::cout << "!!!!!*****ÄªÄÈ" << endl; pcount[1]++; } break;
-                    case 3: { std::cout << "!!!!!*****ÆßÆß" << endl; pcount[2]++; } break;
-                    case 4: { std::cout << "!!!!!*****µÏÂ¬¿Ë" << endl; pcount[3]++; } break;
-                    case 5: { std::cout << "!!!!!*****ÇÙ" << endl; pcount[4]++; } break;
-                    case 6: { std::cout << "!!!!!*****°¢ÄªË¹Ö®¹­" << endl; pcount[5]++; } break;
-                    case 7: { std::cout << "!!!!!*****Ìì¿ÕÖ®Òí" << endl; pcount[6]++; } break;
-                    case 8: { std::cout << "!!!!!*****ËÄ·çÔ­µä" << endl; pcount[7]++; } break;
-                    case 9: { std::cout << "!!!!!*****Ìì¿ÕÖ®¾í" << endl; pcount[8]++; } break;
-                    case 10: { std::cout << "!!!!!*****ºÍè±ğ°" << endl; pcount[9]++; } break;
-                    case 11: { std::cout << "!!!!!*****Ìì¿ÕÖ®¼¹" << endl; pcount[10]++; } break;
-                    case 12: { std::cout << "!!!!!*****ÀÇµÄÄ©Â·" << endl; pcount[11]++; } break;
-                    case 13: { std::cout << "!!!!!*****Ìì¿ÕÖ®°Á" << endl; pcount[12]++; } break;
-                    case 14: { std::cout << "!!!!!*****Ìì¿ÕÖ®ÈĞ" << endl; pcount[13]++; } break;
-                    case 15: { std::cout << "!!!!!*****·çÓ¥½£" << endl; pcount[14]++; } break;
-                    case 16: { std::cout << "!!****ÂŞÉ¯ÀòÑÇ" << endl; pcount[15]++; } break;
-                    case 17: { std::cout << "!!****ĞÁìÍ" << endl; pcount[16]++; } break;
-                    case 18: { std::cout << "!!****É°ÌÇ" << endl; pcount[17]++; } break;
-                    case 19: { std::cout << "!!****µÏ°ÂÄÈ" << endl; pcount[18]++; } break;
-                    case 20: { std::cout << "!!****ÖØÔÆ" << endl; pcount[19]++; } break;
-                    case 21: { std::cout << "!!****Åµ°¬¶û" << endl; pcount[20]++; } break;
-                    case 22: { std::cout << "!!****°àÄáÌØ" << endl; pcount[21]++; } break;
-                    case 23: { std::cout << "!!****·ÆĞ»¶û" << endl; pcount[22]++; } break;
-                    case 24: { std::cout << "!!****Äı¹â" << endl; pcount[23]++; } break;
-                    case 25: { std::cout << "!!****ĞĞÇï" << endl; pcount[24]++; } break;
-                    case 26: { std::cout << "!!****±±¶·" << endl; pcount[25]++; } break;
-                    case 27: { std::cout << "!!****ÏãÁâ" << endl; pcount[26]++; } break;
-                    case 28: { std::cout << "!!****°²°Ø" << endl; pcount[27]++; } break;
-                    case 29: { std::cout << "!!****À×Ôó" << endl; pcount[28]++; } break;
-                    case 30: { std::cout << "!!****¿­ÑÇ" << endl; pcount[29]++; } break;
-                    case 31: { std::cout << "!!****°Å°ÅÀ­" << endl; pcount[30]++; } break;
-                    case 32: { std::cout << "!!****ÀöÉ¯" << endl; pcount[31]++; } break;
-                    case 33: { std::cout << "!!****¹­²Ø" << endl; pcount[32]++; } break;
-                    case 34: { std::cout << "!!****¼ÀÀñ¹­" << endl; pcount[33]++; } break;
-                    case 35: { std::cout << "!!****¾øÏÒ" << endl; pcount[34]++; } break;
-                    case 36: { std::cout << "!!****Î÷·çÁÔ¹­" << endl; pcount[35]++; } break;
-                    case 37: { std::cout << "!!****ÕÑĞÄ" << endl; pcount[36]++; } break;
-                    case 38: { std::cout << "!!****¼ÀÀñ²ĞÕÂ" << endl; pcount[37]++; } break;
-                    case 39: { std::cout << "!!****Á÷ÀËÀÖÕÂ" << endl; pcount[38]++; } break;
-                    case 40: { std::cout << "!!****Î÷·çÃØµä" << endl; pcount[39]++; } break;
-                    case 41: { std::cout << "!!****Î÷·ç³¤Ç¹" << endl; pcount[40]++; } break;
-                    case 42: { std::cout << "!!****Ï»ÀïÃğ³½" << endl; pcount[41]++; } break;
-                    case 43: { std::cout << "!!****Óê²Ã" << endl; pcount[42]++; } break;
-                    case 44: { std::cout << "!!****¼ÀÀñ´ó½£" << endl; pcount[43]++; } break;
-                    case 45: { std::cout << "!!****ÖÓ½£" << endl; pcount[44]++; } break;
-                    case 46: { std::cout << "!!****Î÷·ç´ó½£" << endl; pcount[45]++; } break;
-                    case 47: { std::cout << "!!****Ï»ÀïÁúÒ÷" << endl; pcount[46]++; } break;
-                    case 48: { std::cout << "!!****¼ÀÀñ½£" << endl; pcount[47]++; } break;
-                    case 49: { std::cout << "!!****µÑ½£" << endl; pcount[48]++; } break;
-                    case 50: { std::cout << "!!****Î÷·ç½£" << endl; pcount[49]++; } break;
-                    case 51: { std::cout << "***ÁÔ¹­" << endl; pcount[50]++; } break;
-                    case 52: { std::cout << "***ÉñÉäÊÖÖ®ÊÄ" << endl; pcount[51]++; } break;
-                    case 53: { std::cout << "***Ñ»Óğ¹­" << endl; pcount[52]++; } break;
-                    case 54: { std::cout << "***ôäÓñ·¨Çò" << endl; pcount[53]++; } break;
-                    case 55: { std::cout << "***ÌÖÁúÓ¢½ÜÌ·" << endl; pcount[54]++; } break;
-                    case 56: { std::cout << "***Ä§µ¼Ğ÷ÂÛ" << endl; pcount[55]++; } break;
-                    case 57: { std::cout << "***ºÚÓ§Ç¹" << endl; pcount[56]++; } break;
-                    case 58: { std::cout << "***ÒÔÀí·şÈË" << endl; pcount[57]++; } break;
-                    case 59: { std::cout << "***ãåÔ¡ÁúÑªµÄ½£" << endl; pcount[58]++; } break;
-                    case 60: { std::cout << "***ÌúÓ°À«½£" << endl; pcount[59]++; } break;
-                    case 61: { std::cout << "***·ÉÌìÓù½£" << endl; pcount[60]++; } break;
-                    case 62: { std::cout << "***ÀèÃ÷Éñ½£" << endl; pcount[61]++; } break;
-                    case 63: { std::cout << "***ÀäÈĞ" << endl; pcount[62]++; } break;
-                    case 64: { std::cout << "!!!!!*****ÎÂµÏ" << endl; pcount[63]++; } break;
-                    case 65: { std::cout << "!!!!!*****¿ÉÀò" << endl; pcount[64]++; } break;
-                    case 66: { std::cout << "!!!!!*****´ï´ïÀûÑÇ" << endl; pcount[65]++; } break;
-                    case 67: { std::cout << "!!!!!*****ÖÓÀë" << endl; pcount[66]++; } break;
-                    case 68: { std::cout << "!!!!!*****°¢±´¶à" << endl; pcount[67]++; } break;
-                    case 69: { std::cout << "!!!!!*****¸ÊÓê" << endl; pcount[68]++; } break;
-                    case 70: { std::cout << "!!!!!*****÷Ì" << endl; pcount[69]++; } break;
-                    case 71: { std::cout << "!!!!!*****ºúÌÒ" << endl; pcount[70]++; } break;
-                    case 72: { std::cout << "!!****ÑÌç³" << endl; pcount[71]++; } break;
-                    case 73: { std::cout << "!!!!!*****ÓÅÇ‰" << endl; pcount[72]++; } break;
-                    case 74: { std::cout << "!!!!!*****³¾ÊÀÖ®Ëø" << endl; pcount[73]++; } break;
-                    case 75: { std::cout << "!!!!!*****¹áºçÖ®éÃ" << endl; pcount[74]++; } break;
-                    case 76: { std::cout << "!!!!!*****ÎŞ¹¤Ö®½£" << endl; pcount[75]++; } break;
-                    case 77: { std::cout << "!!!!!*****í½·åÖ®ÈĞ" << endl; pcount[76]++; } break;
-                    case 78: { std::cout << "!!!!!*****ÅÍÑÒ½áÂÌ" << endl; pcount[77]++; } break;
-                    case 79: { std::cout << "!!!!!*****»¤Ä¦Ö®ÕÈ" << endl; pcount[78]++; } break;
-                    case 80: { std::cout << "!!****Ç§ÑÒ¹Å½£" << endl; pcount[79]++; } break;
-                    case 81: { std::cout << "!!****Ç§ÑÒ³¤Ç¹" << endl; pcount[80]++; } break;
-                    case 82: { std::cout << "!!!!!*****ÖÕÄ©àµÌ¾Ö®Ê«" << endl; pcount[81]++; } break;
-                    case 83: { std::cout << "!!****°µÏïÉÁ¹â" << endl; pcount[82]++; } break;
-                    case 84: { std::cout << "!!****°µÏïµÄ¾ÆÓëÊ«" << endl; pcount[83]++; } break;
-                    case 85: { std::cout << "!!****°µÏïÁÔÊÖ" << endl; pcount[84]++; } break;
-                    case 86: { std::cout << "!!!!!*****ËÉô¥ÏìÆğÖ®Ê±" << endl; pcount[85]++; } break;
+                    case 1: { std::cout << "!!!!!*****åˆ»æ™´" << endl; pcount[0]++; } break;
+                    case 2: { std::cout << "!!!!!*****è«å¨œ" << endl; pcount[1]++; } break;
+                    case 3: { std::cout << "!!!!!*****ä¸ƒä¸ƒ" << endl; pcount[2]++; } break;
+                    case 4: { std::cout << "!!!!!*****è¿ªå¢å…‹" << endl; pcount[3]++; } break;
+                    case 5: { std::cout << "!!!!!*****ç´" << endl; pcount[4]++; } break;
+                    case 6: { std::cout << "!!!!!*****é˜¿è«æ–¯ä¹‹å¼“" << endl; pcount[5]++; } break;
+                    case 7: { std::cout << "!!!!!*****å¤©ç©ºä¹‹ç¿¼" << endl; pcount[6]++; } break;
+                    case 8: { std::cout << "!!!!!*****å››é£åŸå…¸" << endl; pcount[7]++; } break;
+                    case 9: { std::cout << "!!!!!*****å¤©ç©ºä¹‹å·" << endl; pcount[8]++; } break;
+                    case 10: { std::cout << "!!!!!*****å’Œç’é¸¢" << endl; pcount[9]++; } break;
+                    case 11: { std::cout << "!!!!!*****å¤©ç©ºä¹‹è„Š" << endl; pcount[10]++; } break;
+                    case 12: { std::cout << "!!!!!*****ç‹¼çš„æœ«è·¯" << endl; pcount[11]++; } break;
+                    case 13: { std::cout << "!!!!!*****å¤©ç©ºä¹‹å‚²" << endl; pcount[12]++; } break;
+                    case 14: { std::cout << "!!!!!*****å¤©ç©ºä¹‹åˆƒ" << endl; pcount[13]++; } break;
+                    case 15: { std::cout << "!!!!!*****é£é¹°å‰‘" << endl; pcount[14]++; } break;
+                    case 16: { std::cout << "!!****ç½—èè‰äºš" << endl; pcount[15]++; } break;
+                    case 17: { std::cout << "!!****è¾›ç„±" << endl; pcount[16]++; } break;
+                    case 18: { std::cout << "!!****ç ‚ç³–" << endl; pcount[17]++; } break;
+                    case 19: { std::cout << "!!****è¿ªå¥¥å¨œ" << endl; pcount[18]++; } break;
+                    case 20: { std::cout << "!!****é‡äº‘" << endl; pcount[19]++; } break;
+                    case 21: { std::cout << "!!****è¯ºè‰¾å°”" << endl; pcount[20]++; } break;
+                    case 22: { std::cout << "!!****ç­å°¼ç‰¹" << endl; pcount[21]++; } break;
+                    case 23: { std::cout << "!!****è²è°¢å°”" << endl; pcount[22]++; } break;
+                    case 24: { std::cout << "!!****å‡å…‰" << endl; pcount[23]++; } break;
+                    case 25: { std::cout << "!!****è¡Œç§‹" << endl; pcount[24]++; } break;
+                    case 26: { std::cout << "!!****åŒ—æ–—" << endl; pcount[25]++; } break;
+                    case 27: { std::cout << "!!****é¦™è±" << endl; pcount[26]++; } break;
+                    case 28: { std::cout << "!!****å®‰æŸ" << endl; pcount[27]++; } break;
+                    case 29: { std::cout << "!!****é›·æ³½" << endl; pcount[28]++; } break;
+                    case 30: { std::cout << "!!****å‡¯äºš" << endl; pcount[29]++; } break;
+                    case 31: { std::cout << "!!****èŠ­èŠ­æ‹‰" << endl; pcount[30]++; } break;
+                    case 32: { std::cout << "!!****ä¸½è" << endl; pcount[31]++; } break;
+                    case 33: { std::cout << "!!****å¼“è—" << endl; pcount[32]++; } break;
+                    case 34: { std::cout << "!!****ç¥­ç¤¼å¼“" << endl; pcount[33]++; } break;
+                    case 35: { std::cout << "!!****ç»å¼¦" << endl; pcount[34]++; } break;
+                    case 36: { std::cout << "!!****è¥¿é£çŒå¼“" << endl; pcount[35]++; } break;
+                    case 37: { std::cout << "!!****æ˜­å¿ƒ" << endl; pcount[36]++; } break;
+                    case 38: { std::cout << "!!****ç¥­ç¤¼æ®‹ç« " << endl; pcount[37]++; } break;
+                    case 39: { std::cout << "!!****æµæµªä¹ç« " << endl; pcount[38]++; } break;
+                    case 40: { std::cout << "!!****è¥¿é£ç§˜å…¸" << endl; pcount[39]++; } break;
+                    case 41: { std::cout << "!!****è¥¿é£é•¿æª" << endl; pcount[40]++; } break;
+                    case 42: { std::cout << "!!****åŒ£é‡Œç­è¾°" << endl; pcount[41]++; } break;
+                    case 43: { std::cout << "!!****é›¨è£" << endl; pcount[42]++; } break;
+                    case 44: { std::cout << "!!****ç¥­ç¤¼å¤§å‰‘" << endl; pcount[43]++; } break;
+                    case 45: { std::cout << "!!****é’Ÿå‰‘" << endl; pcount[44]++; } break;
+                    case 46: { std::cout << "!!****è¥¿é£å¤§å‰‘" << endl; pcount[45]++; } break;
+                    case 47: { std::cout << "!!****åŒ£é‡Œé¾™åŸ" << endl; pcount[46]++; } break;
+                    case 48: { std::cout << "!!****ç¥­ç¤¼å‰‘" << endl; pcount[47]++; } break;
+                    case 49: { std::cout << "!!****ç¬›å‰‘" << endl; pcount[48]++; } break;
+                    case 50: { std::cout << "!!****è¥¿é£å‰‘" << endl; pcount[49]++; } break;
+                    case 51: { std::cout << "***çŒå¼“" << endl; pcount[50]++; } break;
+                    case 52: { std::cout << "***ç¥å°„æ‰‹ä¹‹èª“" << endl; pcount[51]++; } break;
+                    case 53: { std::cout << "***é¸¦ç¾½å¼“" << endl; pcount[52]++; } break;
+                    case 54: { std::cout << "***ç¿¡ç‰æ³•çƒ" << endl; pcount[53]++; } break;
+                    case 55: { std::cout << "***è®¨é¾™è‹±æ°è°­" << endl; pcount[54]++; } break;
+                    case 56: { std::cout << "***é­”å¯¼ç»ªè®º" << endl; pcount[55]++; } break;
+                    case 57: { std::cout << "***é»‘ç¼¨æª" << endl; pcount[56]++; } break;
+                    case 58: { std::cout << "***ä»¥ç†æœäºº" << endl; pcount[57]++; } break;
+                    case 59: { std::cout << "***æ²æµ´é¾™è¡€çš„å‰‘" << endl; pcount[58]++; } break;
+                    case 60: { std::cout << "***é“å½±é˜”å‰‘" << endl; pcount[59]++; } break;
+                    case 61: { std::cout << "***é£å¤©å¾¡å‰‘" << endl; pcount[60]++; } break;
+                    case 62: { std::cout << "***é»æ˜ç¥å‰‘" << endl; pcount[61]++; } break;
+                    case 63: { std::cout << "***å†·åˆƒ" << endl; pcount[62]++; } break;
+                    case 64: { std::cout << "!!!!!*****æ¸©è¿ª" << endl; pcount[63]++; } break;
+                    case 65: { std::cout << "!!!!!*****å¯è‰" << endl; pcount[64]++; } break;
+                    case 66: { std::cout << "!!!!!*****è¾¾è¾¾åˆ©äºš" << endl; pcount[65]++; } break;
+                    case 67: { std::cout << "!!!!!*****é’Ÿç¦»" << endl; pcount[66]++; } break;
+                    case 68: { std::cout << "!!!!!*****é˜¿è´å¤š" << endl; pcount[67]++; } break;
+                    case 69: { std::cout << "!!!!!*****ç”˜é›¨" << endl; pcount[68]++; } break;
+                    case 70: { std::cout << "!!!!!*****é­ˆ" << endl; pcount[69]++; } break;
+                    case 71: { std::cout << "!!!!!*****èƒ¡æ¡ƒ" << endl; pcount[70]++; } break;
+                    case 72: { std::cout << "!!****çƒŸç»¯" << endl; pcount[71]++; } break;
+                    case 73: { std::cout << "!!!!!*****ä¼˜èˆ" << endl; pcount[72]++; } break;
+                    case 74: { std::cout << "!!!!!*****å°˜ä¸–ä¹‹é”" << endl; pcount[73]++; } break;
+                    case 75: { std::cout << "!!!!!*****è´¯è™¹ä¹‹æ§Š" << endl; pcount[74]++; } break;
+                    case 76: { std::cout << "!!!!!*****æ— å·¥ä¹‹å‰‘" << endl; pcount[75]++; } break;
+                    case 77: { std::cout << "!!!!!*****æ–«å³°ä¹‹åˆƒ" << endl; pcount[76]++; } break;
+                    case 78: { std::cout << "!!!!!*****ç£å²©ç»“ç»¿" << endl; pcount[77]++; } break;
+                    case 79: { std::cout << "!!!!!*****æŠ¤æ‘©ä¹‹æ–" << endl; pcount[78]++; } break;
+                    case 80: { std::cout << "!!****åƒå²©å¤å‰‘" << endl; pcount[79]++; } break;
+                    case 81: { std::cout << "!!****åƒå²©é•¿æª" << endl; pcount[80]++; } break;
+                    case 82: { std::cout << "!!!!!*****ç»ˆæœ«å—Ÿå¹ä¹‹è¯—" << endl; pcount[81]++; } break;
+                    case 83: { std::cout << "!!****æš—å··é—ªå…‰" << endl; pcount[82]++; } break;
+                    case 84: { std::cout << "!!****æš—å··çš„é…’ä¸è¯—" << endl; pcount[83]++; } break;
+                    case 85: { std::cout << "!!****æš—å··çŒæ‰‹" << endl; pcount[84]++; } break;
+                    case 86: { std::cout << "!!!!!*****æ¾ç±å“èµ·ä¹‹æ—¶" << endl; pcount[85]++; } break;
                     case 87: { std::cout << "Placeholder" << endl; pcount[86]++; } break;
                     case 88: { std::cout << "Placeholder" << endl; pcount[87]++; } break;
                     case 89: { std::cout << "Placeholder" << endl; pcount[88]++; } break;
@@ -18159,7 +18200,7 @@ int main() {
                                 five_count_w++;
                                 int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                 kind = rspick(templist, 10);
-                                if (kind == 15) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
+                                if (kind == 15) five_star_guarantee_number = 0; else if(five_check[1] == 1) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
                             }
                         }
                         else if (temp1 < (long long int) ULTRAPOS / 1000 * 67) {
@@ -18266,7 +18307,7 @@ int main() {
                                 five_count_w++;
                                 int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                 kind = rspick(templist, 10);
-                                if (kind == 15) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
+                                if (kind == 15) five_star_guarantee_number = 0; else if(five_check[1] == 1) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
                             }
                         }
                         else if (temp1 < (long long int) ULTRAPOS / 1000 * 667) {
@@ -18373,7 +18414,7 @@ int main() {
                                 five_count_w++;
                                 int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                 kind = rspick(templist, 10);
-                                if (kind == 15) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
+                                if (kind == 15) five_star_guarantee_number = 0; else if(five_check[1] == 1) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
                             }
                         }
                         else if (temp1 < (long long int) ULTRAPOS / 1000 * 967) {
@@ -18480,7 +18521,7 @@ int main() {
                                 five_count_w++;
                                 int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                 kind = rspick(templist, 10);
-                                if (kind == 15) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
+                                if (kind == 15) five_star_guarantee_number = 0; else if(five_check[1] == 1) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
                             }
                         }
                         else {
@@ -18582,7 +18623,7 @@ int main() {
                                 five_count_w++;
                                 int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                 kind = rspick(templist, 10);
-                                if (kind == 15) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
+                                if (kind == 15) five_star_guarantee_number = 0; else if(five_check[1] == 1) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
                             }
                         }
                         else if (temp1 < (long long int) (ULTRAPOS / 1000 * 67) + ((long long int)(five_star_assurance_number) - 62) * (long long int)(ULTRAPOS / 1000 * 70)) {
@@ -18689,7 +18730,7 @@ int main() {
                                 five_count_w++;
                                 int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                 kind = rspick(templist, 10);
-                                if (kind == 15) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
+                                if (kind == 15) five_star_guarantee_number = 0; else if(five_check[1] == 1) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
                             }
                         }
                         else if (temp1 < (long long int) (ULTRAPOS / 1000 * 667) + ((long long int)(five_star_assurance_number) - 62) * (long long int)(ULTRAPOS / 1000 * 70)) {
@@ -18796,7 +18837,7 @@ int main() {
                                 five_count_w++;
                                 int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                 kind = rspick(templist, 10);
-                                if (kind == 15) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
+                                if (kind == 15) five_star_guarantee_number = 0; else if(five_check[1] == 1) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
                             }
                         }
                         else if (temp1 < (long long int) (ULTRAPOS / 1000 * 967) + ((long long int)(five_star_assurance_number) - 62) * (long long int)(ULTRAPOS / 1000 * 70)) {
@@ -18903,7 +18944,7 @@ int main() {
                                 five_count_w++;
                                 int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                 kind = rspick(templist, 10);
-                                if (kind == 15) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
+                                if (kind == 15) five_star_guarantee_number = 0; else if(five_check[1] == 1) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
                             }
                         }
                         else {
@@ -19005,7 +19046,7 @@ int main() {
                                 five_count_w++;
                                 int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                 kind = rspick(templist, 10);
-                                if (kind == 15) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
+                                if (kind == 15) five_star_guarantee_number = 0; else if(five_check[1] == 1) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
                             }
                         }
                         else if (temp1 < (long long int) (ULTRAPOS / 1000 * 837) + ((long long int)(five_star_assurance_number) - 73) * (long long int)(ULTRAPOS / 1000 * 35)) {
@@ -19112,7 +19153,7 @@ int main() {
                                 five_count_w++;
                                 int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                 kind = rspick(templist, 10);
-                                if (kind == 15) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
+                                if (kind == 15) five_star_guarantee_number = 0; else if(five_check[1] == 1) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
                             }
                         }
                         else if (temp1 < (long long int) (ULTRAPOS / 1000 * 1437) + ((long long int)(five_star_assurance_number) - 73) * (long long int)(ULTRAPOS / 1000 * 35)) {
@@ -19219,7 +19260,7 @@ int main() {
                                 five_count_w++;
                                 int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                 kind = rspick(templist, 10);
-                                if (kind == 15) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
+                                if (kind == 15) five_star_guarantee_number = 0; else if(five_check[1] == 1) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
                             }
                         }
                         else if (temp1 < (long long int) (ULTRAPOS / 1000 * 1737) + ((long long int)(five_star_assurance_number) - 73) * (long long int)(ULTRAPOS / 1000 * 35)) {
@@ -19326,7 +19367,7 @@ int main() {
                                 five_count_w++;
                                 int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                                 kind = rspick(templist, 10);
-                                if (kind == 15) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
+                                if (kind == 15) five_star_guarantee_number = 0; else if(five_check[1] == 1) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
                             }
                         }
                         else {
@@ -19425,99 +19466,99 @@ int main() {
                         else {
                             type = 2;
                             five_count_w++;
-                            five_star_guarantee_number = 1;
+                            if(five_check[1] == 1) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
                             int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                             kind = rspick(templist, 10);
                         }
                     }
                     std::cout << count + 1 << "(" << five_star_assurance_number << ")" << " ";
                     switch (kind) {
-                    case 1: { std::cout << "!!!!!*****¿ÌÇç" << endl; pcount[0]++; } break;
-                    case 2: { std::cout << "!!!!!*****ÄªÄÈ" << endl; pcount[1]++; } break;
-                    case 3: { std::cout << "!!!!!*****ÆßÆß" << endl; pcount[2]++; } break;
-                    case 4: { std::cout << "!!!!!*****µÏÂ¬¿Ë" << endl; pcount[3]++; } break;
-                    case 5: { std::cout << "!!!!!*****ÇÙ" << endl; pcount[4]++; } break;
-                    case 6: { std::cout << "!!!!!*****°¢ÄªË¹Ö®¹­" << endl; pcount[5]++; } break;
-                    case 7: { std::cout << "!!!!!*****Ìì¿ÕÖ®Òí" << endl; pcount[6]++; } break;
-                    case 8: { std::cout << "!!!!!*****ËÄ·çÔ­µä" << endl; pcount[7]++; } break;
-                    case 9: { std::cout << "!!!!!*****Ìì¿ÕÖ®¾í" << endl; pcount[8]++; } break;
-                    case 10: { std::cout << "!!!!!*****ºÍè±ğ°" << endl; pcount[9]++; } break;
-                    case 11: { std::cout << "!!!!!*****Ìì¿ÕÖ®¼¹" << endl; pcount[10]++; } break;
-                    case 12: { std::cout << "!!!!!*****ÀÇµÄÄ©Â·" << endl; pcount[11]++; } break;
-                    case 13: { std::cout << "!!!!!*****Ìì¿ÕÖ®°Á" << endl; pcount[12]++; } break;
-                    case 14: { std::cout << "!!!!!*****Ìì¿ÕÖ®ÈĞ" << endl; pcount[13]++; } break;
-                    case 15: { std::cout << "!!!!!*****·çÓ¥½£" << endl; pcount[14]++; } break;
-                    case 16: { std::cout << "!!****ÂŞÉ¯ÀòÑÇ" << endl; pcount[15]++; } break;
-                    case 17: { std::cout << "!!****ĞÁìÍ" << endl; pcount[16]++; } break;
-                    case 18: { std::cout << "!!****É°ÌÇ" << endl; pcount[17]++; } break;
-                    case 19: { std::cout << "!!****µÏ°ÂÄÈ" << endl; pcount[18]++; } break;
-                    case 20: { std::cout << "!!****ÖØÔÆ" << endl; pcount[19]++; } break;
-                    case 21: { std::cout << "!!****Åµ°¬¶û" << endl; pcount[20]++; } break;
-                    case 22: { std::cout << "!!****°àÄáÌØ" << endl; pcount[21]++; } break;
-                    case 23: { std::cout << "!!****·ÆĞ»¶û" << endl; pcount[22]++; } break;
-                    case 24: { std::cout << "!!****Äı¹â" << endl; pcount[23]++; } break;
-                    case 25: { std::cout << "!!****ĞĞÇï" << endl; pcount[24]++; } break;
-                    case 26: { std::cout << "!!****±±¶·" << endl; pcount[25]++; } break;
-                    case 27: { std::cout << "!!****ÏãÁâ" << endl; pcount[26]++; } break;
-                    case 28: { std::cout << "!!****°²°Ø" << endl; pcount[27]++; } break;
-                    case 29: { std::cout << "!!****À×Ôó" << endl; pcount[28]++; } break;
-                    case 30: { std::cout << "!!****¿­ÑÇ" << endl; pcount[29]++; } break;
-                    case 31: { std::cout << "!!****°Å°ÅÀ­" << endl; pcount[30]++; } break;
-                    case 32: { std::cout << "!!****ÀöÉ¯" << endl; pcount[31]++; } break;
-                    case 33: { std::cout << "!!****¹­²Ø" << endl; pcount[32]++; } break;
-                    case 34: { std::cout << "!!****¼ÀÀñ¹­" << endl; pcount[33]++; } break;
-                    case 35: { std::cout << "!!****¾øÏÒ" << endl; pcount[34]++; } break;
-                    case 36: { std::cout << "!!****Î÷·çÁÔ¹­" << endl; pcount[35]++; } break;
-                    case 37: { std::cout << "!!****ÕÑĞÄ" << endl; pcount[36]++; } break;
-                    case 38: { std::cout << "!!****¼ÀÀñ²ĞÕÂ" << endl; pcount[37]++; } break;
-                    case 39: { std::cout << "!!****Á÷ÀËÀÖÕÂ" << endl; pcount[38]++; } break;
-                    case 40: { std::cout << "!!****Î÷·çÃØµä" << endl; pcount[39]++; } break;
-                    case 41: { std::cout << "!!****Î÷·ç³¤Ç¹" << endl; pcount[40]++; } break;
-                    case 42: { std::cout << "!!****Ï»ÀïÃğ³½" << endl; pcount[41]++; } break;
-                    case 43: { std::cout << "!!****Óê²Ã" << endl; pcount[42]++; } break;
-                    case 44: { std::cout << "!!****¼ÀÀñ´ó½£" << endl; pcount[43]++; } break;
-                    case 45: { std::cout << "!!****ÖÓ½£" << endl; pcount[44]++; } break;
-                    case 46: { std::cout << "!!****Î÷·ç´ó½£" << endl; pcount[45]++; } break;
-                    case 47: { std::cout << "!!****Ï»ÀïÁúÒ÷" << endl; pcount[46]++; } break;
-                    case 48: { std::cout << "!!****¼ÀÀñ½£" << endl; pcount[47]++; } break;
-                    case 49: { std::cout << "!!****µÑ½£" << endl; pcount[48]++; } break;
-                    case 50: { std::cout << "!!****Î÷·ç½£" << endl; pcount[49]++; } break;
-                    case 51: { std::cout << "***ÁÔ¹­" << endl; pcount[50]++; } break;
-                    case 52: { std::cout << "***ÉñÉäÊÖÖ®ÊÄ" << endl; pcount[51]++; } break;
-                    case 53: { std::cout << "***Ñ»Óğ¹­" << endl; pcount[52]++; } break;
-                    case 54: { std::cout << "***ôäÓñ·¨Çò" << endl; pcount[53]++; } break;
-                    case 55: { std::cout << "***ÌÖÁúÓ¢½ÜÌ·" << endl; pcount[54]++; } break;
-                    case 56: { std::cout << "***Ä§µ¼Ğ÷ÂÛ" << endl; pcount[55]++; } break;
-                    case 57: { std::cout << "***ºÚÓ§Ç¹" << endl; pcount[56]++; } break;
-                    case 58: { std::cout << "***ÒÔÀí·şÈË" << endl; pcount[57]++; } break;
-                    case 59: { std::cout << "***ãåÔ¡ÁúÑªµÄ½£" << endl; pcount[58]++; } break;
-                    case 60: { std::cout << "***ÌúÓ°À«½£" << endl; pcount[59]++; } break;
-                    case 61: { std::cout << "***·ÉÌìÓù½£" << endl; pcount[60]++; } break;
-                    case 62: { std::cout << "***ÀèÃ÷Éñ½£" << endl; pcount[61]++; } break;
-                    case 63: { std::cout << "***ÀäÈĞ" << endl; pcount[62]++; } break;
-                    case 64: { std::cout << "!!!!!*****ÎÂµÏ" << endl; pcount[63]++; } break;
-                    case 65: { std::cout << "!!!!!*****¿ÉÀò" << endl; pcount[64]++; } break;
-                    case 66: { std::cout << "!!!!!*****´ï´ïÀûÑÇ" << endl; pcount[65]++; } break;
-                    case 67: { std::cout << "!!!!!*****ÖÓÀë" << endl; pcount[66]++; } break;
-                    case 68: { std::cout << "!!!!!*****°¢±´¶à" << endl; pcount[67]++; } break;
-                    case 69: { std::cout << "!!!!!*****¸ÊÓê" << endl; pcount[68]++; } break;
-                    case 70: { std::cout << "!!!!!*****÷Ì" << endl; pcount[69]++; } break;
-                    case 71: { std::cout << "!!!!!*****ºúÌÒ" << endl; pcount[70]++; } break;
-                    case 72: { std::cout << "!!****ÑÌç³" << endl; pcount[71]++; } break;
-                    case 73: { std::cout << "!!!!!*****ÓÅÇ‰" << endl; pcount[72]++; } break;
-                    case 74: { std::cout << "!!!!!*****³¾ÊÀÖ®Ëø" << endl; pcount[73]++; } break;
-                    case 75: { std::cout << "!!!!!*****¹áºçÖ®éÃ" << endl; pcount[74]++; } break;
-                    case 76: { std::cout << "!!!!!*****ÎŞ¹¤Ö®½£" << endl; pcount[75]++; } break;
-                    case 77: { std::cout << "!!!!!*****í½·åÖ®ÈĞ" << endl; pcount[76]++; } break;
-                    case 78: { std::cout << "!!!!!*****ÅÍÑÒ½áÂÌ" << endl; pcount[77]++; } break;
-                    case 79: { std::cout << "!!!!!*****»¤Ä¦Ö®ÕÈ" << endl; pcount[78]++; } break;
-                    case 80: { std::cout << "!!****Ç§ÑÒ¹Å½£" << endl; pcount[79]++; } break;
-                    case 81: { std::cout << "!!****Ç§ÑÒ³¤Ç¹" << endl; pcount[80]++; } break;
-                    case 82: { std::cout << "!!!!!*****ÖÕÄ©àµÌ¾Ö®Ê«" << endl; pcount[81]++; } break;
-                    case 83: { std::cout << "!!****°µÏïÉÁ¹â" << endl; pcount[82]++; } break;
-                    case 84: { std::cout << "!!****°µÏïµÄ¾ÆÓëÊ«" << endl; pcount[83]++; } break;
-                    case 85: { std::cout << "!!****°µÏïÁÔÊÖ" << endl; pcount[84]++; } break;
-                    case 86: { std::cout << "!!!!!*****ËÉô¥ÏìÆğÖ®Ê±" << endl; pcount[85]++; } break;
+                    case 1: { std::cout << "!!!!!*****åˆ»æ™´" << endl; pcount[0]++; } break;
+                    case 2: { std::cout << "!!!!!*****è«å¨œ" << endl; pcount[1]++; } break;
+                    case 3: { std::cout << "!!!!!*****ä¸ƒä¸ƒ" << endl; pcount[2]++; } break;
+                    case 4: { std::cout << "!!!!!*****è¿ªå¢å…‹" << endl; pcount[3]++; } break;
+                    case 5: { std::cout << "!!!!!*****ç´" << endl; pcount[4]++; } break;
+                    case 6: { std::cout << "!!!!!*****é˜¿è«æ–¯ä¹‹å¼“" << endl; pcount[5]++; } break;
+                    case 7: { std::cout << "!!!!!*****å¤©ç©ºä¹‹ç¿¼" << endl; pcount[6]++; } break;
+                    case 8: { std::cout << "!!!!!*****å››é£åŸå…¸" << endl; pcount[7]++; } break;
+                    case 9: { std::cout << "!!!!!*****å¤©ç©ºä¹‹å·" << endl; pcount[8]++; } break;
+                    case 10: { std::cout << "!!!!!*****å’Œç’é¸¢" << endl; pcount[9]++; } break;
+                    case 11: { std::cout << "!!!!!*****å¤©ç©ºä¹‹è„Š" << endl; pcount[10]++; } break;
+                    case 12: { std::cout << "!!!!!*****ç‹¼çš„æœ«è·¯" << endl; pcount[11]++; } break;
+                    case 13: { std::cout << "!!!!!*****å¤©ç©ºä¹‹å‚²" << endl; pcount[12]++; } break;
+                    case 14: { std::cout << "!!!!!*****å¤©ç©ºä¹‹åˆƒ" << endl; pcount[13]++; } break;
+                    case 15: { std::cout << "!!!!!*****é£é¹°å‰‘" << endl; pcount[14]++; } break;
+                    case 16: { std::cout << "!!****ç½—èè‰äºš" << endl; pcount[15]++; } break;
+                    case 17: { std::cout << "!!****è¾›ç„±" << endl; pcount[16]++; } break;
+                    case 18: { std::cout << "!!****ç ‚ç³–" << endl; pcount[17]++; } break;
+                    case 19: { std::cout << "!!****è¿ªå¥¥å¨œ" << endl; pcount[18]++; } break;
+                    case 20: { std::cout << "!!****é‡äº‘" << endl; pcount[19]++; } break;
+                    case 21: { std::cout << "!!****è¯ºè‰¾å°”" << endl; pcount[20]++; } break;
+                    case 22: { std::cout << "!!****ç­å°¼ç‰¹" << endl; pcount[21]++; } break;
+                    case 23: { std::cout << "!!****è²è°¢å°”" << endl; pcount[22]++; } break;
+                    case 24: { std::cout << "!!****å‡å…‰" << endl; pcount[23]++; } break;
+                    case 25: { std::cout << "!!****è¡Œç§‹" << endl; pcount[24]++; } break;
+                    case 26: { std::cout << "!!****åŒ—æ–—" << endl; pcount[25]++; } break;
+                    case 27: { std::cout << "!!****é¦™è±" << endl; pcount[26]++; } break;
+                    case 28: { std::cout << "!!****å®‰æŸ" << endl; pcount[27]++; } break;
+                    case 29: { std::cout << "!!****é›·æ³½" << endl; pcount[28]++; } break;
+                    case 30: { std::cout << "!!****å‡¯äºš" << endl; pcount[29]++; } break;
+                    case 31: { std::cout << "!!****èŠ­èŠ­æ‹‰" << endl; pcount[30]++; } break;
+                    case 32: { std::cout << "!!****ä¸½è" << endl; pcount[31]++; } break;
+                    case 33: { std::cout << "!!****å¼“è—" << endl; pcount[32]++; } break;
+                    case 34: { std::cout << "!!****ç¥­ç¤¼å¼“" << endl; pcount[33]++; } break;
+                    case 35: { std::cout << "!!****ç»å¼¦" << endl; pcount[34]++; } break;
+                    case 36: { std::cout << "!!****è¥¿é£çŒå¼“" << endl; pcount[35]++; } break;
+                    case 37: { std::cout << "!!****æ˜­å¿ƒ" << endl; pcount[36]++; } break;
+                    case 38: { std::cout << "!!****ç¥­ç¤¼æ®‹ç« " << endl; pcount[37]++; } break;
+                    case 39: { std::cout << "!!****æµæµªä¹ç« " << endl; pcount[38]++; } break;
+                    case 40: { std::cout << "!!****è¥¿é£ç§˜å…¸" << endl; pcount[39]++; } break;
+                    case 41: { std::cout << "!!****è¥¿é£é•¿æª" << endl; pcount[40]++; } break;
+                    case 42: { std::cout << "!!****åŒ£é‡Œç­è¾°" << endl; pcount[41]++; } break;
+                    case 43: { std::cout << "!!****é›¨è£" << endl; pcount[42]++; } break;
+                    case 44: { std::cout << "!!****ç¥­ç¤¼å¤§å‰‘" << endl; pcount[43]++; } break;
+                    case 45: { std::cout << "!!****é’Ÿå‰‘" << endl; pcount[44]++; } break;
+                    case 46: { std::cout << "!!****è¥¿é£å¤§å‰‘" << endl; pcount[45]++; } break;
+                    case 47: { std::cout << "!!****åŒ£é‡Œé¾™åŸ" << endl; pcount[46]++; } break;
+                    case 48: { std::cout << "!!****ç¥­ç¤¼å‰‘" << endl; pcount[47]++; } break;
+                    case 49: { std::cout << "!!****ç¬›å‰‘" << endl; pcount[48]++; } break;
+                    case 50: { std::cout << "!!****è¥¿é£å‰‘" << endl; pcount[49]++; } break;
+                    case 51: { std::cout << "***çŒå¼“" << endl; pcount[50]++; } break;
+                    case 52: { std::cout << "***ç¥å°„æ‰‹ä¹‹èª“" << endl; pcount[51]++; } break;
+                    case 53: { std::cout << "***é¸¦ç¾½å¼“" << endl; pcount[52]++; } break;
+                    case 54: { std::cout << "***ç¿¡ç‰æ³•çƒ" << endl; pcount[53]++; } break;
+                    case 55: { std::cout << "***è®¨é¾™è‹±æ°è°­" << endl; pcount[54]++; } break;
+                    case 56: { std::cout << "***é­”å¯¼ç»ªè®º" << endl; pcount[55]++; } break;
+                    case 57: { std::cout << "***é»‘ç¼¨æª" << endl; pcount[56]++; } break;
+                    case 58: { std::cout << "***ä»¥ç†æœäºº" << endl; pcount[57]++; } break;
+                    case 59: { std::cout << "***æ²æµ´é¾™è¡€çš„å‰‘" << endl; pcount[58]++; } break;
+                    case 60: { std::cout << "***é“å½±é˜”å‰‘" << endl; pcount[59]++; } break;
+                    case 61: { std::cout << "***é£å¤©å¾¡å‰‘" << endl; pcount[60]++; } break;
+                    case 62: { std::cout << "***é»æ˜ç¥å‰‘" << endl; pcount[61]++; } break;
+                    case 63: { std::cout << "***å†·åˆƒ" << endl; pcount[62]++; } break;
+                    case 64: { std::cout << "!!!!!*****æ¸©è¿ª" << endl; pcount[63]++; } break;
+                    case 65: { std::cout << "!!!!!*****å¯è‰" << endl; pcount[64]++; } break;
+                    case 66: { std::cout << "!!!!!*****è¾¾è¾¾åˆ©äºš" << endl; pcount[65]++; } break;
+                    case 67: { std::cout << "!!!!!*****é’Ÿç¦»" << endl; pcount[66]++; } break;
+                    case 68: { std::cout << "!!!!!*****é˜¿è´å¤š" << endl; pcount[67]++; } break;
+                    case 69: { std::cout << "!!!!!*****ç”˜é›¨" << endl; pcount[68]++; } break;
+                    case 70: { std::cout << "!!!!!*****é­ˆ" << endl; pcount[69]++; } break;
+                    case 71: { std::cout << "!!!!!*****èƒ¡æ¡ƒ" << endl; pcount[70]++; } break;
+                    case 72: { std::cout << "!!****çƒŸç»¯" << endl; pcount[71]++; } break;
+                    case 73: { std::cout << "!!!!!*****ä¼˜èˆ" << endl; pcount[72]++; } break;
+                    case 74: { std::cout << "!!!!!*****å°˜ä¸–ä¹‹é”" << endl; pcount[73]++; } break;
+                    case 75: { std::cout << "!!!!!*****è´¯è™¹ä¹‹æ§Š" << endl; pcount[74]++; } break;
+                    case 76: { std::cout << "!!!!!*****æ— å·¥ä¹‹å‰‘" << endl; pcount[75]++; } break;
+                    case 77: { std::cout << "!!!!!*****æ–«å³°ä¹‹åˆƒ" << endl; pcount[76]++; } break;
+                    case 78: { std::cout << "!!!!!*****ç£å²©ç»“ç»¿" << endl; pcount[77]++; } break;
+                    case 79: { std::cout << "!!!!!*****æŠ¤æ‘©ä¹‹æ–" << endl; pcount[78]++; } break;
+                    case 80: { std::cout << "!!****åƒå²©å¤å‰‘" << endl; pcount[79]++; } break;
+                    case 81: { std::cout << "!!****åƒå²©é•¿æª" << endl; pcount[80]++; } break;
+                    case 82: { std::cout << "!!!!!*****ç»ˆæœ«å—Ÿå¹ä¹‹è¯—" << endl; pcount[81]++; } break;
+                    case 83: { std::cout << "!!****æš—å··é—ªå…‰" << endl; pcount[82]++; } break;
+                    case 84: { std::cout << "!!****æš—å··çš„é…’ä¸è¯—" << endl; pcount[83]++; } break;
+                    case 85: { std::cout << "!!****æš—å··çŒæ‰‹" << endl; pcount[84]++; } break;
+                    case 86: { std::cout << "!!!!!*****æ¾ç±å“èµ·ä¹‹æ—¶" << endl; pcount[85]++; } break;
                     case 87: { std::cout << "Placeholder" << endl; pcount[86]++; } break;
                     case 88: { std::cout << "Placeholder" << endl; pcount[87]++; } break;
                     case 89: { std::cout << "Placeholder" << endl; pcount[88]++; } break;
@@ -19585,1850 +19626,6 @@ int main() {
                         for (int templuck = 0; templuck < 10; templuck++) {
                             if (luckstar[templuck] == 5) luck += 5319;
                             else if (luckstar[templuck] == 4) luck += 674;
-                            else luck += 0;
-                        }
-                    }
-                    if (count == 10) {
-                        luckiest = luck;
-                        for (int templuck = 0; templuck < 10; templuck++) {
-                            luckiestlocation[templuck] = lucklocation[templuck];
-                            luckiestsublocation[templuck] = lucksublocation[templuck];
-                            luckiestkind[templuck] = luckkind[templuck];
-                        }
-                    }
-                    if (luck > luckiest) {
-                        luckiest = luck;
-                        for (int templuck = 0; templuck < 10; templuck++) {
-                            luckiestlocation[templuck] = lucklocation[templuck];
-                            luckiestsublocation[templuck] = lucksublocation[templuck];
-                            luckiestkind[templuck] = luckkind[templuck];
-                        }
-                    }
-                }
-            }
-            if (chosen_banner == 3 && chosen_event == 1) {
-                while (wishes_number > 0) {
-                    long long int temp1 = generator() % ULTRAPOS;
-                    long long int temp2 = generator() % ULTRAPOS;
-                    int star = 0; //4-star or 5-star
-                    int type = 0; //Up or non-up, character or weapon
-                    int kind = 0; //which exactly
-                    if (five_star_assurance_number < 74 && four_star_assurance_number < 9) {
-                        if (temp1 < (long long int) ULTRAPOS / 1000 * 6) {
-                            star = 5;
-                            five_count++;
-                            ave_fives += five_star_assurance_number;
-                            if (five_star_assurance_number > max_fives) { max_fives = five_star_assurance_number; max_fivesth = five_count; max_fivecount = count; }
-                            if (five_star_assurance_number < min_fives) { min_fives = five_star_assurance_number; min_fivesth = five_count; min_fivecount = count; }
-                            five_star_assurance_number = 0;
-                            if (unmet5_c < 148 && unmet5_w < 148) {
-                                if (temp2 < (long long int) ULTRAPOS / 2) {
-                                    type = 1;
-                                    five_count_c++;
-                                    unmet5_c = 0;
-                                    int templist[] = { 1, 2, 3, 4, 5 };
-                                    kind = rspick(templist, 5);
-                                }
-                                else {
-                                    type = 2;
-                                    five_count_w++;
-                                    unmet5_w = 0;
-                                    int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
-                                    kind = rspick(templist, 10);
-                                }
-                            }
-                            else if (unmet5_c > 147) {
-                                if (temp2 < (long long int) (ULTRAPOS - ULTRAPOS / (10 * unmet5_c - 1468))) {
-                                    type = 1;
-                                    five_count_c++;
-                                    unmet5_c = 0;
-                                    int templist[] = { 1, 2, 3, 4, 5 };
-                                    kind = rspick(templist, 5);
-                                }
-                                else {
-                                    type = 2;
-                                    five_count_w++;
-                                    unmet5_w = 0;
-                                    int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
-                                    kind = rspick(templist, 10);
-                                }
-                            }
-                            else {
-                                if (temp2 < (long long int) (ULTRAPOS - ULTRAPOS / (10 * unmet5_w - 1468))) {
-                                    type = 2;
-                                    five_count_w++;
-                                    unmet5_w = 0;
-                                    int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
-                                    kind = rspick(templist, 10);
-                                }
-                                else {
-                                    type = 1;
-                                    five_count_c++;
-                                    unmet5_c = 0;
-                                    int templist[] = { 1, 2, 3, 4, 5 };
-                                    kind = rspick(templist, 5);
-                                }
-                            }
-                        }
-                        else if (temp1 < (long long int) ULTRAPOS / 1000 * 57) {
-                            star = 4;
-                            four_count++;
-                            four_star_assurance_number = 0;
-                            if (unmet4_c < 18 && unmet4_w < 18) {
-                                if (temp2 < (long long int) ULTRAPOS / 2) {
-                                    type = 1;
-                                    four_count_c++;
-                                    unmet4_c = 0;
-                                    int templist[] = { 18, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32 };
-                                    kind = rspick(templist, 14);
-                                }
-                                else {
-                                    type = 2;
-                                    four_count_w++;
-                                    unmet4_w = 0;
-                                    int templist[] = { 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50 };
-                                    kind = rspick(templist, 18);
-                                }
-                            }
-                            else if (unmet4_c > 17) {
-                                if (temp2 < (long long int) (ULTRAPOS - ULTRAPOS / (10 * unmet4_c - 168))) {
-                                    type = 1;
-                                    four_count_c++;
-                                    unmet4_c = 0;
-                                    int templist[] = { 18, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32 };
-                                    kind = rspick(templist, 14);
-                                }
-                                else {
-                                    type = 2;
-                                    four_count_w++;
-                                    unmet4_w = 0;
-                                    int templist[] = { 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50 };
-                                    kind = rspick(templist, 18);
-                                }
-                            }
-                            else {
-                                if (temp2 < (long long int) (ULTRAPOS - ULTRAPOS / (10 * unmet4_w - 168))) {
-                                    type = 2;
-                                    four_count_w++;
-                                    unmet4_w = 0;
-                                    int templist[] = { 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50 };
-                                    kind = rspick(templist, 18);
-                                }
-                                else {
-                                    type = 1;
-                                    four_count_c++;
-                                    unmet4_c = 0;
-                                    int templist[] = { 18, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32 };
-                                    kind = rspick(templist, 14);
-                                }
-                            }
-                        }
-                        else {
-                            star = 3;
-                            type = 2;
-                            kind = rspick(three_g, 13);
-                        }
-                    }
-                    else if (five_star_assurance_number < 74 && four_star_assurance_number == 9) {
-                        if (temp1 < (long long int) ULTRAPOS / 1000 * 6) {
-                            star = 5;
-                            five_count++;
-                            ave_fives += five_star_assurance_number;
-                            if (five_star_assurance_number > max_fives) { max_fives = five_star_assurance_number; max_fivesth = five_count; max_fivecount = count; }
-                            if (five_star_assurance_number < min_fives) { min_fives = five_star_assurance_number; min_fivesth = five_count; min_fivecount = count; }
-                            five_star_assurance_number = 0;
-                            if (unmet5_c < 148 && unmet5_w < 148) {
-                                if (temp2 < (long long int) ULTRAPOS / 2) {
-                                    type = 1;
-                                    five_count_c++;
-                                    unmet5_c = 0;
-                                    int templist[] = { 1, 2, 3, 4, 5 };
-                                    kind = rspick(templist, 5);
-                                }
-                                else {
-                                    type = 2;
-                                    five_count_w++;
-                                    unmet5_w = 0;
-                                    int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
-                                    kind = rspick(templist, 10);
-                                }
-                            }
-                            else if (unmet5_c > 147) {
-                                if (temp2 < (long long int) (ULTRAPOS - ULTRAPOS / (10 * unmet5_c - 1468))) {
-                                    type = 1;
-                                    five_count_c++;
-                                    unmet5_c = 0;
-                                    int templist[] = { 1, 2, 3, 4, 5 };
-                                    kind = rspick(templist, 5);
-                                }
-                                else {
-                                    type = 2;
-                                    five_count_w++;
-                                    unmet5_w = 0;
-                                    int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
-                                    kind = rspick(templist, 10);
-                                }
-                            }
-                            else {
-                                if (temp2 < (long long int) (ULTRAPOS - ULTRAPOS / (10 * unmet5_w - 1468))) {
-                                    type = 2;
-                                    five_count_w++;
-                                    unmet5_w = 0;
-                                    int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
-                                    kind = rspick(templist, 10);
-                                }
-                                else {
-                                    type = 1;
-                                    five_count_c++;
-                                    unmet5_c = 0;
-                                    int templist[] = { 1, 2, 3, 4, 5 };
-                                    kind = rspick(templist, 5);
-                                }
-                            }
-                        }
-                        else if (temp1 < (long long int) ULTRAPOS / 1000 * 567) {
-                            star = 4;
-                            four_count++;
-                            four_star_assurance_number = 0;
-                            if (unmet4_c < 18 && unmet4_w < 18) {
-                                if (temp2 < (long long int) ULTRAPOS / 2) {
-                                    type = 1;
-                                    four_count_c++;
-                                    unmet4_c = 0;
-                                    int templist[] = { 18, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32 };
-                                    kind = rspick(templist, 14);
-                                }
-                                else {
-                                    type = 2;
-                                    four_count_w++;
-                                    unmet4_w = 0;
-                                    int templist[] = { 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50 };
-                                    kind = rspick(templist, 18);
-                                }
-                            }
-                            else if (unmet4_c > 17) {
-                                if (temp2 < (long long int) (ULTRAPOS - ULTRAPOS / (10 * unmet4_c - 168))) {
-                                    type = 1;
-                                    four_count_c++;
-                                    unmet4_c = 0;
-                                    int templist[] = { 18, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32 };
-                                    kind = rspick(templist, 14);
-                                }
-                                else {
-                                    type = 2;
-                                    four_count_w++;
-                                    unmet4_w = 0;
-                                    int templist[] = { 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50 };
-                                    kind = rspick(templist, 18);
-                                }
-                            }
-                            else {
-                                if (temp2 < (long long int) (ULTRAPOS - ULTRAPOS / (10 * unmet4_w - 168))) {
-                                    type = 2;
-                                    four_count_w++;
-                                    unmet4_w = 0;
-                                    int templist[] = { 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50 };
-                                    kind = rspick(templist, 18);
-                                }
-                                else {
-                                    type = 1;
-                                    four_count_c++;
-                                    unmet4_c = 0;
-                                    int templist[] = { 18, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32 };
-                                    kind = rspick(templist, 14);
-                                }
-                            }
-                        }
-                        else {
-                            star = 3;
-                            type = 2;
-                            kind = rspick(three_g, 13);
-                        }
-                    }
-                    else if (five_star_assurance_number < 74 && four_star_assurance_number > 9) {
-                        if (temp1 < (long long int) ULTRAPOS / 1000 * 6) {
-                            star = 5;
-                            five_count++;
-                            ave_fives += five_star_assurance_number;
-                            if (five_star_assurance_number > max_fives) { max_fives = five_star_assurance_number; max_fivesth = five_count; max_fivecount = count; }
-                            if (five_star_assurance_number < min_fives) { min_fives = five_star_assurance_number; min_fivesth = five_count; min_fivecount = count; }
-                            five_star_assurance_number = 0;
-                            if (unmet5_c < 148 && unmet5_w < 148) {
-                                if (temp2 < (long long int) ULTRAPOS / 2) {
-                                    type = 1;
-                                    five_count_c++;
-                                    unmet5_c = 0;
-                                    int templist[] = { 1, 2, 3, 4, 5 };
-                                    kind = rspick(templist, 5);
-                                }
-                                else {
-                                    type = 2;
-                                    five_count_w++;
-                                    unmet5_w = 0;
-                                    int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
-                                    kind = rspick(templist, 10);
-                                }
-                            }
-                            else if (unmet5_c > 147) {
-                                if (temp2 < (long long int) (ULTRAPOS - ULTRAPOS / (10 * unmet5_c - 1468))) {
-                                    type = 1;
-                                    five_count_c++;
-                                    unmet5_c = 0;
-                                    int templist[] = { 1, 2, 3, 4, 5 };
-                                    kind = rspick(templist, 5);
-                                }
-                                else {
-                                    type = 2;
-                                    five_count_w++;
-                                    unmet5_w = 0;
-                                    int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
-                                    kind = rspick(templist, 10);
-                                }
-                            }
-                            else {
-                                if (temp2 < (long long int) (ULTRAPOS - ULTRAPOS / (10 * unmet5_w - 1468))) {
-                                    type = 2;
-                                    five_count_w++;
-                                    unmet5_w = 0;
-                                    int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
-                                    kind = rspick(templist, 10);
-                                }
-                                else {
-                                    type = 1;
-                                    five_count_c++;
-                                    unmet5_c = 0;
-                                    int templist[] = { 1, 2, 3, 4, 5 };
-                                    kind = rspick(templist, 5);
-                                }
-                            }
-                        }
-                        else {
-                            star = 4;
-                            four_count++;
-                            four_star_assurance_number = 0;
-                            if (unmet4_c < 18 && unmet4_w < 18) {
-                                if (temp2 < (long long int) ULTRAPOS / 2) {
-                                    type = 1;
-                                    four_count_c++;
-                                    unmet4_c = 0;
-                                    int templist[] = { 18, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32 };
-                                    kind = rspick(templist, 14);
-                                }
-                                else {
-                                    type = 2;
-                                    four_count_w++;
-                                    unmet4_w = 0;
-                                    int templist[] = { 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50 };
-                                    kind = rspick(templist, 18);
-                                }
-                            }
-                            else if (unmet4_c > 17) {
-                                if (temp2 < (long long int) (ULTRAPOS - ULTRAPOS / (10 * unmet4_c - 168))) {
-                                    type = 1;
-                                    four_count_c++;
-                                    unmet4_c = 0;
-                                    int templist[] = { 18, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32 };
-                                    kind = rspick(templist, 14);
-                                }
-                                else {
-                                    type = 2;
-                                    four_count_w++;
-                                    unmet4_w = 0;
-                                    int templist[] = { 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50 };
-                                    kind = rspick(templist, 18);
-                                }
-                            }
-                            else {
-                                if (temp2 < (long long int) (ULTRAPOS - ULTRAPOS / (10 * unmet4_w - 168))) {
-                                    type = 2;
-                                    four_count_w++;
-                                    unmet4_w = 0;
-                                    int templist[] = { 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50 };
-                                    kind = rspick(templist, 18);
-                                }
-                                else {
-                                    type = 1;
-                                    four_count_c++;
-                                    unmet4_c = 0;
-                                    int templist[] = { 18, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32 };
-                                    kind = rspick(templist, 14);
-                                }
-                            }
-                        }
-                    }
-                    else if (five_star_assurance_number < 90 && five_star_assurance_number > 73 && four_star_assurance_number < 9) {
-                        if (temp1 < (long long int) (ULTRAPOS / 1000 * 6) + (long long int)(((long long int)(five_star_assurance_number) - 73) * (long long int)(ULTRAPOS / 1000 * 60))) {
-                            star = 5;
-                            five_count++;
-                            ave_fives += five_star_assurance_number;
-                            if (five_star_assurance_number > max_fives) { max_fives = five_star_assurance_number; max_fivesth = five_count; max_fivecount = count; }
-                            if (five_star_assurance_number < min_fives) { min_fives = five_star_assurance_number; min_fivesth = five_count; min_fivecount = count; }
-                            five_star_assurance_number = 0;
-                            if (unmet5_c < 148 && unmet5_w < 148) {
-                                if (temp2 < (long long int) ULTRAPOS / 2) {
-                                    type = 1;
-                                    five_count_c++;
-                                    unmet5_c = 0;
-                                    int templist[] = { 1, 2, 3, 4, 5 };
-                                    kind = rspick(templist, 5);
-                                }
-                                else {
-                                    type = 2;
-                                    five_count_w++;
-                                    unmet5_w = 0;
-                                    int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
-                                    kind = rspick(templist, 10);
-                                }
-                            }
-                            else if (unmet5_c > 147) {
-                                if (temp2 < (long long int) (ULTRAPOS - ULTRAPOS / (10 * unmet5_c - 1468))) {
-                                    type = 1;
-                                    five_count_c++;
-                                    unmet5_c = 0;
-                                    int templist[] = { 1, 2, 3, 4, 5 };
-                                    kind = rspick(templist, 5);
-                                }
-                                else {
-                                    type = 2;
-                                    five_count_w++;
-                                    unmet5_w = 0;
-                                    int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
-                                    kind = rspick(templist, 10);
-                                }
-                            }
-                            else {
-                                if (temp2 < (long long int) (ULTRAPOS - ULTRAPOS / (10 * unmet5_w - 1468))) {
-                                    type = 2;
-                                    five_count_w++;
-                                    unmet5_w = 0;
-                                    int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
-                                    kind = rspick(templist, 10);
-                                }
-                                else {
-                                    type = 1;
-                                    five_count_c++;
-                                    unmet5_c = 0;
-                                    int templist[] = { 1, 2, 3, 4, 5 };
-                                    kind = rspick(templist, 5);
-                                }
-                            }
-                        }
-                        else if (temp1 < (long long int) (ULTRAPOS / 1000 * 57) + (long long int)(((long long int)(five_star_assurance_number) - 73) * (long long int)(ULTRAPOS / 1000 * 60))) {
-                            star = 4;
-                            four_count++;
-                            four_star_assurance_number = 0;
-                            if (unmet4_c < 18 && unmet4_w < 18) {
-                                if (temp2 < (long long int) ULTRAPOS / 2) {
-                                    type = 1;
-                                    four_count_c++;
-                                    unmet4_c = 0;
-                                    int templist[] = { 18, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32 };
-                                    kind = rspick(templist, 14);
-                                }
-                                else {
-                                    type = 2;
-                                    four_count_w++;
-                                    unmet4_w = 0;
-                                    int templist[] = { 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50 };
-                                    kind = rspick(templist, 18);
-                                }
-                            }
-                            else if (unmet4_c > 17) {
-                                if (temp2 < (long long int) (ULTRAPOS - ULTRAPOS / (10 * unmet4_c - 168))) {
-                                    type = 1;
-                                    four_count_c++;
-                                    unmet4_c = 0;
-                                    int templist[] = { 18, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32 };
-                                    kind = rspick(templist, 14);
-                                }
-                                else {
-                                    type = 2;
-                                    four_count_w++;
-                                    unmet4_w = 0;
-                                    int templist[] = { 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50 };
-                                    kind = rspick(templist, 18);
-                                }
-                            }
-                            else {
-                                if (temp2 < (long long int) (ULTRAPOS - ULTRAPOS / (10 * unmet4_w - 168))) {
-                                    type = 2;
-                                    four_count_w++;
-                                    unmet4_w = 0;
-                                    int templist[] = { 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50 };
-                                    kind = rspick(templist, 18);
-                                }
-                                else {
-                                    type = 1;
-                                    four_count_c++;
-                                    unmet4_c = 0;
-                                    int templist[] = { 18, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32 };
-                                    kind = rspick(templist, 14);
-                                }
-                            }
-                        }
-                        else {
-                            star = 3;
-                            type = 2;
-                            kind = rspick(three_g, 13);
-                        }
-                    }
-                    else if (five_star_assurance_number < 90 && five_star_assurance_number > 73 && four_star_assurance_number == 9) {
-                        if (temp1 < (long long int) (ULTRAPOS / 1000 * 6) + (long long int)(((long long int)(five_star_assurance_number) - 73) * (long long int)(ULTRAPOS / 1000 * 60))) {
-                            star = 5;
-                            five_count++;
-                            ave_fives += five_star_assurance_number;
-                            if (five_star_assurance_number > max_fives) { max_fives = five_star_assurance_number; max_fivesth = five_count; max_fivecount = count; }
-                            if (five_star_assurance_number < min_fives) { min_fives = five_star_assurance_number; min_fivesth = five_count; min_fivecount = count; }
-                            five_star_assurance_number = 0;
-                            if (unmet5_c < 148 && unmet5_w < 148) {
-                                if (temp2 < (long long int) ULTRAPOS / 2) {
-                                    type = 1;
-                                    five_count_c++;
-                                    unmet5_c = 0;
-                                    int templist[] = { 1, 2, 3, 4, 5 };
-                                    kind = rspick(templist, 5);
-                                }
-                                else {
-                                    type = 2;
-                                    five_count_w++;
-                                    unmet5_w = 0;
-                                    int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
-                                    kind = rspick(templist, 10);
-                                }
-                            }
-                            else if (unmet5_c > 147) {
-                                if (temp2 < (long long int) (ULTRAPOS - ULTRAPOS / (10 * unmet5_c - 1468))) {
-                                    type = 1;
-                                    five_count_c++;
-                                    unmet5_c = 0;
-                                    int templist[] = { 1, 2, 3, 4, 5 };
-                                    kind = rspick(templist, 5);
-                                }
-                                else {
-                                    type = 2;
-                                    five_count_w++;
-                                    unmet5_w = 0;
-                                    int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
-                                    kind = rspick(templist, 10);
-                                }
-                            }
-                            else {
-                                if (temp2 < (long long int) (ULTRAPOS - ULTRAPOS / (10 * unmet5_w - 1468))) {
-                                    type = 2;
-                                    five_count_w++;
-                                    unmet5_w = 0;
-                                    int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
-                                    kind = rspick(templist, 10);
-                                }
-                                else {
-                                    type = 1;
-                                    five_count_c++;
-                                    unmet5_c = 0;
-                                    int templist[] = { 1, 2, 3, 4, 5 };
-                                    kind = rspick(templist, 5);
-                                }
-                            }
-                        }
-                        else if (temp1 < (long long int) (ULTRAPOS / 1000 * 567) + ((long long int)(five_star_assurance_number) - 73) * (long long int)(ULTRAPOS / 1000 * 60)) {
-                            star = 4;
-                            four_count++;
-                            four_star_assurance_number = 0;
-                            if (unmet4_c < 18 && unmet4_w < 18) {
-                                if (temp2 < (long long int) ULTRAPOS / 2) {
-                                    type = 1;
-                                    four_count_c++;
-                                    unmet4_c = 0;
-                                    int templist[] = { 18, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32 };
-                                    kind = rspick(templist, 14);
-                                }
-                                else {
-                                    type = 2;
-                                    four_count_w++;
-                                    unmet4_w = 0;
-                                    int templist[] = { 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50 };
-                                    kind = rspick(templist, 18);
-                                }
-                            }
-                            else if (unmet4_c > 17) {
-                                if (temp2 < (long long int) (ULTRAPOS - ULTRAPOS / (10 * unmet4_c - 168))) {
-                                    type = 1;
-                                    four_count_c++;
-                                    unmet4_c = 0;
-                                    int templist[] = { 18, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32 };
-                                    kind = rspick(templist, 14);
-                                }
-                                else {
-                                    type = 2;
-                                    four_count_w++;
-                                    unmet4_w = 0;
-                                    int templist[] = { 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50 };
-                                    kind = rspick(templist, 18);
-                                }
-                            }
-                            else {
-                                if (temp2 < (long long int) (ULTRAPOS - ULTRAPOS / (10 * unmet4_w - 168))) {
-                                    type = 2;
-                                    four_count_w++;
-                                    unmet4_w = 0;
-                                    int templist[] = { 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50 };
-                                    kind = rspick(templist, 18);
-                                }
-                                else {
-                                    type = 1;
-                                    four_count_c++;
-                                    unmet4_c = 0;
-                                    int templist[] = { 18, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32 };
-                                    kind = rspick(templist, 14);
-                                }
-                            }
-                        }
-                        else {
-                            star = 3;
-                            type = 2;
-                            kind = rspick(three_g, 13);
-                        }
-                    }
-                    else if (five_star_assurance_number < 90 && five_star_assurance_number > 73 && four_star_assurance_number > 9) {
-                        if (temp1 < (long long int) (ULTRAPOS / 1000 * 6) + ((long long int)(five_star_assurance_number) - 73) * (long long int)(ULTRAPOS / 1000 * 60)) {
-                            star = 5;
-                            five_count++;
-                            ave_fives += five_star_assurance_number;
-                            if (five_star_assurance_number > max_fives) { max_fives = five_star_assurance_number; max_fivesth = five_count; max_fivecount = count; }
-                            if (five_star_assurance_number < min_fives) { min_fives = five_star_assurance_number; min_fivesth = five_count; min_fivecount = count; }
-                            five_star_assurance_number = 0;
-                            if (unmet5_c < 148 && unmet5_w < 148) {
-                                if (temp2 < (long long int) ULTRAPOS / 2) {
-                                    type = 1;
-                                    five_count_c++;
-                                    unmet5_c = 0;
-                                    int templist[] = { 1, 2, 3, 4, 5 };
-                                    kind = rspick(templist, 5);
-                                }
-                                else {
-                                    type = 2;
-                                    five_count_w++;
-                                    unmet5_w = 0;
-                                    int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
-                                    kind = rspick(templist, 10);
-                                }
-                            }
-                            else if (unmet5_c > 147) {
-                                if (temp2 < (long long int) (ULTRAPOS - ULTRAPOS / (10 * unmet5_c - 1468))) {
-                                    type = 1;
-                                    five_count_c++;
-                                    unmet5_c = 0;
-                                    int templist[] = { 1, 2, 3, 4, 5 };
-                                    kind = rspick(templist, 5);
-                                }
-                                else {
-                                    type = 2;
-                                    five_count_w++;
-                                    unmet5_w = 0;
-                                    int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
-                                    kind = rspick(templist, 10);
-                                }
-                            }
-                            else {
-                                if (temp2 < (long long int) (ULTRAPOS - ULTRAPOS / (10 * unmet5_w - 1468))) {
-                                    type = 2;
-                                    five_count_w++;
-                                    unmet5_w = 0;
-                                    int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
-                                    kind = rspick(templist, 10);
-                                }
-                                else {
-                                    type = 1;
-                                    five_count_c++;
-                                    unmet5_c = 0;
-                                    int templist[] = { 1, 2, 3, 4, 5 };
-                                    kind = rspick(templist, 5);
-                                }
-                            }
-                        }
-                        else {
-                            star = 4;
-                            four_count++;
-                            four_star_assurance_number = 0;
-                            if (unmet4_c < 18 && unmet4_w < 18) {
-                                if (temp2 < (long long int) ULTRAPOS / 2) {
-                                    type = 1;
-                                    four_count_c++;
-                                    unmet4_c = 0;
-                                    int templist[] = { 18, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32 };
-                                    kind = rspick(templist, 14);
-                                }
-                                else {
-                                    type = 2;
-                                    four_count_w++;
-                                    unmet4_w = 0;
-                                    int templist[] = { 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50 };
-                                    kind = rspick(templist, 18);
-                                }
-                            }
-                            else if (unmet4_c > 17) {
-                                if (temp2 < (long long int) (ULTRAPOS - ULTRAPOS / (10 * unmet4_c - 168))) {
-                                    type = 1;
-                                    four_count_c++;
-                                    unmet4_c = 0;
-                                    int templist[] = { 18, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32 };
-                                    kind = rspick(templist, 14);
-                                }
-                                else {
-                                    type = 2;
-                                    four_count_w++;
-                                    unmet4_w = 0;
-                                    int templist[] = { 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50 };
-                                    kind = rspick(templist, 18);
-                                }
-                            }
-                            else {
-                                if (temp2 < (long long int) (ULTRAPOS - ULTRAPOS / (10 * unmet4_w - 168))) {
-                                    type = 2;
-                                    four_count_w++;
-                                    unmet4_w = 0;
-                                    int templist[] = { 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50 };
-                                    kind = rspick(templist, 18);
-                                }
-                                else {
-                                    type = 1;
-                                    four_count_c++;
-                                    unmet4_c = 0;
-                                    int templist[] = { 18, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32 };
-                                    kind = rspick(templist, 14);
-                                }
-                            }
-                        }
-                    }
-                    else {
-                        star = 5;
-                        five_count++;
-                        ave_fives += five_star_assurance_number;
-                        if (five_star_assurance_number > max_fives) { max_fives = five_star_assurance_number; max_fivesth = five_count; max_fivecount = count; }
-                        if (five_star_assurance_number < min_fives) { min_fives = five_star_assurance_number; min_fivesth = five_count; min_fivecount = count; }
-                        five_star_assurance_number = 0;
-                        if (unmet5_c < 148 && unmet5_w < 148) {
-                            if (temp2 < (long long int) ULTRAPOS / 2) {
-                                type = 1;
-                                five_count_c++;
-                                unmet5_c = 0;
-                                kind = rspick(nup_five_c, 5);
-                            }
-                            else {
-                                type = 2;
-                                five_count_w++;
-                                unmet5_w = 0;
-                                int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
-                                kind = rspick(templist, 10);
-                            }
-                        }
-                        else if (unmet5_c > 147) {
-                            if (temp2 < (long long int) (ULTRAPOS - ULTRAPOS / (10 * unmet5_c - 1468))) {
-                                type = 1;
-                                five_count_c++;
-                                unmet5_c = 0;
-                                kind = rspick(nup_five_c, 5);
-                            }
-                            else {
-                                type = 2;
-                                five_count_w++;
-                                unmet5_w = 0;
-                                int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
-                                kind = rspick(templist, 10);
-                            }
-                        }
-                        else {
-                            if (temp2 < (long long int) (ULTRAPOS - ULTRAPOS / (10 * unmet5_w - 1468))) {
-                                type = 2;
-                                five_count_w++;
-                                unmet5_w = 0;
-                                int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
-                                kind = rspick(templist, 10);
-                            }
-                            else {
-                                type = 1;
-                                five_count_c++;
-                                unmet5_c = 0;
-                                kind = rspick(nup_five_c, 5);
-                            }
-                        }
-                    }
-                    std::cout << count + 1 << "(" << five_star_assurance_number << ")" << " ";
-                    switch (kind) {
-                    case 1: { std::cout << "!!!!!*****¿ÌÇç" << endl; pcount[0]++; } break;
-                    case 2: { std::cout << "!!!!!*****ÄªÄÈ" << endl; pcount[1]++; } break;
-                    case 3: { std::cout << "!!!!!*****ÆßÆß" << endl; pcount[2]++; } break;
-                    case 4: { std::cout << "!!!!!*****µÏÂ¬¿Ë" << endl; pcount[3]++; } break;
-                    case 5: { std::cout << "!!!!!*****ÇÙ" << endl; pcount[4]++; } break;
-                    case 6: { std::cout << "!!!!!*****°¢ÄªË¹Ö®¹­" << endl; pcount[5]++; } break;
-                    case 7: { std::cout << "!!!!!*****Ìì¿ÕÖ®Òí" << endl; pcount[6]++; } break;
-                    case 8: { std::cout << "!!!!!*****ËÄ·çÔ­µä" << endl; pcount[7]++; } break;
-                    case 9: { std::cout << "!!!!!*****Ìì¿ÕÖ®¾í" << endl; pcount[8]++; } break;
-                    case 10: { std::cout << "!!!!!*****ºÍè±ğ°" << endl; pcount[9]++; } break;
-                    case 11: { std::cout << "!!!!!*****Ìì¿ÕÖ®¼¹" << endl; pcount[10]++; } break;
-                    case 12: { std::cout << "!!!!!*****ÀÇµÄÄ©Â·" << endl; pcount[11]++; } break;
-                    case 13: { std::cout << "!!!!!*****Ìì¿ÕÖ®°Á" << endl; pcount[12]++; } break;
-                    case 14: { std::cout << "!!!!!*****Ìì¿ÕÖ®ÈĞ" << endl; pcount[13]++; } break;
-                    case 15: { std::cout << "!!!!!*****·çÓ¥½£" << endl; pcount[14]++; } break;
-                    case 16: { std::cout << "!!****ÂŞÉ¯ÀòÑÇ" << endl; pcount[15]++; } break;
-                    case 17: { std::cout << "!!****ĞÁìÍ" << endl; pcount[16]++; } break;
-                    case 18: { std::cout << "!!****É°ÌÇ" << endl; pcount[17]++; } break;
-                    case 19: { std::cout << "!!****µÏ°ÂÄÈ" << endl; pcount[18]++; } break;
-                    case 20: { std::cout << "!!****ÖØÔÆ" << endl; pcount[19]++; } break;
-                    case 21: { std::cout << "!!****Åµ°¬¶û" << endl; pcount[20]++; } break;
-                    case 22: { std::cout << "!!****°àÄáÌØ" << endl; pcount[21]++; } break;
-                    case 23: { std::cout << "!!****·ÆĞ»¶û" << endl; pcount[22]++; } break;
-                    case 24: { std::cout << "!!****Äı¹â" << endl; pcount[23]++; } break;
-                    case 25: { std::cout << "!!****ĞĞÇï" << endl; pcount[24]++; } break;
-                    case 26: { std::cout << "!!****±±¶·" << endl; pcount[25]++; } break;
-                    case 27: { std::cout << "!!****ÏãÁâ" << endl; pcount[26]++; } break;
-                    case 28: { std::cout << "!!****°²°Ø" << endl; pcount[27]++; } break;
-                    case 29: { std::cout << "!!****À×Ôó" << endl; pcount[28]++; } break;
-                    case 30: { std::cout << "!!****¿­ÑÇ" << endl; pcount[29]++; } break;
-                    case 31: { std::cout << "!!****°Å°ÅÀ­" << endl; pcount[30]++; } break;
-                    case 32: { std::cout << "!!****ÀöÉ¯" << endl; pcount[31]++; } break;
-                    case 33: { std::cout << "!!****¹­²Ø" << endl; pcount[32]++; } break;
-                    case 34: { std::cout << "!!****¼ÀÀñ¹­" << endl; pcount[33]++; } break;
-                    case 35: { std::cout << "!!****¾øÏÒ" << endl; pcount[34]++; } break;
-                    case 36: { std::cout << "!!****Î÷·çÁÔ¹­" << endl; pcount[35]++; } break;
-                    case 37: { std::cout << "!!****ÕÑĞÄ" << endl; pcount[36]++; } break;
-                    case 38: { std::cout << "!!****¼ÀÀñ²ĞÕÂ" << endl; pcount[37]++; } break;
-                    case 39: { std::cout << "!!****Á÷ÀËÀÖÕÂ" << endl; pcount[38]++; } break;
-                    case 40: { std::cout << "!!****Î÷·çÃØµä" << endl; pcount[39]++; } break;
-                    case 41: { std::cout << "!!****Î÷·ç³¤Ç¹" << endl; pcount[40]++; } break;
-                    case 42: { std::cout << "!!****Ï»ÀïÃğ³½" << endl; pcount[41]++; } break;
-                    case 43: { std::cout << "!!****Óê²Ã" << endl; pcount[42]++; } break;
-                    case 44: { std::cout << "!!****¼ÀÀñ´ó½£" << endl; pcount[43]++; } break;
-                    case 45: { std::cout << "!!****ÖÓ½£" << endl; pcount[44]++; } break;
-                    case 46: { std::cout << "!!****Î÷·ç´ó½£" << endl; pcount[45]++; } break;
-                    case 47: { std::cout << "!!****Ï»ÀïÁúÒ÷" << endl; pcount[46]++; } break;
-                    case 48: { std::cout << "!!****¼ÀÀñ½£" << endl; pcount[47]++; } break;
-                    case 49: { std::cout << "!!****µÑ½£" << endl; pcount[48]++; } break;
-                    case 50: { std::cout << "!!****Î÷·ç½£" << endl; pcount[49]++; } break;
-                    case 51: { std::cout << "***ÁÔ¹­" << endl; pcount[50]++; } break;
-                    case 52: { std::cout << "***ÉñÉäÊÖÖ®ÊÄ" << endl; pcount[51]++; } break;
-                    case 53: { std::cout << "***Ñ»Óğ¹­" << endl; pcount[52]++; } break;
-                    case 54: { std::cout << "***ôäÓñ·¨Çò" << endl; pcount[53]++; } break;
-                    case 55: { std::cout << "***ÌÖÁúÓ¢½ÜÌ·" << endl; pcount[54]++; } break;
-                    case 56: { std::cout << "***Ä§µ¼Ğ÷ÂÛ" << endl; pcount[55]++; } break;
-                    case 57: { std::cout << "***ºÚÓ§Ç¹" << endl; pcount[56]++; } break;
-                    case 58: { std::cout << "***ÒÔÀí·şÈË" << endl; pcount[57]++; } break;
-                    case 59: { std::cout << "***ãåÔ¡ÁúÑªµÄ½£" << endl; pcount[58]++; } break;
-                    case 60: { std::cout << "***ÌúÓ°À«½£" << endl; pcount[59]++; } break;
-                    case 61: { std::cout << "***·ÉÌìÓù½£" << endl; pcount[60]++; } break;
-                    case 62: { std::cout << "***ÀèÃ÷Éñ½£" << endl; pcount[61]++; } break;
-                    case 63: { std::cout << "***ÀäÈĞ" << endl; pcount[62]++; } break;
-                    case 64: { std::cout << "!!!!!*****ÎÂµÏ" << endl; pcount[63]++; } break;
-                    case 65: { std::cout << "!!!!!*****¿ÉÀò" << endl; pcount[64]++; } break;
-                    case 66: { std::cout << "!!!!!*****´ï´ïÀûÑÇ" << endl; pcount[65]++; } break;
-                    case 67: { std::cout << "!!!!!*****ÖÓÀë" << endl; pcount[66]++; } break;
-                    case 68: { std::cout << "!!!!!*****°¢±´¶à" << endl; pcount[67]++; } break;
-                    case 69: { std::cout << "!!!!!*****¸ÊÓê" << endl; pcount[68]++; } break;
-                    case 70: { std::cout << "!!!!!*****÷Ì" << endl; pcount[69]++; } break;
-                    case 71: { std::cout << "!!!!!*****ºúÌÒ" << endl; pcount[70]++; } break;
-                    case 72: { std::cout << "!!****ÑÌç³" << endl; pcount[71]++; } break;
-                    case 73: { std::cout << "!!!!!*****ÓÅÇ‰" << endl; pcount[72]++; } break;
-                    case 74: { std::cout << "!!!!!*****³¾ÊÀÖ®Ëø" << endl; pcount[73]++; } break;
-                    case 75: { std::cout << "!!!!!*****¹áºçÖ®éÃ" << endl; pcount[74]++; } break;
-                    case 76: { std::cout << "!!!!!*****ÎŞ¹¤Ö®½£" << endl; pcount[75]++; } break;
-                    case 77: { std::cout << "!!!!!*****í½·åÖ®ÈĞ" << endl; pcount[76]++; } break;
-                    case 78: { std::cout << "!!!!!*****ÅÍÑÒ½áÂÌ" << endl; pcount[77]++; } break;
-                    case 79: { std::cout << "!!!!!*****»¤Ä¦Ö®ÕÈ" << endl; pcount[78]++; } break;
-                    case 80: { std::cout << "!!****Ç§ÑÒ¹Å½£" << endl; pcount[79]++; } break;
-                    case 81: { std::cout << "!!****Ç§ÑÒ³¤Ç¹" << endl; pcount[80]++; } break;
-                    case 82: { std::cout << "!!!!!*****ÖÕÄ©àµÌ¾Ö®Ê«" << endl; pcount[81]++; } break;
-                    case 83: { std::cout << "!!****°µÏïÉÁ¹â" << endl; pcount[82]++; } break;
-                    case 84: { std::cout << "!!****°µÏïµÄ¾ÆÓëÊ«" << endl; pcount[83]++; } break;
-                    case 85: { std::cout << "!!****°µÏïÁÔÊÖ" << endl; pcount[84]++; } break;
-                    case 86: { std::cout << "!!!!!*****ËÉô¥ÏìÆğÖ®Ê±" << endl; pcount[85]++; } break;
-                    case 87: { std::cout << "Placeholder" << endl; pcount[86]++; } break;
-                    case 88: { std::cout << "Placeholder" << endl; pcount[87]++; } break;
-                    case 89: { std::cout << "Placeholder" << endl; pcount[88]++; } break;
-                    case 90: { std::cout << "Placeholder" << endl; pcount[89]++; } break;
-                    case 91: { std::cout << "Placeholder" << endl; pcount[90]++; } break;
-                    case 92: { std::cout << "Placeholder" << endl; pcount[91]++; } break;
-                    case 93: { std::cout << "Placeholder" << endl; pcount[92]++; } break;
-                    case 94: { std::cout << "Placeholder" << endl; pcount[93]++; } break;
-                    case 95: { std::cout << "Placeholder" << endl; pcount[94]++; } break;
-                    case 96: { std::cout << "Placeholder" << endl; pcount[95]++; } break;
-                    case 97: { std::cout << "Placeholder" << endl; pcount[96]++; } break;
-                    case 98: { std::cout << "Placeholder" << endl; pcount[97]++; } break;
-                    case 99: { std::cout << "Placeholder" << endl; pcount[98]++; } break;
-                    case 100: { std::cout << "Placeholder" << endl; pcount[99]++; } break;
-                    case 101: { std::cout << "Placeholder" << endl; pcount[100]++; } break;
-                    case 102: { std::cout << "Placeholder" << endl; pcount[101]++; } break;
-                    case 103: { std::cout << "Placeholder" << endl; pcount[102]++; } break;
-                    case 104: { std::cout << "Placeholder" << endl; pcount[103]++; } break;
-                    case 105: { std::cout << "Placeholder" << endl; pcount[104]++; } break;
-                    case 106: { std::cout << "Placeholder" << endl; pcount[105]++; } break;
-                    case 107: { std::cout << "Placeholder" << endl; pcount[106]++; } break;
-                    case 108: { std::cout << "Placeholder" << endl; pcount[107]++; } break;
-                    case 109: { std::cout << "Placeholder" << endl; pcount[108]++; } break;
-                    case 110: { std::cout << "Placeholder" << endl; pcount[109]++; } break;
-                    case 111: { std::cout << "Placeholder" << endl; pcount[110]++; } break;
-                    case 112: { std::cout << "Placeholder" << endl; pcount[111]++; } break;
-                    case 113: { std::cout << "Placeholder" << endl; pcount[112]++; } break;
-                    case 114: { std::cout << "Placeholder" << endl; pcount[113]++; } break;
-                    case 115: { std::cout << "Placeholder" << endl; pcount[114]++; } break;
-                    case 116: { std::cout << "Placeholder" << endl; pcount[115]++; } break;
-                    case 117: { std::cout << "Placeholder" << endl; pcount[116]++; } break;
-                    case 118: { std::cout << "Placeholder" << endl; pcount[117]++; } break;
-                    case 119: { std::cout << "Placeholder" << endl; pcount[118]++; } break;
-                    case 120: { std::cout << "Placeholder" << endl; pcount[119]++; } break;
-                    case 121: { std::cout << "Placeholder" << endl; pcount[120]++; } break;
-                    case 122: { std::cout << "Placeholder" << endl; pcount[121]++; } break;
-                    case 123: { std::cout << "Placeholder" << endl; pcount[122]++; } break;
-                    case 124: { std::cout << "Placeholder" << endl; pcount[123]++; } break;
-                    case 125: { std::cout << "Placeholder" << endl; pcount[124]++; } break;
-                    case 126: { std::cout << "Placeholder" << endl; pcount[125]++; } break;
-                    case 127: { std::cout << "Placeholder" << endl; pcount[126]++; } break;
-                    case 128: { std::cout << "Placeholder" << endl; pcount[127]++; } break;
-                    default: break;
-                    }
-                    wishes_number--;
-                    count++;
-                    if (!(star == 5 && type == 1)) unmet5_c++;
-                    if (!(star == 5 && type == 2)) unmet5_w++;
-                    if (!(star == 4 && type == 1)) unmet4_c++;
-                    if (!(star == 4 && type == 2)) unmet4_w++;
-                    five_star_assurance_number++;
-                    four_star_assurance_number++;
-                    for (int templuck = 0; templuck < 9; templuck++) {
-                        lucklocation[templuck] = lucklocation[templuck + 1];
-                        lucksublocation[templuck] = lucksublocation[templuck + 1];
-                        luckkind[templuck] = luckkind[templuck + 1];
-                        luckstar[templuck] = luckstar[templuck + 1];
-                    }
-                    lucklocation[9] = count;
-                    lucksublocation[9] = (long long int) five_star_assurance_number - 1;
-                    luckkind[9] = kind;
-                    luckstar[9] = star;
-                    luck = 0;
-                    if (star == 4 || star == 5) {
-                        for (int templuck = 0; templuck < 10; templuck++) {
-                            if (luckstar[templuck] == 5) luck += 6229;
-                            else if (luckstar[templuck] == 4) luck += 2297;
-                            else luck += 0;
-                        }
-                    }
-                    if (count == 10) {
-                        luckiest = luck;
-                        for (int templuck = 0; templuck < 10; templuck++) {
-                            luckiestlocation[templuck] = lucklocation[templuck];
-                            luckiestsublocation[templuck] = lucksublocation[templuck];
-                            luckiestkind[templuck] = luckkind[templuck];
-                        }
-                    }
-                    if (luck > luckiest) {
-                        luckiest = luck;
-                        for (int templuck = 0; templuck < 10; templuck++) {
-                            luckiestlocation[templuck] = lucklocation[templuck];
-                            luckiestsublocation[templuck] = lucksublocation[templuck];
-                            luckiestkind[templuck] = luckkind[templuck];
-                        }
-                    }
-                }
-            }
-            if (chosen_banner == 3 && chosen_event == 2) {
-                while (wishes_number > 0) {
-                    long long int temp1 = generator() % ULTRAPOS;
-                    long long int temp2 = generator() % ULTRAPOS;
-                    int star = 0; //4-star or 5-star
-                    int type = 0; //Up or non-up, character or weapon
-                    int kind = 0; //which exactly
-                    if (five_star_assurance_number < 74 && four_star_assurance_number < 9) {
-                        if (temp1 < (long long int) ULTRAPOS / 1000 * 6) {
-                            star = 5;
-                            five_count++;
-                            ave_fives += five_star_assurance_number;
-                            if (five_star_assurance_number > max_fives) { max_fives = five_star_assurance_number; max_fivesth = five_count; max_fivecount = count; }
-                            if (five_star_assurance_number < min_fives) { min_fives = five_star_assurance_number; min_fivesth = five_count; min_fivecount = count; }
-                            five_star_assurance_number = 0;
-                            if (unmet5_c < 148 && unmet5_w < 148) {
-                                if (temp2 < (long long int) ULTRAPOS / 2) {
-                                    type = 1;
-                                    five_count_c++;
-                                    unmet5_c = 0;
-                                    int templist[] = { 1, 2, 3, 4, 5 };
-                                    kind = rspick(templist, 5);
-                                }
-                                else {
-                                    type = 2;
-                                    five_count_w++;
-                                    unmet5_w = 0;
-                                    int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
-                                    kind = rspick(templist, 10);
-                                }
-                            }
-                            else if (unmet5_c > 147) {
-                                if (temp2 < (long long int) (ULTRAPOS - ULTRAPOS / (10 * unmet5_c - 1468))) {
-                                    type = 1;
-                                    five_count_c++;
-                                    unmet5_c = 0;
-                                    int templist[] = { 1, 2, 3, 4, 5 };
-                                    kind = rspick(templist, 5);
-                                }
-                                else {
-                                    type = 2;
-                                    five_count_w++;
-                                    unmet5_w = 0;
-                                    int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
-                                    kind = rspick(templist, 10);
-                                }
-                            }
-                            else {
-                                if (temp2 < (long long int) (ULTRAPOS - ULTRAPOS / (10 * unmet5_w - 1468))) {
-                                    type = 2;
-                                    five_count_w++;
-                                    unmet5_w = 0;
-                                    int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
-                                    kind = rspick(templist, 10);
-                                }
-                                else {
-                                    type = 1;
-                                    five_count_c++;
-                                    unmet5_c = 0;
-                                    int templist[] = { 1, 2, 3, 4, 5 };
-                                    kind = rspick(templist, 5);
-                                }
-                            }
-                        }
-                        else if (temp1 < (long long int) ULTRAPOS / 1000 * 57) {
-                            star = 4;
-                            four_count++;
-                            four_star_assurance_number = 0;
-                            if (unmet4_c < 18 && unmet4_w < 18) {
-                                if (temp2 < (long long int) ULTRAPOS / 2) {
-                                    type = 1;
-                                    four_count_c++;
-                                    unmet4_c = 0;
-                                    int templist[] = { 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32 };
-                                    kind = rspick(templist, 16);
-                                }
-                                else {
-                                    type = 2;
-                                    four_count_w++;
-                                    unmet4_w = 0;
-                                    int templist[] = { 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50 };
-                                    kind = rspick(templist, 18);
-                                }
-                            }
-                            else if (unmet4_c > 17) {
-                                if (temp2 < (long long int) (ULTRAPOS - ULTRAPOS / (10 * unmet4_c - 168))) {
-                                    type = 1;
-                                    four_count_c++;
-                                    unmet4_c = 0;
-                                    int templist[] = { 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32 };
-                                    kind = rspick(templist, 16);
-                                }
-                                else {
-                                    type = 2;
-                                    four_count_w++;
-                                    unmet4_w = 0;
-                                    int templist[] = { 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50 };
-                                    kind = rspick(templist, 18);
-                                }
-                            }
-                            else {
-                                if (temp2 < (long long int) (ULTRAPOS - ULTRAPOS / (10 * unmet4_w - 168))) {
-                                    type = 2;
-                                    four_count_w++;
-                                    unmet4_w = 0;
-                                    int templist[] = { 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50 };
-                                    kind = rspick(templist, 18);
-                                }
-                                else {
-                                    type = 1;
-                                    four_count_c++;
-                                    unmet4_c = 0;
-                                    int templist[] = { 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32 };
-                                    kind = rspick(templist, 16);
-                                }
-                            }
-                        }
-                        else {
-                            star = 3;
-                            type = 2;
-                            kind = rspick(three_g, 13);
-                        }
-                    }
-                    else if (five_star_assurance_number < 74 && four_star_assurance_number == 9) {
-                        if (temp1 < (long long int) ULTRAPOS / 1000 * 6) {
-                            star = 5;
-                            five_count++;
-                            ave_fives += five_star_assurance_number;
-                            if (five_star_assurance_number > max_fives) { max_fives = five_star_assurance_number; max_fivesth = five_count; max_fivecount = count; }
-                            if (five_star_assurance_number < min_fives) { min_fives = five_star_assurance_number; min_fivesth = five_count; min_fivecount = count; }
-                            five_star_assurance_number = 0;
-                            if (unmet5_c < 148 && unmet5_w < 148) {
-                                if (temp2 < (long long int) ULTRAPOS / 2) {
-                                    type = 1;
-                                    five_count_c++;
-                                    unmet5_c = 0;
-                                    int templist[] = { 1, 2, 3, 4, 5 };
-                                    kind = rspick(templist, 5);
-                                }
-                                else {
-                                    type = 2;
-                                    five_count_w++;
-                                    unmet5_w = 0;
-                                    int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
-                                    kind = rspick(templist, 10);
-                                }
-                            }
-                            else if (unmet5_c > 147) {
-                                if (temp2 < (long long int) (ULTRAPOS - ULTRAPOS / (10 * unmet5_c - 1468))) {
-                                    type = 1;
-                                    five_count_c++;
-                                    unmet5_c = 0;
-                                    int templist[] = { 1, 2, 3, 4, 5 };
-                                    kind = rspick(templist, 5);
-                                }
-                                else {
-                                    type = 2;
-                                    five_count_w++;
-                                    unmet5_w = 0;
-                                    int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
-                                    kind = rspick(templist, 10);
-                                }
-                            }
-                            else {
-                                if (temp2 < (long long int) (ULTRAPOS - ULTRAPOS / (10 * unmet5_w - 1468))) {
-                                    type = 2;
-                                    five_count_w++;
-                                    unmet5_w = 0;
-                                    int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
-                                    kind = rspick(templist, 10);
-                                }
-                                else {
-                                    type = 1;
-                                    five_count_c++;
-                                    unmet5_c = 0;
-                                    int templist[] = { 1, 2, 3, 4, 5 };
-                                    kind = rspick(templist, 5);
-                                }
-                            }
-                        }
-                        else if (temp1 < (long long int) ULTRAPOS / 1000 * 567) {
-                            star = 4;
-                            four_count++;
-                            four_star_assurance_number = 0;
-                            if (unmet4_c < 18 && unmet4_w < 18) {
-                                if (temp2 < (long long int) ULTRAPOS / 2) {
-                                    type = 1;
-                                    four_count_c++;
-                                    unmet4_c = 0;
-                                    int templist[] = { 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32 };
-                                    kind = rspick(templist, 16);
-                                }
-                                else {
-                                    type = 2;
-                                    four_count_w++;
-                                    unmet4_w = 0;
-                                    int templist[] = { 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50 };
-                                    kind = rspick(templist, 18);
-                                }
-                            }
-                            else if (unmet4_c > 17) {
-                                if (temp2 < (long long int) (ULTRAPOS - ULTRAPOS / (10 * unmet4_c - 168))) {
-                                    type = 1;
-                                    four_count_c++;
-                                    unmet4_c = 0;
-                                    int templist[] = { 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32 };
-                                    kind = rspick(templist, 16);
-                                }
-                                else {
-                                    type = 2;
-                                    four_count_w++;
-                                    unmet4_w = 0;
-                                    int templist[] = { 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50 };
-                                    kind = rspick(templist, 18);
-                                }
-                            }
-                            else {
-                                if (temp2 < (long long int) (ULTRAPOS - ULTRAPOS / (10 * unmet4_w - 168))) {
-                                    type = 2;
-                                    four_count_w++;
-                                    unmet4_w = 0;
-                                    int templist[] = { 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50 };
-                                    kind = rspick(templist, 18);
-                                }
-                                else {
-                                    type = 1;
-                                    four_count_c++;
-                                    unmet4_c = 0;
-                                    int templist[] = { 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32 };
-                                    kind = rspick(templist, 16);
-                                }
-                            }
-                        }
-                        else {
-                            star = 3;
-                            type = 2;
-                            kind = rspick(three_g, 13);
-                        }
-                    }
-                    else if (five_star_assurance_number < 74 && four_star_assurance_number > 9) {
-                        if (temp1 < (long long int) ULTRAPOS / 1000 * 6) {
-                            star = 5;
-                            five_count++;
-                            ave_fives += five_star_assurance_number;
-                            if (five_star_assurance_number > max_fives) { max_fives = five_star_assurance_number; max_fivesth = five_count; max_fivecount = count; }
-                            if (five_star_assurance_number < min_fives) { min_fives = five_star_assurance_number; min_fivesth = five_count; min_fivecount = count; }
-                            five_star_assurance_number = 0;
-                            if (unmet5_c < 148 && unmet5_w < 148) {
-                                if (temp2 < (long long int) ULTRAPOS / 2) {
-                                    type = 1;
-                                    five_count_c++;
-                                    unmet5_c = 0;
-                                    int templist[] = { 1, 2, 3, 4, 5 };
-                                    kind = rspick(templist, 5);
-                                }
-                                else {
-                                    type = 2;
-                                    five_count_w++;
-                                    unmet5_w = 0;
-                                    int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
-                                    kind = rspick(templist, 10);
-                                }
-                            }
-                            else if (unmet5_c > 147) {
-                                if (temp2 < (long long int) (ULTRAPOS - ULTRAPOS / (10 * unmet5_c - 1468))) {
-                                    type = 1;
-                                    five_count_c++;
-                                    unmet5_c = 0;
-                                    int templist[] = { 1, 2, 3, 4, 5 };
-                                    kind = rspick(templist, 5);
-                                }
-                                else {
-                                    type = 2;
-                                    five_count_w++;
-                                    unmet5_w = 0;
-                                    int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
-                                    kind = rspick(templist, 10);
-                                }
-                            }
-                            else {
-                                if (temp2 < (long long int) (ULTRAPOS - ULTRAPOS / (10 * unmet5_w - 1468))) {
-                                    type = 2;
-                                    five_count_w++;
-                                    unmet5_w = 0;
-                                    int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
-                                    kind = rspick(templist, 10);
-                                }
-                                else {
-                                    type = 1;
-                                    five_count_c++;
-                                    unmet5_c = 0;
-                                    int templist[] = { 1, 2, 3, 4, 5 };
-                                    kind = rspick(templist, 5);
-                                }
-                            }
-                        }
-                        else {
-                            star = 4;
-                            four_count++;
-                            four_star_assurance_number = 0;
-                            if (unmet4_c < 18 && unmet4_w < 18) {
-                                if (temp2 < (long long int) ULTRAPOS / 2) {
-                                    type = 1;
-                                    four_count_c++;
-                                    unmet4_c = 0;
-                                    int templist[] = { 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32 };
-                                    kind = rspick(templist, 16);
-                                }
-                                else {
-                                    type = 2;
-                                    four_count_w++;
-                                    unmet4_w = 0;
-                                    int templist[] = { 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50 };
-                                    kind = rspick(templist, 18);
-                                }
-                            }
-                            else if (unmet4_c > 17) {
-                                if (temp2 < (long long int) (ULTRAPOS - ULTRAPOS / (10 * unmet4_c - 168))) {
-                                    type = 1;
-                                    four_count_c++;
-                                    unmet4_c = 0;
-                                    int templist[] = { 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32 };
-                                    kind = rspick(templist, 16);
-                                }
-                                else {
-                                    type = 2;
-                                    four_count_w++;
-                                    unmet4_w = 0;
-                                    int templist[] = { 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50 };
-                                    kind = rspick(templist, 18);
-                                }
-                            }
-                            else {
-                                if (temp2 < (long long int) (ULTRAPOS - ULTRAPOS / (10 * unmet4_w - 168))) {
-                                    type = 2;
-                                    four_count_w++;
-                                    unmet4_w = 0;
-                                    int templist[] = { 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50 };
-                                    kind = rspick(templist, 18);
-                                }
-                                else {
-                                    type = 1;
-                                    four_count_c++;
-                                    unmet4_c = 0;
-                                    int templist[] = { 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32 };
-                                    kind = rspick(templist, 16);
-                                }
-                            }
-                        }
-                    }
-                    else if (five_star_assurance_number < 90 && five_star_assurance_number > 73 && four_star_assurance_number < 9) {
-                        if (temp1 < (long long int) (ULTRAPOS / 1000 * 6) + ((long long int)(five_star_assurance_number) - 73) * (long long int)(ULTRAPOS / 1000 * 60)) {
-                            star = 5;
-                            five_count++;
-                            ave_fives += five_star_assurance_number;
-                            if (five_star_assurance_number > max_fives) { max_fives = five_star_assurance_number; max_fivesth = five_count; max_fivecount = count; }
-                            if (five_star_assurance_number < min_fives) { min_fives = five_star_assurance_number; min_fivesth = five_count; min_fivecount = count; }
-                            five_star_assurance_number = 0;
-                            if (unmet5_c < 148 && unmet5_w < 148) {
-                                if (temp2 < (long long int) ULTRAPOS / 2) {
-                                    type = 1;
-                                    five_count_c++;
-                                    unmet5_c = 0;
-                                    int templist[] = { 1, 2, 3, 4, 5 };
-                                    kind = rspick(templist, 5);
-                                }
-                                else {
-                                    type = 2;
-                                    five_count_w++;
-                                    unmet5_w = 0;
-                                    int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
-                                    kind = rspick(templist, 10);
-                                }
-                            }
-                            else if (unmet5_c > 147) {
-                                if (temp2 < (long long int) (ULTRAPOS - ULTRAPOS / (10 * unmet5_c - 1468))) {
-                                    type = 1;
-                                    five_count_c++;
-                                    unmet5_c = 0;
-                                    int templist[] = { 1, 2, 3, 4, 5 };
-                                    kind = rspick(templist, 5);
-                                }
-                                else {
-                                    type = 2;
-                                    five_count_w++;
-                                    unmet5_w = 0;
-                                    int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
-                                    kind = rspick(templist, 10);
-                                }
-                            }
-                            else {
-                                if (temp2 < (long long int) (ULTRAPOS - ULTRAPOS / (10 * unmet5_w - 1468))) {
-                                    type = 2;
-                                    five_count_w++;
-                                    unmet5_w = 0;
-                                    int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
-                                    kind = rspick(templist, 10);
-                                }
-                                else {
-                                    type = 1;
-                                    five_count_c++;
-                                    unmet5_c = 0;
-                                    int templist[] = { 1, 2, 3, 4, 5 };
-                                    kind = rspick(templist, 5);
-                                }
-                            }
-                        }
-                        else if (temp1 < (long long int) (ULTRAPOS / 1000 * 57) + ((long long int)(five_star_assurance_number) - 73) * (long long int)(ULTRAPOS / 1000 * 60)) {
-                            star = 4;
-                            four_count++;
-                            four_star_assurance_number = 0;
-                            if (unmet4_c < 18 && unmet4_w < 18) {
-                                if (temp2 < (long long int) ULTRAPOS / 2) {
-                                    type = 1;
-                                    four_count_c++;
-                                    unmet4_c = 0;
-                                    int templist[] = { 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32 };
-                                    kind = rspick(templist, 16);
-                                }
-                                else {
-                                    type = 2;
-                                    four_count_w++;
-                                    unmet4_w = 0;
-                                    int templist[] = { 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50 };
-                                    kind = rspick(templist, 18);
-                                }
-                            }
-                            else if (unmet4_c > 17) {
-                                if (temp2 < (long long int) (ULTRAPOS - ULTRAPOS / (10 * unmet4_c - 168))) {
-                                    type = 1;
-                                    four_count_c++;
-                                    unmet4_c = 0;
-                                    int templist[] = { 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32 };
-                                    kind = rspick(templist, 16);
-                                }
-                                else {
-                                    type = 2;
-                                    four_count_w++;
-                                    unmet4_w = 0;
-                                    int templist[] = { 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50 };
-                                    kind = rspick(templist, 18);
-                                }
-                            }
-                            else {
-                                if (temp2 < (long long int) (ULTRAPOS - ULTRAPOS / (10 * unmet4_w - 168))) {
-                                    type = 2;
-                                    four_count_w++;
-                                    unmet4_w = 0;
-                                    int templist[] = { 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50 };
-                                    kind = rspick(templist, 18);
-                                }
-                                else {
-                                    type = 1;
-                                    four_count_c++;
-                                    unmet4_c = 0;
-                                    int templist[] = { 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32 };
-                                    kind = rspick(templist, 16);
-                                }
-                            }
-                        }
-                        else {
-                            star = 3;
-                            type = 2;
-                            kind = rspick(three_g, 13);
-                        }
-                    }
-                    else if (five_star_assurance_number < 90 && five_star_assurance_number > 73 && four_star_assurance_number == 9) {
-                        if (temp1 < (long long int) (ULTRAPOS / 1000 * 6) + ((long long int)(five_star_assurance_number) - 73) * (long long int)(ULTRAPOS / 1000 * 60)) {
-                            star = 5;
-                            five_count++;
-                            ave_fives += five_star_assurance_number;
-                            if (five_star_assurance_number > max_fives) { max_fives = five_star_assurance_number; max_fivesth = five_count; max_fivecount = count; }
-                            if (five_star_assurance_number < min_fives) { min_fives = five_star_assurance_number; min_fivesth = five_count; min_fivecount = count; }
-                            five_star_assurance_number = 0;
-                            if (unmet5_c < 148 && unmet5_w < 148) {
-                                if (temp2 < (long long int) ULTRAPOS / 2) {
-                                    type = 1;
-                                    five_count_c++;
-                                    unmet5_c = 0;
-                                    int templist[] = { 1, 2, 3, 4, 5 };
-                                    kind = rspick(templist, 5);
-                                }
-                                else {
-                                    type = 2;
-                                    five_count_w++;
-                                    unmet5_w = 0;
-                                    int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
-                                    kind = rspick(templist, 10);
-                                }
-                            }
-                            else if (unmet5_c > 147) {
-                                if (temp2 < (long long int) (ULTRAPOS - ULTRAPOS / (10 * unmet5_c - 1468))) {
-                                    type = 1;
-                                    five_count_c++;
-                                    unmet5_c = 0;
-                                    int templist[] = { 1, 2, 3, 4, 5 };
-                                    kind = rspick(templist, 5);
-                                }
-                                else {
-                                    type = 2;
-                                    five_count_w++;
-                                    unmet5_w = 0;
-                                    int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
-                                    kind = rspick(templist, 10);
-                                }
-                            }
-                            else {
-                                if (temp2 < (long long int) (ULTRAPOS - ULTRAPOS / (10 * unmet5_w - 1468))) {
-                                    type = 2;
-                                    five_count_w++;
-                                    unmet5_w = 0;
-                                    int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
-                                    kind = rspick(templist, 10);
-                                }
-                                else {
-                                    type = 1;
-                                    five_count_c++;
-                                    unmet5_c = 0;
-                                    int templist[] = { 1, 2, 3, 4, 5 };
-                                    kind = rspick(templist, 5);
-                                }
-                            }
-                        }
-                        else if (temp1 < (long long int) (ULTRAPOS / 1000 * 567) + ((long long int)(five_star_assurance_number) - 73) * (long long int)(ULTRAPOS / 1000 * 60)) {
-                            star = 4;
-                            four_count++;
-                            four_star_assurance_number = 0;
-                            if (unmet4_c < 18 && unmet4_w < 18) {
-                                if (temp2 < (long long int) ULTRAPOS / 2) {
-                                    type = 1;
-                                    four_count_c++;
-                                    unmet4_c = 0;
-                                    int templist[] = { 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32 };
-                                    kind = rspick(templist, 16);
-                                }
-                                else {
-                                    type = 2;
-                                    four_count_w++;
-                                    unmet4_w = 0;
-                                    int templist[] = { 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50 };
-                                    kind = rspick(templist, 18);
-                                }
-                            }
-                            else if (unmet4_c > 17) {
-                                if (temp2 < (long long int) (ULTRAPOS - ULTRAPOS / (10 * unmet4_c - 168))) {
-                                    type = 1;
-                                    four_count_c++;
-                                    unmet4_c = 0;
-                                    int templist[] = { 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32 };
-                                    kind = rspick(templist, 16);
-                                }
-                                else {
-                                    type = 2;
-                                    four_count_w++;
-                                    unmet4_w = 0;
-                                    int templist[] = { 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50 };
-                                    kind = rspick(templist, 18);
-                                }
-                            }
-                            else {
-                                if (temp2 < (long long int) (ULTRAPOS - ULTRAPOS / (10 * unmet4_w - 168))) {
-                                    type = 2;
-                                    four_count_w++;
-                                    unmet4_w = 0;
-                                    int templist[] = { 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50 };
-                                    kind = rspick(templist, 18);
-                                }
-                                else {
-                                    type = 1;
-                                    four_count_c++;
-                                    unmet4_c = 0;
-                                    int templist[] = { 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32 };
-                                    kind = rspick(templist, 16);
-                                }
-                            }
-                        }
-                        else {
-                            star = 3;
-                            type = 2;
-                            kind = rspick(three_g, 13);
-                        }
-                    }
-                    else if (five_star_assurance_number < 90 && five_star_assurance_number > 73 && four_star_assurance_number > 9) {
-                        if (temp1 < (long long int) (ULTRAPOS / 1000 * 6) + ((long long int)(five_star_assurance_number) - 73) * (long long int)(ULTRAPOS / 1000 * 60)) {
-                            star = 5;
-                            five_count++;
-                            ave_fives += five_star_assurance_number;
-                            if (five_star_assurance_number > max_fives) { max_fives = five_star_assurance_number; max_fivesth = five_count; max_fivecount = count; }
-                            if (five_star_assurance_number < min_fives) { min_fives = five_star_assurance_number; min_fivesth = five_count; min_fivecount = count; }
-                            five_star_assurance_number = 0;
-                            if (unmet5_c < 148 && unmet5_w < 148) {
-                                if (temp2 < (long long int) ULTRAPOS / 2) {
-                                    type = 1;
-                                    five_count_c++;
-                                    unmet5_c = 0;
-                                    int templist[] = { 1, 2, 3, 4, 5 };
-                                    kind = rspick(templist, 5);
-                                }
-                                else {
-                                    type = 2;
-                                    five_count_w++;
-                                    unmet5_w = 0;
-                                    int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
-                                    kind = rspick(templist, 10);
-                                }
-                            }
-                            else if (unmet5_c > 147) {
-                                if (temp2 < (long long int) (ULTRAPOS - ULTRAPOS / (10 * unmet5_c - 1468))) {
-                                    type = 1;
-                                    five_count_c++;
-                                    unmet5_c = 0;
-                                    int templist[] = { 1, 2, 3, 4, 5 };
-                                    kind = rspick(templist, 5);
-                                }
-                                else {
-                                    type = 2;
-                                    five_count_w++;
-                                    unmet5_w = 0;
-                                    int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
-                                    kind = rspick(templist, 10);
-                                }
-                            }
-                            else {
-                                if (temp2 < (long long int) (ULTRAPOS - ULTRAPOS / (10 * unmet5_w - 1468))) {
-                                    type = 2;
-                                    five_count_w++;
-                                    unmet5_w = 0;
-                                    int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
-                                    kind = rspick(templist, 10);
-                                }
-                                else {
-                                    type = 1;
-                                    five_count_c++;
-                                    unmet5_c = 0;
-                                    int templist[] = { 1, 2, 3, 4, 5 };
-                                    kind = rspick(templist, 5);
-                                }
-                            }
-                        }
-                        else {
-                            star = 4;
-                            four_count++;
-                            four_star_assurance_number = 0;
-                            if (unmet4_c < 18 && unmet4_w < 18) {
-                                if (temp2 < (long long int) ULTRAPOS / 2) {
-                                    type = 1;
-                                    four_count_c++;
-                                    unmet4_c = 0;
-                                    int templist[] = { 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32 };
-                                    kind = rspick(templist, 16);
-                                }
-                                else {
-                                    type = 2;
-                                    four_count_w++;
-                                    unmet4_w = 0;
-                                    int templist[] = { 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50 };
-                                    kind = rspick(templist, 18);
-                                }
-                            }
-                            else if (unmet4_c > 17) {
-                                if (temp2 < (long long int) (ULTRAPOS - ULTRAPOS / (10 * unmet4_c - 168))) {
-                                    type = 1;
-                                    four_count_c++;
-                                    unmet4_c = 0;
-                                    int templist[] = { 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32 };
-                                    kind = rspick(templist, 16);
-                                }
-                                else {
-                                    type = 2;
-                                    four_count_w++;
-                                    unmet4_w = 0;
-                                    int templist[] = { 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50 };
-                                    kind = rspick(templist, 18);
-                                }
-                            }
-                            else {
-                                if (temp2 < (long long int) (ULTRAPOS - ULTRAPOS / (10 * unmet4_w - 168))) {
-                                    type = 2;
-                                    four_count_w++;
-                                    unmet4_w = 0;
-                                    int templist[] = { 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50 };
-                                    kind = rspick(templist, 18);
-                                }
-                                else {
-                                    type = 1;
-                                    four_count_c++;
-                                    unmet4_c = 0;
-                                    int templist[] = { 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32 };
-                                    kind = rspick(templist, 16);
-                                }
-                            }
-                        }
-                    }
-                    else {
-                        star = 5;
-                        five_count++;
-                        ave_fives += five_star_assurance_number;
-                        if (five_star_assurance_number > max_fives) { max_fives = five_star_assurance_number; max_fivesth = five_count; max_fivecount = count; }
-                        if (five_star_assurance_number < min_fives) { min_fives = five_star_assurance_number; min_fivesth = five_count; min_fivecount = count; }
-                        five_star_assurance_number = 0;
-                        if (unmet5_c < 148 && unmet5_w < 148) {
-                            if (temp2 < (long long int) ULTRAPOS / 2) {
-                                type = 1;
-                                five_count_c++;
-                                unmet5_c = 0;
-                                kind = rspick(nup_five_c, 5);
-                            }
-                            else {
-                                type = 2;
-                                five_count_w++;
-                                unmet5_w = 0;
-                                int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
-                                kind = rspick(templist, 10);
-                            }
-                        }
-                        else if (unmet5_c > 147) {
-                            if (temp2 < (long long int) (ULTRAPOS - ULTRAPOS / (10 * unmet5_c - 1468))) {
-                                type = 1;
-                                five_count_c++;
-                                unmet5_c = 0;
-                                kind = rspick(nup_five_c, 5);
-                            }
-                            else {
-                                type = 2;
-                                five_count_w++;
-                                unmet5_w = 0;
-                                int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
-                                kind = rspick(templist, 10);
-                            }
-                        }
-                        else {
-                            if (temp2 < (long long int) (ULTRAPOS - ULTRAPOS / (10 * unmet5_w - 1468))) {
-                                type = 2;
-                                five_count_w++;
-                                unmet5_w = 0;
-                                int templist[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
-                                kind = rspick(templist, 10);
-                            }
-                            else {
-                                type = 1;
-                                five_count_c++;
-                                unmet5_c = 0;
-                                kind = rspick(nup_five_c, 5);
-                            }
-                        }
-                    }
-                    std::cout << count + 1 << "(" << five_star_assurance_number << ")" << " ";
-                    switch (kind) {
-                    case 1: { std::cout << "!!!!!*****¿ÌÇç" << endl; pcount[0]++; } break;
-                    case 2: { std::cout << "!!!!!*****ÄªÄÈ" << endl; pcount[1]++; } break;
-                    case 3: { std::cout << "!!!!!*****ÆßÆß" << endl; pcount[2]++; } break;
-                    case 4: { std::cout << "!!!!!*****µÏÂ¬¿Ë" << endl; pcount[3]++; } break;
-                    case 5: { std::cout << "!!!!!*****ÇÙ" << endl; pcount[4]++; } break;
-                    case 6: { std::cout << "!!!!!*****°¢ÄªË¹Ö®¹­" << endl; pcount[5]++; } break;
-                    case 7: { std::cout << "!!!!!*****Ìì¿ÕÖ®Òí" << endl; pcount[6]++; } break;
-                    case 8: { std::cout << "!!!!!*****ËÄ·çÔ­µä" << endl; pcount[7]++; } break;
-                    case 9: { std::cout << "!!!!!*****Ìì¿ÕÖ®¾í" << endl; pcount[8]++; } break;
-                    case 10: { std::cout << "!!!!!*****ºÍè±ğ°" << endl; pcount[9]++; } break;
-                    case 11: { std::cout << "!!!!!*****Ìì¿ÕÖ®¼¹" << endl; pcount[10]++; } break;
-                    case 12: { std::cout << "!!!!!*****ÀÇµÄÄ©Â·" << endl; pcount[11]++; } break;
-                    case 13: { std::cout << "!!!!!*****Ìì¿ÕÖ®°Á" << endl; pcount[12]++; } break;
-                    case 14: { std::cout << "!!!!!*****Ìì¿ÕÖ®ÈĞ" << endl; pcount[13]++; } break;
-                    case 15: { std::cout << "!!!!!*****·çÓ¥½£" << endl; pcount[14]++; } break;
-                    case 16: { std::cout << "!!****ÂŞÉ¯ÀòÑÇ" << endl; pcount[15]++; } break;
-                    case 17: { std::cout << "!!****ĞÁìÍ" << endl; pcount[16]++; } break;
-                    case 18: { std::cout << "!!****É°ÌÇ" << endl; pcount[17]++; } break;
-                    case 19: { std::cout << "!!****µÏ°ÂÄÈ" << endl; pcount[18]++; } break;
-                    case 20: { std::cout << "!!****ÖØÔÆ" << endl; pcount[19]++; } break;
-                    case 21: { std::cout << "!!****Åµ°¬¶û" << endl; pcount[20]++; } break;
-                    case 22: { std::cout << "!!****°àÄáÌØ" << endl; pcount[21]++; } break;
-                    case 23: { std::cout << "!!****·ÆĞ»¶û" << endl; pcount[22]++; } break;
-                    case 24: { std::cout << "!!****Äı¹â" << endl; pcount[23]++; } break;
-                    case 25: { std::cout << "!!****ĞĞÇï" << endl; pcount[24]++; } break;
-                    case 26: { std::cout << "!!****±±¶·" << endl; pcount[25]++; } break;
-                    case 27: { std::cout << "!!****ÏãÁâ" << endl; pcount[26]++; } break;
-                    case 28: { std::cout << "!!****°²°Ø" << endl; pcount[27]++; } break;
-                    case 29: { std::cout << "!!****À×Ôó" << endl; pcount[28]++; } break;
-                    case 30: { std::cout << "!!****¿­ÑÇ" << endl; pcount[29]++; } break;
-                    case 31: { std::cout << "!!****°Å°ÅÀ­" << endl; pcount[30]++; } break;
-                    case 32: { std::cout << "!!****ÀöÉ¯" << endl; pcount[31]++; } break;
-                    case 33: { std::cout << "!!****¹­²Ø" << endl; pcount[32]++; } break;
-                    case 34: { std::cout << "!!****¼ÀÀñ¹­" << endl; pcount[33]++; } break;
-                    case 35: { std::cout << "!!****¾øÏÒ" << endl; pcount[34]++; } break;
-                    case 36: { std::cout << "!!****Î÷·çÁÔ¹­" << endl; pcount[35]++; } break;
-                    case 37: { std::cout << "!!****ÕÑĞÄ" << endl; pcount[36]++; } break;
-                    case 38: { std::cout << "!!****¼ÀÀñ²ĞÕÂ" << endl; pcount[37]++; } break;
-                    case 39: { std::cout << "!!****Á÷ÀËÀÖÕÂ" << endl; pcount[38]++; } break;
-                    case 40: { std::cout << "!!****Î÷·çÃØµä" << endl; pcount[39]++; } break;
-                    case 41: { std::cout << "!!****Î÷·ç³¤Ç¹" << endl; pcount[40]++; } break;
-                    case 42: { std::cout << "!!****Ï»ÀïÃğ³½" << endl; pcount[41]++; } break;
-                    case 43: { std::cout << "!!****Óê²Ã" << endl; pcount[42]++; } break;
-                    case 44: { std::cout << "!!****¼ÀÀñ´ó½£" << endl; pcount[43]++; } break;
-                    case 45: { std::cout << "!!****ÖÓ½£" << endl; pcount[44]++; } break;
-                    case 46: { std::cout << "!!****Î÷·ç´ó½£" << endl; pcount[45]++; } break;
-                    case 47: { std::cout << "!!****Ï»ÀïÁúÒ÷" << endl; pcount[46]++; } break;
-                    case 48: { std::cout << "!!****¼ÀÀñ½£" << endl; pcount[47]++; } break;
-                    case 49: { std::cout << "!!****µÑ½£" << endl; pcount[48]++; } break;
-                    case 50: { std::cout << "!!****Î÷·ç½£" << endl; pcount[49]++; } break;
-                    case 51: { std::cout << "***ÁÔ¹­" << endl; pcount[50]++; } break;
-                    case 52: { std::cout << "***ÉñÉäÊÖÖ®ÊÄ" << endl; pcount[51]++; } break;
-                    case 53: { std::cout << "***Ñ»Óğ¹­" << endl; pcount[52]++; } break;
-                    case 54: { std::cout << "***ôäÓñ·¨Çò" << endl; pcount[53]++; } break;
-                    case 55: { std::cout << "***ÌÖÁúÓ¢½ÜÌ·" << endl; pcount[54]++; } break;
-                    case 56: { std::cout << "***Ä§µ¼Ğ÷ÂÛ" << endl; pcount[55]++; } break;
-                    case 57: { std::cout << "***ºÚÓ§Ç¹" << endl; pcount[56]++; } break;
-                    case 58: { std::cout << "***ÒÔÀí·şÈË" << endl; pcount[57]++; } break;
-                    case 59: { std::cout << "***ãåÔ¡ÁúÑªµÄ½£" << endl; pcount[58]++; } break;
-                    case 60: { std::cout << "***ÌúÓ°À«½£" << endl; pcount[59]++; } break;
-                    case 61: { std::cout << "***·ÉÌìÓù½£" << endl; pcount[60]++; } break;
-                    case 62: { std::cout << "***ÀèÃ÷Éñ½£" << endl; pcount[61]++; } break;
-                    case 63: { std::cout << "***ÀäÈĞ" << endl; pcount[62]++; } break;
-                    case 64: { std::cout << "!!!!!*****ÎÂµÏ" << endl; pcount[63]++; } break;
-                    case 65: { std::cout << "!!!!!*****¿ÉÀò" << endl; pcount[64]++; } break;
-                    case 66: { std::cout << "!!!!!*****´ï´ïÀûÑÇ" << endl; pcount[65]++; } break;
-                    case 67: { std::cout << "!!!!!*****ÖÓÀë" << endl; pcount[66]++; } break;
-                    case 68: { std::cout << "!!!!!*****°¢±´¶à" << endl; pcount[67]++; } break;
-                    case 69: { std::cout << "!!!!!*****¸ÊÓê" << endl; pcount[68]++; } break;
-                    case 70: { std::cout << "!!!!!*****÷Ì" << endl; pcount[69]++; } break;
-                    case 71: { std::cout << "!!!!!*****ºúÌÒ" << endl; pcount[70]++; } break;
-                    case 72: { std::cout << "!!****ÑÌç³" << endl; pcount[71]++; } break;
-                    case 73: { std::cout << "!!!!!*****ÓÅÇ‰" << endl; pcount[72]++; } break;
-                    case 74: { std::cout << "!!!!!*****³¾ÊÀÖ®Ëø" << endl; pcount[73]++; } break;
-                    case 75: { std::cout << "!!!!!*****¹áºçÖ®éÃ" << endl; pcount[74]++; } break;
-                    case 76: { std::cout << "!!!!!*****ÎŞ¹¤Ö®½£" << endl; pcount[75]++; } break;
-                    case 77: { std::cout << "!!!!!*****í½·åÖ®ÈĞ" << endl; pcount[76]++; } break;
-                    case 78: { std::cout << "!!!!!*****ÅÍÑÒ½áÂÌ" << endl; pcount[77]++; } break;
-                    case 79: { std::cout << "!!!!!*****»¤Ä¦Ö®ÕÈ" << endl; pcount[78]++; } break;
-                    case 80: { std::cout << "!!****Ç§ÑÒ¹Å½£" << endl; pcount[79]++; } break;
-                    case 81: { std::cout << "!!****Ç§ÑÒ³¤Ç¹" << endl; pcount[80]++; } break;
-                    case 82: { std::cout << "!!!!!*****ÖÕÄ©àµÌ¾Ö®Ê«" << endl; pcount[81]++; } break;
-                    case 83: { std::cout << "!!****°µÏïÉÁ¹â" << endl; pcount[82]++; } break;
-                    case 84: { std::cout << "!!****°µÏïµÄ¾ÆÓëÊ«" << endl; pcount[83]++; } break;
-                    case 85: { std::cout << "!!****°µÏïÁÔÊÖ" << endl; pcount[84]++; } break;
-                    case 86: { std::cout << "!!!!!*****ËÉô¥ÏìÆğÖ®Ê±" << endl; pcount[85]++; } break;
-                    case 87: { std::cout << "Placeholder" << endl; pcount[86]++; } break;
-                    case 88: { std::cout << "Placeholder" << endl; pcount[87]++; } break;
-                    case 89: { std::cout << "Placeholder" << endl; pcount[88]++; } break;
-                    case 90: { std::cout << "Placeholder" << endl; pcount[89]++; } break;
-                    case 91: { std::cout << "Placeholder" << endl; pcount[90]++; } break;
-                    case 92: { std::cout << "Placeholder" << endl; pcount[91]++; } break;
-                    case 93: { std::cout << "Placeholder" << endl; pcount[92]++; } break;
-                    case 94: { std::cout << "Placeholder" << endl; pcount[93]++; } break;
-                    case 95: { std::cout << "Placeholder" << endl; pcount[94]++; } break;
-                    case 96: { std::cout << "Placeholder" << endl; pcount[95]++; } break;
-                    case 97: { std::cout << "Placeholder" << endl; pcount[96]++; } break;
-                    case 98: { std::cout << "Placeholder" << endl; pcount[97]++; } break;
-                    case 99: { std::cout << "Placeholder" << endl; pcount[98]++; } break;
-                    case 100: { std::cout << "Placeholder" << endl; pcount[99]++; } break;
-                    case 101: { std::cout << "Placeholder" << endl; pcount[100]++; } break;
-                    case 102: { std::cout << "Placeholder" << endl; pcount[101]++; } break;
-                    case 103: { std::cout << "Placeholder" << endl; pcount[102]++; } break;
-                    case 104: { std::cout << "Placeholder" << endl; pcount[103]++; } break;
-                    case 105: { std::cout << "Placeholder" << endl; pcount[104]++; } break;
-                    case 106: { std::cout << "Placeholder" << endl; pcount[105]++; } break;
-                    case 107: { std::cout << "Placeholder" << endl; pcount[106]++; } break;
-                    case 108: { std::cout << "Placeholder" << endl; pcount[107]++; } break;
-                    case 109: { std::cout << "Placeholder" << endl; pcount[108]++; } break;
-                    case 110: { std::cout << "Placeholder" << endl; pcount[109]++; } break;
-                    case 111: { std::cout << "Placeholder" << endl; pcount[110]++; } break;
-                    case 112: { std::cout << "Placeholder" << endl; pcount[111]++; } break;
-                    case 113: { std::cout << "Placeholder" << endl; pcount[112]++; } break;
-                    case 114: { std::cout << "Placeholder" << endl; pcount[113]++; } break;
-                    case 115: { std::cout << "Placeholder" << endl; pcount[114]++; } break;
-                    case 116: { std::cout << "Placeholder" << endl; pcount[115]++; } break;
-                    case 117: { std::cout << "Placeholder" << endl; pcount[116]++; } break;
-                    case 118: { std::cout << "Placeholder" << endl; pcount[117]++; } break;
-                    case 119: { std::cout << "Placeholder" << endl; pcount[118]++; } break;
-                    case 120: { std::cout << "Placeholder" << endl; pcount[119]++; } break;
-                    case 121: { std::cout << "Placeholder" << endl; pcount[120]++; } break;
-                    case 122: { std::cout << "Placeholder" << endl; pcount[121]++; } break;
-                    case 123: { std::cout << "Placeholder" << endl; pcount[122]++; } break;
-                    case 124: { std::cout << "Placeholder" << endl; pcount[123]++; } break;
-                    case 125: { std::cout << "Placeholder" << endl; pcount[124]++; } break;
-                    case 126: { std::cout << "Placeholder" << endl; pcount[125]++; } break;
-                    case 127: { std::cout << "Placeholder" << endl; pcount[126]++; } break;
-                    case 128: { std::cout << "Placeholder" << endl; pcount[127]++; } break;
-                    default: break;
-                    }
-                    wishes_number--;
-                    count++;
-                    if (!(star == 5 && type == 1)) unmet5_c++;
-                    if (!(star == 5 && type == 2)) unmet5_w++;
-                    if (!(star == 4 && type == 1)) unmet4_c++;
-                    if (!(star == 4 && type == 2)) unmet4_w++;
-                    five_star_assurance_number++;
-                    four_star_assurance_number++;
-                    for (int templuck = 0; templuck < 9; templuck++) {
-                        lucklocation[templuck] = lucklocation[templuck + 1];
-                        lucksublocation[templuck] = lucksublocation[templuck + 1];
-                        luckkind[templuck] = luckkind[templuck + 1];
-                        luckstar[templuck] = luckstar[templuck + 1];
-                    }
-                    lucklocation[9] = count;
-                    lucksublocation[9] = (long long int) five_star_assurance_number - 1;
-                    luckkind[9] = kind;
-                    luckstar[9] = star;
-                    luck = 0;
-                    if (star == 4 || star == 5) {
-                        for (int templuck = 0; templuck < 10; templuck++) {
-                            if (luckstar[templuck] == 5) luck += 6229;
-                            else if (luckstar[templuck] == 4) luck += 2297;
                             else luck += 0;
                         }
                     }
@@ -22198,92 +20395,92 @@ int main() {
                     }
                     std::cout << count + 1 << "(" << five_star_assurance_number << ")" << " ";
                     switch (kind) {
-                    case 1: { std::cout << "!!!!!*****¿ÌÇç" << endl; pcount[0]++; } break;
-                    case 2: { std::cout << "!!!!!*****ÄªÄÈ" << endl; pcount[1]++; } break;
-                    case 3: { std::cout << "!!!!!*****ÆßÆß" << endl; pcount[2]++; } break;
-                    case 4: { std::cout << "!!!!!*****µÏÂ¬¿Ë" << endl; pcount[3]++; } break;
-                    case 5: { std::cout << "!!!!!*****ÇÙ" << endl; pcount[4]++; } break;
-                    case 6: { std::cout << "!!!!!*****°¢ÄªË¹Ö®¹­" << endl; pcount[5]++; } break;
-                    case 7: { std::cout << "!!!!!*****Ìì¿ÕÖ®Òí" << endl; pcount[6]++; } break;
-                    case 8: { std::cout << "!!!!!*****ËÄ·çÔ­µä" << endl; pcount[7]++; } break;
-                    case 9: { std::cout << "!!!!!*****Ìì¿ÕÖ®¾í" << endl; pcount[8]++; } break;
-                    case 10: { std::cout << "!!!!!*****ºÍè±ğ°" << endl; pcount[9]++; } break;
-                    case 11: { std::cout << "!!!!!*****Ìì¿ÕÖ®¼¹" << endl; pcount[10]++; } break;
-                    case 12: { std::cout << "!!!!!*****ÀÇµÄÄ©Â·" << endl; pcount[11]++; } break;
-                    case 13: { std::cout << "!!!!!*****Ìì¿ÕÖ®°Á" << endl; pcount[12]++; } break;
-                    case 14: { std::cout << "!!!!!*****Ìì¿ÕÖ®ÈĞ" << endl; pcount[13]++; } break;
-                    case 15: { std::cout << "!!!!!*****·çÓ¥½£" << endl; pcount[14]++; } break;
-                    case 16: { std::cout << "!!****ÂŞÉ¯ÀòÑÇ" << endl; pcount[15]++; } break;
-                    case 17: { std::cout << "!!****ĞÁìÍ" << endl; pcount[16]++; } break;
-                    case 18: { std::cout << "!!****É°ÌÇ" << endl; pcount[17]++; } break;
-                    case 19: { std::cout << "!!****µÏ°ÂÄÈ" << endl; pcount[18]++; } break;
-                    case 20: { std::cout << "!!****ÖØÔÆ" << endl; pcount[19]++; } break;
-                    case 21: { std::cout << "!!****Åµ°¬¶û" << endl; pcount[20]++; } break;
-                    case 22: { std::cout << "!!****°àÄáÌØ" << endl; pcount[21]++; } break;
-                    case 23: { std::cout << "!!****·ÆĞ»¶û" << endl; pcount[22]++; } break;
-                    case 24: { std::cout << "!!****Äı¹â" << endl; pcount[23]++; } break;
-                    case 25: { std::cout << "!!****ĞĞÇï" << endl; pcount[24]++; } break;
-                    case 26: { std::cout << "!!****±±¶·" << endl; pcount[25]++; } break;
-                    case 27: { std::cout << "!!****ÏãÁâ" << endl; pcount[26]++; } break;
-                    case 28: { std::cout << "!!****°²°Ø" << endl; pcount[27]++; } break;
-                    case 29: { std::cout << "!!****À×Ôó" << endl; pcount[28]++; } break;
-                    case 30: { std::cout << "!!****¿­ÑÇ" << endl; pcount[29]++; } break;
-                    case 31: { std::cout << "!!****°Å°ÅÀ­" << endl; pcount[30]++; } break;
-                    case 32: { std::cout << "!!****ÀöÉ¯" << endl; pcount[31]++; } break;
-                    case 33: { std::cout << "!!****¹­²Ø" << endl; pcount[32]++; } break;
-                    case 34: { std::cout << "!!****¼ÀÀñ¹­" << endl; pcount[33]++; } break;
-                    case 35: { std::cout << "!!****¾øÏÒ" << endl; pcount[34]++; } break;
-                    case 36: { std::cout << "!!****Î÷·çÁÔ¹­" << endl; pcount[35]++; } break;
-                    case 37: { std::cout << "!!****ÕÑĞÄ" << endl; pcount[36]++; } break;
-                    case 38: { std::cout << "!!****¼ÀÀñ²ĞÕÂ" << endl; pcount[37]++; } break;
-                    case 39: { std::cout << "!!****Á÷ÀËÀÖÕÂ" << endl; pcount[38]++; } break;
-                    case 40: { std::cout << "!!****Î÷·çÃØµä" << endl; pcount[39]++; } break;
-                    case 41: { std::cout << "!!****Î÷·ç³¤Ç¹" << endl; pcount[40]++; } break;
-                    case 42: { std::cout << "!!****Ï»ÀïÃğ³½" << endl; pcount[41]++; } break;
-                    case 43: { std::cout << "!!****Óê²Ã" << endl; pcount[42]++; } break;
-                    case 44: { std::cout << "!!****¼ÀÀñ´ó½£" << endl; pcount[43]++; } break;
-                    case 45: { std::cout << "!!****ÖÓ½£" << endl; pcount[44]++; } break;
-                    case 46: { std::cout << "!!****Î÷·ç´ó½£" << endl; pcount[45]++; } break;
-                    case 47: { std::cout << "!!****Ï»ÀïÁúÒ÷" << endl; pcount[46]++; } break;
-                    case 48: { std::cout << "!!****¼ÀÀñ½£" << endl; pcount[47]++; } break;
-                    case 49: { std::cout << "!!****µÑ½£" << endl; pcount[48]++; } break;
-                    case 50: { std::cout << "!!****Î÷·ç½£" << endl; pcount[49]++; } break;
-                    case 51: { std::cout << "***ÁÔ¹­" << endl; pcount[50]++; } break;
-                    case 52: { std::cout << "***ÉñÉäÊÖÖ®ÊÄ" << endl; pcount[51]++; } break;
-                    case 53: { std::cout << "***Ñ»Óğ¹­" << endl; pcount[52]++; } break;
-                    case 54: { std::cout << "***ôäÓñ·¨Çò" << endl; pcount[53]++; } break;
-                    case 55: { std::cout << "***ÌÖÁúÓ¢½ÜÌ·" << endl; pcount[54]++; } break;
-                    case 56: { std::cout << "***Ä§µ¼Ğ÷ÂÛ" << endl; pcount[55]++; } break;
-                    case 57: { std::cout << "***ºÚÓ§Ç¹" << endl; pcount[56]++; } break;
-                    case 58: { std::cout << "***ÒÔÀí·şÈË" << endl; pcount[57]++; } break;
-                    case 59: { std::cout << "***ãåÔ¡ÁúÑªµÄ½£" << endl; pcount[58]++; } break;
-                    case 60: { std::cout << "***ÌúÓ°À«½£" << endl; pcount[59]++; } break;
-                    case 61: { std::cout << "***·ÉÌìÓù½£" << endl; pcount[60]++; } break;
-                    case 62: { std::cout << "***ÀèÃ÷Éñ½£" << endl; pcount[61]++; } break;
-                    case 63: { std::cout << "***ÀäÈĞ" << endl; pcount[62]++; } break;
-                    case 64: { std::cout << "!!!!!*****ÎÂµÏ" << endl; pcount[63]++; } break;
-                    case 65: { std::cout << "!!!!!*****¿ÉÀò" << endl; pcount[64]++; } break;
-                    case 66: { std::cout << "!!!!!*****´ï´ïÀûÑÇ" << endl; pcount[65]++; } break;
-                    case 67: { std::cout << "!!!!!*****ÖÓÀë" << endl; pcount[66]++; } break;
-                    case 68: { std::cout << "!!!!!*****°¢±´¶à" << endl; pcount[67]++; } break;
-                    case 69: { std::cout << "!!!!!*****¸ÊÓê" << endl; pcount[68]++; } break;
-                    case 70: { std::cout << "!!!!!*****÷Ì" << endl; pcount[69]++; } break;
-                    case 71: { std::cout << "!!!!!*****ºúÌÒ" << endl; pcount[70]++; } break;
-                    case 72: { std::cout << "!!****ÑÌç³" << endl; pcount[71]++; } break;
-                    case 73: { std::cout << "!!!!!*****ÓÅÇ‰" << endl; pcount[72]++; } break;
-                    case 74: { std::cout << "!!!!!*****³¾ÊÀÖ®Ëø" << endl; pcount[73]++; } break;
-                    case 75: { std::cout << "!!!!!*****¹áºçÖ®éÃ" << endl; pcount[74]++; } break;
-                    case 76: { std::cout << "!!!!!*****ÎŞ¹¤Ö®½£" << endl; pcount[75]++; } break;
-                    case 77: { std::cout << "!!!!!*****í½·åÖ®ÈĞ" << endl; pcount[76]++; } break;
-                    case 78: { std::cout << "!!!!!*****ÅÍÑÒ½áÂÌ" << endl; pcount[77]++; } break;
-                    case 79: { std::cout << "!!!!!*****»¤Ä¦Ö®ÕÈ" << endl; pcount[78]++; } break;
-                    case 80: { std::cout << "!!****Ç§ÑÒ¹Å½£" << endl; pcount[79]++; } break;
-                    case 81: { std::cout << "!!****Ç§ÑÒ³¤Ç¹" << endl; pcount[80]++; } break;
-                    case 82: { std::cout << "!!!!!*****ÖÕÄ©àµÌ¾Ö®Ê«" << endl; pcount[81]++; } break;
-                    case 83: { std::cout << "!!****°µÏïÉÁ¹â" << endl; pcount[82]++; } break;
-                    case 84: { std::cout << "!!****°µÏïµÄ¾ÆÓëÊ«" << endl; pcount[83]++; } break;
-                    case 85: { std::cout << "!!****°µÏïÁÔÊÖ" << endl; pcount[84]++; } break;
-                    case 86: { std::cout << "!!!!!*****ËÉô¥ÏìÆğÖ®Ê±" << endl; pcount[85]++; } break;
+                    case 1: { std::cout << "!!!!!*****åˆ»æ™´" << endl; pcount[0]++; } break;
+                    case 2: { std::cout << "!!!!!*****è«å¨œ" << endl; pcount[1]++; } break;
+                    case 3: { std::cout << "!!!!!*****ä¸ƒä¸ƒ" << endl; pcount[2]++; } break;
+                    case 4: { std::cout << "!!!!!*****è¿ªå¢å…‹" << endl; pcount[3]++; } break;
+                    case 5: { std::cout << "!!!!!*****ç´" << endl; pcount[4]++; } break;
+                    case 6: { std::cout << "!!!!!*****é˜¿è«æ–¯ä¹‹å¼“" << endl; pcount[5]++; } break;
+                    case 7: { std::cout << "!!!!!*****å¤©ç©ºä¹‹ç¿¼" << endl; pcount[6]++; } break;
+                    case 8: { std::cout << "!!!!!*****å››é£åŸå…¸" << endl; pcount[7]++; } break;
+                    case 9: { std::cout << "!!!!!*****å¤©ç©ºä¹‹å·" << endl; pcount[8]++; } break;
+                    case 10: { std::cout << "!!!!!*****å’Œç’é¸¢" << endl; pcount[9]++; } break;
+                    case 11: { std::cout << "!!!!!*****å¤©ç©ºä¹‹è„Š" << endl; pcount[10]++; } break;
+                    case 12: { std::cout << "!!!!!*****ç‹¼çš„æœ«è·¯" << endl; pcount[11]++; } break;
+                    case 13: { std::cout << "!!!!!*****å¤©ç©ºä¹‹å‚²" << endl; pcount[12]++; } break;
+                    case 14: { std::cout << "!!!!!*****å¤©ç©ºä¹‹åˆƒ" << endl; pcount[13]++; } break;
+                    case 15: { std::cout << "!!!!!*****é£é¹°å‰‘" << endl; pcount[14]++; } break;
+                    case 16: { std::cout << "!!****ç½—èè‰äºš" << endl; pcount[15]++; } break;
+                    case 17: { std::cout << "!!****è¾›ç„±" << endl; pcount[16]++; } break;
+                    case 18: { std::cout << "!!****ç ‚ç³–" << endl; pcount[17]++; } break;
+                    case 19: { std::cout << "!!****è¿ªå¥¥å¨œ" << endl; pcount[18]++; } break;
+                    case 20: { std::cout << "!!****é‡äº‘" << endl; pcount[19]++; } break;
+                    case 21: { std::cout << "!!****è¯ºè‰¾å°”" << endl; pcount[20]++; } break;
+                    case 22: { std::cout << "!!****ç­å°¼ç‰¹" << endl; pcount[21]++; } break;
+                    case 23: { std::cout << "!!****è²è°¢å°”" << endl; pcount[22]++; } break;
+                    case 24: { std::cout << "!!****å‡å…‰" << endl; pcount[23]++; } break;
+                    case 25: { std::cout << "!!****è¡Œç§‹" << endl; pcount[24]++; } break;
+                    case 26: { std::cout << "!!****åŒ—æ–—" << endl; pcount[25]++; } break;
+                    case 27: { std::cout << "!!****é¦™è±" << endl; pcount[26]++; } break;
+                    case 28: { std::cout << "!!****å®‰æŸ" << endl; pcount[27]++; } break;
+                    case 29: { std::cout << "!!****é›·æ³½" << endl; pcount[28]++; } break;
+                    case 30: { std::cout << "!!****å‡¯äºš" << endl; pcount[29]++; } break;
+                    case 31: { std::cout << "!!****èŠ­èŠ­æ‹‰" << endl; pcount[30]++; } break;
+                    case 32: { std::cout << "!!****ä¸½è" << endl; pcount[31]++; } break;
+                    case 33: { std::cout << "!!****å¼“è—" << endl; pcount[32]++; } break;
+                    case 34: { std::cout << "!!****ç¥­ç¤¼å¼“" << endl; pcount[33]++; } break;
+                    case 35: { std::cout << "!!****ç»å¼¦" << endl; pcount[34]++; } break;
+                    case 36: { std::cout << "!!****è¥¿é£çŒå¼“" << endl; pcount[35]++; } break;
+                    case 37: { std::cout << "!!****æ˜­å¿ƒ" << endl; pcount[36]++; } break;
+                    case 38: { std::cout << "!!****ç¥­ç¤¼æ®‹ç« " << endl; pcount[37]++; } break;
+                    case 39: { std::cout << "!!****æµæµªä¹ç« " << endl; pcount[38]++; } break;
+                    case 40: { std::cout << "!!****è¥¿é£ç§˜å…¸" << endl; pcount[39]++; } break;
+                    case 41: { std::cout << "!!****è¥¿é£é•¿æª" << endl; pcount[40]++; } break;
+                    case 42: { std::cout << "!!****åŒ£é‡Œç­è¾°" << endl; pcount[41]++; } break;
+                    case 43: { std::cout << "!!****é›¨è£" << endl; pcount[42]++; } break;
+                    case 44: { std::cout << "!!****ç¥­ç¤¼å¤§å‰‘" << endl; pcount[43]++; } break;
+                    case 45: { std::cout << "!!****é’Ÿå‰‘" << endl; pcount[44]++; } break;
+                    case 46: { std::cout << "!!****è¥¿é£å¤§å‰‘" << endl; pcount[45]++; } break;
+                    case 47: { std::cout << "!!****åŒ£é‡Œé¾™åŸ" << endl; pcount[46]++; } break;
+                    case 48: { std::cout << "!!****ç¥­ç¤¼å‰‘" << endl; pcount[47]++; } break;
+                    case 49: { std::cout << "!!****ç¬›å‰‘" << endl; pcount[48]++; } break;
+                    case 50: { std::cout << "!!****è¥¿é£å‰‘" << endl; pcount[49]++; } break;
+                    case 51: { std::cout << "***çŒå¼“" << endl; pcount[50]++; } break;
+                    case 52: { std::cout << "***ç¥å°„æ‰‹ä¹‹èª“" << endl; pcount[51]++; } break;
+                    case 53: { std::cout << "***é¸¦ç¾½å¼“" << endl; pcount[52]++; } break;
+                    case 54: { std::cout << "***ç¿¡ç‰æ³•çƒ" << endl; pcount[53]++; } break;
+                    case 55: { std::cout << "***è®¨é¾™è‹±æ°è°­" << endl; pcount[54]++; } break;
+                    case 56: { std::cout << "***é­”å¯¼ç»ªè®º" << endl; pcount[55]++; } break;
+                    case 57: { std::cout << "***é»‘ç¼¨æª" << endl; pcount[56]++; } break;
+                    case 58: { std::cout << "***ä»¥ç†æœäºº" << endl; pcount[57]++; } break;
+                    case 59: { std::cout << "***æ²æµ´é¾™è¡€çš„å‰‘" << endl; pcount[58]++; } break;
+                    case 60: { std::cout << "***é“å½±é˜”å‰‘" << endl; pcount[59]++; } break;
+                    case 61: { std::cout << "***é£å¤©å¾¡å‰‘" << endl; pcount[60]++; } break;
+                    case 62: { std::cout << "***é»æ˜ç¥å‰‘" << endl; pcount[61]++; } break;
+                    case 63: { std::cout << "***å†·åˆƒ" << endl; pcount[62]++; } break;
+                    case 64: { std::cout << "!!!!!*****æ¸©è¿ª" << endl; pcount[63]++; } break;
+                    case 65: { std::cout << "!!!!!*****å¯è‰" << endl; pcount[64]++; } break;
+                    case 66: { std::cout << "!!!!!*****è¾¾è¾¾åˆ©äºš" << endl; pcount[65]++; } break;
+                    case 67: { std::cout << "!!!!!*****é’Ÿç¦»" << endl; pcount[66]++; } break;
+                    case 68: { std::cout << "!!!!!*****é˜¿è´å¤š" << endl; pcount[67]++; } break;
+                    case 69: { std::cout << "!!!!!*****ç”˜é›¨" << endl; pcount[68]++; } break;
+                    case 70: { std::cout << "!!!!!*****é­ˆ" << endl; pcount[69]++; } break;
+                    case 71: { std::cout << "!!!!!*****èƒ¡æ¡ƒ" << endl; pcount[70]++; } break;
+                    case 72: { std::cout << "!!****çƒŸç»¯" << endl; pcount[71]++; } break;
+                    case 73: { std::cout << "!!!!!*****ä¼˜èˆ" << endl; pcount[72]++; } break;
+                    case 74: { std::cout << "!!!!!*****å°˜ä¸–ä¹‹é”" << endl; pcount[73]++; } break;
+                    case 75: { std::cout << "!!!!!*****è´¯è™¹ä¹‹æ§Š" << endl; pcount[74]++; } break;
+                    case 76: { std::cout << "!!!!!*****æ— å·¥ä¹‹å‰‘" << endl; pcount[75]++; } break;
+                    case 77: { std::cout << "!!!!!*****æ–«å³°ä¹‹åˆƒ" << endl; pcount[76]++; } break;
+                    case 78: { std::cout << "!!!!!*****ç£å²©ç»“ç»¿" << endl; pcount[77]++; } break;
+                    case 79: { std::cout << "!!!!!*****æŠ¤æ‘©ä¹‹æ–" << endl; pcount[78]++; } break;
+                    case 80: { std::cout << "!!****åƒå²©å¤å‰‘" << endl; pcount[79]++; } break;
+                    case 81: { std::cout << "!!****åƒå²©é•¿æª" << endl; pcount[80]++; } break;
+                    case 82: { std::cout << "!!!!!*****ç»ˆæœ«å—Ÿå¹ä¹‹è¯—" << endl; pcount[81]++; } break;
+                    case 83: { std::cout << "!!****æš—å··é—ªå…‰" << endl; pcount[82]++; } break;
+                    case 84: { std::cout << "!!****æš—å··çš„é…’ä¸è¯—" << endl; pcount[83]++; } break;
+                    case 85: { std::cout << "!!****æš—å··çŒæ‰‹" << endl; pcount[84]++; } break;
+                    case 86: { std::cout << "!!!!!*****æ¾ç±å“èµ·ä¹‹æ—¶" << endl; pcount[85]++; } break;
                     case 87: { std::cout << "Placeholder" << endl; pcount[86]++; } break;
                     case 88: { std::cout << "Placeholder" << endl; pcount[87]++; } break;
                     case 89: { std::cout << "Placeholder" << endl; pcount[88]++; } break;
@@ -22473,92 +20670,92 @@ int main() {
                     }
                     std::cout << count + 1 << "(" << five_star_assurance_number << ")" << " ";
                     switch (kind) {
-                    case 1: { std::cout << "!!!!!*****¿ÌÇç" << endl; pcount[0]++; } break;
-                    case 2: { std::cout << "!!!!!*****ÄªÄÈ" << endl; pcount[1]++; } break;
-                    case 3: { std::cout << "!!!!!*****ÆßÆß" << endl; pcount[2]++; } break;
-                    case 4: { std::cout << "!!!!!*****µÏÂ¬¿Ë" << endl; pcount[3]++; } break;
-                    case 5: { std::cout << "!!!!!*****ÇÙ" << endl; pcount[4]++; } break;
-                    case 6: { std::cout << "!!!!!*****°¢ÄªË¹Ö®¹­" << endl; pcount[5]++; } break;
-                    case 7: { std::cout << "!!!!!*****Ìì¿ÕÖ®Òí" << endl; pcount[6]++; } break;
-                    case 8: { std::cout << "!!!!!*****ËÄ·çÔ­µä" << endl; pcount[7]++; } break;
-                    case 9: { std::cout << "!!!!!*****Ìì¿ÕÖ®¾í" << endl; pcount[8]++; } break;
-                    case 10: { std::cout << "!!!!!*****ºÍè±ğ°" << endl; pcount[9]++; } break;
-                    case 11: { std::cout << "!!!!!*****Ìì¿ÕÖ®¼¹" << endl; pcount[10]++; } break;
-                    case 12: { std::cout << "!!!!!*****ÀÇµÄÄ©Â·" << endl; pcount[11]++; } break;
-                    case 13: { std::cout << "!!!!!*****Ìì¿ÕÖ®°Á" << endl; pcount[12]++; } break;
-                    case 14: { std::cout << "!!!!!*****Ìì¿ÕÖ®ÈĞ" << endl; pcount[13]++; } break;
-                    case 15: { std::cout << "!!!!!*****·çÓ¥½£" << endl; pcount[14]++; } break;
-                    case 16: { std::cout << "!!****ÂŞÉ¯ÀòÑÇ" << endl; pcount[15]++; } break;
-                    case 17: { std::cout << "!!****ĞÁìÍ" << endl; pcount[16]++; } break;
-                    case 18: { std::cout << "!!****É°ÌÇ" << endl; pcount[17]++; } break;
-                    case 19: { std::cout << "!!****µÏ°ÂÄÈ" << endl; pcount[18]++; } break;
-                    case 20: { std::cout << "!!****ÖØÔÆ" << endl; pcount[19]++; } break;
-                    case 21: { std::cout << "!!****Åµ°¬¶û" << endl; pcount[20]++; } break;
-                    case 22: { std::cout << "!!****°àÄáÌØ" << endl; pcount[21]++; } break;
-                    case 23: { std::cout << "!!****·ÆĞ»¶û" << endl; pcount[22]++; } break;
-                    case 24: { std::cout << "!!****Äı¹â" << endl; pcount[23]++; } break;
-                    case 25: { std::cout << "!!****ĞĞÇï" << endl; pcount[24]++; } break;
-                    case 26: { std::cout << "!!****±±¶·" << endl; pcount[25]++; } break;
-                    case 27: { std::cout << "!!****ÏãÁâ" << endl; pcount[26]++; } break;
-                    case 28: { std::cout << "!!****°²°Ø" << endl; pcount[27]++; } break;
-                    case 29: { std::cout << "!!****À×Ôó" << endl; pcount[28]++; } break;
-                    case 30: { std::cout << "!!****¿­ÑÇ" << endl; pcount[29]++; } break;
-                    case 31: { std::cout << "!!****°Å°ÅÀ­" << endl; pcount[30]++; } break;
-                    case 32: { std::cout << "!!****ÀöÉ¯" << endl; pcount[31]++; } break;
-                    case 33: { std::cout << "!!****¹­²Ø" << endl; pcount[32]++; } break;
-                    case 34: { std::cout << "!!****¼ÀÀñ¹­" << endl; pcount[33]++; } break;
-                    case 35: { std::cout << "!!****¾øÏÒ" << endl; pcount[34]++; } break;
-                    case 36: { std::cout << "!!****Î÷·çÁÔ¹­" << endl; pcount[35]++; } break;
-                    case 37: { std::cout << "!!****ÕÑĞÄ" << endl; pcount[36]++; } break;
-                    case 38: { std::cout << "!!****¼ÀÀñ²ĞÕÂ" << endl; pcount[37]++; } break;
-                    case 39: { std::cout << "!!****Á÷ÀËÀÖÕÂ" << endl; pcount[38]++; } break;
-                    case 40: { std::cout << "!!****Î÷·çÃØµä" << endl; pcount[39]++; } break;
-                    case 41: { std::cout << "!!****Î÷·ç³¤Ç¹" << endl; pcount[40]++; } break;
-                    case 42: { std::cout << "!!****Ï»ÀïÃğ³½" << endl; pcount[41]++; } break;
-                    case 43: { std::cout << "!!****Óê²Ã" << endl; pcount[42]++; } break;
-                    case 44: { std::cout << "!!****¼ÀÀñ´ó½£" << endl; pcount[43]++; } break;
-                    case 45: { std::cout << "!!****ÖÓ½£" << endl; pcount[44]++; } break;
-                    case 46: { std::cout << "!!****Î÷·ç´ó½£" << endl; pcount[45]++; } break;
-                    case 47: { std::cout << "!!****Ï»ÀïÁúÒ÷" << endl; pcount[46]++; } break;
-                    case 48: { std::cout << "!!****¼ÀÀñ½£" << endl; pcount[47]++; } break;
-                    case 49: { std::cout << "!!****µÑ½£" << endl; pcount[48]++; } break;
-                    case 50: { std::cout << "!!****Î÷·ç½£" << endl; pcount[49]++; } break;
-                    case 51: { std::cout << "***ÁÔ¹­" << endl; pcount[50]++; } break;
-                    case 52: { std::cout << "***ÉñÉäÊÖÖ®ÊÄ" << endl; pcount[51]++; } break;
-                    case 53: { std::cout << "***Ñ»Óğ¹­" << endl; pcount[52]++; } break;
-                    case 54: { std::cout << "***ôäÓñ·¨Çò" << endl; pcount[53]++; } break;
-                    case 55: { std::cout << "***ÌÖÁúÓ¢½ÜÌ·" << endl; pcount[54]++; } break;
-                    case 56: { std::cout << "***Ä§µ¼Ğ÷ÂÛ" << endl; pcount[55]++; } break;
-                    case 57: { std::cout << "***ºÚÓ§Ç¹" << endl; pcount[56]++; } break;
-                    case 58: { std::cout << "***ÒÔÀí·şÈË" << endl; pcount[57]++; } break;
-                    case 59: { std::cout << "***ãåÔ¡ÁúÑªµÄ½£" << endl; pcount[58]++; } break;
-                    case 60: { std::cout << "***ÌúÓ°À«½£" << endl; pcount[59]++; } break;
-                    case 61: { std::cout << "***·ÉÌìÓù½£" << endl; pcount[60]++; } break;
-                    case 62: { std::cout << "***ÀèÃ÷Éñ½£" << endl; pcount[61]++; } break;
-                    case 63: { std::cout << "***ÀäÈĞ" << endl; pcount[62]++; } break;
-                    case 64: { std::cout << "!!!!!*****ÎÂµÏ" << endl; pcount[63]++; } break;
-                    case 65: { std::cout << "!!!!!*****¿ÉÀò" << endl; pcount[64]++; } break;
-                    case 66: { std::cout << "!!!!!*****´ï´ïÀûÑÇ" << endl; pcount[65]++; } break;
-                    case 67: { std::cout << "!!!!!*****ÖÓÀë" << endl; pcount[66]++; } break;
-                    case 68: { std::cout << "!!!!!*****°¢±´¶à" << endl; pcount[67]++; } break;
-                    case 69: { std::cout << "!!!!!*****¸ÊÓê" << endl; pcount[68]++; } break;
-                    case 70: { std::cout << "!!!!!*****÷Ì" << endl; pcount[69]++; } break;
-                    case 71: { std::cout << "!!!!!*****ºúÌÒ" << endl; pcount[70]++; } break;
-                    case 72: { std::cout << "!!****ÑÌç³" << endl; pcount[71]++; } break;
-                    case 73: { std::cout << "!!!!!*****ÓÅÇ‰" << endl; pcount[72]++; } break;
-                    case 74: { std::cout << "!!!!!*****³¾ÊÀÖ®Ëø" << endl; pcount[73]++; } break;
-                    case 75: { std::cout << "!!!!!*****¹áºçÖ®éÃ" << endl; pcount[74]++; } break;
-                    case 76: { std::cout << "!!!!!*****ÎŞ¹¤Ö®½£" << endl; pcount[75]++; } break;
-                    case 77: { std::cout << "!!!!!*****í½·åÖ®ÈĞ" << endl; pcount[76]++; } break;
-                    case 78: { std::cout << "!!!!!*****ÅÍÑÒ½áÂÌ" << endl; pcount[77]++; } break;
-                    case 79: { std::cout << "!!!!!*****»¤Ä¦Ö®ÕÈ" << endl; pcount[78]++; } break;
-                    case 80: { std::cout << "!!****Ç§ÑÒ¹Å½£" << endl; pcount[79]++; } break;
-                    case 81: { std::cout << "!!****Ç§ÑÒ³¤Ç¹" << endl; pcount[80]++; } break;
-                    case 82: { std::cout << "!!!!!*****ÖÕÄ©àµÌ¾Ö®Ê«" << endl; pcount[81]++; } break;
-                    case 83: { std::cout << "!!****°µÏïÉÁ¹â" << endl; pcount[82]++; } break;
-                    case 84: { std::cout << "!!****°µÏïµÄ¾ÆÓëÊ«" << endl; pcount[83]++; } break;
-                    case 85: { std::cout << "!!****°µÏïÁÔÊÖ" << endl; pcount[84]++; } break;
-                    case 86: { std::cout << "!!!!!*****ËÉô¥ÏìÆğÖ®Ê±" << endl; pcount[85]++; } break;
+                    case 1: { std::cout << "!!!!!*****åˆ»æ™´" << endl; pcount[0]++; } break;
+                    case 2: { std::cout << "!!!!!*****è«å¨œ" << endl; pcount[1]++; } break;
+                    case 3: { std::cout << "!!!!!*****ä¸ƒä¸ƒ" << endl; pcount[2]++; } break;
+                    case 4: { std::cout << "!!!!!*****è¿ªå¢å…‹" << endl; pcount[3]++; } break;
+                    case 5: { std::cout << "!!!!!*****ç´" << endl; pcount[4]++; } break;
+                    case 6: { std::cout << "!!!!!*****é˜¿è«æ–¯ä¹‹å¼“" << endl; pcount[5]++; } break;
+                    case 7: { std::cout << "!!!!!*****å¤©ç©ºä¹‹ç¿¼" << endl; pcount[6]++; } break;
+                    case 8: { std::cout << "!!!!!*****å››é£åŸå…¸" << endl; pcount[7]++; } break;
+                    case 9: { std::cout << "!!!!!*****å¤©ç©ºä¹‹å·" << endl; pcount[8]++; } break;
+                    case 10: { std::cout << "!!!!!*****å’Œç’é¸¢" << endl; pcount[9]++; } break;
+                    case 11: { std::cout << "!!!!!*****å¤©ç©ºä¹‹è„Š" << endl; pcount[10]++; } break;
+                    case 12: { std::cout << "!!!!!*****ç‹¼çš„æœ«è·¯" << endl; pcount[11]++; } break;
+                    case 13: { std::cout << "!!!!!*****å¤©ç©ºä¹‹å‚²" << endl; pcount[12]++; } break;
+                    case 14: { std::cout << "!!!!!*****å¤©ç©ºä¹‹åˆƒ" << endl; pcount[13]++; } break;
+                    case 15: { std::cout << "!!!!!*****é£é¹°å‰‘" << endl; pcount[14]++; } break;
+                    case 16: { std::cout << "!!****ç½—èè‰äºš" << endl; pcount[15]++; } break;
+                    case 17: { std::cout << "!!****è¾›ç„±" << endl; pcount[16]++; } break;
+                    case 18: { std::cout << "!!****ç ‚ç³–" << endl; pcount[17]++; } break;
+                    case 19: { std::cout << "!!****è¿ªå¥¥å¨œ" << endl; pcount[18]++; } break;
+                    case 20: { std::cout << "!!****é‡äº‘" << endl; pcount[19]++; } break;
+                    case 21: { std::cout << "!!****è¯ºè‰¾å°”" << endl; pcount[20]++; } break;
+                    case 22: { std::cout << "!!****ç­å°¼ç‰¹" << endl; pcount[21]++; } break;
+                    case 23: { std::cout << "!!****è²è°¢å°”" << endl; pcount[22]++; } break;
+                    case 24: { std::cout << "!!****å‡å…‰" << endl; pcount[23]++; } break;
+                    case 25: { std::cout << "!!****è¡Œç§‹" << endl; pcount[24]++; } break;
+                    case 26: { std::cout << "!!****åŒ—æ–—" << endl; pcount[25]++; } break;
+                    case 27: { std::cout << "!!****é¦™è±" << endl; pcount[26]++; } break;
+                    case 28: { std::cout << "!!****å®‰æŸ" << endl; pcount[27]++; } break;
+                    case 29: { std::cout << "!!****é›·æ³½" << endl; pcount[28]++; } break;
+                    case 30: { std::cout << "!!****å‡¯äºš" << endl; pcount[29]++; } break;
+                    case 31: { std::cout << "!!****èŠ­èŠ­æ‹‰" << endl; pcount[30]++; } break;
+                    case 32: { std::cout << "!!****ä¸½è" << endl; pcount[31]++; } break;
+                    case 33: { std::cout << "!!****å¼“è—" << endl; pcount[32]++; } break;
+                    case 34: { std::cout << "!!****ç¥­ç¤¼å¼“" << endl; pcount[33]++; } break;
+                    case 35: { std::cout << "!!****ç»å¼¦" << endl; pcount[34]++; } break;
+                    case 36: { std::cout << "!!****è¥¿é£çŒå¼“" << endl; pcount[35]++; } break;
+                    case 37: { std::cout << "!!****æ˜­å¿ƒ" << endl; pcount[36]++; } break;
+                    case 38: { std::cout << "!!****ç¥­ç¤¼æ®‹ç« " << endl; pcount[37]++; } break;
+                    case 39: { std::cout << "!!****æµæµªä¹ç« " << endl; pcount[38]++; } break;
+                    case 40: { std::cout << "!!****è¥¿é£ç§˜å…¸" << endl; pcount[39]++; } break;
+                    case 41: { std::cout << "!!****è¥¿é£é•¿æª" << endl; pcount[40]++; } break;
+                    case 42: { std::cout << "!!****åŒ£é‡Œç­è¾°" << endl; pcount[41]++; } break;
+                    case 43: { std::cout << "!!****é›¨è£" << endl; pcount[42]++; } break;
+                    case 44: { std::cout << "!!****ç¥­ç¤¼å¤§å‰‘" << endl; pcount[43]++; } break;
+                    case 45: { std::cout << "!!****é’Ÿå‰‘" << endl; pcount[44]++; } break;
+                    case 46: { std::cout << "!!****è¥¿é£å¤§å‰‘" << endl; pcount[45]++; } break;
+                    case 47: { std::cout << "!!****åŒ£é‡Œé¾™åŸ" << endl; pcount[46]++; } break;
+                    case 48: { std::cout << "!!****ç¥­ç¤¼å‰‘" << endl; pcount[47]++; } break;
+                    case 49: { std::cout << "!!****ç¬›å‰‘" << endl; pcount[48]++; } break;
+                    case 50: { std::cout << "!!****è¥¿é£å‰‘" << endl; pcount[49]++; } break;
+                    case 51: { std::cout << "***çŒå¼“" << endl; pcount[50]++; } break;
+                    case 52: { std::cout << "***ç¥å°„æ‰‹ä¹‹èª“" << endl; pcount[51]++; } break;
+                    case 53: { std::cout << "***é¸¦ç¾½å¼“" << endl; pcount[52]++; } break;
+                    case 54: { std::cout << "***ç¿¡ç‰æ³•çƒ" << endl; pcount[53]++; } break;
+                    case 55: { std::cout << "***è®¨é¾™è‹±æ°è°­" << endl; pcount[54]++; } break;
+                    case 56: { std::cout << "***é­”å¯¼ç»ªè®º" << endl; pcount[55]++; } break;
+                    case 57: { std::cout << "***é»‘ç¼¨æª" << endl; pcount[56]++; } break;
+                    case 58: { std::cout << "***ä»¥ç†æœäºº" << endl; pcount[57]++; } break;
+                    case 59: { std::cout << "***æ²æµ´é¾™è¡€çš„å‰‘" << endl; pcount[58]++; } break;
+                    case 60: { std::cout << "***é“å½±é˜”å‰‘" << endl; pcount[59]++; } break;
+                    case 61: { std::cout << "***é£å¤©å¾¡å‰‘" << endl; pcount[60]++; } break;
+                    case 62: { std::cout << "***é»æ˜ç¥å‰‘" << endl; pcount[61]++; } break;
+                    case 63: { std::cout << "***å†·åˆƒ" << endl; pcount[62]++; } break;
+                    case 64: { std::cout << "!!!!!*****æ¸©è¿ª" << endl; pcount[63]++; } break;
+                    case 65: { std::cout << "!!!!!*****å¯è‰" << endl; pcount[64]++; } break;
+                    case 66: { std::cout << "!!!!!*****è¾¾è¾¾åˆ©äºš" << endl; pcount[65]++; } break;
+                    case 67: { std::cout << "!!!!!*****é’Ÿç¦»" << endl; pcount[66]++; } break;
+                    case 68: { std::cout << "!!!!!*****é˜¿è´å¤š" << endl; pcount[67]++; } break;
+                    case 69: { std::cout << "!!!!!*****ç”˜é›¨" << endl; pcount[68]++; } break;
+                    case 70: { std::cout << "!!!!!*****é­ˆ" << endl; pcount[69]++; } break;
+                    case 71: { std::cout << "!!!!!*****èƒ¡æ¡ƒ" << endl; pcount[70]++; } break;
+                    case 72: { std::cout << "!!****çƒŸç»¯" << endl; pcount[71]++; } break;
+                    case 73: { std::cout << "!!!!!*****ä¼˜èˆ" << endl; pcount[72]++; } break;
+                    case 74: { std::cout << "!!!!!*****å°˜ä¸–ä¹‹é”" << endl; pcount[73]++; } break;
+                    case 75: { std::cout << "!!!!!*****è´¯è™¹ä¹‹æ§Š" << endl; pcount[74]++; } break;
+                    case 76: { std::cout << "!!!!!*****æ— å·¥ä¹‹å‰‘" << endl; pcount[75]++; } break;
+                    case 77: { std::cout << "!!!!!*****æ–«å³°ä¹‹åˆƒ" << endl; pcount[76]++; } break;
+                    case 78: { std::cout << "!!!!!*****ç£å²©ç»“ç»¿" << endl; pcount[77]++; } break;
+                    case 79: { std::cout << "!!!!!*****æŠ¤æ‘©ä¹‹æ–" << endl; pcount[78]++; } break;
+                    case 80: { std::cout << "!!****åƒå²©å¤å‰‘" << endl; pcount[79]++; } break;
+                    case 81: { std::cout << "!!****åƒå²©é•¿æª" << endl; pcount[80]++; } break;
+                    case 82: { std::cout << "!!!!!*****ç»ˆæœ«å—Ÿå¹ä¹‹è¯—" << endl; pcount[81]++; } break;
+                    case 83: { std::cout << "!!****æš—å··é—ªå…‰" << endl; pcount[82]++; } break;
+                    case 84: { std::cout << "!!****æš—å··çš„é…’ä¸è¯—" << endl; pcount[83]++; } break;
+                    case 85: { std::cout << "!!****æš—å··çŒæ‰‹" << endl; pcount[84]++; } break;
+                    case 86: { std::cout << "!!!!!*****æ¾ç±å“èµ·ä¹‹æ—¶" << endl; pcount[85]++; } break;
                     case 87: { std::cout << "Placeholder" << endl; pcount[86]++; } break;
                     case 88: { std::cout << "Placeholder" << endl; pcount[87]++; } break;
                     case 89: { std::cout << "Placeholder" << endl; pcount[88]++; } break;
@@ -22645,19 +20842,19 @@ int main() {
             }
             if (wishes_number >= 0) {
                 if (five_count == 0) {
-                    std::cout << endl << "ÄãÒÑ¾­³éÁË " << count << " ·¢¡£" << endl
-                        << "ÎåĞÇ½ÇÉ«»òÎäÆ÷:   " << five_count << "  " << five_count * 100.0 / count << "%" << endl
-                        << "ËÄĞÇ½ÇÉ«»òÎäÆ÷:   " << four_count << "  " << four_count * 100.0 / count << "%" << endl
-                        << "ÎåĞÇ½ÇÉ« : ÎåĞÇÎäÆ÷ : ËÄĞÇ½ÇÉ« : ËÄĞÇÎäÆ÷   " << five_count_c << " : " << five_count_w << " : " << four_count_c << " : " << four_count_w << endl << endl;
+                    std::cout << endl << "ä½ å·²ç»æŠ½äº† " << count << " å‘ã€‚" << endl
+                        << "äº”æ˜Ÿè§’è‰²æˆ–æ­¦å™¨:   " << five_count << "  " << five_count * 100.0 / count << "%" << endl
+                        << "å››æ˜Ÿè§’è‰²æˆ–æ­¦å™¨:   " << four_count << "  " << four_count * 100.0 / count << "%" << endl
+                        << "äº”æ˜Ÿè§’è‰² : äº”æ˜Ÿæ­¦å™¨ : å››æ˜Ÿè§’è‰² : å››æ˜Ÿæ­¦å™¨   " << five_count_c << " : " << five_count_w << " : " << four_count_c << " : " << four_count_w << endl << endl;
                 }
                 else {
-                    std::cout << endl << "ÄãÒÑ¾­³éÁË " << count << " ·¢¡£" << endl
-                        << "ÎåĞÇ½ÇÉ«»òÎäÆ÷:   " << five_count << "  " << five_count * 100.0 / count << "%" << endl
-                        << "ËÄĞÇ½ÇÉ«»òÎäÆ÷:   " << four_count << "  " << four_count * 100.0 / count << "%" << endl
-                        << "Á¬Ğø·ÇÎåĞÇ×î¸ß¼ÍÂ¼:   " << max_fives << " ·¢¡£·¢ÉúÔÚµÚ " << max_fivesth << " ¸ö±£µ×µ¥Ôª, ¼´µÚ " << max_fivecount + 1 << " ´ÎÆíÔ¸¡£" << endl
-                        << "Á¬Ğø·ÇÎåĞÇ×îµÍ¼ÍÂ¼:   " << min_fives << " ·¢¡£·¢ÉúÔÚµÚ " << min_fivesth << " ¸ö±£µ×µ¥Ôª, ¼´µÚ " << min_fivecount + 1 << " ´ÎÆíÔ¸¡£" << endl
-                        << "Á¬Ğø·ÇÎåĞÇÆ½¾ùÆíÔ¸Êı:   " << ave_fives * 1.0 / five_count << endl
-                        << "ÎåĞÇ½ÇÉ« : ÎåĞÇÎäÆ÷ : ËÄĞÇ½ÇÉ« : ËÄĞÇÎäÆ÷   " << five_count_c << " : " << five_count_w << " : " << four_count_c << " : " << four_count_w << endl << endl;
+                    std::cout << endl << "ä½ å·²ç»æŠ½äº† " << count << " å‘ã€‚" << endl
+                        << "äº”æ˜Ÿè§’è‰²æˆ–æ­¦å™¨:   " << five_count << "  " << five_count * 100.0 / count << "%" << endl
+                        << "å››æ˜Ÿè§’è‰²æˆ–æ­¦å™¨:   " << four_count << "  " << four_count * 100.0 / count << "%" << endl
+                        << "è¿ç»­éäº”æ˜Ÿæœ€é«˜çºªå½•:   " << max_fives << " å‘ã€‚å‘ç”Ÿåœ¨ç¬¬ " << max_fivesth << " ä¸ªä¿åº•å•å…ƒ, å³ç¬¬ " << max_fivecount + 1 << " æ¬¡ç¥ˆæ„¿ã€‚" << endl
+                        << "è¿ç»­éäº”æ˜Ÿæœ€ä½çºªå½•:   " << min_fives << " å‘ã€‚å‘ç”Ÿåœ¨ç¬¬ " << min_fivesth << " ä¸ªä¿åº•å•å…ƒ, å³ç¬¬ " << min_fivecount + 1 << " æ¬¡ç¥ˆæ„¿ã€‚" << endl
+                        << "è¿ç»­éäº”æ˜Ÿå¹³å‡ç¥ˆæ„¿æ•°:   " << ave_fives * 1.0 / five_count << endl
+                        << "äº”æ˜Ÿè§’è‰² : äº”æ˜Ÿæ­¦å™¨ : å››æ˜Ÿè§’è‰² : å››æ˜Ÿæ­¦å™¨   " << five_count_c << " : " << five_count_w << " : " << four_count_c << " : " << four_count_w << endl << endl;
                 }
                 for (int iout = 0; iout < 15; iout++) { if (pcount[iout] > 0) std::cout << pname[iout] << "(" << pcount[iout] << ")" << " "; }
                 for (int iout = 63; iout < 71; iout++) { if (pcount[iout] > 0) std::cout << pname[iout] << "(" << pcount[iout] << ")" << " "; }
@@ -22672,7 +20869,7 @@ int main() {
                 for (int iout = 82; iout < 85; iout++) { if (pcount[iout] > 0) std::cout << pname[iout] << "(" << pcount[iout] << ")" << " "; }
                 std::cout << endl << endl; auto elapsed = std::chrono::steady_clock::now() - start;
                 long long int microseconds = std::chrono::duration_cast<std::chrono::microseconds>(elapsed).count();
-                std::cout << microseconds * 1.0 / 1000000 << " Ãë¹ıÈ¥ÁË¡£" << endl;
+                std::cout << microseconds * 1.0 / 1000000 << " ç§’è¿‡å»äº†ã€‚" << endl;
             }
             //if (chosen_banner == 4 && chosen_event == 1 && count == 20) goto full_quit;
         }
