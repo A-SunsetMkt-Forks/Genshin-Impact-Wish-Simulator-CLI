@@ -506,6 +506,7 @@ int main() {
                 int tempg5[8] = { 17, 25, 26, 0, 0, 0, 0, 0 };
                 for (int temp399 = 0; temp399 < 8; temp399++) four_check[temp399] = tempg5[temp399];
             } break;
+            default:break;
             }
         }
         if (chosen_banner == 2) {
@@ -773,7 +774,9 @@ int main() {
                 for (int temp399 = 0; temp399 < 8; temp399++) four_check[temp399] = tempg5[temp399];
                 int tempg7[8] = { 15, 0, 0, 0, 0, 0, 0, 0 };
                 for (int temp399 = 0; temp399 < 8; temp399++) five_check[temp399] = tempg7[temp399];
-            } break;}
+            } break;
+            default:break;
+            }
         }
         if (chosen_banner == 3) {
             switch (chosen_event) {
@@ -815,6 +818,7 @@ int main() {
                 int tempg4[18] = { 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63 };
                 for (int temp399 = 0; temp399 < 18; temp399++) three_g[temp399] = tempg4[temp399];
             } break;
+            default:break;
             }
         }
         if (chosen_banner == 4) {
@@ -4055,7 +4059,7 @@ int main() {
                     }
                 }
             }
-            if (chosen_banner == 4 && chosen_event == 1) {
+            if (chosen_banner == 4) {
                 while (wishes_number > 0) {
                     long long int temp1 = generator() % ULTRAPOS;
                     long long int temp2 = generator() % ULTRAPOS;
