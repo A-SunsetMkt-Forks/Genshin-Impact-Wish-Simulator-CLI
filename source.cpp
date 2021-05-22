@@ -195,7 +195,6 @@ int main() {
         long long int luckiestlocation[10] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
         long long int luckiestsublocation[10] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
         int luckiestkind[10] = {127, 127, 127, 127, 127, 127, 127, 127, 127, 127};
-        chosen_banner = 0;
         std::cout << "Choose Your Wishes (Banners):" << endl;
         std::cout << "-1: Quit; 1: Character Event Wish; 2: Weapon Event Wish; 3: Permanent Wish; 4: Novice Wish;" << endl << endl;
         std::cin >> chosen_banner;
