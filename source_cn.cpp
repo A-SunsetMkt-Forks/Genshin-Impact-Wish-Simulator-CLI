@@ -4,6 +4,144 @@
 #include <random>
 #include <string>
 #define ULTRAPOS 437580000
+#define output_string() {std::cout << countx + 1 << "(" << five_star_assurance_number << ")" << " ";\
+                    switch (kind) {\
+                    case 1: { std::cout << "!!!!!*****刻晴" << endl; pcount[0]++; } break;\
+                    case 2: { std::cout << "!!!!!*****莫娜" << endl; pcount[1]++; } break;\
+                    case 3: { std::cout << "!!!!!*****七七" << endl; pcount[2]++; } break;\
+                    case 4: { std::cout << "!!!!!*****迪卢克" << endl; pcount[3]++; } break;\
+                    case 5: { std::cout << "!!!!!*****琴" << endl; pcount[4]++; } break;\
+                    case 6: { std::cout << "!!!!!*****阿莫斯之弓" << endl; pcount[5]++; } break;\
+                    case 7: { std::cout << "!!!!!*****天空之翼" << endl; pcount[6]++; } break;\
+                    case 8: { std::cout << "!!!!!*****四风原典" << endl; pcount[7]++; } break;\
+                    case 9: { std::cout << "!!!!!*****天空之卷" << endl; pcount[8]++; } break;\
+                    case 10: { std::cout << "!!!!!*****和璞鸢" << endl; pcount[9]++; } break;\
+                    case 11: { std::cout << "!!!!!*****天空之脊" << endl; pcount[10]++; } break;\
+                    case 12: { std::cout << "!!!!!*****狼的末路" << endl; pcount[11]++; } break;\
+                    case 13: { std::cout << "!!!!!*****天空之傲" << endl; pcount[12]++; } break;\
+                    case 14: { std::cout << "!!!!!*****天空之刃" << endl; pcount[13]++; } break;\
+                    case 15: { std::cout << "!!!!!*****风鹰剑" << endl; pcount[14]++; } break;\
+                    case 16: { std::cout << "!!****罗莎莉亚" << endl; pcount[15]++; } break;\
+                    case 17: { std::cout << "!!****辛焱" << endl; pcount[16]++; } break;\
+                    case 18: { std::cout << "!!****砂糖" << endl; pcount[17]++; } break;\
+                    case 19: { std::cout << "!!****迪奥娜" << endl; pcount[18]++; } break;\
+                    case 20: { std::cout << "!!****重云" << endl; pcount[19]++; } break;\
+                    case 21: { std::cout << "!!****诺艾尔" << endl; pcount[20]++; } break;\
+                    case 22: { std::cout << "!!****班尼特" << endl; pcount[21]++; } break;\
+                    case 23: { std::cout << "!!****菲谢尔" << endl; pcount[22]++; } break;\
+                    case 24: { std::cout << "!!****凝光" << endl; pcount[23]++; } break;\
+                    case 25: { std::cout << "!!****行秋" << endl; pcount[24]++; } break;\
+                    case 26: { std::cout << "!!****北斗" << endl; pcount[25]++; } break;\
+                    case 27: { std::cout << "!!****香菱" << endl; pcount[26]++; } break;\
+                    case 28: { std::cout << "!!****安柏" << endl; pcount[27]++; } break;\
+                    case 29: { std::cout << "!!****雷泽" << endl; pcount[28]++; } break;\
+                    case 30: { std::cout << "!!****凯亚" << endl; pcount[29]++; } break;\
+                    case 31: { std::cout << "!!****芭芭拉" << endl; pcount[30]++; } break;\
+                    case 32: { std::cout << "!!****丽莎" << endl; pcount[31]++; } break;\
+                    case 33: { std::cout << "!!****弓藏" << endl; pcount[32]++; } break;\
+                    case 34: { std::cout << "!!****祭礼弓" << endl; pcount[33]++; } break;\
+                    case 35: { std::cout << "!!****绝弦" << endl; pcount[34]++; } break;\
+                    case 36: { std::cout << "!!****西风猎弓" << endl; pcount[35]++; } break;\
+                    case 37: { std::cout << "!!****昭心" << endl; pcount[36]++; } break;\
+                    case 38: { std::cout << "!!****祭礼残章" << endl; pcount[37]++; } break;\
+                    case 39: { std::cout << "!!****流浪乐章" << endl; pcount[38]++; } break;\
+                    case 40: { std::cout << "!!****西风秘典" << endl; pcount[39]++; } break;\
+                    case 41: { std::cout << "!!****西风长枪" << endl; pcount[40]++; } break;\
+                    case 42: { std::cout << "!!****匣里灭辰" << endl; pcount[41]++; } break;\
+                    case 43: { std::cout << "!!****雨裁" << endl; pcount[42]++; } break;\
+                    case 44: { std::cout << "!!****祭礼大剑" << endl; pcount[43]++; } break;\
+                    case 45: { std::cout << "!!****钟剑" << endl; pcount[44]++; } break;\
+                    case 46: { std::cout << "!!****西风大剑" << endl; pcount[45]++; } break;\
+                    case 47: { std::cout << "!!****匣里龙吟" << endl; pcount[46]++; } break;\
+                    case 48: { std::cout << "!!****祭礼剑" << endl; pcount[47]++; } break;\
+                    case 49: { std::cout << "!!****笛剑" << endl; pcount[48]++; } break;\
+                    case 50: { std::cout << "!!****西风剑" << endl; pcount[49]++; } break;\
+                    case 51: { std::cout << "***猎弓" << endl; pcount[50]++; } break;\
+                    case 52: { std::cout << "***神射手之誓" << endl; pcount[51]++; } break;\
+                    case 53: { std::cout << "***鸦羽弓" << endl; pcount[52]++; } break;\
+                    case 54: { std::cout << "***翡玉法球" << endl; pcount[53]++; } break;\
+                    case 55: { std::cout << "***讨龙英杰谭" << endl; pcount[54]++; } break;\
+                    case 56: { std::cout << "***魔导绪论" << endl; pcount[55]++; } break;\
+                    case 57: { std::cout << "***黑缨枪" << endl; pcount[56]++; } break;\
+                    case 58: { std::cout << "***以理服人" << endl; pcount[57]++; } break;\
+                    case 59: { std::cout << "***沐浴龙血的剑" << endl; pcount[58]++; } break;\
+                    case 60: { std::cout << "***铁影阔剑" << endl; pcount[59]++; } break;\
+                    case 61: { std::cout << "***飞天御剑" << endl; pcount[60]++; } break;\
+                    case 62: { std::cout << "***黎明神剑" << endl; pcount[61]++; } break;\
+                    case 63: { std::cout << "***冷刃" << endl; pcount[62]++; } break;\
+                    case 64: { std::cout << "!!!!!*****温迪" << endl; pcount[63]++; } break;\
+                    case 65: { std::cout << "!!!!!*****可莉" << endl; pcount[64]++; } break;\
+                    case 66: { std::cout << "!!!!!*****达达利亚" << endl; pcount[65]++; } break;\
+                    case 67: { std::cout << "!!!!!*****钟离" << endl; pcount[66]++; } break;\
+                    case 68: { std::cout << "!!!!!*****阿贝多" << endl; pcount[67]++; } break;\
+                    case 69: { std::cout << "!!!!!*****甘雨" << endl; pcount[68]++; } break;\
+                    case 70: { std::cout << "!!!!!*****魈" << endl; pcount[69]++; } break;\
+                    case 71: { std::cout << "!!!!!*****胡桃" << endl; pcount[70]++; } break;\
+                    case 72: { std::cout << "!!****烟绯" << endl; pcount[71]++; } break;\
+                    case 73: { std::cout << "!!!!!*****优菈" << endl; pcount[72]++; } break;\
+                    case 74: { std::cout << "!!!!!*****尘世之锁" << endl; pcount[73]++; } break;\
+                    case 75: { std::cout << "!!!!!*****贯虹之槊" << endl; pcount[74]++; } break;\
+                    case 76: { std::cout << "!!!!!*****无工之剑" << endl; pcount[75]++; } break;\
+                    case 77: { std::cout << "!!!!!*****斫峰之刃" << endl; pcount[76]++; } break;\
+                    case 78: { std::cout << "!!!!!*****磐岩结绿" << endl; pcount[77]++; } break;\
+                    case 79: { std::cout << "!!!!!*****护摩之杖" << endl; pcount[78]++; } break;\
+                    case 80: { std::cout << "!!****千岩古剑" << endl; pcount[79]++; } break;\
+                    case 81: { std::cout << "!!****千岩长枪" << endl; pcount[80]++; } break;\
+                    case 82: { std::cout << "!!!!!*****终末嗟叹之诗" << endl; pcount[81]++; } break;\
+                    case 83: { std::cout << "!!****暗巷闪光" << endl; pcount[82]++; } break;\
+                    case 84: { std::cout << "!!****暗巷的酒与诗" << endl; pcount[83]++; } break;\
+                    case 85: { std::cout << "!!****暗巷猎手" << endl; pcount[84]++; } break;\
+                    case 86: { std::cout << "!!!!!*****松籁响起之时" << endl; pcount[85]++; } break;\
+                    case 87: { std::cout << "Placeholder" << endl; pcount[86]++; } break;\
+                    case 88: { std::cout << "Placeholder" << endl; pcount[87]++; } break;\
+                    case 89: { std::cout << "Placeholder" << endl; pcount[88]++; } break;\
+                    case 90: { std::cout << "Placeholder" << endl; pcount[89]++; } break;\
+                    case 91: { std::cout << "Placeholder" << endl; pcount[90]++; } break;\
+                    case 92: { std::cout << "Placeholder" << endl; pcount[91]++; } break;\
+                    case 93: { std::cout << "Placeholder" << endl; pcount[92]++; } break;\
+                    case 94: { std::cout << "Placeholder" << endl; pcount[93]++; } break;\
+                    case 95: { std::cout << "Placeholder" << endl; pcount[94]++; } break;\
+                    case 96: { std::cout << "Placeholder" << endl; pcount[95]++; } break;\
+                    case 97: { std::cout << "Placeholder" << endl; pcount[96]++; } break;\
+                    case 98: { std::cout << "Placeholder" << endl; pcount[97]++; } break;\
+                    case 99: { std::cout << "Placeholder" << endl; pcount[98]++; } break;\
+                    case 100: { std::cout << "Placeholder" << endl; pcount[99]++; } break;\
+                    case 101: { std::cout << "Placeholder" << endl; pcount[100]++; } break;\
+                    case 102: { std::cout << "Placeholder" << endl; pcount[101]++; } break;\
+                    case 103: { std::cout << "Placeholder" << endl; pcount[102]++; } break;\
+                    case 104: { std::cout << "Placeholder" << endl; pcount[103]++; } break;\
+                    case 105: { std::cout << "Placeholder" << endl; pcount[104]++; } break;\
+                    case 106: { std::cout << "Placeholder" << endl; pcount[105]++; } break;\
+                    case 107: { std::cout << "Placeholder" << endl; pcount[106]++; } break;\
+                    case 108: { std::cout << "Placeholder" << endl; pcount[107]++; } break;\
+                    case 109: { std::cout << "Placeholder" << endl; pcount[108]++; } break;\
+                    case 110: { std::cout << "Placeholder" << endl; pcount[109]++; } break;\
+                    case 111: { std::cout << "Placeholder" << endl; pcount[110]++; } break;\
+                    case 112: { std::cout << "Placeholder" << endl; pcount[111]++; } break;\
+                    case 113: { std::cout << "Placeholder" << endl; pcount[112]++; } break;\
+                    case 114: { std::cout << "Placeholder" << endl; pcount[113]++; } break;\
+                    case 115: { std::cout << "Placeholder" << endl; pcount[114]++; } break;\
+                    case 116: { std::cout << "Placeholder" << endl; pcount[115]++; } break;\
+                    case 117: { std::cout << "Placeholder" << endl; pcount[116]++; } break;\
+                    case 118: { std::cout << "Placeholder" << endl; pcount[117]++; } break;\
+                    case 119: { std::cout << "Placeholder" << endl; pcount[118]++; } break;\
+                    case 120: { std::cout << "Placeholder" << endl; pcount[119]++; } break;\
+                    case 121: { std::cout << "Placeholder" << endl; pcount[120]++; } break;\
+                    case 122: { std::cout << "Placeholder" << endl; pcount[121]++; } break;\
+                    case 123: { std::cout << "Placeholder" << endl; pcount[122]++; } break;\
+                    case 124: { std::cout << "Placeholder" << endl; pcount[123]++; } break;\
+                    case 125: { std::cout << "Placeholder" << endl; pcount[124]++; } break;\
+                    case 126: { std::cout << "Placeholder" << endl; pcount[125]++; } break;\
+                    case 127: { std::cout << "Placeholder" << endl; pcount[126]++; } break;\
+                    case 128: { std::cout << "Placeholder" << endl; pcount[127]++; } break;\
+                    default: break;\
+                    }\
+                    wishes_number--;\
+                    countx++;\
+                    five_star_assurance_number++;\
+                    four_star_assurance_number++;\
+                    }
+
 using namespace std;
 
 unsigned long long int seed = (unsigned long long int) std::chrono::high_resolution_clock::now().time_since_epoch().count();
@@ -157,58 +295,58 @@ int main() {
     std::cout << "原神祈愿模拟器（命令行）V1.5.5.2" << endl << endl;
     while (1) {
     enter_chosen_banner:
-        int chosen_banner = 0;
-        int chosen_event = 0;
-        int wishes_number = 0;
-        int four_star_assurance_number = 1;
-        int five_star_assurance_number = 1;
-        int five_star_guarantee_number = 0;
-        int four_star_guarantee_number = 0;
-        int quit = 1;
-        long long int count = 0;
-        long long int five_count = 0;
-        long long int five_count_c = 0;
-        long long int five_count_w = 0;
-        long long int four_count = 0;
-        long long int four_count_c = 0;
-        long long int four_count_w = 0;
-        int is_noelle = 1;
-        int ave_fives = 0;
-        int max_fives = 1;
-        int min_fives = 90;
-        long long int max_fivesth = 1;
-        long long int min_fivesth = 1;
-        long long int max_fivecount = 1;
-        long long int min_fivecount = 1;
-        long long int unmet4_c = 0;
-        long long int unmet4_w = 0;
-        long long int unmet5_c = 0;
-        long long int unmet5_w = 0;
-        long long int pcount[128] = { 0 };
-        int luck = 0;
-        long long int lucklocation[10] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
-        long long int lucksublocation[10] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
-        int luckkind[10] = { 127, 127, 127, 127, 127, 127, 127, 127, 127, 127 };
-        int luckstar[10] = { 3, 3, 3, 3, 3, 3, 3, 3, 3, 3 };
-        int lucktype[10] = { 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 };
-        int luckiest = 0;
-        long long int luckiestlocation[10] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
-        long long int luckiestsublocation[10] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
-        int luckiestkind[10] = { 127, 127, 127, 127, 127, 127, 127, 127, 127, 127 };
-        int up_five = 0;
-        int up_five_g[32] = { 0 };
-        int nup_five_c[32] = { 0 };
-        int nup_five_w[32] = { 0 };
-        int size_nup_five_c = 1;
-        int size_nup_five_w = 1;
-        int up_four_g[64] = { 0 };
-        int nup_four_c[64] = { 0 };
-        int nup_four_w[64] = { 0 };
-        int size_nup_four_c = 1;
-        int size_nup_four_w = 1;
-        int three_g[18] = { 0 };
-        int five_check[8] = { 127 };
-        int four_check[8] = { 127 };
+        int chosen_banner = 0,
+        chosen_event = 0,
+        wishes_number = 0,
+        four_star_assurance_number = 1,
+        five_star_assurance_number = 1,
+        five_star_guarantee_number = 0,
+        four_star_guarantee_number = 0,
+        quit = 1,
+        is_noelle = 1,
+        ave_fives = 0,
+        max_fives = 1,
+        min_fives = 90,
+        luck = 0,
+        luckkind[10] = { 127, 127, 127, 127, 127, 127, 127, 127, 127, 127 },
+        luckstar[10] = { 3, 3, 3, 3, 3, 3, 3, 3, 3, 3 },
+        lucktype[10] = { 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 },
+        luckiest = 0,
+        luckiestkind[10] = { 127, 127, 127, 127, 127, 127, 127, 127, 127, 127 },
+        up_five = 0,
+        up_five_g[32] = { 0 },
+        nup_five_c[32] = { 0 },
+        nup_five_w[32] = { 0 },
+        size_nup_five_c = 1,
+        size_nup_five_w = 1,
+        up_four_g[64] = { 0 },
+        nup_four_c[64] = { 0 },
+        nup_four_w[64] = { 0 },
+        size_nup_four_c = 1,
+        size_nup_four_w = 1,
+        three_g[18] = { 0 },
+        five_check[8] = { 127 },
+        four_check[8] = { 127 };
+        long long int countx = 0,
+        five_count = 0,
+        five_count_c = 0,
+        five_count_w = 0,
+        four_count = 0,
+        four_count_c = 0,
+        four_count_w = 0,
+        max_fivesth = 1,
+        min_fivesth = 1,
+        max_fivecount = 1,
+        min_fivecount = 1,
+        unmet4_c = 0,
+        unmet4_w = 0,
+        unmet5_c = 0,
+        unmet5_w = 0,
+        pcount[128] = { 0 },
+        lucklocation[10] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 },
+        lucksublocation[10] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 },
+        luckiestlocation[10] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 },
+        luckiestsublocation[10] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
         std::cout << "选择卡池类型:" << endl;
         std::cout << "-1: 退出; 1: 角色活动祈愿; 2: 武器活动祈愿; 3: 常驻祈愿; 4: 新手祈愿;" << endl << endl;
         std::cin >> chosen_banner;
@@ -509,7 +647,7 @@ int main() {
             default:break;
             }
         }
-        if (chosen_banner == 2) {
+        else if (chosen_banner == 2) {
             switch (chosen_event) {
             case 1: {
                 int tempg6[2] = { 6, 15 };
@@ -778,7 +916,7 @@ int main() {
             default:break;
             }
         }
-        if (chosen_banner == 3) {
+        else if (chosen_banner == 3) {
             switch (chosen_event) {
             case 1: {
                 size_nup_four_c = 11;
@@ -821,7 +959,7 @@ int main() {
             default:break;
             }
         }
-        if (chosen_banner == 4) {
+        else {
             int tempg0[5] = { 1, 2, 3, 4, 5 };
             for (int temp399 = 0; temp399 < 5; temp399++) nup_five_c[temp399] = tempg0[temp399];
             int tempg2[11] = { 18, 20, 21, 22, 23, 24, 25, 26, 27, 29, 31 };
@@ -837,8 +975,8 @@ int main() {
             if (cin.fail()) { wishes_number = 0; std::cout << endl << "非法字符!" << endl; cin.clear(); cin.ignore(32767, '\n'); goto enter_wishes_number; }
             std::cout << endl;
             if (wishes_number == -1) { wishes_number = 0; goto enter_chosen_event; }
-            if (wishes_number == -2) {
-                if (count < 10) { std::cout << "默认空数据" << endl; goto enter_wishes_number; }
+            else if (wishes_number == -2) {
+                if (countx < 10) { std::cout << "默认空数据" << endl; goto enter_wishes_number; }
                 std::cout << "好运参考值: " << luckiest << endl;
                 for (int templuck = 0; templuck < 10; templuck++) {
                     std::cout << luckiestlocation[templuck] << "(" << luckiestsublocation[templuck] << ")" << " ";
@@ -975,13 +1113,13 @@ int main() {
                 }
                 goto enter_wishes_number;
             }
-            if (wishes_number == -3) {
+            else if (wishes_number == -3) {
                 wishes_number = 0;
                 four_star_assurance_number = 1;
                 five_star_assurance_number = 1;
                 five_star_guarantee_number = 0;
                 four_star_guarantee_number = 0;
-                count = 0;
+                countx = 0;
                 five_count = 0;
                 five_count_c = 0;
                 five_count_w = 0;
@@ -1015,6 +1153,7 @@ int main() {
             }
             //if (chosen_banner == 4 && chosen_event == 1 && wishes_number != 10) { wishes_number = 0; std::cout << "Invalid number of wishes!" << endl; goto enter_wishes_number; }
             //if (!(wishes_number == -1||wishes_number == 1||wishes_number == 10||wishes_number == -2||wishes_number == -3)){ wishes_number = 0; std::cout << "Invalid number of wishes!" << endl; goto enter_wishes_number; }
+            else {}
             auto start = std::chrono::steady_clock::now();
             if (chosen_banner == 1) {
                 while (wishes_number > 0) {
@@ -1028,8 +1167,8 @@ int main() {
                             star = 5;
                             five_count++;
                             ave_fives += five_star_assurance_number;
-                            if (five_star_assurance_number > max_fives) { max_fives = five_star_assurance_number; max_fivesth = five_count; max_fivecount = count; }
-                            if (five_star_assurance_number < min_fives) { min_fives = five_star_assurance_number; min_fivesth = five_count; min_fivecount = count; }
+                            if (five_star_assurance_number > max_fives) { max_fives = five_star_assurance_number; max_fivesth = five_count; max_fivecount = countx; }
+                            if (five_star_assurance_number < min_fives) { min_fives = five_star_assurance_number; min_fivesth = five_count; min_fivecount = countx; }
                             five_star_assurance_number = 0;
                             if (five_star_guarantee_number == 1) { type = 1; five_count_c++; kind = up_five; five_star_guarantee_number = 0; }
                             else if (temp2 < (long long int) ULTRAPOS / 2) {
@@ -1125,8 +1264,8 @@ int main() {
                             star = 5;
                             five_count++;
                             ave_fives += five_star_assurance_number;
-                            if (five_star_assurance_number > max_fives) { max_fives = five_star_assurance_number; max_fivesth = five_count; max_fivecount = count; }
-                            if (five_star_assurance_number < min_fives) { min_fives = five_star_assurance_number; min_fivesth = five_count; min_fivecount = count; }
+                            if (five_star_assurance_number > max_fives) { max_fives = five_star_assurance_number; max_fivesth = five_count; max_fivecount = countx; }
+                            if (five_star_assurance_number < min_fives) { min_fives = five_star_assurance_number; min_fivesth = five_count; min_fivecount = countx; }
                             five_star_assurance_number = 0;
                             if (five_star_guarantee_number == 1) { type = 1; five_count_c++; kind = up_five; five_star_guarantee_number = 0; }
                             else if (temp2 < (long long int) ULTRAPOS / 2) {
@@ -1222,8 +1361,8 @@ int main() {
                             star = 5;
                             five_count++;
                             ave_fives += five_star_assurance_number;
-                            if (five_star_assurance_number > max_fives) { max_fives = five_star_assurance_number; max_fivesth = five_count; max_fivecount = count; }
-                            if (five_star_assurance_number < min_fives) { min_fives = five_star_assurance_number; min_fivesth = five_count; min_fivecount = count; }
+                            if (five_star_assurance_number > max_fives) { max_fives = five_star_assurance_number; max_fivesth = five_count; max_fivecount = countx; }
+                            if (five_star_assurance_number < min_fives) { min_fives = five_star_assurance_number; min_fivesth = five_count; min_fivecount = countx; }
                             five_star_assurance_number = 0;
                             if (five_star_guarantee_number == 1) { type = 1; five_count_c++; kind = up_five; five_star_guarantee_number = 0; }
                             else if (temp2 < (long long int) ULTRAPOS / 2) {
@@ -1314,8 +1453,8 @@ int main() {
                             star = 5;
                             five_count++;
                             ave_fives += five_star_assurance_number;
-                            if (five_star_assurance_number > max_fives) { max_fives = five_star_assurance_number; max_fivesth = five_count; max_fivecount = count; }
-                            if (five_star_assurance_number < min_fives) { min_fives = five_star_assurance_number; min_fivesth = five_count; min_fivecount = count; }
+                            if (five_star_assurance_number > max_fives) { max_fives = five_star_assurance_number; max_fivesth = five_count; max_fivecount = countx; }
+                            if (five_star_assurance_number < min_fives) { min_fives = five_star_assurance_number; min_fivesth = five_count; min_fivecount = countx; }
                             five_star_assurance_number = 0;
                             if (five_star_guarantee_number == 1) { type = 1; five_count_c++; kind = up_five; five_star_guarantee_number = 0; }
                             else if (temp2 < (long long int) ULTRAPOS / 2) {
@@ -1411,8 +1550,8 @@ int main() {
                             star = 5;
                             five_count++;
                             ave_fives += five_star_assurance_number;
-                            if (five_star_assurance_number > max_fives) { max_fives = five_star_assurance_number; max_fivesth = five_count; max_fivecount = count; }
-                            if (five_star_assurance_number < min_fives) { min_fives = five_star_assurance_number; min_fivesth = five_count; min_fivecount = count; }
+                            if (five_star_assurance_number > max_fives) { max_fives = five_star_assurance_number; max_fivesth = five_count; max_fivecount = countx; }
+                            if (five_star_assurance_number < min_fives) { min_fives = five_star_assurance_number; min_fivesth = five_count; min_fivecount = countx; }
                             five_star_assurance_number = 0;
                             if (five_star_guarantee_number == 1) { type = 1; five_count_c++; kind = up_five; five_star_guarantee_number = 0; }
                             else if (temp2 < (long long int) ULTRAPOS / 2) {
@@ -1508,8 +1647,8 @@ int main() {
                             star = 5;
                             five_count++;
                             ave_fives += five_star_assurance_number;
-                            if (five_star_assurance_number > max_fives) { max_fives = five_star_assurance_number; max_fivesth = five_count; max_fivecount = count; }
-                            if (five_star_assurance_number < min_fives) { min_fives = five_star_assurance_number; min_fivesth = five_count; min_fivecount = count; }
+                            if (five_star_assurance_number > max_fives) { max_fives = five_star_assurance_number; max_fivesth = five_count; max_fivecount = countx; }
+                            if (five_star_assurance_number < min_fives) { min_fives = five_star_assurance_number; min_fivesth = five_count; min_fivecount = countx; }
                             five_star_assurance_number = 0;
                             if (five_star_guarantee_number == 1) { type = 1; five_count_c++; kind = up_five; five_star_guarantee_number = 0; }
                             else if (temp2 < (long long int) ULTRAPOS / 2) {
@@ -1599,8 +1738,8 @@ int main() {
                         star = 5;
                         five_count++;
                         ave_fives += five_star_assurance_number;
-                        if (five_star_assurance_number > max_fives) { max_fives = five_star_assurance_number; max_fivesth = five_count; max_fivecount = count; }
-                        if (five_star_assurance_number < min_fives) { min_fives = five_star_assurance_number; min_fivesth = five_count; min_fivecount = count; }
+                        if (five_star_assurance_number > max_fives) { max_fives = five_star_assurance_number; max_fivesth = five_count; max_fivecount = countx; }
+                        if (five_star_assurance_number < min_fives) { min_fives = five_star_assurance_number; min_fivesth = five_count; min_fivecount = countx; }
                         five_star_assurance_number = 0;
                         if (five_star_guarantee_number == 1) { type = 1; five_count_c++; kind = up_five; five_star_guarantee_number = 0; }
                         else if (temp2 < (long long int) ULTRAPOS / 2) {
@@ -1616,144 +1755,9 @@ int main() {
                             kind = rspick(nup_five_c, 5);
                         }
                     }
-                    std::cout << count + 1 << "(" << five_star_assurance_number << ")" << " ";
-                    switch (kind) {
-                    case 1: { std::cout << "!!!!!*****刻晴" << endl; pcount[0]++; } break;
-                    case 2: { std::cout << "!!!!!*****莫娜" << endl; pcount[1]++; } break;
-                    case 3: { std::cout << "!!!!!*****七七" << endl; pcount[2]++; } break;
-                    case 4: { std::cout << "!!!!!*****迪卢克" << endl; pcount[3]++; } break;
-                    case 5: { std::cout << "!!!!!*****琴" << endl; pcount[4]++; } break;
-                    case 6: { std::cout << "!!!!!*****阿莫斯之弓" << endl; pcount[5]++; } break;
-                    case 7: { std::cout << "!!!!!*****天空之翼" << endl; pcount[6]++; } break;
-                    case 8: { std::cout << "!!!!!*****四风原典" << endl; pcount[7]++; } break;
-                    case 9: { std::cout << "!!!!!*****天空之卷" << endl; pcount[8]++; } break;
-                    case 10: { std::cout << "!!!!!*****和璞鸢" << endl; pcount[9]++; } break;
-                    case 11: { std::cout << "!!!!!*****天空之脊" << endl; pcount[10]++; } break;
-                    case 12: { std::cout << "!!!!!*****狼的末路" << endl; pcount[11]++; } break;
-                    case 13: { std::cout << "!!!!!*****天空之傲" << endl; pcount[12]++; } break;
-                    case 14: { std::cout << "!!!!!*****天空之刃" << endl; pcount[13]++; } break;
-                    case 15: { std::cout << "!!!!!*****风鹰剑" << endl; pcount[14]++; } break;
-                    case 16: { std::cout << "!!****罗莎莉亚" << endl; pcount[15]++; } break;
-                    case 17: { std::cout << "!!****辛焱" << endl; pcount[16]++; } break;
-                    case 18: { std::cout << "!!****砂糖" << endl; pcount[17]++; } break;
-                    case 19: { std::cout << "!!****迪奥娜" << endl; pcount[18]++; } break;
-                    case 20: { std::cout << "!!****重云" << endl; pcount[19]++; } break;
-                    case 21: { std::cout << "!!****诺艾尔" << endl; pcount[20]++; } break;
-                    case 22: { std::cout << "!!****班尼特" << endl; pcount[21]++; } break;
-                    case 23: { std::cout << "!!****菲谢尔" << endl; pcount[22]++; } break;
-                    case 24: { std::cout << "!!****凝光" << endl; pcount[23]++; } break;
-                    case 25: { std::cout << "!!****行秋" << endl; pcount[24]++; } break;
-                    case 26: { std::cout << "!!****北斗" << endl; pcount[25]++; } break;
-                    case 27: { std::cout << "!!****香菱" << endl; pcount[26]++; } break;
-                    case 28: { std::cout << "!!****安柏" << endl; pcount[27]++; } break;
-                    case 29: { std::cout << "!!****雷泽" << endl; pcount[28]++; } break;
-                    case 30: { std::cout << "!!****凯亚" << endl; pcount[29]++; } break;
-                    case 31: { std::cout << "!!****芭芭拉" << endl; pcount[30]++; } break;
-                    case 32: { std::cout << "!!****丽莎" << endl; pcount[31]++; } break;
-                    case 33: { std::cout << "!!****弓藏" << endl; pcount[32]++; } break;
-                    case 34: { std::cout << "!!****祭礼弓" << endl; pcount[33]++; } break;
-                    case 35: { std::cout << "!!****绝弦" << endl; pcount[34]++; } break;
-                    case 36: { std::cout << "!!****西风猎弓" << endl; pcount[35]++; } break;
-                    case 37: { std::cout << "!!****昭心" << endl; pcount[36]++; } break;
-                    case 38: { std::cout << "!!****祭礼残章" << endl; pcount[37]++; } break;
-                    case 39: { std::cout << "!!****流浪乐章" << endl; pcount[38]++; } break;
-                    case 40: { std::cout << "!!****西风秘典" << endl; pcount[39]++; } break;
-                    case 41: { std::cout << "!!****西风长枪" << endl; pcount[40]++; } break;
-                    case 42: { std::cout << "!!****匣里灭辰" << endl; pcount[41]++; } break;
-                    case 43: { std::cout << "!!****雨裁" << endl; pcount[42]++; } break;
-                    case 44: { std::cout << "!!****祭礼大剑" << endl; pcount[43]++; } break;
-                    case 45: { std::cout << "!!****钟剑" << endl; pcount[44]++; } break;
-                    case 46: { std::cout << "!!****西风大剑" << endl; pcount[45]++; } break;
-                    case 47: { std::cout << "!!****匣里龙吟" << endl; pcount[46]++; } break;
-                    case 48: { std::cout << "!!****祭礼剑" << endl; pcount[47]++; } break;
-                    case 49: { std::cout << "!!****笛剑" << endl; pcount[48]++; } break;
-                    case 50: { std::cout << "!!****西风剑" << endl; pcount[49]++; } break;
-                    case 51: { std::cout << "***猎弓" << endl; pcount[50]++; } break;
-                    case 52: { std::cout << "***神射手之誓" << endl; pcount[51]++; } break;
-                    case 53: { std::cout << "***鸦羽弓" << endl; pcount[52]++; } break;
-                    case 54: { std::cout << "***翡玉法球" << endl; pcount[53]++; } break;
-                    case 55: { std::cout << "***讨龙英杰谭" << endl; pcount[54]++; } break;
-                    case 56: { std::cout << "***魔导绪论" << endl; pcount[55]++; } break;
-                    case 57: { std::cout << "***黑缨枪" << endl; pcount[56]++; } break;
-                    case 58: { std::cout << "***以理服人" << endl; pcount[57]++; } break;
-                    case 59: { std::cout << "***沐浴龙血的剑" << endl; pcount[58]++; } break;
-                    case 60: { std::cout << "***铁影阔剑" << endl; pcount[59]++; } break;
-                    case 61: { std::cout << "***飞天御剑" << endl; pcount[60]++; } break;
-                    case 62: { std::cout << "***黎明神剑" << endl; pcount[61]++; } break;
-                    case 63: { std::cout << "***冷刃" << endl; pcount[62]++; } break;
-                    case 64: { std::cout << "!!!!!*****温迪" << endl; pcount[63]++; } break;
-                    case 65: { std::cout << "!!!!!*****可莉" << endl; pcount[64]++; } break;
-                    case 66: { std::cout << "!!!!!*****达达利亚" << endl; pcount[65]++; } break;
-                    case 67: { std::cout << "!!!!!*****钟离" << endl; pcount[66]++; } break;
-                    case 68: { std::cout << "!!!!!*****阿贝多" << endl; pcount[67]++; } break;
-                    case 69: { std::cout << "!!!!!*****甘雨" << endl; pcount[68]++; } break;
-                    case 70: { std::cout << "!!!!!*****魈" << endl; pcount[69]++; } break;
-                    case 71: { std::cout << "!!!!!*****胡桃" << endl; pcount[70]++; } break;
-                    case 72: { std::cout << "!!****烟绯" << endl; pcount[71]++; } break;
-                    case 73: { std::cout << "!!!!!*****优菈" << endl; pcount[72]++; } break;
-                    case 74: { std::cout << "!!!!!*****尘世之锁" << endl; pcount[73]++; } break;
-                    case 75: { std::cout << "!!!!!*****贯虹之槊" << endl; pcount[74]++; } break;
-                    case 76: { std::cout << "!!!!!*****无工之剑" << endl; pcount[75]++; } break;
-                    case 77: { std::cout << "!!!!!*****斫峰之刃" << endl; pcount[76]++; } break;
-                    case 78: { std::cout << "!!!!!*****磐岩结绿" << endl; pcount[77]++; } break;
-                    case 79: { std::cout << "!!!!!*****护摩之杖" << endl; pcount[78]++; } break;
-                    case 80: { std::cout << "!!****千岩古剑" << endl; pcount[79]++; } break;
-                    case 81: { std::cout << "!!****千岩长枪" << endl; pcount[80]++; } break;
-                    case 82: { std::cout << "!!!!!*****终末嗟叹之诗" << endl; pcount[81]++; } break;
-                    case 83: { std::cout << "!!****暗巷闪光" << endl; pcount[82]++; } break;
-                    case 84: { std::cout << "!!****暗巷的酒与诗" << endl; pcount[83]++; } break;
-                    case 85: { std::cout << "!!****暗巷猎手" << endl; pcount[84]++; } break;
-                    case 86: { std::cout << "!!!!!*****松籁响起之时" << endl; pcount[85]++; } break;
-                    case 87: { std::cout << "Placeholder" << endl; pcount[86]++; } break;
-                    case 88: { std::cout << "Placeholder" << endl; pcount[87]++; } break;
-                    case 89: { std::cout << "Placeholder" << endl; pcount[88]++; } break;
-                    case 90: { std::cout << "Placeholder" << endl; pcount[89]++; } break;
-                    case 91: { std::cout << "Placeholder" << endl; pcount[90]++; } break;
-                    case 92: { std::cout << "Placeholder" << endl; pcount[91]++; } break;
-                    case 93: { std::cout << "Placeholder" << endl; pcount[92]++; } break;
-                    case 94: { std::cout << "Placeholder" << endl; pcount[93]++; } break;
-                    case 95: { std::cout << "Placeholder" << endl; pcount[94]++; } break;
-                    case 96: { std::cout << "Placeholder" << endl; pcount[95]++; } break;
-                    case 97: { std::cout << "Placeholder" << endl; pcount[96]++; } break;
-                    case 98: { std::cout << "Placeholder" << endl; pcount[97]++; } break;
-                    case 99: { std::cout << "Placeholder" << endl; pcount[98]++; } break;
-                    case 100: { std::cout << "Placeholder" << endl; pcount[99]++; } break;
-                    case 101: { std::cout << "Placeholder" << endl; pcount[100]++; } break;
-                    case 102: { std::cout << "Placeholder" << endl; pcount[101]++; } break;
-                    case 103: { std::cout << "Placeholder" << endl; pcount[102]++; } break;
-                    case 104: { std::cout << "Placeholder" << endl; pcount[103]++; } break;
-                    case 105: { std::cout << "Placeholder" << endl; pcount[104]++; } break;
-                    case 106: { std::cout << "Placeholder" << endl; pcount[105]++; } break;
-                    case 107: { std::cout << "Placeholder" << endl; pcount[106]++; } break;
-                    case 108: { std::cout << "Placeholder" << endl; pcount[107]++; } break;
-                    case 109: { std::cout << "Placeholder" << endl; pcount[108]++; } break;
-                    case 110: { std::cout << "Placeholder" << endl; pcount[109]++; } break;
-                    case 111: { std::cout << "Placeholder" << endl; pcount[110]++; } break;
-                    case 112: { std::cout << "Placeholder" << endl; pcount[111]++; } break;
-                    case 113: { std::cout << "Placeholder" << endl; pcount[112]++; } break;
-                    case 114: { std::cout << "Placeholder" << endl; pcount[113]++; } break;
-                    case 115: { std::cout << "Placeholder" << endl; pcount[114]++; } break;
-                    case 116: { std::cout << "Placeholder" << endl; pcount[115]++; } break;
-                    case 117: { std::cout << "Placeholder" << endl; pcount[116]++; } break;
-                    case 118: { std::cout << "Placeholder" << endl; pcount[117]++; } break;
-                    case 119: { std::cout << "Placeholder" << endl; pcount[118]++; } break;
-                    case 120: { std::cout << "Placeholder" << endl; pcount[119]++; } break;
-                    case 121: { std::cout << "Placeholder" << endl; pcount[120]++; } break;
-                    case 122: { std::cout << "Placeholder" << endl; pcount[121]++; } break;
-                    case 123: { std::cout << "Placeholder" << endl; pcount[122]++; } break;
-                    case 124: { std::cout << "Placeholder" << endl; pcount[123]++; } break;
-                    case 125: { std::cout << "Placeholder" << endl; pcount[124]++; } break;
-                    case 126: { std::cout << "Placeholder" << endl; pcount[125]++; } break;
-                    case 127: { std::cout << "Placeholder" << endl; pcount[126]++; } break;
-                    case 128: { std::cout << "Placeholder" << endl; pcount[127]++; } break;
-                    default: break;
-                    }
-                    wishes_number--;
-                    count++;
+                    output_string()
                     if (!((star == 4 && type == 1) || (star == 4 && type == 2))) unmet4_c++;
                     if (!(star == 4 && type == 3)) unmet4_w++;
-                    five_star_assurance_number++;
-                    four_star_assurance_number++;
                     for (int templuck = 0; templuck < 9; templuck++) {
                         lucklocation[templuck] = lucklocation[templuck + 1];
                         lucksublocation[templuck] = lucksublocation[templuck + 1];
@@ -1761,7 +1765,7 @@ int main() {
                         luckstar[templuck] = luckstar[templuck + 1];
                         lucktype[templuck] = lucktype[templuck + 1];
                     }
-                    lucklocation[9] = count;
+                    lucklocation[9] = countx;
                     lucksublocation[9] = (long long int) five_star_assurance_number - 1;
                     luckkind[9] = kind;
                     luckstar[9] = star;
@@ -1776,7 +1780,7 @@ int main() {
                             else luck += 0;
                         }
                     }
-                    if (count == 10) {
+                    if (countx == 10) {
                         luckiest = luck;
                         for (int templuck = 0; templuck < 10; templuck++) {
                             luckiestlocation[templuck] = lucklocation[templuck];
@@ -1794,7 +1798,7 @@ int main() {
                     }
                 }
             }
-            if (chosen_banner == 2) {
+            else if (chosen_banner == 2) {
                 while (wishes_number > 0) {
                     long long int temp1 = generator() % ULTRAPOS;
                     long long int temp2 = generator() % ULTRAPOS;
@@ -1806,8 +1810,8 @@ int main() {
                             star = 5;
                             five_count++;
                             ave_fives += five_star_assurance_number;
-                            if (five_star_assurance_number > max_fives) { max_fives = five_star_assurance_number; max_fivesth = five_count; max_fivecount = count; }
-                            if (five_star_assurance_number < min_fives) { min_fives = five_star_assurance_number; min_fivesth = five_count; min_fivecount = count; }
+                            if (five_star_assurance_number > max_fives) { max_fives = five_star_assurance_number; max_fivesth = five_count; max_fivecount = countx; }
+                            if (five_star_assurance_number < min_fives) { min_fives = five_star_assurance_number; min_fivesth = five_count; min_fivecount = countx; }
                             five_star_assurance_number = 0;
                             if (five_star_guarantee_number == 1) {
                                 type = 1;
@@ -1908,8 +1912,8 @@ int main() {
                             star = 5;
                             five_count++;
                             ave_fives += five_star_assurance_number;
-                            if (five_star_assurance_number > max_fives) { max_fives = five_star_assurance_number; max_fivesth = five_count; max_fivecount = count; }
-                            if (five_star_assurance_number < min_fives) { min_fives = five_star_assurance_number; min_fivesth = five_count; min_fivecount = count; }
+                            if (five_star_assurance_number > max_fives) { max_fives = five_star_assurance_number; max_fivesth = five_count; max_fivecount = countx; }
+                            if (five_star_assurance_number < min_fives) { min_fives = five_star_assurance_number; min_fivesth = five_count; min_fivecount = countx; }
                             five_star_assurance_number = 0;
                             if (five_star_guarantee_number == 1) {
                                 type = 1;
@@ -2010,8 +2014,8 @@ int main() {
                             star = 5;
                             five_count++;
                             ave_fives += five_star_assurance_number;
-                            if (five_star_assurance_number > max_fives) { max_fives = five_star_assurance_number; max_fivesth = five_count; max_fivecount = count; }
-                            if (five_star_assurance_number < min_fives) { min_fives = five_star_assurance_number; min_fivesth = five_count; min_fivecount = count; }
+                            if (five_star_assurance_number > max_fives) { max_fives = five_star_assurance_number; max_fivesth = five_count; max_fivecount = countx; }
+                            if (five_star_assurance_number < min_fives) { min_fives = five_star_assurance_number; min_fivesth = five_count; min_fivecount = countx; }
                             five_star_assurance_number = 0;
                             if (five_star_guarantee_number == 1) {
                                 type = 1;
@@ -2112,8 +2116,8 @@ int main() {
                             star = 5;
                             five_count++;
                             ave_fives += five_star_assurance_number;
-                            if (five_star_assurance_number > max_fives) { max_fives = five_star_assurance_number; max_fivesth = five_count; max_fivecount = count; }
-                            if (five_star_assurance_number < min_fives) { min_fives = five_star_assurance_number; min_fivesth = five_count; min_fivecount = count; }
+                            if (five_star_assurance_number > max_fives) { max_fives = five_star_assurance_number; max_fivesth = five_count; max_fivecount = countx; }
+                            if (five_star_assurance_number < min_fives) { min_fives = five_star_assurance_number; min_fivesth = five_count; min_fivecount = countx; }
                             five_star_assurance_number = 0;
                             if (five_star_guarantee_number == 1) {
                                 type = 1;
@@ -2209,8 +2213,8 @@ int main() {
                             star = 5;
                             five_count++;
                             ave_fives += five_star_assurance_number;
-                            if (five_star_assurance_number > max_fives) { max_fives = five_star_assurance_number; max_fivesth = five_count; max_fivecount = count; }
-                            if (five_star_assurance_number < min_fives) { min_fives = five_star_assurance_number; min_fivesth = five_count; min_fivecount = count; }
+                            if (five_star_assurance_number > max_fives) { max_fives = five_star_assurance_number; max_fivesth = five_count; max_fivecount = countx; }
+                            if (five_star_assurance_number < min_fives) { min_fives = five_star_assurance_number; min_fivesth = five_count; min_fivecount = countx; }
                             five_star_assurance_number = 0;
                             if (five_star_guarantee_number == 1) {
                                 type = 1;
@@ -2311,8 +2315,8 @@ int main() {
                             star = 5;
                             five_count++;
                             ave_fives += five_star_assurance_number;
-                            if (five_star_assurance_number > max_fives) { max_fives = five_star_assurance_number; max_fivesth = five_count; max_fivecount = count; }
-                            if (five_star_assurance_number < min_fives) { min_fives = five_star_assurance_number; min_fivesth = five_count; min_fivecount = count; }
+                            if (five_star_assurance_number > max_fives) { max_fives = five_star_assurance_number; max_fivesth = five_count; max_fivecount = countx; }
+                            if (five_star_assurance_number < min_fives) { min_fives = five_star_assurance_number; min_fivesth = five_count; min_fivecount = countx; }
                             five_star_assurance_number = 0;
                             if (five_star_guarantee_number == 1) {
                                 type = 1;
@@ -2413,8 +2417,8 @@ int main() {
                             star = 5;
                             five_count++;
                             ave_fives += five_star_assurance_number;
-                            if (five_star_assurance_number > max_fives) { max_fives = five_star_assurance_number; max_fivesth = five_count; max_fivecount = count; }
-                            if (five_star_assurance_number < min_fives) { min_fives = five_star_assurance_number; min_fivesth = five_count; min_fivecount = count; }
+                            if (five_star_assurance_number > max_fives) { max_fives = five_star_assurance_number; max_fivesth = five_count; max_fivecount = countx; }
+                            if (five_star_assurance_number < min_fives) { min_fives = five_star_assurance_number; min_fivesth = five_count; min_fivecount = countx; }
                             five_star_assurance_number = 0;
                             if (five_star_guarantee_number == 1) {
                                 type = 1;
@@ -2515,8 +2519,8 @@ int main() {
                             star = 5;
                             five_count++;
                             ave_fives += five_star_assurance_number;
-                            if (five_star_assurance_number > max_fives) { max_fives = five_star_assurance_number; max_fivesth = five_count; max_fivecount = count; }
-                            if (five_star_assurance_number < min_fives) { min_fives = five_star_assurance_number; min_fivesth = five_count; min_fivecount = count; }
+                            if (five_star_assurance_number > max_fives) { max_fives = five_star_assurance_number; max_fivesth = five_count; max_fivecount = countx; }
+                            if (five_star_assurance_number < min_fives) { min_fives = five_star_assurance_number; min_fivesth = five_count; min_fivecount = countx; }
                             five_star_assurance_number = 0;
                             if (five_star_guarantee_number == 1) {
                                 type = 1;
@@ -2612,8 +2616,8 @@ int main() {
                             star = 5;
                             five_count++;
                             ave_fives += five_star_assurance_number;
-                            if (five_star_assurance_number > max_fives) { max_fives = five_star_assurance_number; max_fivesth = five_count; max_fivecount = count; }
-                            if (five_star_assurance_number < min_fives) { min_fives = five_star_assurance_number; min_fivesth = five_count; min_fivecount = count; }
+                            if (five_star_assurance_number > max_fives) { max_fives = five_star_assurance_number; max_fivesth = five_count; max_fivecount = countx; }
+                            if (five_star_assurance_number < min_fives) { min_fives = five_star_assurance_number; min_fivesth = five_count; min_fivecount = countx; }
                             five_star_assurance_number = 0;
                             if (five_star_guarantee_number == 1) {
                                 type = 1;
@@ -2714,8 +2718,8 @@ int main() {
                             star = 5;
                             five_count++;
                             ave_fives += five_star_assurance_number;
-                            if (five_star_assurance_number > max_fives) { max_fives = five_star_assurance_number; max_fivesth = five_count; max_fivecount = count; }
-                            if (five_star_assurance_number < min_fives) { min_fives = five_star_assurance_number; min_fivesth = five_count; min_fivecount = count; }
+                            if (five_star_assurance_number > max_fives) { max_fives = five_star_assurance_number; max_fivesth = five_count; max_fivecount = countx; }
+                            if (five_star_assurance_number < min_fives) { min_fives = five_star_assurance_number; min_fivesth = five_count; min_fivecount = countx; }
                             five_star_assurance_number = 0;
                             if (five_star_guarantee_number == 1) {
                                 type = 1;
@@ -2816,8 +2820,8 @@ int main() {
                             star = 5;
                             five_count++;
                             ave_fives += five_star_assurance_number;
-                            if (five_star_assurance_number > max_fives) { max_fives = five_star_assurance_number; max_fivesth = five_count; max_fivecount = count; }
-                            if (five_star_assurance_number < min_fives) { min_fives = five_star_assurance_number; min_fivesth = five_count; min_fivecount = count; }
+                            if (five_star_assurance_number > max_fives) { max_fives = five_star_assurance_number; max_fivesth = five_count; max_fivecount = countx; }
+                            if (five_star_assurance_number < min_fives) { min_fives = five_star_assurance_number; min_fivesth = five_count; min_fivecount = countx; }
                             five_star_assurance_number = 0;
                             if (five_star_guarantee_number == 1) {
                                 type = 1;
@@ -2918,8 +2922,8 @@ int main() {
                             star = 5;
                             five_count++;
                             ave_fives += five_star_assurance_number;
-                            if (five_star_assurance_number > max_fives) { max_fives = five_star_assurance_number; max_fivesth = five_count; max_fivecount = count; }
-                            if (five_star_assurance_number < min_fives) { min_fives = five_star_assurance_number; min_fivesth = five_count; min_fivecount = count; }
+                            if (five_star_assurance_number > max_fives) { max_fives = five_star_assurance_number; max_fivesth = five_count; max_fivecount = countx; }
+                            if (five_star_assurance_number < min_fives) { min_fives = five_star_assurance_number; min_fivesth = five_count; min_fivecount = countx; }
                             five_star_assurance_number = 0;
                             if (five_star_guarantee_number == 1) {
                                 type = 1;
@@ -3014,8 +3018,8 @@ int main() {
                         star = 5;
                         five_count++;
                         ave_fives += five_star_assurance_number;
-                        if (five_star_assurance_number > max_fives) { max_fives = five_star_assurance_number; max_fivesth = five_count; max_fivecount = count; }
-                        if (five_star_assurance_number < min_fives) { min_fives = five_star_assurance_number; min_fivesth = five_count; min_fivecount = count; }
+                        if (five_star_assurance_number > max_fives) { max_fives = five_star_assurance_number; max_fivesth = five_count; max_fivecount = countx; }
+                        if (five_star_assurance_number < min_fives) { min_fives = five_star_assurance_number; min_fivesth = five_count; min_fivecount = countx; }
                         five_star_assurance_number = 0;
                         if (five_star_guarantee_number == 1) {
                             type = 1;
@@ -3036,144 +3040,9 @@ int main() {
                             if((kind == five_check[0] || kind == five_check[1] || kind == five_check[2] || kind == five_check[3] || kind == five_check[4] || kind == five_check[5] || kind == five_check[6] || kind == five_check[7])) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
                         }
                     }
-                    std::cout << count + 1 << "(" << five_star_assurance_number << ")" << " ";
-                    switch (kind) {
-                    case 1: { std::cout << "!!!!!*****刻晴" << endl; pcount[0]++; } break;
-                    case 2: { std::cout << "!!!!!*****莫娜" << endl; pcount[1]++; } break;
-                    case 3: { std::cout << "!!!!!*****七七" << endl; pcount[2]++; } break;
-                    case 4: { std::cout << "!!!!!*****迪卢克" << endl; pcount[3]++; } break;
-                    case 5: { std::cout << "!!!!!*****琴" << endl; pcount[4]++; } break;
-                    case 6: { std::cout << "!!!!!*****阿莫斯之弓" << endl; pcount[5]++; } break;
-                    case 7: { std::cout << "!!!!!*****天空之翼" << endl; pcount[6]++; } break;
-                    case 8: { std::cout << "!!!!!*****四风原典" << endl; pcount[7]++; } break;
-                    case 9: { std::cout << "!!!!!*****天空之卷" << endl; pcount[8]++; } break;
-                    case 10: { std::cout << "!!!!!*****和璞鸢" << endl; pcount[9]++; } break;
-                    case 11: { std::cout << "!!!!!*****天空之脊" << endl; pcount[10]++; } break;
-                    case 12: { std::cout << "!!!!!*****狼的末路" << endl; pcount[11]++; } break;
-                    case 13: { std::cout << "!!!!!*****天空之傲" << endl; pcount[12]++; } break;
-                    case 14: { std::cout << "!!!!!*****天空之刃" << endl; pcount[13]++; } break;
-                    case 15: { std::cout << "!!!!!*****风鹰剑" << endl; pcount[14]++; } break;
-                    case 16: { std::cout << "!!****罗莎莉亚" << endl; pcount[15]++; } break;
-                    case 17: { std::cout << "!!****辛焱" << endl; pcount[16]++; } break;
-                    case 18: { std::cout << "!!****砂糖" << endl; pcount[17]++; } break;
-                    case 19: { std::cout << "!!****迪奥娜" << endl; pcount[18]++; } break;
-                    case 20: { std::cout << "!!****重云" << endl; pcount[19]++; } break;
-                    case 21: { std::cout << "!!****诺艾尔" << endl; pcount[20]++; } break;
-                    case 22: { std::cout << "!!****班尼特" << endl; pcount[21]++; } break;
-                    case 23: { std::cout << "!!****菲谢尔" << endl; pcount[22]++; } break;
-                    case 24: { std::cout << "!!****凝光" << endl; pcount[23]++; } break;
-                    case 25: { std::cout << "!!****行秋" << endl; pcount[24]++; } break;
-                    case 26: { std::cout << "!!****北斗" << endl; pcount[25]++; } break;
-                    case 27: { std::cout << "!!****香菱" << endl; pcount[26]++; } break;
-                    case 28: { std::cout << "!!****安柏" << endl; pcount[27]++; } break;
-                    case 29: { std::cout << "!!****雷泽" << endl; pcount[28]++; } break;
-                    case 30: { std::cout << "!!****凯亚" << endl; pcount[29]++; } break;
-                    case 31: { std::cout << "!!****芭芭拉" << endl; pcount[30]++; } break;
-                    case 32: { std::cout << "!!****丽莎" << endl; pcount[31]++; } break;
-                    case 33: { std::cout << "!!****弓藏" << endl; pcount[32]++; } break;
-                    case 34: { std::cout << "!!****祭礼弓" << endl; pcount[33]++; } break;
-                    case 35: { std::cout << "!!****绝弦" << endl; pcount[34]++; } break;
-                    case 36: { std::cout << "!!****西风猎弓" << endl; pcount[35]++; } break;
-                    case 37: { std::cout << "!!****昭心" << endl; pcount[36]++; } break;
-                    case 38: { std::cout << "!!****祭礼残章" << endl; pcount[37]++; } break;
-                    case 39: { std::cout << "!!****流浪乐章" << endl; pcount[38]++; } break;
-                    case 40: { std::cout << "!!****西风秘典" << endl; pcount[39]++; } break;
-                    case 41: { std::cout << "!!****西风长枪" << endl; pcount[40]++; } break;
-                    case 42: { std::cout << "!!****匣里灭辰" << endl; pcount[41]++; } break;
-                    case 43: { std::cout << "!!****雨裁" << endl; pcount[42]++; } break;
-                    case 44: { std::cout << "!!****祭礼大剑" << endl; pcount[43]++; } break;
-                    case 45: { std::cout << "!!****钟剑" << endl; pcount[44]++; } break;
-                    case 46: { std::cout << "!!****西风大剑" << endl; pcount[45]++; } break;
-                    case 47: { std::cout << "!!****匣里龙吟" << endl; pcount[46]++; } break;
-                    case 48: { std::cout << "!!****祭礼剑" << endl; pcount[47]++; } break;
-                    case 49: { std::cout << "!!****笛剑" << endl; pcount[48]++; } break;
-                    case 50: { std::cout << "!!****西风剑" << endl; pcount[49]++; } break;
-                    case 51: { std::cout << "***猎弓" << endl; pcount[50]++; } break;
-                    case 52: { std::cout << "***神射手之誓" << endl; pcount[51]++; } break;
-                    case 53: { std::cout << "***鸦羽弓" << endl; pcount[52]++; } break;
-                    case 54: { std::cout << "***翡玉法球" << endl; pcount[53]++; } break;
-                    case 55: { std::cout << "***讨龙英杰谭" << endl; pcount[54]++; } break;
-                    case 56: { std::cout << "***魔导绪论" << endl; pcount[55]++; } break;
-                    case 57: { std::cout << "***黑缨枪" << endl; pcount[56]++; } break;
-                    case 58: { std::cout << "***以理服人" << endl; pcount[57]++; } break;
-                    case 59: { std::cout << "***沐浴龙血的剑" << endl; pcount[58]++; } break;
-                    case 60: { std::cout << "***铁影阔剑" << endl; pcount[59]++; } break;
-                    case 61: { std::cout << "***飞天御剑" << endl; pcount[60]++; } break;
-                    case 62: { std::cout << "***黎明神剑" << endl; pcount[61]++; } break;
-                    case 63: { std::cout << "***冷刃" << endl; pcount[62]++; } break;
-                    case 64: { std::cout << "!!!!!*****温迪" << endl; pcount[63]++; } break;
-                    case 65: { std::cout << "!!!!!*****可莉" << endl; pcount[64]++; } break;
-                    case 66: { std::cout << "!!!!!*****达达利亚" << endl; pcount[65]++; } break;
-                    case 67: { std::cout << "!!!!!*****钟离" << endl; pcount[66]++; } break;
-                    case 68: { std::cout << "!!!!!*****阿贝多" << endl; pcount[67]++; } break;
-                    case 69: { std::cout << "!!!!!*****甘雨" << endl; pcount[68]++; } break;
-                    case 70: { std::cout << "!!!!!*****魈" << endl; pcount[69]++; } break;
-                    case 71: { std::cout << "!!!!!*****胡桃" << endl; pcount[70]++; } break;
-                    case 72: { std::cout << "!!****烟绯" << endl; pcount[71]++; } break;
-                    case 73: { std::cout << "!!!!!*****优菈" << endl; pcount[72]++; } break;
-                    case 74: { std::cout << "!!!!!*****尘世之锁" << endl; pcount[73]++; } break;
-                    case 75: { std::cout << "!!!!!*****贯虹之槊" << endl; pcount[74]++; } break;
-                    case 76: { std::cout << "!!!!!*****无工之剑" << endl; pcount[75]++; } break;
-                    case 77: { std::cout << "!!!!!*****斫峰之刃" << endl; pcount[76]++; } break;
-                    case 78: { std::cout << "!!!!!*****磐岩结绿" << endl; pcount[77]++; } break;
-                    case 79: { std::cout << "!!!!!*****护摩之杖" << endl; pcount[78]++; } break;
-                    case 80: { std::cout << "!!****千岩古剑" << endl; pcount[79]++; } break;
-                    case 81: { std::cout << "!!****千岩长枪" << endl; pcount[80]++; } break;
-                    case 82: { std::cout << "!!!!!*****终末嗟叹之诗" << endl; pcount[81]++; } break;
-                    case 83: { std::cout << "!!****暗巷闪光" << endl; pcount[82]++; } break;
-                    case 84: { std::cout << "!!****暗巷的酒与诗" << endl; pcount[83]++; } break;
-                    case 85: { std::cout << "!!****暗巷猎手" << endl; pcount[84]++; } break;
-                    case 86: { std::cout << "!!!!!*****松籁响起之时" << endl; pcount[85]++; } break;
-                    case 87: { std::cout << "Placeholder" << endl; pcount[86]++; } break;
-                    case 88: { std::cout << "Placeholder" << endl; pcount[87]++; } break;
-                    case 89: { std::cout << "Placeholder" << endl; pcount[88]++; } break;
-                    case 90: { std::cout << "Placeholder" << endl; pcount[89]++; } break;
-                    case 91: { std::cout << "Placeholder" << endl; pcount[90]++; } break;
-                    case 92: { std::cout << "Placeholder" << endl; pcount[91]++; } break;
-                    case 93: { std::cout << "Placeholder" << endl; pcount[92]++; } break;
-                    case 94: { std::cout << "Placeholder" << endl; pcount[93]++; } break;
-                    case 95: { std::cout << "Placeholder" << endl; pcount[94]++; } break;
-                    case 96: { std::cout << "Placeholder" << endl; pcount[95]++; } break;
-                    case 97: { std::cout << "Placeholder" << endl; pcount[96]++; } break;
-                    case 98: { std::cout << "Placeholder" << endl; pcount[97]++; } break;
-                    case 99: { std::cout << "Placeholder" << endl; pcount[98]++; } break;
-                    case 100: { std::cout << "Placeholder" << endl; pcount[99]++; } break;
-                    case 101: { std::cout << "Placeholder" << endl; pcount[100]++; } break;
-                    case 102: { std::cout << "Placeholder" << endl; pcount[101]++; } break;
-                    case 103: { std::cout << "Placeholder" << endl; pcount[102]++; } break;
-                    case 104: { std::cout << "Placeholder" << endl; pcount[103]++; } break;
-                    case 105: { std::cout << "Placeholder" << endl; pcount[104]++; } break;
-                    case 106: { std::cout << "Placeholder" << endl; pcount[105]++; } break;
-                    case 107: { std::cout << "Placeholder" << endl; pcount[106]++; } break;
-                    case 108: { std::cout << "Placeholder" << endl; pcount[107]++; } break;
-                    case 109: { std::cout << "Placeholder" << endl; pcount[108]++; } break;
-                    case 110: { std::cout << "Placeholder" << endl; pcount[109]++; } break;
-                    case 111: { std::cout << "Placeholder" << endl; pcount[110]++; } break;
-                    case 112: { std::cout << "Placeholder" << endl; pcount[111]++; } break;
-                    case 113: { std::cout << "Placeholder" << endl; pcount[112]++; } break;
-                    case 114: { std::cout << "Placeholder" << endl; pcount[113]++; } break;
-                    case 115: { std::cout << "Placeholder" << endl; pcount[114]++; } break;
-                    case 116: { std::cout << "Placeholder" << endl; pcount[115]++; } break;
-                    case 117: { std::cout << "Placeholder" << endl; pcount[116]++; } break;
-                    case 118: { std::cout << "Placeholder" << endl; pcount[117]++; } break;
-                    case 119: { std::cout << "Placeholder" << endl; pcount[118]++; } break;
-                    case 120: { std::cout << "Placeholder" << endl; pcount[119]++; } break;
-                    case 121: { std::cout << "Placeholder" << endl; pcount[120]++; } break;
-                    case 122: { std::cout << "Placeholder" << endl; pcount[121]++; } break;
-                    case 123: { std::cout << "Placeholder" << endl; pcount[122]++; } break;
-                    case 124: { std::cout << "Placeholder" << endl; pcount[123]++; } break;
-                    case 125: { std::cout << "Placeholder" << endl; pcount[124]++; } break;
-                    case 126: { std::cout << "Placeholder" << endl; pcount[125]++; } break;
-                    case 127: { std::cout << "Placeholder" << endl; pcount[126]++; } break;
-                    case 128: { std::cout << "Placeholder" << endl; pcount[127]++; } break;
-                    default: break;
-                    }
-                    wishes_number--;
-                    count++;
+                    output_string()
                     if (!((star == 4 && type == 1) || (star == 4 && type == 2))) unmet4_c++;
                     if (!(star == 4 && type == 3)) unmet4_w++;
-                    five_star_assurance_number++;
-                    four_star_assurance_number++;
                     for (int templuck = 0; templuck < 9; templuck++) {
                         lucklocation[templuck] = lucklocation[templuck + 1];
                         lucksublocation[templuck] = lucksublocation[templuck + 1];
@@ -3181,7 +3050,7 @@ int main() {
                         luckstar[templuck] = luckstar[templuck + 1];
                         lucktype[templuck] = lucktype[templuck + 1];
                     }
-                    lucklocation[9] = count;
+                    lucklocation[9] = countx;
                     lucksublocation[9] = (long long int) five_star_assurance_number - 1;
                     luckkind[9] = kind;
                     luckstar[9] = star;
@@ -3194,7 +3063,7 @@ int main() {
                             else luck += 0;
                         }
                     }
-                    if (count == 10) {
+                    if (countx == 10) {
                         luckiest = luck;
                         for (int templuck = 0; templuck < 10; templuck++) {
                             luckiestlocation[templuck] = lucklocation[templuck];
@@ -3212,7 +3081,7 @@ int main() {
                     }
                 }
             }
-            if (chosen_banner == 3) {
+            else if (chosen_banner == 3) {
                 while (wishes_number > 0) {
                     long long int temp1 = generator() % ULTRAPOS;
                     long long int temp2 = generator() % ULTRAPOS;
@@ -3224,8 +3093,8 @@ int main() {
                             star = 5;
                             five_count++;
                             ave_fives += five_star_assurance_number;
-                            if (five_star_assurance_number > max_fives) { max_fives = five_star_assurance_number; max_fivesth = five_count; max_fivecount = count; }
-                            if (five_star_assurance_number < min_fives) { min_fives = five_star_assurance_number; min_fivesth = five_count; min_fivecount = count; }
+                            if (five_star_assurance_number > max_fives) { max_fives = five_star_assurance_number; max_fivesth = five_count; max_fivecount = countx; }
+                            if (five_star_assurance_number < min_fives) { min_fives = five_star_assurance_number; min_fivesth = five_count; min_fivecount = countx; }
                             five_star_assurance_number = 0;
                             if (unmet5_c < 148 && unmet5_w < 148) {
                                 if (temp2 < (long long int) ULTRAPOS / 2) {
@@ -3328,8 +3197,8 @@ int main() {
                             star = 5;
                             five_count++;
                             ave_fives += five_star_assurance_number;
-                            if (five_star_assurance_number > max_fives) { max_fives = five_star_assurance_number; max_fivesth = five_count; max_fivecount = count; }
-                            if (five_star_assurance_number < min_fives) { min_fives = five_star_assurance_number; min_fivesth = five_count; min_fivecount = count; }
+                            if (five_star_assurance_number > max_fives) { max_fives = five_star_assurance_number; max_fivesth = five_count; max_fivecount = countx; }
+                            if (five_star_assurance_number < min_fives) { min_fives = five_star_assurance_number; min_fivesth = five_count; min_fivecount = countx; }
                             five_star_assurance_number = 0;
                             if (unmet5_c < 148 && unmet5_w < 148) {
                                 if (temp2 < (long long int) ULTRAPOS / 2) {
@@ -3432,8 +3301,8 @@ int main() {
                             star = 5;
                             five_count++;
                             ave_fives += five_star_assurance_number;
-                            if (five_star_assurance_number > max_fives) { max_fives = five_star_assurance_number; max_fivesth = five_count; max_fivecount = count; }
-                            if (five_star_assurance_number < min_fives) { min_fives = five_star_assurance_number; min_fivesth = five_count; min_fivecount = count; }
+                            if (five_star_assurance_number > max_fives) { max_fives = five_star_assurance_number; max_fivesth = five_count; max_fivecount = countx; }
+                            if (five_star_assurance_number < min_fives) { min_fives = five_star_assurance_number; min_fivesth = five_count; min_fivecount = countx; }
                             five_star_assurance_number = 0;
                             if (unmet5_c < 148 && unmet5_w < 148) {
                                 if (temp2 < (long long int) ULTRAPOS / 2) {
@@ -3531,8 +3400,8 @@ int main() {
                             star = 5;
                             five_count++;
                             ave_fives += five_star_assurance_number;
-                            if (five_star_assurance_number > max_fives) { max_fives = five_star_assurance_number; max_fivesth = five_count; max_fivecount = count; }
-                            if (five_star_assurance_number < min_fives) { min_fives = five_star_assurance_number; min_fivesth = five_count; min_fivecount = count; }
+                            if (five_star_assurance_number > max_fives) { max_fives = five_star_assurance_number; max_fivesth = five_count; max_fivecount = countx; }
+                            if (five_star_assurance_number < min_fives) { min_fives = five_star_assurance_number; min_fivesth = five_count; min_fivecount = countx; }
                             five_star_assurance_number = 0;
                             if (unmet5_c < 148 && unmet5_w < 148) {
                                 if (temp2 < (long long int) ULTRAPOS / 2) {
@@ -3635,8 +3504,8 @@ int main() {
                             star = 5;
                             five_count++;
                             ave_fives += five_star_assurance_number;
-                            if (five_star_assurance_number > max_fives) { max_fives = five_star_assurance_number; max_fivesth = five_count; max_fivecount = count; }
-                            if (five_star_assurance_number < min_fives) { min_fives = five_star_assurance_number; min_fivesth = five_count; min_fivecount = count; }
+                            if (five_star_assurance_number > max_fives) { max_fives = five_star_assurance_number; max_fivesth = five_count; max_fivecount = countx; }
+                            if (five_star_assurance_number < min_fives) { min_fives = five_star_assurance_number; min_fivesth = five_count; min_fivecount = countx; }
                             five_star_assurance_number = 0;
                             if (unmet5_c < 148 && unmet5_w < 148) {
                                 if (temp2 < (long long int) ULTRAPOS / 2) {
@@ -3739,8 +3608,8 @@ int main() {
                             star = 5;
                             five_count++;
                             ave_fives += five_star_assurance_number;
-                            if (five_star_assurance_number > max_fives) { max_fives = five_star_assurance_number; max_fivesth = five_count; max_fivecount = count; }
-                            if (five_star_assurance_number < min_fives) { min_fives = five_star_assurance_number; min_fivesth = five_count; min_fivecount = count; }
+                            if (five_star_assurance_number > max_fives) { max_fives = five_star_assurance_number; max_fivesth = five_count; max_fivecount = countx; }
+                            if (five_star_assurance_number < min_fives) { min_fives = five_star_assurance_number; min_fivesth = five_count; min_fivecount = countx; }
                             five_star_assurance_number = 0;
                             if (unmet5_c < 148 && unmet5_w < 148) {
                                 if (temp2 < (long long int) ULTRAPOS / 2) {
@@ -3837,8 +3706,8 @@ int main() {
                         star = 5;
                         five_count++;
                         ave_fives += five_star_assurance_number;
-                        if (five_star_assurance_number > max_fives) { max_fives = five_star_assurance_number; max_fivesth = five_count; max_fivecount = count; }
-                        if (five_star_assurance_number < min_fives) { min_fives = five_star_assurance_number; min_fivesth = five_count; min_fivecount = count; }
+                        if (five_star_assurance_number > max_fives) { max_fives = five_star_assurance_number; max_fivesth = five_count; max_fivecount = countx; }
+                        if (five_star_assurance_number < min_fives) { min_fives = five_star_assurance_number; min_fivesth = five_count; min_fivecount = countx; }
                         five_star_assurance_number = 0;
                         if (unmet5_c < 148 && unmet5_w < 148) {
                             if (temp2 < (long long int) ULTRAPOS / 2) {
@@ -3883,153 +3752,18 @@ int main() {
                             }
                         }
                     }
-                    std::cout << count + 1 << "(" << five_star_assurance_number << ")" << " ";
-                    switch (kind) {
-                    case 1: { std::cout << "!!!!!*****刻晴" << endl; pcount[0]++; } break;
-                    case 2: { std::cout << "!!!!!*****莫娜" << endl; pcount[1]++; } break;
-                    case 3: { std::cout << "!!!!!*****七七" << endl; pcount[2]++; } break;
-                    case 4: { std::cout << "!!!!!*****迪卢克" << endl; pcount[3]++; } break;
-                    case 5: { std::cout << "!!!!!*****琴" << endl; pcount[4]++; } break;
-                    case 6: { std::cout << "!!!!!*****阿莫斯之弓" << endl; pcount[5]++; } break;
-                    case 7: { std::cout << "!!!!!*****天空之翼" << endl; pcount[6]++; } break;
-                    case 8: { std::cout << "!!!!!*****四风原典" << endl; pcount[7]++; } break;
-                    case 9: { std::cout << "!!!!!*****天空之卷" << endl; pcount[8]++; } break;
-                    case 10: { std::cout << "!!!!!*****和璞鸢" << endl; pcount[9]++; } break;
-                    case 11: { std::cout << "!!!!!*****天空之脊" << endl; pcount[10]++; } break;
-                    case 12: { std::cout << "!!!!!*****狼的末路" << endl; pcount[11]++; } break;
-                    case 13: { std::cout << "!!!!!*****天空之傲" << endl; pcount[12]++; } break;
-                    case 14: { std::cout << "!!!!!*****天空之刃" << endl; pcount[13]++; } break;
-                    case 15: { std::cout << "!!!!!*****风鹰剑" << endl; pcount[14]++; } break;
-                    case 16: { std::cout << "!!****罗莎莉亚" << endl; pcount[15]++; } break;
-                    case 17: { std::cout << "!!****辛焱" << endl; pcount[16]++; } break;
-                    case 18: { std::cout << "!!****砂糖" << endl; pcount[17]++; } break;
-                    case 19: { std::cout << "!!****迪奥娜" << endl; pcount[18]++; } break;
-                    case 20: { std::cout << "!!****重云" << endl; pcount[19]++; } break;
-                    case 21: { std::cout << "!!****诺艾尔" << endl; pcount[20]++; } break;
-                    case 22: { std::cout << "!!****班尼特" << endl; pcount[21]++; } break;
-                    case 23: { std::cout << "!!****菲谢尔" << endl; pcount[22]++; } break;
-                    case 24: { std::cout << "!!****凝光" << endl; pcount[23]++; } break;
-                    case 25: { std::cout << "!!****行秋" << endl; pcount[24]++; } break;
-                    case 26: { std::cout << "!!****北斗" << endl; pcount[25]++; } break;
-                    case 27: { std::cout << "!!****香菱" << endl; pcount[26]++; } break;
-                    case 28: { std::cout << "!!****安柏" << endl; pcount[27]++; } break;
-                    case 29: { std::cout << "!!****雷泽" << endl; pcount[28]++; } break;
-                    case 30: { std::cout << "!!****凯亚" << endl; pcount[29]++; } break;
-                    case 31: { std::cout << "!!****芭芭拉" << endl; pcount[30]++; } break;
-                    case 32: { std::cout << "!!****丽莎" << endl; pcount[31]++; } break;
-                    case 33: { std::cout << "!!****弓藏" << endl; pcount[32]++; } break;
-                    case 34: { std::cout << "!!****祭礼弓" << endl; pcount[33]++; } break;
-                    case 35: { std::cout << "!!****绝弦" << endl; pcount[34]++; } break;
-                    case 36: { std::cout << "!!****西风猎弓" << endl; pcount[35]++; } break;
-                    case 37: { std::cout << "!!****昭心" << endl; pcount[36]++; } break;
-                    case 38: { std::cout << "!!****祭礼残章" << endl; pcount[37]++; } break;
-                    case 39: { std::cout << "!!****流浪乐章" << endl; pcount[38]++; } break;
-                    case 40: { std::cout << "!!****西风秘典" << endl; pcount[39]++; } break;
-                    case 41: { std::cout << "!!****西风长枪" << endl; pcount[40]++; } break;
-                    case 42: { std::cout << "!!****匣里灭辰" << endl; pcount[41]++; } break;
-                    case 43: { std::cout << "!!****雨裁" << endl; pcount[42]++; } break;
-                    case 44: { std::cout << "!!****祭礼大剑" << endl; pcount[43]++; } break;
-                    case 45: { std::cout << "!!****钟剑" << endl; pcount[44]++; } break;
-                    case 46: { std::cout << "!!****西风大剑" << endl; pcount[45]++; } break;
-                    case 47: { std::cout << "!!****匣里龙吟" << endl; pcount[46]++; } break;
-                    case 48: { std::cout << "!!****祭礼剑" << endl; pcount[47]++; } break;
-                    case 49: { std::cout << "!!****笛剑" << endl; pcount[48]++; } break;
-                    case 50: { std::cout << "!!****西风剑" << endl; pcount[49]++; } break;
-                    case 51: { std::cout << "***猎弓" << endl; pcount[50]++; } break;
-                    case 52: { std::cout << "***神射手之誓" << endl; pcount[51]++; } break;
-                    case 53: { std::cout << "***鸦羽弓" << endl; pcount[52]++; } break;
-                    case 54: { std::cout << "***翡玉法球" << endl; pcount[53]++; } break;
-                    case 55: { std::cout << "***讨龙英杰谭" << endl; pcount[54]++; } break;
-                    case 56: { std::cout << "***魔导绪论" << endl; pcount[55]++; } break;
-                    case 57: { std::cout << "***黑缨枪" << endl; pcount[56]++; } break;
-                    case 58: { std::cout << "***以理服人" << endl; pcount[57]++; } break;
-                    case 59: { std::cout << "***沐浴龙血的剑" << endl; pcount[58]++; } break;
-                    case 60: { std::cout << "***铁影阔剑" << endl; pcount[59]++; } break;
-                    case 61: { std::cout << "***飞天御剑" << endl; pcount[60]++; } break;
-                    case 62: { std::cout << "***黎明神剑" << endl; pcount[61]++; } break;
-                    case 63: { std::cout << "***冷刃" << endl; pcount[62]++; } break;
-                    case 64: { std::cout << "!!!!!*****温迪" << endl; pcount[63]++; } break;
-                    case 65: { std::cout << "!!!!!*****可莉" << endl; pcount[64]++; } break;
-                    case 66: { std::cout << "!!!!!*****达达利亚" << endl; pcount[65]++; } break;
-                    case 67: { std::cout << "!!!!!*****钟离" << endl; pcount[66]++; } break;
-                    case 68: { std::cout << "!!!!!*****阿贝多" << endl; pcount[67]++; } break;
-                    case 69: { std::cout << "!!!!!*****甘雨" << endl; pcount[68]++; } break;
-                    case 70: { std::cout << "!!!!!*****魈" << endl; pcount[69]++; } break;
-                    case 71: { std::cout << "!!!!!*****胡桃" << endl; pcount[70]++; } break;
-                    case 72: { std::cout << "!!****烟绯" << endl; pcount[71]++; } break;
-                    case 73: { std::cout << "!!!!!*****优菈" << endl; pcount[72]++; } break;
-                    case 74: { std::cout << "!!!!!*****尘世之锁" << endl; pcount[73]++; } break;
-                    case 75: { std::cout << "!!!!!*****贯虹之槊" << endl; pcount[74]++; } break;
-                    case 76: { std::cout << "!!!!!*****无工之剑" << endl; pcount[75]++; } break;
-                    case 77: { std::cout << "!!!!!*****斫峰之刃" << endl; pcount[76]++; } break;
-                    case 78: { std::cout << "!!!!!*****磐岩结绿" << endl; pcount[77]++; } break;
-                    case 79: { std::cout << "!!!!!*****护摩之杖" << endl; pcount[78]++; } break;
-                    case 80: { std::cout << "!!****千岩古剑" << endl; pcount[79]++; } break;
-                    case 81: { std::cout << "!!****千岩长枪" << endl; pcount[80]++; } break;
-                    case 82: { std::cout << "!!!!!*****终末嗟叹之诗" << endl; pcount[81]++; } break;
-                    case 83: { std::cout << "!!****暗巷闪光" << endl; pcount[82]++; } break;
-                    case 84: { std::cout << "!!****暗巷的酒与诗" << endl; pcount[83]++; } break;
-                    case 85: { std::cout << "!!****暗巷猎手" << endl; pcount[84]++; } break;
-                    case 86: { std::cout << "!!!!!*****松籁响起之时" << endl; pcount[85]++; } break;
-                    case 87: { std::cout << "Placeholder" << endl; pcount[86]++; } break;
-                    case 88: { std::cout << "Placeholder" << endl; pcount[87]++; } break;
-                    case 89: { std::cout << "Placeholder" << endl; pcount[88]++; } break;
-                    case 90: { std::cout << "Placeholder" << endl; pcount[89]++; } break;
-                    case 91: { std::cout << "Placeholder" << endl; pcount[90]++; } break;
-                    case 92: { std::cout << "Placeholder" << endl; pcount[91]++; } break;
-                    case 93: { std::cout << "Placeholder" << endl; pcount[92]++; } break;
-                    case 94: { std::cout << "Placeholder" << endl; pcount[93]++; } break;
-                    case 95: { std::cout << "Placeholder" << endl; pcount[94]++; } break;
-                    case 96: { std::cout << "Placeholder" << endl; pcount[95]++; } break;
-                    case 97: { std::cout << "Placeholder" << endl; pcount[96]++; } break;
-                    case 98: { std::cout << "Placeholder" << endl; pcount[97]++; } break;
-                    case 99: { std::cout << "Placeholder" << endl; pcount[98]++; } break;
-                    case 100: { std::cout << "Placeholder" << endl; pcount[99]++; } break;
-                    case 101: { std::cout << "Placeholder" << endl; pcount[100]++; } break;
-                    case 102: { std::cout << "Placeholder" << endl; pcount[101]++; } break;
-                    case 103: { std::cout << "Placeholder" << endl; pcount[102]++; } break;
-                    case 104: { std::cout << "Placeholder" << endl; pcount[103]++; } break;
-                    case 105: { std::cout << "Placeholder" << endl; pcount[104]++; } break;
-                    case 106: { std::cout << "Placeholder" << endl; pcount[105]++; } break;
-                    case 107: { std::cout << "Placeholder" << endl; pcount[106]++; } break;
-                    case 108: { std::cout << "Placeholder" << endl; pcount[107]++; } break;
-                    case 109: { std::cout << "Placeholder" << endl; pcount[108]++; } break;
-                    case 110: { std::cout << "Placeholder" << endl; pcount[109]++; } break;
-                    case 111: { std::cout << "Placeholder" << endl; pcount[110]++; } break;
-                    case 112: { std::cout << "Placeholder" << endl; pcount[111]++; } break;
-                    case 113: { std::cout << "Placeholder" << endl; pcount[112]++; } break;
-                    case 114: { std::cout << "Placeholder" << endl; pcount[113]++; } break;
-                    case 115: { std::cout << "Placeholder" << endl; pcount[114]++; } break;
-                    case 116: { std::cout << "Placeholder" << endl; pcount[115]++; } break;
-                    case 117: { std::cout << "Placeholder" << endl; pcount[116]++; } break;
-                    case 118: { std::cout << "Placeholder" << endl; pcount[117]++; } break;
-                    case 119: { std::cout << "Placeholder" << endl; pcount[118]++; } break;
-                    case 120: { std::cout << "Placeholder" << endl; pcount[119]++; } break;
-                    case 121: { std::cout << "Placeholder" << endl; pcount[120]++; } break;
-                    case 122: { std::cout << "Placeholder" << endl; pcount[121]++; } break;
-                    case 123: { std::cout << "Placeholder" << endl; pcount[122]++; } break;
-                    case 124: { std::cout << "Placeholder" << endl; pcount[123]++; } break;
-                    case 125: { std::cout << "Placeholder" << endl; pcount[124]++; } break;
-                    case 126: { std::cout << "Placeholder" << endl; pcount[125]++; } break;
-                    case 127: { std::cout << "Placeholder" << endl; pcount[126]++; } break;
-                    case 128: { std::cout << "Placeholder" << endl; pcount[127]++; } break;
-                    default: break;
-                    }
-                    wishes_number--;
-                    count++;
+                    output_string()
                     if (!(star == 5 && type == 1)) unmet5_c++;
                     if (!(star == 5 && type == 2)) unmet5_w++;
                     if (!(star == 4 && type == 1)) unmet4_c++;
                     if (!(star == 4 && type == 2)) unmet4_w++;
-                    five_star_assurance_number++;
-                    four_star_assurance_number++;
                     for (int templuck = 0; templuck < 9; templuck++) {
                         lucklocation[templuck] = lucklocation[templuck + 1];
                         lucksublocation[templuck] = lucksublocation[templuck + 1];
                         luckkind[templuck] = luckkind[templuck + 1];
                         luckstar[templuck] = luckstar[templuck + 1];
                     }
-                    lucklocation[9] = count;
+                    lucklocation[9] = countx;
                     lucksublocation[9] = (long long int) five_star_assurance_number - 1;
                     luckkind[9] = kind;
                     luckstar[9] = star;
@@ -4041,7 +3775,7 @@ int main() {
                             else luck += 0;
                         }
                     }
-                    if (count == 10) {
+                    if (countx == 10) {
                         luckiest = luck;
                         for (int templuck = 0; templuck < 10; templuck++) {
                             luckiestlocation[templuck] = lucklocation[templuck];
@@ -4059,7 +3793,7 @@ int main() {
                     }
                 }
             }
-            if (chosen_banner == 4) {
+            else {
                 while (wishes_number > 0) {
                     long long int temp1 = generator() % ULTRAPOS;
                     long long int temp2 = generator() % ULTRAPOS;
@@ -4067,7 +3801,7 @@ int main() {
                     int star = 0; //4-star or 5-star
                     int type = 0; //Up or non-up, character or weapon
                     int kind = 0; //which exactly
-                    if (is_noelle == 1 && count == 9) {
+                    if (is_noelle == 1 && countx == 9) {
                         star = 4;
                         four_count++;
                         four_star_assurance_number = 0;
@@ -4081,8 +3815,8 @@ int main() {
                             star = 5;
                             five_count++;
                             ave_fives += five_star_assurance_number;
-                            if (five_star_assurance_number > max_fives) { max_fives = five_star_assurance_number; max_fivesth = five_count; max_fivecount = count; }
-                            if (five_star_assurance_number < min_fives) { min_fives = five_star_assurance_number; min_fivesth = five_count; min_fivecount = count; }
+                            if (five_star_assurance_number > max_fives) { max_fives = five_star_assurance_number; max_fivesth = five_count; max_fivecount = countx; }
+                            if (five_star_assurance_number < min_fives) { min_fives = five_star_assurance_number; min_fivesth = five_count; min_fivecount = countx; }
                             five_star_assurance_number = 0;
                             type = 1;
                             five_count_c++;
@@ -4109,8 +3843,8 @@ int main() {
                             five_count++;
                             type = 1;
                             ave_fives += five_star_assurance_number;
-                            if (five_star_assurance_number > max_fives) { max_fives = five_star_assurance_number; max_fivesth = five_count; max_fivecount = count; }
-                            if (five_star_assurance_number < min_fives) { min_fives = five_star_assurance_number; min_fivesth = five_count; min_fivecount = count; }
+                            if (five_star_assurance_number > max_fives) { max_fives = five_star_assurance_number; max_fivesth = five_count; max_fivecount = countx; }
+                            if (five_star_assurance_number < min_fives) { min_fives = five_star_assurance_number; min_fivesth = five_count; min_fivecount = countx; }
                             five_star_assurance_number = 0;
                             five_count_c++;
                             kind = rspick(nup_five_c, 5);
@@ -4136,8 +3870,8 @@ int main() {
                             five_count++;
                             type = 1;
                             ave_fives += five_star_assurance_number;
-                            if (five_star_assurance_number > max_fives) { max_fives = five_star_assurance_number; max_fivesth = five_count; max_fivecount = count; }
-                            if (five_star_assurance_number < min_fives) { min_fives = five_star_assurance_number; min_fivesth = five_count; min_fivecount = count; }
+                            if (five_star_assurance_number > max_fives) { max_fives = five_star_assurance_number; max_fivesth = five_count; max_fivecount = countx; }
+                            if (five_star_assurance_number < min_fives) { min_fives = five_star_assurance_number; min_fivesth = five_count; min_fivecount = countx; }
                             five_star_assurance_number = 0;
                             five_count_c++;
                             kind = rspick(nup_five_c, 5);
@@ -4152,149 +3886,14 @@ int main() {
                             if (kind == 21) { is_noelle = 0; }
                         }
                     }
-                    std::cout << count + 1 << "(" << five_star_assurance_number << ")" << " ";
-                    switch (kind) {
-                    case 1: { std::cout << "!!!!!*****刻晴" << endl; pcount[0]++; } break;
-                    case 2: { std::cout << "!!!!!*****莫娜" << endl; pcount[1]++; } break;
-                    case 3: { std::cout << "!!!!!*****七七" << endl; pcount[2]++; } break;
-                    case 4: { std::cout << "!!!!!*****迪卢克" << endl; pcount[3]++; } break;
-                    case 5: { std::cout << "!!!!!*****琴" << endl; pcount[4]++; } break;
-                    case 6: { std::cout << "!!!!!*****阿莫斯之弓" << endl; pcount[5]++; } break;
-                    case 7: { std::cout << "!!!!!*****天空之翼" << endl; pcount[6]++; } break;
-                    case 8: { std::cout << "!!!!!*****四风原典" << endl; pcount[7]++; } break;
-                    case 9: { std::cout << "!!!!!*****天空之卷" << endl; pcount[8]++; } break;
-                    case 10: { std::cout << "!!!!!*****和璞鸢" << endl; pcount[9]++; } break;
-                    case 11: { std::cout << "!!!!!*****天空之脊" << endl; pcount[10]++; } break;
-                    case 12: { std::cout << "!!!!!*****狼的末路" << endl; pcount[11]++; } break;
-                    case 13: { std::cout << "!!!!!*****天空之傲" << endl; pcount[12]++; } break;
-                    case 14: { std::cout << "!!!!!*****天空之刃" << endl; pcount[13]++; } break;
-                    case 15: { std::cout << "!!!!!*****风鹰剑" << endl; pcount[14]++; } break;
-                    case 16: { std::cout << "!!****罗莎莉亚" << endl; pcount[15]++; } break;
-                    case 17: { std::cout << "!!****辛焱" << endl; pcount[16]++; } break;
-                    case 18: { std::cout << "!!****砂糖" << endl; pcount[17]++; } break;
-                    case 19: { std::cout << "!!****迪奥娜" << endl; pcount[18]++; } break;
-                    case 20: { std::cout << "!!****重云" << endl; pcount[19]++; } break;
-                    case 21: { std::cout << "!!****诺艾尔" << endl; pcount[20]++; } break;
-                    case 22: { std::cout << "!!****班尼特" << endl; pcount[21]++; } break;
-                    case 23: { std::cout << "!!****菲谢尔" << endl; pcount[22]++; } break;
-                    case 24: { std::cout << "!!****凝光" << endl; pcount[23]++; } break;
-                    case 25: { std::cout << "!!****行秋" << endl; pcount[24]++; } break;
-                    case 26: { std::cout << "!!****北斗" << endl; pcount[25]++; } break;
-                    case 27: { std::cout << "!!****香菱" << endl; pcount[26]++; } break;
-                    case 28: { std::cout << "!!****安柏" << endl; pcount[27]++; } break;
-                    case 29: { std::cout << "!!****雷泽" << endl; pcount[28]++; } break;
-                    case 30: { std::cout << "!!****凯亚" << endl; pcount[29]++; } break;
-                    case 31: { std::cout << "!!****芭芭拉" << endl; pcount[30]++; } break;
-                    case 32: { std::cout << "!!****丽莎" << endl; pcount[31]++; } break;
-                    case 33: { std::cout << "!!****弓藏" << endl; pcount[32]++; } break;
-                    case 34: { std::cout << "!!****祭礼弓" << endl; pcount[33]++; } break;
-                    case 35: { std::cout << "!!****绝弦" << endl; pcount[34]++; } break;
-                    case 36: { std::cout << "!!****西风猎弓" << endl; pcount[35]++; } break;
-                    case 37: { std::cout << "!!****昭心" << endl; pcount[36]++; } break;
-                    case 38: { std::cout << "!!****祭礼残章" << endl; pcount[37]++; } break;
-                    case 39: { std::cout << "!!****流浪乐章" << endl; pcount[38]++; } break;
-                    case 40: { std::cout << "!!****西风秘典" << endl; pcount[39]++; } break;
-                    case 41: { std::cout << "!!****西风长枪" << endl; pcount[40]++; } break;
-                    case 42: { std::cout << "!!****匣里灭辰" << endl; pcount[41]++; } break;
-                    case 43: { std::cout << "!!****雨裁" << endl; pcount[42]++; } break;
-                    case 44: { std::cout << "!!****祭礼大剑" << endl; pcount[43]++; } break;
-                    case 45: { std::cout << "!!****钟剑" << endl; pcount[44]++; } break;
-                    case 46: { std::cout << "!!****西风大剑" << endl; pcount[45]++; } break;
-                    case 47: { std::cout << "!!****匣里龙吟" << endl; pcount[46]++; } break;
-                    case 48: { std::cout << "!!****祭礼剑" << endl; pcount[47]++; } break;
-                    case 49: { std::cout << "!!****笛剑" << endl; pcount[48]++; } break;
-                    case 50: { std::cout << "!!****西风剑" << endl; pcount[49]++; } break;
-                    case 51: { std::cout << "***猎弓" << endl; pcount[50]++; } break;
-                    case 52: { std::cout << "***神射手之誓" << endl; pcount[51]++; } break;
-                    case 53: { std::cout << "***鸦羽弓" << endl; pcount[52]++; } break;
-                    case 54: { std::cout << "***翡玉法球" << endl; pcount[53]++; } break;
-                    case 55: { std::cout << "***讨龙英杰谭" << endl; pcount[54]++; } break;
-                    case 56: { std::cout << "***魔导绪论" << endl; pcount[55]++; } break;
-                    case 57: { std::cout << "***黑缨枪" << endl; pcount[56]++; } break;
-                    case 58: { std::cout << "***以理服人" << endl; pcount[57]++; } break;
-                    case 59: { std::cout << "***沐浴龙血的剑" << endl; pcount[58]++; } break;
-                    case 60: { std::cout << "***铁影阔剑" << endl; pcount[59]++; } break;
-                    case 61: { std::cout << "***飞天御剑" << endl; pcount[60]++; } break;
-                    case 62: { std::cout << "***黎明神剑" << endl; pcount[61]++; } break;
-                    case 63: { std::cout << "***冷刃" << endl; pcount[62]++; } break;
-                    case 64: { std::cout << "!!!!!*****温迪" << endl; pcount[63]++; } break;
-                    case 65: { std::cout << "!!!!!*****可莉" << endl; pcount[64]++; } break;
-                    case 66: { std::cout << "!!!!!*****达达利亚" << endl; pcount[65]++; } break;
-                    case 67: { std::cout << "!!!!!*****钟离" << endl; pcount[66]++; } break;
-                    case 68: { std::cout << "!!!!!*****阿贝多" << endl; pcount[67]++; } break;
-                    case 69: { std::cout << "!!!!!*****甘雨" << endl; pcount[68]++; } break;
-                    case 70: { std::cout << "!!!!!*****魈" << endl; pcount[69]++; } break;
-                    case 71: { std::cout << "!!!!!*****胡桃" << endl; pcount[70]++; } break;
-                    case 72: { std::cout << "!!****烟绯" << endl; pcount[71]++; } break;
-                    case 73: { std::cout << "!!!!!*****优菈" << endl; pcount[72]++; } break;
-                    case 74: { std::cout << "!!!!!*****尘世之锁" << endl; pcount[73]++; } break;
-                    case 75: { std::cout << "!!!!!*****贯虹之槊" << endl; pcount[74]++; } break;
-                    case 76: { std::cout << "!!!!!*****无工之剑" << endl; pcount[75]++; } break;
-                    case 77: { std::cout << "!!!!!*****斫峰之刃" << endl; pcount[76]++; } break;
-                    case 78: { std::cout << "!!!!!*****磐岩结绿" << endl; pcount[77]++; } break;
-                    case 79: { std::cout << "!!!!!*****护摩之杖" << endl; pcount[78]++; } break;
-                    case 80: { std::cout << "!!****千岩古剑" << endl; pcount[79]++; } break;
-                    case 81: { std::cout << "!!****千岩长枪" << endl; pcount[80]++; } break;
-                    case 82: { std::cout << "!!!!!*****终末嗟叹之诗" << endl; pcount[81]++; } break;
-                    case 83: { std::cout << "!!****暗巷闪光" << endl; pcount[82]++; } break;
-                    case 84: { std::cout << "!!****暗巷的酒与诗" << endl; pcount[83]++; } break;
-                    case 85: { std::cout << "!!****暗巷猎手" << endl; pcount[84]++; } break;
-                    case 86: { std::cout << "!!!!!*****松籁响起之时" << endl; pcount[85]++; } break;
-                    case 87: { std::cout << "Placeholder" << endl; pcount[86]++; } break;
-                    case 88: { std::cout << "Placeholder" << endl; pcount[87]++; } break;
-                    case 89: { std::cout << "Placeholder" << endl; pcount[88]++; } break;
-                    case 90: { std::cout << "Placeholder" << endl; pcount[89]++; } break;
-                    case 91: { std::cout << "Placeholder" << endl; pcount[90]++; } break;
-                    case 92: { std::cout << "Placeholder" << endl; pcount[91]++; } break;
-                    case 93: { std::cout << "Placeholder" << endl; pcount[92]++; } break;
-                    case 94: { std::cout << "Placeholder" << endl; pcount[93]++; } break;
-                    case 95: { std::cout << "Placeholder" << endl; pcount[94]++; } break;
-                    case 96: { std::cout << "Placeholder" << endl; pcount[95]++; } break;
-                    case 97: { std::cout << "Placeholder" << endl; pcount[96]++; } break;
-                    case 98: { std::cout << "Placeholder" << endl; pcount[97]++; } break;
-                    case 99: { std::cout << "Placeholder" << endl; pcount[98]++; } break;
-                    case 100: { std::cout << "Placeholder" << endl; pcount[99]++; } break;
-                    case 101: { std::cout << "Placeholder" << endl; pcount[100]++; } break;
-                    case 102: { std::cout << "Placeholder" << endl; pcount[101]++; } break;
-                    case 103: { std::cout << "Placeholder" << endl; pcount[102]++; } break;
-                    case 104: { std::cout << "Placeholder" << endl; pcount[103]++; } break;
-                    case 105: { std::cout << "Placeholder" << endl; pcount[104]++; } break;
-                    case 106: { std::cout << "Placeholder" << endl; pcount[105]++; } break;
-                    case 107: { std::cout << "Placeholder" << endl; pcount[106]++; } break;
-                    case 108: { std::cout << "Placeholder" << endl; pcount[107]++; } break;
-                    case 109: { std::cout << "Placeholder" << endl; pcount[108]++; } break;
-                    case 110: { std::cout << "Placeholder" << endl; pcount[109]++; } break;
-                    case 111: { std::cout << "Placeholder" << endl; pcount[110]++; } break;
-                    case 112: { std::cout << "Placeholder" << endl; pcount[111]++; } break;
-                    case 113: { std::cout << "Placeholder" << endl; pcount[112]++; } break;
-                    case 114: { std::cout << "Placeholder" << endl; pcount[113]++; } break;
-                    case 115: { std::cout << "Placeholder" << endl; pcount[114]++; } break;
-                    case 116: { std::cout << "Placeholder" << endl; pcount[115]++; } break;
-                    case 117: { std::cout << "Placeholder" << endl; pcount[116]++; } break;
-                    case 118: { std::cout << "Placeholder" << endl; pcount[117]++; } break;
-                    case 119: { std::cout << "Placeholder" << endl; pcount[118]++; } break;
-                    case 120: { std::cout << "Placeholder" << endl; pcount[119]++; } break;
-                    case 121: { std::cout << "Placeholder" << endl; pcount[120]++; } break;
-                    case 122: { std::cout << "Placeholder" << endl; pcount[121]++; } break;
-                    case 123: { std::cout << "Placeholder" << endl; pcount[122]++; } break;
-                    case 124: { std::cout << "Placeholder" << endl; pcount[123]++; } break;
-                    case 125: { std::cout << "Placeholder" << endl; pcount[124]++; } break;
-                    case 126: { std::cout << "Placeholder" << endl; pcount[125]++; } break;
-                    case 127: { std::cout << "Placeholder" << endl; pcount[126]++; } break;
-                    case 128: { std::cout << "Placeholder" << endl; pcount[127]++; } break;
-                    default: break;
-                    }
-                    wishes_number--;
-                    count++;
-                    five_star_assurance_number++;
-                    four_star_assurance_number++;
+                    output_string()
                     for (int templuck = 0; templuck < 9; templuck++) {
                         lucklocation[templuck] = lucklocation[templuck + 1];
                         lucksublocation[templuck] = lucksublocation[templuck + 1];
                         luckkind[templuck] = luckkind[templuck + 1];
                         luckstar[templuck] = luckstar[templuck + 1];
                     }
-                    lucklocation[9] = count;
+                    lucklocation[9] = countx;
                     lucksublocation[9] = (long long int) five_star_assurance_number - 1;
                     luckkind[9] = kind;
                     luckstar[9] = star;
@@ -4306,7 +3905,7 @@ int main() {
                             else luck += 0;
                         }
                     }
-                    if (count == 10) {
+                    if (countx == 10) {
                         luckiest = luck;
                         for (int templuck = 0; templuck < 10; templuck++) {
                             luckiestlocation[templuck] = lucklocation[templuck];
@@ -4324,37 +3923,35 @@ int main() {
                     }
                 }
             }
-            if (wishes_number >= 0) {
-                if (five_count == 0) {
-                    std::cout << endl << "你已经抽了 " << count << " 发。" << endl
-                        << "五星角色或武器:   " << five_count << "  " << five_count * 100.0 / count << "%" << endl
-                        << "四星角色或武器:   " << four_count << "  " << four_count * 100.0 / count << "%" << endl
-                        << "五星角色 : 五星武器 : 四星角色 : 四星武器   " << five_count_c << " : " << five_count_w << " : " << four_count_c << " : " << four_count_w << endl << endl;
-                }
-                else {
-                    std::cout << endl << "你已经抽了 " << count << " 发。" << endl
-                        << "五星角色或武器:   " << five_count << "  " << five_count * 100.0 / count << "%" << endl
-                        << "四星角色或武器:   " << four_count << "  " << four_count * 100.0 / count << "%" << endl
-                        << "连续非五星最高纪录:   " << max_fives << " 发。发生在第 " << max_fivesth << " 个保底单元, 即第 " << max_fivecount + 1 << " 次祈愿。" << endl
-                        << "连续非五星最低纪录:   " << min_fives << " 发。发生在第 " << min_fivesth << " 个保底单元, 即第 " << min_fivecount + 1 << " 次祈愿。" << endl
-                        << "连续非五星平均祈愿数:   " << ave_fives * 1.0 / five_count << endl
-                        << "五星角色 : 五星武器 : 四星角色 : 四星武器   " << five_count_c << " : " << five_count_w << " : " << four_count_c << " : " << four_count_w << endl << endl;
-                }
-                for (int iout = 0; iout < 15; iout++) { if (pcount[iout] > 0) std::cout << pname[iout] << "(" << pcount[iout] << ")" << " "; }
-                for (int iout = 63; iout < 71; iout++) { if (pcount[iout] > 0) std::cout << pname[iout] << "(" << pcount[iout] << ")" << " "; }
-                for (int iout = 72; iout < 79; iout++) { if (pcount[iout] > 0) std::cout << pname[iout] << "(" << pcount[iout] << ")" << " "; }
-                if (pcount[81] > 0) std::cout << pname[80] << "(" << pcount[81] << ")" << " ";
-                if (pcount[85] > 0) std::cout << pname[85] << "(" << pcount[85] << ")" << " ";
-                std::cout << endl << endl;
-                for (int iout = 15; iout < 50; iout++) { if (pcount[iout] > 0) std::cout << pname[iout] << "(" << pcount[iout] << ")" << " "; }
-                if (pcount[71] > 0) std::cout << pname[71] << "(" << pcount[71] << ")" << " ";
-                if (pcount[79] > 0) std::cout << pname[79] << "(" << pcount[79] << ")" << " ";
-                if (pcount[80] > 0) std::cout << pname[80] << "(" << pcount[80] << ")" << " ";
-                for (int iout = 82; iout < 85; iout++) { if (pcount[iout] > 0) std::cout << pname[iout] << "(" << pcount[iout] << ")" << " "; }
-                std::cout << endl << endl; auto elapsed = std::chrono::steady_clock::now() - start;
-                long long int microseconds = std::chrono::duration_cast<std::chrono::microseconds>(elapsed).count();
-                std::cout << microseconds * 1.0 / 1000000 << " 秒过去了。" << endl;
+            if (five_count == 0) {
+                std::cout << endl << "你已经抽了 " << countx << " 发。" << endl
+                    << "五星角色或武器:   " << five_count << "  " << five_count * 100.0 / countx << "%" << endl
+                    << "四星角色或武器:   " << four_count << "  " << four_count * 100.0 / countx << "%" << endl
+                    << "五星角色 : 五星武器 : 四星角色 : 四星武器   " << five_count_c << " : " << five_count_w << " : " << four_count_c << " : " << four_count_w << endl << endl;
             }
+            else {
+                std::cout << endl << "你已经抽了 " << countx << " 发。" << endl
+                    << "五星角色或武器:   " << five_count << "  " << five_count * 100.0 / countx << "%" << endl
+                    << "四星角色或武器:   " << four_count << "  " << four_count * 100.0 / countx << "%" << endl
+                    << "连续非五星最高纪录:   " << max_fives << " 发。发生在第 " << max_fivesth << " 个保底单元, 即第 " << max_fivecount + 1 << " 次祈愿。" << endl
+                    << "连续非五星最低纪录:   " << min_fives << " 发。发生在第 " << min_fivesth << " 个保底单元, 即第 " << min_fivecount + 1 << " 次祈愿。" << endl
+                    << "连续非五星平均祈愿数:   " << ave_fives * 1.0 / five_count << endl
+                    << "五星角色 : 五星武器 : 四星角色 : 四星武器   " << five_count_c << " : " << five_count_w << " : " << four_count_c << " : " << four_count_w << endl << endl;
+            }
+            for (int iout = 0; iout < 15; iout++) { if (pcount[iout] > 0) std::cout << pname[iout] << "(" << pcount[iout] << ")" << " "; }
+            for (int iout = 63; iout < 71; iout++) { if (pcount[iout] > 0) std::cout << pname[iout] << "(" << pcount[iout] << ")" << " "; }
+            for (int iout = 72; iout < 79; iout++) { if (pcount[iout] > 0) std::cout << pname[iout] << "(" << pcount[iout] << ")" << " "; }
+            if (pcount[81] > 0) std::cout << pname[80] << "(" << pcount[81] << ")" << " ";
+            if (pcount[85] > 0) std::cout << pname[85] << "(" << pcount[85] << ")" << " ";
+            std::cout << endl << endl;
+            for (int iout = 15; iout < 50; iout++) { if (pcount[iout] > 0) std::cout << pname[iout] << "(" << pcount[iout] << ")" << " "; }
+            if (pcount[71] > 0) std::cout << pname[71] << "(" << pcount[71] << ")" << " ";
+            if (pcount[79] > 0) std::cout << pname[79] << "(" << pcount[79] << ")" << " ";
+            if (pcount[80] > 0) std::cout << pname[80] << "(" << pcount[80] << ")" << " ";
+            for (int iout = 82; iout < 85; iout++) { if (pcount[iout] > 0) std::cout << pname[iout] << "(" << pcount[iout] << ")" << " "; }
+            std::cout << endl << endl; auto elapsed = std::chrono::steady_clock::now() - start;
+            long long int microseconds = std::chrono::duration_cast<std::chrono::microseconds>(elapsed).count();
+            std::cout << microseconds * 1.0 / 1000000 << " 秒过去了。" << endl;
             //if (chosen_banner == 4 && chosen_event == 1 && count == 20) goto full_quit;
         }
     }
