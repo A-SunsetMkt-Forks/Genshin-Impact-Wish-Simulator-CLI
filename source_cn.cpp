@@ -744,8 +744,8 @@ int main() {
                 for (int temp399 = 0; temp399 < 11; temp399++) nup_four_c[temp399] = tempg2[temp399];
                 int tempg3[18] = { 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50 };
                 for (int temp399 = 0; temp399 < 18; temp399++) nup_four_w[temp399] = tempg3[temp399];
-                int tempg4[18] = { 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63 };
-                for (int temp399 = 0; temp399 < 18; temp399++) three_g[temp399] = tempg4[temp399];
+                int tempg4[13] = { 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63 };
+                for (int temp399 = 0; temp399 < 13; temp399++) three_g[temp399] = tempg4[temp399];
                 int tempg5[8] = { 23, 27, 31, 0, 0, 0, 0, 0 };
                 for (int temp399 = 0; temp399 < 8; temp399++) four_check[temp399] = tempg5[temp399];
             } break;
@@ -761,8 +761,8 @@ int main() {
                 for (int temp399 = 0; temp399 < 11; temp399++) nup_four_c[temp399] = tempg2[temp399];
                 int tempg3[18] = { 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50 };
                 for (int temp399 = 0; temp399 < 18; temp399++) nup_four_w[temp399] = tempg3[temp399];
-                int tempg4[18] = { 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63 };
-                for (int temp399 = 0; temp399 < 18; temp399++) three_g[temp399] = tempg4[temp399];
+                int tempg4[13] = { 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63 };
+                for (int temp399 = 0; temp399 < 13; temp399++) three_g[temp399] = tempg4[temp399];
                 int tempg5[8] = { 18, 21, 25, 0, 0, 0, 0, 0 };
                 for (int temp399 = 0; temp399 < 8; temp399++) four_check[temp399] = tempg5[temp399];
             } break;
@@ -778,8 +778,8 @@ int main() {
                 for (int temp399 = 0; temp399 < 11; temp399++) nup_four_c[temp399] = tempg2[temp399];
                 int tempg3[18] = { 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50 };
                 for (int temp399 = 0; temp399 < 18; temp399++) nup_four_w[temp399] = tempg3[temp399];
-                int tempg4[18] = { 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63 };
-                for (int temp399 = 0; temp399 < 18; temp399++) three_g[temp399] = tempg4[temp399];
+                int tempg4[13] = { 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63 };
+                for (int temp399 = 0; temp399 < 13; temp399++) three_g[temp399] = tempg4[temp399];
                 int tempg5[8] = { 24, 26, 0, 0, 0, 0, 0, 0 };
                 for (int temp399 = 0; temp399 < 8; temp399++) four_check[temp399] = tempg5[temp399];
             } break;
@@ -795,8 +795,8 @@ int main() {
                 for (int temp399 = 0; temp399 < 11; temp399++) nup_four_c[temp399] = tempg2[temp399];
                 int tempg3[18] = { 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50 };
                 for (int temp399 = 0; temp399 < 18; temp399++) nup_four_w[temp399] = tempg3[temp399];
-                int tempg4[18] = { 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63 };
-                for (int temp399 = 0; temp399 < 18; temp399++) three_g[temp399] = tempg4[temp399];
+                int tempg4[13] = { 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63 };
+                for (int temp399 = 0; temp399 < 13; temp399++) three_g[temp399] = tempg4[temp399];
                 int tempg5[8] = { 20, 29, 0, 0, 0, 0, 0, 0 };
                 for (int temp399 = 0; temp399 < 8; temp399++) four_check[temp399] = tempg5[temp399];
             } break;
@@ -812,8 +812,8 @@ int main() {
                 for (int temp399 = 0; temp399 < 13; temp399++) nup_four_c[temp399] = tempg2[temp399];
                 int tempg3[18] = { 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50 };
                 for (int temp399 = 0; temp399 < 18; temp399++) nup_four_w[temp399] = tempg3[temp399];
-                int tempg4[18] = { 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63 };
-                for (int temp399 = 0; temp399 < 18; temp399++) three_g[temp399] = tempg4[temp399];
+                int tempg4[13] = { 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63 };
+                for (int temp399 = 0; temp399 < 13; temp399++) three_g[temp399] = tempg4[temp399];
                 int tempg5[8] = { 18, 22, 23, 0, 0, 0, 0, 0 };
                 for (int temp399 = 0; temp399 < 8; temp399++) four_check[temp399] = tempg5[temp399];
             } break;
@@ -829,8 +829,8 @@ int main() {
                 for (int temp399 = 0; temp399 < 13; temp399++) nup_four_c[temp399] = tempg2[temp399];
                 int tempg3[18] = { 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50 };
                 for (int temp399 = 0; temp399 < 18; temp399++) nup_four_w[temp399] = tempg3[temp399];
-                int tempg4[18] = { 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63 };
-                for (int temp399 = 0; temp399 < 18; temp399++) three_g[temp399] = tempg4[temp399];
+                int tempg4[13] = { 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63 };
+                for (int temp399 = 0; temp399 < 13; temp399++) three_g[temp399] = tempg4[temp399];
                 int tempg5[8] = { 21, 25, 27, 0, 0, 0, 0, 0 };
                 for (int temp399 = 0; temp399 < 8; temp399++) four_check[temp399] = tempg5[temp399];
             } break;
@@ -846,8 +846,8 @@ int main() {
                 for (int temp399 = 0; temp399 < 13; temp399++) nup_four_c[temp399] = tempg2[temp399];
                 int tempg3[18] = { 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50 };
                 for (int temp399 = 0; temp399 < 18; temp399++) nup_four_w[temp399] = tempg3[temp399];
-                int tempg4[18] = { 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63 };
-                for (int temp399 = 0; temp399 < 18; temp399++) three_g[temp399] = tempg4[temp399];
+                int tempg4[13] = { 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63 };
+                for (int temp399 = 0; temp399 < 13; temp399++) three_g[temp399] = tempg4[temp399];
                 int tempg5[8] = { 17, 19, 26, 0, 0, 0, 0, 0 };
                 for (int temp399 = 0; temp399 < 8; temp399++) four_check[temp399] = tempg5[temp399];
             } break;
@@ -863,8 +863,8 @@ int main() {
                 for (int temp399 = 0; temp399 < 13; temp399++) nup_four_c[temp399] = tempg2[temp399];
                 int tempg3[18] = { 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50 };
                 for (int temp399 = 0; temp399 < 18; temp399++) nup_four_w[temp399] = tempg3[temp399];
-                int tempg4[18] = { 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63 };
-                for (int temp399 = 0; temp399 < 18; temp399++) three_g[temp399] = tempg4[temp399];
+                int tempg4[13] = { 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63 };
+                for (int temp399 = 0; temp399 < 13; temp399++) three_g[temp399] = tempg4[temp399];
                 int tempg5[8] = { 22, 24, 31, 0, 0, 0, 0, 0 };
                 for (int temp399 = 0; temp399 < 8; temp399++) four_check[temp399] = tempg5[temp399];
                 five_check[1] = 1;
@@ -881,8 +881,8 @@ int main() {
                 for (int temp399 = 0; temp399 < 13; temp399++) nup_four_c[temp399] = tempg2[temp399];
                 int tempg3[18] = { 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50 };
                 for (int temp399 = 0; temp399 < 18; temp399++) nup_four_w[temp399] = tempg3[temp399];
-                int tempg4[18] = { 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63 };
-                for (int temp399 = 0; temp399 < 18; temp399++) three_g[temp399] = tempg4[temp399];
+                int tempg4[13] = { 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63 };
+                for (int temp399 = 0; temp399 < 13; temp399++) three_g[temp399] = tempg4[temp399];
                 int tempg5[8] = { 20, 25, 27, 0, 0, 0, 0, 0 };
                 for (int temp399 = 0; temp399 < 8; temp399++) four_check[temp399] = tempg5[temp399];
             } break;
@@ -898,8 +898,8 @@ int main() {
                 for (int temp399 = 0; temp399 < 13; temp399++) nup_four_c[temp399] = tempg2[temp399];
                 int tempg3[18] = { 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50 };
                 for (int temp399 = 0; temp399 < 18; temp399++) nup_four_w[temp399] = tempg3[temp399];
-                int tempg4[18] = { 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63 };
-                for (int temp399 = 0; temp399 < 18; temp399++) three_g[temp399] = tempg4[temp399];
+                int tempg4[13] = { 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63 };
+                for (int temp399 = 0; temp399 < 13; temp399++) three_g[temp399] = tempg4[temp399];
                 int tempg5[8] = { 18, 21, 29, 0, 0, 0, 0, 0 };
                 for (int temp399 = 0; temp399 < 8; temp399++) four_check[temp399] = tempg5[temp399];
             } break;
@@ -915,8 +915,8 @@ int main() {
                 for (int temp399 = 0; temp399 < 13; temp399++) nup_four_c[temp399] = tempg2[temp399];
                 int tempg3[18] = { 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50 };
                 for (int temp399 = 0; temp399 < 18; temp399++) nup_four_w[temp399] = tempg3[temp399];
-                int tempg4[18] = { 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63 };
-                for (int temp399 = 0; temp399 < 18; temp399++) three_g[temp399] = tempg4[temp399];
+                int tempg4[13] = { 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63 };
+                for (int temp399 = 0; temp399 < 13; temp399++) three_g[temp399] = tempg4[temp399];
                 int tempg5[8] = { 23, 31, 0, 0, 0, 0, 0, 0 };
                 for (int temp399 = 0; temp399 < 8; temp399++) four_check[temp399] = tempg5[temp399];
             } break;
@@ -932,8 +932,8 @@ int main() {
                 for (int temp399 = 0; temp399 < 14; temp399++) nup_four_c[temp399] = tempg2[temp399];
                 int tempg3[18] = { 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50 };
                 for (int temp399 = 0; temp399 < 18; temp399++) nup_four_w[temp399] = tempg3[temp399];
-                int tempg4[18] = { 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63 };
-                for (int temp399 = 0; temp399 < 18; temp399++) three_g[temp399] = tempg4[temp399];
+                int tempg4[13] = { 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63 };
+                for (int temp399 = 0; temp399 < 13; temp399++) three_g[temp399] = tempg4[temp399];
                 int tempg5[8] = { 19, 21, 0, 0, 0, 0, 0, 0 };
                 for (int temp399 = 0; temp399 < 8; temp399++) four_check[temp399] = tempg5[temp399];
             } break;
@@ -949,8 +949,8 @@ int main() {
                 for (int temp399 = 0; temp399 < 14; temp399++) nup_four_c[temp399] = tempg2[temp399];
                 int tempg3[18] = { 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50 };
                 for (int temp399 = 0; temp399 < 18; temp399++) nup_four_w[temp399] = tempg3[temp399];
-                int tempg4[18] = { 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63 };
-                for (int temp399 = 0; temp399 < 18; temp399++) three_g[temp399] = tempg4[temp399];
+                int tempg4[13] = { 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63 };
+                for (int temp399 = 0; temp399 < 13; temp399++) three_g[temp399] = tempg4[temp399];
                 int tempg5[8] = { 17, 25, 26, 0, 0, 0, 0, 0 };
                 for (int temp399 = 0; temp399 < 8; temp399++) four_check[temp399] = tempg5[temp399];
             } break;
@@ -974,8 +974,8 @@ int main() {
                 for (int temp399 = 0; temp399 < 11; temp399++) nup_four_c[temp399] = tempg2[temp399];
                 int tempg3[18] = { 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50 };
                 for (int temp399 = 0; temp399 < 18; temp399++) nup_four_w[temp399] = tempg3[temp399];
-                int tempg4[18] = { 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63 };
-                for (int temp399 = 0; temp399 < 18; temp399++) three_g[temp399] = tempg4[temp399];
+                int tempg4[13] = { 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63 };
+                for (int temp399 = 0; temp399 < 13; temp399++) three_g[temp399] = tempg4[temp399];
                 int tempg5[8] = { 35, 39, 41, 45, 49, 0, 0, 0 };
                 for (int temp399 = 0; temp399 < 8; temp399++) four_check[temp399] = tempg5[temp399];
                 int tempg7[8] = { 6, 15, 0, 0, 0, 0, 0, 0 };
@@ -996,8 +996,8 @@ int main() {
                 for (int temp399 = 0; temp399 < 11; temp399++) nup_four_c[temp399] = tempg2[temp399];
                 int tempg3[18] = { 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50 };
                 for (int temp399 = 0; temp399 < 18; temp399++) nup_four_w[temp399] = tempg3[temp399];
-                int tempg4[18] = { 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63 };
-                for (int temp399 = 0; temp399 < 18; temp399++) three_g[temp399] = tempg4[temp399];
+                int tempg4[13] = { 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63 };
+                for (int temp399 = 0; temp399 < 13; temp399++) three_g[temp399] = tempg4[temp399];
                 int tempg5[8] = { 34, 38, 42, 44, 50, 0, 0, 0 };
                 for (int temp399 = 0; temp399 < 8; temp399++) four_check[temp399] = tempg5[temp399];
                 int tempg7[8] = { 8, 12, 0, 0, 0, 0, 0, 0 };
@@ -1018,8 +1018,8 @@ int main() {
                 for (int temp399 = 0; temp399 < 11; temp399++) nup_four_c[temp399] = tempg2[temp399];
                 int tempg3[18] = { 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50 };
                 for (int temp399 = 0; temp399 < 18; temp399++) nup_four_w[temp399] = tempg3[temp399];
-                int tempg4[18] = { 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63 };
-                for (int temp399 = 0; temp399 < 18; temp399++) three_g[temp399] = tempg4[temp399];
+                int tempg4[13] = { 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63 };
+                for (int temp399 = 0; temp399 < 13; temp399++) three_g[temp399] = tempg4[temp399];
                 int tempg5[8] = { 33, 37, 41, 43, 49, 0, 0, 0 };
                 for (int temp399 = 0; temp399 < 8; temp399++) four_check[temp399] = tempg5[temp399];
                 int tempg7[8] = { 7, 0, 0, 0, 0, 0, 0, 0 };
@@ -1040,8 +1040,8 @@ int main() {
                 for (int temp399 = 0; temp399 < 11; temp399++) nup_four_c[temp399] = tempg2[temp399];
                 int tempg3[18] = { 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50 };
                 for (int temp399 = 0; temp399 < 18; temp399++) nup_four_w[temp399] = tempg3[temp399];
-                int tempg4[18] = { 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63 };
-                for (int temp399 = 0; temp399 < 18; temp399++) three_g[temp399] = tempg4[temp399];
+                int tempg4[13] = { 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63 };
+                for (int temp399 = 0; temp399 < 13; temp399++) three_g[temp399] = tempg4[temp399];
                 int tempg5[8] = { 36, 40, 42, 45, 47, 0, 0, 0 };
                 for (int temp399 = 0; temp399 < 8; temp399++) four_check[temp399] = tempg5[temp399];
                 int tempg7[8] = { 0, 0, 0, 0, 0, 0, 0, 0 };
@@ -1062,8 +1062,8 @@ int main() {
                 for (int temp399 = 0; temp399 < 13; temp399++) nup_four_c[temp399] = tempg2[temp399];
                 int tempg3[18] = { 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50 };
                 for (int temp399 = 0; temp399 < 18; temp399++) nup_four_w[temp399] = tempg3[temp399];
-                int tempg4[18] = { 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63 };
-                for (int temp399 = 0; temp399 < 18; temp399++) three_g[temp399] = tempg4[temp399];
+                int tempg4[13] = { 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63 };
+                for (int temp399 = 0; temp399 < 13; temp399++) three_g[temp399] = tempg4[temp399];
                 int tempg5[8] = { 35, 38, 41, 46, 50, 0, 0, 0 };
                 for (int temp399 = 0; temp399 < 8; temp399++) four_check[temp399] = tempg5[temp399];
                 int tempg7[8] = { 9, 0, 0, 0, 0, 0, 0, 0 };
@@ -1084,8 +1084,8 @@ int main() {
                 for (int temp399 = 0; temp399 < 13; temp399++) nup_four_c[temp399] = tempg2[temp399];
                 int tempg3[18] = { 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50 };
                 for (int temp399 = 0; temp399 < 18; temp399++) nup_four_w[temp399] = tempg3[temp399];
-                int tempg4[18] = { 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63 };
-                for (int temp399 = 0; temp399 < 18; temp399++) three_g[temp399] = tempg4[temp399];
+                int tempg4[13] = { 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63 };
+                for (int temp399 = 0; temp399 < 13; temp399++) three_g[temp399] = tempg4[temp399];
                 int tempg5[8] = { 36, 37, 42, 45, 48, 0, 0, 0 };
                 for (int temp399 = 0; temp399 < 8; temp399++) four_check[temp399] = tempg5[temp399];
                 int tempg7[8] = { 6, 13, 0, 0, 0, 0, 0, 0 };
@@ -1106,8 +1106,8 @@ int main() {
                 for (int temp399 = 0; temp399 < 13; temp399++) nup_four_c[temp399] = tempg2[temp399];
                 int tempg3[18] = { 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50 };
                 for (int temp399 = 0; temp399 < 18; temp399++) nup_four_w[temp399] = tempg3[temp399];
-                int tempg4[18] = { 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63 };
-                for (int temp399 = 0; temp399 < 18; temp399++) three_g[temp399] = tempg4[temp399];
+                int tempg4[13] = { 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63 };
+                for (int temp399 = 0; temp399 < 13; temp399++) three_g[temp399] = tempg4[temp399];
                 int tempg5[8] = { 33, 37, 41, 44, 49, 0, 0, 0 };
                 for (int temp399 = 0; temp399 < 8; temp399++) four_check[temp399] = tempg5[temp399];
                 int tempg7[8] = { 10, 0, 0, 0, 0, 0, 0, 0 };
@@ -1128,8 +1128,8 @@ int main() {
                 for (int temp399 = 0; temp399 < 13; temp399++) nup_four_c[temp399] = tempg2[temp399];
                 int tempg3[18] = { 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50 };
                 for (int temp399 = 0; temp399 < 18; temp399++) nup_four_w[temp399] = tempg3[temp399];
-                int tempg4[18] = { 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63 };
-                for (int temp399 = 0; temp399 < 18; temp399++) three_g[temp399] = tempg4[temp399];
+                int tempg4[13] = { 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63 };
+                for (int temp399 = 0; temp399 < 13; temp399++) three_g[temp399] = tempg4[temp399];
                 int tempg5[8] = { 34, 39, 47, 0, 0, 0, 0, 0 };
                 for (int temp399 = 0; temp399 < 8; temp399++) four_check[temp399] = tempg5[temp399];
                 int tempg7[8] = { 12, 0, 0, 0, 0, 0, 0, 0 };
@@ -1150,8 +1150,8 @@ int main() {
                 for (int temp399 = 0; temp399 < 13; temp399++) nup_four_c[temp399] = tempg2[temp399];
                 int tempg3[18] = { 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50 };
                 for (int temp399 = 0; temp399 < 18; temp399++) nup_four_w[temp399] = tempg3[temp399];
-                int tempg4[18] = { 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63 };
-                for (int temp399 = 0; temp399 < 18; temp399++) three_g[temp399] = tempg4[temp399];
+                int tempg4[13] = { 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63 };
+                for (int temp399 = 0; temp399 < 13; temp399++) three_g[temp399] = tempg4[temp399];
                 int tempg5[8] = { 36, 42, 46, 0, 0, 0, 0, 0 };
                 for (int temp399 = 0; temp399 < 8; temp399++) four_check[temp399] = tempg5[temp399];
                 int tempg7[8] = { 14, 0, 0, 0, 0, 0, 0, 0 };
@@ -1172,8 +1172,8 @@ int main() {
                 for (int temp399 = 0; temp399 < 13; temp399++) nup_four_c[temp399] = tempg2[temp399];
                 int tempg3[18] = { 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50 };
                 for (int temp399 = 0; temp399 < 18; temp399++) nup_four_w[temp399] = tempg3[temp399];
-                int tempg4[18] = { 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63 };
-                for (int temp399 = 0; temp399 < 18; temp399++) three_g[temp399] = tempg4[temp399];
+                int tempg4[13] = { 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63 };
+                for (int temp399 = 0; temp399 < 13; temp399++) three_g[temp399] = tempg4[temp399];
                 int tempg5[8] = { 40, 41, 44, 50, 0, 0, 0, 0 };
                 for (int temp399 = 0; temp399 < 8; temp399++) four_check[temp399] = tempg5[temp399];
                 int tempg7[8] = { 7, 8, 0, 0, 0, 0, 0, 0 };
@@ -1194,8 +1194,8 @@ int main() {
                 for (int temp399 = 0; temp399 < 14; temp399++) nup_four_c[temp399] = tempg2[temp399];
                 int tempg3[18] = { 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50 };
                 for (int temp399 = 0; temp399 < 18; temp399++) nup_four_w[temp399] = tempg3[temp399];
-                int tempg4[18] = { 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63 };
-                for (int temp399 = 0; temp399 < 18; temp399++) three_g[temp399] = tempg4[temp399];
+                int tempg4[13] = { 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63 };
+                for (int temp399 = 0; temp399 < 13; temp399++) three_g[temp399] = tempg4[temp399];
                 int tempg5[8] = { 34, 37, 49, 0, 0, 0, 0, 0 };
                 for (int temp399 = 0; temp399 < 8; temp399++) four_check[temp399] = tempg5[temp399];
                 int tempg7[8] = { 0, 0, 0, 0, 0, 0, 0, 0 };
@@ -1216,8 +1216,8 @@ int main() {
                 for (int temp399 = 0; temp399 < 14; temp399++) nup_four_c[temp399] = tempg2[temp399];
                 int tempg3[18] = { 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50 };
                 for (int temp399 = 0; temp399 < 18; temp399++) nup_four_w[temp399] = tempg3[temp399];
-                int tempg4[18] = { 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63 };
-                for (int temp399 = 0; temp399 < 18; temp399++) three_g[temp399] = tempg4[temp399];
+                int tempg4[13] = { 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63 };
+                for (int temp399 = 0; temp399 < 13; temp399++) three_g[temp399] = tempg4[temp399];
                 int tempg5[8] = { 33, 38, 42, 43, 48, 0, 0, 0 };
                 for (int temp399 = 0; temp399 < 8; temp399++) four_check[temp399] = tempg5[temp399];
                 int tempg7[8] = { 15, 0, 0, 0, 0, 0, 0, 0 };
@@ -1237,8 +1237,8 @@ int main() {
                 for (int temp399 = 0; temp399 < 11; temp399++) nup_four_c[temp399] = tempg2[temp399];
                 int tempg3[18] = { 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50 };
                 for (int temp399 = 0; temp399 < 18; temp399++) nup_four_w[temp399] = tempg3[temp399];
-                int tempg4[18] = { 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63 };
-                for (int temp399 = 0; temp399 < 18; temp399++) three_g[temp399] = tempg4[temp399];
+                int tempg4[13] = { 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63 };
+                for (int temp399 = 0; temp399 < 13; temp399++) three_g[temp399] = tempg4[temp399];
             } break;
             case 2: {
                 size_nup_four_c = 13;
@@ -1249,8 +1249,8 @@ int main() {
                 for (int temp399 = 0; temp399 < 13; temp399++) nup_four_c[temp399] = tempg2[temp399];
                 int tempg3[18] = { 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50 };
                 for (int temp399 = 0; temp399 < 18; temp399++) nup_four_w[temp399] = tempg3[temp399];
-                int tempg4[18] = { 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63 };
-                for (int temp399 = 0; temp399 < 18; temp399++) three_g[temp399] = tempg4[temp399];
+                int tempg4[13] = { 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63 };
+                for (int temp399 = 0; temp399 < 13; temp399++) three_g[temp399] = tempg4[temp399];
             } break;
             case 3: {
                 size_nup_four_c = 14;
@@ -1263,8 +1263,8 @@ int main() {
                 for (int temp399 = 0; temp399 < 14; temp399++) nup_four_c[temp399] = tempg2[temp399];
                 int tempg3[18] = { 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50 };
                 for (int temp399 = 0; temp399 < 18; temp399++) nup_four_w[temp399] = tempg3[temp399];
-                int tempg4[18] = { 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63 };
-                for (int temp399 = 0; temp399 < 18; temp399++) three_g[temp399] = tempg4[temp399];
+                int tempg4[13] = { 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63 };
+                for (int temp399 = 0; temp399 < 13; temp399++) three_g[temp399] = tempg4[temp399];
             } break;
             default:break;
             }
@@ -1274,8 +1274,8 @@ int main() {
             for (int temp399 = 0; temp399 < 5; temp399++) nup_five_c[temp399] = tempg0[temp399];
             int tempg2[11] = { 18, 20, 21, 22, 23, 24, 25, 26, 27, 29, 31 };
             for (int temp399 = 0; temp399 < 11; temp399++) nup_four_c[temp399] = tempg2[temp399];
-            int tempg4[18] = { 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63 };
-            for (int temp399 = 0; temp399 < 18; temp399++) three_g[temp399] = tempg4[temp399];
+            int tempg4[13] = { 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63 };
+            for (int temp399 = 0; temp399 < 13; temp399++) three_g[temp399] = tempg4[temp399];
         }
         while (1) {
             if (quit == 1) goto full_quit;
