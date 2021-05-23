@@ -48,7 +48,7 @@ III Permanent Wish\
 IV Novice Wish\
 1: Beginners' wish
 
-# Screenshots
+Screenshots\
 ![Screenshot from 2021-05-23 03-49-39](https://user-images.githubusercontent.com/34600796/119257431-1a810780-bb7a-11eb-8d78-a9db72995889.png)
 
 
@@ -97,5 +97,5 @@ IV Novice Wish\
 四、新手祈愿\
 1: 新手祈愿
 
-# 截图
+截图\
 ![Screenshot from 2021-05-23 03-49-03](https://user-images.githubusercontent.com/34600796/119257492-44d2c500-bb7a-11eb-8a16-d0da72645f36.png)
