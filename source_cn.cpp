@@ -141,6 +141,37 @@
                     five_star_assurance_number++;\
                     four_star_assurance_number++;\
                     }
+#define luckcpy() {if (countx == 10) {\
+                        luckiest = luck;\
+                        for (int templuck = 0; templuck < 10; templuck++) {\
+                            luckiestlocation[templuck] = lucklocation[templuck];\
+                            luckiestsublocation[templuck] = lucksublocation[templuck];\
+                            luckiestkind[templuck] = luckkind[templuck];\
+                        }\
+                    }\
+                    if (luck > luckiest) {\
+                        luckiest = luck;\
+                        for (int templuck = 0; templuck < 10; templuck++) {\
+                            luckiestlocation[templuck] = lucklocation[templuck];\
+                            luckiestsublocation[templuck] = lucksublocation[templuck];\
+                            luckiestkind[templuck] = luckkind[templuck];\
+                        }\
+                    }\
+                }
+#define luckget() {for (int templuck = 0; templuck < 9; templuck++) {\
+                        lucklocation[templuck] = lucklocation[templuck + 1];\
+                        lucksublocation[templuck] = lucksublocation[templuck + 1];\
+                        luckkind[templuck] = luckkind[templuck + 1];\
+                        luckstar[templuck] = luckstar[templuck + 1];\
+                        lucktype[templuck] = lucktype[templuck + 1];\
+                    }\
+                    lucklocation[9] = countx;\
+                    lucksublocation[9] = (long long int) five_star_assurance_number - 1;\
+                    luckkind[9] = kind;\
+                    luckstar[9] = star;\
+                    luck = 0;\
+                    lucktype[9] = type;\
+                }
 
 using namespace std;
 
@@ -1758,19 +1789,7 @@ int main() {
                     output_string()
                     if (!((star == 4 && type == 1) || (star == 4 && type == 2))) unmet4_c++;
                     if (!(star == 4 && type == 3)) unmet4_w++;
-                    for (int templuck = 0; templuck < 9; templuck++) {
-                        lucklocation[templuck] = lucklocation[templuck + 1];
-                        lucksublocation[templuck] = lucksublocation[templuck + 1];
-                        luckkind[templuck] = luckkind[templuck + 1];
-                        luckstar[templuck] = luckstar[templuck + 1];
-                        lucktype[templuck] = lucktype[templuck + 1];
-                    }
-                    lucklocation[9] = countx;
-                    lucksublocation[9] = (long long int) five_star_assurance_number - 1;
-                    luckkind[9] = kind;
-                    luckstar[9] = star;
-                    lucktype[9] = type;
-                    luck = 0;
+                    luckget()
                     if (star == 4 || star == 5) {
                         for (int templuck = 0; templuck < 10; templuck++) {
                             if (luckstar[templuck] == 5) luck += 6229;
@@ -1780,22 +1799,7 @@ int main() {
                             else luck += 0;
                         }
                     }
-                    if (countx == 10) {
-                        luckiest = luck;
-                        for (int templuck = 0; templuck < 10; templuck++) {
-                            luckiestlocation[templuck] = lucklocation[templuck];
-                            luckiestsublocation[templuck] = lucksublocation[templuck];
-                            luckiestkind[templuck] = luckkind[templuck];
-                        }
-                    }
-                    if (luck > luckiest) {
-                        luckiest = luck;
-                        for (int templuck = 0; templuck < 10; templuck++) {
-                            luckiestlocation[templuck] = lucklocation[templuck];
-                            luckiestsublocation[templuck] = lucksublocation[templuck];
-                            luckiestkind[templuck] = luckkind[templuck];
-                        }
-                    }
+                    luckcpy()
                 }
             }
             else if (chosen_banner == 2) {
@@ -3043,19 +3047,7 @@ int main() {
                     output_string()
                     if (!((star == 4 && type == 1) || (star == 4 && type == 2))) unmet4_c++;
                     if (!(star == 4 && type == 3)) unmet4_w++;
-                    for (int templuck = 0; templuck < 9; templuck++) {
-                        lucklocation[templuck] = lucklocation[templuck + 1];
-                        lucksublocation[templuck] = lucksublocation[templuck + 1];
-                        luckkind[templuck] = luckkind[templuck + 1];
-                        luckstar[templuck] = luckstar[templuck + 1];
-                        lucktype[templuck] = lucktype[templuck + 1];
-                    }
-                    lucklocation[9] = countx;
-                    lucksublocation[9] = (long long int) five_star_assurance_number - 1;
-                    luckkind[9] = kind;
-                    luckstar[9] = star;
-                    lucktype[9] = type;
-                    luck = 0;
+                    luckget()
                     if (star == 4 || star == 5) {
                         for (int templuck = 0; templuck < 10; templuck++) {
                             if (luckstar[templuck] == 5) luck += 5319;
@@ -3063,22 +3055,7 @@ int main() {
                             else luck += 0;
                         }
                     }
-                    if (countx == 10) {
-                        luckiest = luck;
-                        for (int templuck = 0; templuck < 10; templuck++) {
-                            luckiestlocation[templuck] = lucklocation[templuck];
-                            luckiestsublocation[templuck] = lucksublocation[templuck];
-                            luckiestkind[templuck] = luckkind[templuck];
-                        }
-                    }
-                    if (luck > luckiest) {
-                        luckiest = luck;
-                        for (int templuck = 0; templuck < 10; templuck++) {
-                            luckiestlocation[templuck] = lucklocation[templuck];
-                            luckiestsublocation[templuck] = lucksublocation[templuck];
-                            luckiestkind[templuck] = luckkind[templuck];
-                        }
-                    }
+                    luckcpy()
                 }
             }
             else if (chosen_banner == 3) {
@@ -3757,17 +3734,7 @@ int main() {
                     if (!(star == 5 && type == 2)) unmet5_w++;
                     if (!(star == 4 && type == 1)) unmet4_c++;
                     if (!(star == 4 && type == 2)) unmet4_w++;
-                    for (int templuck = 0; templuck < 9; templuck++) {
-                        lucklocation[templuck] = lucklocation[templuck + 1];
-                        lucksublocation[templuck] = lucksublocation[templuck + 1];
-                        luckkind[templuck] = luckkind[templuck + 1];
-                        luckstar[templuck] = luckstar[templuck + 1];
-                    }
-                    lucklocation[9] = countx;
-                    lucksublocation[9] = (long long int) five_star_assurance_number - 1;
-                    luckkind[9] = kind;
-                    luckstar[9] = star;
-                    luck = 0;
+                    luckget()
                     if (star == 4 || star == 5) {
                         for (int templuck = 0; templuck < 10; templuck++) {
                             if (luckstar[templuck] == 5) luck += 6229;
@@ -3775,22 +3742,7 @@ int main() {
                             else luck += 0;
                         }
                     }
-                    if (countx == 10) {
-                        luckiest = luck;
-                        for (int templuck = 0; templuck < 10; templuck++) {
-                            luckiestlocation[templuck] = lucklocation[templuck];
-                            luckiestsublocation[templuck] = lucksublocation[templuck];
-                            luckiestkind[templuck] = luckkind[templuck];
-                        }
-                    }
-                    if (luck > luckiest) {
-                        luckiest = luck;
-                        for (int templuck = 0; templuck < 10; templuck++) {
-                            luckiestlocation[templuck] = lucklocation[templuck];
-                            luckiestsublocation[templuck] = lucksublocation[templuck];
-                            luckiestkind[templuck] = luckkind[templuck];
-                        }
-                    }
+                    luckcpy()
                 }
             }
             else {
@@ -3887,17 +3839,7 @@ int main() {
                         }
                     }
                     output_string()
-                    for (int templuck = 0; templuck < 9; templuck++) {
-                        lucklocation[templuck] = lucklocation[templuck + 1];
-                        lucksublocation[templuck] = lucksublocation[templuck + 1];
-                        luckkind[templuck] = luckkind[templuck + 1];
-                        luckstar[templuck] = luckstar[templuck + 1];
-                    }
-                    lucklocation[9] = countx;
-                    lucksublocation[9] = (long long int) five_star_assurance_number - 1;
-                    luckkind[9] = kind;
-                    luckstar[9] = star;
-                    luck = 0;
+                    luckget()
                     if (star == 4 || star == 5) {
                         for (int templuck = 0; templuck < 10; templuck++) {
                             if (luckstar[templuck] == 5) luck += 16667;
@@ -3905,22 +3847,7 @@ int main() {
                             else luck += 0;
                         }
                     }
-                    if (countx == 10) {
-                        luckiest = luck;
-                        for (int templuck = 0; templuck < 10; templuck++) {
-                            luckiestlocation[templuck] = lucklocation[templuck];
-                            luckiestsublocation[templuck] = lucksublocation[templuck];
-                            luckiestkind[templuck] = luckkind[templuck];
-                        }
-                    }
-                    if (luck > luckiest) {
-                        luckiest = luck;
-                        for (int templuck = 0; templuck < 10; templuck++) {
-                            luckiestlocation[templuck] = lucklocation[templuck];
-                            luckiestsublocation[templuck] = lucksublocation[templuck];
-                            luckiestkind[templuck] = luckkind[templuck];
-                        }
-                    }
+                    luckcpy()
                 }
             }
             if (five_count == 0) {
