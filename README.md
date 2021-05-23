@@ -1,7 +1,7 @@
-## GenshinImpactWishSimulatorCLI
+### GenshinImpactWishSimulatorCLI
 [![License](https://img.shields.io/badge/Licence-MIT-blue.svg)](https://github.com/Jirehlov/GenshinImpactWishSimulatorCLI/blob/master/LICENSE)
 
-# English
+## English
 This is a CLI Wish Simulator for Genshin Impact players.
 
 Features:\
@@ -48,7 +48,11 @@ III Permanent Wish\
 IV Novice Wish\
 1: Beginners' wish
 
-# 中文
+Screenshots\
+![Screenshot from 2021-05-23 03-49-39](https://user-images.githubusercontent.com/34600796/119257431-1a810780-bb7a-11eb-8d78-a9db72995889.png)
+
+
+## 中文
 这是命令行界面的原神祈愿模拟器。
 
 主要功能：\
@@ -92,3 +96,6 @@ IV Novice Wish\
 
 四、新手祈愿\
 1: 新手祈愿
+
+截图\
+![Screenshot from 2021-05-23 03-49-03](https://user-images.githubusercontent.com/34600796/119257492-44d2c500-bb7a-11eb-8a16-d0da72645f36.png)
