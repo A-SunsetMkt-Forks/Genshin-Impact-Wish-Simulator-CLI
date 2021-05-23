@@ -1779,6 +1779,6 @@ int main() {
     }
 full_quit:
     int prepause = getchar();
-    int pause = getchar();
+    int pausex = getchar();
     return 0;
 }
