@@ -1763,7 +1763,7 @@ int main() {
             for (int iout = 0; iout < 15; iout++) { if (pcount[iout] > 0) std::cout << pname[iout] << "(" << pcount[iout] << ")" << " "; }
             for (int iout = 63; iout < 71; iout++) { if (pcount[iout] > 0) std::cout << pname[iout] << "(" << pcount[iout] << ")" << " "; }
             for (int iout = 72; iout < 79; iout++) { if (pcount[iout] > 0) std::cout << pname[iout] << "(" << pcount[iout] << ")" << " "; }
-            if (pcount[81] > 0) std::cout << pname[80] << "(" << pcount[81] << ")" << " ";
+            if (pcount[81] > 0) std::cout << pname[81] << "(" << pcount[81] << ")" << " ";
             if (pcount[85] > 0) std::cout << pname[85] << "(" << pcount[85] << ")" << " ";
             std::cout << endl << endl;
             for (int iout = 15; iout < 50; iout++) { if (pcount[iout] > 0) std::cout << pname[iout] << "(" << pcount[iout] << ")" << " "; }
