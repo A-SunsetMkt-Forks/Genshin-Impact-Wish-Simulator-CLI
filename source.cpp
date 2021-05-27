@@ -608,6 +608,7 @@ int main() {
     << "by Jirehlov Research" << endl 
     << "Source code available on Github: Jirehlov/GenshinImpactWishSimulatorCLI" << endl 
     << "MIT LICENSE" << endl << endl;
+    int y_print = 1;
     while (1) {
     enter_chosen_banner:
         int chosen_banner = 0,
@@ -641,8 +642,7 @@ int main() {
         size_nup_four_w = 1,
         three_g[18] = { 0 },
         five_check[8] = { 127 },
-        four_check[8] = { 127 },
-        y_print = 1;
+        four_check[8] = { 127 };
         long long int countx = 0,
         five_count = 0,
         five_count_c = 0,
