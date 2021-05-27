@@ -1350,8 +1350,8 @@ int main() {
             //if (chosen_banner == 4 && chosen_event == 1 && wishes_number != 10) { wishes_number = 0; std::cout << "Invalid number of wishes!" << endl; goto enter_wishes_number; }
             //if (!(wishes_number == -1||wishes_number == 1||wishes_number == 10||wishes_number == -2||wishes_number == -3)){ wishes_number = 0; std::cout << "Invalid number of wishes!" << endl; goto enter_wishes_number; }
             else if (wishes_number == -4) {
-                if (y_print == 1) {y_print = 0; std::cout << endl << "打印已关闭!" << endl;}
-                else {y_print = 1; std::cout << endl << "打印已开启!" << endl;}
+                if (y_print == 1) {y_print = 0; std::cout << "打印已关闭!" << endl;}
+                else {y_print = 1; std::cout << "打印已开启!" << endl;}
                 goto enter_wishes_number;
             }
             else {}
