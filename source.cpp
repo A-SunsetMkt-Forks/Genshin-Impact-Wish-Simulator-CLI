@@ -4,7 +4,7 @@
 #include <random>
 #include <string>
 #define ULTRAPOS 437580000
-#define output_string() {std::cout << countx + 1 << "(" << five_star_assurance_number << ")" << " ";\
+#define output_string() {if (y_print == 1) {std::cout << countx + 1 << "(" << five_star_assurance_number << ")" << " ";\
                     switch (kind) {\
                     case 1: { std::cout << "!!!!!*****Keqing" << endl; pcount[0]++; } break;\
                     case 2: { std::cout << "!!!!!*****Mona" << endl; pcount[1]++; } break;\
@@ -135,7 +135,7 @@
                     case 127: { std::cout << "Placeholder" << endl; pcount[126]++; } break;\
                     case 128: { std::cout << "Placeholder" << endl; pcount[127]++; } break;\
                     default: break;\
-                    }\
+                    }}\
                     wishes_number--;\
                     countx++;\
                     five_star_assurance_number++;\
@@ -602,7 +602,10 @@ int rspick(int* kindx, int sizekind) {
 }
 
 int main() {
-    std::cout << "WELCOME TO GENSHIN IMPACT WISH SIMULATOR CLI V1.5.6" << endl << endl;
+    std::cout << "WELCOME TO GENSHIN IMPACT WISH SIMULATOR CLI V1.5.6" << endl 
+    << "by Jirehlov Research" << endl 
+    << "Source code available on Github: Jirehlov/GenshinImpactWishSimulatorCLI" << endl 
+    << "MIT LICENSE" << endl << endl;
     while (1) {
     enter_chosen_banner:
         int chosen_banner = 0,
@@ -636,7 +639,8 @@ int main() {
         size_nup_four_w = 1,
         three_g[18] = { 0 },
         five_check[8] = { 127 },
-        four_check[8] = { 127 };
+        four_check[8] = { 127 },
+        y_print = 1;
         long long int countx = 0,
         five_count = 0,
         five_count_c = 0,
@@ -1280,7 +1284,13 @@ int main() {
         while (1) {
             if (quit == 1) goto full_quit;
             enter_wishes_number:
-            std::cout << endl << "How many wishes?" << endl << "-1: Re-choose Events; 1: 1 Wish; 10: 10 Wishes; -2: Show Luckiest 10 Pulls (unbroken); -3: Reset records" << endl << endl;
+            std::cout << endl << "How many wishes?" << endl 
+            << "-1: Re-choose Events;" << endl 
+            << "1: 1 Wish;" << endl 
+            << "10: 10 Wishes;" << endl 
+            << "-2: Show Luckiest 10 Pulls (a succession of);" << endl 
+            << "-3: Reset records" << endl 
+            << "-4: Print or not" << endl << endl;
             std::cin >> wishes_number;
             if (cin.fail()) {wishes_number = 0; std::cout << endl << "Character(s) cannot be read!" << endl; cin.clear(); cin.ignore(32767,'\n'); goto enter_wishes_number;}
             std::cout << endl;
@@ -1459,10 +1469,15 @@ int main() {
                 for (int ini = 0; ini < 10; ini++) { luckiestlocation[ini] = (long long int) ini + 1; }
                 for (int ini = 0; ini < 10; ini++) { luckiestsublocation[ini] = (long long int) ini + 1; }
                 for (int ini = 0; ini < 10; ini++) { luckiestkind[ini] = 127; }
+                std::cout << endl << "Record has been reset!" << endl;
                 goto enter_wishes_number;
             }
             //if (chosen_banner == 4 && chosen_event == 1 && wishes_number != 10) { wishes_number = 0; std::cout << "Invalid number of wishes!" << endl; goto enter_wishes_number; }
             //if (!(wishes_number == -1||wishes_number == 1||wishes_number == 10||wishes_number == -2||wishes_number == -3)){ wishes_number = 0; std::cout << "Invalid number of wishes!" << endl; goto enter_wishes_number; }
+            else if (wishes_number == -4) {
+                if (y_print == 1) {y_print = 0; std::cout << endl << "Now no more prints!" << endl;}
+                else {y_print = 1; std::cout << endl << "Now prints!" << endl;}
+            }
             else {}
             auto start = std::chrono::steady_clock::now();
             if (chosen_banner == 1) {
