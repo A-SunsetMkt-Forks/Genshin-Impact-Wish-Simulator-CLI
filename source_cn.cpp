@@ -1646,8 +1646,8 @@ int main() {
                 std::cout << endl << "你已经抽了 " << countx << " 发。" << endl
                     << "五星角色或武器:   " << five_count << "  " << five_count * 100.0 / countx << "%" << endl
                     << "四星角色或武器:   " << four_count << "  " << four_count * 100.0 / countx << "%" << endl
-                    << "连续非五星最高纪录:   " << max_fives << " 发。发生在第 " << max_fivesth << " 个保底单元, 即第 " << max_fivecount + 1 << " 次祈愿。" << endl
-                    << "连续非五星最低纪录:   " << min_fives << " 发。发生在第 " << min_fivesth << " 个保底单元, 即第 " << min_fivecount + 1 << " 次祈愿。" << endl
+                    << "连续非五星最高纪录:   " << max_fives << " 发。首次发生在第 " << max_fivesth << " 个保底单元, 即第 " << max_fivecount + 1 << " 次祈愿。" << endl
+                    << "连续非五星最低纪录:   " << min_fives << " 发。首次发生在第 " << min_fivesth << " 个保底单元, 即第 " << min_fivecount + 1 << " 次祈愿。" << endl
                     << "连续非五星平均祈愿数:   " << ave_fives * 1.0 / five_count << endl
                     << "五星角色 : 五星武器 : 四星角色 : 四星武器   " << five_count_c << " : " << five_count_w << " : " << four_count_c << " : " << four_count_w << endl << endl;
             }

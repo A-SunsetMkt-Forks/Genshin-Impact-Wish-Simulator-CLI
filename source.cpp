@@ -1646,8 +1646,8 @@ int main() {
                 std::cout << endl << "You have pulled " << countx << " wishes." << endl
                     << "5-stars:   " << five_count << "  " << five_count * 100.0 / countx << "%" << endl
                     << "4-stars:   " << four_count << "  " << four_count * 100.0 / countx << "%" << endl
-                    << "max non-5-stars-max:   " << max_fives << " at " << max_fivesth << "-th non-5-stars  " << max_fivecount + 1 << "-th wishes" << endl
-                    << "min non-5-stars-max:   " << min_fives << " at " << min_fivesth << "-th non-5-stars  " << min_fivecount + 1 << "-th wishes" << endl
+                    << "max non-5-stars-max:   " << max_fives << " initially at " << max_fivesth << "-th non-5-stars  " << max_fivecount + 1 << "-th wishes" << endl
+                    << "min non-5-stars-max:   " << min_fives << " initially at " << min_fivesth << "-th non-5-stars  " << min_fivecount + 1 << "-th wishes" << endl
                     << "ave non-5-star-max:   " << ave_fives * 1.0 / five_count << endl
                     << "5-star-characters : 5-star-weapons : 4-star-characters : 4-star-weapons   " << five_count_c << " : " << five_count_w << " : " << four_count_c << " : " << four_count_w << endl << endl;
             }
