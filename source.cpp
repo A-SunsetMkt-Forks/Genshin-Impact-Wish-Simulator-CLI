@@ -1477,6 +1477,7 @@ int main() {
             else if (wishes_number == -4) {
                 if (y_print == 1) {y_print = 0; std::cout << endl << "Now no more prints!" << endl;}
                 else {y_print = 1; std::cout << endl << "Now prints!" << endl;}
+                goto enter_wishes_number;
             }
             else {}
             auto start = std::chrono::steady_clock::now();

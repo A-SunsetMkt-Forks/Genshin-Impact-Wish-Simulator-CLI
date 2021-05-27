@@ -1469,14 +1469,15 @@ int main() {
                 for (int ini = 0; ini < 10; ini++) { luckiestlocation[ini] = (long long int) ini + 1; }
                 for (int ini = 0; ini < 10; ini++) { luckiestsublocation[ini] = (long long int) ini + 1; }
                 for (int ini = 0; ini < 10; ini++) { luckiestkind[ini] = 127; }
-                goto enter_wishes_number;
                 std::cout << "记录已重置!" << endl;
+                goto enter_wishes_number;
             }
             //if (chosen_banner == 4 && chosen_event == 1 && wishes_number != 10) { wishes_number = 0; std::cout << "Invalid number of wishes!" << endl; goto enter_wishes_number; }
             //if (!(wishes_number == -1||wishes_number == 1||wishes_number == 10||wishes_number == -2||wishes_number == -3)){ wishes_number = 0; std::cout << "Invalid number of wishes!" << endl; goto enter_wishes_number; }
             else if (wishes_number == -4) {
                 if (y_print == 1) {y_print = 0; std::cout << endl << "打印已关闭!" << endl;}
                 else {y_print = 1; std::cout << endl << "打印已开启!" << endl;}
+                goto enter_wishes_number;
             }
             else {}
             auto start = std::chrono::steady_clock::now();
