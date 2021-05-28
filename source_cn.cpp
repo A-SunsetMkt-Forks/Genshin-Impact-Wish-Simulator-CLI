@@ -7,8 +7,8 @@
 #define casesx( kind ){   if (kind < 16 ) { std::cout << "!!!!!*****"; }\
                     else if (kind < 51 ) { std::cout << "!!****"; }\
                     else if (kind < 64 ) { std::cout << "***"; }\
-                    else if (kind == 72 || kind == 80 || kind == 81 || kind == 83 || kind == 84 || kind == 85) { std::cout << "!!****"; }\
-                    else if (kind < 87 ) { std::cout << "!!!!!*****"; }\
+                    else if (kind == 72 || kind == 80 || kind == 81 || kind == 83 || kind == 84 || kind == 85 || kind == 89 ) { std::cout << "!!****"; }\
+                    else if (kind < 90 ) { std::cout << "!!!!!*****"; }\
                     else {}\
                 }
 #define output_string() {if (y_print == 1) {std::cout << countx + 1 << "(" << five_star_assurance_number << ")" << " ";\
@@ -423,9 +423,9 @@ string pname[128] = {
                 "暗巷的酒与诗",
                 "暗巷猎手",
                 "松籁响起之时",
-                "Placeholder",
-                "Placeholder",
-                "Placeholder",
+                "枫原万叶",
+                "苍古自由之誓",
+                "幽夜华尔兹",
                 "Placeholder",
                 "Placeholder",
                 "Placeholder",
@@ -1527,13 +1527,14 @@ int main() {
             for (int iout = 63; iout < 71; iout++) { if (pcount[iout] > 0) std::cout << pname[iout] << "(" << pcount[iout] << ")" << " "; }
             for (int iout = 72; iout < 79; iout++) { if (pcount[iout] > 0) std::cout << pname[iout] << "(" << pcount[iout] << ")" << " "; }
             if (pcount[81] > 0) std::cout << pname[81] << "(" << pcount[81] << ")" << " ";
-            if (pcount[85] > 0) std::cout << pname[85] << "(" << pcount[85] << ")" << " ";
+            for (int iout = 85; iout < 88; iout++) { if (pcount[iout] > 0) std::cout << pname[iout] << "(" << pcount[iout] << ")" << " "; }
             std::cout << endl << endl;
             for (int iout = 15; iout < 50; iout++) { if (pcount[iout] > 0) std::cout << pname[iout] << "(" << pcount[iout] << ")" << " "; }
             if (pcount[71] > 0) std::cout << pname[71] << "(" << pcount[71] << ")" << " ";
             if (pcount[79] > 0) std::cout << pname[79] << "(" << pcount[79] << ")" << " ";
             if (pcount[80] > 0) std::cout << pname[80] << "(" << pcount[80] << ")" << " ";
             for (int iout = 82; iout < 85; iout++) { if (pcount[iout] > 0) std::cout << pname[iout] << "(" << pcount[iout] << ")" << " "; }
+            if (pcount[88] > 0) std::cout << pname[88] << "(" << pcount[80] << ")" << " ";
             std::cout << endl << endl; auto elapsed = std::chrono::steady_clock::now() - start;
             long long int microseconds = std::chrono::duration_cast<std::chrono::microseconds>(elapsed).count();
             std::cout << microseconds * 1.0 / 1000000 << " 秒过去了。" << endl;
