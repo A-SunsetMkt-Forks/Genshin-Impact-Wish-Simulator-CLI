@@ -604,7 +604,7 @@ int rspick(int* kindx, int sizekind) {
 }
 
 int main() {
-    std::cout << "WELCOME TO GENSHIN IMPACT WISH SIMULATOR CLI V1.5.6" << endl 
+    std::cout << "WELCOME TO GENSHIN IMPACT WISH SIMULATOR CLI V1.6.1" << endl 
     << "by Jirehlov Research" << endl 
     << "Source code available on Github: Jirehlov/GenshinImpactWishSimulatorCLI" << endl 
     << "MIT LICENSE" << endl << endl;
@@ -632,8 +632,6 @@ int main() {
         up_five_g[32] = { 0 },
         nup_five_c[32] = { 0 },
         nup_five_w[32] = { 0 },
-        size_nup_five_c = 1,
-        size_nup_five_w = 1,
         up_four_g[64] = { 0 },
         nup_four_c[64] = { 0 },
         nup_four_w[64] = { 0 },
@@ -1542,8 +1540,6 @@ int main() {
             else {
                 while (wishes_number > 0) {
                     long long int temp1 = generator() % ULTRAPOS;
-                    long long int temp2 = generator() % ULTRAPOS;
-                    long long int temp3 = generator() % ULTRAPOS;
                     int star = 0; //4-star or 5-star
                     int type = 0; //Up or non-up, character or weapon
                     int kind = 0; //which exactly
@@ -1670,6 +1666,8 @@ int main() {
     }
 full_quit:
     int prepause = getchar();
+    prepause = 1;
     int pausex = getchar();
+    pausex = 1;
     return 0;
 }
