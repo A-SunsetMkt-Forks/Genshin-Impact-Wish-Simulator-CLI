@@ -68,7 +68,7 @@
                     type = 2;\
                     five_count_c++;\
                     kind = rspick(nup_five_c, 5);\
-                    if(five_check[0] == 1) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;\
+                    if (five_check[0] == 1) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;\
                 }\
             }
 #define I_4() {star = 4;\
@@ -161,7 +161,7 @@
                         type = 2;\
                         five_count_w++;\
                         kind = rspick(nup_five_w, 10);\
-                        if((kind == five_check[0] || kind == five_check[1] || kind == five_check[2] || kind == five_check[3] || kind == five_check[4] || kind == five_check[5] || kind == five_check[6] || kind == five_check[7])) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;\
+                        if ((kind == five_check[0] || kind == five_check[1] || kind == five_check[2] || kind == five_check[3] || kind == five_check[4] || kind == five_check[5] || kind == five_check[6] || kind == five_check[7])) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;\
                     }\
                 }
 #define II_4() {star = 4;\
@@ -515,8 +515,8 @@ int main() {
         size_nup_four_c = 1,
         size_nup_four_w = 1,
         three_g[18] = { 0 },
-        five_check[8] = { 127 },
-        four_check[8] = { 127 };
+        five_check[8] = { 127, 127, 127, 127, 127, 127, 127, 127 },
+        four_check[8] = { 127, 127, 127, 127, 127, 127, 127, 127 };
         long long int countx = 0,
         five_count = 0,
         five_count_c = 0,
