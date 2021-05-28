@@ -24,7 +24,7 @@ I Character Event Wish\
 10: Ballad in Goblets/20210317-20210406 (Venti, Sucrose, Razor, Noelle)\
 11: Farewell of Snezhnaya/20210406-20210427 (Tartaglia, Rosaria, Barbara, Fischl)\
 12: Gentry of Hermitage/20210428-20210518 (Zhongli, Yanfei, Noelle, Diona)\
-13: Born of Ocean Swell/20210518-20210608 (EUla, Xinyan, Xingqiu, Beidou)
+13: Born of Ocean Swell/20210518-20210608 (EUla, Xinyan, Xingqiu, Beidou)\
 14: Sparkling Steps/20210609-? (Klee, Sucrose, Fischl, ?)\
 15: Kaedehara Kazuha/?-? (Kaedehara Kazuha, Rosaria, Bennett, Razor)
 
@@ -52,7 +52,8 @@ IV Novice Wish\
 1: Beginners' wish
 
 Screenshots\
-![Screenshot from 2021-05-23 03-49-39](https://user-images.githubusercontent.com/34600796/119257431-1a810780-bb7a-11eb-8d78-a9db72995889.png)
+![Screenshot from 2021-05-28 07-49-07](https://user-images.githubusercontent.com/34600796/120002071-4b51aa00-bf89-11eb-907b-baff5fc7ab05.png)
+
 
 
 ## 中文
@@ -104,4 +105,4 @@ Screenshots\
 1: 新手祈愿
 
 截图\
-![Screenshot from 2021-05-23 03-49-03](https://user-images.githubusercontent.com/34600796/119257492-44d2c500-bb7a-11eb-8a16-d0da72645f36.png)
+![Screenshot from 2021-05-28 07-48-36](https://user-images.githubusercontent.com/34600796/120002127-586e9900-bf89-11eb-89a1-dc3c161da752.png)
