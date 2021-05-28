@@ -68,7 +68,7 @@
                     type = 2;\
                     five_count_c++;\
                     kind = rspick(nup_five_c, 5);\
-                    if(five_check[0] == 1) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;\
+                    if (five_check[0] == 1) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;\
                 }\
             }
 #define I_4() {star = 4;\
@@ -95,7 +95,8 @@
                             four_count_c++;\
                             unmet4_c = 0;\
                             kind = rspick(nup_four_c, size_nup_four_c);\
-                            if ((kind == four_check[0] || kind == four_check[1] || kind == four_check[2] || kind == four_check[3] || kind == four_check[4] || kind == four_check[5] || kind == four_check[6] || kind == four_check[7])) four_star_guarantee_number = 0; else four_star_guarantee_number = 1;\
+                            for (int temp1189 = 0; temp1189 < 8; temp1189++) { focheck += kind == four_check[temp1189]; }\
+                            if ( focheck )  four_star_guarantee_number = 0; else four_star_guarantee_number = 1;\
                         }\
                         else {\
                             type = 3;\
@@ -111,7 +112,8 @@
                             four_count_c++;\
                             unmet4_c = 0;\
                             kind = rspick(nup_four_c, size_nup_four_c);\
-                            if ((kind == four_check[0] || kind == four_check[1] || kind == four_check[2] || kind == four_check[3] || kind == four_check[4] || kind == four_check[5] || kind == four_check[6] || kind == four_check[7])) four_star_guarantee_number = 0; else four_star_guarantee_number = 1;\
+                            for (int temp1189 = 0; temp1189 < 8; temp1189++) { focheck += kind == four_check[temp1189]; }\
+                            if ( focheck )  four_star_guarantee_number = 0; else four_star_guarantee_number = 1;\
                         }\
                         else {\
                             type = 3;\
@@ -134,7 +136,8 @@
                             four_count_c++;\
                             unmet4_c = 0;\
                             kind = rspick(nup_four_c, size_nup_four_c);\
-                            if ((kind == four_check[0] || kind == four_check[1] || kind == four_check[2] || kind == four_check[3] || kind == four_check[4] || kind == four_check[5] || kind == four_check[6] || kind == four_check[7])) four_star_guarantee_number = 0; else four_star_guarantee_number = 1;\
+                            for (int temp1189 = 0; temp1189 < 8; temp1189++) { focheck += kind == four_check[temp1189]; }\
+                            if ( focheck )  four_star_guarantee_number = 0; else four_star_guarantee_number = 1;\
                         }\
                     }\
                 }\
@@ -161,7 +164,8 @@
                         type = 2;\
                         five_count_w++;\
                         kind = rspick(nup_five_w, 10);\
-                        if((kind == five_check[0] || kind == five_check[1] || kind == five_check[2] || kind == five_check[3] || kind == five_check[4] || kind == five_check[5] || kind == five_check[6] || kind == five_check[7])) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;\
+                        for (int temp1189 = 0; temp1189 < 8; temp1189++) { ficheck += kind == five_check[temp1189]; }\
+                        if ( ficheck ) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;\
                     }\
                 }
 #define II_4() {star = 4;\
@@ -195,7 +199,8 @@
                                 four_count_w++;\
                                 unmet4_w = 0;\
                                 kind = rspick(nup_four_w, size_nup_four_w);\
-                                if ((kind == four_check[0] || kind == four_check[1] || kind == four_check[2] || kind == four_check[3] || kind == four_check[4] || kind == four_check[5] || kind == four_check[6] || kind == four_check[7])) four_star_guarantee_number = 0; else four_star_guarantee_number = 1;\
+                                for (int temp1189 = 0; temp1189 < 8; temp1189++) { focheck += kind == four_check[temp1189]; }\
+                                if ( focheck )  four_star_guarantee_number = 0; else four_star_guarantee_number = 1;\
                             }\
                         }\
                         else if (unmet4_w > 14) {\
@@ -211,7 +216,8 @@
                                 four_count_w++;\
                                 unmet4_w = 0;\
                                 kind = rspick(nup_four_w, size_nup_four_w);\
-                                if ((kind == four_check[0] || kind == four_check[1] || kind == four_check[2] || kind == four_check[3] || kind == four_check[4] || kind == four_check[5] || kind == four_check[6] || kind == four_check[7])) four_star_guarantee_number = 0; else four_star_guarantee_number = 1;\
+                                for (int temp1189 = 0; temp1189 < 8; temp1189++) { focheck += kind == four_check[temp1189]; }\
+                                if ( focheck )  four_star_guarantee_number = 0; else four_star_guarantee_number = 1;\
                             }\
                         }\
                         else {\
@@ -220,7 +226,8 @@
                                 four_count_w++;\
                                 unmet4_w = 0;\
                                 kind = rspick(nup_four_w, size_nup_four_w);\
-                                if ((kind == four_check[0] || kind == four_check[1] || kind == four_check[2] || kind == four_check[3] || kind == four_check[4] || kind == four_check[5] || kind == four_check[6] || kind == four_check[7])) four_star_guarantee_number = 0; else four_star_guarantee_number = 1;\
+                                for (int temp1189 = 0; temp1189 < 8; temp1189++) { focheck += kind == four_check[temp1189]; }\
+                                if ( focheck )  four_star_guarantee_number = 0; else four_star_guarantee_number = 1;\
                             }\
                             else {\
                                 type = 2;\
@@ -515,8 +522,10 @@ int main() {
         size_nup_four_c = 1,
         size_nup_four_w = 1,
         three_g[18] = { 0 },
-        five_check[8] = { 127 },
-        four_check[8] = { 127 };
+        five_check[8] = { 127, 127, 127, 127, 127, 127, 127, 127 },
+        four_check[8] = { 127, 127, 127, 127, 127, 127, 127, 127 },
+        ficheck = 0,
+        focheck = 0;
         long long int countx = 0,
         five_count = 0,
         five_count_c = 0,
@@ -1173,7 +1182,7 @@ int main() {
             std::cout << endl;
             if (wishes_number == -1){wishes_number = 0; goto enter_chosen_event;}
             if (wishes_number == -2){
-                if(countx < 10) {std::cout << "Default" << endl; goto enter_wishes_number; }
+                if (countx < 10) {std::cout << "Default" << endl; goto enter_wishes_number; }
                 std::cout << "Luckiness: " << luckiest << endl;
                 for (int templuck = 0; templuck < 10; templuck++) {
                     std::cout << luckiestlocation[templuck] << "(" << luckiestsublocation[templuck] << ")" << " ";
