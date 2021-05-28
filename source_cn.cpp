@@ -563,7 +563,7 @@ int main() {
                 << "12: 陵薮市朝/20210428-20210518 (钟离, 烟绯, 诺艾尔, 迪奥娜)" << endl
                 << "13: 浪涌之瞬/20210518-20210608 (优菈, 辛焱, 行秋, 北斗)" << endl
                 << "14: 闪焰的驻足/20210608-? (可莉, 砂糖, 菲谢尔, ?)" << endl
-                << "15: 枫原万叶/?-? (枫原万叶, 罗莎莉亚, 班尼特, 雷泽)" << endl << endl;
+                << "15: 叶落风随/?-? (枫原万叶, 罗莎莉亚, 班尼特, 雷泽)" << endl << endl;
             std::cin >> chosen_event;
             if (cin.fail()) { chosen_event = 0; std::cout << endl << "非法字符!" << endl; cin.clear(); cin.ignore(32767, '\n'); goto enter_chosen_event; }
             if (chosen_event == -1) { chosen_event = 0; std::cout << endl; goto enter_chosen_banner; }
