@@ -4,139 +4,16 @@
 #include <random>
 #include <string>
 #define ULTRAPOS 437580000
-#define casesx() {  case 1: { std::cout << "!!!!!*****刻晴" << endl; } break;\
-                    case 2: { std::cout << "!!!!!*****莫娜" << endl; } break;\
-                    case 3: { std::cout << "!!!!!*****七七" << endl; } break;\
-                    case 4: { std::cout << "!!!!!*****迪卢克" << endl; } break;\
-                    case 5: { std::cout << "!!!!!*****琴" << endl; } break;\
-                    case 6: { std::cout << "!!!!!*****阿莫斯之弓" << endl; } break;\
-                    case 7: { std::cout << "!!!!!*****天空之翼" << endl; } break;\
-                    case 8: { std::cout << "!!!!!*****四风原典" << endl; } break;\
-                    case 9: { std::cout << "!!!!!*****天空之卷" << endl; } break;\
-                    case 10: { std::cout << "!!!!!*****和璞鸢" << endl; } break;\
-                    case 11: { std::cout << "!!!!!*****天空之脊" << endl; } break;\
-                    case 12: { std::cout << "!!!!!*****狼的末路" << endl; } break;\
-                    case 13: { std::cout << "!!!!!*****天空之傲" << endl; } break;\
-                    case 14: { std::cout << "!!!!!*****天空之刃" << endl; } break;\
-                    case 15: { std::cout << "!!!!!*****风鹰剑" << endl; } break;\
-                    case 16: { std::cout << "!!****罗莎莉亚" << endl; } break;\
-                    case 17: { std::cout << "!!****辛焱" << endl; } break;\
-                    case 18: { std::cout << "!!****砂糖" << endl; } break;\
-                    case 19: { std::cout << "!!****迪奥娜" << endl; } break;\
-                    case 20: { std::cout << "!!****重云" << endl; } break;\
-                    case 21: { std::cout << "!!****诺艾尔" << endl; } break;\
-                    case 22: { std::cout << "!!****班尼特" << endl; } break;\
-                    case 23: { std::cout << "!!****菲谢尔" << endl; } break;\
-                    case 24: { std::cout << "!!****凝光" << endl; } break;\
-                    case 25: { std::cout << "!!****行秋" << endl; } break;\
-                    case 26: { std::cout << "!!****北斗" << endl; } break;\
-                    case 27: { std::cout << "!!****香菱" << endl; } break;\
-                    case 28: { std::cout << "!!****安柏" << endl; } break;\
-                    case 29: { std::cout << "!!****雷泽" << endl; } break;\
-                    case 30: { std::cout << "!!****凯亚" << endl; } break;\
-                    case 31: { std::cout << "!!****芭芭拉" << endl; } break;\
-                    case 32: { std::cout << "!!****丽莎" << endl; } break;\
-                    case 33: { std::cout << "!!****弓藏" << endl; } break;\
-                    case 34: { std::cout << "!!****祭礼弓" << endl; } break;\
-                    case 35: { std::cout << "!!****绝弦" << endl; } break;\
-                    case 36: { std::cout << "!!****西风猎弓" << endl; } break;\
-                    case 37: { std::cout << "!!****昭心" << endl; } break;\
-                    case 38: { std::cout << "!!****祭礼残章" << endl; } break;\
-                    case 39: { std::cout << "!!****流浪乐章" << endl; } break;\
-                    case 40: { std::cout << "!!****西风秘典" << endl; } break;\
-                    case 41: { std::cout << "!!****西风长枪" << endl; } break;\
-                    case 42: { std::cout << "!!****匣里灭辰" << endl; } break;\
-                    case 43: { std::cout << "!!****雨裁" << endl; } break;\
-                    case 44: { std::cout << "!!****祭礼大剑" << endl; } break;\
-                    case 45: { std::cout << "!!****钟剑" << endl; } break;\
-                    case 46: { std::cout << "!!****西风大剑" << endl; } break;\
-                    case 47: { std::cout << "!!****匣里龙吟" << endl; } break;\
-                    case 48: { std::cout << "!!****祭礼剑" << endl; } break;\
-                    case 49: { std::cout << "!!****笛剑" << endl; } break;\
-                    case 50: { std::cout << "!!****西风剑" << endl; } break;\
-                    case 51: { std::cout << "***猎弓" << endl; } break;\
-                    case 52: { std::cout << "***神射手之誓" << endl; } break;\
-                    case 53: { std::cout << "***鸦羽弓" << endl; } break;\
-                    case 54: { std::cout << "***翡玉法球" << endl; } break;\
-                    case 55: { std::cout << "***讨龙英杰谭" << endl; } break;\
-                    case 56: { std::cout << "***魔导绪论" << endl; } break;\
-                    case 57: { std::cout << "***黑缨枪" << endl; } break;\
-                    case 58: { std::cout << "***以理服人" << endl; } break;\
-                    case 59: { std::cout << "***沐浴龙血的剑" << endl; } break;\
-                    case 60: { std::cout << "***铁影阔剑" << endl; } break;\
-                    case 61: { std::cout << "***飞天御剑" << endl; } break;\
-                    case 62: { std::cout << "***黎明神剑" << endl; } break;\
-                    case 63: { std::cout << "***冷刃" << endl; } break;\
-                    case 64: { std::cout << "!!!!!*****温迪" << endl; } break;\
-                    case 65: { std::cout << "!!!!!*****可莉" << endl; } break;\
-                    case 66: { std::cout << "!!!!!*****达达利亚" << endl; } break;\
-                    case 67: { std::cout << "!!!!!*****钟离" << endl; } break;\
-                    case 68: { std::cout << "!!!!!*****阿贝多" << endl; } break;\
-                    case 69: { std::cout << "!!!!!*****甘雨" << endl; } break;\
-                    case 70: { std::cout << "!!!!!*****魈" << endl; } break;\
-                    case 71: { std::cout << "!!!!!*****胡桃" << endl; } break;\
-                    case 72: { std::cout << "!!****烟绯" << endl; } break;\
-                    case 73: { std::cout << "!!!!!*****优菈" << endl; } break;\
-                    case 74: { std::cout << "!!!!!*****尘世之锁" << endl; } break;\
-                    case 75: { std::cout << "!!!!!*****贯虹之槊" << endl; } break;\
-                    case 76: { std::cout << "!!!!!*****无工之剑" << endl; } break;\
-                    case 77: { std::cout << "!!!!!*****斫峰之刃" << endl; } break;\
-                    case 78: { std::cout << "!!!!!*****磐岩结绿" << endl; } break;\
-                    case 79: { std::cout << "!!!!!*****护摩之杖" << endl; } break;\
-                    case 80: { std::cout << "!!****千岩古剑" << endl; } break;\
-                    case 81: { std::cout << "!!****千岩长枪" << endl; } break;\
-                    case 82: { std::cout << "!!!!!*****终末嗟叹之诗" << endl; } break;\
-                    case 83: { std::cout << "!!****暗巷闪光" << endl; } break;\
-                    case 84: { std::cout << "!!****暗巷的酒与诗" << endl; } break;\
-                    case 85: { std::cout << "!!****暗巷猎手" << endl; } break;\
-                    case 86: { std::cout << "!!!!!*****松籁响起之时" << endl; } break;\
-                    case 87: { std::cout << "Placeholder" << endl; } break;\
-                    case 88: { std::cout << "Placeholder" << endl; } break;\
-                    case 89: { std::cout << "Placeholder" << endl; } break;\
-                    case 90: { std::cout << "Placeholder" << endl; } break;\
-                    case 91: { std::cout << "Placeholder" << endl; } break;\
-                    case 92: { std::cout << "Placeholder" << endl; } break;\
-                    case 93: { std::cout << "Placeholder" << endl; } break;\
-                    case 94: { std::cout << "Placeholder" << endl; } break;\
-                    case 95: { std::cout << "Placeholder" << endl; } break;\
-                    case 96: { std::cout << "Placeholder" << endl; } break;\
-                    case 97: { std::cout << "Placeholder" << endl; } break;\
-                    case 98: { std::cout << "Placeholder" << endl; } break;\
-                    case 99: { std::cout << "Placeholder" << endl; } break;\
-                    case 100: { std::cout << "Placeholder" << endl; } break;\
-                    case 101: { std::cout << "Placeholder" << endl; } break;\
-                    case 102: { std::cout << "Placeholder" << endl; } break;\
-                    case 103: { std::cout << "Placeholder" << endl; } break;\
-                    case 104: { std::cout << "Placeholder" << endl; } break;\
-                    case 105: { std::cout << "Placeholder" << endl; } break;\
-                    case 106: { std::cout << "Placeholder" << endl; } break;\
-                    case 107: { std::cout << "Placeholder" << endl; } break;\
-                    case 108: { std::cout << "Placeholder" << endl; } break;\
-                    case 109: { std::cout << "Placeholder" << endl; } break;\
-                    case 110: { std::cout << "Placeholder" << endl; } break;\
-                    case 111: { std::cout << "Placeholder" << endl; } break;\
-                    case 112: { std::cout << "Placeholder" << endl; } break;\
-                    case 113: { std::cout << "Placeholder" << endl; } break;\
-                    case 114: { std::cout << "Placeholder" << endl; } break;\
-                    case 115: { std::cout << "Placeholder" << endl; } break;\
-                    case 116: { std::cout << "Placeholder" << endl; } break;\
-                    case 117: { std::cout << "Placeholder" << endl; } break;\
-                    case 118: { std::cout << "Placeholder" << endl; } break;\
-                    case 119: { std::cout << "Placeholder" << endl; } break;\
-                    case 120: { std::cout << "Placeholder" << endl; } break;\
-                    case 121: { std::cout << "Placeholder" << endl; } break;\
-                    case 122: { std::cout << "Placeholder" << endl; } break;\
-                    case 123: { std::cout << "Placeholder" << endl; } break;\
-                    case 124: { std::cout << "Placeholder" << endl; } break;\
-                    case 125: { std::cout << "Placeholder" << endl; } break;\
-                    case 126: { std::cout << "Placeholder" << endl; } break;\
-                    case 127: { std::cout << "Placeholder" << endl; } break;\
-                    case 128: { std::cout << "Placeholder" << endl; } break;\
-                    }
+#define casesx( kind ){   if (kind < 16 ) { std::cout << "!!!!!*****"; }\
+                    else if (kind < 51 ) { std::cout << "!!****"; }\
+                    else if (kind < 64 ) { std::cout << "***"; }\
+                    else if (kind == 72 || kind == 80 || kind == 81 || kind == 83 || kind == 84 || kind == 85) { std::cout << "!!****"; }\
+                    else if (kind < 87 ) { std::cout << "!!!!!*****"; }\
+                    else {}\
+                }
 #define output_string() {if (y_print == 1) {std::cout << countx + 1 << "(" << five_star_assurance_number << ")" << " ";\
-                    switch (kind) {\
-                    casesx()\
-                    }}\
+                    casesx( kind )\
+                    std::cout << pname[kind - 1] << endl; }\
                     pcount[kind - 1] ++;\
                     wishes_number--;\
                     countx++;\
@@ -1300,9 +1177,8 @@ int main() {
                 std::cout << "好运参考值: " << luckiest << endl;
                 for (int templuck = 0; templuck < 10; templuck++) {
                     std::cout << luckiestlocation[templuck] << "(" << luckiestsublocation[templuck] << ")" << " ";
-                    switch (luckiestkind[templuck]) {
-                    casesx()
-                    }
+                    casesx( luckiestkind[templuck] )
+                    std::cout << pname[luckiestkind[templuck] - 1] << endl;
                 }
                 goto enter_wishes_number;
             }

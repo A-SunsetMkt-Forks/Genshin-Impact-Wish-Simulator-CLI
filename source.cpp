@@ -4,139 +4,16 @@
 #include <random>
 #include <string>
 #define ULTRAPOS 437580000
-#define casesx(){   case 1: { std::cout << "!!!!!*****Keqing" << endl; } break;\
-                    case 2: { std::cout << "!!!!!*****Mona" << endl; } break;\
-                    case 3: { std::cout << "!!!!!*****Qiqi" << endl; } break;\
-                    case 4: { std::cout << "!!!!!*****Diluc" << endl; } break;\
-                    case 5: { std::cout << "!!!!!*****Jean" << endl; } break;\
-                    case 6: { std::cout << "!!!!!*****Amos' Bow" << endl; } break;\
-                    case 7: { std::cout << "!!!!!*****Skyward Harp" << endl; } break;\
-                    case 8: { std::cout << "!!!!!*****Lost Prayer to the Sacred Winds" << endl; } break;\
-                    case 9: { std::cout << "!!!!!*****Skyward Atlas" << endl; } break;\
-                    case 10: { std::cout << "!!!!!*****Primordial Jade Winged-Spear" << endl; } break;\
-                    case 11: { std::cout << "!!!!!*****Skyward Spine" << endl; } break;\
-                    case 12: { std::cout << "!!!!!*****Wolf's Gravestone" << endl; } break;\
-                    case 13: { std::cout << "!!!!!*****Skyward Pride" << endl; } break;\
-                    case 14: { std::cout << "!!!!!*****Skyward Blade" << endl; } break;\
-                    case 15: { std::cout << "!!!!!*****Aquila Favonia" << endl; } break;\
-                    case 16: { std::cout << "!!****Rosaria" << endl; } break;\
-                    case 17: { std::cout << "!!****Xinyan" << endl; } break;\
-                    case 18: { std::cout << "!!****Sucrose" << endl; } break;\
-                    case 19: { std::cout << "!!****Diona" << endl; } break;\
-                    case 20: { std::cout << "!!****Chongyun" << endl; } break;\
-                    case 21: { std::cout << "!!****Noelle" << endl; } break;\
-                    case 22: { std::cout << "!!****Bennett" << endl; } break;\
-                    case 23: { std::cout << "!!****Fischl" << endl; } break;\
-                    case 24: { std::cout << "!!****Ningguang" << endl; } break;\
-                    case 25: { std::cout << "!!****Xingqiu" << endl; } break;\
-                    case 26: { std::cout << "!!****Beidou" << endl; } break;\
-                    case 27: { std::cout << "!!****Xiangling" << endl; } break;\
-                    case 28: { std::cout << "!!****Amber" << endl; } break;\
-                    case 29: { std::cout << "!!****Razor" << endl; } break;\
-                    case 30: { std::cout << "!!****Kaeya" << endl; } break;\
-                    case 31: { std::cout << "!!****Barbara" << endl; } break;\
-                    case 32: { std::cout << "!!****Lisa" << endl; } break;\
-                    case 33: { std::cout << "!!****Rust" << endl; } break;\
-                    case 34: { std::cout << "!!****Sacrificial Bow" << endl; } break;\
-                    case 35: { std::cout << "!!****The Stringless" << endl; } break;\
-                    case 36: { std::cout << "!!****Favonius Warbow" << endl; } break;\
-                    case 37: { std::cout << "!!****Eye of Perception" << endl; } break;\
-                    case 38: { std::cout << "!!****Sacrificial Fragments" << endl; } break;\
-                    case 39: { std::cout << "!!****The Widsith" << endl; } break;\
-                    case 40: { std::cout << "!!****Favonius Codex" << endl; } break;\
-                    case 41: { std::cout << "!!****Favonius Lance" << endl; } break;\
-                    case 42: { std::cout << "!!****Dragon's Bane" << endl; } break;\
-                    case 43: { std::cout << "!!****Rainslasher" << endl; } break;\
-                    case 44: { std::cout << "!!****Sacrificial Greatsword" << endl; } break;\
-                    case 45: { std::cout << "!!****The Bell" << endl; } break;\
-                    case 46: { std::cout << "!!****Favonius Greatsword" << endl; } break;\
-                    case 47: { std::cout << "!!****Lion's Roar" << endl; } break;\
-                    case 48: { std::cout << "!!****Sacrificial Sword" << endl; } break;\
-                    case 49: { std::cout << "!!****The Flute" << endl; } break;\
-                    case 50: { std::cout << "!!****Favonius Sword" << endl; } break;\
-                    case 51: { std::cout << "***Slingshot" << endl; } break;\
-                    case 52: { std::cout << "***Sharpshooter's Oath" << endl; } break;\
-                    case 53: { std::cout << "***Raven Bow" << endl; } break;\
-                    case 54: { std::cout << "***Emerald Orb" << endl; } break;\
-                    case 55: { std::cout << "***Thrilling Tales of Dragon Slayers" << endl; } break;\
-                    case 56: { std::cout << "***Magic Guide" << endl; } break;\
-                    case 57: { std::cout << "***Black Tassel" << endl; } break;\
-                    case 58: { std::cout << "***Debate Club" << endl; } break;\
-                    case 59: { std::cout << "***Bloodtainted Greatsword" << endl; } break;\
-                    case 60: { std::cout << "***Ferrous Shadow" << endl; } break;\
-                    case 61: { std::cout << "***Skyrider Sword" << endl; } break;\
-                    case 62: { std::cout << "***Harbinger of Dawn" << endl; } break;\
-                    case 63: { std::cout << "***Cool Steel" << endl; } break;\
-                    case 64: { std::cout << "!!!!!*****Venti" << endl; } break;\
-                    case 65: { std::cout << "!!!!!*****Klee" << endl; } break;\
-                    case 66: { std::cout << "!!!!!*****Tartaglia" << endl; } break;\
-                    case 67: { std::cout << "!!!!!*****Zhongli" << endl; } break;\
-                    case 68: { std::cout << "!!!!!*****Albedo" << endl; } break;\
-                    case 69: { std::cout << "!!!!!*****Ganyu" << endl; } break;\
-                    case 70: { std::cout << "!!!!!*****Xiao" << endl; } break;\
-                    case 71: { std::cout << "!!!!!*****Hu Tao" << endl; } break;\
-                    case 72: { std::cout << "!!****Yanfei" << endl; } break;\
-                    case 73: { std::cout << "!!!!!*****Eula" << endl; } break;\
-                    case 74: { std::cout << "!!!!!*****Memory of Dust" << endl; } break;\
-                    case 75: { std::cout << "!!!!!*****Vortex Vanquisher" << endl; } break;\
-                    case 76: { std::cout << "!!!!!*****The Unforged" << endl; } break;\
-                    case 77: { std::cout << "!!!!!*****Summit Shaper" << endl; } break;\
-                    case 78: { std::cout << "!!!!!*****Primordial Jade Cutter" << endl; } break;\
-                    case 79: { std::cout << "!!!!!*****Staff of Homa" << endl; } break;\
-                    case 80: { std::cout << "!!****Lithic Blade" << endl; } break;\
-                    case 81: { std::cout << "!!****Lithic Spear" << endl; } break;\
-                    case 82: { std::cout << "!!!!!*****Elegy of the End" << endl; } break;\
-                    case 83: { std::cout << "!!****The Alley Flash" << endl; } break;\
-                    case 84: { std::cout << "!!****Wine and Song" << endl; } break;\
-                    case 85: { std::cout << "!!****Alley Hunter" << endl; } break;\
-                    case 86: { std::cout << "!!!!!*****Song of Broken Pines" << endl; } break;\
-                    case 87: { std::cout << "Placeholder" << endl; } break;\
-                    case 88: { std::cout << "Placeholder" << endl; } break;\
-                    case 89: { std::cout << "Placeholder" << endl; } break;\
-                    case 90: { std::cout << "Placeholder" << endl; } break;\
-                    case 91: { std::cout << "Placeholder" << endl; } break;\
-                    case 92: { std::cout << "Placeholder" << endl; } break;\
-                    case 93: { std::cout << "Placeholder" << endl; } break;\
-                    case 94: { std::cout << "Placeholder" << endl; } break;\
-                    case 95: { std::cout << "Placeholder" << endl; } break;\
-                    case 96: { std::cout << "Placeholder" << endl; } break;\
-                    case 97: { std::cout << "Placeholder" << endl; } break;\
-                    case 98: { std::cout << "Placeholder" << endl; } break;\
-                    case 99: { std::cout << "Placeholder" << endl; } break;\
-                    case 100: { std::cout << "Placeholder" << endl; } break;\
-                    case 101: { std::cout << "Placeholder" << endl; } break;\
-                    case 102: { std::cout << "Placeholder" << endl; } break;\
-                    case 103: { std::cout << "Placeholder" << endl; } break;\
-                    case 104: { std::cout << "Placeholder" << endl; } break;\
-                    case 105: { std::cout << "Placeholder" << endl; } break;\
-                    case 106: { std::cout << "Placeholder" << endl; } break;\
-                    case 107: { std::cout << "Placeholder" << endl; } break;\
-                    case 108: { std::cout << "Placeholder" << endl; } break;\
-                    case 109: { std::cout << "Placeholder" << endl; } break;\
-                    case 110: { std::cout << "Placeholder" << endl; } break;\
-                    case 111: { std::cout << "Placeholder" << endl; } break;\
-                    case 112: { std::cout << "Placeholder" << endl; } break;\
-                    case 113: { std::cout << "Placeholder" << endl; } break;\
-                    case 114: { std::cout << "Placeholder" << endl; } break;\
-                    case 115: { std::cout << "Placeholder" << endl; } break;\
-                    case 116: { std::cout << "Placeholder" << endl; } break;\
-                    case 117: { std::cout << "Placeholder" << endl; } break;\
-                    case 118: { std::cout << "Placeholder" << endl; } break;\
-                    case 119: { std::cout << "Placeholder" << endl; } break;\
-                    case 120: { std::cout << "Placeholder" << endl; } break;\
-                    case 121: { std::cout << "Placeholder" << endl; } break;\
-                    case 122: { std::cout << "Placeholder" << endl; } break;\
-                    case 123: { std::cout << "Placeholder" << endl; } break;\
-                    case 124: { std::cout << "Placeholder" << endl; } break;\
-                    case 125: { std::cout << "Placeholder" << endl; } break;\
-                    case 126: { std::cout << "Placeholder" << endl; } break;\
-                    case 127: { std::cout << "Placeholder" << endl; } break;\
-                    case 128: { std::cout << "Placeholder" << endl; } break;\
+#define casesx( kind ){   if (kind < 16 ) { std::cout << "!!!!!*****"; }\
+                    else if (kind < 51 ) { std::cout << "!!****"; }\
+                    else if (kind < 64 ) { std::cout << "***"; }\
+                    else if (kind == 72 || kind == 80 || kind == 81 || kind == 83 || kind == 84 || kind == 85) { std::cout << "!!****"; }\
+                    else if (kind < 87 ) { std::cout << "!!!!!*****"; }\
+                    else {}\
                 }
 #define output_string() {if (y_print == 1) {std::cout << countx + 1 << "(" << five_star_assurance_number << ")" << " ";\
-                    switch (kind) {\
-                    casesx()\
-                    }}\
+                    casesx( kind )\
+                    std::cout << pname[kind - 1] << endl; }\
                     pcount[kind - 1] ++;\
                     wishes_number--;\
                     countx++;\
@@ -1300,9 +1177,8 @@ int main() {
                 std::cout << "Luckiness: " << luckiest << endl;
                 for (int templuck = 0; templuck < 10; templuck++) {
                     std::cout << luckiestlocation[templuck] << "(" << luckiestsublocation[templuck] << ")" << " ";
-                    switch (luckiestkind[templuck]) {
-                    casesx()
-                    }
+                    casesx( luckiestkind[templuck] )
+                    std::cout << pname[luckiestkind[templuck] - 1] << endl;
                 }
                 goto enter_wishes_number;
             }
@@ -1342,7 +1218,7 @@ int main() {
                 for (int ini = 0; ini < 10; ini++) { luckiestlocation[ini] = (long long int) ini + 1; }
                 for (int ini = 0; ini < 10; ini++) { luckiestsublocation[ini] = (long long int) ini + 1; }
                 for (int ini = 0; ini < 10; ini++) { luckiestkind[ini] = 127; }
-                std::cout << endl << "Record has been reset!" << endl;
+                std::cout << "Record has been reset!" << endl;
                 goto enter_wishes_number;
             }
             //if (chosen_banner == 4 && chosen_event == 1 && wishes_number != 10) { wishes_number = 0; std::cout << "Invalid number of wishes!" << endl; goto enter_wishes_number; }
