@@ -25,6 +25,8 @@ I Character Event Wish\
 11: Farewell of Snezhnaya/20210406-20210427 (Tartaglia, Rosaria, Barbara, Fischl)\
 12: Gentry of Hermitage/20210428-20210518 (Zhongli, Yanfei, Noelle, Diona)\
 13: Born of Ocean Swell/20210518-20210608 (EUla, Xinyan, Xingqiu, Beidou)
+14: Sparkling Steps/20210609-? (Klee, Sucrose, Fischl, ?)\
+15: Kaedehara Kazuha/?-? (Kaedehara Kazuha, Rosaria, Bennett, Razor)
 
 II Weapon Event Wish\
 1: Epitome Invocation/20200928-20201018 (Aquila Favonia, Amos' Bow, The Flute, The Bell, The Widsith, The Stringless, Favonius Lance)\
@@ -43,7 +45,8 @@ II Weapon Event Wish\
 III Permanent Wish\
 1: Wanderlust Invocation/20200928-20201222 (Released)\
 2: Wanderlust Invocation/20201223-20210427 (Adds Diona and Xinyan)\
-3: Wanderlust Invocation/20210428- (Adds Rosaria)
+3: Wanderlust Invocation/20210428-20210608 (Adds Rosaria)\
+4: Wanderlust Invocation/20210609- (Adds Yanfei)
 
 IV Novice Wish\
 1: Beginners' wish
@@ -73,7 +76,9 @@ Screenshots\
 10: 杯装之诗/20210317-20210406 (温迪, 砂糖, 雷泽, 诺艾尔)\
 11: 暂别冬都/20210406-20210427 (达达利亚, 罗莎莉亚, 芭芭拉, 菲谢尔)\
 12: 陵薮市朝/20210428-20210518 (钟离, 烟绯, 诺艾尔, 迪奥娜)\
-13: 浪涌之瞬/20210518-20210608 (优菈, 辛焱, 行秋, 北斗)
+13: 浪涌之瞬/20210518-20210608 (优菈, 辛焱, 行秋, 北斗)\
+14: 闪焰的驻足/20210608-? (可莉, 砂糖, 菲谢尔, ?)\
+15: 叶落风随/?-? (枫原万叶, 罗莎莉亚, 班尼特, 雷泽)
 
 二、武器活动祈愿\
 1: 神铸赋形/20200928-20201018 (风鹰剑, 阿莫斯之弓, 笛剑, 钟剑, 流浪乐章, 绝弦, 西风长枪)\
@@ -92,7 +97,8 @@ Screenshots\
 三、常驻祈愿\
 1: 奔行世间/20200928-20201222 (公测)\
 2: 奔行世间/20201223-20210427 (新增迪奥娜和辛焱)\
-3: 奔行世间/20210428- (新增罗莎莉亚)
+3: 奔行世间/20210428-20210608 (新增罗莎莉亚)\
+4: 奔行世间/20210609- (新增烟绯)
 
 四、新手祈愿\
 1: 新手祈愿
