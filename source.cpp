@@ -89,7 +89,7 @@
                     four_star_guarantee_number = 0;\
                 }\
                 else {\
-                    if (unmet4_c < 17 && unmet4_w < 17) {\
+                    if (unmet4_c < 18 && unmet4_w < 18) {\
                         if (temp2 > (long long int) 3 * ULTRAPOS / 4 - 1) {\
                             type = 2;\
                             four_count_c++;\
@@ -105,7 +105,7 @@
                             four_star_guarantee_number = 1;\
                         }\
                     }\
-                    else if (unmet4_w > 16) {\
+                    else if (unmet4_w > 17) {\
                         if (temp2 > (long long int) ULTRAPOS - ULTRAPOS / (20 * unmet4_c - 336) - 1) {\
                             type = 2;\
                             four_count_c++;\
