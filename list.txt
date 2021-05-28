@@ -85,9 +85,9 @@ switch (kind) {
                 case 84: std::cout << "!!****Wine and Song" << endl; break;
                 case 85: std::cout << "!!****Alley Hunter" << endl; break;
                 case 86: std::cout << "!!!!!*****Song of Broken Pines" << endl; break;
-                case 87: std::cout << "Placeholder" << endl; break;
-                case 88: std::cout << "Placeholder" << endl; break;
-                case 89: std::cout << "Placeholder" << endl; break;
+                case 87: std::cout << "!!!!!*****Kaedehara Kazuha" << endl; break;
+                case 88: std::cout << "!!!!!*****Freedom-Sworn" << endl; break;
+                case 89: std::cout << "!!****Mitternachts Waltz" << endl; break;
                 case 90: std::cout << "Placeholder" << endl; break;
                 case 91: std::cout << "Placeholder" << endl; break;
                 case 92: std::cout << "Placeholder" << endl; break;

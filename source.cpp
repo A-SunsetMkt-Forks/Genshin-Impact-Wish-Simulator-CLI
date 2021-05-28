@@ -562,8 +562,8 @@ int main() {
                 << "11: Farewell of Snezhnaya/20210406-20210427 (Tartaglia, Rosaria, Barbara, Fischl)" << endl
                 << "12: Gentry of Hermitage/20210428-20210518 (Zhongli, Yanfei, Noelle, Diona)" << endl
                 << "13: Born of Ocean Swell/20210518-20210608 (EUla, Xinyan, Xingqiu, Beidou)" << endl
-                << "14: Sparkling Steps/20210609-? (Klee, ?, ?, ?)" << endl
-                << "15: Kaedehara Kazuha/?-? (Kaedehara Kazuha, ?, ?, ?)" << endl << endl;
+                << "14: Sparkling Steps/20210609-? (Klee, Sucrose, Fischl, ?)" << endl
+                << "15: Kaedehara Kazuha/?-? (Kaedehara Kazuha, Rosaria, Bennett, Razor)" << endl << endl;
             std::cin >> chosen_event;
             if (cin.fail()) {chosen_event = 0; std::cout << endl << "Character(s) cannot be read!" << endl; cin.clear(); cin.ignore(32767,'\n'); goto enter_chosen_event;}
             if (chosen_event == -1) { chosen_event = 0; std::cout << endl; goto enter_chosen_banner; }
@@ -596,11 +596,12 @@ int main() {
                 << "-1: Re-choose Wishes (Banners) (Records will be reset!)" << endl
                 << "1: Wanderlust Invocation/20200928-20201222 (Released)" << endl
                 << "2: Wanderlust Invocation/20201223-20210427 (Adds Diona and Xinyan)" << endl
-                << "3: Wanderlust Invocation/20210428- (Adds Rosaria)" << endl << endl;
+                << "3: Wanderlust Invocation/20210428-20210608 (Adds Rosaria)" << endl
+                << "4: Wanderlust Invocation/20210609- (Adds Yanfei)" << endl << endl;
             std::cin >> chosen_event;
             if (cin.fail()) {chosen_event = 0; std::cout << endl << "Character(s) cannot be read!" << endl; cin.clear(); cin.ignore(32767,'\n'); goto enter_chosen_event;}
             if (chosen_event == -1) { chosen_event = 0; std::cout << endl; goto enter_chosen_banner; }
-            if (chosen_event > 0 && chosen_event < 4 && chosen_event == (int)chosen_event) quit = 0; else { std::cout << endl << "Invalid event!" << endl << endl; goto enter_chosen_event; }
+            if (chosen_event > 0 && chosen_event < 5 && chosen_event == (int)chosen_event) quit = 0; else { std::cout << endl << "Invalid event!" << endl << endl; goto enter_chosen_event; }
         } break;
         case 4: {
             chosen_event = 0;
@@ -835,6 +836,23 @@ int main() {
                 int tempg4[13] = { 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63 };
                 for (int temp399 = 0; temp399 < 13; temp399++) three_g[temp399] = tempg4[temp399];
                 int tempg5[8] = { 17, 25, 26, 0, 0, 0, 0, 0 };
+                for (int temp399 = 0; temp399 < 8; temp399++) four_check[temp399] = tempg5[temp399];
+            } break;
+            case 15: {
+                up_five = 87;
+                size_nup_four_c = 14;
+                size_nup_four_w = 18;
+                int tempg0[5] = { 1, 2, 3, 4, 5 };
+                for (int temp399 = 0; temp399 < 5; temp399++) nup_five_c[temp399] = tempg0[temp399];
+                int tempg1[3] = { 16, 22, 29 };
+                for (int temp399 = 0; temp399 < 3; temp399++) up_four_g[temp399] = tempg1[temp399];
+                int tempg2[15] = { 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 29, 31, 72 };
+                for (int temp399 = 0; temp399 < 15; temp399++) nup_four_c[temp399] = tempg2[temp399];
+                int tempg3[18] = { 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50 };
+                for (int temp399 = 0; temp399 < 18; temp399++) nup_four_w[temp399] = tempg3[temp399];
+                int tempg4[13] = { 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63 };
+                for (int temp399 = 0; temp399 < 13; temp399++) three_g[temp399] = tempg4[temp399];
+                int tempg5[8] = { 16, 22, 29, 0, 0, 0, 0, 0 };
                 for (int temp399 = 0; temp399 < 8; temp399++) four_check[temp399] = tempg5[temp399];
             } break;
             default:break;
@@ -1144,6 +1162,20 @@ int main() {
                 for (int temp399 = 0; temp399 < 10; temp399++) nup_five_w[temp399] = tempg1[temp399];
                 int tempg2[14] = { 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 29, 31 };
                 for (int temp399 = 0; temp399 < 14; temp399++) nup_four_c[temp399] = tempg2[temp399];
+                int tempg3[18] = { 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50 };
+                for (int temp399 = 0; temp399 < 18; temp399++) nup_four_w[temp399] = tempg3[temp399];
+                int tempg4[13] = { 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63 };
+                for (int temp399 = 0; temp399 < 13; temp399++) three_g[temp399] = tempg4[temp399];
+            } break;
+            case 4: {
+                size_nup_four_c = 14;
+                size_nup_four_w = 18;
+                int tempg0[5] = { 1, 2, 3, 4, 5 };
+                for (int temp399 = 0; temp399 < 5; temp399++) nup_five_c[temp399] = tempg0[temp399];
+                int tempg1[10] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
+                for (int temp399 = 0; temp399 < 10; temp399++) nup_five_w[temp399] = tempg1[temp399];
+                int tempg2[15] = { 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 29, 31, 72 };
+                for (int temp399 = 0; temp399 < 15; temp399++) nup_four_c[temp399] = tempg2[temp399];
                 int tempg3[18] = { 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50 };
                 for (int temp399 = 0; temp399 < 18; temp399++) nup_four_w[temp399] = tempg3[temp399];
                 int tempg4[13] = { 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63 };
