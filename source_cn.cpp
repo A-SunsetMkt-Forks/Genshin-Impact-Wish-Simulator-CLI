@@ -481,7 +481,7 @@ int rspick(int* kindx, int sizekind) {
 }
 
 int main() {
-    std::cout << "原神祈愿模拟器（命令行）V1.6.1" << endl 
+    std::cout << "原神祈愿模拟器（命令行）V1.6.2" << endl 
     << "作者: Jirehlov Research" << endl 
     << "开源于Github: Jirehlov/GenshinImpactWishSimulatorCLI" << endl 
     << "MIT LICENSE" << endl << endl;
@@ -567,7 +567,7 @@ int main() {
             std::cin >> chosen_event;
             if (cin.fail()) { chosen_event = 0; std::cout << endl << "非法字符!" << endl; cin.clear(); cin.ignore(32767, '\n'); goto enter_chosen_event; }
             if (chosen_event == -1) { chosen_event = 0; std::cout << endl; goto enter_chosen_banner; }
-            if (chosen_event > 0 && chosen_event < 14 && chosen_event == (int)chosen_event) quit = 0; else { std::cout << endl << "无效活动类型!" << endl << endl; goto enter_chosen_event; }
+            if (chosen_event > 0 && chosen_event < 16 && chosen_event == (int)chosen_event) quit = 0; else { std::cout << endl << "无效活动类型!" << endl << endl; goto enter_chosen_event; }
         } break;
         case 2: {
             chosen_event = 0;

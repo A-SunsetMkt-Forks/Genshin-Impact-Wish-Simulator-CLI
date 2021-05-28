@@ -481,7 +481,7 @@ int rspick(int* kindx, int sizekind) {
 }
 
 int main() {
-    std::cout << "WELCOME TO GENSHIN IMPACT WISH SIMULATOR CLI V1.6.1" << endl 
+    std::cout << "WELCOME TO GENSHIN IMPACT WISH SIMULATOR CLI V1.6.2" << endl 
     << "by Jirehlov Research" << endl 
     << "Source code available on Github: Jirehlov/GenshinImpactWishSimulatorCLI" << endl 
     << "MIT LICENSE" << endl << endl;
@@ -567,7 +567,7 @@ int main() {
             std::cin >> chosen_event;
             if (cin.fail()) {chosen_event = 0; std::cout << endl << "Character(s) cannot be read!" << endl; cin.clear(); cin.ignore(32767,'\n'); goto enter_chosen_event;}
             if (chosen_event == -1) { chosen_event = 0; std::cout << endl; goto enter_chosen_banner; }
-            if (chosen_event > 0 && chosen_event < 14 && chosen_event == (int)chosen_event) quit = 0; else { std::cout << endl << "Invalid event!" << endl << endl; goto enter_chosen_event; }
+            if (chosen_event > 0 && chosen_event < 16 && chosen_event == (int)chosen_event) quit = 0; else { std::cout << endl << "Invalid event!" << endl << endl; goto enter_chosen_event; }
         } break;
         case 2: {
             chosen_event = 0;
