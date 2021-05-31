@@ -25,8 +25,8 @@ I Character Event Wish\
 11: Farewell of Snezhnaya/20210406-20210427 (Tartaglia, Rosaria, Barbara, Fischl)\
 12: Gentry of Hermitage/20210428-20210518 (Zhongli, Yanfei, Noelle, Diona)\
 13: Born of Ocean Swell/20210518-20210608 (EUla, Xinyan, Xingqiu, Beidou)\
-14: Sparkling Steps/20210609-? (Klee, Sucrose, Fischl, ?)\
-15: Kaedehara Kazuha/?-? (Kaedehara Kazuha, Rosaria, Bennett, Razor)
+14: Sparkling Steps/20210609-? (Klee, Sucrose, Fischl, Barbara)\
+15: Leaves in the Wind/?-? (Kaedehara Kazuha, Rosaria, Bennett, Razor)
 
 II Weapon Event Wish\
 1: Epitome Invocation/20200928-20201018 (Aquila Favonia, Amos' Bow, The Flute, The Bell, The Widsith, The Stringless, Favonius Lance)\
@@ -78,7 +78,7 @@ Screenshots\
 11: 暂别冬都/20210406-20210427 (达达利亚, 罗莎莉亚, 芭芭拉, 菲谢尔)\
 12: 陵薮市朝/20210428-20210518 (钟离, 烟绯, 诺艾尔, 迪奥娜)\
 13: 浪涌之瞬/20210518-20210608 (优菈, 辛焱, 行秋, 北斗)\
-14: 闪焰的驻足/20210608-? (可莉, 砂糖, 菲谢尔, ?)\
+14: 闪焰的驻足/20210608-? (可莉, 砂糖, 菲谢尔, 芭芭拉)\
 15: 叶落风随/?-? (枫原万叶, 罗莎莉亚, 班尼特, 雷泽)
 
 二、武器活动祈愿\
