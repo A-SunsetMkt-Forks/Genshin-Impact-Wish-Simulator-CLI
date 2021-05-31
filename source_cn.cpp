@@ -562,7 +562,7 @@ int main() {
                 << "11: 暂别冬都/20210406-20210427 (达达利亚, 罗莎莉亚, 芭芭拉, 菲谢尔)" << endl
                 << "12: 陵薮市朝/20210428-20210518 (钟离, 烟绯, 诺艾尔, 迪奥娜)" << endl
                 << "13: 浪涌之瞬/20210518-20210608 (优菈, 辛焱, 行秋, 北斗)" << endl
-                << "14: 闪焰的驻足/20210609-? (可莉, 砂糖, 菲谢尔, ?)" << endl
+                << "14: 闪焰的驻足/20210609-? (可莉, 砂糖, 菲谢尔, 芭芭拉)" << endl
                 << "15: 叶落风随/?-? (枫原万叶, 罗莎莉亚, 班尼特, 雷泽)" << endl << endl;
             std::cin >> chosen_event;
             if (cin.fail()) { chosen_event = 0; std::cout << endl << "非法字符!" << endl; cin.clear(); cin.ignore(32767, '\n'); goto enter_chosen_event; }
@@ -836,6 +836,23 @@ int main() {
                 int tempg4[13] = { 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63 };
                 for (int temp399 = 0; temp399 < 13; temp399++) three_g[temp399] = tempg4[temp399];
                 int tempg5[8] = { 17, 25, 26, 0, 0, 0, 0, 0 };
+                for (int temp399 = 0; temp399 < 8; temp399++) four_check[temp399] = tempg5[temp399];
+            } break;
+            case 14: {
+                up_five = 65;
+                size_nup_four_c = 14;
+                size_nup_four_w = 18;
+                int tempg0[5] = { 1, 2, 3, 4, 5 };
+                for (int temp399 = 0; temp399 < 5; temp399++) nup_five_c[temp399] = tempg0[temp399];
+                int tempg1[3] = { 18, 23, 31 };
+                for (int temp399 = 0; temp399 < 3; temp399++) up_four_g[temp399] = tempg1[temp399];
+                int tempg2[15] = { 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 29, 31, 72 };
+                for (int temp399 = 0; temp399 < 15; temp399++) nup_four_c[temp399] = tempg2[temp399];
+                int tempg3[18] = { 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50 };
+                for (int temp399 = 0; temp399 < 18; temp399++) nup_four_w[temp399] = tempg3[temp399];
+                int tempg4[13] = { 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63 };
+                for (int temp399 = 0; temp399 < 13; temp399++) three_g[temp399] = tempg4[temp399];
+                int tempg5[8] = { 18, 23, 31, 0, 0, 0, 0, 0 };
                 for (int temp399 = 0; temp399 < 8; temp399++) four_check[temp399] = tempg5[temp399];
             } break;
             case 15: {
