@@ -1,9 +1,8 @@
-﻿#include <algorithm>
-#include <chrono>
+﻿#include <chrono>
 #include <iostream>
 #include <random>
 #include <string>
-#define ULTRAPOS 437580000
+constexpr auto ULTRAPOS = 437580000;
 #define casesx( kind ){   if (kind < 16 ) { std::cout << "!!!!!*****"; }\
                     else if (kind < 51 ) { std::cout << "!!****"; }\
                     else if (kind < 64 ) { std::cout << "***"; }\
@@ -481,7 +480,7 @@ int rspick(int* kindx, int sizekind) {
 }
 
 int main() {
-    std::cout << "原神祈愿模拟器（命令行）V1.6.2" << endl 
+    std::cout << "原神祈愿模拟器（命令行）V1.6.3" << endl 
     << "作者: Jirehlov Research" << endl 
     << "开源于Github: Jirehlov/GenshinImpactWishSimulatorCLI" << endl 
     << "MIT LICENSE" << endl << endl;
