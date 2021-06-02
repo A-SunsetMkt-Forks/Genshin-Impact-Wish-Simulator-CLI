@@ -489,7 +489,6 @@ int main() {
     enter_chosen_banner:
         int chosen_banner = 0,
         chosen_event = 0,
-        wishes_number = 0,
         four_star_assurance_number = 1,
         five_star_assurance_number = 1,
         five_star_guarantee_number = 0,
@@ -517,6 +516,7 @@ int main() {
         five_check[8] = { 127, 127, 127, 127, 127, 127, 127, 127 },
         four_check[8] = { 127, 127, 127, 127, 127, 127, 127, 127 };
         long long int countx = 0,
+        wishes_number = 0,
         five_count = 0,
         five_count_c = 0,
         five_count_w = 0,
@@ -1216,7 +1216,7 @@ int main() {
             << "1: 1发;" << endl 
             << "10: 10发;" << endl 
             << "-2: 显示运气最佳的连续十发;" << endl 
-            << "-3: 重置记录" << endl 
+            << "-3: 重置记录;" << endl 
             << "-4: 打印开关" << endl << endl;
             std::cin >> wishes_number;
             if (cin.fail()) { wishes_number = 0; std::cout << endl << "非法字符!" << endl; cin.clear(); cin.ignore(32767, '\n'); goto enter_wishes_number; }

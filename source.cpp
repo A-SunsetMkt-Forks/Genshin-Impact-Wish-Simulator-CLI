@@ -489,7 +489,6 @@ int main() {
     enter_chosen_banner:
         int chosen_banner = 0,
         chosen_event = 0,
-        wishes_number = 0,
         four_star_assurance_number = 1,
         five_star_assurance_number = 1,
         five_star_guarantee_number = 0,
@@ -517,6 +516,7 @@ int main() {
         five_check[8] = { 127, 127, 127, 127, 127, 127, 127, 127 },
         four_check[8] = { 127, 127, 127, 127, 127, 127, 127, 127 };
         long long int countx = 0,
+        wishes_number = 0,
         five_count = 0,
         five_count_c = 0,
         five_count_w = 0,
@@ -1216,7 +1216,7 @@ int main() {
             << "1: 1 Wish;" << endl 
             << "10: 10 Wishes;" << endl 
             << "-2: Show Luckiest 10 Pulls (a succession of);" << endl 
-            << "-3: Reset records" << endl 
+            << "-3: Reset records;" << endl 
             << "-4: Print or not" << endl << endl;
             std::cin >> wishes_number;
             if (cin.fail()) {wishes_number = 0; std::cout << endl << "Character(s) cannot be read!" << endl; cin.clear(); cin.ignore(32767,'\n'); goto enter_wishes_number;}
