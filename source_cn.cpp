@@ -839,7 +839,7 @@ int main() {
             } break;
             case 14: {
                 up_five = 65;
-                size_nup_four_c = 14;
+                size_nup_four_c = 15;
                 size_nup_four_w = 18;
                 int tempg0[5] = { 1, 2, 3, 4, 5 };
                 for (int temp399 = 0; temp399 < 5; temp399++) nup_five_c[temp399] = tempg0[temp399];
@@ -856,7 +856,7 @@ int main() {
             } break;
             case 15: {
                 up_five = 87;
-                size_nup_four_c = 14;
+                size_nup_four_c = 15;
                 size_nup_four_w = 18;
                 int tempg0[5] = { 1, 2, 3, 4, 5 };
                 for (int temp399 = 0; temp399 < 5; temp399++) nup_five_c[temp399] = tempg0[temp399];
@@ -1146,7 +1146,7 @@ int main() {
         else if (chosen_banner == 3) {
             switch (chosen_event) {
             case 1: {
-                size_nup_four_c = 11;
+                size_nup_four_c = 14;
                 size_nup_four_w = 18;
                 int tempg0[5] = { 1, 2, 3, 4, 5 };
                 for (int temp399 = 0; temp399 < 5; temp399++) nup_five_c[temp399] = tempg0[temp399];
@@ -1158,7 +1158,7 @@ int main() {
                 for (int temp399 = 0; temp399 < 13; temp399++) three_g[temp399] = tempg4[temp399];
             } break;
             case 2: {
-                size_nup_four_c = 13;
+                size_nup_four_c = 16;
                 size_nup_four_w = 18;
                 int tempg0[5] = { 1, 2, 3, 4, 5 };
                 for (int temp399 = 0; temp399 < 5; temp399++) nup_five_c[temp399] = tempg0[temp399];
@@ -1170,7 +1170,7 @@ int main() {
                 for (int temp399 = 0; temp399 < 13; temp399++) three_g[temp399] = tempg4[temp399];
             } break;
             case 3: {
-                size_nup_four_c = 14;
+                size_nup_four_c = 17;
                 size_nup_four_w = 18;
                 int tempg0[5] = { 1, 2, 3, 4, 5 };
                 for (int temp399 = 0; temp399 < 5; temp399++) nup_five_c[temp399] = tempg0[temp399];
@@ -1184,7 +1184,7 @@ int main() {
                 for (int temp399 = 0; temp399 < 13; temp399++) three_g[temp399] = tempg4[temp399];
             } break;
             case 4: {
-                size_nup_four_c = 14;
+                size_nup_four_c = 18;
                 size_nup_four_w = 18;
                 int tempg0[5] = { 1, 2, 3, 4, 5 };
                 for (int temp399 = 0; temp399 < 5; temp399++) nup_five_c[temp399] = tempg0[temp399];
