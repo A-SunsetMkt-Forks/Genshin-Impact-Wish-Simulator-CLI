@@ -1278,7 +1278,7 @@ int main() {
                 else {y_print = 1; std::cout << "Now prints!" << endl;}
                 goto enter_wishes_number;
             }
-            else if (wishes_number < 0) { wishes_number = 0; std::cout << endl << "Incorrect input!" << endl; goto enter_wishes_number;}
+            else if (wishes_number < 0) { wishes_number = 0; std::cout << "Incorrect input!" << endl; goto enter_wishes_number;}
             else {}
             auto start = std::chrono::steady_clock::now();
             if (chosen_banner == 1) {
