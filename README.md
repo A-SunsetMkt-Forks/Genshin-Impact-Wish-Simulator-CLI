@@ -54,7 +54,8 @@ IV Novice Wish\
 Screenshots\
 ![Screenshot from 2021-05-28 07-49-07](https://user-images.githubusercontent.com/34600796/120002071-4b51aa00-bf89-11eb-907b-baff5fc7ab05.png)
 
-
+About Hidden Possibilities\
+This simulator includes no hidden possibilities.
 
 ## 中文
 这是命令行界面的原神祈愿模拟器。
@@ -106,3 +107,6 @@ Screenshots\
 
 截图\
 ![Screenshot from 2021-05-28 07-48-36](https://user-images.githubusercontent.com/34600796/120002127-586e9900-bf89-11eb-89a1-dc3c161da752.png)
+
+关于隐藏概率（仓检）\
+本模拟器不考虑仓检。
