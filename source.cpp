@@ -955,13 +955,13 @@ int main() {
             case 13: {
                 int tempg6[2] = { 8, 13 };
                 for (int temp399 = 0; temp399 < 2; temp399++) up_five_g[temp399] = tempg6[temp399];
-                size_nup_four_c = 14;
+                size_nup_four_c = 15;
                 int tempg1[5] = { 89, 47, 45, 41, 39 };
                 for (int temp399 = 0; temp399 < 5; temp399++) up_four_g[temp399] = tempg1[temp399];
                 int tempg11[10] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
                 for (int temp399 = 0; temp399 < 10; temp399++) nup_five_w[temp399] = tempg11[temp399];
-                int tempg2[14] = { 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 29, 31 };
-                for (int temp399 = 0; temp399 < 14; temp399++) nup_four_c[temp399] = tempg2[temp399];
+                int tempg2[15] = { 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 29, 31, 72 };
+                for (int temp399 = 0; temp399 < 15; temp399++) nup_four_c[temp399] = tempg2[temp399];
                 int tempg5[8] = { 47, 45, 41, 39, 0, 0, 0, 0 };
                 for (int temp399 = 0; temp399 < 8; temp399++) four_check[temp399] = tempg5[temp399];
                 int tempg7[8] = { 8, 13, 0, 0, 0, 0, 0, 0 };
