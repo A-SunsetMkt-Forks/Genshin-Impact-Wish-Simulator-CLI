@@ -480,7 +480,7 @@ int rspick(int* kindx, int sizekind) {
 }
 
 int main() {
-    std::cout << "原神祈愿模拟器（命令行）V1.6.4" << endl 
+    std::cout << "原神祈愿模拟器（命令行）V1.6.5" << endl 
     << "作者: Jirehlov Research" << endl 
     << "开源于Github: Jirehlov/GenshinImpactWishSimulatorCLI" << endl 
     << "MIT LICENSE" << endl << endl;
@@ -538,7 +538,7 @@ int main() {
         luckiestlocation[10] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 },
         luckiestsublocation[10] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
         std::cout << "选择卡池类型:" << endl;
-        std::cout << "-1: 退出; 1: 角色活动祈愿; 2: 武器活动祈愿; 3: 常驻祈愿; 4: 新手祈愿;" << endl << endl;
+        std::cout << "-1: 退出;" << endl << "1: 角色活动祈愿;" << endl << "2: 武器活动祈愿;" << endl << "3: 常驻祈愿;" << endl << "4: 新手祈愿;" << endl << endl;
         std::cin >> chosen_banner;
         if (cin.fail()) { chosen_banner = 0; std::cout << endl << "非法字符!" << endl; cin.clear(); cin.ignore(32767, '\n'); goto enter_chosen_banner; }
         enter_chosen_event:
@@ -562,7 +562,7 @@ int main() {
                 << "12: 陵薮市朝/20210428-20210518 (钟离, 烟绯, 诺艾尔, 迪奥娜)" << endl
                 << "13: 浪涌之瞬/20210518-20210608 (优菈, 辛焱, 行秋, 北斗)" << endl
                 << "14: 闪焰的驻足/20210609-20210629 (可莉, 砂糖, 菲谢尔, 芭芭拉)" << endl
-                << "15: 叶落风随/20210630-? (枫原万叶, 罗莎莉亚, 班尼特, 雷泽)" << endl << endl;
+                << "15: 叶落风随/20210629-20210720 (枫原万叶, 罗莎莉亚, 班尼特, 雷泽)" << endl << endl;
             std::cin >> chosen_event;
             if (cin.fail()) { chosen_event = 0; std::cout << endl << "非法字符!" << endl; cin.clear(); cin.ignore(32767, '\n'); goto enter_chosen_event; }
             if (chosen_event == -1) { chosen_event = 0; std::cout << endl; goto enter_chosen_banner; }
@@ -584,11 +584,12 @@ int main() {
                 << "10: 神铸赋形/20210406-20210427 (天空之翼, 四风原典, 暗巷猎手, 西风剑, 祭礼大剑, 西风秘典, 西风长枪)" << endl
                 << "11: 神铸赋形/20210428-20210518 (斫峰之刃, 尘世之锁, 笛剑, 千岩古剑, 千岩长枪, 昭心, 祭礼弓)" << endl
                 << "12: 神铸赋形/20210518-20210608 (松籁响起之时, 风鹰剑, 祭礼剑, 雨裁, 匣里灭辰, 祭礼残章, 弓藏)" << endl
-                << "13: 神铸赋形/20210609-20210629 (天空之傲, 四风原典, 幽夜华尔兹, 匣里龙吟, 钟剑, 西风长枪, 流浪乐章)" << endl << endl;
+                << "13: 神铸赋形/20210609-20210629 (天空之傲, 四风原典, 幽夜华尔兹, 匣里龙吟, 钟剑, 西风长枪, 流浪乐章)" << endl
+                << "14: 神铸赋形/20210629-20210720 (苍古自由之誓, 天空之卷, 暗巷闪光, 暗巷的酒与诗, 暗巷猎手, 西风大剑, 匣里灭辰)" << endl << endl;
             std::cin >> chosen_event;
             if (cin.fail()) { chosen_event = 0; std::cout << endl << "非法字符!" << endl; cin.clear(); cin.ignore(32767, '\n'); goto enter_chosen_event; }
             if (chosen_event == -1) { chosen_event = 0; std::cout << endl; goto enter_chosen_banner; }
-            if (chosen_event > 0 && chosen_event < 14 && chosen_event == (int)chosen_event) quit = 0; else { std::cout << endl << "无效活动类型!" << endl << endl; goto enter_chosen_event; }
+            if (chosen_event > 0 && chosen_event < 15 && chosen_event == (int)chosen_event) quit = 0; else { std::cout << endl << "无效活动类型!" << endl << endl; goto enter_chosen_event; }
         } break;
         case 3: {
             chosen_event = 0;
@@ -965,6 +966,21 @@ int main() {
                 int tempg5[8] = { 47, 45, 41, 39, 0, 0, 0, 0 };
                 for (int temp399 = 0; temp399 < 8; temp399++) four_check[temp399] = tempg5[temp399];
                 int tempg7[8] = { 8, 13, 0, 0, 0, 0, 0, 0 };
+                for (int temp399 = 0; temp399 < 8; temp399++) five_check[temp399] = tempg7[temp399];
+            } break;
+            case 14: {
+                int tempg6[2] = { 88, 9 };
+                for (int temp399 = 0; temp399 < 2; temp399++) up_five_g[temp399] = tempg6[temp399];
+                size_nup_four_c = 15;
+                int tempg1[5] = { 83, 84, 85, 46, 42 };
+                for (int temp399 = 0; temp399 < 5; temp399++) up_four_g[temp399] = tempg1[temp399];
+                int tempg11[10] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
+                for (int temp399 = 0; temp399 < 10; temp399++) nup_five_w[temp399] = tempg11[temp399];
+                int tempg2[15] = { 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 29, 31, 72 };
+                for (int temp399 = 0; temp399 < 15; temp399++) nup_four_c[temp399] = tempg2[temp399];
+                int tempg5[8] = { 46, 42, 0, 0, 0, 0, 0, 0 };
+                for (int temp399 = 0; temp399 < 8; temp399++) four_check[temp399] = tempg5[temp399];
+                int tempg7[8] = { 9, 0, 0, 0, 0, 0, 0, 0 };
                 for (int temp399 = 0; temp399 < 8; temp399++) five_check[temp399] = tempg7[temp399];
             } break;
             default:break;

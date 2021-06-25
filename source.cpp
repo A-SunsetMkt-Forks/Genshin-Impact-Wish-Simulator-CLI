@@ -480,7 +480,7 @@ int rspick(int* kindx, int sizekind) {
 }
 
 int main() {
-    std::cout << "WELCOME TO GENSHIN IMPACT WISH SIMULATOR CLI V1.6.4" << endl 
+    std::cout << "WELCOME TO GENSHIN IMPACT WISH SIMULATOR CLI V1.6.5" << endl 
     << "by Jirehlov Research" << endl 
     << "Source code available on Github: Jirehlov/GenshinImpactWishSimulatorCLI" << endl 
     << "MIT LICENSE" << endl << endl;
@@ -538,7 +538,7 @@ int main() {
         luckiestlocation[10] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 },
         luckiestsublocation[10] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
         std::cout << "Choose Your Wishes (Banners):" << endl;
-        std::cout << "-1: Quit; 1: Character Event Wish; 2: Weapon Event Wish; 3: Permanent Wish; 4: Novice Wish;" << endl << endl;
+        std::cout << "-1: Quit;" << endl << "1: Character Event Wish;" << endl << "2: Weapon Event Wish;" << endl << "3: Permanent Wish;" << endl << "4: Novice Wish;" << endl << endl;
         std::cin >> chosen_banner;
         if (cin.fail()) {chosen_banner = 0; std::cout << endl << "Character(s) cannot be read!" << endl; cin.clear(); cin.ignore(32767,'\n'); goto enter_chosen_banner;}
         enter_chosen_event:
@@ -562,7 +562,7 @@ int main() {
                 << "12: Gentry of Hermitage/20210428-20210518 (Zhongli, Yanfei, Noelle, Diona)" << endl
                 << "13: Born of Ocean Swell/20210518-20210608 (EUla, Xinyan, Xingqiu, Beidou)" << endl
                 << "14: Sparkling Steps/20210609-20210629 (Klee, Sucrose, Fischl, Barbara)" << endl
-                << "15: Leaves in the Wind/20210630-? (Kaedehara Kazuha, Rosaria, Bennett, Razor)" << endl << endl;
+                << "15: Leaves in the Wind/20210629-20210720 (Kaedehara Kazuha, Rosaria, Bennett, Razor)" << endl << endl;
             std::cin >> chosen_event;
             if (cin.fail()) {chosen_event = 0; std::cout << endl << "Character(s) cannot be read!" << endl; cin.clear(); cin.ignore(32767,'\n'); goto enter_chosen_event;}
             if (chosen_event == -1) { chosen_event = 0; std::cout << endl; goto enter_chosen_banner; }
@@ -584,11 +584,12 @@ int main() {
                 << "10: Epitome Invocation/20210406-20210427 (Skyward Harp, Lost Prayer to the Sacred Winds, Alley Hunter, Favonius Sword, Sacrificial Greatsword, Favonius Codex, Favonius Lance)" << endl
                 << "11: Epitome Invocation/20210428-20210518 (Summit Shaper, Memory of Dust, The Flute, Lithic Blade, Lithic Spear, Eye of Perception, Sacrificial Bow)" << endl
                 << "12: Epitome Invocation/20210518-20210608 (Song of Broken Pines, Aquila Favonia, Sacrificial Sword, Rainslasher, Dragon's Bane, Sacrificial Fragments, Rust)" << endl
-                << "13: Epitome Invocation/20210609-20210629 (Skyward Pride, Lost Prayer to the Sacred Winds, Mitternachts Waltz, Lion's Roar, The Bell, Favonius Lance, The Widsith)" << endl << endl;
+                << "13: Epitome Invocation/20210609-20210629 (Skyward Pride, Lost Prayer to the Sacred Winds, Mitternachts Waltz, Lion's Roar, The Bell, Favonius Lance, The Widsith)" << endl
+                << "14: Epitome Invocation/20210629-20210720 (Freedom-Sworn, Skyward Atlas, The Alley Flash, Wine and Song, Alley Hunter, Favonius Greatsword, Dragon's Bane)" << endl << endl;
             std::cin >> chosen_event;
             if (cin.fail()) {chosen_event = 0; std::cout << endl << "Character(s) cannot be read!" << endl; cin.clear(); cin.ignore(32767,'\n'); goto enter_chosen_event;}
             if (chosen_event == -1) { chosen_event = 0; std::cout << endl; goto enter_chosen_banner; }
-            if (chosen_event > 0 && chosen_event < 14 && chosen_event == (int)chosen_event) quit = 0; else { std::cout << endl << "Invalid event!" << endl << endl; goto enter_chosen_event; }
+            if (chosen_event > 0 && chosen_event < 15 && chosen_event == (int)chosen_event) quit = 0; else { std::cout << endl << "Invalid event!" << endl << endl; goto enter_chosen_event; }
         } break;
         case 3: {
             chosen_event = 0;
@@ -965,6 +966,21 @@ int main() {
                 int tempg5[8] = { 47, 45, 41, 39, 0, 0, 0, 0 };
                 for (int temp399 = 0; temp399 < 8; temp399++) four_check[temp399] = tempg5[temp399];
                 int tempg7[8] = { 8, 13, 0, 0, 0, 0, 0, 0 };
+                for (int temp399 = 0; temp399 < 8; temp399++) five_check[temp399] = tempg7[temp399];
+            } break;
+            case 14: {
+                int tempg6[2] = { 88, 9 };
+                for (int temp399 = 0; temp399 < 2; temp399++) up_five_g[temp399] = tempg6[temp399];
+                size_nup_four_c = 15;
+                int tempg1[5] = { 83, 84, 85, 46, 42 };
+                for (int temp399 = 0; temp399 < 5; temp399++) up_four_g[temp399] = tempg1[temp399];
+                int tempg11[10] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
+                for (int temp399 = 0; temp399 < 10; temp399++) nup_five_w[temp399] = tempg11[temp399];
+                int tempg2[15] = { 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 29, 31, 72 };
+                for (int temp399 = 0; temp399 < 15; temp399++) nup_four_c[temp399] = tempg2[temp399];
+                int tempg5[8] = { 46, 42, 0, 0, 0, 0, 0, 0 };
+                for (int temp399 = 0; temp399 < 8; temp399++) four_check[temp399] = tempg5[temp399];
+                int tempg7[8] = { 9, 0, 0, 0, 0, 0, 0, 0 };
                 for (int temp399 = 0; temp399 < 8; temp399++) five_check[temp399] = tempg7[temp399];
             } break;
             default:break;
