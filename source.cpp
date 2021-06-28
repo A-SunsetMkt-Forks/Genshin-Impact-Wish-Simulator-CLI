@@ -10,7 +10,7 @@ constexpr auto ULTRAPOS = 437580000;
                     else if (kind < 90 ) { std::cout << "!!!!!*****"; }\
                     else {}\
                 }
-#define output_string() {if (y_print == 1) {std::cout << countx + 1 << "(" << five_star_assurance_number << ")" << " ";\
+#define output_string() {if (y_print == 1) {std::cout << countx + 1 << "(" << five_star_assurance_number << ") ";\
                     casesx( kind )\
                     std::cout << pname[kind - 1] << endl; }\
                     pcount[kind - 1] ++;\
@@ -1037,7 +1037,7 @@ int main() {
                 if (countx < 10) {std::cout << "Default" << endl; goto enter_wishes_number; }
                 std::cout << "Luckiness: " << luckiest << endl;
                 for (int templuck = 0; templuck < 10; templuck++) {
-                    std::cout << luckiestlocation[templuck] << "(" << luckiestsublocation[templuck] << ")" << " ";
+                    std::cout << luckiestlocation[templuck] << "(" << luckiestsublocation[templuck] << ") ";
                     casesx( luckiestkind[templuck] )
                     std::cout << pname[luckiestkind[templuck] - 1] << endl;
                 }
@@ -1385,18 +1385,18 @@ int main() {
                     << "ave non-5-star-max:   " << ave_fives * 1.0 / five_count << endl
                     << "5-star-characters : 5-star-weapons : 4-star-characters : 4-star-weapons   " << five_count_c << " : " << five_count_w << " : " << four_count_c << " : " << four_count_w << endl << endl;
             }
-            for (int iout = 0; iout < 15; iout++) { if (pcount[iout] > 0) std::cout << pname[iout] << "(" << pcount[iout] << ")" << " "; }
-            for (int iout = 63; iout < 71; iout++) { if (pcount[iout] > 0) std::cout << pname[iout] << "(" << pcount[iout] << ")" << " "; }
-            for (int iout = 72; iout < 79; iout++) { if (pcount[iout] > 0) std::cout << pname[iout] << "(" << pcount[iout] << ")" << " "; }
-            if (pcount[81] > 0) std::cout << pname[81] << "(" << pcount[81] << ")" << " ";
-            for (int iout = 85; iout < 88; iout++) { if (pcount[iout] > 0) std::cout << pname[iout] << "(" << pcount[iout] << ")" << " "; }
+            for (int iout = 0; iout < 15; iout++) { if (pcount[iout] > 0) std::cout << pname[iout] << "(" << pcount[iout] << ") "; }
+            for (int iout = 63; iout < 71; iout++) { if (pcount[iout] > 0) std::cout << pname[iout] << "(" << pcount[iout] << ") "; }
+            for (int iout = 72; iout < 79; iout++) { if (pcount[iout] > 0) std::cout << pname[iout] << "(" << pcount[iout] << ") "; }
+            if (pcount[81] > 0) std::cout << pname[81] << "(" << pcount[81] << ") ";
+            for (int iout = 85; iout < 88; iout++) { if (pcount[iout] > 0) std::cout << pname[iout] << "(" << pcount[iout] << ") "; }
             std::cout << endl << endl;
-            for (int iout = 15; iout < 50; iout++) { if (pcount[iout] > 0) std::cout << pname[iout] << "(" << pcount[iout] << ")" << " "; }
-            if (pcount[71] > 0) std::cout << pname[71] << "(" << pcount[71] << ")" << " ";
-            if (pcount[79] > 0) std::cout << pname[79] << "(" << pcount[79] << ")" << " ";
-            if (pcount[80] > 0) std::cout << pname[80] << "(" << pcount[80] << ")" << " ";
-            for (int iout = 82; iout < 85; iout++) { if (pcount[iout] > 0) std::cout << pname[iout] << "(" << pcount[iout] << ")" << " "; }
-            if (pcount[88] > 0) std::cout << pname[88] << "(" << pcount[88] << ")" << " ";
+            for (int iout = 15; iout < 50; iout++) { if (pcount[iout] > 0) std::cout << pname[iout] << "(" << pcount[iout] << ") "; }
+            if (pcount[71] > 0) std::cout << pname[71] << "(" << pcount[71] << ") ";
+            if (pcount[79] > 0) std::cout << pname[79] << "(" << pcount[79] << ") ";
+            if (pcount[80] > 0) std::cout << pname[80] << "(" << pcount[80] << ") ";
+            for (int iout = 82; iout < 85; iout++) { if (pcount[iout] > 0) std::cout << pname[iout] << "(" << pcount[iout] << ") "; }
+            if (pcount[88] > 0) std::cout << pname[88] << "(" << pcount[88] << ") ";
             std::cout << endl << endl; auto elapsed = std::chrono::steady_clock::now() - start;
             long long int microseconds = std::chrono::duration_cast<std::chrono::microseconds>(elapsed).count();
             std::cout << microseconds * 1.0 / 1000000 << " seconds elapsed." << endl;
