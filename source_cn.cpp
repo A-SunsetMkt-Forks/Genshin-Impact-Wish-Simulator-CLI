@@ -2,6 +2,7 @@
 #include <iostream>
 #include <random>
 #include <string>
+#include <cstring>
 constexpr auto ULTRAPOS = 437580000;
 #define casesx( kind ){   if (kind < 16 ) { std::cout << "!!!!!*****"; }\
                     else if (kind < 51 ) { std::cout << "!!****"; }\
@@ -506,7 +507,7 @@ int main() {
         up_five = 0,
         up_five_g[32] = { 0 },
         nup_five_c[32] = { 1, 2, 3, 4, 5 },
-        nup_five_w[32] = { 0 },
+        nup_five_w[32] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 },
         up_four_g[64] = { 0 },
         nup_four_c[64] = { 0 },
         nup_four_w[64] = { 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50 },
@@ -514,7 +515,15 @@ int main() {
         size_nup_four_w = 18,
         three_g[18] = { 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63 },
         five_check[8] = { 127, 127, 127, 127, 127, 127, 127, 127 },
-        four_check[8] = { 127, 127, 127, 127, 127, 127, 127, 127 };
+        four_check[8] = { 127, 127, 127, 127, 127, 127, 127, 127 },
+        nup_four_cg1[11] = { 18, 20, 21, 22, 23, 24, 25, 26, 27, 29, 31 },
+        nup_four_cg2[13] = { 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 29, 31 },
+        nup_four_cg3[14] = { 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 29, 31 },
+        nup_four_cg4[15] = { 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 29, 31, 72 },
+        nup_four_cg31[14] = { 18, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32 },
+        nup_four_cg32[16] = { 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32 },
+        nup_four_cg33[17] = { 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32 },
+        nup_four_cg34[18] = { 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 72 };
         long long int countx = 0,
         wishes_number = 0,
         five_count = 0,
@@ -621,152 +630,137 @@ int main() {
                 up_five = 64;
                 size_nup_four_c = 11;
                 int tempg1[3] = { 23, 27, 31 };
-                for (int temp399 = 0; temp399 < 3; temp399++) up_four_g[temp399] = tempg1[temp399];
-                int tempg2[11] = { 18, 20, 21, 22, 23, 24, 25, 26, 27, 29, 31 };
-                for (int temp399 = 0; temp399 < 11; temp399++) nup_four_c[temp399] = tempg2[temp399];
+                memmove( up_four_g , tempg1 , sizeof(tempg1));
+                memmove( nup_four_c , nup_four_cg1 , sizeof(nup_four_cg1));
                 int tempg5[8] = { 23, 27, 31, 0, 0, 0, 0, 0 };
-                for (int temp399 = 0; temp399 < 8; temp399++) four_check[temp399] = tempg5[temp399];
+                memmove( four_check , tempg5 , sizeof(tempg5));
             } break;
             case 2: {
                 up_five = 65;
                 size_nup_four_c = 11;
                 int tempg1[3] = { 18, 21, 25 };
-                for (int temp399 = 0; temp399 < 3; temp399++) up_four_g[temp399] = tempg1[temp399];
-                int tempg2[11] = { 18, 20, 21, 22, 23, 24, 25, 26, 27, 29, 31 };
-                for (int temp399 = 0; temp399 < 11; temp399++) nup_four_c[temp399] = tempg2[temp399];
+                memmove( up_four_g , tempg1 , sizeof(tempg1));
+                memmove( nup_four_c , nup_four_cg1 , sizeof(nup_four_cg1));
                 int tempg5[8] = { 18, 21, 25, 0, 0, 0, 0, 0 };
-                for (int temp399 = 0; temp399 < 8; temp399++) four_check[temp399] = tempg5[temp399];
+                memmove( four_check , tempg5 , sizeof(tempg5));
             } break;
             case 3: {
                 up_five = 66;
                 size_nup_four_c = 11;
                 int tempg1[3] = { 19, 24, 26 };
-                for (int temp399 = 0; temp399 < 3; temp399++) up_four_g[temp399] = tempg1[temp399];
-                int tempg2[11] = { 18, 20, 21, 22, 23, 24, 25, 26, 27, 29, 31 };
-                for (int temp399 = 0; temp399 < 11; temp399++) nup_four_c[temp399] = tempg2[temp399];
+                memmove( up_four_g , tempg1 , sizeof(tempg1));
+                memmove( nup_four_c , nup_four_cg1 , sizeof(nup_four_cg1));
                 int tempg5[8] = { 24, 26, 0, 0, 0, 0, 0, 0 };
-                for (int temp399 = 0; temp399 < 8; temp399++) four_check[temp399] = tempg5[temp399];
+                memmove( four_check , tempg5 , sizeof(tempg5));
             } break;
             case 4: {
                 up_five = 67;
                 size_nup_four_c = 11;
                 int tempg1[3] = { 17, 20, 29 };
-                for (int temp399 = 0; temp399 < 3; temp399++) up_four_g[temp399] = tempg1[temp399];
-                int tempg2[11] = { 18, 20, 21, 22, 23, 24, 25, 26, 27, 29, 31 };
-                for (int temp399 = 0; temp399 < 11; temp399++) nup_four_c[temp399] = tempg2[temp399];
+                memmove( up_four_g , tempg1 , sizeof(tempg1));
+                memmove( nup_four_c , nup_four_cg1 , sizeof(nup_four_cg1));
                 int tempg5[8] = { 20, 29, 0, 0, 0, 0, 0, 0 };
-                for (int temp399 = 0; temp399 < 8; temp399++) four_check[temp399] = tempg5[temp399];
+                memmove( four_check , tempg5 , sizeof(tempg5));
             } break;
             case 5: {
                 up_five = 68;
                 size_nup_four_c = 13;
                 int tempg1[3] = { 18, 22, 23 };
-                for (int temp399 = 0; temp399 < 3; temp399++) up_four_g[temp399] = tempg1[temp399];
-                int tempg2[13] = { 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 29, 31 };
-                for (int temp399 = 0; temp399 < 13; temp399++) nup_four_c[temp399] = tempg2[temp399];
+                memmove( up_four_g , tempg1 , sizeof(tempg1));
+                memmove( nup_four_c , nup_four_cg2 , sizeof(nup_four_cg2));
                 int tempg5[8] = { 18, 22, 23, 0, 0, 0, 0, 0 };
-                for (int temp399 = 0; temp399 < 8; temp399++) four_check[temp399] = tempg5[temp399];
+                memmove( four_check , tempg5 , sizeof(tempg5));
             } break;
             case 6: {
                 up_five = 69;
                 size_nup_four_c = 13;
                 int tempg1[3] = { 21, 25, 27 };
-                for (int temp399 = 0; temp399 < 3; temp399++) up_four_g[temp399] = tempg1[temp399];
-                int tempg2[13] = { 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 29, 31 };
-                for (int temp399 = 0; temp399 < 13; temp399++) nup_four_c[temp399] = tempg2[temp399];
+                memmove( up_four_g , tempg1 , sizeof(tempg1));
+                memmove( nup_four_c , nup_four_cg2 , sizeof(nup_four_cg2));
                 int tempg5[8] = { 21, 25, 27, 0, 0, 0, 0, 0 };
-                for (int temp399 = 0; temp399 < 8; temp399++) four_check[temp399] = tempg5[temp399];
+                memmove( four_check , tempg5 , sizeof(tempg5));
             } break;
             case 7: {
                 up_five = 70;
                 size_nup_four_c = 13;
                 int tempg1[3] = { 17, 19, 26 };
-                for (int temp399 = 0; temp399 < 3; temp399++) up_four_g[temp399] = tempg1[temp399];
-                int tempg2[13] = { 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 29, 31 };
-                for (int temp399 = 0; temp399 < 13; temp399++) nup_four_c[temp399] = tempg2[temp399];
+                memmove( up_four_g , tempg1 , sizeof(tempg1));
+                memmove( nup_four_c , nup_four_cg2 , sizeof(nup_four_cg2));
                 int tempg5[8] = { 17, 19, 26, 0, 0, 0, 0, 0 };
-                for (int temp399 = 0; temp399 < 8; temp399++) four_check[temp399] = tempg5[temp399];
+                memmove( four_check , tempg5 , sizeof(tempg5));
             } break;
             case 8: {
                 up_five = 1;
                 size_nup_four_c = 13;
                 int tempg1[3] = { 22, 24, 31 };
-                for (int temp399 = 0; temp399 < 3; temp399++) up_four_g[temp399] = tempg1[temp399];
-                int tempg2[13] = { 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 29, 31 };
-                for (int temp399 = 0; temp399 < 13; temp399++) nup_four_c[temp399] = tempg2[temp399];
+                memmove( up_four_g , tempg1 , sizeof(tempg1));
+                memmove( nup_four_c , nup_four_cg2 , sizeof(nup_four_cg2));
                 int tempg5[8] = { 22, 24, 31, 0, 0, 0, 0, 0 };
-                for (int temp399 = 0; temp399 < 8; temp399++) four_check[temp399] = tempg5[temp399];
+                memmove( four_check , tempg5 , sizeof(tempg5));
                 five_check[1] = 1;
             } break;
             case 9: {
                 up_five = 71;
                 size_nup_four_c = 13;
                 int tempg1[3] = { 20, 25, 27 };
-                for (int temp399 = 0; temp399 < 3; temp399++) up_four_g[temp399] = tempg1[temp399];
-                int tempg2[13] = { 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 29, 31 };
-                for (int temp399 = 0; temp399 < 13; temp399++) nup_four_c[temp399] = tempg2[temp399];
+                memmove( up_four_g , tempg1 , sizeof(tempg1));
+                memmove( nup_four_c , nup_four_cg2 , sizeof(nup_four_cg2));
                 int tempg5[8] = { 20, 25, 27, 0, 0, 0, 0, 0 };
-                for (int temp399 = 0; temp399 < 8; temp399++) four_check[temp399] = tempg5[temp399];
+                memmove( four_check , tempg5 , sizeof(tempg5));
             } break;
             case 10: {
                 up_five = 64;
                 size_nup_four_c = 13;
                 int tempg1[3] = { 18, 21, 29 };
-                for (int temp399 = 0; temp399 < 3; temp399++) up_four_g[temp399] = tempg1[temp399];
-                int tempg2[13] = { 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 29, 31 };
-                for (int temp399 = 0; temp399 < 13; temp399++) nup_four_c[temp399] = tempg2[temp399];
+                memmove( up_four_g , tempg1 , sizeof(tempg1));
+                memmove( nup_four_c , nup_four_cg2 , sizeof(nup_four_cg2));
                 int tempg5[8] = { 18, 21, 29, 0, 0, 0, 0, 0 };
-                for (int temp399 = 0; temp399 < 8; temp399++) four_check[temp399] = tempg5[temp399];
+                memmove( four_check , tempg5 , sizeof(tempg5));
             } break;
             case 11: {
                 up_five = 66;
                 size_nup_four_c = 13;
                 int tempg1[3] = { 16, 23, 31 };
-                for (int temp399 = 0; temp399 < 3; temp399++) up_four_g[temp399] = tempg1[temp399];
-                int tempg2[13] = { 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 29, 31 };
-                for (int temp399 = 0; temp399 < 13; temp399++) nup_four_c[temp399] = tempg2[temp399];
+                memmove( up_four_g , tempg1 , sizeof(tempg1));
+                memmove( nup_four_c , nup_four_cg2 , sizeof(nup_four_cg2));
                 int tempg5[8] = { 23, 31, 0, 0, 0, 0, 0, 0 };
-                for (int temp399 = 0; temp399 < 8; temp399++) four_check[temp399] = tempg5[temp399];
+                memmove( four_check , tempg5 , sizeof(tempg5));
             } break;
             case 12: {
                 up_five = 67;
                 size_nup_four_c = 14;
                 int tempg1[3] = { 72, 21, 19 };
-                for (int temp399 = 0; temp399 < 3; temp399++) up_four_g[temp399] = tempg1[temp399];
-                int tempg2[14] = { 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 29, 31 };
-                for (int temp399 = 0; temp399 < 14; temp399++) nup_four_c[temp399] = tempg2[temp399];
+                memmove( up_four_g , tempg1 , sizeof(tempg1));
+                memmove( nup_four_c , nup_four_cg3 , sizeof(nup_four_cg3));
                 int tempg5[8] = { 19, 21, 0, 0, 0, 0, 0, 0 };
-                for (int temp399 = 0; temp399 < 8; temp399++) four_check[temp399] = tempg5[temp399];
+                memmove( four_check , tempg5 , sizeof(tempg5));
             } break;
             case 13: {
                 up_five = 73;
                 size_nup_four_c = 14;
                 int tempg1[3] = { 17, 25, 26 };
-                for (int temp399 = 0; temp399 < 3; temp399++) up_four_g[temp399] = tempg1[temp399];
-                int tempg2[14] = { 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 29, 31 };
-                for (int temp399 = 0; temp399 < 14; temp399++) nup_four_c[temp399] = tempg2[temp399];
+                memmove( up_four_g , tempg1 , sizeof(tempg1));
+                memmove( nup_four_c , nup_four_cg3 , sizeof(nup_four_cg3));
                 int tempg5[8] = { 17, 25, 26, 0, 0, 0, 0, 0 };
-                for (int temp399 = 0; temp399 < 8; temp399++) four_check[temp399] = tempg5[temp399];
+                memmove( four_check , tempg5 , sizeof(tempg5));
             } break;
             case 14: {
                 up_five = 65;
                 size_nup_four_c = 15;
                 int tempg1[3] = { 18, 23, 31 };
-                for (int temp399 = 0; temp399 < 3; temp399++) up_four_g[temp399] = tempg1[temp399];
-                int tempg2[15] = { 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 29, 31, 72 };
-                for (int temp399 = 0; temp399 < 15; temp399++) nup_four_c[temp399] = tempg2[temp399];
+                memmove( up_four_g , tempg1 , sizeof(tempg1));
+                memmove( nup_four_c , nup_four_cg4 , sizeof(nup_four_cg4));
                 int tempg5[8] = { 18, 23, 31, 0, 0, 0, 0, 0 };
-                for (int temp399 = 0; temp399 < 8; temp399++) four_check[temp399] = tempg5[temp399];
+                memmove( four_check , tempg5 , sizeof(tempg5));
             } break;
             case 15: {
                 up_five = 87;
                 size_nup_four_c = 15;
                 int tempg1[3] = { 16, 22, 29 };
-                for (int temp399 = 0; temp399 < 3; temp399++) up_four_g[temp399] = tempg1[temp399];
-                int tempg2[15] = { 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 29, 31, 72 };
-                for (int temp399 = 0; temp399 < 15; temp399++) nup_four_c[temp399] = tempg2[temp399];
+                memmove( up_four_g , tempg1 , sizeof(tempg1));
+                memmove( nup_four_c , nup_four_cg4 , sizeof(nup_four_cg4));
                 int tempg5[8] = { 16, 22, 29, 0, 0, 0, 0, 0 };
-                for (int temp399 = 0; temp399 < 8; temp399++) four_check[temp399] = tempg5[temp399];
+                memmove( four_check , tempg5 , sizeof(tempg5));
             } break;
             default:break;
             }
@@ -775,213 +769,171 @@ int main() {
             switch (chosen_event) {
             case 1: {
                 int tempg6[2] = { 6, 15 };
-                for (int temp399 = 0; temp399 < 2; temp399++) up_five_g[temp399] = tempg6[temp399];
+                memmove( up_five_g , tempg6 , sizeof(tempg6));
                 size_nup_four_c = 11;
                 int tempg1[5] = { 35, 39, 41, 45, 49 };
-                for (int temp399 = 0; temp399 < 5; temp399++) up_four_g[temp399] = tempg1[temp399];
-                int tempg11[10] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
-                for (int temp399 = 0; temp399 < 10; temp399++) nup_five_w[temp399] = tempg11[temp399];
-                int tempg2[11] = { 18, 20, 21, 22, 23, 24, 25, 26, 27, 29, 31 };
-                for (int temp399 = 0; temp399 < 11; temp399++) nup_four_c[temp399] = tempg2[temp399];
+                memmove( up_four_g , tempg1, sizeof(tempg1));
+                memmove( nup_four_c , nup_four_cg1 , sizeof(nup_four_cg1));
                 int tempg5[8] = { 35, 39, 41, 45, 49, 0, 0, 0 };
-                for (int temp399 = 0; temp399 < 8; temp399++) four_check[temp399] = tempg5[temp399];
+                memmove( four_check , tempg5 , sizeof(tempg5));
                 int tempg7[8] = { 6, 15, 0, 0, 0, 0, 0, 0 };
-                for (int temp399 = 0; temp399 < 8; temp399++) five_check[temp399] = tempg7[temp399];
+                memmove( five_check , tempg7, sizeof(tempg7));
             } break;
             case 2: {
                 int tempg6[2] = { 8, 12 };
-                for (int temp399 = 0; temp399 < 2; temp399++) up_five_g[temp399] = tempg6[temp399];
+                memmove( up_five_g , tempg6 , sizeof(tempg6));
                 size_nup_four_c = 11;
                 int tempg1[5] = { 34, 38, 42, 44, 50 };
-                for (int temp399 = 0; temp399 < 5; temp399++) up_four_g[temp399] = tempg1[temp399];
-                int tempg11[10] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
-                for (int temp399 = 0; temp399 < 10; temp399++) nup_five_w[temp399] = tempg11[temp399];
-                int tempg2[11] = { 18, 20, 21, 22, 23, 24, 25, 26, 27, 29, 31 };
-                for (int temp399 = 0; temp399 < 11; temp399++) nup_four_c[temp399] = tempg2[temp399];
+                memmove( up_four_g , tempg1, sizeof(tempg1));
+                memmove( nup_four_c , nup_four_cg1 , sizeof(nup_four_cg1));
                 int tempg5[8] = { 34, 38, 42, 44, 50, 0, 0, 0 };
-                for (int temp399 = 0; temp399 < 8; temp399++) four_check[temp399] = tempg5[temp399];
+                memmove( four_check , tempg5 , sizeof(tempg5));
                 int tempg7[8] = { 8, 12, 0, 0, 0, 0, 0, 0 };
-                for (int temp399 = 0; temp399 < 8; temp399++) five_check[temp399] = tempg7[temp399];
+                memmove( five_check , tempg7, sizeof(tempg7));
             } break;
             case 3: {
                 int tempg6[2] = { 7, 74 };
-                for (int temp399 = 0; temp399 < 2; temp399++) up_five_g[temp399] = tempg6[temp399];
+                memmove( up_five_g , tempg6 , sizeof(tempg6));
                 size_nup_four_c = 11;
                 int tempg1[5] = { 33, 37, 41, 43, 49 };
-                for (int temp399 = 0; temp399 < 5; temp399++) up_four_g[temp399] = tempg1[temp399];
-                int tempg11[10] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
-                for (int temp399 = 0; temp399 < 10; temp399++) nup_five_w[temp399] = tempg11[temp399];
-                int tempg2[11] = { 18, 20, 21, 22, 23, 24, 25, 26, 27, 29, 31 };
-                for (int temp399 = 0; temp399 < 11; temp399++) nup_four_c[temp399] = tempg2[temp399];
+                memmove( up_four_g , tempg1, sizeof(tempg1));
+                memmove( nup_four_c , nup_four_cg1 , sizeof(nup_four_cg1));
                 int tempg5[8] = { 33, 37, 41, 43, 49, 0, 0, 0 };
-                for (int temp399 = 0; temp399 < 8; temp399++) four_check[temp399] = tempg5[temp399];
+                memmove( four_check , tempg5 , sizeof(tempg5));
                 int tempg7[8] = { 7, 0, 0, 0, 0, 0, 0, 0 };
-                for (int temp399 = 0; temp399 < 8; temp399++) five_check[temp399] = tempg7[temp399];
+                memmove( five_check , tempg7, sizeof(tempg7));
             } break;
             case 4: {
                 int tempg6[2] = { 75, 76 };
-                for (int temp399 = 0; temp399 < 2; temp399++) up_five_g[temp399] = tempg6[temp399];
+                memmove( up_five_g , tempg6 , sizeof(tempg6));
                 size_nup_four_c = 11;
                 int tempg1[5] = { 36, 40, 42, 45, 47 };
-                for (int temp399 = 0; temp399 < 5; temp399++) up_four_g[temp399] = tempg1[temp399];
-                int tempg11[10] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
-                for (int temp399 = 0; temp399 < 10; temp399++) nup_five_w[temp399] = tempg11[temp399];
-                int tempg2[11] = { 18, 20, 21, 22, 23, 24, 25, 26, 27, 29, 31 };
-                for (int temp399 = 0; temp399 < 11; temp399++) nup_four_c[temp399] = tempg2[temp399];
+                memmove( up_four_g , tempg1, sizeof(tempg1));
+                memmove( nup_four_c , nup_four_cg1 , sizeof(nup_four_cg1));
                 int tempg5[8] = { 36, 40, 42, 45, 47, 0, 0, 0 };
-                for (int temp399 = 0; temp399 < 8; temp399++) four_check[temp399] = tempg5[temp399];
+                memmove( four_check , tempg5 , sizeof(tempg5));
                 int tempg7[8] = { 0, 0, 0, 0, 0, 0, 0, 0 };
-                for (int temp399 = 0; temp399 < 8; temp399++) five_check[temp399] = tempg7[temp399];
+                memmove( five_check , tempg7, sizeof(tempg7));
             } break;
             case 5: {
                 int tempg6[2] = { 9, 77 };
-                for (int temp399 = 0; temp399 < 2; temp399++) up_five_g[temp399] = tempg6[temp399];
+                memmove( up_five_g , tempg6 , sizeof(tempg6));
                 size_nup_four_c = 13;
                 int tempg1[5] = { 35, 38, 41, 46, 50 };
-                for (int temp399 = 0; temp399 < 5; temp399++) up_four_g[temp399] = tempg1[temp399];
-                int tempg11[10] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
-                for (int temp399 = 0; temp399 < 10; temp399++) nup_five_w[temp399] = tempg11[temp399];
-                int tempg2[13] = { 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 29, 31 };
-                for (int temp399 = 0; temp399 < 13; temp399++) nup_four_c[temp399] = tempg2[temp399];
+                memmove( up_four_g , tempg1, sizeof(tempg1));
+                memmove( nup_four_c , nup_four_cg2 , sizeof(nup_four_cg2));
                 int tempg5[8] = { 35, 38, 41, 46, 50, 0, 0, 0 };
-                for (int temp399 = 0; temp399 < 8; temp399++) four_check[temp399] = tempg5[temp399];
+                memmove( four_check , tempg5 , sizeof(tempg5));
                 int tempg7[8] = { 9, 0, 0, 0, 0, 0, 0, 0 };
-                for (int temp399 = 0; temp399 < 8; temp399++) five_check[temp399] = tempg7[temp399];
+                memmove( five_check , tempg7, sizeof(tempg7));
             } break;
             case 6: {
                 int tempg6[2] = { 6, 13 };
-                for (int temp399 = 0; temp399 < 2; temp399++) up_five_g[temp399] = tempg6[temp399];
+                memmove( up_five_g , tempg6 , sizeof(tempg6));
                 size_nup_four_c = 13;
                 int tempg1[5] = { 36, 37, 42, 45, 48 };
-                for (int temp399 = 0; temp399 < 5; temp399++) up_four_g[temp399] = tempg1[temp399];
-                int tempg11[10] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
-                for (int temp399 = 0; temp399 < 10; temp399++) nup_five_w[temp399] = tempg11[temp399];
-                int tempg2[13] = { 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 29, 31 };
-                for (int temp399 = 0; temp399 < 13; temp399++) nup_four_c[temp399] = tempg2[temp399];
+                memmove( up_four_g , tempg1, sizeof(tempg1));
+                memmove( nup_four_c , nup_four_cg2 , sizeof(nup_four_cg2));
                 int tempg5[8] = { 36, 37, 42, 45, 48, 0, 0, 0 };
-                for (int temp399 = 0; temp399 < 8; temp399++) four_check[temp399] = tempg5[temp399];
+                memmove( four_check , tempg5 , sizeof(tempg5));
                 int tempg7[8] = { 6, 13, 0, 0, 0, 0, 0, 0 };
-                for (int temp399 = 0; temp399 < 8; temp399++) five_check[temp399] = tempg7[temp399];
+                memmove( five_check , tempg7, sizeof(tempg7));
             } break;
             case 7: {
                 int tempg6[2] = { 10, 78 };
-                for (int temp399 = 0; temp399 < 2; temp399++) up_five_g[temp399] = tempg6[temp399];
+                memmove( up_five_g , tempg6 , sizeof(tempg6));
                 size_nup_four_c = 13;
                 int tempg1[5] = { 33, 37, 41, 44, 49 };
-                for (int temp399 = 0; temp399 < 5; temp399++) up_four_g[temp399] = tempg1[temp399];
-                int tempg11[10] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
-                for (int temp399 = 0; temp399 < 10; temp399++) nup_five_w[temp399] = tempg11[temp399];
-                int tempg2[13] = { 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 29, 31 };
-                for (int temp399 = 0; temp399 < 13; temp399++) nup_four_c[temp399] = tempg2[temp399];
+                memmove( up_four_g , tempg1, sizeof(tempg1));
+                memmove( nup_four_c , nup_four_cg2 , sizeof(nup_four_cg2));
                 int tempg5[8] = { 33, 37, 41, 44, 49, 0, 0, 0 };
-                for (int temp399 = 0; temp399 < 8; temp399++) four_check[temp399] = tempg5[temp399];
+                memmove( four_check , tempg5 , sizeof(tempg5));
                 int tempg7[8] = { 10, 0, 0, 0, 0, 0, 0, 0 };
-                for (int temp399 = 0; temp399 < 8; temp399++) five_check[temp399] = tempg7[temp399];
+                memmove( five_check , tempg7, sizeof(tempg7));
             } break;
             case 8: {
                 int tempg6[2] = { 12, 79 };
-                for (int temp399 = 0; temp399 < 2; temp399++) up_five_g[temp399] = tempg6[temp399];
+                memmove( up_five_g , tempg6 , sizeof(tempg6));
                 size_nup_four_c = 13;
                 int tempg1[5] = { 34, 39, 47, 80, 81 };
-                for (int temp399 = 0; temp399 < 5; temp399++) up_four_g[temp399] = tempg1[temp399];
-                int tempg11[10] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
-                for (int temp399 = 0; temp399 < 10; temp399++) nup_five_w[temp399] = tempg11[temp399];
-                int tempg2[13] = { 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 29, 31 };
-                for (int temp399 = 0; temp399 < 13; temp399++) nup_four_c[temp399] = tempg2[temp399];
+                memmove( up_four_g , tempg1, sizeof(tempg1));
+                memmove( nup_four_c , nup_four_cg2 , sizeof(nup_four_cg2));
                 int tempg5[8] = { 34, 39, 47, 0, 0, 0, 0, 0 };
-                for (int temp399 = 0; temp399 < 8; temp399++) four_check[temp399] = tempg5[temp399];
+                memmove( four_check , tempg5 , sizeof(tempg5));
                 int tempg7[8] = { 12, 0, 0, 0, 0, 0, 0, 0 };
-                for (int temp399 = 0; temp399 < 8; temp399++) five_check[temp399] = tempg7[temp399];
+                memmove( five_check , tempg7, sizeof(tempg7));
             } break;
             case 9: {
                 int tempg6[2] = { 14, 82 };
-                for (int temp399 = 0; temp399 < 2; temp399++) up_five_g[temp399] = tempg6[temp399];
+                memmove( up_five_g , tempg6 , sizeof(tempg6));
                 size_nup_four_c = 13;
                 int tempg1[5] = { 36, 42, 46, 83, 84 };
-                for (int temp399 = 0; temp399 < 5; temp399++) up_four_g[temp399] = tempg1[temp399];
-                int tempg11[10] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
-                for (int temp399 = 0; temp399 < 10; temp399++) nup_five_w[temp399] = tempg11[temp399];
-                int tempg2[13] = { 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 29, 31 };
-                for (int temp399 = 0; temp399 < 13; temp399++) nup_four_c[temp399] = tempg2[temp399];
+                memmove( up_four_g , tempg1, sizeof(tempg1));
+                memmove( nup_four_c , nup_four_cg2 , sizeof(nup_four_cg2));
                 int tempg5[8] = { 36, 42, 46, 0, 0, 0, 0, 0 };
-                for (int temp399 = 0; temp399 < 8; temp399++) four_check[temp399] = tempg5[temp399];
+                memmove( four_check , tempg5 , sizeof(tempg5));
                 int tempg7[8] = { 14, 0, 0, 0, 0, 0, 0, 0 };
-                for (int temp399 = 0; temp399 < 8; temp399++) five_check[temp399] = tempg7[temp399];
+                memmove( five_check , tempg7, sizeof(tempg7));
             } break;
             case 10: {
                 int tempg6[2] = { 7, 8 };
-                for (int temp399 = 0; temp399 < 2; temp399++) up_five_g[temp399] = tempg6[temp399];
+                memmove( up_five_g , tempg6 , sizeof(tempg6));
                 size_nup_four_c = 13;
                 int tempg1[5] = { 40, 41, 44, 50, 85 };
-                for (int temp399 = 0; temp399 < 5; temp399++) up_four_g[temp399] = tempg1[temp399];
-                int tempg11[10] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
-                for (int temp399 = 0; temp399 < 10; temp399++) nup_five_w[temp399] = tempg11[temp399];
-                int tempg2[13] = { 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 29, 31 };
-                for (int temp399 = 0; temp399 < 13; temp399++) nup_four_c[temp399] = tempg2[temp399];
+                memmove( up_four_g , tempg1, sizeof(tempg1));
+                memmove( nup_four_c , nup_four_cg2 , sizeof(nup_four_cg2));
                 int tempg5[8] = { 40, 41, 44, 50, 0, 0, 0, 0 };
-                for (int temp399 = 0; temp399 < 8; temp399++) four_check[temp399] = tempg5[temp399];
+                memmove( four_check , tempg5 , sizeof(tempg5));
                 int tempg7[8] = { 7, 8, 0, 0, 0, 0, 0, 0 };
-                for (int temp399 = 0; temp399 < 8; temp399++) five_check[temp399] = tempg7[temp399];
+                memmove( five_check , tempg7, sizeof(tempg7));
             } break;
             case 11: {
                 int tempg6[2] = { 74, 77 };
-                for (int temp399 = 0; temp399 < 2; temp399++) up_five_g[temp399] = tempg6[temp399];
+                memmove( up_five_g , tempg6 , sizeof(tempg6));
                 size_nup_four_c = 14;
                 int tempg1[5] = { 34, 37, 49, 80, 81 };
-                for (int temp399 = 0; temp399 < 5; temp399++) up_four_g[temp399] = tempg1[temp399];
-                int tempg11[10] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
-                for (int temp399 = 0; temp399 < 10; temp399++) nup_five_w[temp399] = tempg11[temp399];
-                int tempg2[14] = { 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 29, 31 };
-                for (int temp399 = 0; temp399 < 14; temp399++) nup_four_c[temp399] = tempg2[temp399];
+                memmove( up_four_g , tempg1, sizeof(tempg1));
+                memmove( nup_four_c , nup_four_cg3 , sizeof(nup_four_cg3));
                 int tempg5[8] = { 34, 37, 49, 0, 0, 0, 0, 0 };
-                for (int temp399 = 0; temp399 < 8; temp399++) four_check[temp399] = tempg5[temp399];
+                memmove( four_check , tempg5 , sizeof(tempg5));
                 int tempg7[8] = { 0, 0, 0, 0, 0, 0, 0, 0 };
-                for (int temp399 = 0; temp399 < 8; temp399++) five_check[temp399] = tempg7[temp399];
+                memmove( five_check , tempg7, sizeof(tempg7));
             } break;
             case 12: {
                 int tempg6[2] = { 15, 86 };
-                for (int temp399 = 0; temp399 < 2; temp399++) up_five_g[temp399] = tempg6[temp399];
+                memmove( up_five_g , tempg6 , sizeof(tempg6));
                 size_nup_four_c = 14;
                 int tempg1[5] = { 33, 38, 42, 43, 48 };
-                for (int temp399 = 0; temp399 < 5; temp399++) up_four_g[temp399] = tempg1[temp399];
-                int tempg11[10] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
-                for (int temp399 = 0; temp399 < 10; temp399++) nup_five_w[temp399] = tempg11[temp399];
-                int tempg2[14] = { 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 29, 31 };
-                for (int temp399 = 0; temp399 < 14; temp399++) nup_four_c[temp399] = tempg2[temp399];
+                memmove( up_four_g , tempg1, sizeof(tempg1));
+                memmove( nup_four_c , nup_four_cg3 , sizeof(nup_four_cg3));
                 int tempg5[8] = { 33, 38, 42, 43, 48, 0, 0, 0 };
-                for (int temp399 = 0; temp399 < 8; temp399++) four_check[temp399] = tempg5[temp399];
+                memmove( four_check , tempg5 , sizeof(tempg5));
                 int tempg7[8] = { 15, 0, 0, 0, 0, 0, 0, 0 };
-                for (int temp399 = 0; temp399 < 8; temp399++) five_check[temp399] = tempg7[temp399];
+                memmove( five_check , tempg7, sizeof(tempg7));
             } break;
             case 13: {
                 int tempg6[2] = { 8, 13 };
-                for (int temp399 = 0; temp399 < 2; temp399++) up_five_g[temp399] = tempg6[temp399];
+                memmove( up_five_g , tempg6 , sizeof(tempg6));
                 size_nup_four_c = 15;
                 int tempg1[5] = { 89, 47, 45, 41, 39 };
-                for (int temp399 = 0; temp399 < 5; temp399++) up_four_g[temp399] = tempg1[temp399];
-                int tempg11[10] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
-                for (int temp399 = 0; temp399 < 10; temp399++) nup_five_w[temp399] = tempg11[temp399];
-                int tempg2[15] = { 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 29, 31, 72 };
-                for (int temp399 = 0; temp399 < 15; temp399++) nup_four_c[temp399] = tempg2[temp399];
+                memmove( up_four_g , tempg1, sizeof(tempg1));
+                memmove( nup_four_c , nup_four_cg4 , sizeof(nup_four_cg4));
                 int tempg5[8] = { 47, 45, 41, 39, 0, 0, 0, 0 };
-                for (int temp399 = 0; temp399 < 8; temp399++) four_check[temp399] = tempg5[temp399];
+                memmove( four_check , tempg5 , sizeof(tempg5));
                 int tempg7[8] = { 8, 13, 0, 0, 0, 0, 0, 0 };
-                for (int temp399 = 0; temp399 < 8; temp399++) five_check[temp399] = tempg7[temp399];
+                memmove( five_check , tempg7, sizeof(tempg7));
             } break;
             case 14: {
                 int tempg6[2] = { 88, 9 };
-                for (int temp399 = 0; temp399 < 2; temp399++) up_five_g[temp399] = tempg6[temp399];
+                memmove( up_five_g , tempg6 , sizeof(tempg6));
                 size_nup_four_c = 15;
                 int tempg1[5] = { 83, 84, 85, 46, 42 };
-                for (int temp399 = 0; temp399 < 5; temp399++) up_four_g[temp399] = tempg1[temp399];
-                int tempg11[10] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
-                for (int temp399 = 0; temp399 < 10; temp399++) nup_five_w[temp399] = tempg11[temp399];
-                int tempg2[15] = { 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 29, 31, 72 };
-                for (int temp399 = 0; temp399 < 15; temp399++) nup_four_c[temp399] = tempg2[temp399];
+                memmove( up_four_g , tempg1, sizeof(tempg1));
+                memmove( nup_four_c , nup_four_cg4 , sizeof(nup_four_cg4));
                 int tempg5[8] = { 46, 42, 0, 0, 0, 0, 0, 0 };
-                for (int temp399 = 0; temp399 < 8; temp399++) four_check[temp399] = tempg5[temp399];
+                memmove( four_check , tempg5 , sizeof(tempg5));
                 int tempg7[8] = { 9, 0, 0, 0, 0, 0, 0, 0 };
-                for (int temp399 = 0; temp399 < 8; temp399++) five_check[temp399] = tempg7[temp399];
+                memmove( five_check , tempg7, sizeof(tempg7));
             } break;
             default:break;
             }
@@ -990,34 +942,25 @@ int main() {
             switch (chosen_event) {
             case 1: {
                 size_nup_four_c = 14;
-                int tempg2[14] = { 18, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32 };
-                for (int temp399 = 0; temp399 < 14; temp399++) nup_four_c[temp399] = tempg2[temp399];
-            } break;
+                memmove( nup_four_c , nup_four_cg31 , sizeof(nup_four_cg31));
+                } break;
             case 2: {
                 size_nup_four_c = 16;
-                int tempg2[16] = { 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32 };
-                for (int temp399 = 0; temp399 < 16; temp399++) nup_four_c[temp399] = tempg2[temp399];
+                memmove( nup_four_c , nup_four_cg32 , sizeof(nup_four_cg32));
                 } break;
             case 3: {
                 size_nup_four_c = 17;
-                int tempg1[10] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
-                for (int temp399 = 0; temp399 < 10; temp399++) nup_five_w[temp399] = tempg1[temp399];
-                int tempg2[17] = { 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32 };
-                for (int temp399 = 0; temp399 < 17; temp399++) nup_four_c[temp399] = tempg2[temp399];
+                memmove( nup_four_c , nup_four_cg33 , sizeof(nup_four_cg33));
                 } break;
             case 4: {
                 size_nup_four_c = 18;
-                int tempg1[10] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
-                for (int temp399 = 0; temp399 < 10; temp399++) nup_five_w[temp399] = tempg1[temp399];
-                int tempg2[18] = { 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 72 };
-                for (int temp399 = 0; temp399 < 18; temp399++) nup_four_c[temp399] = tempg2[temp399];
+                memmove( nup_four_c , nup_four_cg34 , sizeof(nup_four_cg34));
                 } break;
             default:break;
             }
         }
         else {
-            int tempg2[11] = { 18, 20, 21, 22, 23, 24, 25, 26, 27, 29, 31 };
-            for (int temp399 = 0; temp399 < 11; temp399++) nup_four_c[temp399] = tempg2[temp399];
+            memmove( nup_four_c , nup_four_cg1 , sizeof(nup_four_cg1));
         }
         while (1) {
             if (quit == 1) goto full_quit;
