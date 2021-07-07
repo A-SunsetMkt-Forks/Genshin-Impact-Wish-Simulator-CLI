@@ -1391,15 +1391,16 @@ int main() {
             if (pcount[81] > 0) std::cout << pname[81] << "(" << pcount[81] << ") ";
             for (int iout = 85; iout < 88; iout++) { if (pcount[iout] > 0) std::cout << pname[iout] << "(" << pcount[iout] << ") "; }
             std::cout << endl << endl;
-            for (int iout = 15; iout < 50; iout++) { if (pcount[iout] > 0) std::cout << pname[iout] << "(" << pcount[iout] << ") "; }
+            for (int iout = 15; iout < 32; iout++) { if (pcount[iout] > 0) std::cout << pname[iout] << "(" << pcount[iout] << ") "; }
             if (pcount[71] > 0) std::cout << pname[71] << "(" << pcount[71] << ") ";
+            for (int iout = 32; iout < 50; iout++) { if (pcount[iout] > 0) std::cout << pname[iout] << "(" << pcount[iout] << ") "; }
             if (pcount[79] > 0) std::cout << pname[79] << "(" << pcount[79] << ") ";
             if (pcount[80] > 0) std::cout << pname[80] << "(" << pcount[80] << ") ";
             for (int iout = 82; iout < 85; iout++) { if (pcount[iout] > 0) std::cout << pname[iout] << "(" << pcount[iout] << ") "; }
             if (pcount[88] > 0) std::cout << pname[88] << "(" << pcount[88] << ") ";
             std::cout << endl << endl; auto elapsed = std::chrono::steady_clock::now() - start;
             long long int microseconds = std::chrono::duration_cast<std::chrono::microseconds>(elapsed).count();
-            std::cout << microseconds * 1.0 / 1000000 << " seconds elapsed." << endl;
+            std::cout << microseconds * 1.0 / 1000000 << " 秒过去了。" << endl;
             //if (chosen_banner == 4 && chosen_event == 1 && count == 20) goto full_quit;
         }
     }

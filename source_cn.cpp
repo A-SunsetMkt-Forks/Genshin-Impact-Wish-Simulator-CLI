@@ -1391,8 +1391,9 @@ int main() {
             if (pcount[81] > 0) std::cout << pname[81] << "(" << pcount[81] << ") ";
             for (int iout = 85; iout < 88; iout++) { if (pcount[iout] > 0) std::cout << pname[iout] << "(" << pcount[iout] << ") "; }
             std::cout << endl << endl;
-            for (int iout = 15; iout < 50; iout++) { if (pcount[iout] > 0) std::cout << pname[iout] << "(" << pcount[iout] << ") "; }
+            for (int iout = 15; iout < 32; iout++) { if (pcount[iout] > 0) std::cout << pname[iout] << "(" << pcount[iout] << ") "; }
             if (pcount[71] > 0) std::cout << pname[71] << "(" << pcount[71] << ") ";
+            for (int iout = 32; iout < 50; iout++) { if (pcount[iout] > 0) std::cout << pname[iout] << "(" << pcount[iout] << ") "; }
             if (pcount[79] > 0) std::cout << pname[79] << "(" << pcount[79] << ") ";
             if (pcount[80] > 0) std::cout << pname[80] << "(" << pcount[80] << ") ";
             for (int iout = 82; iout < 85; iout++) { if (pcount[iout] > 0) std::cout << pname[iout] << "(" << pcount[iout] << ") "; }
