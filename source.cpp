@@ -1400,7 +1400,7 @@ int main() {
             if (pcount[88] > 0) std::cout << pname[88] << "(" << pcount[88] << ") ";
             std::cout << endl << endl; auto elapsed = std::chrono::steady_clock::now() - start;
             long long int microseconds = std::chrono::duration_cast<std::chrono::microseconds>(elapsed).count();
-            std::cout << microseconds * 1.0 / 1000000 << " 秒过去了。" << endl;
+            std::cout << microseconds * 1.0 / 1000000 << " seconds elapsed." << endl;
             //if (chosen_banner == 4 && chosen_event == 1 && count == 20) goto full_quit;
         }
     }
