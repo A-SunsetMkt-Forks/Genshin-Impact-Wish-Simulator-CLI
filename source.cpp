@@ -1043,34 +1043,34 @@ int main() {
                     int type = 0; //Up or non-up, character or weapon
                     int kind = 0; //which exactly
                     if (five_star_assurance_number < 74 && four_star_assurance_number < 9) {
-                        if (temp1 < (unsigned long long int) ULTRAPOS / 1000 * 6) { I_5() }
-                        else if (temp1 < (unsigned long long int) ULTRAPOS / 1000 * 57) { I_4() }
-                        else { Tri() }
+                        if (temp1 < (unsigned long long int) ULTRAPOS / 1000 * 6) I_5()
+                        else if (temp1 < (unsigned long long int) ULTRAPOS / 1000 * 57) I_4()
+                        else Tri()
                     }
                     else if (five_star_assurance_number < 74 && four_star_assurance_number == 9) {
-                        if (temp1 < (unsigned long long int) ULTRAPOS / 1000 * 6) { I_5() }
-                        else if (temp1 < (unsigned long long int) ULTRAPOS / 1000 * 567) { I_4() }
-                        else { Tri() }
+                        if (temp1 < (unsigned long long int) ULTRAPOS / 1000 * 6) I_5()
+                        else if (temp1 < (unsigned long long int) ULTRAPOS / 1000 * 567) I_4()
+                        else Tri()
                     }
                     else if (five_star_assurance_number < 74 && four_star_assurance_number > 9) {
-                        if (temp1 < (unsigned long long int) ULTRAPOS / 1000 * 6) { I_5() }
-                        else { I_4() }
+                        if (temp1 < (unsigned long long int) ULTRAPOS / 1000 * 6) I_5()
+                        else I_4()
                     }
                     else if (five_star_assurance_number < 90 && five_star_assurance_number > 73 && four_star_assurance_number < 9) {
-                        if (temp1 < (unsigned long long int) (ULTRAPOS / 1000 * 6) + ((unsigned long long int)(five_star_assurance_number) - 73) * (unsigned long long int)(ULTRAPOS / 1000 * 60)) { I_5() }
-                        else if (temp1 < (unsigned long long int) (ULTRAPOS / 1000 * 57) + ((unsigned long long int)(five_star_assurance_number) - 73) * (unsigned long long int)(ULTRAPOS / 1000 * 60)) { I_4() }
-                        else { Tri() }
+                        if (temp1 < (unsigned long long int) (ULTRAPOS / 1000 * 6) + ((unsigned long long int)(five_star_assurance_number) - 73) * (unsigned long long int)(ULTRAPOS / 1000 * 60)) I_5()
+                        else if (temp1 < (unsigned long long int) (ULTRAPOS / 1000 * 57) + ((unsigned long long int)(five_star_assurance_number) - 73) * (unsigned long long int)(ULTRAPOS / 1000 * 60)) I_4()
+                        else Tri()
                     }
                     else if (five_star_assurance_number < 90 && five_star_assurance_number > 73 && four_star_assurance_number == 9) {
-                        if (temp1 < (unsigned long long int) (ULTRAPOS / 1000 * 6) + ((unsigned long long int)(five_star_assurance_number) - 73) * (unsigned long long int)(ULTRAPOS / 1000 * 60)) { I_5() }
-                        else if (temp1 < (unsigned long long int) (ULTRAPOS / 1000 * 567) + ((unsigned long long int)(five_star_assurance_number) - 73) * (unsigned long long int)(ULTRAPOS / 1000 * 60)) { I_4() }
-                        else { Tri() }
+                        if (temp1 < (unsigned long long int) (ULTRAPOS / 1000 * 6) + ((unsigned long long int)(five_star_assurance_number) - 73) * (unsigned long long int)(ULTRAPOS / 1000 * 60)) I_5()
+                        else if (temp1 < (unsigned long long int) (ULTRAPOS / 1000 * 567) + ((unsigned long long int)(five_star_assurance_number) - 73) * (unsigned long long int)(ULTRAPOS / 1000 * 60)) I_4()
+                        else Tri()
                     }
                     else if (five_star_assurance_number < 90 && five_star_assurance_number > 73 && four_star_assurance_number > 9) {
-                        if (temp1 < (unsigned long long int) (ULTRAPOS / 1000 * 6) + ((unsigned long long int)(five_star_assurance_number) - 73) * (unsigned long long int)(ULTRAPOS / 1000 * 60)) { I_5() }
-                        else { I_4() }
+                        if (temp1 < (unsigned long long int) (ULTRAPOS / 1000 * 6) + ((unsigned long long int)(five_star_assurance_number) - 73) * (unsigned long long int)(ULTRAPOS / 1000 * 60)) I_5()
+                        else I_4()
                     }
-                    else { I_5() }
+                    else I_5()
                     output_string()
                     if (!((star == 4 && type == 1) || (star == 4 && type == 2))) unmet4_c++;
                     if (!(star == 4 && type == 3)) unmet4_w++;
@@ -1095,63 +1095,63 @@ int main() {
                     int type = 0; //Up or non-up, character or weapon
                     int kind = 0; //which exactly
                     if (five_star_assurance_number < 63 && four_star_assurance_number < 8) {
-                        if (temp1 < (unsigned long long int) ULTRAPOS / 1000 * 7) { II_5() }
-                        else if (temp1 < (unsigned long long int) ULTRAPOS / 1000 * 67) { II_4() }
-                        else { Tri() }
+                        if (temp1 < (unsigned long long int) ULTRAPOS / 1000 * 7) II_5()
+                        else if (temp1 < (unsigned long long int) ULTRAPOS / 1000 * 67) II_4()
+                        else Tri()
                     }
                     else if (five_star_assurance_number < 63 && four_star_assurance_number == 8) {
-                        if (temp1 < (unsigned long long int) ULTRAPOS / 1000 * 7) { II_5() }
-                        else if (temp1 < (unsigned long long int) ULTRAPOS / 1000 * 667) { II_4() }
-                        else { Tri() }
+                        if (temp1 < (unsigned long long int) ULTRAPOS / 1000 * 7) II_5()
+                        else if (temp1 < (unsigned long long int) ULTRAPOS / 1000 * 667) II_4()
+                        else Tri()
                     }
                     else if (five_star_assurance_number < 63 && four_star_assurance_number == 9) {
-                        if (temp1 < (unsigned long long int) ULTRAPOS / 1000 * 7) { II_5() }
-                        else if (temp1 < (unsigned long long int) ULTRAPOS / 1000 * 967) { II_4() }
-                        else { Tri() }
+                        if (temp1 < (unsigned long long int) ULTRAPOS / 1000 * 7) II_5()
+                        else if (temp1 < (unsigned long long int) ULTRAPOS / 1000 * 967) II_4()
+                        else Tri()
                     }
                     else if (five_star_assurance_number < 63 && four_star_assurance_number > 9) {
-                        if (temp1 < (unsigned long long int) ULTRAPOS / 1000 * 7) { II_5() }
-                        else { II_4() }
+                        if (temp1 < (unsigned long long int) ULTRAPOS / 1000 * 7) II_5()
+                        else II_4()
                     }
                     else if (five_star_assurance_number < 74 && five_star_assurance_number > 62 && four_star_assurance_number < 8) {
-                        if (temp1 < (unsigned long long int) (ULTRAPOS / 1000 * 7) + ((unsigned long long int)(five_star_assurance_number) - 62) * (unsigned long long int)(ULTRAPOS / 1000 * 70)) { II_5() }
-                        else if (temp1 < (unsigned long long int) (ULTRAPOS / 1000 * 67) + ((unsigned long long int)(five_star_assurance_number) - 62) * (unsigned long long int)(ULTRAPOS / 1000 * 70)) { II_4() }
-                        else { Tri() }
+                        if (temp1 < (unsigned long long int) (ULTRAPOS / 1000 * 7) + ((unsigned long long int)(five_star_assurance_number) - 62) * (unsigned long long int)(ULTRAPOS / 1000 * 70)) II_5()
+                        else if (temp1 < (unsigned long long int) (ULTRAPOS / 1000 * 67) + ((unsigned long long int)(five_star_assurance_number) - 62) * (unsigned long long int)(ULTRAPOS / 1000 * 70)) II_4()
+                        else Tri()
                     }
                     else if (five_star_assurance_number < 74 && five_star_assurance_number > 62 && four_star_assurance_number == 8) {
-                        if (temp1 < (unsigned long long int) (ULTRAPOS / 1000 * 7) + ((unsigned long long int)(five_star_assurance_number) - 62) * (unsigned long long int)(ULTRAPOS / 1000 * 70)) { II_5() }
-                        else if (temp1 < (unsigned long long int) (ULTRAPOS / 1000 * 667) + ((unsigned long long int)(five_star_assurance_number) - 62) * (unsigned long long int)(ULTRAPOS / 1000 * 70)) { II_4() }
-                        else { Tri() }
+                        if (temp1 < (unsigned long long int) (ULTRAPOS / 1000 * 7) + ((unsigned long long int)(five_star_assurance_number) - 62) * (unsigned long long int)(ULTRAPOS / 1000 * 70)) II_5()
+                        else if (temp1 < (unsigned long long int) (ULTRAPOS / 1000 * 667) + ((unsigned long long int)(five_star_assurance_number) - 62) * (unsigned long long int)(ULTRAPOS / 1000 * 70)) II_4()
+                        else Tri()
                     }
                     else if (five_star_assurance_number < 74 && five_star_assurance_number > 62 && four_star_assurance_number == 9) {
-                        if (temp1 < (unsigned long long int) (ULTRAPOS / 1000 * 7) + ((unsigned long long int)(five_star_assurance_number) - 62) * (unsigned long long int)(ULTRAPOS / 1000 * 70)) { II_5() }
-                        else if (temp1 < (unsigned long long int) (ULTRAPOS / 1000 * 967) + ((unsigned long long int)(five_star_assurance_number) - 62) * (unsigned long long int)(ULTRAPOS / 1000 * 70)) { II_4() }
-                        else { Tri() }
+                        if (temp1 < (unsigned long long int) (ULTRAPOS / 1000 * 7) + ((unsigned long long int)(five_star_assurance_number) - 62) * (unsigned long long int)(ULTRAPOS / 1000 * 70)) II_5()
+                        else if (temp1 < (unsigned long long int) (ULTRAPOS / 1000 * 967) + ((unsigned long long int)(five_star_assurance_number) - 62) * (unsigned long long int)(ULTRAPOS / 1000 * 70)) II_4()
+                        else Tri()
                     }
                     else if (five_star_assurance_number < 74 && five_star_assurance_number > 62 && four_star_assurance_number > 9) {
-                        if (temp1 < (unsigned long long int) (ULTRAPOS / 1000 * 7) + ((unsigned long long int)(five_star_assurance_number) - 62) * (unsigned long long int)(ULTRAPOS / 1000 * 70)) { II_5() }
-                        else { II_4() }
+                        if (temp1 < (unsigned long long int) (ULTRAPOS / 1000 * 7) + ((unsigned long long int)(five_star_assurance_number) - 62) * (unsigned long long int)(ULTRAPOS / 1000 * 70)) II_5()
+                        else II_4()
                     }
                     else if (five_star_assurance_number < 80 && five_star_assurance_number > 73 && four_star_assurance_number < 8) {
-                        if (temp1 < (unsigned long long int) (ULTRAPOS / 1000 * 777) + ((unsigned long long int)(five_star_assurance_number) - 73) * (unsigned long long int)(ULTRAPOS / 1000 * 35)) { II_5() }
-                        else if (temp1 < (unsigned long long int) (ULTRAPOS / 1000 * 837) + ((unsigned long long int)(five_star_assurance_number) - 73) * (unsigned long long int)(ULTRAPOS / 1000 * 35)) { II_4() }
-                        else { Tri() }
+                        if (temp1 < (unsigned long long int) (ULTRAPOS / 1000 * 777) + ((unsigned long long int)(five_star_assurance_number) - 73) * (unsigned long long int)(ULTRAPOS / 1000 * 35)) II_5()
+                        else if (temp1 < (unsigned long long int) (ULTRAPOS / 1000 * 837) + ((unsigned long long int)(five_star_assurance_number) - 73) * (unsigned long long int)(ULTRAPOS / 1000 * 35)) II_4()
+                        else Tri()
                     }
                     else if (five_star_assurance_number < 80 && five_star_assurance_number > 73 && four_star_assurance_number == 8) {
-                        if (temp1 < (unsigned long long int) (ULTRAPOS / 1000 * 777) + ((unsigned long long int)(five_star_assurance_number) - 73) * (unsigned long long int)(ULTRAPOS / 1000 * 35)) { II_5() }
-                        else if (temp1 < (unsigned long long int) (ULTRAPOS / 1000 * 1437) + ((unsigned long long int)(five_star_assurance_number) - 73) * (unsigned long long int)(ULTRAPOS / 1000 * 35)) { II_4() }
-                        else { Tri() }
+                        if (temp1 < (unsigned long long int) (ULTRAPOS / 1000 * 777) + ((unsigned long long int)(five_star_assurance_number) - 73) * (unsigned long long int)(ULTRAPOS / 1000 * 35)) II_5()
+                        else if (temp1 < (unsigned long long int) (ULTRAPOS / 1000 * 1437) + ((unsigned long long int)(five_star_assurance_number) - 73) * (unsigned long long int)(ULTRAPOS / 1000 * 35)) II_4()
+                        else Tri()
                     }
                     else if (five_star_assurance_number < 80 && five_star_assurance_number > 73 && four_star_assurance_number == 9) {
-                        if (temp1 < (unsigned long long int) (ULTRAPOS / 1000 * 777) + ((unsigned long long int)(five_star_assurance_number) - 73) * (unsigned long long int)(ULTRAPOS / 1000 * 35)) { II_5() }
-                        else if (temp1 < (unsigned long long int) (ULTRAPOS / 1000 * 1737) + ((unsigned long long int)(five_star_assurance_number) - 73) * (unsigned long long int)(ULTRAPOS / 1000 * 35)) { II_4() }
-                        else { Tri() }
+                        if (temp1 < (unsigned long long int) (ULTRAPOS / 1000 * 777) + ((unsigned long long int)(five_star_assurance_number) - 73) * (unsigned long long int)(ULTRAPOS / 1000 * 35)) II_5()
+                        else if (temp1 < (unsigned long long int) (ULTRAPOS / 1000 * 1737) + ((unsigned long long int)(five_star_assurance_number) - 73) * (unsigned long long int)(ULTRAPOS / 1000 * 35)) II_4()
+                        else Tri()
                     }
                     else if (five_star_assurance_number < 80 && five_star_assurance_number > 73 && four_star_assurance_number > 9) {
-                        if (temp1 < (unsigned long long int) (ULTRAPOS / 1000 * 777) + ((unsigned long long int)(five_star_assurance_number) - 73) * (unsigned long long int)(ULTRAPOS / 1000 * 35)) { II_5() }
-                        else { II_4() }
+                        if (temp1 < (unsigned long long int) (ULTRAPOS / 1000 * 777) + ((unsigned long long int)(five_star_assurance_number) - 73) * (unsigned long long int)(ULTRAPOS / 1000 * 35)) II_5()
+                        else II_4()
                     }
-                    else { II_5() }
+                    else II_5()
                     output_string()
                     if (!((star == 4 && type == 1) || (star == 4 && type == 2))) unmet4_c++;
                     if (!(star == 4 && type == 3)) unmet4_w++;
@@ -1174,34 +1174,34 @@ int main() {
                     int type = 0; //Up or non-up, character or weapon
                     int kind = 0; //which exactly
                     if (five_star_assurance_number < 74 && four_star_assurance_number < 9) {
-                        if (temp1 < (unsigned long long int) ULTRAPOS / 1000 * 6) { III_5() }
-                        else if (temp1 < (unsigned long long int) ULTRAPOS / 1000 * 57) { III_4() }
-                        else { Tri() }
+                        if (temp1 < (unsigned long long int) ULTRAPOS / 1000 * 6) III_5()
+                        else if (temp1 < (unsigned long long int) ULTRAPOS / 1000 * 57) III_4()
+                        else Tri()
                     }
                     else if (five_star_assurance_number < 74 && four_star_assurance_number == 9) {
-                        if (temp1 < (unsigned long long int) ULTRAPOS / 1000 * 6) { III_5() }
-                        else if (temp1 < (unsigned long long int) ULTRAPOS / 1000 * 567) { III_4() }
-                        else { Tri() }
+                        if (temp1 < (unsigned long long int) ULTRAPOS / 1000 * 6) III_5()
+                        else if (temp1 < (unsigned long long int) ULTRAPOS / 1000 * 567) III_4()
+                        else Tri()
                     }
                     else if (five_star_assurance_number < 74 && four_star_assurance_number > 9) {
-                        if (temp1 < (unsigned long long int) ULTRAPOS / 1000 * 6) { III_5() }
-                        else { III_4() }
+                        if (temp1 < (unsigned long long int) ULTRAPOS / 1000 * 6) III_5()
+                        else III_4()
                     }
                     else if (five_star_assurance_number < 90 && five_star_assurance_number > 73 && four_star_assurance_number < 9) {
-                        if (temp1 < (unsigned long long int) (ULTRAPOS / 1000 * 6) + ((unsigned long long int)(five_star_assurance_number) - 73) * (unsigned long long int)(ULTRAPOS / 1000 * 60)) { III_5() }
-                        else if (temp1 < (unsigned long long int) (ULTRAPOS / 1000 * 57) + ((unsigned long long int)(five_star_assurance_number) - 73) * (unsigned long long int)(ULTRAPOS / 1000 * 60)) { III_4() }
-                        else { Tri() }
+                        if (temp1 < (unsigned long long int) (ULTRAPOS / 1000 * 6) + ((unsigned long long int)(five_star_assurance_number) - 73) * (unsigned long long int)(ULTRAPOS / 1000 * 60)) III_5()
+                        else if (temp1 < (unsigned long long int) (ULTRAPOS / 1000 * 57) + ((unsigned long long int)(five_star_assurance_number) - 73) * (unsigned long long int)(ULTRAPOS / 1000 * 60)) III_4()
+                        else Tri()
                     }
                     else if (five_star_assurance_number < 90 && five_star_assurance_number > 73 && four_star_assurance_number == 9) {
-                        if (temp1 < (unsigned long long int) (ULTRAPOS / 1000 * 6) + ((unsigned long long int)(five_star_assurance_number) - 73) * (unsigned long long int)(ULTRAPOS / 1000 * 60)) { III_5() }
-                        else if (temp1 < (unsigned long long int) (ULTRAPOS / 1000 * 567) + ((unsigned long long int)(five_star_assurance_number) - 73) * (unsigned long long int)(ULTRAPOS / 1000 * 60)) { III_4() }
-                        else { Tri() }
+                        if (temp1 < (unsigned long long int) (ULTRAPOS / 1000 * 6) + ((unsigned long long int)(five_star_assurance_number) - 73) * (unsigned long long int)(ULTRAPOS / 1000 * 60)) III_5()
+                        else if (temp1 < (unsigned long long int) (ULTRAPOS / 1000 * 567) + ((unsigned long long int)(five_star_assurance_number) - 73) * (unsigned long long int)(ULTRAPOS / 1000 * 60)) III_4()
+                        else Tri()
                     }
                     else if (five_star_assurance_number < 90 && five_star_assurance_number > 73 && four_star_assurance_number > 9) {
-                        if (temp1 < (unsigned long long int) (ULTRAPOS / 1000 * 6) + ((unsigned long long int)(five_star_assurance_number) - 73) * (unsigned long long int)(ULTRAPOS / 1000 * 60)) { III_5() }
-                        else { III_4() }
+                        if (temp1 < (unsigned long long int) (ULTRAPOS / 1000 * 6) + ((unsigned long long int)(five_star_assurance_number) - 73) * (unsigned long long int)(ULTRAPOS / 1000 * 60)) III_5()
+                        else III_4()
                     }
-                    else { III_5() }
+                    else III_5()
                     output_string()
                     if (!(star == 5 && type == 1)) unmet5_c++;
                     if (!(star == 5 && type == 2)) unmet5_w++;
@@ -1254,7 +1254,7 @@ int main() {
                             kind = rspick(nup_four_c, 11);
                             if (kind == 21) { is_noelle = 0; }
                         }
-                        else { Tri() }
+                        else Tri()
                     }
                     else if (four_star_assurance_number == 9) {
                         if (temp1 < (unsigned long long int) ULTRAPOS / 1000 * 6) {
@@ -1277,7 +1277,7 @@ int main() {
                             kind = rspick(nup_four_c, 11);
                             if (kind == 21) { is_noelle = 0; }
                         }
-                        else { Tri() }
+                        else Tri()
                     }
                     else {
                         if (temp1 < (unsigned long long int) ULTRAPOS / 1000 * 6) {
