@@ -429,13 +429,13 @@ string pname[128] = {
                 "神里绫华",
                 "宵宫",
                 "早柚",
-                "Placeholder",
-                "Placeholder",
-                "Placeholder",
-                "Placeholder",
-                "Placeholder",
-                "Placeholder",
-                "Placeholder",
+                "破魔之弓",
+                "天目影打刀",
+                "喜多院十文字",
+                "桂木斩长正",
+                "白辰之环",
+                "雾切之回光",
+                "飞雷之弦振",
                 "Placeholder",
                 "Placeholder",
                 "Placeholder",
@@ -481,7 +481,7 @@ int rspick(int* kindx, int sizekind) {
 }
 
 int main() {
-    std::cout << "原神祈愿模拟器（命令行）V1.6.5" << endl 
+    std::cout << "原神祈愿模拟器（命令行）V2.0.2" << endl 
     << "作者: Jirehlov Research" << endl 
     << "开源于Github: Jirehlov/GenshinImpactWishSimulatorCLI" << endl 
     << "MIT LICENSE" << endl << endl;

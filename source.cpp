@@ -429,13 +429,13 @@ string pname[128] = {
                 "Kamisato Ayaka",
                 "Yoimiya",
                 "Sayu",
-                "Placeholder",
-                "Placeholder",
-                "Placeholder",
-                "Placeholder",
-                "Placeholder",
-                "Placeholder",
-                "Placeholder",
+                "Hamayumi",
+                "Amenoma Kageuchi",
+                "Kitain Cross Spear",
+                "Katsuragikiri Nagamasa",
+                "Hakushin Ring",
+                "Thundering Pulse",
+                "Mistsplitter Reforged",
                 "Placeholder",
                 "Placeholder",
                 "Placeholder",
@@ -481,7 +481,7 @@ int rspick(int* kindx, int sizekind) {
 }
 
 int main() {
-    std::cout << "WELCOME TO GENSHIN IMPACT WISH SIMULATOR CLI V1.6.5" << endl 
+    std::cout << "WELCOME TO GENSHIN IMPACT WISH SIMULATOR CLI V2.0.2" << endl 
     << "by Jirehlov Research" << endl 
     << "Source code available on Github: Jirehlov/GenshinImpactWishSimulatorCLI" << endl 
     << "MIT LICENSE" << endl << endl;
