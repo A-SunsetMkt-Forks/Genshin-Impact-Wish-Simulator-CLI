@@ -587,6 +587,8 @@ int main() {
                 << "16: 白鹭之庭/20210721- (神里绫华, , , )" << endl
                 << "17: 焰色天河/- (宵宫, 早柚, , )" << endl << endl;
             std::cin >> chosen_event;
+            fate_weapon = 0;
+            fate_points = 0;
             if (cin.fail()) { chosen_event = 0; std::cout << endl << "非法字符!" << endl; cin.clear(); cin.ignore(32767, '\n'); goto enter_chosen_event; }
             if (chosen_event == -1) { chosen_event = 0; std::cout << endl; goto enter_chosen_banner; }
             if (chosen_event > 0 && chosen_event < 18 && chosen_event == (int)chosen_event) quit = 0; else { std::cout << endl << "无效活动类型!" << endl << endl; goto enter_chosen_event; }
@@ -627,6 +629,8 @@ int main() {
                 << "3: 奔行世间/20210428-20210608 (新增罗莎莉亚)" << endl
                 << "4: 奔行世间/20210609- (新增烟绯)" << endl << endl;
             std::cin >> chosen_event;
+            fate_weapon = 0;
+            fate_points = 0;
             if (cin.fail()) { chosen_event = 0; std::cout << endl << "非法字符!" << endl; cin.clear(); cin.ignore(32767, '\n'); goto enter_chosen_event; }
             if (chosen_event == -1) { chosen_event = 0; std::cout << endl; goto enter_chosen_banner; }
             if (chosen_event > 0 && chosen_event < 5 && chosen_event == (int)chosen_event) quit = 0; else { std::cout << endl << "无效活动类型!" << endl << endl; goto enter_chosen_event; }
@@ -637,6 +641,8 @@ int main() {
                 << "-1: 重新选择卡池类型 (将重置记录)" << endl
                 << "1: 新手祈愿" << endl << endl;
             std::cin >> chosen_event;
+            fate_weapon = 0;
+            fate_points = 0;
             if (cin.fail()) { chosen_event = 0; std::cout << endl << "非法字符!" << endl; cin.clear(); cin.ignore(32767, '\n'); goto enter_chosen_event; }
             if (chosen_event == -1) { chosen_event = 0; std::cout << endl; goto enter_chosen_banner; }
             if (chosen_event == 1 && chosen_event == (int)chosen_event) quit = 0; else { std::cout << endl << "无效活动类型!" << endl << endl; goto enter_chosen_event; } } break;

@@ -587,6 +587,8 @@ int main() {
                 << "16: The Heron's Court/20210721- (Kamisato Ayaka, , , )" << endl
                 << "17: Tapestry of Golden Flames/- (Yoimiya, Sayu, , )" << endl << endl;
             std::cin >> chosen_event;
+            fate_weapon = 0;
+            fate_points = 0;
             if (cin.fail()) {chosen_event = 0; std::cout << endl << "Character(s) cannot be read!" << endl; cin.clear(); cin.ignore(32767,'\n'); goto enter_chosen_event;}
             if (chosen_event == -1) { chosen_event = 0; std::cout << endl; goto enter_chosen_banner; }
             if (chosen_event > 0 && chosen_event < 18 && chosen_event == (int)chosen_event) quit = 0; else { std::cout << endl << "Invalid event!" << endl << endl; goto enter_chosen_event; }
@@ -627,6 +629,8 @@ int main() {
                 << "3: Wanderlust Invocation/20210428-20210608 (Adds Rosaria)" << endl
                 << "4: Wanderlust Invocation/20210609- (Adds Yanfei)" << endl << endl;
             std::cin >> chosen_event;
+            fate_weapon = 0;
+            fate_points = 0;
             if (cin.fail()) {chosen_event = 0; std::cout << endl << "Character(s) cannot be read!" << endl; cin.clear(); cin.ignore(32767,'\n'); goto enter_chosen_event;}
             if (chosen_event == -1) { chosen_event = 0; std::cout << endl; goto enter_chosen_banner; }
             if (chosen_event > 0 && chosen_event < 5 && chosen_event == (int)chosen_event) quit = 0; else { std::cout << endl << "Invalid event!" << endl << endl; goto enter_chosen_event; }
@@ -637,6 +641,8 @@ int main() {
                 << "-1: Re-choose Wishes (Banners) (Records will be reset!)" << endl
                 << "1: Beginners' wish" << endl << endl;
             std::cin >> chosen_event;
+            fate_weapon = 0;
+            fate_points = 0;
             if (cin.fail()) {chosen_event = 0; std::cout << endl << "Character(s) cannot be read!" << endl; cin.clear(); cin.ignore(32767,'\n'); goto enter_chosen_event;}
             if (chosen_event == -1) { chosen_event = 0; std::cout << endl; goto enter_chosen_banner; }
             if (chosen_event == 1 && chosen_event == (int)chosen_event) quit = 0; else { std::cout << endl << "Invalid event!" << endl << endl; goto enter_chosen_event; } } break;
