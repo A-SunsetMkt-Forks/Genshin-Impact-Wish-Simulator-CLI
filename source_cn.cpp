@@ -146,6 +146,8 @@ constexpr auto ULTRAPOS = 437580000;
                     if (five_star_assurance_number < min_fives) { min_fives = five_star_assurance_number; min_fivesth = five_count; min_fivecount = countx; }\
                     five_star_assurance_number = 0;\
                     if (fate_weapon != 0 && fate_points == 2) {\
+                        type = 1;\
+                        five_count_w++;\
                         kind = up_five_g[fate_weapon - 1];\
                         fate_points = 0;\
                         five_star_guarantee_number = 0;\
