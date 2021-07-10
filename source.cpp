@@ -1102,11 +1102,13 @@ int main() {
                 fate_points = 0;
                 enter_fate_weapon:
                 std::cout << "Epitomized Path?" << endl
+                << "-1: Return;" << endl
                 << "1: The first weapon in order;" << endl
                 << "2: The second weapon in order;" << endl
                 << "0: Cancel and Reset" << endl << endl;
                 std::cin >> fate_weapon;
-                if ( fate_weapon < 0 || fate_weapon > 2) {std::cout << "Incorrect input!" << endl << endl; fate_weapon = 0; goto enter_fate_weapon;}
+                if ( fate_weapon == -1 ) {fate_weapon = 0; goto enter_wishes_number;}
+                else if ( fate_weapon < -1 || fate_weapon > 2) {std::cout << endl << "Incorrect input!" << endl << endl; fate_weapon = 0; goto enter_fate_weapon;}
                 wishes_number = 0;
                 goto enter_wishes_number;
             }
