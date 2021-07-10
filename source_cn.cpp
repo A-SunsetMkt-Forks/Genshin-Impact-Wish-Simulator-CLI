@@ -7,8 +7,8 @@ constexpr auto ULTRAPOS = 437580000;
 #define casesx( kind ){   if (kind < 16 ) { std::cout << "!!!!!*****"; }\
                     else if (kind < 51 ) { std::cout << "!!****"; }\
                     else if (kind < 64 ) { std::cout << "***"; }\
-                    else if (kind == 72 || kind == 80 || kind == 81 || kind == 83 || kind == 84 || kind == 85 || kind == 89 ) { std::cout << "!!****"; }\
-                    else if (kind < 90 ) { std::cout << "!!!!!*****"; }\
+                    else if (kind == 72 || kind == 80 || kind == 81 || kind == 83 || kind == 84 || kind == 85 || kind == 89 || kind == 92 || kind == 93 || kind == 94 || kind == 95 || kind == 96 || kind == 97 ) { std::cout << "!!****"; }\
+                    else if (kind < 100 ) { std::cout << "!!!!!*****"; }\
                     else {}\
                 }
 #define output_string() {if (y_print == 1) {std::cout << countx + 1 << "(" << five_star_assurance_number << ") ";\
@@ -148,19 +148,56 @@ constexpr auto ULTRAPOS = 437580000;
                     if (five_star_guarantee_number == 1) {\
                         type = 1;\
                         five_count_w++;\
+                        if (fate_weapon = 1 && fate_points < 3){\
                         kind = rspick(up_five_g, 2);\
+                        fate_points ++;\
+                        }\
+                        else if (fate_weapon = 1 && fate_points == 3){\
+                        kind = up_five_g[0];\
+                        fate_points = 0;\
+                        }\
+                        else if (fate_weapon = 2 && fate_points < 3){\
+                        kind = rspick(up_five_g, 2);\
+                        fate_points ++;\
+                        }\
+                        else if (fate_weapon = 2 && fate_points == 3){\
+                        kind = up_five_g[1];\
+                        fate_points = 0;\
+                        }\
+                        else {\
+                        kind = rspick(up_five_g, 2);\
+                        }\
                         five_star_guarantee_number = 0;\
                     }\
                     else if (temp2 < (unsigned long long int) ULTRAPOS / 4 * 3) {\
                         type = 1;\
                         five_count_w++;\
+                        if (fate_weapon = 1 && fate_points < 3){\
                         kind = rspick(up_five_g, 2);\
+                        fate_points ++;\
+                        }\
+                        else if (fate_weapon = 1 && fate_points == 3){\
+                        kind = up_five_g[0];\
+                        fate_points = 0;\
+                        }\
+                        else if (fate_weapon = 2 && fate_points < 3){\
+                        kind = rspick(up_five_g, 2);\
+                        fate_points ++;\
+                        }\
+                        else if (fate_weapon = 2 && fate_points == 3){\
+                        kind = up_five_g[1];\
+                        fate_points = 0;\
+                        }\
+                        else {\
+                        kind = rspick(up_five_g, 2);\
+                        }\
                         five_star_guarantee_number = 0;\
                     }\
                     else {\
                         type = 2;\
                         five_count_w++;\
                         kind = rspick(nup_five_w, 10);\
+                        fate_points ++;\
                         if ((kind == five_check[0] || kind == five_check[1] || kind == five_check[2] || kind == five_check[3] || kind == five_check[4] || kind == five_check[5] || kind == five_check[6] || kind == five_check[7])) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;\
                     }\
                 }
@@ -498,6 +535,8 @@ int main() {
         is_noelle = 1,
         max_fives = 1,
         min_fives = 90,
+        fate_weapon = 0,
+        fate_points = 0,
         luck = 0,
         luckkind[10] = { 127, 127, 127, 127, 127, 127, 127, 127, 127, 127 },
         luckstar[10] = { 3, 3, 3, 3, 3, 3, 3, 3, 3, 3 },
@@ -571,11 +610,13 @@ int main() {
                 << "12: 陵薮市朝/20210428-20210518 (钟离, 烟绯, 诺艾尔, 迪奥娜)" << endl
                 << "13: 浪涌之瞬/20210518-20210608 (优菈, 辛焱, 行秋, 北斗)" << endl
                 << "14: 闪焰的驻足/20210609-20210629 (可莉, 砂糖, 菲谢尔, 芭芭拉)" << endl
-                << "15: 叶落风随/20210629-20210720 (枫原万叶, 罗莎莉亚, 班尼特, 雷泽)" << endl << endl;
+                << "15: 叶落风随/20210629-20210720 (枫原万叶, 罗莎莉亚, 班尼特, 雷泽)" << endl
+                << "16: 白鹭之庭/20210721- (神里绫华, , , )" << endl
+                << "17: 焰色天河/- (宵宫, 早柚, , )" << endl << endl;
             std::cin >> chosen_event;
             if (cin.fail()) { chosen_event = 0; std::cout << endl << "非法字符!" << endl; cin.clear(); cin.ignore(32767, '\n'); goto enter_chosen_event; }
             if (chosen_event == -1) { chosen_event = 0; std::cout << endl; goto enter_chosen_banner; }
-            if (chosen_event > 0 && chosen_event < 16 && chosen_event == (int)chosen_event) quit = 0; else { std::cout << endl << "无效活动类型!" << endl << endl; goto enter_chosen_event; }
+            if (chosen_event > 0 && chosen_event < 18 && chosen_event == (int)chosen_event) quit = 0; else { std::cout << endl << "无效活动类型!" << endl << endl; goto enter_chosen_event; }
         } break;
         case 2: {
             chosen_event = 0;
@@ -594,11 +635,15 @@ int main() {
                 << "11: 神铸赋形/20210428-20210518 (斫峰之刃, 尘世之锁, 笛剑, 千岩古剑, 千岩长枪, 昭心, 祭礼弓)" << endl
                 << "12: 神铸赋形/20210518-20210608 (松籁响起之时, 风鹰剑, 祭礼剑, 雨裁, 匣里灭辰, 祭礼残章, 弓藏)" << endl
                 << "13: 神铸赋形/20210609-20210629 (天空之傲, 四风原典, 幽夜华尔兹, 匣里龙吟, 钟剑, 西风长枪, 流浪乐章)" << endl
-                << "14: 神铸赋形/20210629-20210720 (苍古自由之誓, 天空之卷, 暗巷闪光, 暗巷的酒与诗, 暗巷猎手, 西风大剑, 匣里灭辰)" << endl << endl;
+                << "14: 神铸赋形/20210629-20210720 (苍古自由之誓, 天空之卷, 暗巷闪光, 暗巷的酒与诗, 暗巷猎手, 西风大剑, 匣里灭辰)" << endl
+                << "15: 神铸赋形/20210721- (雾切之回光, , , , , , )" << endl
+                << "16: 神铸赋形/- (飞雷之弦振, , , , , , )" << endl << endl;
             std::cin >> chosen_event;
+            fate_weapon = 0;
+            fate_points = 0;
             if (cin.fail()) { chosen_event = 0; std::cout << endl << "非法字符!" << endl; cin.clear(); cin.ignore(32767, '\n'); goto enter_chosen_event; }
             if (chosen_event == -1) { chosen_event = 0; std::cout << endl; goto enter_chosen_banner; }
-            if (chosen_event > 0 && chosen_event < 15 && chosen_event == (int)chosen_event) quit = 0; else { std::cout << endl << "无效活动类型!" << endl << endl; goto enter_chosen_event; }
+            if (chosen_event > 0 && chosen_event < 17 && chosen_event == (int)chosen_event) quit = 0; else { std::cout << endl << "无效活动类型!" << endl << endl; goto enter_chosen_event; }
         } break;
         case 3: {
             chosen_event = 0;
@@ -755,6 +800,24 @@ int main() {
             } break;
             case 15: {
                 up_five = 87;
+                size_nup_four_c = 15;
+                int tempg1[3] = { 16, 22, 29 };
+                memmove( up_four_g , tempg1 , sizeof(tempg1));
+                memmove( nup_four_c , nup_four_cg4 , sizeof(nup_four_cg4));
+                int tempg5[8] = { 16, 22, 29, 0, 0, 0, 0, 0 };
+                memmove( four_check , tempg5 , sizeof(tempg5));
+            } break;
+            case 16: {
+                up_five = 90;
+                size_nup_four_c = 15;
+                int tempg1[3] = { 16, 22, 29 };
+                memmove( up_four_g , tempg1 , sizeof(tempg1));
+                memmove( nup_four_c , nup_four_cg4 , sizeof(nup_four_cg4));
+                int tempg5[8] = { 16, 22, 29, 0, 0, 0, 0, 0 };
+                memmove( four_check , tempg5 , sizeof(tempg5));
+            } break;
+            case 17: {
+                up_five = 91;
                 size_nup_four_c = 15;
                 int tempg1[3] = { 16, 22, 29 };
                 memmove( up_four_g , tempg1 , sizeof(tempg1));
@@ -935,6 +998,30 @@ int main() {
                 int tempg7[8] = { 9, 0, 0, 0, 0, 0, 0, 0 };
                 memmove( five_check , tempg7, sizeof(tempg7));
             } break;
+            case 15: {
+                int tempg6[2] = { 98, 9 };
+                memmove( up_five_g , tempg6 , sizeof(tempg6));
+                size_nup_four_c = 15;
+                int tempg1[5] = { 83, 84, 85, 46, 42 };
+                memmove( up_four_g , tempg1, sizeof(tempg1));
+                memmove( nup_four_c , nup_four_cg4 , sizeof(nup_four_cg4));
+                int tempg5[8] = { 46, 42, 0, 0, 0, 0, 0, 0 };
+                memmove( four_check , tempg5 , sizeof(tempg5));
+                int tempg7[8] = { 9, 0, 0, 0, 0, 0, 0, 0 };
+                memmove( five_check , tempg7, sizeof(tempg7));
+            } break;
+            case 16: {
+                int tempg6[2] = { 99, 9 };
+                memmove( up_five_g , tempg6 , sizeof(tempg6));
+                size_nup_four_c = 15;
+                int tempg1[5] = { 83, 84, 85, 46, 42 };
+                memmove( up_four_g , tempg1, sizeof(tempg1));
+                memmove( nup_four_c , nup_four_cg4 , sizeof(nup_four_cg4));
+                int tempg5[8] = { 46, 42, 0, 0, 0, 0, 0, 0 };
+                memmove( four_check , tempg5 , sizeof(tempg5));
+                int tempg7[8] = { 9, 0, 0, 0, 0, 0, 0, 0 };
+                memmove( five_check , tempg7, sizeof(tempg7));
+            } break;
             default:break;
             }
         }
@@ -971,7 +1058,8 @@ int main() {
             << "10: 10发;" << endl 
             << "-2: 显示运气最佳的连续十发;" << endl 
             << "-3: 重置记录;" << endl 
-            << "-4: 打印开关" << endl << endl;
+            << "-4: 打印开关;" << endl 
+            << "-5: 神铸定轨" << endl << endl;
             std::cin >> wishes_number;
             if (cin.fail()) { wishes_number = 0; std::cout << endl << "非法字符!" << endl; cin.clear(); cin.ignore(32767, '\n'); goto enter_wishes_number; }
             std::cout << endl;
@@ -984,6 +1072,7 @@ int main() {
                     casesx( luckiestkind[templuck] )
                     std::cout << pname[luckiestkind[templuck] - 1] << endl;
                 }
+                wishes_number = 0;
                 goto enter_wishes_number;
             }
             else if (wishes_number == -3) {
@@ -1011,6 +1100,8 @@ int main() {
                 unmet4_w = 0;
                 unmet5_c = 0;
                 unmet5_w = 0;
+                fate_weapon = 0;
+                fate_points = 0;
                 for (int ini = 0; ini < 128; ini++) { pcount[ini] = 0; }
                 luck = 0;
                 for (int ini = 0; ini < 10; ini++) { lucklocation[ini] = (long long int) ini + 1; }
@@ -1031,6 +1122,23 @@ int main() {
                 if (y_print == 1) {y_print = 0; std::cout << "打印已关闭!" << endl;}
                 else {y_print = 1; std::cout << "打印已开启!" << endl;}
                 goto enter_wishes_number;
+            }
+            else if (wishes_number == -5) {
+                fate_weapon = 0;
+                if (chosen_banner == 2 || chosen_event > 14) {
+                        enter_fate_weapon:
+                        std::cout << "神铸定轨？" << endl
+                        << "1: 第一顺位武器；" << endl
+                        << "2: 第二顺位武器；" << endl
+                        << "0: 取消神铸定轨" << endl << endl;
+                        std::cin >> fate_weapon;
+                        if ( fate_weapon < 0 || fate_weapon > 2) {std::cout << "输入不合理!" << endl << endl; fate_weapon = 0; goto enter_fate_weapon;}
+                        if ( fate_weapon == 0) {wishes_number = 0; goto enter_wishes_number;}
+                }
+                else {
+                    wishes_number = 0; std::cout << "输入不合理!" << endl; goto enter_wishes_number;
+                }
+                wishes_number = 0;
             }
             else if (wishes_number < 0) { wishes_number = 0; std::cout << "输入不合理!" << endl; goto enter_wishes_number;}
             else {}
@@ -1088,7 +1196,7 @@ int main() {
                 }
             }
             else if (chosen_banner == 2) {
-                while (wishes_number > 0) {
+                    while (wishes_number > 0) {
                     unsigned long long int temp1 = generator() % ULTRAPOS;
                     unsigned long long int temp2 = generator() % ULTRAPOS;
                     int star = 0; //4-star or 5-star
@@ -1164,7 +1272,7 @@ int main() {
                         }
                     }
                     luckcpy()
-                }
+                    }
             }
             else if (chosen_banner == 3) {
                 while (wishes_number > 0) {
@@ -1328,19 +1436,29 @@ int main() {
                     << "连续非五星平均祈愿数:   " << ave_fives * 1.0 / five_count << endl
                     << "五星角色 : 五星武器 : 四星角色 : 四星武器   " << five_count_c << " : " << five_count_w << " : " << four_count_c << " : " << four_count_w << endl << endl;
             }
-            for (int iout = 0; iout < 15; iout++) { if (pcount[iout] > 0) std::cout << pname[iout] << "(" << pcount[iout] << ") "; }
+            for (int iout = 0; iout < 5; iout++) { if (pcount[iout] > 0) std::cout << pname[iout] << "(" << pcount[iout] << ") "; }
             for (int iout = 63; iout < 71; iout++) { if (pcount[iout] > 0) std::cout << pname[iout] << "(" << pcount[iout] << ") "; }
-            for (int iout = 72; iout < 79; iout++) { if (pcount[iout] > 0) std::cout << pname[iout] << "(" << pcount[iout] << ") "; }
+            if (pcount[72] > 0) std::cout << pname[72] << "(" << pcount[72] << ") ";
+            if (pcount[86] > 0) std::cout << pname[86] << "(" << pcount[86] << ") ";
+            if (pcount[89] > 0) std::cout << pname[89] << "(" << pcount[89] << ") ";
+            if (pcount[90] > 0) std::cout << pname[90] << "(" << pcount[90] << ") ";
+            for (int iout = 5; iout < 15; iout++) { if (pcount[iout] > 0) std::cout << pname[iout] << "(" << pcount[iout] << ") "; }
+            for (int iout = 73; iout < 79; iout++) { if (pcount[iout] > 0) std::cout << pname[iout] << "(" << pcount[iout] << ") "; }
             if (pcount[81] > 0) std::cout << pname[81] << "(" << pcount[81] << ") ";
-            for (int iout = 85; iout < 88; iout++) { if (pcount[iout] > 0) std::cout << pname[iout] << "(" << pcount[iout] << ") "; }
+            if (pcount[85] > 0) std::cout << pname[85] << "(" << pcount[85] << ") ";
+            if (pcount[87] > 0) std::cout << pname[87] << "(" << pcount[87] << ") ";
+            if (pcount[97] > 0) std::cout << pname[97] << "(" << pcount[97] << ") ";
+            if (pcount[98] > 0) std::cout << pname[98] << "(" << pcount[98] << ") ";
             std::cout << endl << endl;
             for (int iout = 15; iout < 32; iout++) { if (pcount[iout] > 0) std::cout << pname[iout] << "(" << pcount[iout] << ") "; }
             if (pcount[71] > 0) std::cout << pname[71] << "(" << pcount[71] << ") ";
+            if (pcount[91] > 0) std::cout << pname[91] << "(" << pcount[91] << ") ";
             for (int iout = 32; iout < 50; iout++) { if (pcount[iout] > 0) std::cout << pname[iout] << "(" << pcount[iout] << ") "; }
             if (pcount[79] > 0) std::cout << pname[79] << "(" << pcount[79] << ") ";
             if (pcount[80] > 0) std::cout << pname[80] << "(" << pcount[80] << ") ";
             for (int iout = 82; iout < 85; iout++) { if (pcount[iout] > 0) std::cout << pname[iout] << "(" << pcount[iout] << ") "; }
             if (pcount[88] > 0) std::cout << pname[88] << "(" << pcount[88] << ") ";
+            for (int iout = 92; iout < 97; iout++) { if (pcount[iout] > 0) std::cout << pname[iout] << "(" << pcount[iout] << ") "; }
             std::cout << endl << endl; auto elapsed = std::chrono::steady_clock::now() - start;
             unsigned long long int microseconds = std::chrono::duration_cast<std::chrono::microseconds>(elapsed).count();
             std::cout << microseconds * 1.0 / 1000000 << " 秒过去了。" << endl;
