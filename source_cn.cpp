@@ -1120,7 +1120,8 @@ int main() {
                         << "0: 取消神铸定轨" << endl << endl;
                         std::cin >> fate_weapon;
                         if ( fate_weapon < 0 || fate_weapon > 2) {std::cout << "输入不合理!" << endl << endl; fate_weapon = 0; goto enter_fate_weapon;}
-                        if ( fate_weapon == 0) {wishes_number = 0; goto enter_wishes_number;}
+                        wishes_number = 0;
+                        goto enter_wishes_number;
                 }
                 else {
                     wishes_number = 0; std::cout << "输入不合理!" << endl; goto enter_wishes_number;

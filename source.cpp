@@ -1120,7 +1120,8 @@ int main() {
                         << "0: Cancel and Reset" << endl << endl;
                         std::cin >> fate_weapon;
                         if ( fate_weapon < 0 || fate_weapon > 2) {std::cout << "Incorrect input!" << endl << endl; fate_weapon = 0; goto enter_fate_weapon;}
-                        if ( fate_weapon == 0) {wishes_number = 0; goto enter_wishes_number;}
+                        wishes_number = 0;
+                        goto enter_wishes_number;
                 }
                 else {
                     wishes_number = 0; std::cout << "Incorrect input!" << endl; goto enter_wishes_number;
