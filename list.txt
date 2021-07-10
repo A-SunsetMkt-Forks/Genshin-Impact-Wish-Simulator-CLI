@@ -96,8 +96,8 @@ switch (kind) {
                 case 95: std::cout << "!!****Kitain Cross Spear" << endl; break;
                 case 96: std::cout << "!!****Katsuragikiri Nagamasa" << endl; break;
                 case 97: std::cout << "!!****Hakushin Ring" << endl; break;
-                case 98: std::cout << "!!!!!*****Thundering Pulse" << endl; break;
-                case 99: std::cout << "!!!!!*****Mistsplitter Reforged" << endl; break;
+                case 98: std::cout << "!!!!!*****Mistsplitter Reforged" << endl; break;
+                case 99: std::cout << "!!!!!*****Thundering Pulse" << endl; break;
                 case 100: std::cout << "Placeholder" << endl; break;
                 case 101: std::cout << "Placeholder" << endl; break;
                 case 102: std::cout << "Placeholder" << endl; break;

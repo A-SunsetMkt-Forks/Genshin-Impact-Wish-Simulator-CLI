@@ -1038,13 +1038,13 @@ int main() {
         while (1) {
             if (quit == 1) goto full_quit;
             enter_wishes_number:
-            std::cout << endl << "抽几发?" << endl 
-            << "-1: 重新选择活动类型;" << endl 
-            << "1: 1发;" << endl 
-            << "10: 10发;" << endl 
-            << "-2: 显示运气最佳的连续十发;" << endl 
-            << "-3: 重置记录;" << endl 
-            << "-4: 打印开关;" << endl 
+            std::cout << endl << "抽几发?" << endl
+            << "-1: 重新选择活动类型;" << endl
+            << "1: 1发;" << endl
+            << "10: 10发;" << endl
+            << "-2: 显示运气最佳的连续十发;" << endl
+            << "-3: 重置记录;" << endl
+            << "-4: 打印开关;" << endl
             << "-5: 神铸定轨" << endl << endl;
             std::cin >> wishes_number;
             if (cin.fail()) { wishes_number = 0; std::cout << endl << "非法字符!" << endl; cin.clear(); cin.ignore(32767, '\n'); goto enter_wishes_number; }
@@ -1107,15 +1107,16 @@ int main() {
             else if (wishes_number == -4) {
                 if (y_print == 1) {y_print = 0; std::cout << "打印已关闭!" << endl;}
                 else {y_print = 1; std::cout << "打印已开启!" << endl;}
+                wishes_number = 0;
                 goto enter_wishes_number;
             }
             else if (wishes_number == -5) {
                 fate_weapon = 0;
                 if (chosen_banner == 2 || chosen_event > 14) {
                         enter_fate_weapon:
-                        std::cout << "神铸定轨？" << endl
-                        << "1: 第一顺位武器；" << endl
-                        << "2: 第二顺位武器；" << endl
+                        std::cout << "神铸定轨?" << endl
+                        << "1: 第一顺位武器;" << endl
+                        << "2: 第二顺位武器;" << endl
                         << "0: 取消神铸定轨" << endl << endl;
                         std::cin >> fate_weapon;
                         if ( fate_weapon < 0 || fate_weapon > 2) {std::cout << "输入不合理!" << endl << endl; fate_weapon = 0; goto enter_fate_weapon;}
