@@ -148,48 +148,34 @@ constexpr auto ULTRAPOS = 437580000;
                     if (five_star_guarantee_number == 1) {\
                         type = 1;\
                         five_count_w++;\
-                        if (fate_weapon == 1 && fate_points < 3){\
+                        if (fate_weapon == 0){\
                         kind = rspick(up_five_g, 2);\
                         fate_points ++;\
                         }\
-                        else if (fate_weapon == 1 && fate_points == 3){\
-                        kind = up_five_g[0];\
-                        fate_points = 0;\
-                        }\
-                        else if (fate_weapon == 2 && fate_points < 3){\
+                        else if (fate_points < 3){\
                         kind = rspick(up_five_g, 2);\
                         fate_points ++;\
-                        }\
-                        else if (fate_weapon == 2 && fate_points == 3){\
-                        kind = up_five_g[1];\
-                        fate_points = 0;\
                         }\
                         else {\
-                        kind = rspick(up_five_g, 2);\
+                        kind = up_five_g[fate_weapon - 1];\
+                        fate_points = 0;\
                         }\
                         five_star_guarantee_number = 0;\
                     }\
                     else if (temp2 < (unsigned long long int) ULTRAPOS / 4 * 3) {\
                         type = 1;\
                         five_count_w++;\
-                        if (fate_weapon == 1 && fate_points < 3){\
+                        if (fate_weapon == 0){\
                         kind = rspick(up_five_g, 2);\
                         fate_points ++;\
                         }\
-                        else if (fate_weapon == 1 && fate_points == 3){\
-                        kind = up_five_g[0];\
-                        fate_points = 0;\
-                        }\
-                        else if (fate_weapon == 2 && fate_points < 3){\
+                        else if (fate_points < 3){\
                         kind = rspick(up_five_g, 2);\
                         fate_points ++;\
-                        }\
-                        else if (fate_weapon == 2 && fate_points == 3){\
-                        kind = up_five_g[1];\
-                        fate_points = 0;\
                         }\
                         else {\
-                        kind = rspick(up_five_g, 2);\
+                        kind = up_five_g[fate_weapon - 1];\
+                        fate_points = 0;\
                         }\
                         five_star_guarantee_number = 0;\
                     }\
