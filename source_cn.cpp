@@ -969,6 +969,7 @@ int main() {
                     enter_fate_weapon:
                     std::cout << S_67 << endl << S_68 << endl << S_69 << endl << S_70 << endl << S_71 << endl << endl;
                     std::cin >> fate_weapon;
+                    if (cin.fail()) { fate_weapon = 0; std::cout << endl << S_11 << endl; cin.clear(); cin.ignore(32767, '\n'); goto enter_fate_weapon; }
                     if ( fate_weapon == -1 ) {fate_weapon = 0; goto enter_wishes_number;}
                     else if ( fate_weapon < -1 || fate_weapon > 2) {std::cout << endl << S_72 << endl << endl; fate_weapon = 0; goto enter_fate_weapon;}
                     wishes_number = 0;

@@ -3,6 +3,7 @@
 #include <random>
 #include <string>
 #include <cstring>
+#include "en.h"
 constexpr auto ULTRAPOS = 437580000;
 #define casesx( kind ){   if (kind < 16 ) { std::cout << "!!!!!*****"; }\
                     else if (kind < 51 ) { std::cout << "!!****"; }\
