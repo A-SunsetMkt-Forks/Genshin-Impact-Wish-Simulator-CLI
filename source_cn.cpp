@@ -145,38 +145,22 @@ constexpr auto ULTRAPOS = 437580000;
                     if (five_star_assurance_number > max_fives) { max_fives = five_star_assurance_number; max_fivesth = five_count; max_fivecount = countx; }\
                     if (five_star_assurance_number < min_fives) { min_fives = five_star_assurance_number; min_fivesth = five_count; min_fivecount = countx; }\
                     five_star_assurance_number = 0;\
-                    if (five_star_guarantee_number == 1) {\
-                        type = 1;\
-                        five_count_w++;\
-                        if (fate_weapon == 0){\
-                        kind = rspick(up_five_g, 2);\
-                        fate_points ++;\
-                        }\
-                        else if (fate_points < 2){\
-                        kind = rspick(up_five_g, 2);\
-                        fate_points ++;\
-                        }\
-                        else {\
+                    if (fate_weapon != 0 && fate_points == 2) {\
                         kind = up_five_g[fate_weapon - 1];\
                         fate_points = 0;\
-                        }\
+                    }\
+                    else if (five_star_guarantee_number == 1) {\
+                        type = 1;\
+                        five_count_w++;\
+                        kind = rspick(up_five_g, 2);\
+                        fate_points ++;\
                         five_star_guarantee_number = 0;\
                     }\
                     else if (temp2 < (unsigned long long int) ULTRAPOS / 4 * 3) {\
                         type = 1;\
                         five_count_w++;\
-                        if (fate_weapon == 0){\
                         kind = rspick(up_five_g, 2);\
                         fate_points ++;\
-                        }\
-                        else if (fate_points < 2){\
-                        kind = rspick(up_five_g, 2);\
-                        fate_points ++;\
-                        }\
-                        else {\
-                        kind = up_five_g[fate_weapon - 1];\
-                        fate_points = 0;\
-                        }\
                         five_star_guarantee_number = 0;\
                     }\
                     else {\
