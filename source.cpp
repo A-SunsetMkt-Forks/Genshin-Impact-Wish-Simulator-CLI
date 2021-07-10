@@ -1031,8 +1031,9 @@ int main() {
             << "10: 10 Wishes;" << endl
             << "-2: Show Luckiest 10 Pulls (a succession of);" << endl
             << "-3: Reset records;" << endl
-            << "-4: Print or not" << endl
-            << "-5: Epitomized Path" << endl << endl;
+            << "-4: Print or not" << endl;
+            if (chosen_banner == 2 && chosen_event > 14) {std::cout << "-5: Epitomized Path" << endl; }
+            std::cout << endl;
             std::cin >> wishes_number;
             if (cin.fail()) {wishes_number = 0; std::cout << endl << "Character(s) cannot be read!" << endl; cin.clear(); cin.ignore(32767,'\n'); goto enter_wishes_number;}
             std::cout << endl;
@@ -1098,21 +1099,15 @@ int main() {
             else if (wishes_number == -5) {
                 fate_weapon = 0;
                 fate_points = 0;
-                if (chosen_banner == 2 && chosen_event > 14) {
-                        enter_fate_weapon:
-                        std::cout << "Epitomized Path?" << endl
-                        << "1: The first weapon in order;" << endl
-                        << "2: The second weapon in order;" << endl
-                        << "0: Cancel and Reset" << endl << endl;
-                        std::cin >> fate_weapon;
-                        if ( fate_weapon < 0 || fate_weapon > 2) {std::cout << "Incorrect input!" << endl << endl; fate_weapon = 0; goto enter_fate_weapon;}
-                        wishes_number = 0;
-                        goto enter_wishes_number;
-                }
-                else {
-                    wishes_number = 0; std::cout << "Incorrect input!" << endl; goto enter_wishes_number;
-                }
+                enter_fate_weapon:
+                std::cout << "Epitomized Path?" << endl
+                << "1: The first weapon in order;" << endl
+                << "2: The second weapon in order;" << endl
+                << "0: Cancel and Reset" << endl << endl;
+                std::cin >> fate_weapon;
+                if ( fate_weapon < 0 || fate_weapon > 2) {std::cout << "Incorrect input!" << endl << endl; fate_weapon = 0; goto enter_fate_weapon;}
                 wishes_number = 0;
+                goto enter_wishes_number;
             }
             else if (wishes_number < 0) { wishes_number = 0; std::cout << "Incorrect input!" << endl; goto enter_wishes_number;}
             else {}
