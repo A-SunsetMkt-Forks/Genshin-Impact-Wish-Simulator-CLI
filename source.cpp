@@ -1032,7 +1032,8 @@ int main() {
             << "-2: Show Luckiest 10 Pulls (a succession of);" << endl
             << "-3: Reset records;" << endl
             << "-4: Print or not";
-            if (chosen_banner == 2 && chosen_event > 14) {std::cout << ";" << "endl" << "-5: Epitomized Path" << endl; }
+            if (chosen_banner == 2 && chosen_event > 14) {std::cout << ";" << endl << "-5: Epitomized Path" << endl; }
+            else {std::cout << endl;}
             std::cout << endl;
             std::cin >> wishes_number;
             if (cin.fail()) {wishes_number = 0; std::cout << endl << "Character(s) cannot be read!" << endl; cin.clear(); cin.ignore(32767,'\n'); goto enter_wishes_number;}
