@@ -152,7 +152,7 @@ constexpr auto ULTRAPOS = 437580000;
                         kind = rspick(up_five_g, 2);\
                         fate_points ++;\
                         }\
-                        else if (fate_points < 3){\
+                        else if (fate_points < 2){\
                         kind = rspick(up_five_g, 2);\
                         fate_points ++;\
                         }\
@@ -169,7 +169,7 @@ constexpr auto ULTRAPOS = 437580000;
                         kind = rspick(up_five_g, 2);\
                         fate_points ++;\
                         }\
-                        else if (fate_points < 3){\
+                        else if (fate_points < 2){\
                         kind = rspick(up_five_g, 2);\
                         fate_points ++;\
                         }\
