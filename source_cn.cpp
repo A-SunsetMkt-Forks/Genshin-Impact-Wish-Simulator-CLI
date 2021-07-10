@@ -1097,6 +1097,7 @@ int main() {
             }
             else if (wishes_number == -5) {
                 fate_weapon = 0;
+                fate_points = 0;
                 if (chosen_banner == 2 && chosen_event > 14) {
                         enter_fate_weapon:
                         std::cout << "神铸定轨?" << endl
