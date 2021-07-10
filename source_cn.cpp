@@ -1100,17 +1100,23 @@ int main() {
             else if (wishes_number == -5) {
                 fate_weapon = 0;
                 fate_points = 0;
-                enter_fate_weapon:
-                std::cout << "神铸定轨?" << endl
-                << "-1: 返回;" << endl
-                << "1: 第一顺位武器;" << endl
-                << "2: 第二顺位武器;" << endl
-                << "0: 取消神铸定轨" << endl << endl;
-                std::cin >> fate_weapon;
-                if ( fate_weapon == -1 ) {fate_weapon = 0; goto enter_wishes_number;}
-                else if ( fate_weapon < -1 || fate_weapon > 2) {std::cout << endl << "输入不合理!" << endl << endl; fate_weapon = 0; goto enter_fate_weapon;}
+                if (chosen_banner == 2 && chosen_event > 14) {
+                    enter_fate_weapon:
+                    std::cout << "神铸定轨?" << endl
+                    << "-1: 返回;" << endl
+                    << "1: 第一顺位武器;" << endl
+                    << "2: 第二顺位武器;" << endl
+                    << "0: 取消神铸定轨" << endl << endl;
+                    std::cin >> fate_weapon;
+                    if ( fate_weapon == -1 ) {fate_weapon = 0; goto enter_wishes_number;}
+                    else if ( fate_weapon < -1 || fate_weapon > 2) {std::cout << endl << "输入不合理!" << endl << endl; fate_weapon = 0; goto enter_fate_weapon;}
+                    wishes_number = 0;
+                    goto enter_wishes_number;
+                }
+                else {
+                    wishes_number = 0; std::cout << "输入不合理!" << endl; goto enter_wishes_number;
+                }
                 wishes_number = 0;
-                goto enter_wishes_number;
             }
             else if (wishes_number < 0) { wishes_number = 0; std::cout << "输入不合理!" << endl; goto enter_wishes_number;}
             else {}
