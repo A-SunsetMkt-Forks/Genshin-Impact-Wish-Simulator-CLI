@@ -1112,7 +1112,7 @@ int main() {
             }
             else if (wishes_number == -5) {
                 fate_weapon = 0;
-                if (chosen_banner == 2 || chosen_event > 14) {
+                if (chosen_banner == 2 && chosen_event > 14) {
                         enter_fate_weapon:
                         std::cout << "Epitomized Path?" << endl
                         << "1: The first weapon in order;" << endl
