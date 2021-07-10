@@ -1031,8 +1031,8 @@ int main() {
             << "10: 10发;" << endl
             << "-2: 显示运气最佳的连续十发;" << endl
             << "-3: 重置记录;" << endl
-            << "-4: 打印开关;" << endl;
-            if (chosen_banner == 2 && chosen_event > 14) {std::cout << "-5: 神铸定轨" << endl; }
+            << "-4: 打印开关";
+            if (chosen_banner == 2 && chosen_event > 14) {std::cout << ";" << "endl" << "-5: 神铸定轨" << endl; }
             std::cout << endl;
             std::cin >> wishes_number;
             if (cin.fail()) { wishes_number = 0; std::cout << endl << "非法字符!" << endl; cin.clear(); cin.ignore(32767, '\n'); goto enter_wishes_number; }
