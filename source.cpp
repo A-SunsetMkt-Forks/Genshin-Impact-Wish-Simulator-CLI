@@ -148,6 +148,7 @@ constexpr auto ULTRAPOS = 437580000;
                     if (fate_weapon != 0 && fate_points == 2) {\
                         kind = up_five_g[fate_weapon - 1];\
                         fate_points = 0;\
+                        five_star_guarantee_number = 0;\
                     }\
                     else if (five_star_guarantee_number == 1) {\
                         type = 1;\
