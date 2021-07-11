@@ -3,15 +3,15 @@
 #include <random>
 #include <string>
 #include <cstring>
-#include "cn.h" //include the language head file
-constexpr auto ULTRAPOS = 437580000;
+#include "cn.h" //include the language header file
+constexpr auto ULTRAPOS = 437580000; //total number that's for integral computing
 #define casesx( kind ){   if (kind < 16 ) { std::cout << "!!!!!*****"; }\
                     else if (kind < 51 ) { std::cout << "!!****"; }\
                     else if (kind < 64 ) { std::cout << "***"; }\
                     else if (kind == 72 || kind == 80 || kind == 81 || kind == 83 || kind == 84 || kind == 85 || kind == 89 || kind == 92 || kind == 93 || kind == 94 || kind == 95 || kind == 96 || kind == 97 ) { std::cout << "!!****"; }\
                     else if (kind < 100 ) { std::cout << "!!!!!*****"; }\
                     else {}\
-                }
+                } // cout stars prefix
 #define output_string() {if (y_print == 1) {std::cout << countx + 1 << "(" << five_star_assurance_number << ") ";\
                     casesx( kind )\
                     std::cout << pname[kind - 1] << endl; }\
@@ -20,7 +20,7 @@ constexpr auto ULTRAPOS = 437580000;
                     countx++;\
                     five_star_assurance_number++;\
                     four_star_assurance_number++;\
-                    }
+                    } // cout what have come home
 #define luckcpy() {if (countx == 10) {\
                         luckiest = luck;\
                         for (int templuck = 0; templuck < 10; templuck++) {\
@@ -37,7 +37,7 @@ constexpr auto ULTRAPOS = 437580000;
                             luckiestkind[templuck] = luckkind[templuck];\
                         }\
                     }\
-                }
+                } // snapshot the luckiest moment
 #define luckget() {for (int templuck = 0; templuck < 9; templuck++) {\
                         lucklocation[templuck] = lucklocation[templuck + 1];\
                         lucksublocation[templuck] = lucksublocation[templuck + 1];\
@@ -51,7 +51,7 @@ constexpr auto ULTRAPOS = 437580000;
                     luckstar[9] = star;\
                     luck = 0;\
                     lucktype[9] = type;\
-                }
+                } // get the recorded luckiest
 #define I_5() {star = 5;\
                 five_count++;\
                 ave_fives += five_star_assurance_number;\
@@ -71,7 +71,7 @@ constexpr auto ULTRAPOS = 437580000;
                     kind = rspick(nup_five_c, 5);\
                     if (five_check[0] == 1) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;\
                 }\
-            }
+            } // 5-star kind settler for banner I
 #define I_4() {star = 4;\
                 four_count++;\
                 four_star_assurance_number = 0;\
@@ -139,7 +139,7 @@ constexpr auto ULTRAPOS = 437580000;
                         }\
                     }\
                 }\
-            }
+            } // 4-star kind settler for banner I
 #define II_5() {star = 5;\
                     five_count++;\
                     ave_fives += five_star_assurance_number;\
@@ -174,7 +174,7 @@ constexpr auto ULTRAPOS = 437580000;
                         fate_points ++;\
                         if ((kind == five_check[0] || kind == five_check[1] || kind == five_check[2] || kind == five_check[3] || kind == five_check[4] || kind == five_check[5] || kind == five_check[6] || kind == five_check[7])) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;\
                     }\
-                }
+                } // 5-star kind settler for banner II
 #define II_4() {star = 4;\
                 four_count++;\
                 four_star_assurance_number = 0;\
@@ -242,7 +242,7 @@ constexpr auto ULTRAPOS = 437580000;
                             }\
                         }\
                     }\
-                }
+                } // 4-star kind settler for banner II
 #define III_5() {star = 5;\
                 five_count++;\
                 ave_fives += five_star_assurance_number;\
@@ -291,7 +291,7 @@ constexpr auto ULTRAPOS = 437580000;
                         kind = rspick(nup_five_c, 5);\
                     }\
                 }\
-            }
+            } // 5-star kind settler for banner III
 #define III_4() {star = 4;\
                 four_count++;\
                 four_star_assurance_number = 0;\
@@ -337,15 +337,16 @@ constexpr auto ULTRAPOS = 437580000;
                         kind = rspick(nup_four_c, size_nup_four_c);\
                     }\
                 }\
-            }
+            } // 4-star kind settler for banner III
 #define Tri() {star = 3;\
                 type = 2;\
                 kind = rspick(three_g, 13);\
-                }
+                } // 3-star kind settler for all banners
 using namespace std;
 
 unsigned long long int seed = (unsigned long long int) std::chrono::high_resolution_clock::now().time_since_epoch().count();
 std::mt19937_64 generator(seed);
+// random set
 
 string pname[128] = {C_0, C_1, C_2, C_3, C_4, C_5, C_6, C_7, C_8, C_9, C_10, C_11, C_12, C_13, C_14, C_15, C_16, C_17, C_18, C_19, C_20,
                 C_21, C_22, C_23, C_24, C_25, C_26, C_27, C_28, C_29, C_30, C_31, C_32, C_33, C_34, C_35, C_36, C_37, C_38, C_39, C_40,
@@ -382,6 +383,7 @@ string pname[128] = {C_0, C_1, C_2, C_3, C_4, C_5, C_6, C_7, C_8, C_9, C_10, C_1
                 "Placeholder",
                 "Placeholder",
 };
+// names of the items
 
 int rspick(int* kindx, int sizekind) {
     int kindout = kindx[1];
@@ -395,6 +397,7 @@ int rspick(int* kindx, int sizekind) {
     }
     return kindout;
 }
+// randomly pick an element among kindx which size is sizekind
 
 int main() {
     std::cout << S_1 << endl << S_2 << endl << S_3 << endl << S_4 << endl << endl;
@@ -513,6 +516,7 @@ int main() {
             if (chosen_event == 1 && chosen_event == (int)chosen_event) quit = 0; else { std::cout << endl << S_31 << endl << endl; goto enter_chosen_event; } } break;
         default: {chosen_banner = 0; chosen_event = 0; quit = 1; std::cout << S_53 << endl << endl; goto enter_chosen_banner; }
         }
+        // choose event
         if (chosen_banner == 1) {
             switch (chosen_event) {
             case 1: {
@@ -893,6 +897,7 @@ int main() {
         else {
             memmove( nup_four_c , nup_four_cg1 , sizeof(nup_four_cg1));
         }
+        // set banner
         while (1) {
             if (quit == 1) goto full_quit;
             enter_wishes_number:
@@ -1264,6 +1269,7 @@ int main() {
                     luckcpy()
                 }
             }
+            // real work
             if (five_count == 0) {
                 std::cout << endl << S_73 << countx << S_74 << endl
                     << S_75 << five_count << "  " << five_count * 100.0 / countx << "%" << endl
@@ -1305,6 +1311,7 @@ int main() {
             std::cout << endl << endl; auto elapsed = std::chrono::steady_clock::now() - start;
             unsigned long long int microseconds = std::chrono::duration_cast<std::chrono::microseconds>(elapsed).count();
             std::cout << microseconds * 1.0 / 1000000 << S_84 << endl;
+            // a bunch of output of statistics
             //if (chosen_banner == 4 && chosen_event == 1 && count == 20) goto full_quit;
         }
     }
