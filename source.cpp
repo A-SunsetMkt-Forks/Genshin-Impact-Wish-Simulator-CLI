@@ -3,7 +3,7 @@
 #include <random>
 #include <string>
 #include <cstring>
-#include "cn.h"
+#include "cn.h" //include the language head file
 constexpr auto ULTRAPOS = 437580000;
 #define casesx( kind ){   if (kind < 16 ) { std::cout << "!!!!!*****"; }\
                     else if (kind < 51 ) { std::cout << "!!****"; }\
@@ -967,7 +967,10 @@ int main() {
                 fate_points = 0;
                 if (chosen_banner == 2 && chosen_event > 14) {
                     enter_fate_weapon:
-                    std::cout << S_67 << endl << S_68 << endl << S_69 << endl << S_70 << endl << S_71 << endl << endl;
+                    std::cout << S_67 << endl << S_68 << endl
+                    << S_69 << " ( " << pname[up_five_g[0]-1] << " ) " << endl
+                    << S_70 << " ( " << pname[up_five_g[1]-1] << " ) " << endl
+                    << S_71 << endl << endl;
                     std::cin >> fate_weapon;
                     if (cin.fail()) { fate_weapon = 0; std::cout << endl << S_11 << endl; cin.clear(); cin.ignore(32767, '\n'); goto enter_fate_weapon; }
                     if ( fate_weapon == -1 ) {fate_weapon = 0; goto enter_wishes_number;}
