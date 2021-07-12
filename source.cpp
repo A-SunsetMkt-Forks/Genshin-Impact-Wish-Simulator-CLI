@@ -175,23 +175,23 @@ constexpr auto ULTRAPOS = 437580000; //total number that's for integral computin
                         if ((kind == five_check[0] || kind == five_check[1] || kind == five_check[2] || kind == five_check[3] || kind == five_check[4] || kind == five_check[5] || kind == five_check[6] || kind == five_check[7])) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;\
                     }\
                 } // 5-star kind settler for banner II
-#define II_4() {star = 4;\
-                four_count++;\
-                four_star_assurance_number = 0;\
-                if (four_star_guarantee_number == 1) {\
-                    type = 1;\
-                    four_count_w++;\
-                    unmet4_c = 0;\
-                    kind = rspick(up_four_g, 5);\
-                    four_star_guarantee_number = 0;\
-                }\
-                else if (temp2 < (unsigned long long int) ULTRAPOS / 4 * 3) {\
-                    type = 1;\
-                    four_count_w++;\
-                    unmet4_c = 0;\
-                    kind = rspick(up_four_g, 5);\
-                    four_star_guarantee_number = 0;\
-                }\
+#define II_4() {    star = 4;\
+                    four_count++;\
+                    four_star_assurance_number = 0;\
+                    if (four_star_guarantee_number == 1) {\
+                        type = 1;\
+                        four_count_w++;\
+                        unmet4_w = 0;\
+                        kind = rspick(up_four_g, 5);\
+                        four_star_guarantee_number = 0;\
+                    }\
+                    else if (temp2 < (unsigned long long int) ULTRAPOS / 4 * 3) {\
+                        type = 1;\
+                        four_count_w++;\
+                        unmet4_w = 0;\
+                        kind = rspick(up_four_g, 5);\
+                        four_star_guarantee_number = 0;\
+                    }\
                     else {\
                         if (unmet4_c < 15 && unmet4_w < 15) {\
                             if (temp2 > (unsigned long long int) 7 * ULTRAPOS / 8 - 1) {\
