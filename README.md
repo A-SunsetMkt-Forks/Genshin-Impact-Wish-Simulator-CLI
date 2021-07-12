@@ -27,7 +27,7 @@ I Character Event Wish\
 13: Born of Ocean Swell/20210518-20210608 (EUla, Xinyan, Xingqiu, Beidou)\
 14: Sparkling Steps/20210609-20210629 (Klee, Sucrose, Fischl, Barbara)\
 15: Leaves in the Wind/20210629-20210720 (Kaedehara Kazuha, Rosaria, Bennett, Razor)\
-16: The Heron's Court/20210721- (Kamisato Ayaka, Yanfei, Ningguang, Chongyun)\
+16: The Heron's Court/20210721- (Kamisato Ayaka, Yanfei, Ningguang, Chongyun)
 
 II Weapon Event Wish\
 1: Epitome Invocation/20200928-20201018 (Aquila Favonia, Amos' Bow, The Flute, The Bell, The Widsith, The Stringless, Favonius Lance)\
