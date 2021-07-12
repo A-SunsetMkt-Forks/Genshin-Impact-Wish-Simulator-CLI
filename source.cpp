@@ -658,19 +658,19 @@ int main() {
             case 16: {
                 up_five = 90;
                 size_nup_four_c = 15;
-                int tempg1[3] = { 16, 22, 29 };
+                int tempg1[3] = { 72, 24, 20 };
                 memmove( up_four_g , tempg1 , sizeof(tempg1));
                 memmove( nup_four_c , nup_four_cg4 , sizeof(nup_four_cg4));
-                int tempg5[8] = { 16, 22, 29, 0, 0, 0, 0, 0 };
+                int tempg5[8] = { 72, 24, 20, 0, 0, 0, 0, 0 };
                 memmove( four_check , tempg5 , sizeof(tempg5));
             } break;
             case 17: {
                 up_five = 91;
                 size_nup_four_c = 15;
-                int tempg1[3] = { 16, 22, 29 };
+                int tempg1[3] = { 92, 22, 29 };
                 memmove( up_four_g , tempg1 , sizeof(tempg1));
                 memmove( nup_four_c , nup_four_cg4 , sizeof(nup_four_cg4));
-                int tempg5[8] = { 16, 22, 29, 0, 0, 0, 0, 0 };
+                int tempg5[8] = { 22, 29, 0, 0, 0, 0, 0, 0 };
                 memmove( four_check , tempg5 , sizeof(tempg5));
             } break;
             default:break;
