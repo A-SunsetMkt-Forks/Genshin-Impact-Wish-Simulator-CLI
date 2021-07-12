@@ -44,7 +44,7 @@
 #define S_43 "12: Epitome Invocation/20210518-20210608 (Song of Broken Pines, Aquila Favonia, Sacrificial Sword, Rainslasher, Dragon's Bane, Sacrificial Fragments, Rust)"
 #define S_44 "13: Epitome Invocation/20210609-20210629 (Skyward Pride, Lost Prayer to the Sacred Winds, Mitternachts Waltz, Lion's Roar, The Bell, Favonius Lance, The Widsith)"
 #define S_45 "14: Epitome Invocation/20210629-20210720 (Freedom-Sworn, Skyward Atlas, The Alley Flash, Wine and Song, Alley Hunter, Favonius Greatsword, Dragon's Bane)"
-#define S_46 "(test)15: Epitome Invocation/20210721- (Mistsplitter Reforged, , , , , , )"
+#define S_46 "(test)15: Epitome Invocation/20210721- (Mistsplitter Reforged, Skyward Spine, , , , , )"
 #define S_47 "(test)16: Epitome Invocation/- (Thundering Pulse, , , , , , )"
 #define S_48 "1: Wanderlust Invocation/20200928-20201222 (Released)"
 #define S_49 "2: Wanderlust Invocation/20201223-20210427 (Adds Diona and Xinyan)"
