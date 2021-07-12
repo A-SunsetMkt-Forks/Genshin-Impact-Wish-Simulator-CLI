@@ -661,7 +661,7 @@ int main() {
                 int tempg1[3] = { 72, 24, 20 };
                 memmove( up_four_g , tempg1 , sizeof(tempg1));
                 memmove( nup_four_c , nup_four_cg4 , sizeof(nup_four_cg4));
-                int tempg5[8] = { 72, 24, 20, 0, 0, 0, 0, 0 };
+                int tempg5[8] = { 24, 20, 0, 0, 0, 0, 0, 0 };
                 memmove( four_check , tempg5 , sizeof(tempg5));
             } break;
             case 17: {
