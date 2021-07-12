@@ -467,7 +467,7 @@ int main() {
         std::cout << S_5 << endl;
         std::cout << S_6 << endl << S_7 << endl << S_8 << endl << S_9 << endl << S_10 << endl << endl;
         std::cin >> chosen_banner;
-        if (cin.fail()) { chosen_banner = 0; std::cout << endl << S_11 << endl; cin.clear(); cin.ignore(32767, '\n'); goto enter_chosen_banner; }
+        if (cin.fail()) { chosen_banner = 0; std::cout << endl << S_11 << endl << endl; cin.clear(); cin.ignore(32767, '\n'); goto enter_chosen_banner; }
         enter_chosen_event:
         switch (chosen_banner) {
         case -1: goto full_quit;
