@@ -1,4 +1,4 @@
-### Genshin-Impact-Wish-Simulator-CLI
+﻿### Genshin-Impact-Wish-Simulator-CLI
 [![License](https://img.shields.io/badge/Licence-MIT-blue.svg)](https://github.com/Jirehlov/GenshinImpactWishSimulatorCLI/blob/master/LICENSE)
 
 ## English

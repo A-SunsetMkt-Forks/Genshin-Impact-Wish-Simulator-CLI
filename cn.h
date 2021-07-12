@@ -1,4 +1,4 @@
-#ifndef CN_H
+﻿#ifndef CN_H
 #define S_1 "原神祈愿模拟器（命令行）V2.0.2"
 #define S_2 "作者: Jirehlov Research"
 #define S_3 "开源于Github: Jirehlov/GenshinImpactWishSimulatorCLI"
