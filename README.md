@@ -26,7 +26,8 @@ I Character Event Wish\
 12: Gentry of Hermitage/20210428-20210518 (Zhongli, Yanfei, Noelle, Diona)\
 13: Born of Ocean Swell/20210518-20210608 (EUla, Xinyan, Xingqiu, Beidou)\
 14: Sparkling Steps/20210609-20210629 (Klee, Sucrose, Fischl, Barbara)\
-15: Leaves in the Wind/20210629-20210720 (Kaedehara Kazuha, Rosaria, Bennett, Razor)
+15: Leaves in the Wind/20210629-20210720 (Kaedehara Kazuha, Rosaria, Bennett, Razor)\
+16: The Heron's Court/20210721- (Kamisato Ayaka, Yanfei, Ningguang, Chongyun)\
 
 II Weapon Event Wish\
 1: Epitome Invocation/20200928-20201018 (Aquila Favonia, Amos' Bow, The Flute, The Bell, The Widsith, The Stringless, Favonius Lance)\
@@ -82,7 +83,8 @@ This simulator includes no hidden possibilities.
 12: 陵薮市朝/20210428-20210518 (钟离, 烟绯, 诺艾尔, 迪奥娜)\
 13: 浪涌之瞬/20210518-20210608 (优菈, 辛焱, 行秋, 北斗)\
 14: 闪焰的驻足/20210608-20210629 (可莉, 砂糖, 菲谢尔, 芭芭拉)\
-15: 叶落风随/20210629-20210720 (枫原万叶, 罗莎莉亚, 班尼特, 雷泽)
+15: 叶落风随/20210629-20210720 (枫原万叶, 罗莎莉亚, 班尼特, 雷泽)\
+16: 白鹭之庭/20210721- (神里绫华, 烟绯, 凝光, 重云)
 
 二、武器活动祈愿\
 1: 神铸赋形/20200928-20201018 (风鹰剑, 阿莫斯之弓, 笛剑, 钟剑, 流浪乐章, 绝弦, 西风长枪)\
