@@ -1,7 +1,7 @@
 ﻿#ifndef EN_H
 #define S_1 "WELCOME TO GENSHIN IMPACT WISH SIMULATOR CLI V2.0.3"
 #define S_2 "by Jirehlov Research"
-#define S_3 "Source code available on Github: Jirehlov/GenshinImpactWishSimulatorCLI"
+#define S_3 "Source code available on GitHub: Jirehlov/GenshinImpactWishSimulatorCLI"
 #define S_4 "MIT LICENSE"
 #define S_5 "Choose Your Wishes (Banners):"
 #define S_6 "-1: Quit;"
