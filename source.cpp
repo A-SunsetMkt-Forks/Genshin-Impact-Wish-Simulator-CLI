@@ -5,11 +5,11 @@
 #include <cstring>
 #include "cn.h" //include the language header file
 constexpr auto ULTRAPOS = 437580000; //total number that's for integral computing
-#define casesx( kind ){   if (kind < 16 ) { std::cout << "!!!!!*****"; }\
-                    else if (kind < 51 ) { std::cout << "!!****"; }\
-                    else if (kind < 64 ) { std::cout << "***"; }\
-                    else if (kind == 72 || kind == 80 || kind == 81 || kind == 83 || kind == 84 || kind == 85 || kind == 89 || kind == 92 || kind == 93 || kind == 94 || kind == 95 || kind == 96 || kind == 97 ) { std::cout << "!!****"; }\
-                    else if (kind < 100 ) { std::cout << "!!!!!*****"; }\
+#define casesx( kind ){   if ((kind) < 16 ) { std::cout << "!!!!!*****"; }\
+                    else if ((kind) < 51 ) { std::cout << "!!****"; }\
+                    else if ((kind) < 64 ) { std::cout << "***"; }\
+                    else if ((kind) == 72 || (kind) == 80 || (kind) == 81 || (kind) == 83 || (kind) == 84 || (kind) == 85 || (kind) == 89 || (kind) == 92 || (kind) == 93 || (kind) == 94 || (kind) == 95 || (kind) == 96 || (kind) == 97 ) { std::cout << "!!****"; }\
+                    else if ((kind) < 100 ) { std::cout << "!!!!!*****"; }\
                     else {}\
                 } // cout stars prefix
 #define output_string() {if (y_print == 1) {std::cout << countx + 1 << "(" << five_star_assurance_number << ") ";\
