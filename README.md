@@ -44,7 +44,7 @@ II Weapon Event Wish\
 12: Epitome Invocation/20210518-20210608 (Song of Broken Pines, Aquila Favonia, Sacrificial Sword, Rainslasher, Dragon's Bane, Sacrificial Fragments, Rust)\
 13: Epitome Invocation/20210609-20210629 (Skyward Pride, Lost Prayer to the Sacred Winds, Mitternachts Waltz, Lion's Roar, The Bell, Favonius Lance, The Widsith)\
 14: Epitome Invocation/20210629-20210720 (Freedom-Sworn, Skyward Atlas, The Alley Flash, Wine and Song, Alley Hunter, Favonius Greatsword, Dragon's Bane)\
-15: Epitome Invocation/20210721- (Mistsplitter Reforged, Skyward Spine, Sacrificial Bow, Favonius Sword, Favonius Lance, The Widsith, Rainslasher,)
+15: Epitome Invocation/20210721- (Mistsplitter Reforged, Skyward Spine, Sacrificial Bow, Favonius Sword, Favonius Lance, The Widsith, Rainslasher)
 
 III Permanent Wish\
 1: Wanderlust Invocation/20200928-20201222 (Released)\
