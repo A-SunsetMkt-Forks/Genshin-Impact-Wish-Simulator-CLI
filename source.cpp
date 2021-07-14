@@ -402,7 +402,7 @@ int rspick(int* kindx, int sizekind) {
 int main() {
     std::cout << S_1 << endl << S_2 << endl << S_3 << endl << S_4 << endl << endl;
     int y_print = 1;
-    while (1) {
+    while (true) {
     enter_chosen_banner:
         int chosen_banner = 0,
         chosen_event = 0,
@@ -898,7 +898,7 @@ int main() {
             memmove( nup_four_c , nup_four_cg1 , sizeof(nup_four_cg1));
         }
         // set banner
-        while (1) {
+        while (true) {
             if (quit == 1) goto full_quit;
             enter_wishes_number:
             std::cout << endl << S_54 << endl << S_55 << endl << S_56 << endl << S_57 << endl << S_58 << endl << S_59 << endl << S_60;
