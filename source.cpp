@@ -3,6 +3,8 @@
 #include <random>
 #include <string>
 #include <cstring>
+#include <iomanip>
+#include <ctime>
 #include "cn.h" //include the language header file
 #define casesx( kind ){   if ((kind) < 16 ) { std::cout << "!!!!!*****"; }\
                     else if ((kind) < 51 ) { std::cout << "!!****"; }\
@@ -1010,8 +1012,10 @@ int main() {
                 }
                 wishes_number = 0;
             }
-            else { wishes_number = 0; std::cout << S_72 << endl; goto enter_wishes_number;}
-            auto start = std::chrono::steady_clock::now();
+            else if (wishes_number < 0) { wishes_number = 0; std::cout << S_72 << endl; goto enter_wishes_number;}
+            else { std::cout << S_85 << endl; }
+            const std::chrono::time_point<std::chrono::system_clock> startx = std::chrono::system_clock::now();
+            auto starty = std::chrono::steady_clock::now();
             if (chosen_banner == 1) {
                 while (wishes_number > 0) {
                     unsigned long long int temp1 = generator() % ULTRAPOS;
@@ -1291,6 +1295,15 @@ int main() {
                 }
             }
             // real work
+            auto endy = std::chrono::steady_clock::now();
+            const std::chrono::time_point<std::chrono::system_clock> endx = std::chrono::system_clock::now();
+            auto elapsed = endy - starty;
+            unsigned long long int elapsed_time = std::chrono::duration_cast<std::chrono::microseconds>(elapsed).count();
+            const std::time_t t_start = std::chrono::system_clock::to_time_t(startx);
+            const std::time_t t_end = std::chrono::system_clock::to_time_t(endx);
+            std::cout << endl << S_86 << std::put_time(std::localtime(&t_start), "%F %T") << endl;
+            std::cout << S_87 << std::put_time(std::localtime(&t_end), "%F %T") << endl;
+            std::cout << elapsed_time * 1.0 / 1000000 << S_84 << endl;
             if (five_count == 0) {
                 std::cout << endl << S_73 << countx << S_74 << endl
                     << S_75 << five_count << "  " << five_count * 100.0 / countx << "%" << endl
@@ -1329,9 +1342,7 @@ int main() {
             for (int iout = 82; iout < 85; iout++) { if (pcount[iout] > 0) std::cout << pname[iout] << "(" << pcount[iout] << ") "; }
             if (pcount[88] > 0) std::cout << pname[88] << "(" << pcount[88] << ") ";
             for (int iout = 92; iout < 97; iout++) { if (pcount[iout] > 0) std::cout << pname[iout] << "(" << pcount[iout] << ") "; }
-            std::cout << endl << endl; auto elapsed = std::chrono::steady_clock::now() - start;
-            unsigned long long int microseconds = std::chrono::duration_cast<std::chrono::microseconds>(elapsed).count();
-            std::cout << microseconds * 1.0 / 1000000 << S_84 << endl;
+            std::cout << endl << endl; 
             // a bunch of output of statistics
             //if (chosen_banner == 4 && chosen_event == 1 && count == 20) goto full_quit;
         }
