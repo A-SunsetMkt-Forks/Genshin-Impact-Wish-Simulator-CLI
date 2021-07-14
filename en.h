@@ -182,4 +182,6 @@
 #define C_96 "Hakushin Ring"
 #define C_97 "Mistsplitter Reforged"
 #define C_98 "Thundering Pulse"
+#define E_1 "Unexpected kind! Error code: 1"
+#define E_2 "Unexpected fate_weapon! Error code: 2"
 #endif

@@ -9,7 +9,7 @@
                     else if ((kind) < 64 ) { std::cout << "***"; }\
                     else if ((kind) == 72 || (kind) == 80 || (kind) == 81 || (kind) == 83 || (kind) == 84 || (kind) == 85 || (kind) == 89 || (kind) == 92 || (kind) == 93 || (kind) == 94 || (kind) == 95 || (kind) == 96 || (kind) == 97 ) { std::cout << "!!****"; }\
                     else if ((kind) < 100 ) { std::cout << "!!!!!*****"; }\
-                    else { goto full_quit; }\
+                    else {  std::cout << E_1 << endl; goto full_quit; }\
                 } // cout stars prefix
 #define output_string() {if (y_print == 1) {std::cout << countx + 1 << "(" << five_star_assurance_number << ") ";\
                     casesx( kind )\
@@ -195,7 +195,7 @@
                             if ((kind == five_check[0] || kind == five_check[1] || kind == five_check[2] || kind == five_check[3] || kind == five_check[4] || kind == five_check[5] || kind == five_check[6] || kind == five_check[7])) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;\
                         }\
                     }\
-                    else { goto full_quit; }\
+                    else {  std::cout << E_2 << endl; goto full_quit; }\
                 } // 5-star kind settler for banner II
 #define II_4() {    star = 4;\
                     four_count++;\
@@ -1010,8 +1010,7 @@ int main() {
                 }
                 wishes_number = 0;
             }
-            else if (wishes_number < 0) { wishes_number = 0; std::cout << S_72 << endl; goto enter_wishes_number;}
-            else { goto full_quit; }
+            else { wishes_number = 0; std::cout << S_72 << endl; goto enter_wishes_number;}
             auto start = std::chrono::steady_clock::now();
             if (chosen_banner == 1) {
                 while (wishes_number > 0) {
