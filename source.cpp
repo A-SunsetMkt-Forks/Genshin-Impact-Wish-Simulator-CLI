@@ -9,7 +9,7 @@
                     else if ((kind) < 64 ) { std::cout << "***"; }\
                     else if ((kind) == 72 || (kind) == 80 || (kind) == 81 || (kind) == 83 || (kind) == 84 || (kind) == 85 || (kind) == 89 || (kind) == 92 || (kind) == 93 || (kind) == 94 || (kind) == 95 || (kind) == 96 || (kind) == 97 ) { std::cout << "!!****"; }\
                     else if ((kind) < 100 ) { std::cout << "!!!!!*****"; }\
-                    else {}\
+                    else { goto full_quit; }\
                 } // cout stars prefix
 #define output_string() {if (y_print == 1) {std::cout << countx + 1 << "(" << five_star_assurance_number << ") ";\
                     casesx( kind )\
@@ -195,7 +195,7 @@
                             if ((kind == five_check[0] || kind == five_check[1] || kind == five_check[2] || kind == five_check[3] || kind == five_check[4] || kind == five_check[5] || kind == five_check[6] || kind == five_check[7])) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;\
                         }\
                     }\
-                    else {}\
+                    else { goto full_quit; }\
                 } // 5-star kind settler for banner II
 #define II_4() {    star = 4;\
                     four_count++;\
@@ -407,7 +407,7 @@ string pname[128] = {C_0, C_1, C_2, C_3, C_4, C_5, C_6, C_7, C_8, C_9, C_10, C_1
 };
 // names of the items
 
-int rspick(int* kindx, int sizekind) {
+int rspick(const int* kindx, int sizekind) {
     int kindout = kindx[1];
     int index = 0;
     unsigned long long int temp221 = 0;
@@ -493,7 +493,7 @@ int main() {
         if (cin.fail()) { chosen_banner = 0; std::cout << endl << S_11 << endl << endl; cin.clear(); cin.ignore(32767, '\n'); goto enter_chosen_banner; }
         enter_chosen_event:
         switch (chosen_banner) {
-        case -1: goto full_quit;
+        case -1: goto full_quit; break;
         case 1: {
             chosen_event = 0;
             std::cout << endl << S_12 << endl << S_13 << endl << S_14 << endl << S_15 << endl << S_16 << endl << S_17 << endl << S_18 << endl
@@ -537,7 +537,7 @@ int main() {
             if (cin.fail()) { chosen_event = 0; std::cout << endl << S_11 << endl; cin.clear(); cin.ignore(32767, '\n'); goto enter_chosen_event; }
             else if (chosen_event == -1) { chosen_event = 0; std::cout << endl; goto enter_chosen_banner; }
             else if (chosen_event == 1 ) quit = 0; else { std::cout << endl << S_31 << endl << endl; goto enter_chosen_event; } } break;
-        default: {chosen_banner = 0; chosen_event = 0; quit = 1; std::cout << S_53 << endl << endl; goto enter_chosen_banner; }
+        default: {chosen_banner = 0; chosen_event = 0; quit = 1; std::cout << S_53 << endl << endl; goto enter_chosen_banner; } break;
         }
         // choose event
         if (chosen_banner == 1) {
@@ -696,7 +696,7 @@ int main() {
                 int tempg5[8] = { 22, 29, 0, 0, 0, 0, 0, 0 };
                 memmove( four_check , tempg5 , sizeof(tempg5));
             } break;
-            default:break;
+            default: { goto full_quit; } break;
             }
         }
         else if (chosen_banner == 2) {
@@ -893,7 +893,7 @@ int main() {
                 int tempg7[8] = { 11, 0, 0, 0, 0, 0, 0, 0 };
                 memmove( five_check , tempg7, sizeof(tempg7));
             } break;
-            default:break;
+            default: { goto full_quit; } break;
             }
         }
         else if (chosen_banner == 3) {
@@ -914,7 +914,7 @@ int main() {
                 size_nup_four_c = 18;
                 memmove( nup_four_c , nup_four_cg34 , sizeof(nup_four_cg34));
                 } break;
-            default:break;
+            default: { goto full_quit; } break;
             }
         }
         else {
@@ -970,14 +970,14 @@ int main() {
                 unmet5_w = 0;
                 for (int ini = 0; ini < 128; ini++) { pcount[ini] = 0; }
                 luck = 0;
-                for (int ini = 0; ini < 10; ini++) { lucklocation[ini] = (long long int) ini + 1; }
-                for (int ini = 0; ini < 10; ini++) { lucksublocation[ini] = (long long int) ini + 1; }
+                for (int ini = 0; ini < 10; ini++) { lucklocation[ini] = static_cast< long long int> (ini) + 1; }
+                for (int ini = 0; ini < 10; ini++) { lucksublocation[ini] = static_cast< long long int> (ini) + 1; }
                 for (int ini = 0; ini < 10; ini++) { luckkind[ini] = 127; }
                 for (int ini = 0; ini < 10; ini++) { luckstar[ini] = 3; }
                 for (int ini = 0; ini < 10; ini++) { lucktype[ini] = 1; }
                 luckiest = 0;
-                for (int ini = 0; ini < 10; ini++) { luckiestlocation[ini] = (long long int) ini + 1; }
-                for (int ini = 0; ini < 10; ini++) { luckiestsublocation[ini] = (long long int) ini + 1; }
+                for (int ini = 0; ini < 10; ini++) { luckiestlocation[ini] = static_cast< long long int> (ini) + 1; }
+                for (int ini = 0; ini < 10; ini++) { luckiestsublocation[ini] = static_cast< long long int> (ini) + 1; }
                 for (int ini = 0; ini < 10; ini++) { luckiestkind[ini] = 127; }
                 std::cout << S_64 << endl;
                 goto enter_wishes_number;
@@ -1011,7 +1011,7 @@ int main() {
                 wishes_number = 0;
             }
             else if (wishes_number < 0) { wishes_number = 0; std::cout << S_72 << endl; goto enter_wishes_number;}
-            else {}
+            else { goto full_quit; }
             auto start = std::chrono::steady_clock::now();
             if (chosen_banner == 1) {
                 while (wishes_number > 0) {
