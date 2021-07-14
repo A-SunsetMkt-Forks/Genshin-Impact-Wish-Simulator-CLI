@@ -1010,17 +1010,17 @@ int main() {
                 if (chosen_banner == 4 || four_count == 0 || five_count == 0) { wishes_number = 0; std::cout << S_72 << endl; goto enter_wishes_number; }
                 else if (chosen_banner == 1 || chosen_banner == 3 ) {
                     std::cout << S_88 << endl << endl;
-                    for (int iout = 0; iout < 10; iout++) { std::cout << iout + 1 <<four_pity[iout] << "   " << four_pity[iout] *100.0 / four_count << "%" << endl; }
+                    for (int iout = 0; iout < 10; iout++) { std::cout << iout + 1 << "  " <<four_pity[iout] << "   " << four_pity[iout] *100.0 / four_count << "%" << endl; }
                     std::cout << endl << S_89 << endl << endl;
-                    for (int iout = 0; iout < 90; iout++) { std::cout << iout + 1 << five_pity[iout] << "   " << five_pity[iout] *100.0 / five_count << "%" << endl; }
+                    for (int iout = 0; iout < 90; iout++) { std::cout << iout + 1 << "  "  << five_pity[iout] << "   " << five_pity[iout] *100.0 / five_count << "%" << endl; }
                     wishes_number = 0;
                     goto enter_wishes_number;
                 }
                 else if (chosen_banner == 2) {
                     std::cout << S_88 << endl << endl;
-                    for (int iout = 0; iout < 10; iout++) { std::cout << iout + 1 << four_pity[iout] << "   " << four_pity[iout] *100.0 / four_count << "%" << endl; }
+                    for (int iout = 0; iout < 10; iout++) { std::cout << iout + 1 << "  "  << four_pity[iout] << "   " << four_pity[iout] *100.0 / four_count << "%" << endl; }
                     std::cout << endl << S_89 << endl << endl;
-                    for (int iout = 0; iout < 80; iout++) { std::cout << iout + 1 << five_pity_w[iout] << "   " << five_pity_w[iout] *100.0 / five_count << "%" << endl; }
+                    for (int iout = 0; iout < 80; iout++) { std::cout << iout + 1 << "  "  << five_pity_w[iout] << "   " << five_pity_w[iout] *100.0 / five_count << "%" << endl; }
                     wishes_number = 0;
                     goto enter_wishes_number;
                 }
