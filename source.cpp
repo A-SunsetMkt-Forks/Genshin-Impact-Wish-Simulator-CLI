@@ -937,7 +937,8 @@ int main() {
         while (true) {
             if (quit == 1) goto full_quit;
             enter_wishes_number:
-            std::cout << endl << S_54 << endl << S_55 << endl << S_56 << endl << S_57 << endl << S_58 << endl << S_59 << endl << S_60 << endl << S_90;
+            std::cout << endl << S_54 << endl << S_55 << endl << S_56 << endl << S_57 << endl << S_58 << endl << S_59 << endl << S_60;
+            if (chosen_banner == 1 || chosen_banner == 2 || chosen_banner == 3) {std::cout << ";" << endl << S_90; }
             if (chosen_banner == 2 && chosen_event > 14) {std::cout << ";" << endl << S_61 << endl; }
             else {std::cout << endl;}
             std::cout << endl;
