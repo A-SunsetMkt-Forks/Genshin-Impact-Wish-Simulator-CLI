@@ -76,7 +76,8 @@
             } // 5-star kind settler for banner I
 #define I_4() {star = 4;\
                 four_count++;\
-                four_pity[four_star_assurance_number - 1] ++;\
+                if (four_star_assurance_number < 10) four_pity[four_star_assurance_number - 1] ++;\
+                else four_pity[9] ++;\
                 four_star_assurance_number = 0;\
                 if (four_star_guarantee_number == 1) {\
                     type = 1;\
@@ -204,8 +205,9 @@
                 } // 5-star kind settler for banner II
 #define II_4() {    star = 4;\
                     four_count++;\
+                    if (four_star_assurance_number < 10) four_pity[four_star_assurance_number - 1] ++;\
+                    else four_pity[9] ++;\
                     four_star_assurance_number = 0;\
-                    four_pity[four_star_assurance_number - 1] ++;\
                     if (four_star_guarantee_number == 1) {\
                         type = 1;\
                         four_count_w++;\
@@ -323,8 +325,9 @@
             } // 5-star kind settler for banner III
 #define III_4() {star = 4;\
                 four_count++;\
+                if (four_star_assurance_number < 10) four_pity[four_star_assurance_number - 1] ++;\
+                else four_pity[9] ++;\
                 four_star_assurance_number = 0;\
-                four_pity[four_star_assurance_number - 1] ++;\
                 if (unmet4_c < 18 && unmet4_w < 18) {\
                     if (temp2 < static_cast<unsigned long long int> (ULTRAPOS / 2)) {\
                         type = 1;\
