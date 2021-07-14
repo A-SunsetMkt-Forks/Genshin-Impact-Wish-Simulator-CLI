@@ -934,7 +934,7 @@ int main() {
         while (true) {
             if (quit == 1) goto full_quit;
             enter_wishes_number:
-            std::cout << endl << S_54 << endl << S_55 << endl << S_56 << endl << S_57 << endl << S_58 << endl << S_59 << endl << S_60;
+            std::cout << endl << S_54 << endl << S_55 << endl << S_56 << endl << S_57 << endl << S_58 << endl << S_59 << endl << S_60 << endl << S_90;
             if (chosen_banner == 2 && chosen_event > 14) {std::cout << ";" << endl << S_61 << endl; }
             else {std::cout << endl;}
             std::cout << endl;
@@ -1004,6 +1004,28 @@ int main() {
                 goto enter_wishes_number;
             }
             else if (wishes_number == -5) {
+                if (chosen_banner == 4 || four_count == 0 || five_count == 0) { wishes_number = 0; std::cout << S_72 << endl; goto enter_wishes_number; }
+                else if (chosen_banner == 1 || chosen_banner == 3 ) {
+                    std::cout << S_88 << endl << endl;
+                    for (int iout = 0; iout < 10; iout++) { std::cout << four_pity[iout] << "   " << four_pity[iout] *100.0 / four_count << "%" << endl; }
+                    std::cout << endl << S_89 << endl << endl;
+                    for (int iout = 0; iout < 90; iout++) { std::cout << five_pity[iout] << "   " << five_pity[iout] *100.0 / five_count << "%" << endl; }
+                    wishes_number = 0;
+                    goto enter_wishes_number;
+                }
+                else if (chosen_banner == 2) {
+                    std::cout << S_88 << endl << endl;
+                    for (int iout = 0; iout < 10; iout++) { std::cout << four_pity[iout] << "   " << four_pity[iout] *100.0 / four_count << "%" << endl; }
+                    std::cout << endl << S_89 << endl << endl;
+                    for (int iout = 0; iout < 80; iout++) { std::cout << five_pity_w[iout] << "   " << five_pity_w[iout] *100.0 / five_count << "%" << endl; }
+                    wishes_number = 0;
+                    goto enter_wishes_number;
+                }
+                else {
+                    wishes_number = 0; std::cout << S_72 << endl; goto enter_wishes_number;
+                }
+            }
+            else if (wishes_number == -6) {
                 if (chosen_banner == 2 && chosen_event > 14) {
                     enter_fate_weapon:
                     std::cout << S_67 << endl << S_68 << endl
@@ -1015,19 +1037,6 @@ int main() {
                     else if ( fate_weapon == -1 ) goto enter_wishes_number;
                     else if ( fate_weapon < -1 || fate_weapon > 2) {std::cout << endl << S_72 << endl << endl; fate_weapon = 0; goto enter_fate_weapon;}
                     else fate_points = 0;
-                    wishes_number = 0;
-                    goto enter_wishes_number;
-                }
-                else {
-                    wishes_number = 0; std::cout << S_72 << endl; goto enter_wishes_number;
-                }
-            }
-            else if (wishes_number == -6) {
-                if (chosen_banner == 1) {
-                    std::cout << S_88 << endl << endl;
-                    for (int iout = 0; iout < 10; iout++) { std::cout << four_pity[iout] << "   " << four_pity[iout] / four_count << endl; }
-                    std::cout << endl << S_89 << endl << endl;
-                    for (int iout = 0; iout < 90; iout++) { std::cout << five_pity[iout] << "   " << five_pity[iout] / five_count << endl; }
                     wishes_number = 0;
                     goto enter_wishes_number;
                 }
@@ -1230,7 +1239,6 @@ int main() {
                     int kind = 0; //which exactly
                     if (is_noelle == 1 && countx == 9) {
                         star = 4;
-                        four_pity[four_star_assurance_number - 1] ++;
                         four_count++;
                         four_star_assurance_number = 0;
                         type = 1;
@@ -1245,7 +1253,6 @@ int main() {
                             ave_fives += five_star_assurance_number;
                             if (five_star_assurance_number > max_fives) { max_fives = five_star_assurance_number; max_fivesth = five_count; max_fivecount = countx; }
                             if (five_star_assurance_number < min_fives) { min_fives = five_star_assurance_number; min_fivesth = five_count; min_fivecount = countx; }
-                            five_pity[five_star_assurance_number - 1] ++;
                             five_star_assurance_number = 0;
                             type = 1;
                             five_count_c++;
@@ -1254,7 +1261,6 @@ int main() {
                         else if (temp1 < static_cast<unsigned long long int> (ULTRAPOS / 1000 * 57)) {
                             star = 4;
                             four_count++;
-                            four_pity[four_star_assurance_number - 1] ++;
                             four_star_assurance_number = 0;
                             type = 1;
                             four_count_c++;
@@ -1271,7 +1277,6 @@ int main() {
                             ave_fives += five_star_assurance_number;
                             if (five_star_assurance_number > max_fives) { max_fives = five_star_assurance_number; max_fivesth = five_count; max_fivecount = countx; }
                             if (five_star_assurance_number < min_fives) { min_fives = five_star_assurance_number; min_fivesth = five_count; min_fivecount = countx; }
-                            five_pity[five_star_assurance_number - 1] ++;
                             five_star_assurance_number = 0;
                             five_count_c++;
                             kind = rspick(nup_five_c, 5);
@@ -1279,7 +1284,6 @@ int main() {
                         else if (temp1 < static_cast<unsigned long long int> (ULTRAPOS / 1000 * 567)) {
                             star = 4;
                             four_count++;
-                            four_pity[four_star_assurance_number - 1] ++;
                             four_star_assurance_number = 0;
                             type = 1;
                             four_count_c++;
@@ -1296,7 +1300,6 @@ int main() {
                             ave_fives += five_star_assurance_number;
                             if (five_star_assurance_number > max_fives) { max_fives = five_star_assurance_number; max_fivesth = five_count; max_fivecount = countx; }
                             if (five_star_assurance_number < min_fives) { min_fives = five_star_assurance_number; min_fivesth = five_count; min_fivecount = countx; }
-                            five_pity[five_star_assurance_number - 1] ++;
                             five_star_assurance_number = 0;
                             five_count_c++;
                             kind = rspick(nup_five_c, 5);
@@ -1304,7 +1307,6 @@ int main() {
                         else {
                             star = 4;
                             four_count++;
-                            four_pity[four_star_assurance_number - 1] ++;
                             four_star_assurance_number = 0;
                             type = 1;
                             four_count_c++;
