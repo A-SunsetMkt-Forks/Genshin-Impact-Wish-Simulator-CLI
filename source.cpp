@@ -503,8 +503,8 @@ int main() {
             fate_weapon = 0;
             fate_points = 0;
             if (cin.fail()) { chosen_event = 0; std::cout << endl << S_11 << endl; cin.clear(); cin.ignore(32767, '\n'); goto enter_chosen_event; }
-            if (chosen_event == -1) { chosen_event = 0; std::cout << endl; goto enter_chosen_banner; }
-            if (chosen_event > 0 && chosen_event < 18 ) quit = 0; else { std::cout << endl << S_31 << endl << endl; goto enter_chosen_event; }
+            else if (chosen_event == -1) { chosen_event = 0; std::cout << endl; goto enter_chosen_banner; }
+            else if (chosen_event > 0 && chosen_event < 18 ) quit = 0; else { std::cout << endl << S_31 << endl << endl; goto enter_chosen_event; }
         } break;
         case 2: {
             chosen_event = 0;
@@ -515,8 +515,8 @@ int main() {
             fate_weapon = 0;
             fate_points = 0;
             if (cin.fail()) { chosen_event = 0; std::cout << endl << S_11 << endl; cin.clear(); cin.ignore(32767, '\n'); goto enter_chosen_event; }
-            if (chosen_event == -1) { chosen_event = 0; std::cout << endl; goto enter_chosen_banner; }
-            if (chosen_event > 0 && chosen_event < 17 ) quit = 0; else { std::cout << endl << S_31 << endl << endl; goto enter_chosen_event; }
+            else if (chosen_event == -1) { chosen_event = 0; std::cout << endl; goto enter_chosen_banner; }
+            else if (chosen_event > 0 && chosen_event < 17 ) quit = 0; else { std::cout << endl << S_31 << endl << endl; goto enter_chosen_event; }
         } break;
         case 3: {
             chosen_event = 0;
@@ -525,8 +525,8 @@ int main() {
             fate_weapon = 0;
             fate_points = 0;
             if (cin.fail()) { chosen_event = 0; std::cout << endl << S_11 << endl; cin.clear(); cin.ignore(32767, '\n'); goto enter_chosen_event; }
-            if (chosen_event == -1) { chosen_event = 0; std::cout << endl; goto enter_chosen_banner; }
-            if (chosen_event > 0 && chosen_event < 5 ) quit = 0; else { std::cout << endl << S_31 << endl << endl; goto enter_chosen_event; }
+            else if (chosen_event == -1) { chosen_event = 0; std::cout << endl; goto enter_chosen_banner; }
+            else if (chosen_event > 0 && chosen_event < 5 ) quit = 0; else { std::cout << endl << S_31 << endl << endl; goto enter_chosen_event; }
         } break;
         case 4: {
             chosen_event = 0;
@@ -535,8 +535,8 @@ int main() {
             fate_weapon = 0;
             fate_points = 0;
             if (cin.fail()) { chosen_event = 0; std::cout << endl << S_11 << endl; cin.clear(); cin.ignore(32767, '\n'); goto enter_chosen_event; }
-            if (chosen_event == -1) { chosen_event = 0; std::cout << endl; goto enter_chosen_banner; }
-            if (chosen_event == 1 ) quit = 0; else { std::cout << endl << S_31 << endl << endl; goto enter_chosen_event; } } break;
+            else if (chosen_event == -1) { chosen_event = 0; std::cout << endl; goto enter_chosen_banner; }
+            else if (chosen_event == 1 ) quit = 0; else { std::cout << endl << S_31 << endl << endl; goto enter_chosen_event; } } break;
         default: {chosen_banner = 0; chosen_event = 0; quit = 1; std::cout << S_53 << endl << endl; goto enter_chosen_banner; }
         }
         // choose event
@@ -991,8 +991,6 @@ int main() {
                 goto enter_wishes_number;
             }
             else if (wishes_number == -5) {
-                fate_weapon = 0;
-                fate_points = 0;
                 if (chosen_banner == 2 && chosen_event > 14) {
                     enter_fate_weapon:
                     std::cout << S_67 << endl << S_68 << endl
@@ -1001,8 +999,9 @@ int main() {
                     << S_71 << endl << endl;
                     std::cin >> fate_weapon;
                     if (cin.fail()) { fate_weapon = 0; std::cout << endl << S_11 << endl << endl; cin.clear(); cin.ignore(32767, '\n'); goto enter_fate_weapon; }
-                    if ( fate_weapon == -1 ) {fate_weapon = 0; goto enter_wishes_number;}
+                    else if ( fate_weapon == -1 ) goto enter_wishes_number;
                     else if ( fate_weapon < -1 || fate_weapon > 2) {std::cout << endl << S_72 << endl << endl; fate_weapon = 0; goto enter_fate_weapon;}
+                    else fate_points = 0;
                     wishes_number = 0;
                     goto enter_wishes_number;
                 }
