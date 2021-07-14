@@ -4,7 +4,6 @@
 #include <string>
 #include <cstring>
 #include "cn.h" //include the language header file
-constexpr auto ULTRAPOS = 437580000; //total number that's for integral computing
 #define casesx( kind ){   if ((kind) < 16 ) { std::cout << "!!!!!*****"; }\
                     else if ((kind) < 51 ) { std::cout << "!!****"; }\
                     else if ((kind) < 64 ) { std::cout << "***"; }\
@@ -59,7 +58,7 @@ constexpr auto ULTRAPOS = 437580000; //total number that's for integral computin
                 if (five_star_assurance_number < min_fives) { min_fives = five_star_assurance_number; min_fivesth = five_count; min_fivecount = countx; }\
                 five_star_assurance_number = 0;\
                 if (five_star_guarantee_number == 1) { type = 1; five_count_c++; kind = up_five; five_star_guarantee_number = 0; }\
-                else if (temp2 < (unsigned long long int) ULTRAPOS / 2) {\
+                else if (temp2 < static_cast<unsigned long long int> (ULTRAPOS / 2)) {\
                     type = 1;\
                     five_count_c++;\
                     kind = up_five;\
@@ -82,7 +81,7 @@ constexpr auto ULTRAPOS = 437580000; //total number that's for integral computin
                     kind = rspick(up_four_g, 3);\
                     four_star_guarantee_number = 0;\
                 }\
-                else if (temp2 < (unsigned long long int) ULTRAPOS / 2) {\
+                else if (temp2 < static_cast<unsigned long long int> (ULTRAPOS / 2)) {\
                     type = 1;\
                     four_count_c++;\
                     unmet4_c = 0;\
@@ -91,7 +90,7 @@ constexpr auto ULTRAPOS = 437580000; //total number that's for integral computin
                 }\
                 else {\
                     if (unmet4_c < 18 && unmet4_w < 18) {\
-                        if (temp2 > (unsigned long long int) 3 * ULTRAPOS / 4 - 1) {\
+                        if (temp2 > static_cast<unsigned long long int> (3 * ULTRAPOS / 4 - 1)) {\
                             type = 2;\
                             four_count_c++;\
                             unmet4_c = 0;\
@@ -107,7 +106,7 @@ constexpr auto ULTRAPOS = 437580000; //total number that's for integral computin
                         }\
                     }\
                     else if (unmet4_w > 17) {\
-                        if (temp2 > (unsigned long long int) ULTRAPOS - ULTRAPOS / (20 * unmet4_c - 336) - 1) {\
+                        if (temp2 > static_cast<unsigned long long int> (ULTRAPOS - ULTRAPOS / (20 * unmet4_c - 356) - 1)) {\
                             type = 2;\
                             four_count_c++;\
                             unmet4_c = 0;\
@@ -123,7 +122,7 @@ constexpr auto ULTRAPOS = 437580000; //total number that's for integral computin
                         }\
                     }\
                     else {\
-                        if (temp2 > (unsigned long long int) ULTRAPOS - ULTRAPOS / (20 * unmet4_w - 336) - 1) {\
+                        if (temp2 > static_cast<unsigned long long int> (ULTRAPOS - ULTRAPOS / (20 * unmet4_w - 356) - 1)) {\
                             type = 3;\
                             four_count_w++;\
                             unmet4_w = 0;\
@@ -161,7 +160,7 @@ constexpr auto ULTRAPOS = 437580000; //total number that's for integral computin
                             if (kind == up_five_g[fate_weapon - 1] ) fate_points = 0; else fate_points ++;\
                             five_star_guarantee_number = 0;\
                         }\
-                        else if (temp2 < (unsigned long long int) ULTRAPOS / 4 * 3) {\
+                        else if (temp2 < static_cast<unsigned long long int> (ULTRAPOS / 4 * 3)) {\
                             type = 1;\
                             five_count_w++;\
                             kind = rspick(up_five_g, 2);\
@@ -183,7 +182,7 @@ constexpr auto ULTRAPOS = 437580000; //total number that's for integral computin
                             kind = rspick(up_five_g, 2);\
                             five_star_guarantee_number = 0;\
                         }\
-                        else if (temp2 < (unsigned long long int) ULTRAPOS / 4 * 3) {\
+                        else if (temp2 < static_cast<unsigned long long int> (ULTRAPOS / 4 * 3)) {\
                             type = 1;\
                             five_count_w++;\
                             kind = rspick(up_five_g, 2);\
@@ -208,7 +207,7 @@ constexpr auto ULTRAPOS = 437580000; //total number that's for integral computin
                         kind = rspick(up_four_g, 5);\
                         four_star_guarantee_number = 0;\
                     }\
-                    else if (temp2 < (unsigned long long int) ULTRAPOS / 4 * 3) {\
+                    else if (temp2 < static_cast<unsigned long long int> (ULTRAPOS / 4 * 3)) {\
                         type = 1;\
                         four_count_w++;\
                         unmet4_w = 0;\
@@ -217,7 +216,7 @@ constexpr auto ULTRAPOS = 437580000; //total number that's for integral computin
                     }\
                     else {\
                         if (unmet4_c < 15 && unmet4_w < 15) {\
-                            if (temp2 > (unsigned long long int) 7 * ULTRAPOS / 8 - 1) {\
+                            if (temp2 > static_cast<unsigned long long int> (ULTRAPOS / 8 * 7- 1)) {\
                                 type = 2;\
                                 four_count_c++;\
                                 unmet4_c = 0;\
@@ -233,7 +232,7 @@ constexpr auto ULTRAPOS = 437580000; //total number that's for integral computin
                             }\
                         }\
                         else if (unmet4_w > 14) {\
-                            if (temp2 > (unsigned long long int) ULTRAPOS - ULTRAPOS / (40 * unmet4_c - 592) - 1) {\
+                            if (temp2 > static_cast<unsigned long long int> (ULTRAPOS - ULTRAPOS / (40 * unmet4_c - 592) - 1)) {\
                                 type = 2;\
                                 four_count_c++;\
                                 unmet4_c = 0;\
@@ -249,7 +248,7 @@ constexpr auto ULTRAPOS = 437580000; //total number that's for integral computin
                             }\
                         }\
                         else {\
-                            if (temp2 > (unsigned long long int) ULTRAPOS - ULTRAPOS / (40 * unmet4_w - 592) - 1) {\
+                            if (temp2 > static_cast<unsigned long long int> (ULTRAPOS - ULTRAPOS / (40 * unmet4_w - 592) - 1)) {\
                                 type = 3;\
                                 four_count_w++;\
                                 unmet4_w = 0;\
@@ -273,7 +272,7 @@ constexpr auto ULTRAPOS = 437580000; //total number that's for integral computin
                 if (five_star_assurance_number < min_fives) { min_fives = five_star_assurance_number; min_fivesth = five_count; min_fivecount = countx; }\
                 five_star_assurance_number = 0;\
                 if (unmet5_c < 148 && unmet5_w < 148) {\
-                    if (temp2 < (unsigned long long int) ULTRAPOS / 2) {\
+                    if (temp2 < static_cast<unsigned long long int> (ULTRAPOS / 2)) {\
                         type = 1;\
                         five_count_c++;\
                         unmet5_c = 0;\
@@ -287,7 +286,7 @@ constexpr auto ULTRAPOS = 437580000; //total number that's for integral computin
                     }\
                 }\
                 else if (unmet5_c > 147) {\
-                    if (temp2 < (unsigned long long int) (ULTRAPOS - ULTRAPOS / (10 * unmet5_c - 1468))) {\
+                    if (temp2 < static_cast<unsigned long long int> (ULTRAPOS - ULTRAPOS / (10 * unmet5_c - 1478) - 1)) {\
                         type = 1;\
                         five_count_c++;\
                         unmet5_c = 0;\
@@ -301,7 +300,7 @@ constexpr auto ULTRAPOS = 437580000; //total number that's for integral computin
                     }\
                 }\
                 else {\
-                    if (temp2 < (unsigned long long int) (ULTRAPOS - ULTRAPOS / (10 * unmet5_w - 1468))) {\
+                    if (temp2 < static_cast<unsigned long long int> (ULTRAPOS - ULTRAPOS / (10 * unmet5_w - 1478) - 1)) {\
                         type = 2;\
                         five_count_w++;\
                         unmet5_w = 0;\
@@ -319,7 +318,7 @@ constexpr auto ULTRAPOS = 437580000; //total number that's for integral computin
                 four_count++;\
                 four_star_assurance_number = 0;\
                 if (unmet4_c < 18 && unmet4_w < 18) {\
-                    if (temp2 < (unsigned long long int) ULTRAPOS / 2) {\
+                    if (temp2 < static_cast<unsigned long long int> (ULTRAPOS / 2)) {\
                         type = 1;\
                         four_count_c++;\
                         unmet4_c = 0;\
@@ -333,7 +332,7 @@ constexpr auto ULTRAPOS = 437580000; //total number that's for integral computin
                     }\
                 }\
                 else if (unmet4_c > 17) {\
-                    if (temp2 < (unsigned long long int) (ULTRAPOS - ULTRAPOS / (10 * unmet4_c - 168))) {\
+                    if (temp2 < static_cast<unsigned long long int> (ULTRAPOS - ULTRAPOS / (10 * unmet4_c - 168) - 1)) {\
                         type = 1;\
                         four_count_c++;\
                         unmet4_c = 0;\
@@ -347,7 +346,7 @@ constexpr auto ULTRAPOS = 437580000; //total number that's for integral computin
                     }\
                 }\
                 else {\
-                    if (temp2 < (unsigned long long int) (ULTRAPOS - ULTRAPOS / (10 * unmet4_w - 168))) {\
+                    if (temp2 < static_cast<unsigned long long int> (ULTRAPOS - ULTRAPOS / (10 * unmet4_w - 168) - 1)) {\
                         type = 2;\
                         four_count_w++;\
                         unmet4_w = 0;\
@@ -367,7 +366,7 @@ constexpr auto ULTRAPOS = 437580000; //total number that's for integral computin
                 } // 3-star kind settler for all banners
 using namespace std;
 
-unsigned long long int seed = (unsigned long long int) std::chrono::high_resolution_clock::now().time_since_epoch().count();
+unsigned long long int seed = static_cast<unsigned long long int> (std::chrono::high_resolution_clock::now().time_since_epoch().count());
 std::mt19937_64 generator(seed);
 // random set
 
@@ -414,7 +413,7 @@ int rspick(int* kindx, int sizekind) {
     unsigned long long int temp221 = 0;
     for (; index < sizekind; index++)
     {
-        temp221 = generator() % ((unsigned long long int)(index) + 1);
+        temp221 = generator() % (static_cast<unsigned long long int>(index) + 1);
         if (temp221 < 1)
             kindout = kindx[index];
     }
@@ -425,6 +424,7 @@ int rspick(int* kindx, int sizekind) {
 int main() {
     std::cout << S_1 << endl << S_2 << endl << S_3 << endl << S_4 << endl << endl;
     int y_print = 1;
+    unsigned long long int ULTRAPOS = 437580000;
     while (true) {
     enter_chosen_banner:
         int chosen_banner = 0,
@@ -1021,31 +1021,31 @@ int main() {
                     int type = 0; //Up or non-up, character or weapon
                     int kind = 0; //which exactly
                     if (five_star_assurance_number < 74 && four_star_assurance_number < 9) {
-                        if (temp1 < (unsigned long long int) ULTRAPOS / 1000 * 6) I_5()
-                        else if (temp1 < (unsigned long long int) ULTRAPOS / 1000 * 57) I_4()
+                        if (temp1 < static_cast<unsigned long long int> (ULTRAPOS / 1000 * 6)) I_5()
+                        else if (temp1 < static_cast<unsigned long long int> (ULTRAPOS / 1000 * 57)) I_4()
                         else Tri()
                     }
                     else if (five_star_assurance_number < 74 && four_star_assurance_number == 9) {
-                        if (temp1 < (unsigned long long int) ULTRAPOS / 1000 * 6) I_5()
-                        else if (temp1 < (unsigned long long int) ULTRAPOS / 1000 * 567) I_4()
+                        if (temp1 < static_cast<unsigned long long int> (ULTRAPOS / 1000 * 6)) I_5()
+                        else if (temp1 < static_cast<unsigned long long int> (ULTRAPOS / 1000 * 567)) I_4()
                         else Tri()
                     }
                     else if (five_star_assurance_number < 74 && four_star_assurance_number > 9) {
-                        if (temp1 < (unsigned long long int) ULTRAPOS / 1000 * 6) I_5()
+                        if (temp1 < static_cast<unsigned long long int> (ULTRAPOS / 1000 * 6)) I_5()
                         else I_4()
                     }
                     else if (five_star_assurance_number < 90 && five_star_assurance_number > 73 && four_star_assurance_number < 9) {
-                        if (temp1 < (unsigned long long int) (ULTRAPOS / 1000 * 6) + ((unsigned long long int)(five_star_assurance_number) - 73) * (unsigned long long int)(ULTRAPOS / 1000 * 60)) I_5()
-                        else if (temp1 < (unsigned long long int) (ULTRAPOS / 1000 * 57) + ((unsigned long long int)(five_star_assurance_number) - 73) * (unsigned long long int)(ULTRAPOS / 1000 * 60)) I_4()
+                        if (temp1 < static_cast<unsigned long long int> (ULTRAPOS / 1000 * 6) + (static_cast<unsigned long long int>(five_star_assurance_number) - 73) * static_cast<unsigned long long int>(ULTRAPOS / 1000 * 60)) I_5()
+                        else if (temp1 < static_cast<unsigned long long int> (ULTRAPOS / 1000 * 57) + (static_cast<unsigned long long int>(five_star_assurance_number) - 73) * static_cast<unsigned long long int>(ULTRAPOS / 1000 * 60)) I_4()
                         else Tri()
                     }
                     else if (five_star_assurance_number < 90 && five_star_assurance_number > 73 && four_star_assurance_number == 9) {
-                        if (temp1 < (unsigned long long int) (ULTRAPOS / 1000 * 6) + ((unsigned long long int)(five_star_assurance_number) - 73) * (unsigned long long int)(ULTRAPOS / 1000 * 60)) I_5()
-                        else if (temp1 < (unsigned long long int) (ULTRAPOS / 1000 * 567) + ((unsigned long long int)(five_star_assurance_number) - 73) * (unsigned long long int)(ULTRAPOS / 1000 * 60)) I_4()
+                        if (temp1 < static_cast<unsigned long long int> (ULTRAPOS / 1000 * 6) + (static_cast<unsigned long long int>(five_star_assurance_number) - 73) * static_cast<unsigned long long int>(ULTRAPOS / 1000 * 60)) I_5()
+                        else if (temp1 < static_cast<unsigned long long int> (ULTRAPOS / 1000 * 567) + (static_cast<unsigned long long int>(five_star_assurance_number) - 73) * static_cast<unsigned long long int>(ULTRAPOS / 1000 * 60)) I_4()
                         else Tri()
                     }
                     else if (five_star_assurance_number < 90 && five_star_assurance_number > 73 && four_star_assurance_number > 9) {
-                        if (temp1 < (unsigned long long int) (ULTRAPOS / 1000 * 6) + ((unsigned long long int)(five_star_assurance_number) - 73) * (unsigned long long int)(ULTRAPOS / 1000 * 60)) I_5()
+                        if (temp1 < static_cast<unsigned long long int> (ULTRAPOS / 1000 * 6) + (static_cast<unsigned long long int>(five_star_assurance_number) - 73) * static_cast<unsigned long long int>(ULTRAPOS / 1000 * 60)) I_5()
                         else I_4()
                     }
                     else I_5()
@@ -1073,60 +1073,60 @@ int main() {
                     int type = 0; //Up or non-up, character or weapon
                     int kind = 0; //which exactly
                     if (five_star_assurance_number < 63 && four_star_assurance_number < 8) {
-                        if (temp1 < (unsigned long long int) ULTRAPOS / 1000 * 7) II_5()
-                        else if (temp1 < (unsigned long long int) ULTRAPOS / 1000 * 67) II_4()
+                        if (temp1 < static_cast<unsigned long long int> (ULTRAPOS / 1000 * 7)) II_5()
+                        else if (temp1 < static_cast<unsigned long long int> (ULTRAPOS / 1000 * 67)) II_4()
                         else Tri()
                     }
                     else if (five_star_assurance_number < 63 && four_star_assurance_number == 8) {
-                        if (temp1 < (unsigned long long int) ULTRAPOS / 1000 * 7) II_5()
-                        else if (temp1 < (unsigned long long int) ULTRAPOS / 1000 * 667) II_4()
+                        if (temp1 < static_cast<unsigned long long int> (ULTRAPOS / 1000 * 7)) II_5()
+                        else if (temp1 < static_cast<unsigned long long int> (ULTRAPOS / 1000 * 667)) II_4()
                         else Tri()
                     }
                     else if (five_star_assurance_number < 63 && four_star_assurance_number == 9) {
-                        if (temp1 < (unsigned long long int) ULTRAPOS / 1000 * 7) II_5()
-                        else if (temp1 < (unsigned long long int) ULTRAPOS / 1000 * 967) II_4()
+                        if (temp1 < static_cast<unsigned long long int> (ULTRAPOS / 1000 * 7)) II_5()
+                        else if (temp1 < static_cast<unsigned long long int> (ULTRAPOS / 1000 * 967)) II_4()
                         else Tri()
                     }
                     else if (five_star_assurance_number < 63 && four_star_assurance_number > 9) {
-                        if (temp1 < (unsigned long long int) ULTRAPOS / 1000 * 7) II_5()
+                        if (temp1 < static_cast<unsigned long long int> (ULTRAPOS / 1000 * 7)) II_5()
                         else II_4()
                     }
                     else if (five_star_assurance_number < 72 && five_star_assurance_number > 62 && four_star_assurance_number < 8) {
-                        if (temp1 < (unsigned long long int) (ULTRAPOS / 1000 * 7) + ((unsigned long long int)(five_star_assurance_number) - 62) * (unsigned long long int)(ULTRAPOS / 1000 * 70)) II_5()
-                        else if (temp1 < (unsigned long long int) (ULTRAPOS / 1000 * 67) + ((unsigned long long int)(five_star_assurance_number) - 62) * (unsigned long long int)(ULTRAPOS / 1000 * 70)) II_4()
+                        if (temp1 < static_cast<unsigned long long int> (ULTRAPOS / 1000 * 7) + (static_cast<unsigned long long int>(five_star_assurance_number) - 62) * static_cast<unsigned long long int>(ULTRAPOS / 1000 * 70)) II_5()
+                        else if (temp1 < static_cast<unsigned long long int> (ULTRAPOS / 1000 * 67) + (static_cast<unsigned long long int>(five_star_assurance_number) - 62) * static_cast<unsigned long long int>(ULTRAPOS / 1000 * 70)) II_4()
                         else Tri()
                     }
                     else if (five_star_assurance_number < 72 && five_star_assurance_number > 62 && four_star_assurance_number == 8) {
-                        if (temp1 < (unsigned long long int) (ULTRAPOS / 1000 * 7) + ((unsigned long long int)(five_star_assurance_number) - 62) * (unsigned long long int)(ULTRAPOS / 1000 * 70)) II_5()
-                        else if (temp1 < (unsigned long long int) (ULTRAPOS / 1000 * 667) + ((unsigned long long int)(five_star_assurance_number) - 62) * (unsigned long long int)(ULTRAPOS / 1000 * 70)) II_4()
+                        if (temp1 < static_cast<unsigned long long int> (ULTRAPOS / 1000 * 7) + (static_cast<unsigned long long int>(five_star_assurance_number) - 62) * static_cast<unsigned long long int>(ULTRAPOS / 1000 * 70)) II_5()
+                        else if (temp1 < static_cast<unsigned long long int> (ULTRAPOS / 1000 * 667) + (static_cast<unsigned long long int>(five_star_assurance_number) - 62) * static_cast<unsigned long long int>(ULTRAPOS / 1000 * 70)) II_4()
                         else Tri()
                     }
                     else if (five_star_assurance_number < 72 && five_star_assurance_number > 62 && four_star_assurance_number == 9) {
-                        if (temp1 < (unsigned long long int) (ULTRAPOS / 1000 * 7) + ((unsigned long long int)(five_star_assurance_number) - 62) * (unsigned long long int)(ULTRAPOS / 1000 * 70)) II_5()
-                        else if (temp1 < (unsigned long long int) (ULTRAPOS / 1000 * 967) + ((unsigned long long int)(five_star_assurance_number) - 62) * (unsigned long long int)(ULTRAPOS / 1000 * 70)) II_4()
+                        if (temp1 < static_cast<unsigned long long int> (ULTRAPOS / 1000 * 7) + (static_cast<unsigned long long int>(five_star_assurance_number) - 62) * static_cast<unsigned long long int>(ULTRAPOS / 1000 * 70)) II_5()
+                        else if (temp1 < static_cast<unsigned long long int> (ULTRAPOS / 1000 * 967) + (static_cast<unsigned long long int>(five_star_assurance_number) - 62) * static_cast<unsigned long long int>(ULTRAPOS / 1000 * 70)) II_4()
                         else Tri()
                     }
                     else if (five_star_assurance_number < 72 && five_star_assurance_number > 62 && four_star_assurance_number > 9) {
-                        if (temp1 < (unsigned long long int) (ULTRAPOS / 1000 * 7) + ((unsigned long long int)(five_star_assurance_number) - 62) * (unsigned long long int)(ULTRAPOS / 1000 * 70)) II_5()
+                        if (temp1 < static_cast<unsigned long long int> (ULTRAPOS / 1000 * 7) + (static_cast<unsigned long long int>(five_star_assurance_number) - 62) * static_cast<unsigned long long int>(ULTRAPOS / 1000 * 70)) II_5()
                         else II_4()
                     }
                     else if (five_star_assurance_number < 80 && five_star_assurance_number > 71 && four_star_assurance_number < 8) {
-                        if (temp1 < (unsigned long long int) (ULTRAPOS / 1000 * 637) + ((unsigned long long int)(five_star_assurance_number) - 71) * (unsigned long long int)(ULTRAPOS / 1000 * 35)) II_5()
-                        else if (temp1 < (unsigned long long int) (ULTRAPOS / 1000 * 697) + ((unsigned long long int)(five_star_assurance_number) - 71) * (unsigned long long int)(ULTRAPOS / 1000 * 35)) II_4()
+                        if (temp1 < static_cast<unsigned long long int> (ULTRAPOS / 1000 * 637) + (static_cast<unsigned long long int>(five_star_assurance_number) - 71) * static_cast<unsigned long long int>(ULTRAPOS / 1000 * 35)) II_5()
+                        else if (temp1 < static_cast<unsigned long long int> (ULTRAPOS / 1000 * 697) + (static_cast<unsigned long long int>(five_star_assurance_number) - 71) * static_cast<unsigned long long int>(ULTRAPOS / 1000 * 35)) II_4()
                         else Tri()
                     }
                     else if (five_star_assurance_number < 80 && five_star_assurance_number > 71 && four_star_assurance_number == 8) {
-                        if (temp1 < (unsigned long long int) (ULTRAPOS / 1000 * 637) + ((unsigned long long int)(five_star_assurance_number) - 71) * (unsigned long long int)(ULTRAPOS / 1000 * 35)) II_5()
-                        else if (temp1 < (unsigned long long int) (ULTRAPOS / 1000 * 1297) + ((unsigned long long int)(five_star_assurance_number) - 71) * (unsigned long long int)(ULTRAPOS / 1000 * 35)) II_4()
+                        if (temp1 < static_cast<unsigned long long int> (ULTRAPOS / 1000 * 637) + (static_cast<unsigned long long int>(five_star_assurance_number) - 71) * static_cast<unsigned long long int>(ULTRAPOS / 1000 * 35)) II_5()
+                        else if (temp1 < static_cast<unsigned long long int> (ULTRAPOS / 1000 * 1297) + (static_cast<unsigned long long int>(five_star_assurance_number) - 71) * static_cast<unsigned long long int>(ULTRAPOS / 1000 * 35)) II_4()
                         else Tri()
                     }
                     else if (five_star_assurance_number < 80 && five_star_assurance_number > 71 && four_star_assurance_number == 9) {
-                        if (temp1 < (unsigned long long int) (ULTRAPOS / 1000 * 637) + ((unsigned long long int)(five_star_assurance_number) - 71) * (unsigned long long int)(ULTRAPOS / 1000 * 35)) II_5()
-                        else if (temp1 < (unsigned long long int) (ULTRAPOS / 1000 * 1597) + ((unsigned long long int)(five_star_assurance_number) - 71) * (unsigned long long int)(ULTRAPOS / 1000 * 35)) II_4()
+                        if (temp1 < static_cast<unsigned long long int> (ULTRAPOS / 1000 * 637) + (static_cast<unsigned long long int>(five_star_assurance_number) - 71) * static_cast<unsigned long long int>(ULTRAPOS / 1000 * 35)) II_5()
+                        else if (temp1 < static_cast<unsigned long long int> (ULTRAPOS / 1000 * 1597) + (static_cast<unsigned long long int>(five_star_assurance_number) - 71) * static_cast<unsigned long long int>(ULTRAPOS / 1000 * 35)) II_4()
                         else Tri()
                     }
                     else if (five_star_assurance_number < 80 && five_star_assurance_number > 71 && four_star_assurance_number > 9) {
-                        if (temp1 < (unsigned long long int) (ULTRAPOS / 1000 * 637) + ((unsigned long long int)(five_star_assurance_number) - 71) * (unsigned long long int)(ULTRAPOS / 1000 * 35)) II_5()
+                        if (temp1 < static_cast<unsigned long long int> (ULTRAPOS / 1000 * 637) + (static_cast<unsigned long long int>(five_star_assurance_number) - 71) * static_cast<unsigned long long int>(ULTRAPOS / 1000 * 35)) II_5()
                         else II_4()
                     }
                     else II_5()
@@ -1152,31 +1152,31 @@ int main() {
                     int type = 0; //Up or non-up, character or weapon
                     int kind = 0; //which exactly
                     if (five_star_assurance_number < 74 && four_star_assurance_number < 9) {
-                        if (temp1 < (unsigned long long int) ULTRAPOS / 1000 * 6) III_5()
-                        else if (temp1 < (unsigned long long int) ULTRAPOS / 1000 * 57) III_4()
+                        if (temp1 < static_cast<unsigned long long int> (ULTRAPOS / 1000 * 6)) III_5()
+                        else if (temp1 < static_cast<unsigned long long int> (ULTRAPOS / 1000 * 57)) III_4()
                         else Tri()
                     }
                     else if (five_star_assurance_number < 74 && four_star_assurance_number == 9) {
-                        if (temp1 < (unsigned long long int) ULTRAPOS / 1000 * 6) III_5()
-                        else if (temp1 < (unsigned long long int) ULTRAPOS / 1000 * 567) III_4()
+                        if (temp1 < static_cast<unsigned long long int> (ULTRAPOS / 1000 * 6)) III_5()
+                        else if (temp1 < static_cast<unsigned long long int> (ULTRAPOS / 1000 * 567)) III_4()
                         else Tri()
                     }
                     else if (five_star_assurance_number < 74 && four_star_assurance_number > 9) {
-                        if (temp1 < (unsigned long long int) ULTRAPOS / 1000 * 6) III_5()
+                        if (temp1 < static_cast<unsigned long long int> (ULTRAPOS / 1000 * 6)) III_5()
                         else III_4()
                     }
                     else if (five_star_assurance_number < 90 && five_star_assurance_number > 73 && four_star_assurance_number < 9) {
-                        if (temp1 < (unsigned long long int) (ULTRAPOS / 1000 * 6) + ((unsigned long long int)(five_star_assurance_number) - 73) * (unsigned long long int)(ULTRAPOS / 1000 * 60)) III_5()
-                        else if (temp1 < (unsigned long long int) (ULTRAPOS / 1000 * 57) + ((unsigned long long int)(five_star_assurance_number) - 73) * (unsigned long long int)(ULTRAPOS / 1000 * 60)) III_4()
+                        if (temp1 < static_cast<unsigned long long int> (ULTRAPOS / 1000 * 6) + (static_cast<unsigned long long int>(five_star_assurance_number) - 73) * static_cast<unsigned long long int>(ULTRAPOS / 1000 * 60)) III_5()
+                        else if (temp1 < static_cast<unsigned long long int> (ULTRAPOS / 1000 * 57) + (static_cast<unsigned long long int>(five_star_assurance_number) - 73) * static_cast<unsigned long long int>(ULTRAPOS / 1000 * 60)) III_4()
                         else Tri()
                     }
                     else if (five_star_assurance_number < 90 && five_star_assurance_number > 73 && four_star_assurance_number == 9) {
-                        if (temp1 < (unsigned long long int) (ULTRAPOS / 1000 * 6) + ((unsigned long long int)(five_star_assurance_number) - 73) * (unsigned long long int)(ULTRAPOS / 1000 * 60)) III_5()
-                        else if (temp1 < (unsigned long long int) (ULTRAPOS / 1000 * 567) + ((unsigned long long int)(five_star_assurance_number) - 73) * (unsigned long long int)(ULTRAPOS / 1000 * 60)) III_4()
+                        if (temp1 < static_cast<unsigned long long int> (ULTRAPOS / 1000 * 6) + (static_cast<unsigned long long int>(five_star_assurance_number) - 73) * static_cast<unsigned long long int>(ULTRAPOS / 1000 * 60)) III_5()
+                        else if (temp1 < static_cast<unsigned long long int> (ULTRAPOS / 1000 * 567) + (static_cast<unsigned long long int>(five_star_assurance_number) - 73) * static_cast<unsigned long long int>(ULTRAPOS / 1000 * 60)) III_4()
                         else Tri()
                     }
                     else if (five_star_assurance_number < 90 && five_star_assurance_number > 73 && four_star_assurance_number > 9) {
-                        if (temp1 < (unsigned long long int) (ULTRAPOS / 1000 * 6) + ((unsigned long long int)(five_star_assurance_number) - 73) * (unsigned long long int)(ULTRAPOS / 1000 * 60)) III_5()
+                        if (temp1 < static_cast<unsigned long long int> (ULTRAPOS / 1000 * 6) + (static_cast<unsigned long long int>(five_star_assurance_number) - 73) * static_cast<unsigned long long int>(ULTRAPOS / 1000 * 60)) III_5()
                         else III_4()
                     }
                     else III_5()
@@ -1212,7 +1212,7 @@ int main() {
                         is_noelle = 0;
                     }
                     else if (four_star_assurance_number < 9) {
-                        if (temp1 < (unsigned long long int) ULTRAPOS / 1000 * 6) {
+                        if (temp1 < static_cast<unsigned long long int> (ULTRAPOS / 1000 * 6)) {
                             star = 5;
                             five_count++;
                             ave_fives += five_star_assurance_number;
@@ -1223,7 +1223,7 @@ int main() {
                             five_count_c++;
                             kind = rspick(nup_five_c, 5);
                         }
-                        else if (temp1 < (unsigned long long int) ULTRAPOS / 1000 * 57) {
+                        else if (temp1 < static_cast<unsigned long long int> (ULTRAPOS / 1000 * 57)) {
                             star = 4;
                             four_count++;
                             four_star_assurance_number = 0;
@@ -1235,7 +1235,7 @@ int main() {
                         else Tri()
                     }
                     else if (four_star_assurance_number == 9) {
-                        if (temp1 < (unsigned long long int) ULTRAPOS / 1000 * 6) {
+                        if (temp1 < static_cast<unsigned long long int> (ULTRAPOS / 1000 * 6)) {
                             star = 5;
                             five_count++;
                             type = 1;
@@ -1246,7 +1246,7 @@ int main() {
                             five_count_c++;
                             kind = rspick(nup_five_c, 5);
                         }
-                        else if (temp1 < (unsigned long long int) ULTRAPOS / 1000 * 567) {
+                        else if (temp1 < static_cast<unsigned long long int> (ULTRAPOS / 1000 * 567)) {
                             star = 4;
                             four_count++;
                             four_star_assurance_number = 0;
@@ -1258,7 +1258,7 @@ int main() {
                         else Tri()
                     }
                     else {
-                        if (temp1 < (unsigned long long int) ULTRAPOS / 1000 * 6) {
+                        if (temp1 < static_cast<unsigned long long int> (ULTRAPOS / 1000 * 6)) {
                             star = 5;
                             five_count++;
                             type = 1;
