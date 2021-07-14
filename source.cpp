@@ -146,34 +146,57 @@ constexpr auto ULTRAPOS = 437580000; //total number that's for integral computin
                     if (five_star_assurance_number > max_fives) { max_fives = five_star_assurance_number; max_fivesth = five_count; max_fivecount = countx; }\
                     if (five_star_assurance_number < min_fives) { min_fives = five_star_assurance_number; min_fivesth = five_count; min_fivecount = countx; }\
                     five_star_assurance_number = 0;\
-                    if (fate_weapon != 0 && fate_points == 2) {\
-                        type = 1;\
-                        five_count_w++;\
-                        kind = up_five_g[fate_weapon - 1];\
-                        fate_points = 0;\
-                        five_star_guarantee_number = 0;\
+                    if (fate_weapon == 1 || fate_weapon == 2) {\
+                        if (fate_points == 2) {\
+                            type = 1;\
+                            five_count_w++;\
+                            kind = up_five_g[fate_weapon - 1];\
+                            fate_points = 0;\
+                            five_star_guarantee_number = 0;\
+                        }\
+                        else if (five_star_guarantee_number == 1) {\
+                            type = 1;\
+                            five_count_w++;\
+                            kind = rspick(up_five_g, 2);\
+                            if (kind == up_five_g[fate_weapon - 1] ) fate_points = 0; else fate_points ++;\
+                            five_star_guarantee_number = 0;\
+                        }\
+                        else if (temp2 < (unsigned long long int) ULTRAPOS / 4 * 3) {\
+                            type = 1;\
+                            five_count_w++;\
+                            kind = rspick(up_five_g, 2);\
+                            if (kind == up_five_g[fate_weapon - 1] ) fate_points = 0; else fate_points ++;\
+                            five_star_guarantee_number = 0;\
+                        }\
+                        else {\
+                            type = 2;\
+                            five_count_w++;\
+                            kind = rspick(nup_five_w, 10);\
+                            fate_points ++;\
+                            if ((kind == five_check[0] || kind == five_check[1] || kind == five_check[2] || kind == five_check[3] || kind == five_check[4] || kind == five_check[5] || kind == five_check[6] || kind == five_check[7])) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;\
+                        }\
                     }\
-                    else if (five_star_guarantee_number == 1) {\
-                        type = 1;\
-                        five_count_w++;\
-                        kind = rspick(up_five_g, 2);\
-                        fate_points ++;\
-                        five_star_guarantee_number = 0;\
+                    else if (fate_weapon == 0) {\
+                        if (five_star_guarantee_number == 1) {\
+                            type = 1;\
+                            five_count_w++;\
+                            kind = rspick(up_five_g, 2);\
+                            five_star_guarantee_number = 0;\
+                        }\
+                        else if (temp2 < (unsigned long long int) ULTRAPOS / 4 * 3) {\
+                            type = 1;\
+                            five_count_w++;\
+                            kind = rspick(up_five_g, 2);\
+                            five_star_guarantee_number = 0;\
+                        }\
+                        else {\
+                            type = 2;\
+                            five_count_w++;\
+                            kind = rspick(nup_five_w, 10);\
+                            if ((kind == five_check[0] || kind == five_check[1] || kind == five_check[2] || kind == five_check[3] || kind == five_check[4] || kind == five_check[5] || kind == five_check[6] || kind == five_check[7])) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;\
+                        }\
                     }\
-                    else if (temp2 < (unsigned long long int) ULTRAPOS / 4 * 3) {\
-                        type = 1;\
-                        five_count_w++;\
-                        kind = rspick(up_five_g, 2);\
-                        fate_points ++;\
-                        five_star_guarantee_number = 0;\
-                    }\
-                    else {\
-                        type = 2;\
-                        five_count_w++;\
-                        kind = rspick(nup_five_w, 10);\
-                        fate_points ++;\
-                        if ((kind == five_check[0] || kind == five_check[1] || kind == five_check[2] || kind == five_check[3] || kind == five_check[4] || kind == five_check[5] || kind == five_check[6] || kind == five_check[7])) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;\
-                    }\
+                    else {}\
                 } // 5-star kind settler for banner II
 #define II_4() {    star = 4;\
                     four_count++;\
