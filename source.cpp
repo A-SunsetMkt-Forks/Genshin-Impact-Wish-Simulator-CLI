@@ -332,7 +332,7 @@
                     }\
                 }\
                 else if (unmet4_c > 17) {\
-                    if (temp2 < static_cast<unsigned long long int> (ULTRAPOS - ULTRAPOS / (10 * unmet4_c - 168) - 1)) {\
+                    if (temp2 < static_cast<unsigned long long int> (ULTRAPOS - ULTRAPOS / (10 * unmet4_c - 178) - 1)) {\
                         type = 1;\
                         four_count_c++;\
                         unmet4_c = 0;\
@@ -346,7 +346,7 @@
                     }\
                 }\
                 else {\
-                    if (temp2 < static_cast<unsigned long long int> (ULTRAPOS - ULTRAPOS / (10 * unmet4_w - 168) - 1)) {\
+                    if (temp2 < static_cast<unsigned long long int> (ULTRAPOS - ULTRAPOS / (10 * unmet4_w - 178) - 1)) {\
                         type = 2;\
                         four_count_w++;\
                         unmet4_w = 0;\
@@ -424,7 +424,7 @@ int rspick(int* kindx, int sizekind) {
 int main() {
     std::cout << S_1 << endl << S_2 << endl << S_3 << endl << S_4 << endl << endl;
     int y_print = 1;
-    unsigned long long int ULTRAPOS = 437580000;
+    unsigned long long int ULTRAPOS = 573071571072000;
     while (true) {
     enter_chosen_banner:
         int chosen_banner = 0,
