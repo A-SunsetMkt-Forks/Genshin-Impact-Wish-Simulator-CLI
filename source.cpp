@@ -550,7 +550,7 @@ int main() {
             if (cin.fail()) { chosen_event = 0; std::cout << endl << S_11 << endl; cin.clear(); cin.ignore(32767, '\n'); goto enter_chosen_event; }
             else if (chosen_event == -1) { chosen_event = 0; std::cout << endl; goto enter_chosen_banner; }
             else if (chosen_event == 1 ) quit = 0; else { std::cout << endl << S_31 << endl << endl; goto enter_chosen_event; } } break;
-        default: {chosen_banner = 0; chosen_event = 0; quit = 1; std::cout << S_53 << endl << endl; goto enter_chosen_banner; } break;
+        default: {chosen_banner = 0; chosen_event = 0; quit = 1; std::cout << endl << S_53 << endl << endl; goto enter_chosen_banner; } break;
         }
         // choose event
         if (chosen_banner == 1) {
