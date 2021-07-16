@@ -1049,7 +1049,7 @@ int main() {
                 }
             }
             else if (wishes_number < 0) { wishes_number = 0; std::cout << S_72 << endl; goto enter_wishes_number;}
-            else { std::cout << S_85 << endl; }
+            else { std::cout << S_85 << endl << endl; }
             const std::chrono::time_point<std::chrono::system_clock> startx = std::chrono::system_clock::now();
             auto starty = std::chrono::steady_clock::now();
             if (chosen_banner == 1) {
