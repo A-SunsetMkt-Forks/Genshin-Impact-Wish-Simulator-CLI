@@ -1,7 +1,7 @@
 ﻿#ifndef CN_H
 #define S_1 "原神祈愿模拟器（命令行）V2.0.6"
 #define S_2 "作者: Jirehlov Research"
-#define S_3 "开源于GitHub: Jirehlov/GenshinImpactWishSimulatorCLI"
+#define S_3 "开源于GitHub: Jirehlov/Genshin-Impact-Wish-Simulator-CLI"
 #define S_4 "MIT LICENSE"
 #define S_5 "选择卡池类型:"
 #define S_6 "-1: 退出;"
