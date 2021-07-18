@@ -113,11 +113,11 @@ int rspick(const int* kindx, int sizekind) {
 }
 // randomly pick an element among kindx which size is sizekind
 
-int WRSpick(const int* weightx, int nom, int upceil){
+int WRSpick(const int* weightx, int nom){
     int ceilling = 0;
     for (int inin = 0; inin < nom; inin ++) ceilling += weightx[inin];
     const int typess[3] = {0, 1, 2};
-    if (ceilling > upceil) ceilling = upceil;
+    if (nom == 3 && ceilling > 10000) ceilling = 10000;
     int randomn = generatorz() % static_cast<unsigned long long int>(ceilling) + 1;
     int tc = 0, results = 0;
     for (int inin = 0; inin < nom; inin ++){
@@ -154,10 +154,10 @@ int main() {
         five_weight = 0,
         four_weight = 0,
         three_weight = 0,
-        unmet4_w_weight = 0,
-        unmet4_c_weight = 0,
-        unmet5_w_weight = 0,
-        unmet5_c_weight = 0,
+        unmet4_c = 0,
+        unmet4_w = 0,
+        unmet5_c = 0,
+        unmet5_w = 0,
         resultt = 0,
         resultu = 0,
         luck = 0,
@@ -195,10 +195,6 @@ int main() {
         min_fivesth = 1,
         max_fivecount = 1,
         min_fivecount = 1,
-        unmet4_c = 0,
-        unmet4_w = 0,
-        unmet5_c = 0,
-        unmet5_w = 0,
         pcount[128] = { 0 },
         lucklocation[10] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 },
         lucksublocation[10] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 },
@@ -794,7 +790,7 @@ int main() {
                     else four_weight = 510 + 5100 * (four_star_assurance_number - 8);
                     three_weight = 9430;
                     int weight[3] = {five_weight, four_weight, three_weight};
-                    resultt = WRSpick(weight, 3, 10000);
+                    resultt = WRSpick(weight, 3);
                     switch(resultt){
                         case 0: {
                             star = 5;
@@ -832,20 +828,9 @@ int main() {
                             }
                             else{
                                 if (unmet4_c < 18 && unmet4_w < 18) {
-                                    unmet4_c_weight = 255;
-                                    unmet4_w_weight = 255;
-                                }
-                                else if (unmet4_c > 17) {
-                                    unmet4_c_weight = 255 + 2550 * (unmet4_c - 17);
-                                    unmet4_w_weight = 255;
-                                }
-                                else {
-                                    unmet4_w_weight = 255 + 2550 * (unmet4_w - 17);
-                                    unmet4_c_weight = 255;
-                                }
-                                int weight[2] = {unmet4_c_weight, unmet4_w_weight};
-                                resultu = WRSpick(weight, 2, 510);
-                                switch(resultu){
+                                    int weight1[2] = { 255, 255 };
+                                    resultu = WRSpick(weight1, 2);
+                                    switch (resultu) {
                                     case 0: {
                                         type = 2;
                                         four_count_c++;
@@ -861,6 +846,49 @@ int main() {
                                         four_star_guarantee_number = 1;
                                     } break;
                                     default: std::cout << E_4 << endl; break;
+                                    }
+                                }
+                                else if (unmet4_c > 17) {
+                                    int weight1[2] = { 255 + 2550 * (unmet4_c - 17), 255 };
+                                    resultu = WRSpick(weight1, 2);
+                                    switch (resultu) {
+                                    case 0: {
+                                        type = 2;
+                                        four_count_c++;
+                                        unmet4_c = 0;
+                                        kind = rspick(nup_four_c, size_nup_four_c);
+                                        if ((kind == four_check[0] || kind == four_check[1] || kind == four_check[2] || kind == four_check[3] || kind == four_check[4] || kind == four_check[5] || kind == four_check[6] || kind == four_check[7])) four_star_guarantee_number = 0; else four_star_guarantee_number = 1;
+                                    } break;
+                                    case 1: {
+                                        type = 3;
+                                        four_count_w++;
+                                        unmet4_w = 0;
+                                        kind = rspick(nup_four_w, size_nup_four_w);
+                                        four_star_guarantee_number = 1;
+                                    } break;
+                                    default: std::cout << E_4 << endl; break;
+                                    }
+                                }
+                                else {
+                                    int weight1[2] = { 255 + 2550 * (unmet4_w - 17), 255 };
+                                    resultu = WRSpick(weight1, 2);
+                                    switch (resultu) {
+                                    case 0: {
+                                        type = 3;
+                                        four_count_w++;
+                                        unmet4_w = 0;
+                                        kind = rspick(nup_four_w, size_nup_four_w);
+                                        four_star_guarantee_number = 1;
+                                    } break;
+                                    case 1: {
+                                        type = 2;
+                                        four_count_c++;
+                                        unmet4_c = 0;
+                                        kind = rspick(nup_four_c, size_nup_four_c);
+                                        if ((kind == four_check[0] || kind == four_check[1] || kind == four_check[2] || kind == four_check[3] || kind == four_check[4] || kind == four_check[5] || kind == four_check[6] || kind == four_check[7])) four_star_guarantee_number = 0; else four_star_guarantee_number = 1;
+                                    } break;
+                                    default: std::cout << E_4 << endl; break;
+                                    }
                                 }
                             }
                         }; break;
@@ -897,7 +925,7 @@ int main() {
                     else four_weight = 6600 + 3000 * (four_star_assurance_number - 8);
                     three_weight = 9330;
                     int weight[3] = {five_weight, four_weight, three_weight};
-                    resultt = WRSpick(weight, 3, 10000);
+                    resultt = WRSpick(weight, 3);
                     switch(resultt){
                         case 0: {
                             star = 5;
@@ -974,35 +1002,67 @@ int main() {
                             }
                             else{
                                 if (unmet4_c < 16 && unmet4_w < 16) {
-                                    unmet4_c_weight = 300;
-                                    unmet4_w_weight = 300;
+                                    int weight2[2] = { 300, 300 };
+                                    resultu = WRSpick(weight2, 2);
+                                    switch (resultu) {
+                                    case 0: {
+                                        type = 2;
+                                        four_count_c++;
+                                        unmet4_c = 0;
+                                        kind = rspick(nup_four_c, size_nup_four_c);
+                                        four_star_guarantee_number = 1;
+                                    } break;
+                                    case 1: {
+                                        type = 3;
+                                        four_count_w++;
+                                        unmet4_w = 0;
+                                        kind = rspick(nup_four_w, size_nup_four_w);
+                                        if ((kind == four_check[0] || kind == four_check[1] || kind == four_check[2] || kind == four_check[3] || kind == four_check[4] || kind == four_check[5] || kind == four_check[6] || kind == four_check[7])) four_star_guarantee_number = 0; else four_star_guarantee_number = 1;
+                                    } break;
+                                    default: std::cout << E_4 << endl; break;
+                                    }
                                 }
                                 else if (unmet4_c > 15) {
-                                    unmet4_c_weight = 300 + 3000 * (unmet4_c - 15);
-                                    unmet4_w_weight = 300;
+                                    int weight2[2] = { 300 + 3000 * (unmet4_c - 15), 300 };
+                                    resultu = WRSpick(weight2, 2);
+                                    switch (resultu) {
+                                    case 0: {
+                                        type = 2;
+                                        four_count_c++;
+                                        unmet4_c = 0;
+                                        kind = rspick(nup_four_c, size_nup_four_c);
+                                        four_star_guarantee_number = 1;
+                                    } break;
+                                    case 1: {
+                                        type = 3;
+                                        four_count_w++;
+                                        unmet4_w = 0;
+                                        kind = rspick(nup_four_w, size_nup_four_w);
+                                        if ((kind == four_check[0] || kind == four_check[1] || kind == four_check[2] || kind == four_check[3] || kind == four_check[4] || kind == four_check[5] || kind == four_check[6] || kind == four_check[7])) four_star_guarantee_number = 0; else four_star_guarantee_number = 1;
+                                    } break;
+                                    default: std::cout << E_4 << endl; break;
+                                    }
                                 }
                                 else {
-                                    unmet4_w_weight = 300 + 3000 * (unmet4_w - 15);
-                                    unmet4_c_weight = 300;
-                                }
-                                int weight[2] = {unmet4_c_weight, unmet4_w_weight};
-                                resultu = WRSpick(weight, 2, 600);
-                                switch(resultu){
-                                case 0: {
-                                    type = 2;
-                                    four_count_c++;
-                                    unmet4_c = 0;
-                                    kind = rspick(nup_four_c, size_nup_four_c);
-                                    four_star_guarantee_number = 1;
-                                } break;
-                                case 1: {
-                                    type = 3;
-                                    four_count_w++;
-                                    unmet4_w = 0;
-                                    kind = rspick(nup_four_w, size_nup_four_w);
-                                    if ((kind == four_check[0] || kind == four_check[1] || kind == four_check[2] || kind == four_check[3] || kind == four_check[4] || kind == four_check[5] || kind == four_check[6] || kind == four_check[7])) four_star_guarantee_number = 0; else four_star_guarantee_number = 1;
-                                } break;
-                                default: std::cout << E_4 << endl; break;
+                                    int weight2[2] = { 300 + 3000 * (unmet4_w - 15), 300 };
+                                    resultu = WRSpick(weight2, 2);
+                                    switch (resultu) {
+                                    case 0: {
+                                        type = 3;
+                                        four_count_w++;
+                                        unmet4_w = 0;
+                                        kind = rspick(nup_four_w, size_nup_four_w);
+                                        if ((kind == four_check[0] || kind == four_check[1] || kind == four_check[2] || kind == four_check[3] || kind == four_check[4] || kind == four_check[5] || kind == four_check[6] || kind == four_check[7])) four_star_guarantee_number = 0; else four_star_guarantee_number = 1;
+                                    } break;
+                                    case 1: {
+                                        type = 2;
+                                        four_count_c++;
+                                        unmet4_c = 0;
+                                        kind = rspick(nup_four_c, size_nup_four_c);
+                                        four_star_guarantee_number = 1;
+                                    } break;
+                                    default: std::cout << E_4 << endl; break;
+                                    }
                                 }
                             }
                     }; break;
@@ -1034,7 +1094,7 @@ int main() {
                     else four_weight = 510 + 5100 * (four_star_assurance_number - 8);
                     three_weight = 9430;
                     int weight[3] = {five_weight, four_weight, three_weight};
-                    resultt = WRSpick(weight, 3, 10000);
+                    resultt = WRSpick(weight, 3);
                     switch(resultt){
                         case 0: {
                             star = 5;
@@ -1045,20 +1105,9 @@ int main() {
                             five_pity[five_star_assurance_number - 1] ++;
                             five_star_assurance_number = 0;
                             if (unmet5_c < 148 && unmet5_w < 148) {
-                                unmet5_c_weight = 30;
-                                unmet5_w_weight = 30;
-                            }
-                            else if (unmet5_c > 147) {
-                                unmet5_c_weight = 30 + 300 * (unmet5_c - 147);
-                                unmet5_w_weight = 30;
-                            }
-                            else {
-                                unmet5_w_weight = 30 + 300 * (unmet5_w - 147);
-                                unmet5_c_weight = 30;
-                            }
-                            int weight[2] = {unmet5_c_weight, unmet5_w_weight};
-                            resultu = WRSpick(weight, 2, 60);
-                            switch(resultu){
+                                int weight4[2] = { 30, 30 };
+                                resultu = WRSpick(weight4, 2);
+                                switch (resultu) {
                                 case 0: {
                                     type = 1;
                                     five_count_c++;
@@ -1072,6 +1121,45 @@ int main() {
                                     kind = rspick(nup_five_w, 10);
                                 } break;
                                 default: std::cout << E_4 << endl; break;
+                                }
+                            }
+                            else if (unmet5_c > 147) {
+                                int weight4[2] = { 30 + 300 * (unmet5_c - 147), 30 };
+                                resultu = WRSpick(weight4, 2);
+                                switch (resultu) {
+                                case 0: {
+                                    type = 1;
+                                    five_count_c++;
+                                    unmet5_c = 0;
+                                    kind = rspick(nup_five_c, 5);
+                                } break;
+                                case 1: {
+                                    type = 2;
+                                    five_count_w++;
+                                    unmet5_w = 0;
+                                    kind = rspick(nup_five_w, 10);
+                                } break;
+                                default: std::cout << E_4 << endl; break;
+                                }
+                            }
+                            else {
+                                int weight4[2] = { 30 + 300 * (unmet5_w - 147), 30 };
+                                resultu = WRSpick(weight4, 2);
+                                switch (resultu) {
+                                case 0: {
+                                    type = 2;
+                                    five_count_w++;
+                                    unmet5_w = 0;
+                                    kind = rspick(nup_five_w, 10);
+                                } break;
+                                case 1: {
+                                    type = 1;
+                                    five_count_c++;
+                                    unmet5_c = 0;
+                                    kind = rspick(nup_five_c, 5);
+                                } break;
+                                default: std::cout << E_4 << endl; break;
+                                }
                             }
                         }; break;
                         case 1: {
@@ -1081,20 +1169,9 @@ int main() {
                             else four_pity[9] ++;
                             four_star_assurance_number = 0;
                             if (unmet4_c < 18 && unmet4_w < 18) {
-                                unmet4_c_weight = 255;
-                                unmet4_w_weight = 255;
-                            }
-                            else if (unmet4_c > 17) {
-                                unmet4_c_weight = 255 + 2550 * (unmet4_c - 17);
-                                unmet4_w_weight = 255;
-                            }
-                            else {
-                                unmet4_w_weight = 255 + 2550 * (unmet4_w - 17);
-                                unmet4_c_weight = 255;
-                            }
-                            int weight[2] = {unmet4_c_weight, unmet4_w_weight};
-                            resultu = WRSpick(weight, 2, 510);
-                            switch(resultu){
+                                int weight3[2] = { 255, 255 };
+                                resultu = WRSpick(weight3, 2);
+                                switch (resultu) {
                                 case 0: {
                                     type = 1;
                                     four_count_c++;
@@ -1108,6 +1185,45 @@ int main() {
                                     kind = rspick(nup_four_w, size_nup_four_w);
                                 } break;
                                 default: std::cout << E_4 << endl; break;
+                                }
+                            }
+                            else if (unmet4_c > 17) {
+                                int weight3[2] = { 255 + 2550 * (unmet4_c - 17), 255 };
+                                resultu = WRSpick(weight3, 2);
+                                switch (resultu) {
+                                case 0: {
+                                    type = 1;
+                                    four_count_c++;
+                                    unmet4_c = 0;
+                                    kind = rspick(nup_four_c, size_nup_four_c);
+                                } break;
+                                case 1: {
+                                    type = 2;
+                                    four_count_w++;
+                                    unmet4_w = 0;
+                                    kind = rspick(nup_four_w, size_nup_four_w);
+                                } break;
+                                default: std::cout << E_4 << endl; break;
+                                }
+                            }
+                            else {
+                                int weight3[2] = { 255 + 2550 * (unmet4_w - 17), 255 };
+                                resultu = WRSpick(weight3, 2);
+                                switch (resultu) {
+                                case 0: {
+                                    type = 2;
+                                    four_count_w++;
+                                    unmet4_w = 0;
+                                    kind = rspick(nup_four_w, size_nup_four_w);
+                                } break;
+                                case 1: {
+                                    type = 1;
+                                    four_count_c++;
+                                    unmet4_c = 0;
+                                    kind = rspick(nup_four_c, size_nup_four_c);
+                                } break;
+                                default: std::cout << E_4 << endl; break;
+                                }
                             }
                         }; break;
                         case 2: Tri(); break;
