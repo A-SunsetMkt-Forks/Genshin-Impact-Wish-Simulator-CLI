@@ -692,46 +692,65 @@ int main() {
                 goto enter_wishes_number;
             }
             else if (wishes_number == -3) {
-                wishes_number = 0;
-                four_star_assurance_number = 1;
-                five_star_assurance_number = 1;
-                five_star_guarantee_number = 0;
-                four_star_guarantee_number = 0;
-                countx = 0;
-                five_count = 0;
-                five_count_c = 0;
-                five_count_w = 0;
-                four_count = 0;
-                four_count_c = 0;
-                four_count_w = 0;
-                is_noelle = 1;
-                ave_fives = 0;
-                max_fives = 1;
-                min_fives = 90;
-                max_fivesth = 1;
-                min_fivesth = 1;
-                max_fivecount = 1;
-                min_fivecount = 1;
-                unmet4_c = 0;
-                unmet4_w = 0;
-                unmet5_c = 0;
-                unmet5_w = 0;
-                for (int ini = 0; ini < 128; ini++) { pcount[ini] = 0; }
-                luck = 0;
-                for (int ini = 0; ini < 10; ini++) { lucklocation[ini] = static_cast< long long int> (ini) + 1; }
-                for (int ini = 0; ini < 10; ini++) { lucksublocation[ini] = static_cast< long long int> (ini) + 1; }
-                for (int ini = 0; ini < 10; ini++) { luckkind[ini] = 127; }
-                for (int ini = 0; ini < 10; ini++) { luckstar[ini] = 3; }
-                for (int ini = 0; ini < 10; ini++) { lucktype[ini] = 1; }
-                luckiest = 0;
-                for (int ini = 0; ini < 10; ini++) { luckiestlocation[ini] = static_cast< long long int> (ini) + 1; }
-                for (int ini = 0; ini < 10; ini++) { luckiestsublocation[ini] = static_cast< long long int> (ini) + 1; }
-                for (int ini = 0; ini < 10; ini++) { luckiestkind[ini] = 127; }
-                for (int ini = 0; ini < 10; ini++) { four_pity[ini] = 0; }
-                for (int ini = 0; ini < 90; ini++) { five_pity[ini] = 0; }
-                for (int ini = 0; ini < 80; ini++) { five_pity_w[ini] = 0; }
-                std::cout << S_64 << endl;
-                goto enter_wishes_number;
+                enter_cleanornot:
+                std::cout << S_91 << endl << S_92 << endl << S_93 << endl << endl;
+                int cleanornot = 0;
+                std::cin >> cleanornot;
+                if (cin.fail()) { cleanornot = 0; std::cout << endl << S_11 << endl; cin.clear(); cin.ignore(32767, '\n'); goto enter_cleanornot; }
+                std::cout << endl;
+                if (cleanornot == 1) {
+                    wishes_number = 0;
+                    four_star_assurance_number = 1;
+                    five_star_assurance_number = 1;
+                    five_star_guarantee_number = 0;
+                    four_star_guarantee_number = 0;
+                    countx = 0;
+                    five_count = 0;
+                    five_count_c = 0;
+                    five_count_w = 0;
+                    four_count = 0;
+                    four_count_c = 0;
+                    four_count_w = 0;
+                    is_noelle = 1;
+                    ave_fives = 0;
+                    max_fives = 1;
+                    min_fives = 90;
+                    max_fivesth = 1;
+                    min_fivesth = 1;
+                    max_fivecount = 1;
+                    min_fivecount = 1;
+                    unmet4_c = 0;
+                    unmet4_w = 0;
+                    unmet5_c = 0;
+                    unmet5_w = 0;
+                    for (int ini = 0; ini < 128; ini++) { pcount[ini] = 0; }
+                    luck = 0;
+                    for (int ini = 0; ini < 10; ini++) { lucklocation[ini] = static_cast< long long int> (ini) + 1; }
+                    for (int ini = 0; ini < 10; ini++) { lucksublocation[ini] = static_cast< long long int> (ini) + 1; }
+                    for (int ini = 0; ini < 10; ini++) { luckkind[ini] = 127; }
+                    for (int ini = 0; ini < 10; ini++) { luckstar[ini] = 3; }
+                    for (int ini = 0; ini < 10; ini++) { lucktype[ini] = 1; }
+                    luckiest = 0;
+                    for (int ini = 0; ini < 10; ini++) { luckiestlocation[ini] = static_cast< long long int> (ini) + 1; }
+                    for (int ini = 0; ini < 10; ini++) { luckiestsublocation[ini] = static_cast< long long int> (ini) + 1; }
+                    for (int ini = 0; ini < 10; ini++) { luckiestkind[ini] = 127; }
+                    for (int ini = 0; ini < 10; ini++) { four_pity[ini] = 0; }
+                    for (int ini = 0; ini < 90; ini++) { five_pity[ini] = 0; }
+                    for (int ini = 0; ini < 80; ini++) { five_pity_w[ini] = 0; }
+                    std::cout << S_64 << endl;
+                    goto enter_wishes_number;
+                }
+                else if (cleanornot == -1){
+                    cleanornot = 0;
+                    wishes_number = 0;
+                    goto enter_wishes_number; 
+                }
+                else {
+                    cleanornot = 0;
+                    wishes_number = 0;
+                    std::cout << S_72 << endl << endl;
+                    goto enter_cleanornot; 
+                }
             }
             //if (chosen_banner == 4 && chosen_event == 1 && wishes_number != 10) { wishes_number = 0; std::cout << "Invalid number of wishes!" << endl; goto enter_wishes_number; }
             //if (!(wishes_number == -1||wishes_number == 1||wishes_number == 10||wishes_number == -2||wishes_number == -3)){ wishes_number = 0; std::cout << "Invalid number of wishes!" << endl; goto enter_wishes_number; }
@@ -782,7 +801,7 @@ int main() {
                     wishes_number = 0; std::cout << S_72 << endl; goto enter_wishes_number;
                 }
             }
-            else if (wishes_number < 0) { wishes_number = 0; std::cout << S_72 << endl; goto enter_wishes_number;}
+            else if (wishes_number < 1) { wishes_number = 0; std::cout << S_72 << endl; goto enter_wishes_number;}
             else { std::cout << S_85 << endl << endl; }
             const std::chrono::time_point<std::chrono::system_clock> startx = std::chrono::system_clock::now();
             auto starty = std::chrono::steady_clock::now();
