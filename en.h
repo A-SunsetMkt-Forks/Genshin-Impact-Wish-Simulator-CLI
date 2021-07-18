@@ -190,4 +190,6 @@
 #define C_98 "Thundering Pulse"
 #define E_1 "Unexpected kind! Error code: 1"
 #define E_2 "Unexpected fate_weapon! Error code: 2"
+#define E_3 "Unexpected resultt! Error code: 3"
+#define E_4 "Unexpected resultu! Error code: 4"
 #endif

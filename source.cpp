@@ -53,324 +53,6 @@
                     luck = 0;\
                     lucktype[9] = type;\
                 } // get the recorded luckiest
-#define I_5() {star = 5;\
-                five_count++;\
-                ave_fives += five_star_assurance_number;\
-                if (five_star_assurance_number > max_fives) { max_fives = five_star_assurance_number; max_fivesth = five_count; max_fivecount = countx; }\
-                if (five_star_assurance_number < min_fives) { min_fives = five_star_assurance_number; min_fivesth = five_count; min_fivecount = countx; }\
-                five_pity[five_star_assurance_number - 1] ++;\
-                five_star_assurance_number = 0;\
-                if (five_star_guarantee_number == 1) { type = 1; five_count_c++; kind = up_five; five_star_guarantee_number = 0; }\
-                else if (temp2 < static_cast<unsigned long long int> (ULTRAPOS / 2)) {\
-                    type = 1;\
-                    five_count_c++;\
-                    kind = up_five;\
-                    five_star_guarantee_number = 0;\
-                }\
-                else {\
-                    type = 2;\
-                    five_count_c++;\
-                    kind = rspick(nup_five_c, 5);\
-                    if (five_check[0] == 1) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;\
-                }\
-            } // 5-star kind settler for banner I
-#define I_4() {star = 4;\
-                four_count++;\
-                if (four_star_assurance_number < 10) four_pity[four_star_assurance_number - 1] ++;\
-                else four_pity[9] ++;\
-                four_star_assurance_number = 0;\
-                if (four_star_guarantee_number == 1) {\
-                    type = 1;\
-                    four_count_c++;\
-                    unmet4_c = 0;\
-                    kind = rspick(up_four_g, 3);\
-                    four_star_guarantee_number = 0;\
-                }\
-                else if (temp2 < static_cast<unsigned long long int> (ULTRAPOS / 2)) {\
-                    type = 1;\
-                    four_count_c++;\
-                    unmet4_c = 0;\
-                    kind = rspick(up_four_g, 3);\
-                    four_star_guarantee_number = 0;\
-                }\
-                else {\
-                    if (unmet4_c < 18 && unmet4_w < 18) {\
-                        if (temp2 > static_cast<unsigned long long int> (3 * ULTRAPOS / 4 - 1)) {\
-                            type = 2;\
-                            four_count_c++;\
-                            unmet4_c = 0;\
-                            kind = rspick(nup_four_c, size_nup_four_c);\
-                            if ((kind == four_check[0] || kind == four_check[1] || kind == four_check[2] || kind == four_check[3] || kind == four_check[4] || kind == four_check[5] || kind == four_check[6] || kind == four_check[7])) four_star_guarantee_number = 0; else four_star_guarantee_number = 1;\
-                        }\
-                        else {\
-                            type = 3;\
-                            four_count_w++;\
-                            unmet4_w = 0;\
-                            kind = rspick(nup_four_w, size_nup_four_w);\
-                            four_star_guarantee_number = 1;\
-                        }\
-                    }\
-                    else if (unmet4_w > 17) {\
-                        if (temp2 > static_cast<unsigned long long int> (ULTRAPOS - ULTRAPOS / (20 * unmet4_c - 356) - 1)) {\
-                            type = 2;\
-                            four_count_c++;\
-                            unmet4_c = 0;\
-                            kind = rspick(nup_four_c, size_nup_four_c);\
-                            if ((kind == four_check[0] || kind == four_check[1] || kind == four_check[2] || kind == four_check[3] || kind == four_check[4] || kind == four_check[5] || kind == four_check[6] || kind == four_check[7])) four_star_guarantee_number = 0; else four_star_guarantee_number = 1;\
-                        }\
-                        else {\
-                            type = 3;\
-                            four_count_w++;\
-                            unmet4_w = 0;\
-                            kind = rspick(nup_four_w, size_nup_four_w);\
-                            four_star_guarantee_number = 1;\
-                        }\
-                    }\
-                    else {\
-                        if (temp2 > static_cast<unsigned long long int> (ULTRAPOS - ULTRAPOS / (20 * unmet4_w - 356) - 1)) {\
-                            type = 3;\
-                            four_count_w++;\
-                            unmet4_w = 0;\
-                            kind = rspick(nup_four_w, size_nup_four_w);\
-                            four_star_guarantee_number = 1;\
-                        }\
-                        else {\
-                            type = 2;\
-                            four_count_c++;\
-                            unmet4_c = 0;\
-                            kind = rspick(nup_four_c, size_nup_four_c);\
-                            if ((kind == four_check[0] || kind == four_check[1] || kind == four_check[2] || kind == four_check[3] || kind == four_check[4] || kind == four_check[5] || kind == four_check[6] || kind == four_check[7])) four_star_guarantee_number = 0; else four_star_guarantee_number = 1;\
-                        }\
-                    }\
-                }\
-            } // 4-star kind settler for banner I
-#define II_5() {star = 5;\
-                    five_count++;\
-                    ave_fives += five_star_assurance_number;\
-                    if (five_star_assurance_number > max_fives) { max_fives = five_star_assurance_number; max_fivesth = five_count; max_fivecount = countx; }\
-                    if (five_star_assurance_number < min_fives) { min_fives = five_star_assurance_number; min_fivesth = five_count; min_fivecount = countx; }\
-                    five_pity_w[five_star_assurance_number - 1] ++;\
-                    five_star_assurance_number = 0;\
-                    if (fate_weapon == 1 || fate_weapon == 2) {\
-                        if (fate_points == 2) {\
-                            type = 1;\
-                            five_count_w++;\
-                            kind = up_five_g[fate_weapon - 1];\
-                            fate_points = 0;\
-                            five_star_guarantee_number = 0;\
-                        }\
-                        else if (five_star_guarantee_number == 1) {\
-                            type = 1;\
-                            five_count_w++;\
-                            kind = rspick(up_five_g, 2);\
-                            if (kind == up_five_g[fate_weapon - 1] ) fate_points = 0; else fate_points ++;\
-                            five_star_guarantee_number = 0;\
-                        }\
-                        else if (temp2 < static_cast<unsigned long long int> (ULTRAPOS / 4 * 3)) {\
-                            type = 1;\
-                            five_count_w++;\
-                            kind = rspick(up_five_g, 2);\
-                            if (kind == up_five_g[fate_weapon - 1] ) fate_points = 0; else fate_points ++;\
-                            five_star_guarantee_number = 0;\
-                        }\
-                        else {\
-                            type = 2;\
-                            five_count_w++;\
-                            kind = rspick(nup_five_w, 10);\
-                            fate_points ++;\
-                            if ((kind == five_check[0] || kind == five_check[1] || kind == five_check[2] || kind == five_check[3] || kind == five_check[4] || kind == five_check[5] || kind == five_check[6] || kind == five_check[7])) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;\
-                        }\
-                    }\
-                    else if (fate_weapon == 0) {\
-                        if (five_star_guarantee_number == 1) {\
-                            type = 1;\
-                            five_count_w++;\
-                            kind = rspick(up_five_g, 2);\
-                            five_star_guarantee_number = 0;\
-                        }\
-                        else if (temp2 < static_cast<unsigned long long int> (ULTRAPOS / 4 * 3)) {\
-                            type = 1;\
-                            five_count_w++;\
-                            kind = rspick(up_five_g, 2);\
-                            five_star_guarantee_number = 0;\
-                        }\
-                        else {\
-                            type = 2;\
-                            five_count_w++;\
-                            kind = rspick(nup_five_w, 10);\
-                            if ((kind == five_check[0] || kind == five_check[1] || kind == five_check[2] || kind == five_check[3] || kind == five_check[4] || kind == five_check[5] || kind == five_check[6] || kind == five_check[7])) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;\
-                        }\
-                    }\
-                    else {  std::cout << E_2 << endl; goto full_quit; }\
-                } // 5-star kind settler for banner II
-#define II_4() {    star = 4;\
-                    four_count++;\
-                    if (four_star_assurance_number < 10) four_pity[four_star_assurance_number - 1] ++;\
-                    else four_pity[9] ++;\
-                    four_star_assurance_number = 0;\
-                    if (four_star_guarantee_number == 1) {\
-                        type = 1;\
-                        four_count_w++;\
-                        unmet4_w = 0;\
-                        kind = rspick(up_four_g, 5);\
-                        four_star_guarantee_number = 0;\
-                    }\
-                    else if (temp2 < static_cast<unsigned long long int> (ULTRAPOS / 4 * 3)) {\
-                        type = 1;\
-                        four_count_w++;\
-                        unmet4_w = 0;\
-                        kind = rspick(up_four_g, 5);\
-                        four_star_guarantee_number = 0;\
-                    }\
-                    else {\
-                        if (unmet4_c < 15 && unmet4_w < 15) {\
-                            if (temp2 > static_cast<unsigned long long int> (ULTRAPOS / 8 * 7- 1)) {\
-                                type = 2;\
-                                four_count_c++;\
-                                unmet4_c = 0;\
-                                kind = rspick(nup_four_c, size_nup_four_c);\
-                                four_star_guarantee_number = 1;\
-                            }\
-                            else {\
-                                type = 3;\
-                                four_count_w++;\
-                                unmet4_w = 0;\
-                                kind = rspick(nup_four_w, size_nup_four_w);\
-                                if ((kind == four_check[0] || kind == four_check[1] || kind == four_check[2] || kind == four_check[3] || kind == four_check[4] || kind == four_check[5] || kind == four_check[6] || kind == four_check[7])) four_star_guarantee_number = 0; else four_star_guarantee_number = 1;\
-                            }\
-                        }\
-                        else if (unmet4_w > 14) {\
-                            if (temp2 > static_cast<unsigned long long int> (ULTRAPOS - ULTRAPOS / (40 * unmet4_c - 592) - 1)) {\
-                                type = 2;\
-                                four_count_c++;\
-                                unmet4_c = 0;\
-                                kind = rspick(nup_four_c, size_nup_four_c);\
-                                four_star_guarantee_number = 1;\
-                            }\
-                            else {\
-                                type = 3;\
-                                four_count_w++;\
-                                unmet4_w = 0;\
-                                kind = rspick(nup_four_w, size_nup_four_w);\
-                                if ((kind == four_check[0] || kind == four_check[1] || kind == four_check[2] || kind == four_check[3] || kind == four_check[4] || kind == four_check[5] || kind == four_check[6] || kind == four_check[7])) four_star_guarantee_number = 0; else four_star_guarantee_number = 1;\
-                            }\
-                        }\
-                        else {\
-                            if (temp2 > static_cast<unsigned long long int> (ULTRAPOS - ULTRAPOS / (40 * unmet4_w - 592) - 1)) {\
-                                type = 3;\
-                                four_count_w++;\
-                                unmet4_w = 0;\
-                                kind = rspick(nup_four_w, size_nup_four_w);\
-                                if ((kind == four_check[0] || kind == four_check[1] || kind == four_check[2] || kind == four_check[3] || kind == four_check[4] || kind == four_check[5] || kind == four_check[6] || kind == four_check[7])) four_star_guarantee_number = 0; else four_star_guarantee_number = 1;\
-                            }\
-                            else {\
-                                type = 2;\
-                                four_count_c++;\
-                                unmet4_c = 0;\
-                                kind = rspick(nup_four_c, size_nup_four_c);\
-                                four_star_guarantee_number = 1;\
-                            }\
-                        }\
-                    }\
-                } // 4-star kind settler for banner II
-#define III_5() {star = 5;\
-                five_count++;\
-                ave_fives += five_star_assurance_number;\
-                if (five_star_assurance_number > max_fives) { max_fives = five_star_assurance_number; max_fivesth = five_count; max_fivecount = countx; }\
-                if (five_star_assurance_number < min_fives) { min_fives = five_star_assurance_number; min_fivesth = five_count; min_fivecount = countx; }\
-                five_pity[five_star_assurance_number - 1] ++;\
-                five_star_assurance_number = 0;\
-                if (unmet5_c < 148 && unmet5_w < 148) {\
-                    if (temp2 < static_cast<unsigned long long int> (ULTRAPOS / 2)) {\
-                        type = 1;\
-                        five_count_c++;\
-                        unmet5_c = 0;\
-                        kind = rspick(nup_five_c, 5);\
-                    }\
-                    else {\
-                        type = 2;\
-                        five_count_w++;\
-                        unmet5_w = 0;\
-                        kind = rspick(nup_five_w, 10);\
-                    }\
-                }\
-                else if (unmet5_c > 147) {\
-                    if (temp2 < static_cast<unsigned long long int> (ULTRAPOS - ULTRAPOS / (10 * unmet5_c - 1478) - 1)) {\
-                        type = 1;\
-                        five_count_c++;\
-                        unmet5_c = 0;\
-                        kind = rspick(nup_five_c, 5);\
-                    }\
-                    else {\
-                        type = 2;\
-                        five_count_w++;\
-                        unmet5_w = 0;\
-                        kind = rspick(nup_five_w, 10);\
-                    }\
-                }\
-                else {\
-                    if (temp2 < static_cast<unsigned long long int> (ULTRAPOS - ULTRAPOS / (10 * unmet5_w - 1478) - 1)) {\
-                        type = 2;\
-                        five_count_w++;\
-                        unmet5_w = 0;\
-                        kind = rspick(nup_five_w, 10);\
-                    }\
-                    else {\
-                        type = 1;\
-                        five_count_c++;\
-                        unmet5_c = 0;\
-                        kind = rspick(nup_five_c, 5);\
-                    }\
-                }\
-            } // 5-star kind settler for banner III
-#define III_4() {star = 4;\
-                four_count++;\
-                if (four_star_assurance_number < 10) four_pity[four_star_assurance_number - 1] ++;\
-                else four_pity[9] ++;\
-                four_star_assurance_number = 0;\
-                if (unmet4_c < 18 && unmet4_w < 18) {\
-                    if (temp2 < static_cast<unsigned long long int> (ULTRAPOS / 2)) {\
-                        type = 1;\
-                        four_count_c++;\
-                        unmet4_c = 0;\
-                        kind = rspick(nup_four_c, size_nup_four_c);\
-                    }\
-                    else {\
-                        type = 2;\
-                        four_count_w++;\
-                        unmet4_w = 0;\
-                        kind = rspick(nup_four_w, size_nup_four_w);\
-                    }\
-                }\
-                else if (unmet4_c > 17) {\
-                    if (temp2 < static_cast<unsigned long long int> (ULTRAPOS - ULTRAPOS / (10 * unmet4_c - 178) - 1)) {\
-                        type = 1;\
-                        four_count_c++;\
-                        unmet4_c = 0;\
-                        kind = rspick(nup_four_c, size_nup_four_c);\
-                    }\
-                    else {\
-                        type = 2;\
-                        four_count_w++;\
-                        unmet4_w = 0;\
-                        kind = rspick(nup_four_w, size_nup_four_w);\
-                    }\
-                }\
-                else {\
-                    if (temp2 < static_cast<unsigned long long int> (ULTRAPOS - ULTRAPOS / (10 * unmet4_w - 178) - 1)) {\
-                        type = 2;\
-                        four_count_w++;\
-                        unmet4_w = 0;\
-                        kind = rspick(nup_four_w, size_nup_four_w);\
-                    }\
-                    else {\
-                        type = 1;\
-                        four_count_c++;\
-                        unmet4_c = 0;\
-                        kind = rspick(nup_four_c, size_nup_four_c);\
-                    }\
-                }\
-            } // 4-star kind settler for banner III
 #define Tri() {star = 3;\
                 type = 2;\
                 kind = rspick(three_g, 13);\
@@ -378,7 +60,7 @@
 using namespace std;
 
 unsigned long long int seed = static_cast<unsigned long long int> (std::chrono::high_resolution_clock::now().time_since_epoch().count());
-std::mt19937_64 generator(seed);
+std::mt19937_64 generatorz(seed);
 // random set
 
 string pname[128] = {C_0, C_1, C_2, C_3, C_4, C_5, C_6, C_7, C_8, C_9, C_10, C_11, C_12, C_13, C_14, C_15, C_16, C_17, C_18, C_19, C_20,
@@ -421,20 +103,63 @@ string pname[128] = {C_0, C_1, C_2, C_3, C_4, C_5, C_6, C_7, C_8, C_9, C_10, C_1
 int rspick(const int* kindx, int sizekind) {
     int kindout = kindx[1];
     int index = 0;
-    unsigned long long int temp221 = 0;
+    unsigned long long int temp121 = 0;
     for (; index < sizekind; index++)
     {
-        temp221 = generator() % (static_cast<unsigned long long int>(index) + 1);
-        if (temp221 < 1) kindout = kindx[index];
+        temp121 = generatorz() % (static_cast<unsigned long long int>(index) + 1);
+        if (temp121 < 1) kindout = kindx[index];
     }
     return kindout;
 }
 // randomly pick an element among kindx which size is sizekind
 
+int WRSpick_1(const int* weightx){
+    int ceilling = 0;
+    for (int inin = 0; inin < 3; inin ++) ceilling += weightx[inin];
+    const int typess[3] = {0, 1, 2};
+    int nom = 3;
+    if (ceilling > 10000) ceilling = 10000;
+    int randomn = generatorz() % static_cast<unsigned long long int>(ceilling) + 1;
+    int tc = 0, results = 0;
+    for (int inin = 0; inin < nom; inin ++){
+        if (randomn < weightx[inin]) {
+            results = typess[tc];
+            inin = nom;
+        }
+        else {
+            randomn -= weightx[inin];
+            tc += 1;
+        }
+    }
+    return results;
+}
+// weighted random sampling for stars
+
+int WRSpick_2(const int* weightx, int upceil){
+    int ceilling = 0;
+    for (int inin = 0; inin < 2; inin ++) ceilling += weightx[inin];
+    const int typess[2] = {0, 1};
+    int nom = 2;
+    if (ceilling > upceil) ceilling = upceil;
+    int randomn = generatorz() % static_cast<unsigned long long int>(ceilling) + 1;
+    int tc = 0, results = 0;
+    for (int inin = 0; inin < nom; inin ++){
+        if (randomn < weightx[inin]) {
+            results = typess[tc];
+            inin = nom;
+        }
+        else {
+            randomn -= weightx[inin];
+            tc += 1;
+        }
+    }
+    return results;
+}
+// weighted random sampling for balancing
+
 int main() {
     std::cout << S_1 << endl << S_2 << endl << S_3 << endl << S_4 << endl << endl;
     int y_print = 1;
-    unsigned long long int ULTRAPOS = 573071571072000;
     while (true) {
     enter_chosen_banner:
         int chosen_banner = 0,
@@ -449,6 +174,15 @@ int main() {
         min_fives = 90,
         fate_weapon = 0,
         fate_points = 0,
+        five_weight = 0,
+        four_weight = 0,
+        three_weight = 0,
+        unmet4_w_weight = 0,
+        unmet4_c_weight = 0,
+        unmet5_w_weight = 0,
+        unmet5_c_weight = 0,
+        resultt = 0,
+        resultu = 0,
         luck = 0,
         luckkind[10] = { 127, 127, 127, 127, 127, 127, 127, 127, 127, 127 },
         luckstar[10] = { 3, 3, 3, 3, 3, 3, 3, 3, 3, 3 },
@@ -1054,40 +788,89 @@ int main() {
             auto starty = std::chrono::steady_clock::now();
             if (chosen_banner == 1) {
                 while (wishes_number > 0) {
-                    unsigned long long int temp1 = generator() % ULTRAPOS;
-                    unsigned long long int temp2 = generator() % ULTRAPOS;
+                    unsigned long long int temp1 = generatorz() % 2;
                     int star = 0; //4-star or 5-star
                     int type = 0; //Up or non-up, character or weapon
                     int kind = 0; //which exactly
-                    if (five_star_assurance_number < 74 && four_star_assurance_number < 9) {
-                        if (temp1 < static_cast<unsigned long long int> (ULTRAPOS / 1000 * 6)) I_5()
-                        else if (temp1 < static_cast<unsigned long long int> (ULTRAPOS / 1000 * 57)) I_4()
-                        else Tri()
+                    if (five_star_assurance_number < 74) five_weight = 60;
+                    else five_weight = 60 + 600 * (five_star_assurance_number - 73);
+                    if (four_star_assurance_number < 9) four_weight = 510;
+                    else four_weight = 510 + 5100 * (four_star_assurance_number - 8);
+                    three_weight = 9430;
+                    int weight[3] = {five_weight, four_weight, three_weight};
+                    resultt = WRSpick_1(weight);
+                    switch(resultt){
+                        case 0: {
+                            star = 5;
+                            five_count++;
+                            ave_fives += five_star_assurance_number;
+                            if (five_star_assurance_number > max_fives) { max_fives = five_star_assurance_number; max_fivesth = five_count; max_fivecount = countx; }
+                            if (five_star_assurance_number < min_fives) { min_fives = five_star_assurance_number; min_fivesth = five_count; min_fivecount = countx; }
+                            five_pity[five_star_assurance_number - 1] ++;
+                            five_star_assurance_number = 0;
+                            if (five_star_guarantee_number == 1 || temp1 < 1) {
+                                type = 1;
+                                five_count_c++;
+                                kind = up_five;
+                                five_star_guarantee_number = 0;
+                            }
+                            else {
+                                type = 2;
+                                five_count_c++;
+                                kind = rspick(nup_five_c, 5);
+                                if (five_check[0] == 1) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
+                            }// 5-star kind settler for banner I
+                        }; break;
+                        case 1: {
+                            star = 4;
+                            four_count++;
+                            if (four_star_assurance_number < 10) four_pity[four_star_assurance_number - 1] ++;
+                            else four_pity[9] ++;
+                            four_star_assurance_number = 0;
+                            if (four_star_guarantee_number == 1 || temp1 < 1) {
+                                type = 1;
+                                four_count_c++;
+                                unmet4_c = 0;
+                                kind = rspick(up_four_g, 3);
+                                four_star_guarantee_number = 0;
+                            }
+                            else{
+                                if (unmet4_c < 18 && unmet4_w < 18) {
+                                    unmet4_c_weight = 255;
+                                    unmet4_w_weight = 255;
+                                }
+                                else if (unmet4_c > 17) {
+                                    unmet4_c_weight = 255 + 2550 * (unmet4_c - 17);
+                                    unmet4_w_weight = 255;
+                                }
+                                else {
+                                    unmet4_w_weight = 255 + 2550 * (unmet4_w - 17);
+                                    unmet4_c_weight = 255;
+                                }
+                                int weight[2] = {unmet4_c_weight, unmet4_w_weight};
+                                resultu = WRSpick_2(weight, 510);
+                                switch(resultu){
+                                    case 0: {
+                                        type = 2;
+                                        four_count_c++;
+                                        unmet4_c = 0;
+                                        kind = rspick(nup_four_c, size_nup_four_c);
+                                        if ((kind == four_check[0] || kind == four_check[1] || kind == four_check[2] || kind == four_check[3] || kind == four_check[4] || kind == four_check[5] || kind == four_check[6] || kind == four_check[7])) four_star_guarantee_number = 0; else four_star_guarantee_number = 1;
+                                    } break;
+                                    case 1: {
+                                        type = 3;
+                                        four_count_w++;
+                                        unmet4_w = 0;
+                                        kind = rspick(nup_four_w, size_nup_four_w);
+                                        four_star_guarantee_number = 1;
+                                    } break;
+                                    default: std::cout << E_4 << endl; break;
+                                }
+                            }
+                        }; break;
+                        case 2: Tri(); break;
+                        default: std::cout << E_3 << endl; break;
                     }
-                    else if (five_star_assurance_number < 74 && four_star_assurance_number == 9) {
-                        if (temp1 < static_cast<unsigned long long int> (ULTRAPOS / 1000 * 6)) I_5()
-                        else if (temp1 < static_cast<unsigned long long int> (ULTRAPOS / 1000 * 567)) I_4()
-                        else Tri()
-                    }
-                    else if (five_star_assurance_number < 74 && four_star_assurance_number > 9) {
-                        if (temp1 < static_cast<unsigned long long int> (ULTRAPOS / 1000 * 6)) I_5()
-                        else I_4()
-                    }
-                    else if (five_star_assurance_number < 90 && five_star_assurance_number > 73 && four_star_assurance_number < 9) {
-                        if (temp1 < static_cast<unsigned long long int> (ULTRAPOS / 1000 * 6) + (static_cast<unsigned long long int>(five_star_assurance_number) - 73) * static_cast<unsigned long long int>(ULTRAPOS / 1000 * 60)) I_5()
-                        else if (temp1 < static_cast<unsigned long long int> (ULTRAPOS / 1000 * 57) + (static_cast<unsigned long long int>(five_star_assurance_number) - 73) * static_cast<unsigned long long int>(ULTRAPOS / 1000 * 60)) I_4()
-                        else Tri()
-                    }
-                    else if (five_star_assurance_number < 90 && five_star_assurance_number > 73 && four_star_assurance_number == 9) {
-                        if (temp1 < static_cast<unsigned long long int> (ULTRAPOS / 1000 * 6) + (static_cast<unsigned long long int>(five_star_assurance_number) - 73) * static_cast<unsigned long long int>(ULTRAPOS / 1000 * 60)) I_5()
-                        else if (temp1 < static_cast<unsigned long long int> (ULTRAPOS / 1000 * 567) + (static_cast<unsigned long long int>(five_star_assurance_number) - 73) * static_cast<unsigned long long int>(ULTRAPOS / 1000 * 60)) I_4()
-                        else Tri()
-                    }
-                    else if (five_star_assurance_number < 90 && five_star_assurance_number > 73 && four_star_assurance_number > 9) {
-                        if (temp1 < static_cast<unsigned long long int> (ULTRAPOS / 1000 * 6) + (static_cast<unsigned long long int>(five_star_assurance_number) - 73) * static_cast<unsigned long long int>(ULTRAPOS / 1000 * 60)) I_5()
-                        else I_4()
-                    }
-                    else I_5()
                     output_string()
                     if (!((star == 4 && type == 1) || (star == 4 && type == 2))) unmet4_c++;
                     if (!(star == 4 && type == 3)) unmet4_w++;
@@ -1106,69 +889,130 @@ int main() {
             }
             else if (chosen_banner == 2) {
                     while (wishes_number > 0) {
-                    unsigned long long int temp1 = generator() % ULTRAPOS;
-                    unsigned long long int temp2 = generator() % ULTRAPOS;
+                    unsigned long long int temp1 = generatorz() % 4;
                     int star = 0; //4-star or 5-star
                     int type = 0; //Up or non-up, character or weapon
                     int kind = 0; //which exactly
-                    if (five_star_assurance_number < 63 && four_star_assurance_number < 8) {
-                        if (temp1 < static_cast<unsigned long long int> (ULTRAPOS / 1000 * 7)) II_5()
-                        else if (temp1 < static_cast<unsigned long long int> (ULTRAPOS / 1000 * 67)) II_4()
-                        else Tri()
+                    if (five_star_assurance_number < 63) five_weight = 70;
+                    else if (five_star_assurance_number < 74) five_weight = 70 + 700 * (five_star_assurance_number - 62);
+                    else five_weight = 7770 + 350 * (five_star_assurance_number - 73);
+                    if (four_star_assurance_number < 8) four_weight = 600;
+                    else if (four_star_assurance_number == 8) four_weight = 6600;
+                    else four_weight = 6600 + 3000 * (four_star_assurance_number - 8);
+                    three_weight = 9330;
+                    int weight[3] = {five_weight, four_weight, three_weight};
+                    resultt = WRSpick_1(weight);
+                    switch(resultt){
+                        case 0: {
+                            star = 5;
+                            five_count++;
+                            ave_fives += five_star_assurance_number;
+                            if (five_star_assurance_number > max_fives) { max_fives = five_star_assurance_number; max_fivesth = five_count; max_fivecount = countx; }
+                            if (five_star_assurance_number < min_fives) { min_fives = five_star_assurance_number; min_fivesth = five_count; min_fivecount = countx; }
+                            five_pity_w[five_star_assurance_number - 1] ++;
+                            five_star_assurance_number = 0;
+                            if (fate_weapon == 1 || fate_weapon == 2) {
+                                if (fate_points == 2) {
+                                    type = 1;
+                                    five_count_w++;
+                                    kind = up_five_g[fate_weapon - 1];
+                                    fate_points = 0;
+                                    five_star_guarantee_number = 0;
+                                }
+                                else if (five_star_guarantee_number == 1) {
+                                    type = 1;
+                                    five_count_w++;
+                                    kind = rspick(up_five_g, 2);
+                                    if (kind == up_five_g[fate_weapon - 1] ) fate_points = 0; else fate_points ++;
+                                    five_star_guarantee_number = 0;
+                                }
+                                else if (temp1 < 2) {
+                                    type = 1;
+                                    five_count_w++;
+                                    kind = rspick(up_five_g, 2);
+                                    if (kind == up_five_g[fate_weapon - 1] ) fate_points = 0; else fate_points ++;
+                                    five_star_guarantee_number = 0;
+                                }
+                                else {
+                                    type = 2;
+                                    five_count_w++;
+                                    kind = rspick(nup_five_w, 10);
+                                    fate_points ++;
+                                    if ((kind == five_check[0] || kind == five_check[1] || kind == five_check[2] || kind == five_check[3] || kind == five_check[4] || kind == five_check[5] || kind == five_check[6] || kind == five_check[7])) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
+                                }
+                            }
+                            else if (fate_weapon == 0) {
+                                if (five_star_guarantee_number == 1) {
+                                    type = 1;
+                                    five_count_w++;
+                                    kind = rspick(up_five_g, 2);
+                                    five_star_guarantee_number = 0;
+                                }
+                                else if (temp1 < 2) {
+                                    type = 1;
+                                    five_count_w++;
+                                    kind = rspick(up_five_g, 2);
+                                    five_star_guarantee_number = 0;
+                                }
+                                else {
+                                    type = 2;
+                                    five_count_w++;
+                                    kind = rspick(nup_five_w, 10);
+                                    if ((kind == five_check[0] || kind == five_check[1] || kind == five_check[2] || kind == five_check[3] || kind == five_check[4] || kind == five_check[5] || kind == five_check[6] || kind == five_check[7])) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
+                                }
+                            }
+                            else {  std::cout << E_2 << endl; goto full_quit; }
+                        }; break;
+                        case 1: {
+                            star = 4;
+                            four_count++;
+                            if (four_star_assurance_number < 10) four_pity[four_star_assurance_number - 1] ++;
+                            else four_pity[9] ++;
+                            four_star_assurance_number = 0;
+                            if (four_star_guarantee_number == 1 || temp1 < 2) {
+                                type = 1;
+                                four_count_w++;
+                                unmet4_w = 0;
+                                kind = rspick(up_four_g, 5);
+                                four_star_guarantee_number = 0;
+                            }
+                            else{
+                                if (unmet4_c < 16 && unmet4_w < 16) {
+                                    unmet4_c_weight = 300;
+                                    unmet4_w_weight = 300;
+                                }
+                                else if (unmet4_c > 15) {
+                                    unmet4_c_weight = 300 + 3000 * (unmet4_c - 15);
+                                    unmet4_w_weight = 300;
+                                }
+                                else {
+                                    unmet4_w_weight = 300 + 3000 * (unmet4_w - 15);
+                                    unmet4_c_weight = 300;
+                                }
+                                int weight[2] = {unmet4_c_weight, unmet4_w_weight};
+                                resultu = WRSpick_2(weight, 600);
+                                switch(resultu){
+                                case 0: {
+                                    type = 2;
+                                    four_count_c++;
+                                    unmet4_c = 0;
+                                    kind = rspick(nup_four_c, size_nup_four_c);
+                                    four_star_guarantee_number = 1;
+                                } break;
+                                case 1: {
+                                    type = 3;
+                                    four_count_w++;
+                                    unmet4_w = 0;
+                                    kind = rspick(nup_four_w, size_nup_four_w);
+                                    if ((kind == four_check[0] || kind == four_check[1] || kind == four_check[2] || kind == four_check[3] || kind == four_check[4] || kind == four_check[5] || kind == four_check[6] || kind == four_check[7])) four_star_guarantee_number = 0; else four_star_guarantee_number = 1;
+                                } break;
+                                default: std::cout << E_4 << endl; break;
+                                }
+                            }
+                    }; break;
+                        case 2: Tri(); break;
+                        default: std::cout << E_3 << endl; break;
                     }
-                    else if (five_star_assurance_number < 63 && four_star_assurance_number == 8) {
-                        if (temp1 < static_cast<unsigned long long int> (ULTRAPOS / 1000 * 7)) II_5()
-                        else if (temp1 < static_cast<unsigned long long int> (ULTRAPOS / 1000 * 667)) II_4()
-                        else Tri()
-                    }
-                    else if (five_star_assurance_number < 63 && four_star_assurance_number == 9) {
-                        if (temp1 < static_cast<unsigned long long int> (ULTRAPOS / 1000 * 7)) II_5()
-                        else if (temp1 < static_cast<unsigned long long int> (ULTRAPOS / 1000 * 967)) II_4()
-                        else Tri()
-                    }
-                    else if (five_star_assurance_number < 63 && four_star_assurance_number > 9) {
-                        if (temp1 < static_cast<unsigned long long int> (ULTRAPOS / 1000 * 7)) II_5()
-                        else II_4()
-                    }
-                    else if (five_star_assurance_number < 72 && five_star_assurance_number > 62 && four_star_assurance_number < 8) {
-                        if (temp1 < static_cast<unsigned long long int> (ULTRAPOS / 1000 * 7) + (static_cast<unsigned long long int>(five_star_assurance_number) - 62) * static_cast<unsigned long long int>(ULTRAPOS / 1000 * 70)) II_5()
-                        else if (temp1 < static_cast<unsigned long long int> (ULTRAPOS / 1000 * 67) + (static_cast<unsigned long long int>(five_star_assurance_number) - 62) * static_cast<unsigned long long int>(ULTRAPOS / 1000 * 70)) II_4()
-                        else Tri()
-                    }
-                    else if (five_star_assurance_number < 72 && five_star_assurance_number > 62 && four_star_assurance_number == 8) {
-                        if (temp1 < static_cast<unsigned long long int> (ULTRAPOS / 1000 * 7) + (static_cast<unsigned long long int>(five_star_assurance_number) - 62) * static_cast<unsigned long long int>(ULTRAPOS / 1000 * 70)) II_5()
-                        else if (temp1 < static_cast<unsigned long long int> (ULTRAPOS / 1000 * 667) + (static_cast<unsigned long long int>(five_star_assurance_number) - 62) * static_cast<unsigned long long int>(ULTRAPOS / 1000 * 70)) II_4()
-                        else Tri()
-                    }
-                    else if (five_star_assurance_number < 72 && five_star_assurance_number > 62 && four_star_assurance_number == 9) {
-                        if (temp1 < static_cast<unsigned long long int> (ULTRAPOS / 1000 * 7) + (static_cast<unsigned long long int>(five_star_assurance_number) - 62) * static_cast<unsigned long long int>(ULTRAPOS / 1000 * 70)) II_5()
-                        else if (temp1 < static_cast<unsigned long long int> (ULTRAPOS / 1000 * 967) + (static_cast<unsigned long long int>(five_star_assurance_number) - 62) * static_cast<unsigned long long int>(ULTRAPOS / 1000 * 70)) II_4()
-                        else Tri()
-                    }
-                    else if (five_star_assurance_number < 72 && five_star_assurance_number > 62 && four_star_assurance_number > 9) {
-                        if (temp1 < static_cast<unsigned long long int> (ULTRAPOS / 1000 * 7) + (static_cast<unsigned long long int>(five_star_assurance_number) - 62) * static_cast<unsigned long long int>(ULTRAPOS / 1000 * 70)) II_5()
-                        else II_4()
-                    }
-                    else if (five_star_assurance_number < 80 && five_star_assurance_number > 71 && four_star_assurance_number < 8) {
-                        if (temp1 < static_cast<unsigned long long int> (ULTRAPOS / 1000 * 637) + (static_cast<unsigned long long int>(five_star_assurance_number) - 71) * static_cast<unsigned long long int>(ULTRAPOS / 1000 * 35)) II_5()
-                        else if (temp1 < static_cast<unsigned long long int> (ULTRAPOS / 1000 * 697) + (static_cast<unsigned long long int>(five_star_assurance_number) - 71) * static_cast<unsigned long long int>(ULTRAPOS / 1000 * 35)) II_4()
-                        else Tri()
-                    }
-                    else if (five_star_assurance_number < 80 && five_star_assurance_number > 71 && four_star_assurance_number == 8) {
-                        if (temp1 < static_cast<unsigned long long int> (ULTRAPOS / 1000 * 637) + (static_cast<unsigned long long int>(five_star_assurance_number) - 71) * static_cast<unsigned long long int>(ULTRAPOS / 1000 * 35)) II_5()
-                        else if (temp1 < static_cast<unsigned long long int> (ULTRAPOS / 1000 * 1297) + (static_cast<unsigned long long int>(five_star_assurance_number) - 71) * static_cast<unsigned long long int>(ULTRAPOS / 1000 * 35)) II_4()
-                        else Tri()
-                    }
-                    else if (five_star_assurance_number < 80 && five_star_assurance_number > 71 && four_star_assurance_number == 9) {
-                        if (temp1 < static_cast<unsigned long long int> (ULTRAPOS / 1000 * 637) + (static_cast<unsigned long long int>(five_star_assurance_number) - 71) * static_cast<unsigned long long int>(ULTRAPOS / 1000 * 35)) II_5()
-                        else if (temp1 < static_cast<unsigned long long int> (ULTRAPOS / 1000 * 1597) + (static_cast<unsigned long long int>(five_star_assurance_number) - 71) * static_cast<unsigned long long int>(ULTRAPOS / 1000 * 35)) II_4()
-                        else Tri()
-                    }
-                    else if (five_star_assurance_number < 80 && five_star_assurance_number > 71 && four_star_assurance_number > 9) {
-                        if (temp1 < static_cast<unsigned long long int> (ULTRAPOS / 1000 * 637) + (static_cast<unsigned long long int>(five_star_assurance_number) - 71) * static_cast<unsigned long long int>(ULTRAPOS / 1000 * 35)) II_5()
-                        else II_4()
-                    }
-                    else II_5()
                     output_string()
                     if (!((star == 4 && type == 1) || (star == 4 && type == 2))) unmet4_c++;
                     if (!(star == 4 && type == 3)) unmet4_w++;
@@ -1185,40 +1029,94 @@ int main() {
             }
             else if (chosen_banner == 3) {
                 while (wishes_number > 0) {
-                    unsigned long long int temp1 = generator() % ULTRAPOS;
-                    unsigned long long int temp2 = generator() % ULTRAPOS;
                     int star = 0; //4-star or 5-star
                     int type = 0; //Up or non-up, character or weapon
                     int kind = 0; //which exactly
-                    if (five_star_assurance_number < 74 && four_star_assurance_number < 9) {
-                        if (temp1 < static_cast<unsigned long long int> (ULTRAPOS / 1000 * 6)) III_5()
-                        else if (temp1 < static_cast<unsigned long long int> (ULTRAPOS / 1000 * 57)) III_4()
-                        else Tri()
+                    if (five_star_assurance_number < 74) five_weight = 60;
+                    else five_weight = 60 + 600 * (five_star_assurance_number - 73);
+                    if (four_star_assurance_number < 9) four_weight = 510;
+                    else four_weight = 510 + 5100 * (four_star_assurance_number - 8);
+                    three_weight = 9430;
+                    int weight[3] = {five_weight, four_weight, three_weight};
+                    resultt = WRSpick_1(weight);
+                    switch(resultt){
+                        case 0: {
+                            star = 5;
+                            five_count++;
+                            ave_fives += five_star_assurance_number;
+                            if (five_star_assurance_number > max_fives) { max_fives = five_star_assurance_number; max_fivesth = five_count; max_fivecount = countx; }
+                            if (five_star_assurance_number < min_fives) { min_fives = five_star_assurance_number; min_fivesth = five_count; min_fivecount = countx; }
+                            five_pity[five_star_assurance_number - 1] ++;
+                            five_star_assurance_number = 0;
+                            if (unmet5_c < 148 && unmet5_w < 148) {
+                                unmet5_c_weight = 30;
+                                unmet5_w_weight = 30;
+                            }
+                            else if (unmet5_c > 147) {
+                                unmet5_c_weight = 30 + 300 * (unmet5_c - 147);
+                                unmet5_w_weight = 30;
+                            }
+                            else {
+                                unmet5_w_weight = 30 + 300 * (unmet5_w - 147);
+                                unmet5_c_weight = 30;
+                            }
+                            int weight[2] = {unmet5_c_weight, unmet5_w_weight};
+                            resultu = WRSpick_2(weight, 60);
+                            switch(resultu){
+                                case 0: {
+                                    type = 1;
+                                    five_count_c++;
+                                    unmet5_c = 0;
+                                    kind = rspick(nup_five_c, 5);
+                                } break;
+                                case 1: {
+                                    type = 2;
+                                    five_count_w++;
+                                    unmet5_w = 0;
+                                    kind = rspick(nup_five_w, 10);
+                                } break;
+                                default: std::cout << E_4 << endl; break;
+                            }
+                        }; break;
+                        case 1: {
+                            star = 4;
+                            four_count++;
+                            if (four_star_assurance_number < 10) four_pity[four_star_assurance_number - 1] ++;
+                            else four_pity[9] ++;
+                            four_star_assurance_number = 0;
+                            if (unmet4_c < 18 && unmet4_w < 18) {
+                                unmet4_c_weight = 255;
+                                unmet4_w_weight = 255;
+                            }
+                            else if (unmet4_c > 17) {
+                                unmet4_c_weight = 255 + 2550 * (unmet4_c - 17);
+                                unmet4_w_weight = 255;
+                            }
+                            else {
+                                unmet4_w_weight = 255 + 2550 * (unmet4_w - 17);
+                                unmet4_c_weight = 255;
+                            }
+                            int weight[2] = {unmet4_c_weight, unmet4_w_weight};
+                            resultu = WRSpick_2(weight, 510);
+                            switch(resultu){
+                                case 0: {
+                                    type = 1;
+                                    four_count_c++;
+                                    unmet4_c = 0;
+                                    kind = rspick(nup_four_c, size_nup_four_c);
+                                } break;
+                                case 1: {
+                                    type = 2;
+                                    four_count_w++;
+                                    unmet4_w = 0;
+                                    kind = rspick(nup_four_w, size_nup_four_w);
+                                } break;
+                                default: std::cout << E_4 << endl; break;
+                            }
+                        }; break;
+                        case 2: Tri(); break;
+                        default: std::cout << E_3 << endl; break;
                     }
-                    else if (five_star_assurance_number < 74 && four_star_assurance_number == 9) {
-                        if (temp1 < static_cast<unsigned long long int> (ULTRAPOS / 1000 * 6)) III_5()
-                        else if (temp1 < static_cast<unsigned long long int> (ULTRAPOS / 1000 * 567)) III_4()
-                        else Tri()
-                    }
-                    else if (five_star_assurance_number < 74 && four_star_assurance_number > 9) {
-                        if (temp1 < static_cast<unsigned long long int> (ULTRAPOS / 1000 * 6)) III_5()
-                        else III_4()
-                    }
-                    else if (five_star_assurance_number < 90 && five_star_assurance_number > 73 && four_star_assurance_number < 9) {
-                        if (temp1 < static_cast<unsigned long long int> (ULTRAPOS / 1000 * 6) + (static_cast<unsigned long long int>(five_star_assurance_number) - 73) * static_cast<unsigned long long int>(ULTRAPOS / 1000 * 60)) III_5()
-                        else if (temp1 < static_cast<unsigned long long int> (ULTRAPOS / 1000 * 57) + (static_cast<unsigned long long int>(five_star_assurance_number) - 73) * static_cast<unsigned long long int>(ULTRAPOS / 1000 * 60)) III_4()
-                        else Tri()
-                    }
-                    else if (five_star_assurance_number < 90 && five_star_assurance_number > 73 && four_star_assurance_number == 9) {
-                        if (temp1 < static_cast<unsigned long long int> (ULTRAPOS / 1000 * 6) + (static_cast<unsigned long long int>(five_star_assurance_number) - 73) * static_cast<unsigned long long int>(ULTRAPOS / 1000 * 60)) III_5()
-                        else if (temp1 < static_cast<unsigned long long int> (ULTRAPOS / 1000 * 567) + (static_cast<unsigned long long int>(five_star_assurance_number) - 73) * static_cast<unsigned long long int>(ULTRAPOS / 1000 * 60)) III_4()
-                        else Tri()
-                    }
-                    else if (five_star_assurance_number < 90 && five_star_assurance_number > 73 && four_star_assurance_number > 9) {
-                        if (temp1 < static_cast<unsigned long long int> (ULTRAPOS / 1000 * 6) + (static_cast<unsigned long long int>(five_star_assurance_number) - 73) * static_cast<unsigned long long int>(ULTRAPOS / 1000 * 60)) III_5()
-                        else III_4()
-                    }
-                    else III_5()
                     output_string()
                     if (!(star == 5 && type == 1)) unmet5_c++;
                     if (!(star == 5 && type == 2)) unmet5_w++;
@@ -1237,7 +1135,7 @@ int main() {
             }
             else {
                 while (wishes_number > 0) {
-                    unsigned long long int temp1 = generator() % ULTRAPOS;
+                    unsigned long long int temp1 = generatorz() % 1000;
                     int star = 0; //4-star or 5-star
                     int type = 0; //Up or non-up, character or weapon
                     int kind = 0; //which exactly
@@ -1251,7 +1149,7 @@ int main() {
                         is_noelle = 0;
                     }
                     else if (four_star_assurance_number < 9) {
-                        if (temp1 < static_cast<unsigned long long int> (ULTRAPOS / 1000 * 6)) {
+                        if (temp1 < 6) {
                             star = 5;
                             five_count++;
                             ave_fives += five_star_assurance_number;
@@ -1262,7 +1160,7 @@ int main() {
                             five_count_c++;
                             kind = rspick(nup_five_c, 5);
                         }
-                        else if (temp1 < static_cast<unsigned long long int> (ULTRAPOS / 1000 * 57)) {
+                        else if (temp1 < 57) {
                             star = 4;
                             four_count++;
                             four_star_assurance_number = 0;
@@ -1274,7 +1172,7 @@ int main() {
                         else Tri()
                     }
                     else if (four_star_assurance_number == 9) {
-                        if (temp1 < static_cast<unsigned long long int> (ULTRAPOS / 1000 * 6)) {
+                        if (temp1 < 6) {
                             star = 5;
                             five_count++;
                             type = 1;
@@ -1285,7 +1183,7 @@ int main() {
                             five_count_c++;
                             kind = rspick(nup_five_c, 5);
                         }
-                        else if (temp1 < static_cast<unsigned long long int> (ULTRAPOS / 1000 * 567)) {
+                        else if (temp1 < 567) {
                             star = 4;
                             four_count++;
                             four_star_assurance_number = 0;
@@ -1297,7 +1195,7 @@ int main() {
                         else Tri()
                     }
                     else {
-                        if (temp1 < static_cast<unsigned long long int> (ULTRAPOS / 1000 * 6)) {
+                        if (temp1 < 6) {
                             star = 5;
                             five_count++;
                             type = 1;

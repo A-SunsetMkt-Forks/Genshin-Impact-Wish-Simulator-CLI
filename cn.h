@@ -190,4 +190,6 @@
 #define C_98 "飞雷之弦振"
 #define E_1 "kind 不合理! 错误码: 1"
 #define E_2 "fate_weapon 不合理! 错误码: 2"
+#define E_3 "resultt 不合理! 错误码: 3"
+#define E_4 "resultu 不合理! 错误码: 4"
 #endif
