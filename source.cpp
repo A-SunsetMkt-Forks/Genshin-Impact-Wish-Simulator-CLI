@@ -113,33 +113,10 @@ int rspick(const int* kindx, int sizekind) {
 }
 // randomly pick an element among kindx which size is sizekind
 
-int WRSpick_1(const int* weightx){
+int WRSpick(const int* weightx, int nom, int upceil){
     int ceilling = 0;
-    for (int inin = 0; inin < 3; inin ++) ceilling += weightx[inin];
+    for (int inin = 0; inin < nom; inin ++) ceilling += weightx[inin];
     const int typess[3] = {0, 1, 2};
-    int nom = 3;
-    if (ceilling > 10000) ceilling = 10000;
-    int randomn = generatorz() % static_cast<unsigned long long int>(ceilling) + 1;
-    int tc = 0, results = 0;
-    for (int inin = 0; inin < nom; inin ++){
-        if (randomn < weightx[inin]) {
-            results = typess[tc];
-            inin = nom;
-        }
-        else {
-            randomn -= weightx[inin];
-            tc += 1;
-        }
-    }
-    return results;
-}
-// weighted random sampling for stars
-
-int WRSpick_2(const int* weightx, int upceil){
-    int ceilling = 0;
-    for (int inin = 0; inin < 2; inin ++) ceilling += weightx[inin];
-    const int typess[2] = {0, 1};
-    int nom = 2;
     if (ceilling > upceil) ceilling = upceil;
     int randomn = generatorz() % static_cast<unsigned long long int>(ceilling) + 1;
     int tc = 0, results = 0;
@@ -155,7 +132,7 @@ int WRSpick_2(const int* weightx, int upceil){
     }
     return results;
 }
-// weighted random sampling for balancing
+// weighted random sampling
 
 int main() {
     std::cout << S_1 << endl << S_2 << endl << S_3 << endl << S_4 << endl << endl;
@@ -204,11 +181,7 @@ int main() {
         nup_four_cg1[11] = { 18, 20, 21, 22, 23, 24, 25, 26, 27, 29, 31 },
         nup_four_cg2[13] = { 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 29, 31 },
         nup_four_cg3[14] = { 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 29, 31 },
-        nup_four_cg4[15] = { 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 29, 31, 72 },
-        nup_four_cg31[14] = { 18, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32 },
-        nup_four_cg32[16] = { 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32 },
-        nup_four_cg33[17] = { 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32 },
-        nup_four_cg34[18] = { 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 72 };
+        nup_four_cg4[15] = { 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 29, 31, 72 };
         long long int countx = 0,
         wishes_number = 0,
         five_count = 0,
@@ -646,18 +619,22 @@ int main() {
         else if (chosen_banner == 3) {
             switch (chosen_event) {
             case 1: {
+                int nup_four_cg31[14] = { 18, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32 };
                 size_nup_four_c = 14;
                 memmove( nup_four_c , nup_four_cg31 , sizeof(nup_four_cg31));
                 } break;
             case 2: {
+                int nup_four_cg32[16] = { 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32 };
                 size_nup_four_c = 16;
                 memmove( nup_four_c , nup_four_cg32 , sizeof(nup_four_cg32));
                 } break;
             case 3: {
+                int nup_four_cg33[17] = { 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32 };
                 size_nup_four_c = 17;
                 memmove( nup_four_c , nup_four_cg33 , sizeof(nup_four_cg33));
                 } break;
             case 4: {
+                int nup_four_cg34[18] = { 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 72 };
                 size_nup_four_c = 18;
                 memmove( nup_four_c , nup_four_cg34 , sizeof(nup_four_cg34));
                 } break;
@@ -817,7 +794,7 @@ int main() {
                     else four_weight = 510 + 5100 * (four_star_assurance_number - 8);
                     three_weight = 9430;
                     int weight[3] = {five_weight, four_weight, three_weight};
-                    resultt = WRSpick_1(weight);
+                    resultt = WRSpick(weight, 3, 10000);
                     switch(resultt){
                         case 0: {
                             star = 5;
@@ -867,7 +844,7 @@ int main() {
                                     unmet4_c_weight = 255;
                                 }
                                 int weight[2] = {unmet4_c_weight, unmet4_w_weight};
-                                resultu = WRSpick_2(weight, 510);
+                                resultu = WRSpick(weight, 2, 510);
                                 switch(resultu){
                                     case 0: {
                                         type = 2;
@@ -920,7 +897,7 @@ int main() {
                     else four_weight = 6600 + 3000 * (four_star_assurance_number - 8);
                     three_weight = 9330;
                     int weight[3] = {five_weight, four_weight, three_weight};
-                    resultt = WRSpick_1(weight);
+                    resultt = WRSpick(weight, 3, 10000);
                     switch(resultt){
                         case 0: {
                             star = 5;
@@ -1009,7 +986,7 @@ int main() {
                                     unmet4_c_weight = 300;
                                 }
                                 int weight[2] = {unmet4_c_weight, unmet4_w_weight};
-                                resultu = WRSpick_2(weight, 600);
+                                resultu = WRSpick(weight, 2, 600);
                                 switch(resultu){
                                 case 0: {
                                     type = 2;
@@ -1057,7 +1034,7 @@ int main() {
                     else four_weight = 510 + 5100 * (four_star_assurance_number - 8);
                     three_weight = 9430;
                     int weight[3] = {five_weight, four_weight, three_weight};
-                    resultt = WRSpick_1(weight);
+                    resultt = WRSpick(weight, 3, 10000);
                     switch(resultt){
                         case 0: {
                             star = 5;
@@ -1080,7 +1057,7 @@ int main() {
                                 unmet5_c_weight = 30;
                             }
                             int weight[2] = {unmet5_c_weight, unmet5_w_weight};
-                            resultu = WRSpick_2(weight, 60);
+                            resultu = WRSpick(weight, 2, 60);
                             switch(resultu){
                                 case 0: {
                                     type = 1;
@@ -1116,7 +1093,7 @@ int main() {
                                 unmet4_c_weight = 255;
                             }
                             int weight[2] = {unmet4_c_weight, unmet4_w_weight};
-                            resultu = WRSpick_2(weight, 510);
+                            resultu = WRSpick(weight, 2, 510);
                             switch(resultu){
                                 case 0: {
                                     type = 1;
