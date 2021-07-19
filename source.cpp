@@ -1002,7 +1002,7 @@ int main() {
                                 kind = rspick(up_four_g, 5);
                                 four_star_guarantee_number = 0;
                             }
-                            else{
+                            else {
                                 if (unmet4_c < 15 && unmet4_w < 15) {
                                     int weight2[2] = { 300, 300 };
                                     resultu = WRSpick(weight2, 2);
