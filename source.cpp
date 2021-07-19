@@ -6,6 +6,7 @@
 #include <iomanip>
 #include <ctime>
 #include "cn.h" //include the language header file
+
 #define casesx( kind ){   if ((kind) < 16 ) { std::cout << "!!!!!*****"; }\
                     else if ((kind) < 51 ) { std::cout << "!!****"; }\
                     else if ((kind) < 64 ) { std::cout << "***"; }\
@@ -914,7 +915,7 @@ int main() {
                 }
             }
             else if (chosen_banner == 2) {
-                    while (wishes_number > 0) {
+                while (wishes_number > 0) {
                     unsigned long long int temp1 = generatorz() % 4;
                     int star = 0; //4-star or 5-star
                     int type = 0; //Up or non-up, character or weapon
