@@ -116,13 +116,15 @@ int rspick(const int* kindx, int sizekind) {
 int WRSpick(const int* weightx, int nom){
     int ceilling = 0;
     for (int inin = 0; inin < nom; inin ++) ceilling += weightx[inin];
-    const int typess[3] = {0, 1, 2};
+    const int typess1[3] = {0, 1, 2};
+    const int typess2[2] = {0, 1};
     if (nom == 3 && ceilling > 10000) ceilling = 10000;
     int randomn = generatorz() % static_cast<unsigned long long int>(ceilling) + 1;
     int tc = 0, results = 0;
     for (int inin = 0; inin < nom; inin ++){
         if (randomn < weightx[inin]) {
-            results = typess[tc];
+            if(nom == 3) results = typess1[tc];
+            else results = typess2[tc];
             inin = nom;
         }
         else {
@@ -826,8 +828,8 @@ int main() {
                                 kind = rspick(up_four_g, 3);
                                 four_star_guarantee_number = 0;
                             }
-                            else{
-                                if (unmet4_c < 18 && unmet4_w < 18) {
+                            else {
+                                if (unmet4_c < 17 && unmet4_w < 17) {
                                     int weight1[2] = { 255, 255 };
                                     resultu = WRSpick(weight1, 2);
                                     switch (resultu) {
@@ -848,8 +850,8 @@ int main() {
                                     default: std::cout << E_4 << endl; break;
                                     }
                                 }
-                                else if (unmet4_c > 17) {
-                                    int weight1[2] = { 255 + 2550 * (unmet4_c - 17), 255 };
+                                else if (unmet4_c > 16) {
+                                    int weight1[2] = { 255 + 2550 * (unmet4_c - 16), 255 };
                                     resultu = WRSpick(weight1, 2);
                                     switch (resultu) {
                                     case 0: {
@@ -870,7 +872,7 @@ int main() {
                                     }
                                 }
                                 else {
-                                    int weight1[2] = { 255 + 2550 * (unmet4_w - 17), 255 };
+                                    int weight1[2] = { 255 + 2550 * (unmet4_w - 16), 255 };
                                     resultu = WRSpick(weight1, 2);
                                     switch (resultu) {
                                     case 0: {
@@ -950,7 +952,7 @@ int main() {
                                     if (kind == up_five_g[fate_weapon - 1] ) fate_points = 0; else fate_points ++;
                                     five_star_guarantee_number = 0;
                                 }
-                                else if (temp1 < 2) {
+                                else if (temp1 < 3) {
                                     type = 1;
                                     five_count_w++;
                                     kind = rspick(up_five_g, 2);
@@ -972,7 +974,7 @@ int main() {
                                     kind = rspick(up_five_g, 2);
                                     five_star_guarantee_number = 0;
                                 }
-                                else if (temp1 < 2) {
+                                else if (temp1 < 3) {
                                     type = 1;
                                     five_count_w++;
                                     kind = rspick(up_five_g, 2);
@@ -993,7 +995,7 @@ int main() {
                             if (four_star_assurance_number < 10) four_pity[four_star_assurance_number - 1] ++;
                             else four_pity[9] ++;
                             four_star_assurance_number = 0;
-                            if (four_star_guarantee_number == 1 || temp1 < 2) {
+                            if (four_star_guarantee_number == 1 || temp1 < 3) {
                                 type = 1;
                                 four_count_w++;
                                 unmet4_w = 0;
@@ -1001,7 +1003,7 @@ int main() {
                                 four_star_guarantee_number = 0;
                             }
                             else{
-                                if (unmet4_c < 16 && unmet4_w < 16) {
+                                if (unmet4_c < 15 && unmet4_w < 15) {
                                     int weight2[2] = { 300, 300 };
                                     resultu = WRSpick(weight2, 2);
                                     switch (resultu) {
@@ -1022,8 +1024,8 @@ int main() {
                                     default: std::cout << E_4 << endl; break;
                                     }
                                 }
-                                else if (unmet4_c > 15) {
-                                    int weight2[2] = { 300 + 3000 * (unmet4_c - 15), 300 };
+                                else if (unmet4_c > 14) {
+                                    int weight2[2] = { 300 + 3000 * (unmet4_c - 14), 300 };
                                     resultu = WRSpick(weight2, 2);
                                     switch (resultu) {
                                     case 0: {
@@ -1044,7 +1046,7 @@ int main() {
                                     }
                                 }
                                 else {
-                                    int weight2[2] = { 300 + 3000 * (unmet4_w - 15), 300 };
+                                    int weight2[2] = { 300 + 3000 * (unmet4_w - 14), 300 };
                                     resultu = WRSpick(weight2, 2);
                                     switch (resultu) {
                                     case 0: {
@@ -1104,7 +1106,7 @@ int main() {
                             if (five_star_assurance_number < min_fives) { min_fives = five_star_assurance_number; min_fivesth = five_count; min_fivecount = countx; }
                             five_pity[five_star_assurance_number - 1] ++;
                             five_star_assurance_number = 0;
-                            if (unmet5_c < 148 && unmet5_w < 148) {
+                            if (unmet5_c < 147 && unmet5_w < 147) {
                                 int weight4[2] = { 30, 30 };
                                 resultu = WRSpick(weight4, 2);
                                 switch (resultu) {
@@ -1123,8 +1125,8 @@ int main() {
                                 default: std::cout << E_4 << endl; break;
                                 }
                             }
-                            else if (unmet5_c > 147) {
-                                int weight4[2] = { 30 + 300 * (unmet5_c - 147), 30 };
+                            else if (unmet5_c > 146) {
+                                int weight4[2] = { 30 + 300 * (unmet5_c - 146), 30 };
                                 resultu = WRSpick(weight4, 2);
                                 switch (resultu) {
                                 case 0: {
@@ -1143,7 +1145,7 @@ int main() {
                                 }
                             }
                             else {
-                                int weight4[2] = { 30 + 300 * (unmet5_w - 147), 30 };
+                                int weight4[2] = { 30 + 300 * (unmet5_w - 146), 30 };
                                 resultu = WRSpick(weight4, 2);
                                 switch (resultu) {
                                 case 0: {
@@ -1168,7 +1170,7 @@ int main() {
                             if (four_star_assurance_number < 10) four_pity[four_star_assurance_number - 1] ++;
                             else four_pity[9] ++;
                             four_star_assurance_number = 0;
-                            if (unmet4_c < 18 && unmet4_w < 18) {
+                            if (unmet4_c < 17 && unmet4_w < 17) {
                                 int weight3[2] = { 255, 255 };
                                 resultu = WRSpick(weight3, 2);
                                 switch (resultu) {
@@ -1187,8 +1189,8 @@ int main() {
                                 default: std::cout << E_4 << endl; break;
                                 }
                             }
-                            else if (unmet4_c > 17) {
-                                int weight3[2] = { 255 + 2550 * (unmet4_c - 17), 255 };
+                            else if (unmet4_c > 16) {
+                                int weight3[2] = { 255 + 2550 * (unmet4_c - 16), 255 };
                                 resultu = WRSpick(weight3, 2);
                                 switch (resultu) {
                                 case 0: {
@@ -1207,7 +1209,7 @@ int main() {
                                 }
                             }
                             else {
-                                int weight3[2] = { 255 + 2550 * (unmet4_w - 17), 255 };
+                                int weight3[2] = { 255 + 2550 * (unmet4_w - 16), 255 };
                                 resultu = WRSpick(weight3, 2);
                                 switch (resultu) {
                                 case 0: {
