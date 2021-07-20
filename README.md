@@ -56,7 +56,7 @@ IV Novice Wish\
 1: Beginners' wish
 
 Screenshots\
-![Screenshot from 2021-07-15 05-41-15](https://user-images.githubusercontent.com/34600796/125789697-61009c17-b776-4dbe-ae2a-b7458079ef89.png)
+![Screenshot from 2021-07-20 04-05-15](https://user-images.githubusercontent.com/34600796/126314045-0fc5ebba-cf9d-480a-9667-c5a51d82f0e5.png)
 
 
 About Hidden Possibilities\
@@ -115,7 +115,7 @@ This simulator includes no hidden possibilities.
 1: 新手祈愿
 
 截图\
-![Screenshot from 2021-07-15 05-32-05](https://user-images.githubusercontent.com/34600796/125789167-28fdeef7-c723-4f5c-8b9a-806d3e033a98.png)
+![Screenshot from 2021-07-20 04-09-31](https://user-images.githubusercontent.com/34600796/126314395-a580811c-ab85-454c-960a-1bcd12be70ae.png)
 
 
 关于隐藏概率（仓检）\
