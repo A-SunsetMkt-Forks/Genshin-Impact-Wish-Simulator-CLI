@@ -10,7 +10,7 @@
 #define casesx( kind ){   if ((kind) < 15 ) { std::cout << "!!!!!*****"; }\
                     else if ((kind) < 50 ) { std::cout << "!!****"; }\
                     else if ((kind) < 63 ) { std::cout << "***"; }\
-                    else if ((kind) == 72 || (kind) == 79 || (kind) == 81 || (kind) == 82 || (kind) == 83 || (kind) == 84 || (kind) == 88 || (kind) == 91 || (kind) == 92 || (kind) == 93 || (kind) == 94 || (kind) == 95 || (kind) == 96 ) { std::cout << "!!****"; }\
+                    else if ((kind) == 71 || (kind) == 79 || (kind) == 80 || (kind) == 82 || (kind) == 83 || (kind) == 84 || (kind) == 88 || (kind) == 91 || (kind) == 92 || (kind) == 93 || (kind) == 94 || (kind) == 95 || (kind) == 96 ) { std::cout << "!!****"; }\
                     else if ((kind) < 99 ) { std::cout << "!!!!!*****"; }\
                     else {  std::cout << E_1 << endl; goto full_quit; }\
                 } // cout stars prefix
