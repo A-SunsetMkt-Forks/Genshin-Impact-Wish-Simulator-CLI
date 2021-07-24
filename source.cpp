@@ -11,7 +11,7 @@
                     else if ((kind) < 50 ) { std::cout << "!!****"; }\
                     else if ((kind) < 63 ) { std::cout << "***"; }\
                     else if ((kind) == 71 || (kind) == 79 || (kind) == 80 || (kind) == 82 || (kind) == 83 || (kind) == 84 || (kind) == 88 || (kind) == 91 || (kind) == 92 || (kind) == 93 || (kind) == 94 || (kind) == 95 || (kind) == 96 || (kind) == 100 ) { std::cout << "!!****"; }\
-                    else if ((kind) < 102 ) { std::cout << "!!!!!*****"; }\
+                    else if ((kind) < 104 ) { std::cout << "!!!!!*****"; }\
                     else {  std::cout << E_1 << endl; goto full_quit; }\
                 } // cout stars prefix
 #define output_string() {if (y_print == 1) {std::cout << countx + 1 << "(" << five_star_assurance_number << ") ";\
