@@ -219,25 +219,25 @@ int main() {
             chosen_event = 0;
             std::cout << endl << S_12 << endl << S_13 << endl << S_14 << endl << S_15 << endl << S_16 << endl << S_17 << endl << S_18 << endl
                 << S_19 << endl << S_20 << endl << S_21 << endl << S_22 << endl << S_23 << endl << S_24 << endl << S_25 << endl << S_26 << endl
-                << S_27 << endl << S_28 << endl << S_29 << endl << S_30 << endl << endl;
+                << S_27 << endl << S_28 << endl << S_29 << endl << S_30 << endl << S_94 << S_95 << endl << endl;
             std::cin >> chosen_event;
             fate_weapon = 0;
             fate_points = 0;
             if (cin.fail()) { chosen_event = 0; std::cout << endl << S_11 << endl; cin.clear(); cin.ignore(32767, '\n'); goto enter_chosen_event; }
             else if (chosen_event == -1) { chosen_event = 0; std::cout << endl; goto enter_chosen_banner; }
-            else if (chosen_event > 0 && chosen_event < 18 ) quit = 0; else { std::cout << endl << S_31 << endl << endl; goto enter_chosen_event; }
+            else if (chosen_event > 0 && chosen_event < 20 ) quit = 0; else { std::cout << endl << S_31 << endl << endl; goto enter_chosen_event; }
         } break;
         case 2: {
             chosen_event = 0;
             std::cout << endl << S_12 << endl << S_13 << endl << S_32 << endl << S_33 << endl << S_34 << endl << S_35 << endl << S_36 << endl
                 << S_37 << endl << S_38 << endl << S_39 << endl << S_40 << endl << S_41 << endl << S_42 << endl << S_43 << endl << S_44 << endl
-                << S_45 << endl << S_46 << endl << S_47 << endl << endl;
+                << S_45 << endl << S_46 << endl << S_47 << endl << S_96 << S_97 << endl << endl;
             std::cin >> chosen_event;
             fate_weapon = 0;
             fate_points = 0;
             if (cin.fail()) { chosen_event = 0; std::cout << endl << S_11 << endl; cin.clear(); cin.ignore(32767, '\n'); goto enter_chosen_event; }
             else if (chosen_event == -1) { chosen_event = 0; std::cout << endl; goto enter_chosen_banner; }
-            else if (chosen_event > 0 && chosen_event < 17 ) quit = 0; else { std::cout << endl << S_31 << endl << endl; goto enter_chosen_event; }
+            else if (chosen_event > 0 && chosen_event < 19 ) quit = 0; else { std::cout << endl << S_31 << endl << endl; goto enter_chosen_event; }
         } break;
         case 3: {
             chosen_event = 0;
@@ -405,7 +405,7 @@ int main() {
                 int tempg1[3] = { 71, 23, 19 };
                 memmove( up_four_g , tempg1 , sizeof(tempg1));
                 memmove( nup_four_c , nup_four_cg4 , sizeof(nup_four_cg4));
-                int tempg5[8] = { 23, 19, 0, 0, 0, 0, 0, 0 };
+                int tempg5[8] = { 71, 23, 19, 0, 0, 0, 0, 0 };
                 memmove( four_check , tempg5 , sizeof(tempg5));
             } break;
             case 17: {
@@ -417,7 +417,25 @@ int main() {
                 int tempg5[8] = { 21, 28, 0, 0, 0, 0, 0, 0 };
                 memmove( four_check , tempg5 , sizeof(tempg5));
             } break;
-            default: { goto full_quit; } break;
+            case 18: {
+                up_five = 101;
+                size_nup_four_c = 15;
+                int tempg1[3] = { 100, 23, 19 };
+                memmove( up_four_g , tempg1 , sizeof(tempg1));
+                memmove( nup_four_c , nup_four_cg4 , sizeof(nup_four_cg4));
+                int tempg5[8] = { 23, 19, 0, 0, 0, 0, 0, 0 };
+                memmove( four_check , tempg5 , sizeof(tempg5));
+            } break;
+            case 19: {
+                up_five = 99;
+                size_nup_four_c = 15;
+                int tempg1[3] = { 71, 23, 19 };
+                memmove( up_four_g , tempg1 , sizeof(tempg1));
+                memmove( nup_four_c , nup_four_cg4 , sizeof(nup_four_cg4));
+                int tempg5[8] = { 23, 19, 0, 0, 0, 0, 0, 0 };
+                memmove( four_check , tempg5 , sizeof(tempg5));
+            } break;
+            default: { std::cout << E_5 << endl; goto full_quit; } break;
             }
         }
         else if (chosen_banner == 2) {
@@ -614,7 +632,31 @@ int main() {
                 int tempg7[8] = { 10, 0, 0, 0, 0, 0, 0, 0 };
                 memmove( five_check , tempg7, sizeof(tempg7));
             } break;
-            default: { goto full_quit; } break;
+            case 17: {
+                int tempg6[2] = { 102, 10 };
+                memmove( up_five_g , tempg6 , sizeof(tempg6));
+                size_nup_four_c = 15;
+                int tempg1[5] = { 82, 83, 84, 45, 41 };
+                memmove( up_four_g , tempg1, sizeof(tempg1));
+                memmove( nup_four_c , nup_four_cg4 , sizeof(nup_four_cg4));
+                int tempg5[8] = { 45, 41, 0, 0, 0, 0, 0, 0 };
+                memmove( four_check , tempg5 , sizeof(tempg5));
+                int tempg7[8] = { 10, 0, 0, 0, 0, 0, 0, 0 };
+                memmove( five_check , tempg7, sizeof(tempg7));
+            } break;
+            case 18: {
+                int tempg6[2] = { 103, 10 };
+                memmove( up_five_g , tempg6 , sizeof(tempg6));
+                size_nup_four_c = 15;
+                int tempg1[5] = { 82, 83, 84, 45, 41 };
+                memmove( up_four_g , tempg1, sizeof(tempg1));
+                memmove( nup_four_c , nup_four_cg4 , sizeof(nup_four_cg4));
+                int tempg5[8] = { 45, 41, 0, 0, 0, 0, 0, 0 };
+                memmove( four_check , tempg5 , sizeof(tempg5));
+                int tempg7[8] = { 10, 0, 0, 0, 0, 0, 0, 0 };
+                memmove( five_check , tempg7, sizeof(tempg7));
+            } break;
+            default: { std::cout << E_5 << endl; goto full_quit; } break;
             }
         }
         else if (chosen_banner == 3) {
@@ -639,7 +681,7 @@ int main() {
                 size_nup_four_c = 18;
                 memmove( nup_four_c , nup_four_cg34 , sizeof(nup_four_cg34));
                 } break;
-            default: { goto full_quit; } break;
+            default: { std::cout << E_5 << endl; goto full_quit; } break;
             }
         }
         else {
@@ -647,7 +689,7 @@ int main() {
         }
         // set banner
         while (true) {
-            if (quit == 1) goto full_quit;
+            if ( quit == 1 ) { std::cout << E_6 << endl; goto full_quit; }
             enter_wishes_number:
             std::cout << endl << S_54 << endl << S_55 << endl << S_56 << endl << S_57 << endl << S_58 << endl << S_59 << endl << S_60;
             if (chosen_banner == 1 || chosen_banner == 2 || chosen_banner == 3) {std::cout << ";" << endl << S_90; }
