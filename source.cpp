@@ -219,7 +219,7 @@ int main() {
             chosen_event = 0;
             std::cout << endl << S_12 << endl << S_13 << endl << S_14 << endl << S_15 << endl << S_16 << endl << S_17 << endl << S_18 << endl
                 << S_19 << endl << S_20 << endl << S_21 << endl << S_22 << endl << S_23 << endl << S_24 << endl << S_25 << endl << S_26 << endl
-                << S_27 << endl << S_28 << endl << S_29 << endl << S_30 << endl << S_94 << S_95 << endl << endl;
+                << S_27 << endl << S_28 << endl << S_29 << endl << S_30 << endl << S_94 << endl << S_95 << endl << endl;
             std::cin >> chosen_event;
             fate_weapon = 0;
             fate_points = 0;
@@ -231,7 +231,7 @@ int main() {
             chosen_event = 0;
             std::cout << endl << S_12 << endl << S_13 << endl << S_32 << endl << S_33 << endl << S_34 << endl << S_35 << endl << S_36 << endl
                 << S_37 << endl << S_38 << endl << S_39 << endl << S_40 << endl << S_41 << endl << S_42 << endl << S_43 << endl << S_44 << endl
-                << S_45 << endl << S_46 << endl << S_47 << endl << S_96 << S_97 << endl << endl;
+                << S_45 << endl << S_46 << endl << S_47 << endl << S_96 << endl << S_97 << endl << endl;
             std::cin >> chosen_event;
             fate_weapon = 0;
             fate_points = 0;
