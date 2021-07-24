@@ -186,7 +186,7 @@ int main() {
         four_stars_c[20] = { 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 71, 91, 100 },
         four_stars_w[29] = { 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 79, 80, 82, 83, 84, 88, 92, 93, 94, 95, 96 },
         five_stars_c[19] = { 0, 1, 2, 3, 4, 63, 64, 65, 66, 67, 68, 69, 70, 72, 86, 89, 90, 99, 101 },
-        five_stars_w[21] = { 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 73, 74, 75, 76, 77, 78, 81, 85, 87, 97, 98 };
+        five_stars_w[23] = { 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 73, 74, 75, 76, 77, 78, 81, 85, 87, 97, 98, 102, 103 };
         long long int countx = 0,
         wishes_number = 0,
         five_count = 0,
@@ -1413,7 +1413,7 @@ int main() {
                     << S_77 << five_count_c << " : " << five_count_w << " : " << four_count_c << " : " << four_count_w << endl << endl;
             }
             for (int iout = 0; iout < 19; iout++) { if (pcount[five_stars_c[iout]] > 0) std::cout << pname[five_stars_c[iout]] << "(" << pcount[five_stars_c[iout]] << ") "; }
-            for (int iout = 0; iout < 21; iout++) { if (pcount[five_stars_w[iout]] > 0) std::cout << pname[five_stars_w[iout]] << "(" << pcount[five_stars_w[iout]] << ") "; }
+            for (int iout = 0; iout < 23; iout++) { if (pcount[five_stars_w[iout]] > 0) std::cout << pname[five_stars_w[iout]] << "(" << pcount[five_stars_w[iout]] << ") "; }
             if (five_count > 0) { std::cout << endl << endl; }
             for (int iout = 0; iout < 20; iout++) { if (pcount[four_stars_c[iout]] > 0) std::cout << pname[four_stars_c[iout]] << "(" << pcount[four_stars_c[iout]] << ") "; }
             for (int iout = 0; iout < 29; iout++) { if (pcount[four_stars_w[iout]] > 0) std::cout << pname[four_stars_w[iout]] << "(" << pcount[four_stars_w[iout]] << ") "; }
