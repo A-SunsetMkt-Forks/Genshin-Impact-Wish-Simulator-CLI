@@ -804,8 +804,8 @@ int main() {
                 if (chosen_banner == 2 && chosen_event > 14) {
                     enter_fate_weapon:
                     std::cout << S_67 << endl << S_68 << endl
-                    << S_69 << " ( " << pname[up_five_g[0]-1] << " ) " << endl
-                    << S_70 << " ( " << pname[up_five_g[1]-1] << " ) " << endl
+                    << S_69 << " ( " << pname[up_five_g[0]] << " ) " << endl
+                    << S_70 << " ( " << pname[up_five_g[1]] << " ) " << endl
                     << S_71 << endl << endl;
                     std::cin >> fate_weapon;
                     if (cin.fail()) { fate_weapon = 0; std::cout << endl << S_11 << endl << endl; cin.clear(); cin.ignore(32767, '\n'); goto enter_fate_weapon; }
