@@ -432,7 +432,7 @@ int main() {
                 int tempg1[3] = { 71, 23, 19 };
                 memmove( up_four_g , tempg1 , sizeof(tempg1));
                 memmove( nup_four_c , nup_four_cg4 , sizeof(nup_four_cg4));
-                int tempg5[8] = { 23, 19, 0, 0, 0, 0, 0, 0 };
+                int tempg5[8] = { 23, 19, 71, 0, 0, 0, 0, 0 };
                 memmove( four_check , tempg5 , sizeof(tempg5));
             } break;
             default: { std::cout << E_5 << endl; goto full_quit; } break;
