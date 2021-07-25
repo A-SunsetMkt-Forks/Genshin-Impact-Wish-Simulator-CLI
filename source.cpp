@@ -10,8 +10,8 @@
 #define casesx( kind ){   if ((kind) < 15 ) { std::cout << "!!!!!*****"; }\
                     else if ((kind) < 50 ) { std::cout << "!!****"; }\
                     else if ((kind) < 63 ) { std::cout << "***"; }\
-                    else if ((kind) == 71 || (kind) == 79 || (kind) == 80 || (kind) == 82 || (kind) == 83 || (kind) == 84 || (kind) == 88 || (kind) == 91 || (kind) == 92 || (kind) == 93 || (kind) == 94 || (kind) == 95 || (kind) == 96 || (kind) == 100 ) { std::cout << "!!****"; }\
-                    else if ((kind) < 104 ) { std::cout << "!!!!!*****"; }\
+                    else if ((kind) == 71 || (kind) == 79 || (kind) == 80 || (kind) == 82 || (kind) == 83 || (kind) == 84 || (kind) == 88 || (kind) == 91 || (kind) == 95 ) { std::cout << "!!****"; }\
+                    else if ((kind) < 99 ) { std::cout << "!!!!!*****"; }\
                     else {  std::cout << E_1 << endl; goto full_quit; }\
                 } // cout stars prefix
 #define output_string() {if (y_print == 1) {std::cout << countx + 1 << "(" << five_star_assurance_number << ") ";\
@@ -68,8 +68,12 @@ string pname[128] = {C_0, C_1, C_2, C_3, C_4, C_5, C_6, C_7, C_8, C_9, C_10, C_1
                 C_21, C_22, C_23, C_24, C_25, C_26, C_27, C_28, C_29, C_30, C_31, C_32, C_33, C_34, C_35, C_36, C_37, C_38, C_39, C_40,
                 C_41, C_42, C_43, C_44, C_45, C_46, C_47, C_48, C_49, C_50, C_51, C_52, C_53, C_54, C_55, C_56, C_57, C_58, C_59, C_60,
                 C_61, C_62, C_63, C_64, C_65, C_66, C_67, C_68, C_69, C_70, C_71, C_72, C_73, C_74, C_75, C_76, C_77, C_78, C_79, C_80,
-                C_81, C_82, C_83, C_84, C_85, C_86, C_87, C_88, C_89, C_90, C_91, C_92, C_93, C_94, C_95, C_96, C_97, C_98, C_99, C_100,
-                C_101, C_102, C_103,
+                C_81, C_82, C_83, C_84, C_85, C_86, C_87, C_88, C_89, C_90, C_91, C_92, C_93, C_94, C_95, C_96, C_97, C_98,
+                "Placeholder",
+                "Placeholder",
+                "Placeholder",
+                "Placeholder",
+                "Placeholder",
                 "Placeholder",
                 "Placeholder",
                 "Placeholder",
@@ -181,10 +185,10 @@ int main() {
         nup_four_cg2[13] = { 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 28, 30 },
         nup_four_cg3[14] = { 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 28, 30 },
         nup_four_cg4[15] = { 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 28, 30, 71 },
-        four_stars_c[20] = { 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 71, 91, 100 },
-        four_stars_w[29] = { 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 79, 80, 82, 83, 84, 88, 92, 93, 94, 95, 96 },
-        five_stars_c[19] = { 0, 1, 2, 3, 4, 63, 64, 65, 66, 67, 68, 69, 70, 72, 86, 89, 90, 99, 101 },
-        five_stars_w[23] = { 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 73, 74, 75, 76, 77, 78, 81, 85, 87, 97, 98, 102, 103 };
+        four_stars_c[20] = { 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 71, 91, 95 },
+        four_stars_w[24] = { 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 79, 80, 82, 83, 84, 88 },
+        five_stars_c[19] = { 0, 1, 2, 3, 4, 63, 64, 65, 66, 67, 68, 69, 70, 72, 86, 89, 90, 94, 96 },
+        five_stars_w[23] = { 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 73, 74, 75, 76, 77, 78, 81, 85, 87, 92, 93, 97, 98 };
         long long int countx = 0,
         wishes_number = 0,
         five_count = 0,
@@ -416,16 +420,16 @@ int main() {
                 memmove( four_check , tempg5 , sizeof(tempg5));
             } break;
             case 18: {
-                up_five = 101;
+                up_five = 96;
                 size_nup_four_c = 15;
-                int tempg1[3] = { 100, 23, 19 };
+                int tempg1[3] = { 95, 23, 19 };
                 memmove( up_four_g , tempg1 , sizeof(tempg1));
                 memmove( nup_four_c , nup_four_cg4 , sizeof(nup_four_cg4));
                 int tempg5[8] = { 23, 19, 0, 0, 0, 0, 0, 0 };
                 memmove( four_check , tempg5 , sizeof(tempg5));
             } break;
             case 19: {
-                up_five = 99;
+                up_five = 94;
                 size_nup_four_c = 15;
                 int tempg1[3] = { 71, 23, 19 };
                 memmove( up_four_g , tempg1 , sizeof(tempg1));
@@ -607,7 +611,7 @@ int main() {
                 memmove( five_check , tempg7, sizeof(tempg7));
             } break;
             case 15: {
-                int tempg6[2] = { 97, 10 };
+                int tempg6[2] = { 92, 10 };
                 memmove( up_five_g , tempg6 , sizeof(tempg6));
                 size_nup_four_c = 15;
                 int tempg1[5] = { 34, 39, 40, 43, 49 };
@@ -619,7 +623,7 @@ int main() {
                 memmove( five_check , tempg7, sizeof(tempg7));
             } break;
             case 16: {
-                int tempg6[2] = { 98, 10 };
+                int tempg6[2] = { 93, 10 };
                 memmove( up_five_g , tempg6 , sizeof(tempg6));
                 size_nup_four_c = 15;
                 int tempg1[5] = { 82, 83, 84, 45, 41 };
@@ -631,7 +635,7 @@ int main() {
                 memmove( five_check , tempg7, sizeof(tempg7));
             } break;
             case 17: {
-                int tempg6[2] = { 102, 10 };
+                int tempg6[2] = { 97, 10 };
                 memmove( up_five_g , tempg6 , sizeof(tempg6));
                 size_nup_four_c = 15;
                 int tempg1[5] = { 82, 83, 84, 45, 41 };
@@ -643,7 +647,7 @@ int main() {
                 memmove( five_check , tempg7, sizeof(tempg7));
             } break;
             case 18: {
-                int tempg6[2] = { 103, 10 };
+                int tempg6[2] = { 98, 10 };
                 memmove( up_five_g , tempg6 , sizeof(tempg6));
                 size_nup_four_c = 15;
                 int tempg1[5] = { 82, 83, 84, 45, 41 };
@@ -1414,7 +1418,7 @@ int main() {
             for (int iout = 0; iout < 23; iout++) { if (pcount[five_stars_w[iout]] > 0) std::cout << pname[five_stars_w[iout]] << "(" << pcount[five_stars_w[iout]] << ") "; }
             if (five_count > 0) { std::cout << endl << endl; }
             for (int iout = 0; iout < 20; iout++) { if (pcount[four_stars_c[iout]] > 0) std::cout << pname[four_stars_c[iout]] << "(" << pcount[four_stars_c[iout]] << ") "; }
-            for (int iout = 0; iout < 29; iout++) { if (pcount[four_stars_w[iout]] > 0) std::cout << pname[four_stars_w[iout]] << "(" << pcount[four_stars_w[iout]] << ") "; }
+            for (int iout = 0; iout < 24; iout++) { if (pcount[four_stars_w[iout]] > 0) std::cout << pname[four_stars_w[iout]] << "(" << pcount[four_stars_w[iout]] << ") "; }
             std::cout << endl << endl; 
             // a bunch of output of statistics
             //if (chosen_banner == 4 && chosen_event == 1 && count == 20) goto full_quit;
