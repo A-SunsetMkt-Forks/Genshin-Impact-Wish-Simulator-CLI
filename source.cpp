@@ -45,14 +45,12 @@
                         lucksublocation[templuck] = lucksublocation[templuck + 1];\
                         luckkind[templuck] = luckkind[templuck + 1];\
                         luckstar[templuck] = luckstar[templuck + 1];\
-                        lucktype[templuck] = lucktype[templuck + 1];\
                     }\
                     lucklocation[9] = countx;\
                     lucksublocation[9] = (long long int) five_star_assurance_number - 1;\
                     luckkind[9] = kind;\
                     luckstar[9] = star;\
                     luck = 0;\
-                    lucktype[9] = type;\
                 } // get the recorded luckiest
 #define Tri() {star = 3;\
                 type = 2;\
@@ -166,7 +164,6 @@ int main() {
         luck = 0,
         luckkind[10] = { 127, 127, 127, 127, 127, 127, 127, 127, 127, 127 },
         luckstar[10] = { 3, 3, 3, 3, 3, 3, 3, 3, 3, 3 },
-        lucktype[10] = { 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 },
         luckiest = 0,
         luckiestkind[10] = { 127, 127, 127, 127, 127, 127, 127, 127, 127, 127 },
         up_five = 0,
@@ -751,7 +748,6 @@ int main() {
                     for (int ini = 0; ini < 10; ini++) { lucksublocation[ini] = static_cast< long long int> (ini) + 1; }
                     for (int ini = 0; ini < 10; ini++) { luckkind[ini] = 127; }
                     for (int ini = 0; ini < 10; ini++) { luckstar[ini] = 3; }
-                    for (int ini = 0; ini < 10; ini++) { lucktype[ini] = 1; }
                     luckiest = 0;
                     for (int ini = 0; ini < 10; ini++) { luckiestlocation[ini] = static_cast< long long int> (ini) + 1; }
                     for (int ini = 0; ini < 10; ini++) { luckiestsublocation[ini] = static_cast< long long int> (ini) + 1; }
@@ -950,10 +946,8 @@ int main() {
                     luckget()
                     if (star == 4 || star == 5) {
                         for (int templuck = 0; templuck < 10; templuck++) {
-                            if (luckstar[templuck] == 5) luck += 6229;
-                            else if (luckstar[templuck] == 4 && lucktype[templuck] == 1) luck += 1141;
-                            else if (luckstar[templuck] == 4 && lucktype[templuck] == 2) luck += 19489;
-                            else if (luckstar[templuck] == 4 && lucktype[templuck] == 3) luck += 2645;
+                            if (luckstar[templuck] == 5) luck += 6232;
+                            else if (luckstar[templuck] == 4 ) luck += 766;
                             else luck += 0;
                         }
                     }
@@ -1124,7 +1118,7 @@ int main() {
                     luckget()
                     if (star == 4 || star == 5) {
                         for (int templuck = 0; templuck < 10; templuck++) {
-                            if (luckstar[templuck] == 5) luck += 5319;
+                            if (luckstar[templuck] == 5) luck += 5328;
                             else if (luckstar[templuck] == 4) luck += 674;
                             else luck += 0;
                         }
@@ -1286,8 +1280,8 @@ int main() {
                     luckget()
                     if (star == 4 || star == 5) {
                         for (int templuck = 0; templuck < 10; templuck++) {
-                            if (luckstar[templuck] == 5) luck += 6229;
-                            else if (luckstar[templuck] == 4) luck += 2297;
+                            if (luckstar[templuck] == 5) luck += 6232;
+                            else if (luckstar[templuck] == 4 ) luck += 766;
                             else luck += 0;
                         }
                     }
@@ -1382,7 +1376,7 @@ int main() {
                     if (star == 4 || star == 5) {
                         for (int templuck = 0; templuck < 10; templuck++) {
                             if (luckstar[templuck] == 5) luck += 16667;
-                            else if (luckstar[templuck] == 4) luck += 2297;
+                            else if (luckstar[templuck] == 4) luck += 766;
                             else luck += 0;
                         }
                     }
