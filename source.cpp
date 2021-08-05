@@ -182,6 +182,8 @@ int main() {
         nup_four_cg2[13] = { 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 28, 30 },
         nup_four_cg3[14] = { 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 28, 30 },
         nup_four_cg4[15] = { 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 28, 30, 71 },
+        nup_four_cg5[16] = { 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 28, 30, 71, 91 },
+        nup_four_cg6[17] = { 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 28, 30, 71, 91, 95 },
         four_stars_c[20] = { 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 71, 91, 95 },
         four_stars_w[24] = { 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 79, 80, 82, 83, 84, 88 },
         five_stars_c[19] = { 0, 1, 2, 3, 4, 63, 64, 65, 66, 67, 68, 69, 70, 72, 86, 89, 90, 94, 96 },
@@ -240,13 +242,13 @@ int main() {
         } break;
         case 3: {
             chosen_event = 0;
-            std::cout << endl << S_12 << endl << S_13 << endl << S_48 << endl << S_49 << endl << S_50 << endl << S_51 << endl << endl;
+            std::cout << endl << S_12 << endl << S_13 << endl << S_48 << endl << S_49 << endl << S_50 << endl << S_51 << endl << S_98 << endl << S_99 << endl << endl;
             std::cin >> chosen_event;
             fate_weapon = 0;
             fate_points = 0;
             if (cin.fail()) { chosen_event = 0; std::cout << endl << S_11 << endl; cin.clear(); cin.ignore(32767, '\n'); goto enter_chosen_event; }
             else if (chosen_event == -1) { chosen_event = 0; std::cout << endl; goto enter_chosen_banner; }
-            else if (chosen_event > 0 && chosen_event < 5 ) quit = 0; else { std::cout << endl << S_31 << endl; goto enter_chosen_event; }
+            else if (chosen_event > 0 && chosen_event < 7 ) quit = 0; else { std::cout << endl << S_31 << endl; goto enter_chosen_event; }
         } break;
         case 4: {
             chosen_event = 0;
@@ -410,10 +412,10 @@ int main() {
             case 17: {
                 up_five = 90;
                 size_nup_four_c = 15;
-                int tempg1[3] = { 91, 21, 28 };
+                int tempg1[3] = { 91, 16, 18 };
                 memmove( up_four_g , tempg1 , sizeof(tempg1));
                 memmove( nup_four_c , nup_four_cg4 , sizeof(nup_four_cg4));
-                int tempg5[8] = { 21, 28, 0, 0, 0, 0, 0, 0 };
+                int tempg5[8] = { 16, 18, 0, 0, 0, 0, 0, 0 };
                 memmove( four_check , tempg5 , sizeof(tempg5));
             } break;
             case 18: {
@@ -421,7 +423,7 @@ int main() {
                 size_nup_four_c = 15;
                 int tempg1[3] = { 95, 23, 19 };
                 memmove( up_four_g , tempg1 , sizeof(tempg1));
-                memmove( nup_four_c , nup_four_cg4 , sizeof(nup_four_cg4));
+                memmove( nup_four_c , nup_four_cg4 , sizeof(nup_four_cg5));
                 int tempg5[8] = { 23, 19, 0, 0, 0, 0, 0, 0 };
                 memmove( four_check , tempg5 , sizeof(tempg5));
             } break;
@@ -430,7 +432,7 @@ int main() {
                 size_nup_four_c = 15;
                 int tempg1[3] = { 71, 23, 19 };
                 memmove( up_four_g , tempg1 , sizeof(tempg1));
-                memmove( nup_four_c , nup_four_cg4 , sizeof(nup_four_cg4));
+                memmove( nup_four_c , nup_four_cg4 , sizeof(nup_four_cg6));
                 int tempg5[8] = { 23, 19, 71, 0, 0, 0, 0, 0 };
                 memmove( four_check , tempg5 , sizeof(tempg5));
             } break;
@@ -620,7 +622,7 @@ int main() {
                 memmove( five_check , tempg7, sizeof(tempg7));
             } break;
             case 16: {
-                int tempg6[2] = { 93, 10 };
+                int tempg6[2] = { 93, 13 };
                 memmove( up_five_g , tempg6 , sizeof(tempg6));
                 size_nup_four_c = 15;
                 int tempg1[5] = { 82, 83, 84, 45, 41 };
@@ -628,7 +630,7 @@ int main() {
                 memmove( nup_four_c , nup_four_cg4 , sizeof(nup_four_cg4));
                 int tempg5[8] = { 45, 41, 0, 0, 0, 0, 0, 0 };
                 memmove( four_check , tempg5 , sizeof(tempg5));
-                int tempg7[8] = { 10, 0, 0, 0, 0, 0, 0, 0 };
+                int tempg7[8] = { 13, 0, 0, 0, 0, 0, 0, 0 };
                 memmove( five_check , tempg7, sizeof(tempg7));
             } break;
             case 17: {
@@ -637,7 +639,7 @@ int main() {
                 size_nup_four_c = 15;
                 int tempg1[5] = { 82, 83, 84, 45, 41 };
                 memmove( up_four_g , tempg1, sizeof(tempg1));
-                memmove( nup_four_c , nup_four_cg4 , sizeof(nup_four_cg4));
+                memmove( nup_four_c , nup_four_cg4 , sizeof(nup_four_cg5));
                 int tempg5[8] = { 45, 41, 0, 0, 0, 0, 0, 0 };
                 memmove( four_check , tempg5 , sizeof(tempg5));
                 int tempg7[8] = { 10, 0, 0, 0, 0, 0, 0, 0 };
@@ -649,7 +651,7 @@ int main() {
                 size_nup_four_c = 15;
                 int tempg1[5] = { 82, 83, 84, 45, 41 };
                 memmove( up_four_g , tempg1, sizeof(tempg1));
-                memmove( nup_four_c , nup_four_cg4 , sizeof(nup_four_cg4));
+                memmove( nup_four_c , nup_four_cg4 , sizeof(nup_four_cg6));
                 int tempg5[8] = { 45, 41, 0, 0, 0, 0, 0, 0 };
                 memmove( four_check , tempg5 , sizeof(tempg5));
                 int tempg7[8] = { 10, 0, 0, 0, 0, 0, 0, 0 };
@@ -679,6 +681,16 @@ int main() {
                 int nup_four_cg34[18] = { 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 71 };
                 size_nup_four_c = 18;
                 memmove( nup_four_c , nup_four_cg34 , sizeof(nup_four_cg34));
+                } break;
+            case 5: {
+                int nup_four_cg35[19] = { 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 71, 91 };
+                size_nup_four_c = 19;
+                memmove( nup_four_c , nup_four_cg35 , sizeof(nup_four_cg35));
+                } break;
+            case 6: {
+                int nup_four_cg36[20] = { 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 71, 91, 95 };
+                size_nup_four_c = 20;
+                memmove( nup_four_c , nup_four_cg36 , sizeof(nup_four_cg36));
                 } break;
             default: { std::cout << E_5 << endl; goto full_quit; } break;
             }
