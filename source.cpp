@@ -224,7 +224,7 @@ int main() {
             fate_points = 0;
             if (cin.fail()) { chosen_event = 0; std::cout << endl << S_11 << endl; cin.clear(); cin.ignore(32767, '\n'); goto enter_chosen_event; }
             else if (chosen_event == -1) { chosen_event = 0; std::cout << endl; goto enter_chosen_banner; }
-            else if (chosen_event > 0 && chosen_event < 20 ) quit = 0; else { std::cout << endl << S_31 << endl << endl; goto enter_chosen_event; }
+            else if (chosen_event > 0 && chosen_event < 20 ) quit = 0; else { std::cout << endl << S_31 << endl; goto enter_chosen_event; }
         } break;
         case 2: {
             chosen_event = 0;
@@ -236,7 +236,7 @@ int main() {
             fate_points = 0;
             if (cin.fail()) { chosen_event = 0; std::cout << endl << S_11 << endl; cin.clear(); cin.ignore(32767, '\n'); goto enter_chosen_event; }
             else if (chosen_event == -1) { chosen_event = 0; std::cout << endl; goto enter_chosen_banner; }
-            else if (chosen_event > 0 && chosen_event < 19 ) quit = 0; else { std::cout << endl << S_31 << endl << endl; goto enter_chosen_event; }
+            else if (chosen_event > 0 && chosen_event < 19 ) quit = 0; else { std::cout << endl << S_31 << endl; goto enter_chosen_event; }
         } break;
         case 3: {
             chosen_event = 0;
@@ -246,7 +246,7 @@ int main() {
             fate_points = 0;
             if (cin.fail()) { chosen_event = 0; std::cout << endl << S_11 << endl; cin.clear(); cin.ignore(32767, '\n'); goto enter_chosen_event; }
             else if (chosen_event == -1) { chosen_event = 0; std::cout << endl; goto enter_chosen_banner; }
-            else if (chosen_event > 0 && chosen_event < 5 ) quit = 0; else { std::cout << endl << S_31 << endl << endl; goto enter_chosen_event; }
+            else if (chosen_event > 0 && chosen_event < 5 ) quit = 0; else { std::cout << endl << S_31 << endl; goto enter_chosen_event; }
         } break;
         case 4: {
             chosen_event = 0;
@@ -256,7 +256,7 @@ int main() {
             fate_points = 0;
             if (cin.fail()) { chosen_event = 0; std::cout << endl << S_11 << endl; cin.clear(); cin.ignore(32767, '\n'); goto enter_chosen_event; }
             else if (chosen_event == -1) { chosen_event = 0; std::cout << endl; goto enter_chosen_banner; }
-            else if (chosen_event == 1 ) quit = 0; else { std::cout << endl << S_31 << endl << endl; goto enter_chosen_event; } } break;
+            else if (chosen_event == 1 ) quit = 0; else { std::cout << endl << S_31 << endl; goto enter_chosen_event; } } break;
         default: {chosen_banner = 0; chosen_event = 0; quit = 1; std::cout << endl << S_53 << endl << endl; goto enter_chosen_banner; } break;
         }
         // choose event
