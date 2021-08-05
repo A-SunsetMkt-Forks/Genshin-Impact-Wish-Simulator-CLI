@@ -27,7 +27,8 @@ I Character Event Wish\
 13: Born of Ocean Swell/20210518-20210608 (EUla, Xinyan, Xingqiu, Beidou)\
 14: Sparkling Steps/20210609-20210629 (Klee, Sucrose, Fischl, Barbara)\
 15: Leaves in the Wind/20210629-20210720 (Kaedehara Kazuha, Rosaria, Bennett, Razor)\
-16: The Heron's Court/20210721-20210810 (Kamisato Ayaka, Yanfei, Ningguang, Chongyun)
+16: The Heron's Court/20210721-20210810 (Kamisato Ayaka, Yanfei, Ningguang, Chongyun)\
+17: Tapestry of Golden Flames/20210810-20210831 (Yoimiya, Sayu, Diona, Xinyan)
 
 II Weapon Event Wish\
 1: Epitome Invocation/20200928-20201018 (Aquila Favonia, Amos' Bow, The Flute, The Bell, The Widsith, The Stringless, Favonius Lance)\
@@ -44,7 +45,8 @@ II Weapon Event Wish\
 12: Epitome Invocation/20210518-20210608 (Song of Broken Pines, Aquila Favonia, Sacrificial Sword, Rainslasher, Dragon's Bane, Sacrificial Fragments, Rust)\
 13: Epitome Invocation/20210609-20210629 (Skyward Pride, Lost Prayer to the Sacred Winds, Mitternachts Waltz, Lion's Roar, The Bell, Favonius Lance, The Widsith)\
 14: Epitome Invocation/20210629-20210720 (Freedom-Sworn, Skyward Atlas, The Alley Flash, Wine and Song, Alley Hunter, Favonius Greatsword, Dragon's Bane)\
-15: Epitome Invocation/20210721-20210810 (Mistsplitter Reforged, Skyward Spine, The Stringless, Favonius Sword, Favonius Lance, Favonius Codex, Sacrificial Greatsword)
+15: Epitome Invocation/20210721-20210810 (Mistsplitter Reforged, Skyward Spine, The Stringless, Favonius Sword, Favonius Lance, Favonius Codex, Sacrificial Greatsword)\
+16: Epitome Invocation/20210810-20210831 (Thundering Pulse, Skyward Blade, Favonius Warbow, Sacrificial Sword, Dragon's Bane, Rainslasher, Sacrificial Fragments)
 
 III Permanent Wish\
 1: Wanderlust Invocation/20200928-20201222 (Released)\
@@ -86,7 +88,8 @@ This simulator includes no hidden possibilities.
 13: 浪涌之瞬/20210518-20210608 (优菈, 辛焱, 行秋, 北斗)\
 14: 闪焰的驻足/20210608-20210629 (可莉, 砂糖, 菲谢尔, 芭芭拉)\
 15: 叶落风随/20210629-20210720 (枫原万叶, 罗莎莉亚, 班尼特, 雷泽)\
-16: 白鹭之庭/20210721-20210810 (神里绫华, 烟绯, 凝光, 重云)
+16: 白鹭之庭/20210721-20210810 (神里绫华, 烟绯, 凝光, 重云)\
+17: 焰色天河/20210810-20210831 (宵宫, 早柚, 迪奥娜, 辛焱)
 
 二、武器活动祈愿\
 1: 神铸赋形/20200928-20201018 (风鹰剑, 阿莫斯之弓, 笛剑, 钟剑, 流浪乐章, 绝弦, 西风长枪)\
@@ -103,7 +106,8 @@ This simulator includes no hidden possibilities.
 12: 神铸赋形/20210518-20210608 (松籁响起之时, 风鹰剑, 祭礼剑, 雨裁, 匣里灭辰, 祭礼残章, 弓藏)\
 13: 神铸赋形/20210609-20210629 (天空之傲, 四风原典, 幽夜华尔兹, 匣里龙吟, 钟剑, 西风长枪, 流浪乐章)\
 14: 神铸赋形/20210629-20210720 (苍古自由之誓, 天空之卷, 暗巷闪光, 暗巷的酒与诗, 暗巷猎手, 西风大剑, 匣里灭辰)\
-15: 神铸赋形/20210721-20210810 (雾切之回光, 天空之脊, 绝弦, 西风剑, 西风长枪, 西风秘典, 祭礼大剑)
+15: 神铸赋形/20210721-20210810 (雾切之回光, 天空之脊, 绝弦, 西风剑, 西风长枪, 西风秘典, 祭礼大剑)\
+16: 神铸赋形/20210810-20210831 (飞雷之弦振, 天空之刃, 西风猎弓, 祭礼剑, 匣里灭辰, 雨裁, 祭礼残章)
 
 三、常驻祈愿\
 1: 奔行世间/20200928-20201222 (公测)\
