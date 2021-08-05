@@ -45,7 +45,7 @@
 #define S_44 "13: Epitome Invocation/20210609-20210629 (Skyward Pride, Lost Prayer to the Sacred Winds, Mitternachts Waltz, Lion's Roar, The Bell, Favonius Lance, The Widsith)"
 #define S_45 "14: Epitome Invocation/20210629-20210720 (Freedom-Sworn, Skyward Atlas, The Alley Flash, Wine and Song, Alley Hunter, Favonius Greatsword, Dragon's Bane)"
 #define S_46 "15: Epitome Invocation/20210721-20210810 (Mistsplitter Reforged, Skyward Spine, The Stringless, Favonius Sword, Favonius Lance, Favonius Codex, Sacrificial Greatsword)"
-#define S_47 "(test)16: Epitome Invocation/20210810-20210831 (Thundering Pulse, , , , , , )"
+#define S_47 "16: Epitome Invocation/20210810-20210831 (Thundering Pulse, Skyward Blade, Favonius Warbow, Sacrificial Sword, Dragon's Bane, Rainslasher, Sacrificial Fragments)"
 #define S_48 "1: Wanderlust Invocation/20200928-20201222 (Released)"
 #define S_49 "2: Wanderlust Invocation/20201223-20210427 (Adds Diona and Xinyan)"
 #define S_50 "3: Wanderlust Invocation/20210428-20210608 (Adds Rosaria)"
