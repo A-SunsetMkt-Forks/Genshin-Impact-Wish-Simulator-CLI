@@ -24,7 +24,7 @@
 #define S_23 "10: Ballad in Goblets/20210317-20210406 (Venti, Sucrose, Razor, Noelle)"
 #define S_24 "11: Farewell of Snezhnaya/20210406-20210427 (Tartaglia, Rosaria, Barbara, Fischl)"
 #define S_25 "12: Gentry of Hermitage/20210428-20210518 (Zhongli, Yanfei, Noelle, Diona)"
-#define S_26 "13: Born of Ocean Swell/20210518-20210608 (EUla, Xinyan, Xingqiu, Beidou)"
+#define S_26 "13: Born of Ocean Swell/20210518-20210608 (Eula, Xinyan, Xingqiu, Beidou)"
 #define S_27 "14: Sparkling Steps/20210609-20210629 (Klee, Sucrose, Fischl, Barbara)"
 #define S_28 "15: Leaves in the Wind/20210629-20210720 (Kaedehara Kazuha, Rosaria, Bennett, Razor)"
 #define S_29 "16: The Heron's Court/20210721-20210810 (Kamisato Ayaka, Yanfei, Ningguang, Chongyun)"
