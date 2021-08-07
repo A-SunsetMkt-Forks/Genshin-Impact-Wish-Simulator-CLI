@@ -1412,7 +1412,7 @@ int main() {
                     << S_76 << four_count << "  " << four_count * 100.0 / countx << "%" << endl
                     << S_77 << five_count_c << " : " << five_count_w << " : " << four_count_c << " : " << four_count_w << endl << endl;
             }
-            else {
+            else if (five_count > 0) {
                 std::cout << endl << S_73 << countx << S_74 << endl
                     << S_75 << five_count << "  " << five_count * 100.0 / countx << "%" << endl
                     << S_76 << four_count << "  " << four_count * 100.0 / countx << "%" << endl
@@ -1421,6 +1421,7 @@ int main() {
                     << S_83 << ave_fives * 1.0 / five_count << endl
                     << S_77 << five_count_c << " : " << five_count_w << " : " << four_count_c << " : " << four_count_w << endl << endl;
             }
+            else { std::cout << E_8 << endl; goto full_quit; }
             for (int iout = 0; iout < 19; iout++) { if (pcount[five_stars_c[iout]] > 0) std::cout << pname[five_stars_c[iout]] << "(" << pcount[five_stars_c[iout]] << ") "; }
             for (int iout = 0; iout < 23; iout++) { if (pcount[five_stars_w[iout]] > 0) std::cout << pname[five_stars_w[iout]] << "(" << pcount[five_stars_w[iout]] << ") "; }
             if (five_count > 0) { std::cout << endl << endl; }

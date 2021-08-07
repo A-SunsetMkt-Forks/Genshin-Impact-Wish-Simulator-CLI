@@ -204,4 +204,5 @@
 #define E_5 "chosen_event 不合理! 错误码: 5"
 #define E_6 "quit 不合理! 错误码: 6"
 #define E_7 "chosen_banner 不合理! 错误码: 7"
+#define E_8 "five_count 不合理! 错误码: 8"
 #endif

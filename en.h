@@ -204,4 +204,5 @@
 #define E_5 "Unexpected chosen_event! Error code: 5"
 #define E_6 "Unexpected quit! Error code: 6"
 #define E_7 "Unexpected chosen_banner! Error code: 7"
+#define E_8 "Unexpected five_count! Error code: 8"
 #endif
