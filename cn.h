@@ -205,4 +205,5 @@
 #define E_6 "quit 不合理! 错误码: 6"
 #define E_7 "chosen_banner 不合理! 错误码: 7"
 #define E_8 "five_count 不合理! 错误码: 8"
+#define E_9 "y_print 不合理! 错误码: 9"
 #endif

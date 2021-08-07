@@ -695,9 +695,10 @@ int main() {
             default: { std::cout << E_5 << endl; goto full_quit; } break;
             }
         }
-        else {
+        else if (chosen_banner == 4) {
             memmove( nup_four_c , nup_four_cg1 , sizeof(nup_four_cg1));
         }
+        else { std::cout << E_7 << endl; goto full_quit; }
         // set banner
         while (true) {
             if ( quit == 1 ) { std::cout << E_6 << endl; goto full_quit; }
@@ -786,7 +787,8 @@ int main() {
             //if (!(wishes_number == -1||wishes_number == 1||wishes_number == 10||wishes_number == -2||wishes_number == -3)){ wishes_number = 0; std::cout << "Invalid number of wishes!" << endl; goto enter_wishes_number; }
             else if (wishes_number == -4) {
                 if (y_print == 1) {y_print = 0; std::cout << S_65 << endl;}
-                else {y_print = 1; std::cout << S_66 << endl;}
+                else if (y_print == 0) {y_print = 1; std::cout << S_66 << endl;}
+                else { std::cout << E_9 << endl; goto full_quit; }
                 wishes_number = 0;
                 goto enter_wishes_number;
             }
