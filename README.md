@@ -24,7 +24,7 @@ I Character Event Wish\
 10: Ballad in Goblets/20210317-20210406 (Venti, Sucrose, Razor, Noelle)\
 11: Farewell of Snezhnaya/20210406-20210427 (Tartaglia, Rosaria, Barbara, Fischl)\
 12: Gentry of Hermitage/20210428-20210518 (Zhongli, Yanfei, Noelle, Diona)\
-13: Born of Ocean Swell/20210518-20210608 (EUla, Xinyan, Xingqiu, Beidou)\
+13: Born of Ocean Swell/20210518-20210608 (Eula, Xinyan, Xingqiu, Beidou)\
 14: Sparkling Steps/20210609-20210629 (Klee, Sucrose, Fischl, Barbara)\
 15: Leaves in the Wind/20210629-20210720 (Kaedehara Kazuha, Rosaria, Bennett, Razor)\
 16: The Heron's Court/20210721-20210810 (Kamisato Ayaka, Yanfei, Ningguang, Chongyun)\
