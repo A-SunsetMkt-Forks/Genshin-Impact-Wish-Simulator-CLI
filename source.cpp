@@ -1300,7 +1300,7 @@ int main() {
                     luckcpy()
                 }
             }
-            else {
+            else if (chosen_banner == 4) {
                 while (wishes_number > 0) {
                     unsigned long long int temp1 = generatorz() % 1000;
                     int star = 0; //4-star or 5-star
@@ -1395,6 +1395,7 @@ int main() {
                     luckcpy()
                 }
             }
+            else { std::cout << E_7 << endl; goto full_quit; }
             // real work
             auto endy = std::chrono::steady_clock::now();
             const std::chrono::time_point<std::chrono::system_clock> endx = std::chrono::system_clock::now();

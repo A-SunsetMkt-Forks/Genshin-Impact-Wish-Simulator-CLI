@@ -202,5 +202,6 @@
 #define E_3 "resultt 不合理! 错误码: 3"
 #define E_4 "resultu 不合理! 错误码: 4"
 #define E_5 "chosen_event 不合理! 错误码: 5"
-#define E_6 "quit 不合理！ 错误码: 6"
+#define E_6 "quit 不合理! 错误码: 6"
+#define E_7 "chosen_banner 不合理! 错误码: 7"
 #endif
