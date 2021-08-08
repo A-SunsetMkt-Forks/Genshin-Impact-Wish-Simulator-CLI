@@ -7,11 +7,11 @@
 #include <ctime>
 #include "cn.h" //include the language header file
 
-#define casesx( kind ){   if ((kind) < 15 ) { std::cout << "!!!!!*****"; }\
-                    else if ((kind) < 50 ) { std::cout << "!!****"; }\
-                    else if ((kind) < 63 ) { std::cout << "***"; }\
-                    else if ((kind) == 71 || (kind) == 79 || (kind) == 80 || (kind) == 82 || (kind) == 83 || (kind) == 84 || (kind) == 88 || (kind) == 91 || (kind) == 95 ) { std::cout << "!!****"; }\
-                    else if ((kind) < 99 ) { std::cout << "!!!!!*****"; }\
+#define casesx( kind ){   if ((kind) < 15 ) { std::cout << "!!!!!***** "; }\
+                    else if ((kind) < 50 ) { std::cout << "!!**** "; }\
+                    else if ((kind) < 63 ) { std::cout << "*** "; }\
+                    else if ((kind) == 71 || (kind) == 79 || (kind) == 80 || (kind) == 82 || (kind) == 83 || (kind) == 84 || (kind) == 88 || (kind) == 91 || (kind) == 95 ) { std::cout << "!!**** "; }\
+                    else if ((kind) < 99 ) { std::cout << "!!!!!***** "; }\
                     else {  std::cout << E_1 << endl; goto full_quit; }\
                 } // cout stars prefix
 #define output_string() {if (y_print == 1) {std::cout << countx + 1 << "(" << five_star_assurance_number << ") ";\
@@ -67,6 +67,41 @@ string pname[128] = {C_0, C_1, C_2, C_3, C_4, C_5, C_6, C_7, C_8, C_9, C_10, C_1
                 C_41, C_42, C_43, C_44, C_45, C_46, C_47, C_48, C_49, C_50, C_51, C_52, C_53, C_54, C_55, C_56, C_57, C_58, C_59, C_60,
                 C_61, C_62, C_63, C_64, C_65, C_66, C_67, C_68, C_69, C_70, C_71, C_72, C_73, C_74, C_75, C_76, C_77, C_78, C_79, C_80,
                 C_81, C_82, C_83, C_84, C_85, C_86, C_87, C_88, C_89, C_90, C_91, C_92, C_93, C_94, C_95, C_96, C_97, C_98,
+                "Placeholder",
+                "Placeholder",
+                "Placeholder",
+                "Placeholder",
+                "Placeholder",
+                "Placeholder",
+                "Placeholder",
+                "Placeholder",
+                "Placeholder",
+                "Placeholder",
+                "Placeholder",
+                "Placeholder",
+                "Placeholder",
+                "Placeholder",
+                "Placeholder",
+                "Placeholder",
+                "Placeholder",
+                "Placeholder",
+                "Placeholder",
+                "Placeholder",
+                "Placeholder",
+                "Placeholder",
+                "Placeholder",
+                "Placeholder",
+                "Placeholder",
+                "Placeholder",
+                "Placeholder",
+                "Placeholder",
+                "Placeholder",
+};
+string pnameshort[128] = {X_0, X_1, X_2, X_3, X_4, X_5, X_6, X_7, X_8, X_9, X_10, X_11, X_12, X_13, X_14, X_15, X_16, X_17, X_18, X_19, X_20,
+                X_21, X_22, X_23, X_24, X_25, X_26, X_27, X_28, X_29, X_30, X_31, X_32, X_33, X_34, X_35, X_36, X_37, X_38, X_39, X_40,
+                X_41, X_42, X_43, X_44, X_45, X_46, X_47, X_48, X_49, X_50, X_51, X_52, X_53, X_54, X_55, X_56, X_57, X_58, X_59, X_60,
+                X_61, X_62, X_63, X_64, X_65, X_66, X_67, X_68, X_69, X_70, X_71, X_72, X_73, X_74, X_75, X_76, X_77, X_78, X_79, X_80,
+                X_81, X_82, X_83, X_84, X_85, X_86, X_87, X_88, X_89, X_90, X_91, X_92, X_93, X_94, X_95, X_96, X_97, X_98,
                 "Placeholder",
                 "Placeholder",
                 "Placeholder",
@@ -1424,11 +1459,11 @@ int main() {
                     << S_77 << five_count_c << " : " << five_count_w << " : " << four_count_c << " : " << four_count_w << endl << endl;
             }
             else { std::cout << E_8 << endl; goto full_quit; }
-            for (int iout = 0; iout < 19; iout++) { if (pcount[five_stars_c[iout]] > 0) std::cout << pname[five_stars_c[iout]] << "(" << pcount[five_stars_c[iout]] << ") "; }
-            for (int iout = 0; iout < 23; iout++) { if (pcount[five_stars_w[iout]] > 0) std::cout << pname[five_stars_w[iout]] << "(" << pcount[five_stars_w[iout]] << ") "; }
+            for (int iout = 0; iout < 19; iout++) { if (pcount[five_stars_c[iout]] > 0) std::cout << pnameshort[five_stars_c[iout]] << "(" << pcount[five_stars_c[iout]] << ") "; }
+            for (int iout = 0; iout < 23; iout++) { if (pcount[five_stars_w[iout]] > 0) std::cout << pnameshort[five_stars_w[iout]] << "(" << pcount[five_stars_w[iout]] << ") "; }
             if (five_count > 0) { std::cout << endl << endl; }
-            for (int iout = 0; iout < 20; iout++) { if (pcount[four_stars_c[iout]] > 0) std::cout << pname[four_stars_c[iout]] << "(" << pcount[four_stars_c[iout]] << ") "; }
-            for (int iout = 0; iout < 24; iout++) { if (pcount[four_stars_w[iout]] > 0) std::cout << pname[four_stars_w[iout]] << "(" << pcount[four_stars_w[iout]] << ") "; }
+            for (int iout = 0; iout < 20; iout++) { if (pcount[four_stars_c[iout]] > 0) std::cout << pnameshort[four_stars_c[iout]] << "(" << pcount[four_stars_c[iout]] << ") "; }
+            for (int iout = 0; iout < 24; iout++) { if (pcount[four_stars_w[iout]] > 0) std::cout << pnameshort[four_stars_w[iout]] << "(" << pcount[four_stars_w[iout]] << ") "; }
             std::cout << endl << endl; 
             // a bunch of output of statistics
             //if (chosen_banner == 4 && chosen_event == 1 && count == 20) goto full_quit;
