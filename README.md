@@ -64,6 +64,7 @@ Screenshots\
 About Hidden Possibilities\
 This simulator includes no hidden possibilities.
 
+
 ## 中文
 这是命令行界面的原神祈愿模拟器。
 
@@ -122,6 +123,18 @@ This simulator includes no hidden possibilities.
 ![Screenshot from 2021-08-07 23-11-48](https://user-images.githubusercontent.com/34600796/128622750-c8d77370-634b-4eca-91bf-7494cd69bd60.png)
 
 
-
 关于隐藏概率（仓检）\
 本模拟器不考虑仓检。
+
+
+## Credits
+[原神抽卡全机制总结](https://www.bilibili.com/read/cv10468091)\
+[原神抽卡记录数据集](https://github.com/OneBST/GI_gacha_dataset)\
+by [一棵平衡树](https://space.bilibili.com/6165300) aka [OneBST](https://github.com/OneBST)
+
+[uzair-ashraf's simulator](https://github.com/uzair-ashraf/genshin-impact-wish-simulator)\
+by [uzair-ashraf](https://github.com/uzair-ashraf/)
+
+[Genshin Wishes](https://genshin-wishes.com)
+
+[非小酋](https://feixiaoqiu.com)
