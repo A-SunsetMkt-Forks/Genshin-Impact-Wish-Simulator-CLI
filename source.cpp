@@ -241,7 +241,7 @@ int main() {
         lucksublocation[10] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 },
         luckiestlocation[10] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 },
         luckiestsublocation[10] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 },
-        four_pity[10] = { 0 },
+        four_pity[11] = { 0 },
         five_pity[90] = { 0 },
         five_pity_w[80] = { 0 };
         std::cout << S_5 << endl;
@@ -831,8 +831,8 @@ int main() {
                 if (chosen_banner == 4 || four_count == 0 || five_count == 0) { wishes_number = 0; std::cout << S_72 << endl; goto enter_wishes_number; }
                 else if (chosen_banner == 1 || chosen_banner == 3 ) {
                     std::cout << S_88 << endl << endl;
-                    for (int iout = 0; iout < 10; iout++) { std::cout << iout + 1 << "  " <<four_pity[iout] << "   " << four_pity[iout] *100.0 / four_count << "%" << endl; }
-                    std::cout << endl << S_89 << endl << endl;
+                    for (int iout = 0; iout < 10; iout++) { std::cout << iout + 1 << "  " << four_pity[iout] << "   " << four_pity[iout] *100.0 / four_count << "%" << endl; }
+                    std::cout << "10+  " << four_pity[10] << "   " << four_pity[10] *100.0 / four_count << "%" << endl << endl << S_89 << endl << endl;
                     for (int iout = 0; iout < 90; iout++) { std::cout << iout + 1 << "  "  << five_pity[iout] << "   " << five_pity[iout] *100.0 / five_count << "%" << endl; }
                     wishes_number = 0;
                     goto enter_wishes_number;
@@ -840,7 +840,7 @@ int main() {
                 else if (chosen_banner == 2) {
                     std::cout << S_88 << endl << endl;
                     for (int iout = 0; iout < 10; iout++) { std::cout << iout + 1 << "  "  << four_pity[iout] << "   " << four_pity[iout] *100.0 / four_count << "%" << endl; }
-                    std::cout << endl << S_89 << endl << endl;
+                    std::cout << "10+  " << four_pity[10] << "   " << four_pity[10] *100.0 / four_count << "%" << endl << endl << S_89 << endl << endl;
                     for (int iout = 0; iout < 80; iout++) { std::cout << iout + 1 << "  "  << five_pity_w[iout] << "   " << five_pity_w[iout] *100.0 / five_count << "%" << endl; }
                     wishes_number = 0;
                     goto enter_wishes_number;
@@ -910,8 +910,8 @@ int main() {
                         case 1: {
                             star = 4;
                             four_count++;
-                            if (four_star_assurance_number < 10) four_pity[four_star_assurance_number - 1] ++;
-                            else four_pity[9] ++;
+                            if (four_star_assurance_number < 11) four_pity[four_star_assurance_number - 1] ++;
+                            else four_pity[10] ++;
                             four_star_assurance_number = 0;
                             if (four_star_guarantee_number == 1 || temp1 < 1) {
                                 type = 1;
@@ -1082,8 +1082,8 @@ int main() {
                         case 1: {
                             star = 4;
                             four_count++;
-                            if (four_star_assurance_number < 10) four_pity[four_star_assurance_number - 1] ++;
-                            else four_pity[9] ++;
+                            if (four_star_assurance_number < 11) four_pity[four_star_assurance_number - 1] ++;
+                            else four_pity[10] ++;
                             four_star_assurance_number = 0;
                             if (four_star_guarantee_number == 1 || temp1 < 3) {
                                 type = 1;
@@ -1257,8 +1257,8 @@ int main() {
                         case 1: {
                             star = 4;
                             four_count++;
-                            if (four_star_assurance_number < 10) four_pity[four_star_assurance_number - 1] ++;
-                            else four_pity[9] ++;
+                            if (four_star_assurance_number < 11) four_pity[four_star_assurance_number - 1] ++;
+                            else four_pity[10] ++;
                             four_star_assurance_number = 0;
                             if (unmet4_c < 17 && unmet4_w < 17) {
                                 int weight3[2] = { 255, 255 };
