@@ -1,5 +1,5 @@
 ﻿#ifndef EN_H
-#define S_1 "WELCOME TO GENSHIN IMPACT WISH SIMULATOR CLI V2.0.10"
+#define S_1 "WELCOME TO GENSHIN IMPACT WISH SIMULATOR CLI V2.1.1"
 #define S_2 "by Jirehlov Research"
 #define S_3 "Source code available on GitHub: Jirehlov/Genshin-Impact-Wish-Simulator-CLI"
 #define S_4 "MIT LICENSE"
@@ -92,9 +92,9 @@
 #define S_91 "confirm resttting records?"
 #define S_92 "-1: cancel and return"
 #define S_93 "1: reset"
-#define S_94 "(test)18: Reign of Serenity/20210901-20210921 (Raiden Shogun, Kujo Sara, Xiangling, Sucrose)"
+#define S_94 "18: Reign of Serenity/20210901-20210921 (Raiden Shogun, Kujo Sara, Xiangling, Sucrose)"
 #define S_95 "(test)19: Drifting Luminescence/20210921-20211011 (Sangonomiya Kokomi, , , )"
-#define S_96 "(test)17: Epitome Invocation/20210901-20210921 (Engulfing Lightning, The Unforged, , , , , )"
+#define S_96 "17: Epitome Invocation/20210901-20210921 (Engulfing Lightning, The Unforged, Sacrificial Bow, Lion's Roar, The Widsith, Favonius Lance, The Bell)"
 #define S_97 "(test)18: Epitome Invocation/20210921-20211011 (Everlasting Moonglow, , , , , , )"
 #define S_98 "5: Wanderlust Invocation/20210901-20210921 (Adds Sayu)"
 #define S_99 "(test)6: Wanderlust Invocation/20210921- (Adds Kujo Sara)"
