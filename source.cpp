@@ -463,10 +463,10 @@ int main() {
             } break;
             case 19: {
                 up_five = 94;
-                size_nup_four_c = 17;
+                size_nup_four_c = 16;
                 int tempg1[3] = { 71, 23, 19 };
                 memmove( up_four_g , tempg1 , sizeof(tempg1));
-                memmove( nup_four_c , nup_four_cg6 , sizeof(nup_four_cg6));
+                memmove( nup_four_c , nup_four_cg5 , sizeof(nup_four_cg5));
                 int tempg5[8] = { 23, 19, 71, 0, 0, 0, 0, 0 };
                 memmove( four_check , tempg5 , sizeof(tempg5));
             } break;
@@ -718,10 +718,10 @@ int main() {
             case 18: {
                 int tempg6[2] = { 98, 10 };
                 memmove( up_five_g , tempg6 , sizeof(tempg6));
-                size_nup_four_c = 17;
+                size_nup_four_c = 16;
                 int tempg1[5] = { 35, 37, 41, 42, 47 };
                 memmove( up_four_g , tempg1, sizeof(tempg1));
-                memmove( nup_four_c , nup_four_cg6 , sizeof(nup_four_cg6));
+                memmove( nup_four_c , nup_four_cg5 , sizeof(nup_four_cg5));
                 int tempg5[8] = { 35, 37, 41, 42, 47, 0, 0, 0 };
                 memmove( four_check , tempg5 , sizeof(tempg5));
                 int tempg7[8] = { 10, 0, 0, 0, 0, 0, 0, 0 };
