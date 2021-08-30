@@ -14,7 +14,7 @@
                     else if ((kind) < 101 ) { std::cout << "!!!!!***** "; }\
                     else {  std::cout << E_1 << endl; goto full_quit; }\
                 } // cout stars prefix
-#define output_string() {if (y_print == 1) {std::cout << countx + 1 << "(" << five_star_assurance_number << ") ";\
+#define output_string() {if (y_print == 1) {std::cout << countx + 1 << "(" << five_star_assurance_number << ")(" << four_star_assurance_number << ") ";\
                     casesx( kind )\
                     std::cout << pname[kind] << endl; }\
                     pcount[kind] ++;\
@@ -28,6 +28,7 @@
                         for (int templuck = 0; templuck < 10; templuck++) {\
                             luckiestlocation[templuck] = lucklocation[templuck];\
                             luckiestsublocation[templuck] = lucksublocation[templuck];\
+                            luckiestsubsublocation[templuck] = lucksubsublocation[templuck];\
                             luckiestkind[templuck] = luckkind[templuck];\
                         }\
                     }\
@@ -36,6 +37,7 @@
                         for (int templuck = 0; templuck < 10; templuck++) {\
                             luckiestlocation[templuck] = lucklocation[templuck];\
                             luckiestsublocation[templuck] = lucksublocation[templuck];\
+                            luckiestsubsublocation[templuck] = lucksubsublocation[templuck];\
                             luckiestkind[templuck] = luckkind[templuck];\
                         }\
                     }\
@@ -43,11 +45,13 @@
 #define luckget() {for (int templuck = 0; templuck < 9; templuck++) {\
                         lucklocation[templuck] = lucklocation[templuck + 1];\
                         lucksublocation[templuck] = lucksublocation[templuck + 1];\
+                        lucksubsublocation[templuck] = lucksubsublocation[templuck + 1];\
                         luckkind[templuck] = luckkind[templuck + 1];\
                         luckstar[templuck] = luckstar[templuck + 1];\
                     }\
                     lucklocation[9] = countx;\
                     lucksublocation[9] = (long long int) five_star_assurance_number - 1;\
+                    lucksubsublocation[9] = (long long int) four_star_assurance_number - 1;\
                     luckkind[9] = kind;\
                     luckstar[9] = star;\
                     luck = 0;\
@@ -235,8 +239,10 @@ int main() {
         pcount[128] = { 0 },
         lucklocation[10] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 },
         lucksublocation[10] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 },
+        lucksubsublocation[10] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 },
         luckiestlocation[10] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 },
         luckiestsublocation[10] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 },
+        luckiestsubsublocation[10] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 },
         four_pity[11] = { 0 },
         five_pity[90] = { 0 },
         five_pity_w[80] = { 0 };
@@ -784,7 +790,7 @@ int main() {
                 if (countx < 10) { std::cout << S_62 << endl; goto enter_wishes_number; }
                 std::cout << S_63 << luckiest << endl;
                 for (int templuck = 0; templuck < 10; templuck++) {
-                    std::cout << luckiestlocation[templuck] << "(" << luckiestsublocation[templuck] << ") ";
+                    std::cout << luckiestlocation[templuck] << "(" << luckiestsublocation[templuck] << ")(" << luckiestsubsublocation[templuck] << ") ";
                     casesx( luckiestkind[templuck] )
                     std::cout << pname[luckiestkind[templuck]] << endl;
                 }
