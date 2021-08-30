@@ -54,7 +54,9 @@ III Permanent Wish\
 1: Wanderlust Invocation/20200928-20201222 (Released)\
 2: Wanderlust Invocation/20201223-20210427 (Adds Diona and Xinyan)\
 3: Wanderlust Invocation/20210428-20210608 (Adds Rosaria)\
-4: Wanderlust Invocation/20210609- (Adds Yanfei)
+4: Wanderlust Invocation/20210609-20210901 (Adds Yanfei)\
+5: Wanderlust Invocation/20210901-20211011 (Adds Sayu)\
+6: Wanderlust Invocation/20211011- (Adds Kujo Sara)
 
 IV Novice Wish\
 1: Beginners' wish
@@ -118,7 +120,9 @@ This simulator includes no hidden possibilities.
 1: 奔行世间/20200928-20201222 (公测)\
 2: 奔行世间/20201223-20210427 (新增迪奥娜和辛焱)\
 3: 奔行世间/20210428-20210608 (新增罗莎莉亚)\
-4: 奔行世间/20210609- (新增烟绯)
+4: 奔行世间/20210609-20210901 (新增烟绯)\
+5: 奔行世间/20210901-20211011 (新增早柚)\
+6: 奔行世间/20211011- (新增九条裟罗)
 
 四、新手祈愿\
 1: 新手祈愿
