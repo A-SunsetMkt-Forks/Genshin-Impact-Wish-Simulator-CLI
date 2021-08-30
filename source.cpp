@@ -893,7 +893,7 @@ int main() {
                     << S_71 << endl << endl;
                     std::cin >> fate_weapon;
                     if (cin.fail()) { fate_weapon = 0; std::cout << endl << S_11 << endl << endl; cin.clear(); cin.ignore(32767, '\n'); goto enter_fate_weapon; }
-                    else if ( fate_weapon == -1 ) goto enter_wishes_number;
+                    else if ( fate_weapon == -1 ) {fate_weapon = 0; goto enter_wishes_number;}
                     else if ( fate_weapon < -1 || fate_weapon > 2) {std::cout << endl << S_72 << endl << endl; fate_weapon = 0; goto enter_fate_weapon;}
                     else fate_points = 0;
                     wishes_number = 0;
