@@ -468,10 +468,10 @@ int main() {
             case 19: {
                 up_five = 94;
                 size_nup_four_c = 16;
-                int tempg1[3] = { 71, 23, 19 };
+                int tempg1[3] = { 15, 24, 25 };
                 memmove( up_four_g , tempg1 , sizeof(tempg1));
                 memmove( nup_four_c , nup_four_cg5 , sizeof(nup_four_cg5));
-                int tempg5[8] = { 23, 19, 71, 0, 0, 0, 0, 0 };
+                int tempg5[8] = { 15, 24, 25, 0, 0, 0, 0, 0 };
                 memmove( four_check , tempg5 , sizeof(tempg5));
             } break;
             case 20: {
@@ -720,15 +720,15 @@ int main() {
                 memmove( five_check , tempg7, sizeof(tempg7));
             } break;
             case 18: {
-                int tempg6[2] = { 98, 10 };
+                int tempg6[2] = { 98, 77 };
                 memmove( up_five_g , tempg6 , sizeof(tempg6));
                 size_nup_four_c = 16;
-                int tempg1[5] = { 35, 37, 41, 42, 47 };
+                int tempg1[5] = { 34, 39, 41, 45, 48 };
                 memmove( up_four_g , tempg1, sizeof(tempg1));
                 memmove( nup_four_c , nup_four_cg5 , sizeof(nup_four_cg5));
-                int tempg5[8] = { 35, 37, 41, 42, 47, 0, 0, 0 };
+                int tempg5[8] = { 34, 39, 41, 45, 48, 0, 0, 0 };
                 memmove( four_check , tempg5 , sizeof(tempg5));
-                int tempg7[8] = { 10, 0, 0, 0, 0, 0, 0, 0 };
+                int tempg7[8] = { 0, 0, 0, 0, 0, 0, 0, 0 };
                 memmove( five_check , tempg7, sizeof(tempg7));
             } break;
             default: { std::cout << E_5 << endl; goto full_quit; } break;
