@@ -829,6 +829,7 @@ int main() {
                     unmet4_w = 0;
                     unmet5_c = 0;
                     unmet5_w = 0;
+                    fate_points = 0;
                     for (int ini = 0; ini < 128; ini++) { pcount[ini] = 0; }
                     luck = 0;
                     for (int ini = 0; ini < 10; ini++) { lucklocation[ini] = static_cast< long long int> (ini) + 1; }
