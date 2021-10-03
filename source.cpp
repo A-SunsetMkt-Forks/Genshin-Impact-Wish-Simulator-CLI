@@ -220,9 +220,9 @@ int main() {
         nup_four_cg5[16] = { 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 28, 30, 71, 91 },
         nup_four_cg6[17] = { 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 28, 30, 71, 91, 95 },
         four_stars_c[21] = { 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 71, 91, 95, 100 },
-        four_stars_w[24] = { 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 79, 80, 82, 83, 84, 88 },
+        four_stars_w[27] = { 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 79, 80, 82, 83, 84, 88, 102, 103, 104 },
         five_stars_c[20] = { 0, 1, 2, 3, 4, 63, 64, 65, 66, 67, 68, 69, 70, 72, 86, 89, 90, 94, 96, 99 },
-        five_stars_w[23] = { 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 73, 74, 75, 76, 77, 78, 81, 85, 87, 92, 93, 97, 98 };
+        five_stars_w[24] = { 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 73, 74, 75, 76, 77, 78, 81, 85, 87, 92, 93, 97, 98, 101 };
         long long int countx = 0,
         wishes_number = 0,
         five_count = 0,
@@ -475,7 +475,7 @@ int main() {
                 memmove( four_check , tempg5 , sizeof(tempg5));
             } break;
             case 20: {
-                up_five = 68;
+                up_five = 65;
                 size_nup_four_c = 17;
                 int tempg1[3] = { 71, 23, 19 };
                 memmove( up_four_g , tempg1 , sizeof(tempg1));
@@ -484,12 +484,12 @@ int main() {
                 memmove( four_check , tempg5 , sizeof(tempg5));
             } break;
             case 21: {
-                up_five = 99;
+                up_five = 70;
                 size_nup_four_c = 17;
-                int tempg1[3] = { 71, 23, 19 };
+                int tempg1[3] = { 100, 23, 19 };
                 memmove( up_four_g , tempg1 , sizeof(tempg1));
                 memmove( nup_four_c , nup_four_cg6 , sizeof(nup_four_cg6));
-                int tempg5[8] = { 23, 19, 71, 0, 0, 0, 0, 0 };
+                int tempg5[8] = { 23, 19, 100, 0, 0, 0, 0, 0 };
                 memmove( four_check , tempg5 , sizeof(tempg5));
             } break;
             case 22: {
@@ -1500,10 +1500,10 @@ int main() {
             }
             else { std::cout << E_8 << endl; goto full_quit; }
             for (int iout = 0; iout < 20; iout++) { if (pcount[five_stars_c[iout]] > 0) std::cout << pnameshort[five_stars_c[iout]] << "(" << pcount[five_stars_c[iout]] << ") "; }
-            for (int iout = 0; iout < 23; iout++) { if (pcount[five_stars_w[iout]] > 0) std::cout << pnameshort[five_stars_w[iout]] << "(" << pcount[five_stars_w[iout]] << ") "; }
+            for (int iout = 0; iout < 24; iout++) { if (pcount[five_stars_w[iout]] > 0) std::cout << pnameshort[five_stars_w[iout]] << "(" << pcount[five_stars_w[iout]] << ") "; }
             if (five_count > 0) { std::cout << endl << endl; }
             for (int iout = 0; iout < 21; iout++) { if (pcount[four_stars_c[iout]] > 0) std::cout << pnameshort[four_stars_c[iout]] << "(" << pcount[four_stars_c[iout]] << ") "; }
-            for (int iout = 0; iout < 24; iout++) { if (pcount[four_stars_w[iout]] > 0) std::cout << pnameshort[four_stars_w[iout]] << "(" << pcount[four_stars_w[iout]] << ") "; }
+            for (int iout = 0; iout < 27; iout++) { if (pcount[four_stars_w[iout]] > 0) std::cout << pnameshort[four_stars_w[iout]] << "(" << pcount[four_stars_w[iout]] << ") "; }
             std::cout << endl << endl; 
             // a bunch of output of statistics
             //if (chosen_banner == 4 && chosen_event == 1 && count == 20) goto full_quit;
