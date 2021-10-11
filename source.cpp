@@ -270,13 +270,13 @@ int main() {
             chosen_event = 0;
             std::cout << endl << S_12 << endl << S_13 << endl << S_32 << endl << S_33 << endl << S_34 << endl << S_35 << endl << S_36 << endl
                 << S_37 << endl << S_38 << endl << S_39 << endl << S_40 << endl << S_41 << endl << S_42 << endl << S_43 << endl << S_44 << endl
-                << S_45 << endl << S_46 << endl << S_47 << endl << S_96 << endl << S_97 << endl << endl;
+                << S_45 << endl << S_46 << endl << S_47 << endl << S_96 << endl << S_97 << endl << S_104 << endl << endl;
             std::cin >> chosen_event;
             fate_weapon = 0;
             fate_points = 0;
             if (cin.fail()) { chosen_event = 0; std::cout << endl << S_11 << endl; cin.clear(); cin.ignore(32767, '\n'); goto enter_chosen_event; }
             else if (chosen_event == -1) { chosen_event = 0; std::cout << endl; goto enter_chosen_banner; }
-            else if (chosen_event > 0 && chosen_event < 19 ) quit = 0; else { std::cout << endl << S_31 << endl; goto enter_chosen_event; }
+            else if (chosen_event > 0 && chosen_event < 20 ) quit = 0; else { std::cout << endl << S_31 << endl; goto enter_chosen_event; }
         } break;
         case 3: {
             chosen_event = 0;
@@ -477,7 +477,7 @@ int main() {
             case 20: {
                 up_five = 65;
                 size_nup_four_c = 17;
-                int tempg1[3] = { 71, 23, 19 };
+                int tempg1[3] = { 23, 19, 71 };
                 memmove( up_four_g , tempg1 , sizeof(tempg1));
                 memmove( nup_four_c , nup_four_cg6 , sizeof(nup_four_cg6));
                 int tempg5[8] = { 23, 19, 71, 0, 0, 0, 0, 0 };
@@ -729,6 +729,18 @@ int main() {
                 int tempg5[8] = { 34, 39, 41, 45, 48, 0, 0, 0 };
                 memmove( four_check , tempg5 , sizeof(tempg5));
                 int tempg7[8] = { 0, 0, 0, 0, 0, 0, 0, 0 };
+                memmove( five_check , tempg7, sizeof(tempg7));
+            } break;
+            case 19: {
+                int tempg6[2] = { 101, 73 };
+                memmove( up_five_g , tempg6 , sizeof(tempg6));
+                size_nup_four_c = 16;
+                int tempg1[5] = { 32, 36, 40, 49, 104 };
+                memmove( up_four_g , tempg1, sizeof(tempg1));
+                memmove( nup_four_c , nup_four_cg5 , sizeof(nup_four_cg5));
+                int tempg5[8] = { 32, 36, 40, 49, 0, 0, 0, 0 };
+                memmove( four_check , tempg5 , sizeof(tempg5));
+                int tempg7[8] = { 73, 0, 0, 0, 0, 0, 0, 0 };
                 memmove( five_check , tempg7, sizeof(tempg7));
             } break;
             default: { std::cout << E_5 << endl; goto full_quit; } break;
