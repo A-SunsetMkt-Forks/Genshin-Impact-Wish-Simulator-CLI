@@ -804,7 +804,7 @@ int main() {
                 std::cout << S_91 << endl << S_92 << endl << S_93 << endl << endl;
                 int cleanornot = 0;
                 std::cin >> cleanornot;
-                if (cin.fail()) { cleanornot = 0; std::cout << endl << S_11 << endl; cin.clear(); cin.ignore(32767, '\n'); goto enter_cleanornot; }
+                if (cin.fail()) { cleanornot = 0; std::cout << endl << S_11 << endl << endl; cin.clear(); cin.ignore(32767, '\n'); goto enter_cleanornot; }
                 std::cout << endl;
                 if (cleanornot == 1) {
                     wishes_number = 0;
@@ -822,7 +822,10 @@ int main() {
                     is_noelle = 1;
                     ave_fives = 0;
                     max_fives = 1;
-                    min_fives = 90;
+                    if (chosen_banner == 2) min_fives = 80;
+                    else if (chosen_banner == 1 || chosen_banner == 3) min_fives = 90;
+                    else if (chosen_banner == 4) min_fives = 2147483647;
+                    else { std::cout << E_7 << endl; goto full_quit; }
                     max_fivesth = 1;
                     min_fivesth = 1;
                     max_fivecount = 1;
@@ -1046,6 +1049,7 @@ int main() {
                 }
             }
             else if (chosen_banner == 2) {
+                min_fives = 80;
                 while (wishes_number > 0) {
                     unsigned long long int temp1 = generatorz() % 4;
                     int star = 0; //4-star or 5-star
@@ -1380,6 +1384,7 @@ int main() {
                 }
             }
             else if (chosen_banner == 4) {
+                min_fives = 2147483647;
                 while (wishes_number > 0) {
                     unsigned long long int temp1 = generatorz() % 1000;
                     int star = 0; //4-star or 5-star
