@@ -776,6 +776,10 @@ int main() {
         }
         else { std::cout << E_7 << endl; goto full_quit; }
         // set banner
+        if (chosen_banner == 2) min_fives = 80;
+        else if (chosen_banner == 1 || chosen_banner == 3) min_fives = 90;
+        else if (chosen_banner == 4) min_fives = 2147483647;
+        else { std::cout << E_7 << endl; goto full_quit; }
         while (true) {
             if ( quit == 1 ) { std::cout << E_6 << endl; goto full_quit; }
             enter_wishes_number:
@@ -1049,7 +1053,6 @@ int main() {
                 }
             }
             else if (chosen_banner == 2) {
-                min_fives = 80;
                 while (wishes_number > 0) {
                     unsigned long long int temp1 = generatorz() % 4;
                     int star = 0; //4-star or 5-star
@@ -1384,7 +1387,6 @@ int main() {
                 }
             }
             else if (chosen_banner == 4) {
-                min_fives = 2147483647;
                 while (wishes_number > 0) {
                     unsigned long long int temp1 = generatorz() % 1000;
                     int star = 0; //4-star or 5-star
