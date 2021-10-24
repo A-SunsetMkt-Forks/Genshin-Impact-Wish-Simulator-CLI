@@ -724,7 +724,7 @@ int main() {
             case 19: {
                 int tempg6[2] = { 101, 73 };
                 memmove( up_five_g , tempg6 , sizeof(tempg6));
-                size_nup_four_c = 16;
+                size_nup_four_c = 17;
                 int tempg1[5] = { 32, 36, 40, 49, 104 };
                 memmove( up_four_g , tempg1, sizeof(tempg1));
                 memmove( nup_four_c , nup_four_cg6 , sizeof(nup_four_cg6));
