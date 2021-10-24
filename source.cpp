@@ -727,7 +727,7 @@ int main() {
                 size_nup_four_c = 16;
                 int tempg1[5] = { 32, 36, 40, 49, 104 };
                 memmove( up_four_g , tempg1, sizeof(tempg1));
-                memmove( nup_four_c , nup_four_cg5 , sizeof(nup_four_cg5));
+                memmove( nup_four_c , nup_four_cg6 , sizeof(nup_four_cg6));
                 int tempg5[8] = { 32, 36, 40, 49, 0, 0, 0, 0 };
                 memmove( four_check , tempg5 , sizeof(tempg5));
                 int tempg7[8] = { 73, 0, 0, 0, 0, 0, 0, 0 };
