@@ -31,7 +31,8 @@ I Character Event Wish\
 17: Tapestry of Golden Flames/20210810-20210831 (Yoimiya, Sayu, Diona, Xinyan)\
 18: Reign of Serenity/20210901-20210921 (Raiden Shogun, Kujo Sara, Xiangling, Sucrose)\
 19: Drifting Luminescence/20210921-20211012 (Sangonomiya Kokomi, Rosaria, Beidou, Xingqiu)\
-20: Farewell of Snezhnaya/20211013-20211102 (Tartaglia, Ningguang, Chongyun, Yanfei)
+20: Farewell of Snezhnaya/20211013-20211102 (Tartaglia, Ningguang, Chongyun, Yanfei)\
+21: Moment of Bloom/20211102-20211123 (Hu Tao, Thoma, Diona, Sayu)
 
 II Weapon Event Wish\
 1: Epitome Invocation/20200928-20201018 (Aquila Favonia, Amos' Bow, The Flute, The Bell, The Widsith, The Stringless, Favonius Lance)\
@@ -52,7 +53,8 @@ II Weapon Event Wish\
 16: Epitome Invocation/20210810-20210831 (Thundering Pulse, Skyward Blade, Favonius Warbow, Sacrificial Sword, Dragon's Bane, Rainslasher, Sacrificial Fragments)\
 17: Epitome Invocation/20210901-20210921 (Engulfing Lightning, The Unforged, Sacrificial Bow, Lion's Roar, The Widsith, Favonius Lance, The Bell)\
 18: Epitome Invocation/20210921-20211012 (Everlasting Moonglow, Primordial Jade Cutter, The Flute, Favonius Greatsword, Dragon's Bane, Favonius Codex, The Stringless)\
-19: Epitome Invocation/20211013-20211102 (Polar Star, Memory of Dust, Akuoumaru, Favonius Sword, Favonius Lance, Eye of Perception, Rust)
+19: Epitome Invocation/20211013-20211102 (Polar Star, Memory of Dust, Akuoumaru, Favonius Sword, Favonius Lance, Eye of Perception, Rust)\
+20: Epitome Invocation/20211102-20211123 (Staff of Homa, Elegy for the End, Wavebreaker's Fin, Mouun's Moon, Sacrificial Sword, Rainslasher, The Widsith)
 
 III Permanent Wish\
 1: Wanderlust Invocation/20200928-20201222 (Released)\
@@ -102,7 +104,8 @@ This simulator includes no hidden possibilities.
 17: 焰色天河/20210810-20210831 (宵宫, 早柚, 迪奥娜, 辛焱)\
 18: 影寂天下人/20210901-20210921 (雷电将军, 九条裟罗, 香菱, 砂糖)\
 19: 浮岳虹珠/20210921-20211012 (珊瑚宫心海, 罗莎莉亚, 北斗, 行秋)\
-20: 暂别冬都/20211013-20211102 (达达利亚, 凝光, 重云, 烟绯)
+20: 暂别冬都/20211013-20211102 (达达利亚, 凝光, 重云, 烟绯)\
+21: 赤团开时/20211102-20211123 (胡桃, 托马, 迪奥娜, 早柚)
 
 二、武器活动祈愿\
 1: 神铸赋形/20200928-20201018 (风鹰剑, 阿莫斯之弓, 笛剑, 钟剑, 流浪乐章, 绝弦, 西风长枪)\
@@ -123,7 +126,8 @@ This simulator includes no hidden possibilities.
 16: 神铸赋形/20210810-20210831 (飞雷之弦振, 天空之刃, 西风猎弓, 祭礼剑, 匣里灭辰, 雨裁, 祭礼残章)\
 17: 神铸赋形/20210901-20210921 (薙草之稻光, 无工之剑, 祭礼弓, 匣里龙吟, 流浪乐章, 西风长枪, 钟剑)\
 18: 神铸赋形/20210921-20211012 (不灭月华, 磐岩结绿, 笛剑, 西风大剑, 匣里灭辰, 西风秘典, 绝弦)\
-19: 神铸赋形/20211013-20211102 (冬极白星, 尘世之锁, 恶玉丸, 西风剑, 西风长枪, 昭心, 弓藏)
+19: 神铸赋形/20211013-20211102 (冬极白星, 尘世之锁, 恶玉丸, 西风剑, 西风长枪, 昭心, 弓藏)\
+20: 神铸赋形/20211102-20211123 (护摩之杖, 终末嗟叹之诗, 断浪长鳍, 曚云之月, 祭礼剑, 雨裁, 流浪乐章)
 
 三、常驻祈愿\
 1: 奔行世间/20200928-20201222 (公测)\
