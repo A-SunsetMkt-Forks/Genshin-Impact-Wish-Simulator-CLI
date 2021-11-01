@@ -62,7 +62,8 @@ III Permanent Wish\
 3: Wanderlust Invocation/20210428-20210608 (Adds Rosaria)\
 4: Wanderlust Invocation/20210609-20210901 (Adds Yanfei)\
 5: Wanderlust Invocation/20210901-20211012 (Adds Sayu)\
-6: Wanderlust Invocation/20211013- (Adds Kujo Sara)
+6: Wanderlust Invocation/20211013-20211123 (Adds Kujo Sara)\
+7: Wanderlust Invocation/20211124- (Adds Thoma)
 
 IV Novice Wish\
 1: Beginners' wish
@@ -135,7 +136,8 @@ This simulator includes no hidden possibilities.
 3: 奔行世间/20210428-20210608 (新增罗莎莉亚)\
 4: 奔行世间/20210609-20210901 (新增烟绯)\
 5: 奔行世间/20210901-20211012 (新增早柚)\
-6: 奔行世间/20211013- (新增九条裟罗)
+6: 奔行世间/20211013-20211123 (新增九条裟罗)\
+7: 奔行世间/20211124- (新增托马)
 
 四、新手祈愿\
 1: 新手祈愿

@@ -270,13 +270,14 @@ int main() {
         } break;
         case 3: {
             chosen_event = 0;
-            std::cout << endl << S_12 << endl << S_13 << endl << S_48 << endl << S_49 << endl << S_50 << endl << S_51 << endl << S_98 << endl << S_99 << endl << endl;
+            std::cout << endl << S_12 << endl << S_13 << endl << S_48 << endl << S_49 << endl << S_50 << endl << S_51 << endl << S_98 << endl
+                << S_99 << endl << S_106 << endl << endl;
             std::cin >> chosen_event;
             fate_weapon = 0;
             fate_points = 0;
             if (cin.fail()) { chosen_event = 0; std::cout << endl << S_11 << endl; cin.clear(); cin.ignore(32767, '\n'); goto enter_chosen_event; }
             else if (chosen_event == -1) { chosen_event = 0; std::cout << endl; goto enter_chosen_banner; }
-            else if (chosen_event > 0 && chosen_event < 7 ) quit = 0; else { std::cout << endl << S_31 << endl; goto enter_chosen_event; }
+            else if (chosen_event > 0 && chosen_event < 8 ) quit = 0; else { std::cout << endl << S_31 << endl; goto enter_chosen_event; }
         } break;
         case 4: {
             chosen_event = 0;
@@ -779,6 +780,11 @@ int main() {
                 int nup_four_cg36[20] = { 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 71, 91, 95 };
                 size_nup_four_c = 20;
                 memmove( nup_four_c , nup_four_cg36 , sizeof(nup_four_cg36));
+                } break;
+            case 7: {
+                int nup_four_cg37[21] = { 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 71, 91, 95, 100 };
+                size_nup_four_c = 21;
+                memmove( nup_four_c , nup_four_cg37 , sizeof(nup_four_cg37));
                 } break;
             default: { std::cout << E_5 << endl; goto full_quit; } break;
             }
