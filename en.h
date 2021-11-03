@@ -1,5 +1,5 @@
 ﻿#ifndef EN_H
-#define S_1 "WELCOME TO GENSHIN IMPACT WISH SIMULATOR CLI V2.2.5"
+#define S_1 "WELCOME TO GENSHIN IMPACT WISH SIMULATOR CLI V2.2.6"
 #define S_2 "by Jirehlov Research"
 #define S_3 "Source code available on GitHub: Jirehlov/Genshin-Impact-Wish-Simulator-CLI"
 #define S_4 "MIT LICENSE"
@@ -328,4 +328,5 @@
 #define E_7 "Unexpected chosen_banner! Error code: 7"
 #define E_8 "Unexpected five_count! Error code: 8"
 #define E_9 "Unexpected y_print! Error code: 9"
+#define E_10 "Unexpected is_cross! Error code: 10"
 #endif

@@ -186,6 +186,7 @@ int main() {
         unmet5_w = 0,
         resultt = 0,
         resultu = 0,
+        is_cross = 0,
         luck = 0,
         luckkind[10] = { 127, 127, 127, 127, 127, 127, 127, 127, 127, 127 },
         luckstar[10] = { 3, 3, 3, 3, 3, 3, 3, 3, 3, 3 },
@@ -794,10 +795,13 @@ int main() {
         }
         else { std::cout << E_7 << endl; goto full_quit; }
         // set banner
-        if (chosen_banner == 2) min_fives = 80;
+        if (!(is_cross == 1 || is_cross == 0)) { std::cout << E_10 << endl; goto full_quit; }
+        if (is_cross == 1) goto core_loop;
+        else if (chosen_banner == 2) min_fives = 80;
         else if (chosen_banner == 1 || chosen_banner == 3) min_fives = 90;
         else if (chosen_banner == 4) min_fives = 2147483647;
         else { std::cout << E_7 << endl; goto full_quit; }
+        core_loop:
         while (true) {
             if ( quit == 1 ) { std::cout << E_6 << endl; goto full_quit; }
             enter_wishes_number:
@@ -809,7 +813,7 @@ int main() {
             std::cin >> wishes_number;
             if (cin.fail()) { wishes_number = 0; std::cout << endl << S_11 << endl; cin.clear(); cin.ignore(32767, '\n'); goto enter_wishes_number; }
             std::cout << endl;
-            if (wishes_number == -1) { wishes_number = 0; goto enter_chosen_event; }
+            if (wishes_number == -1) { wishes_number = 0; is_cross = 1; goto enter_chosen_event; }
             else if (wishes_number == -2) {
                 if (countx < 10) { std::cout << S_62 << endl; goto enter_wishes_number; }
                 std::cout << S_63 << luckiest << endl;
