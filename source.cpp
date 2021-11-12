@@ -71,8 +71,7 @@ string pname[128] = {C_0, C_1, C_2, C_3, C_4, C_5, C_6, C_7, C_8, C_9, C_10, C_1
                 C_41, C_42, C_43, C_44, C_45, C_46, C_47, C_48, C_49, C_50, C_51, C_52, C_53, C_54, C_55, C_56, C_57, C_58, C_59, C_60,
                 C_61, C_62, C_63, C_64, C_65, C_66, C_67, C_68, C_69, C_70, C_71, C_72, C_73, C_74, C_75, C_76, C_77, C_78, C_79, C_80,
                 C_81, C_82, C_83, C_84, C_85, C_86, C_87, C_88, C_89, C_90, C_91, C_92, C_93, C_94, C_95, C_96, C_97, C_98, C_99, C_100,
-                C_101, C_102, C_103, C_104, C_105, C_106,
-                "Placeholder",
+                C_101, C_102, C_103, C_104, C_105, C_106, C_107,
                 "Placeholder",
                 "Placeholder",
                 "Placeholder",
@@ -99,8 +98,7 @@ string pnameshort[128] = {X_0, X_1, X_2, X_3, X_4, X_5, X_6, X_7, X_8, X_9, X_10
                 X_41, X_42, X_43, X_44, X_45, X_46, X_47, X_48, X_49, X_50, X_51, X_52, X_53, X_54, X_55, X_56, X_57, X_58, X_59, X_60,
                 X_61, X_62, X_63, X_64, X_65, X_66, X_67, X_68, X_69, X_70, X_71, X_72, X_73, X_74, X_75, X_76, X_77, X_78, X_79, X_80,
                 X_81, X_82, X_83, X_84, X_85, X_86, X_87, X_88, X_89, X_90, X_91, X_92, X_93, X_94, X_95, X_96, X_97, X_98, X_99, X_100,
-                X_101, X_102, X_103, X_104, X_105, X_106,
-                "Placeholder",
+                X_101, X_102, X_103, X_104, X_105, X_106, X_107,
                 "Placeholder",
                 "Placeholder",
                 "Placeholder",
@@ -187,6 +185,10 @@ int main() {
         resultt = 0,
         resultu = 0,
         is_cross = 0,
+        is_dualcross = 0,
+        switch_b_should_be = 1,
+        switch_e_should_be = 1,
+        switch_e_should_be2 = 2,
         luck = 0,
         luckkind[10] = { 127, 127, 127, 127, 127, 127, 127, 127, 127, 127 },
         luckstar[10] = { 3, 3, 3, 3, 3, 3, 3, 3, 3, 3 },
@@ -210,10 +212,11 @@ int main() {
         nup_four_cg4[15] = { 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 28, 30, 71 },
         nup_four_cg5[16] = { 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 28, 30, 71, 91 },
         nup_four_cg6[17] = { 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 28, 30, 71, 91, 95 },
+        nup_four_cg7[18] = { 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 28, 30, 71, 91, 95, 100 },
         four_stars_c[22] = { 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 71, 91, 95, 100, 106 },
         four_stars_w[27] = { 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 79, 80, 82, 83, 84, 88, 102, 103, 104 },
         five_stars_c[21] = { 0, 1, 2, 3, 4, 63, 64, 65, 66, 67, 68, 69, 70, 72, 86, 89, 90, 94, 96, 99, 105 },
-        five_stars_w[24] = { 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 73, 74, 75, 76, 77, 78, 81, 85, 87, 92, 93, 97, 98, 101 };
+        five_stars_w[25] = { 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 73, 74, 75, 76, 77, 78, 81, 85, 87, 92, 93, 97, 98, 101, 107 };
         long long int countx = 0,
         wishes_number = 0,
         five_count = 0,
@@ -237,8 +240,9 @@ int main() {
         four_pity[11] = { 0 },
         five_pity[90] = { 0 },
         five_pity_w[80] = { 0 };
+        enter_chosen_banner_switch:
         std::cout << S_5 << endl;
-        std::cout << S_6 << endl << S_7 << endl << S_8 << endl << S_9 << endl << S_10 << endl << endl;
+        std::cout << S_6 << endl << S_7 << endl << S_108 << endl << S_8 << endl << S_9 << endl << S_10 << endl << endl;
         std::cin >> chosen_banner;
         if (cin.fail()) { chosen_banner = 0; std::cout << endl << S_11 << endl << endl; cin.clear(); cin.ignore(32767, '\n'); goto enter_chosen_banner; }
         enter_chosen_event:
@@ -246,20 +250,34 @@ int main() {
         case -1: goto full_quit; break;
         case 1: {
             chosen_event = 0;
-            std::cout << endl << S_12 << endl << S_13 << endl << S_14 << endl << S_15 << endl << S_16 << endl << S_17 << endl << S_18 << endl
+            std::cout << endl << S_12 << endl << S_13 << endl << S_109 << endl << S_14 << endl << S_15 << endl << S_16 << endl << S_17 << endl << S_18 << endl
                 << S_19 << endl << S_20 << endl << S_21 << endl << S_22 << endl << S_23 << endl << S_24 << endl << S_25 << endl << S_26 << endl
                 << S_27 << endl << S_28 << endl << S_29 << endl << S_30 << endl << S_94 << endl << S_95 << endl << S_100 << endl << S_101 << endl
                 << S_102 << endl << S_103 << endl << endl;
             std::cin >> chosen_event;
             fate_weapon = 0;
             fate_points = 0;
+            switch_b_should_be = 2;
             if (cin.fail()) { chosen_event = 0; std::cout << endl << S_11 << endl; cin.clear(); cin.ignore(32767, '\n'); goto enter_chosen_event; }
             else if (chosen_event == -1) { chosen_event = 0; std::cout << endl; goto enter_chosen_banner; }
+            else if (chosen_event == -2) { chosen_event = 0; std::cout << endl; goto enter_chosen_banner_switch; }
             else if (chosen_event > 0 && chosen_event < 24 ) quit = 0; else { std::cout << endl << S_31 << endl; goto enter_chosen_event; }
         } break;
         case 2: {
             chosen_event = 0;
-            std::cout << endl << S_12 << endl << S_13 << endl << S_32 << endl << S_33 << endl << S_34 << endl << S_35 << endl << S_36 << endl
+            std::cout << endl << S_12 << endl << S_13 << endl << S_109 << endl << S_107 << endl << endl;
+            std::cin >> chosen_event;
+            fate_weapon = 0;
+            fate_points = 0;
+            switch_b_should_be = 1;
+            if (cin.fail()) { chosen_event = 0; std::cout << endl << S_11 << endl; cin.clear(); cin.ignore(32767, '\n'); goto enter_chosen_event; }
+            else if (chosen_event == -1) { chosen_event = 0; std::cout << endl; goto enter_chosen_banner; }
+            else if (chosen_event == -2) { chosen_event = 0; std::cout << endl; goto enter_chosen_banner_switch; }
+            else if (chosen_event > 0 && chosen_event < 2) quit = 0; else { std::cout << endl << S_31 << endl; goto enter_chosen_event; }
+        } break;
+        case 3: {
+            chosen_event = 0;
+            std::cout << endl << S_12 << endl << S_13 << endl << S_109 << endl << S_32 << endl << S_33 << endl << S_34 << endl << S_35 << endl << S_36 << endl
                 << S_37 << endl << S_38 << endl << S_39 << endl << S_40 << endl << S_41 << endl << S_42 << endl << S_43 << endl << S_44 << endl
                 << S_45 << endl << S_46 << endl << S_47 << endl << S_96 << endl << S_97 << endl << S_104 << endl << S_105 << endl << endl;
             std::cin >> chosen_event;
@@ -267,27 +285,30 @@ int main() {
             fate_points = 0;
             if (cin.fail()) { chosen_event = 0; std::cout << endl << S_11 << endl; cin.clear(); cin.ignore(32767, '\n'); goto enter_chosen_event; }
             else if (chosen_event == -1) { chosen_event = 0; std::cout << endl; goto enter_chosen_banner; }
+            else if (chosen_event == -2) { chosen_event = 0; std::cout << endl; goto enter_chosen_banner_switch; }
             else if (chosen_event > 0 && chosen_event < 21 ) quit = 0; else { std::cout << endl << S_31 << endl; goto enter_chosen_event; }
         } break;
-        case 3: {
+        case 4: {
             chosen_event = 0;
-            std::cout << endl << S_12 << endl << S_13 << endl << S_48 << endl << S_49 << endl << S_50 << endl << S_51 << endl << S_98 << endl
+            std::cout << endl << S_12 << endl << S_13 << endl << S_109 << endl << S_48 << endl << S_49 << endl << S_50 << endl << S_51 << endl << S_98 << endl
                 << S_99 << endl << S_106 << endl << endl;
             std::cin >> chosen_event;
             fate_weapon = 0;
             fate_points = 0;
             if (cin.fail()) { chosen_event = 0; std::cout << endl << S_11 << endl; cin.clear(); cin.ignore(32767, '\n'); goto enter_chosen_event; }
             else if (chosen_event == -1) { chosen_event = 0; std::cout << endl; goto enter_chosen_banner; }
+            else if (chosen_event == -2) { chosen_event = 0; std::cout << endl; goto enter_chosen_banner_switch; }
             else if (chosen_event > 0 && chosen_event < 8 ) quit = 0; else { std::cout << endl << S_31 << endl; goto enter_chosen_event; }
         } break;
-        case 4: {
+        case 5: {
             chosen_event = 0;
-            std::cout << endl << S_12 << endl << S_13 << endl << S_52 << endl << endl;
+            std::cout << endl << S_12 << endl << S_13 << endl << S_109 << endl << S_52 << endl << endl;
             std::cin >> chosen_event;
             fate_weapon = 0;
             fate_points = 0;
             if (cin.fail()) { chosen_event = 0; std::cout << endl << S_11 << endl; cin.clear(); cin.ignore(32767, '\n'); goto enter_chosen_event; }
             else if (chosen_event == -1) { chosen_event = 0; std::cout << endl; goto enter_chosen_banner; }
+            else if (chosen_event == -2) { chosen_event = 0; std::cout << endl; goto enter_chosen_banner_switch; }
             else if (chosen_event == 1 ) quit = 0; else { std::cout << endl << S_31 << endl; goto enter_chosen_event; } } break;
         default: {chosen_banner = 0; chosen_event = 0; quit = 1; std::cout << endl << S_53 << endl << endl; goto enter_chosen_banner; } break;
         }
@@ -485,27 +506,45 @@ int main() {
                 memmove( four_check , tempg5 , sizeof(tempg5));
             } break;
             case 22: {
+                switch_e_should_be = 1;
                 up_five = 67;
-                size_nup_four_c = 17;
+                size_nup_four_c = 18;
                 int tempg1[3] = { 71, 23, 19 };
                 memmove( up_four_g , tempg1 , sizeof(tempg1));
-                memmove( nup_four_c , nup_four_cg6 , sizeof(nup_four_cg6));
+                memmove( nup_four_c , nup_four_cg7 , sizeof(nup_four_cg7));
                 int tempg5[8] = { 23, 19, 71, 0, 0, 0, 0, 0 };
                 memmove( four_check , tempg5 , sizeof(tempg5));
             } break;
             case 23: {
-                up_five = 70;
-                size_nup_four_c = 17;
-                int tempg1[3] = { 71, 23, 19 };
+                switch_e_should_be = 1;
+                up_five = 105;
+                size_nup_four_c = 18;
+                int tempg1[3] = { 106, 23, 19 };
                 memmove( up_four_g , tempg1 , sizeof(tempg1));
-                memmove( nup_four_c , nup_four_cg6 , sizeof(nup_four_cg6));
-                int tempg5[8] = { 23, 19, 71, 0, 0, 0, 0, 0 };
+                memmove( nup_four_c , nup_four_cg7 , sizeof(nup_four_cg7));
+                int tempg5[8] = { 23, 19, 0, 0, 0, 0, 0, 0 };
                 memmove( four_check , tempg5 , sizeof(tempg5));
             } break;
             default: { std::cout << E_5 << endl; goto full_quit; } break;
             }
         }
         else if (chosen_banner == 2) {
+            switch (chosen_event) {
+            case 1: {
+                switch_e_should_be = 22;
+                switch_e_should_be2 = 23;
+                up_five = 72;
+                size_nup_four_c = 18;
+                int tempg1[3] = { 71, 23, 19 };
+                memmove(up_four_g, tempg1, sizeof(tempg1));
+                memmove(nup_four_c, nup_four_cg7, sizeof(nup_four_cg7));
+                int tempg5[8] = { 23, 19, 71, 0, 0, 0, 0, 0 };
+                memmove(four_check, tempg5, sizeof(tempg5));
+            } break;
+            default: { std::cout << E_5 << endl; goto full_quit; } break;
+            }
+        }
+        else if (chosen_banner == 3) {
             switch (chosen_event) {
             case 1: {
                 int tempg6[2] = { 5, 14 };
@@ -750,7 +789,7 @@ int main() {
             default: { std::cout << E_5 << endl; goto full_quit; } break;
             }
         }
-        else if (chosen_banner == 3) {
+        else if (chosen_banner == 4) {
             switch (chosen_event) {
             case 1: {
                 int nup_four_cg31[14] = { 17, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31 };
@@ -790,7 +829,7 @@ int main() {
             default: { std::cout << E_5 << endl; goto full_quit; } break;
             }
         }
-        else if (chosen_banner == 4) {
+        else if (chosen_banner == 5) {
             memmove( nup_four_c , nup_four_cg1 , sizeof(nup_four_cg1));
         }
         else { std::cout << E_7 << endl; goto full_quit; }
@@ -801,13 +840,17 @@ int main() {
         else if (chosen_banner == 1 || chosen_banner == 3) min_fives = 90;
         else if (chosen_banner == 4) min_fives = 2147483647;
         else { std::cout << E_7 << endl; goto full_quit; }
+        if (chosen_banner == switch_b_should_be && ( chosen_event == switch_e_should_be || chosen_event == switch_e_should_be2 )) is_dualcross = 1;
+        if (!(is_dualcross == 1 || is_dualcross == 0)) { std::cout << E_11 << endl; goto full_quit; }
+        if (is_dualcross == 1) goto core_loop;
+        else { unmet4_c = 0; unmet4_w = 0; unmet5_c = 0; unmet5_w = 0; }
         core_loop:
         while (true) {
             if ( quit == 1 ) { std::cout << E_6 << endl; goto full_quit; }
             enter_wishes_number:
             std::cout << endl << S_54 << endl << S_55 << endl << S_56 << endl << S_57 << endl << S_58 << endl << S_59 << endl << S_60;
-            if (chosen_banner == 1 || chosen_banner == 2 || chosen_banner == 3) {std::cout << ";" << endl << S_90; }
-            if (chosen_banner == 2 && chosen_event > 14) {std::cout << ";" << endl << S_61 << endl; }
+            if (chosen_banner == 1 || chosen_banner == 2 || chosen_banner == 3 || chosen_banner == 4) {std::cout << ";" << endl << S_90; }
+            if (chosen_banner == 3 && chosen_event > 14) {std::cout << ";" << endl << S_61 << endl; }
             else {std::cout << endl;}
             std::cout << endl;
             std::cin >> wishes_number;
@@ -943,7 +986,7 @@ int main() {
             else { std::cout << S_85 << endl << endl; }
             const std::chrono::time_point<std::chrono::system_clock> startx = std::chrono::system_clock::now();
             auto starty = std::chrono::steady_clock::now();
-            if (chosen_banner == 1) {
+            if (chosen_banner == 1 || chosen_banner == 2) {
                 while (wishes_number > 0) {
                     unsigned long long int temp1 = generatorz() % 2;
                     int star = 0; //4-star or 5-star
@@ -1074,7 +1117,7 @@ int main() {
                     luckcpy()
                 }
             }
-            else if (chosen_banner == 2) {
+            else if (chosen_banner == 3) {
                 while (wishes_number > 0) {
                     unsigned long long int temp1 = generatorz() % 4;
                     int star = 0; //4-star or 5-star
@@ -1246,7 +1289,7 @@ int main() {
                     luckcpy()
                     }
             }
-            else if (chosen_banner == 3) {
+            else if (chosen_banner == 4) {
                 while (wishes_number > 0) {
                     int star = 0; //4-star or 5-star
                     int type = 0; //Up or non-up, character or weapon
@@ -1408,7 +1451,7 @@ int main() {
                     luckcpy()
                 }
             }
-            else if (chosen_banner == 4) {
+            else if (chosen_banner == 5) {
                 while (wishes_number > 0) {
                     unsigned long long int temp1 = generatorz() % 1000;
                     int star = 0; //4-star or 5-star
@@ -1531,7 +1574,7 @@ int main() {
             }
             else { std::cout << E_8 << endl; goto full_quit; }
             for (int iout = 0; iout < 21; iout++) { if (pcount[five_stars_c[iout]] > 0) std::cout << pnameshort[five_stars_c[iout]] << "(" << pcount[five_stars_c[iout]] << ") "; }
-            for (int iout = 0; iout < 24; iout++) { if (pcount[five_stars_w[iout]] > 0) std::cout << pnameshort[five_stars_w[iout]] << "(" << pcount[five_stars_w[iout]] << ") "; }
+            for (int iout = 0; iout < 25; iout++) { if (pcount[five_stars_w[iout]] > 0) std::cout << pnameshort[five_stars_w[iout]] << "(" << pcount[five_stars_w[iout]] << ") "; }
             if (five_count > 0) { std::cout << endl << endl; }
             for (int iout = 0; iout < 22; iout++) { if (pcount[four_stars_c[iout]] > 0) std::cout << pnameshort[four_stars_c[iout]] << "(" << pcount[four_stars_c[iout]] << ") "; }
             for (int iout = 0; iout < 27; iout++) { if (pcount[four_stars_w[iout]] > 0) std::cout << pnameshort[four_stars_w[iout]] << "(" << pcount[four_stars_w[iout]] << ") "; }
