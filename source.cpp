@@ -943,7 +943,7 @@ int main() {
             }
             else if (wishes_number == -5) {
                 if (chosen_banner == 4 || four_count == 0 || five_count == 0) { wishes_number = 0; std::cout << S_72 << endl; goto enter_wishes_number; }
-                else if (chosen_banner == 1 || chosen_banner == 3 ) {
+                else if (chosen_banner == 1 || chosen_banner == 2 || chosen_banner == 4 ) {
                     std::cout << S_88 << endl << endl;
                     for (int iout = 0; iout < 10; iout++) { std::cout << iout + 1 << "  " << four_pity[iout] << "   " << four_pity[iout] *100.0 / four_count << "%" << endl; }
                     std::cout << "10+  " << four_pity[10] << "   " << four_pity[10] *100.0 / four_count << "%" << endl << endl << S_89 << endl << endl;
@@ -951,7 +951,7 @@ int main() {
                     wishes_number = 0;
                     goto enter_wishes_number;
                 }
-                else if (chosen_banner == 2) {
+                else if (chosen_banner == 3) {
                     std::cout << S_88 << endl << endl;
                     for (int iout = 0; iout < 10; iout++) { std::cout << iout + 1 << "  "  << four_pity[iout] << "   " << four_pity[iout] *100.0 / four_count << "%" << endl; }
                     std::cout << "10+  " << four_pity[10] << "   " << four_pity[10] *100.0 / four_count << "%" << endl << endl << S_89 << endl << endl;
