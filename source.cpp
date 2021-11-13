@@ -964,7 +964,7 @@ int main() {
                 }
             }
             else if (wishes_number == -6) {
-                if (chosen_banner == 2 && chosen_event > 14) {
+                if (chosen_banner == 3 && chosen_event > 14) {
                     enter_fate_weapon:
                     std::cout << S_67 << endl << S_68 << endl
                     << S_69 << " ( " << pname[up_five_g[0]] << " ) " << endl
