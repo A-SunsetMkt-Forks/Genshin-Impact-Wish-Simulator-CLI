@@ -70,7 +70,7 @@ IV Permanent Wish\
 5: Wanderlust Invocation/20210901-20211012 (Adds Sayu)\
 6: Wanderlust Invocation/20211013-20211123 (Adds Kujo Sara)\
 7: Wanderlust Invocation/20211124-20220105 (Adds Thoma)\
-8: Wanderlust Invocation/20220106- (Adds Gorou)\
+8: Wanderlust Invocation/20220106- (Adds Gorou)
 
 V Novice Wish\
 1: Beginners' wish
