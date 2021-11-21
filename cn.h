@@ -2,7 +2,7 @@
 #define S_1 "原神祈愿模拟器（命令行）V2.3.5"
 #define S_2 "作者: Jirehlov Research"
 #define S_3 "开源于GitHub: Jirehlov_Genshin-Impact-Wish-Simulator-CLI"
-#define S_4 "MIT LICENSE"
+#define S_4 "GPL-3.0 License"
 #define S_5 "选择卡池类型:"
 #define S_6 "-1: 退出;"
 #define S_7 "1: 角色活动祈愿;"

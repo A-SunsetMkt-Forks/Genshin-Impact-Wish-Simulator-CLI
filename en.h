@@ -2,7 +2,7 @@
 #define S_1 "WELCOME TO GENSHIN IMPACT WISH SIMULATOR CLI V2.3.5"
 #define S_2 "by Jirehlov Research"
 #define S_3 "Source code available on GitHub: Jirehlov_Genshin-Impact-Wish-Simulator-CLI"
-#define S_4 "MIT LICENSE"
+#define S_4 "GPL-3.0 License"
 #define S_5 "Choose Your Wishes (Banners):"
 #define S_6 "-1: Quit;"
 #define S_7 "1: Character Event Wish;"
