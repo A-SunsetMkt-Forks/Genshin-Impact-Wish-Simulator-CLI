@@ -172,7 +172,7 @@ int main() {
         quit = 1,
         is_noelle = 1,
         max_fives = 1,
-        min_fives = 90,
+        min_fives = 2147483647,
         fate_weapon = 0,
         fate_points = 0,
         five_weight = 0,
@@ -1015,7 +1015,7 @@ int main() {
                     int ij = 0;
                     enter_ij:
                     std::cout << S_114 << endl << endl << S_116 << endl << S_123 << endl;
-                    if (chosen_banner == 1 || chosen_banner == 2 || chosen_banner == 4) {
+                    if (chosen_banner == 1 || chosen_banner == 2) {
                         std::cout << endl << S_117 << endl << up_five << ": " << pnameshort[up_five] << endl << endl << S_118 << endl;
                         d_item[up_five] = 1;
                         for (int ukt = 0; ukt < 5; ukt++) {
@@ -1052,6 +1052,26 @@ int main() {
                         for (int ukk = 0; ukk < 5; ukk++) {
                             std::cout << up_four_g[ukk] << ": " << pnameshort[up_four_g[ukk]] << endl;
                             d_item[up_four_g[ukk]] = 1;
+                        }
+                        std::cout << endl << S_120 << endl;
+                        for (int ukkk = 0; ukkk < size_nup_four_c; ukkk++) {
+                            std::cout << nup_four_c[ukkk] << ": " << pnameshort[nup_four_c[ukkk]] << endl;
+                            d_item[nup_four_c[ukkk]] = 1;
+                        }
+                        for (int ukkkk = 0; ukkkk < 18; ukkkk++) {
+                            std::cout << nup_four_w[ukkkk] << ": " << pnameshort[nup_four_w[ukkkk]] << endl;
+                            d_item[nup_four_w[ukkkk]] = 1;
+                        }
+                    }
+                    else if (chosen_banner == 4) {
+                        std::cout << endl << S_118 << endl;
+                        for (int ukt = 0; ukt < 5; ukt++) {
+                            std::cout << nup_five_c[ukt] << ": " << pnameshort[nup_five_c[ukt]] << endl;
+                            d_item[nup_five_c[ukt]] = 1;
+                        }
+                        for (int uktt = 0; uktt < 10; uktt++) {
+                            std::cout << nup_five_w[uktt] << ": " << pnameshort[nup_five_w[uktt]] << endl;
+                            d_item[nup_five_w[uktt]] = 1;
                         }
                         std::cout << endl << S_120 << endl;
                         for (int ukkk = 0; ukkk < size_nup_four_c; ukkk++) {
