@@ -190,6 +190,10 @@ int main() {
         switch_e_should_be = 0,
         switch_b_sav = 0,
         switch_e_sav = 0,
+        d_item[128] = { 0 },
+        d_item_n[128] = { 0 },
+        d_item_c = 1,
+        is_s_mode = 0,
         luck = 0,
         luckkind[10] = { 127, 127, 127, 127, 127, 127, 127, 127, 127, 127 },
         luckstar[10] = { 3, 3, 3, 3, 3, 3, 3, 3, 3, 3 },
@@ -874,7 +878,7 @@ int main() {
             std::cout << endl << S_54 << endl << S_55 << endl << S_56 << endl << S_57 << endl << S_58 << endl << S_59 << endl << S_60;
             if (chosen_banner == 1 || chosen_banner == 2 || chosen_banner == 3 || chosen_banner == 4) {std::cout << ";" << endl << S_90; }
             if (chosen_banner == 3 && chosen_event > 14) {std::cout << ";" << endl << S_61; }
-            std::cout << ";" << endl << S_112 << endl << endl;
+            std::cout << ";" << endl << S_113 << endl << S_112 << endl << endl;
             std::cin >> wishes_number;
             if (cin.fail()) { wishes_number = 0; std::cout << endl << S_11 << endl; cin.clear(); cin.ignore(32767, '\n'); goto enter_wishes_number; }
             std::cout << endl;
@@ -1004,55 +1008,150 @@ int main() {
                     wishes_number = 0; std::cout << S_72 << endl; goto enter_wishes_number;
                 }
             }
+            else if (wishes_number == -63) {
+                wishes_number = 0;
+                is_s_mode = 1;
+                while (true) {
+                    int ij = 0;
+                    enter_ij:
+                    std::cout << S_114 << endl << endl << S_116 << endl << S_123 << endl;
+                    if (chosen_banner == 1 || chosen_banner == 2 || chosen_banner == 4) {
+                        std::cout << endl << S_117 << endl << up_five << ": " << pnameshort[up_five] << endl << endl << S_118 << endl;
+                        d_item[up_five] = 1;
+                        for (int ukt = 0; ukt < 5; ukt++) {
+                            std::cout << nup_five_c[ukt] << ": " << pnameshort[nup_five_c[ukt]] << endl;
+                            d_item[nup_five_c[ukt]] = 1;
+                        }
+                        std::cout << endl << S_119 << endl;
+                        for (int ukk = 0; ukk < 3; ukk++) {
+                            std::cout << up_four_g[ukk] << ": " << pnameshort[up_four_g[ukk]] << endl;
+                            d_item[up_five_g[ukk]] = 1;
+                        }
+                        std::cout << endl << S_120 << endl;
+                        for (int ukkk = 0; ukkk < size_nup_four_c; ukkk++) {
+                            std::cout << nup_four_c[ukkk] << ": " << pnameshort[nup_four_c[ukkk]] << endl;
+                            d_item[nup_four_c[ukkk]] = 1;
+                        }
+                        for (int ukkkk = 0; ukkkk < 18; ukkkk++) {
+                            std::cout << nup_four_w[ukkkk] << ": " << pnameshort[nup_four_w[ukkkk]] << endl;
+                            d_item[nup_four_w[ukkkk]] = 1;
+                        }
+                    }
+                    else if (chosen_banner == 3) {
+                        std::cout << endl << S_117 << endl;
+                        for (int uk = 0; uk < 2; uk++) {
+                            std::cout << up_five_g[uk] << ": " << pnameshort[up_five_g[uk]] << endl;
+                            d_item[up_five_g[uk]] = 1;
+                        }
+                        std::cout << endl << S_118 << endl;
+                        for (int uktt = 0; uktt < 10; uktt++) {
+                            std::cout << nup_five_w[uktt] << ": " << pnameshort[nup_five_w[uktt]] << endl;
+                            d_item[nup_five_w[uktt]] = 1;
+                        }
+                        std::cout << endl << S_119 << endl;
+                        for (int ukk = 0; ukk < 5; ukk++) {
+                            std::cout << up_four_g[ukk] << ": " << pnameshort[up_four_g[ukk]] << endl;
+                            d_item[up_four_g[ukk]] = 1;
+                        }
+                        std::cout << endl << S_120 << endl;
+                        for (int ukkk = 0; ukkk < size_nup_four_c; ukkk++) {
+                            std::cout << nup_four_c[ukkk] << ": " << pnameshort[nup_four_c[ukkk]] << endl;
+                            d_item[nup_four_c[ukkk]] = 1;
+                        }
+                        for (int ukkkk = 0; ukkkk < 18; ukkkk++) {
+                            std::cout << nup_four_w[ukkkk] << ": " << pnameshort[nup_four_w[ukkkk]] << endl;
+                            d_item[nup_four_w[ukkkk]] = 1;
+                        }
+                    }
+                    else if (chosen_banner == 5) {
+                        std::cout << endl << S_118 << endl;
+                        for (int ukt = 0; ukt < 5; ukt++) {
+                            std::cout << nup_five_c[ukt] << ": " << pnameshort[nup_five_c[ukt]] << endl;
+                            d_item[nup_five_c[ukt]] = 1;
+                        }
+                        std::cout << endl << S_120 << endl;
+                        for (int ukkk = 0; ukkk < 11; ukkk++) {
+                            std::cout << nup_four_c[ukkk] << ": " << pnameshort[nup_four_c[ukkk]] << endl;
+                            d_item[nup_four_c[ukkk]] = 1;
+                        }
+                    }
+                    else { std::cout << E_7 << endl; goto full_quit; }
+                    std::cout << endl << S_121 << endl;
+                    for (int ukkkkk = 0; ukkkkk < 13; ukkkkk++) {
+                        std::cout << three_g[ukkkkk] << ": " << pnameshort[three_g[ukkkkk]] << endl;
+                        d_item[three_g[ukkkkk]] = 1;
+                    }
+                    std::cout << endl;
+                    std::cin >> ij;
+                    if (cin.fail()) { ij = 0; std::cout << endl << S_11 << endl; cin.clear(); cin.ignore(32767, '\n'); goto enter_ij; }
+                    if (ij == -1) { ij = 0; std::cout << endl << S_85 << endl << endl; goto core_core_loop; }
+                    else if (ij == -2) { ij = 0; for (int qi = 0; qi < 107; qi++) d_item_n[qi] = 0; std::cout << endl; goto enter_wishes_number; }
+                    else if (ij > -1) {
+                        if (d_item[ij] == 0){ ij = 0; std::cout << endl << S_122 << endl << endl; goto enter_ij; }
+                        enter_d_item:
+                        std::cout << endl << S_115 << pnameshort[ij] << S_124 << endl << endl;
+                        std::cin >> d_item_n[ij];
+                        if (cin.fail()) { d_item_n[ij] = 0; std::cout << endl << S_11 << endl; cin.clear(); cin.ignore(32767, '\n'); goto enter_d_item; }
+                        if (d_item_n[ij] < 0) { d_item_n[ij] = 0; std::cout << endl << S_72 << endl << endl; goto enter_d_item; }
+                        if (countx < 1 && d_item_n[ij] < 1) { d_item_n[ij] = 0; std::cout << endl << S_72 << endl << endl; goto enter_d_item; }
+                        std::cout << endl;
+                    }
+                    else { std::cout << E_12 << endl; goto full_quit; }
+                    }
+                std::cout << endl << S_85 << endl << endl;
+                goto core_core_loop;
+            }
             else if (wishes_number == -127) {
-            std::cout <<
-                V_1 << "chosen_banner = " << chosen_banner << endl <<
-                V_2 << "chosen_event = " << chosen_event << endl <<
-                V_3 << "up_five = " << up_five << endl <<
-                V_4 << "y_print = " << y_print << endl <<
-                V_5 << "four_star_assurance_number = " << four_star_assurance_number << endl <<
-                V_6 << "five_star_assurance_number = " << five_star_assurance_number << endl <<
-                V_7 << "five_star_guarantee_number = " << five_star_guarantee_number << endl <<
-                V_8 << "four_star_guarantee_number = " << four_star_guarantee_number << endl <<
-                V_9 << "countx = " << countx << endl <<
-                V_10 << "five_count = " << five_count << endl <<
-                V_11 << "five_count_c = " << five_count_c << endl <<
-                V_12 << "five_count_w = " << five_count_w << endl <<
-                V_13 << "four_count = " << four_count << endl <<
-                V_14 << "four_count_c = " << four_count_c << endl <<
-                V_15 << "four_count_w = " << four_count_w << endl <<
-                V_16 << "is_noelle = " << is_noelle << endl <<
-                V_17 << "ave_fives = " << ave_fives << endl <<
-                V_18 << "max_fives = " << max_fives << endl <<
-                V_19 << "min_fives = " << min_fives << endl <<
-                V_20 << "max_fivesth = " << max_fivesth << endl <<
-                V_21 << "min_fivesth = " << min_fivesth << endl <<
-                V_22 << "max_fivecount = " << max_fivecount << endl <<
-                V_23 << "min_fivecount = " << min_fivecount << endl <<
-                V_24 << "unmet4_c = " << unmet4_c << endl <<
-                V_25 << "unmet4_w = " << unmet4_w << endl <<
-                V_26 << "unmet5_c = " << unmet5_c << endl <<
-                V_27 << "unmet5_w = " << unmet5_w << endl <<
-                V_28 << "five_weight = " << five_weight << endl <<
-                V_29 << "four_weight = " << four_weight << endl <<
-                V_30 << "three_weight = " << three_weight << endl <<
-                V_31 << "size_nup_four_c = " << size_nup_four_c << endl <<
-                V_32 << "size_nup_four_w = " << size_nup_four_w << endl <<
-                V_33 << "is_cross = " << is_cross << endl <<
-                V_34 << "is_dualcross = " << is_dualcross << endl <<
-                V_35 << "switch_b_should_be = " << switch_b_should_be << endl <<
-                V_36 << "switch_e_should_be = " << switch_e_should_be << endl <<
-                V_37 << "fate_weapon = " << fate_weapon << endl <<
-                V_38 << "fate_points = " << fate_points << endl <<
-                V_39 << "luckiest = " << luckiest << endl << endl;
+                wishes_number = 0;
+                std::cout <<
+                    V_1 << "chosen_banner = " << chosen_banner << endl <<
+                    V_2 << "chosen_event = " << chosen_event << endl <<
+                    V_3 << "up_five = " << up_five << endl <<
+                    V_4 << "y_print = " << y_print << endl <<
+                    V_5 << "four_star_assurance_number = " << four_star_assurance_number << endl <<
+                    V_6 << "five_star_assurance_number = " << five_star_assurance_number << endl <<
+                    V_7 << "five_star_guarantee_number = " << five_star_guarantee_number << endl <<
+                    V_8 << "four_star_guarantee_number = " << four_star_guarantee_number << endl <<
+                    V_9 << "countx = " << countx << endl <<
+                    V_10 << "five_count = " << five_count << endl <<
+                    V_11 << "five_count_c = " << five_count_c << endl <<
+                    V_12 << "five_count_w = " << five_count_w << endl <<
+                    V_13 << "four_count = " << four_count << endl <<
+                    V_14 << "four_count_c = " << four_count_c << endl <<
+                    V_15 << "four_count_w = " << four_count_w << endl <<
+                    V_16 << "is_noelle = " << is_noelle << endl <<
+                    V_17 << "ave_fives = " << ave_fives << endl <<
+                    V_18 << "max_fives = " << max_fives << endl <<
+                    V_19 << "min_fives = " << min_fives << endl <<
+                    V_20 << "max_fivesth = " << max_fivesth << endl <<
+                    V_21 << "min_fivesth = " << min_fivesth << endl <<
+                    V_22 << "max_fivecount = " << max_fivecount << endl <<
+                    V_23 << "min_fivecount = " << min_fivecount << endl <<
+                    V_24 << "unmet4_c = " << unmet4_c << endl <<
+                    V_25 << "unmet4_w = " << unmet4_w << endl <<
+                    V_26 << "unmet5_c = " << unmet5_c << endl <<
+                    V_27 << "unmet5_w = " << unmet5_w << endl <<
+                    V_28 << "five_weight = " << five_weight << endl <<
+                    V_29 << "four_weight = " << four_weight << endl <<
+                    V_30 << "three_weight = " << three_weight << endl <<
+                    V_31 << "size_nup_four_c = " << size_nup_four_c << endl <<
+                    V_32 << "size_nup_four_w = " << size_nup_four_w << endl <<
+                    V_33 << "is_cross = " << is_cross << endl <<
+                    V_34 << "is_dualcross = " << is_dualcross << endl <<
+                    V_35 << "switch_b_should_be = " << switch_b_should_be << endl <<
+                    V_36 << "switch_e_should_be = " << switch_e_should_be << endl <<
+                    V_37 << "fate_weapon = " << fate_weapon << endl <<
+                    V_38 << "fate_points = " << fate_points << endl <<
+                    V_39 << "luckiest = " << luckiest << endl << endl;
                 goto enter_wishes_number;
             }
             else if (wishes_number < 1) { wishes_number = 0; std::cout << S_72 << endl; goto enter_wishes_number;}
             else { std::cout << S_85 << endl << endl; }
+            core_core_loop:
             const std::chrono::time_point<std::chrono::system_clock> startx = std::chrono::system_clock::now();
             auto starty = std::chrono::steady_clock::now();
             if (chosen_banner == 1 || chosen_banner == 2) {
-                while (wishes_number > 0) {
+                while (wishes_number > 0 || d_item_c > 0) {
                     unsigned long long int temp1 = generatorz() % 2;
                     int star = 0; //4-star or 5-star
                     int type = 0; //Up or non-up, character or weapon
@@ -1180,10 +1279,21 @@ int main() {
                         }
                     }
                     luckcpy()
+                    if (is_s_mode == 1) {
+                        if (d_item_n[kind] > 0) d_item_n[kind]--;
+                        if (d_item_n[kind] < 0) { std::cout << E_13 << endl; goto full_quit; }
+                        for (int ikk = 0; ikk < 107; ikk++) {
+                            if (d_item_n[ikk] > 0) { d_item_c = 1; goto break_ikk; }
+                            else if (d_item_n[ikk] == 0) d_item_c = 0;
+                            else { std::cout << E_13 << endl; goto full_quit; }
+                        }
+                        break_ikk:
+                        is_s_mode = 1;
+                    }
                 }
             }
             else if (chosen_banner == 3) {
-                while (wishes_number > 0) {
+                while (wishes_number > 0 || d_item_c > 0) {
                     unsigned long long int temp1 = generatorz() % 4;
                     int star = 0; //4-star or 5-star
                     int type = 0; //Up or non-up, character or weapon
@@ -1352,10 +1462,21 @@ int main() {
                         }
                     }
                     luckcpy()
+                    if (is_s_mode == 1) {
+                        if (d_item_n[kind] > 0) d_item_n[kind]--;
+                        if (d_item_n[kind] < 0) { std::cout << E_13 << endl; goto full_quit; }
+                        for (int ikk = 0; ikk < 107; ikk++) {
+                            if (d_item_n[ikk] > 0) { d_item_c = 1; goto break_ikk2; }
+                            else if (d_item_n[ikk] == 0) d_item_c = 0;
+                            else { std::cout << E_13 << endl; goto full_quit; }
+                        }
+                        break_ikk2:
+                        is_s_mode = 1;
+                    }
                     }
             }
             else if (chosen_banner == 4) {
-                while (wishes_number > 0) {
+                while (wishes_number > 0 || d_item_c > 0) {
                     int star = 0; //4-star or 5-star
                     int type = 0; //Up or non-up, character or weapon
                     int kind = 0; //which exactly
@@ -1514,10 +1635,21 @@ int main() {
                         }
                     }
                     luckcpy()
+                    if (is_s_mode == 1) {
+                        if (d_item_n[kind] > 0) d_item_n[kind]--;
+                        if (d_item_n[kind] < 0) { std::cout << E_13 << endl; goto full_quit; }
+                        for (int ikk = 0; ikk < 107; ikk++) {
+                            if (d_item_n[ikk] > 0) { d_item_c = 1; goto break_ikk3; }
+                            else if (d_item_n[ikk] == 0) d_item_c = 0;
+                            else { std::cout << E_13 << endl; goto full_quit; }
+                        }
+                        break_ikk3:
+                        is_s_mode = 1;
+                    }
                 }
             }
             else if (chosen_banner == 5) {
-                while (wishes_number > 0) {
+                while (wishes_number > 0 || d_item_c > 0) {
                     unsigned long long int temp1 = generatorz() % 1000;
                     int star = 0; //4-star or 5-star
                     int type = 0; //Up or non-up, character or weapon
@@ -1609,6 +1741,17 @@ int main() {
                         }
                     }
                     luckcpy()
+                    if (is_s_mode == 1) {
+                        if (d_item_n[kind] > 0) d_item_n[kind]--;
+                        if (d_item_n[kind] < 0) { std::cout << E_13 << endl; goto full_quit; }
+                        for (int ikk = 0; ikk < 107; ikk++) {
+                            if (d_item_n[ikk] > 0) { d_item_c = 1; goto break_ikk4; }
+                            else if (d_item_n[ikk] == 0) d_item_c = 0;
+                            else { std::cout << E_13 << endl; goto full_quit; }
+                        }
+                        break_ikk4:
+                        is_s_mode = 1;
+                    }
                 }
             }
             else { std::cout << E_7 << endl; goto full_quit; }
