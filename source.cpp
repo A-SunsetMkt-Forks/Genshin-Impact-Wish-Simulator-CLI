@@ -1085,7 +1085,7 @@ int main() {
                     std::cin >> ij;
                     if (cin.fail()) { ij = 0; std::cout << endl << S_11 << endl; cin.clear(); cin.ignore(32767, '\n'); goto enter_ij; }
                     if (ij == -1) { ij = 0; std::cout << endl << S_85 << endl << endl; goto core_core_loop; }
-                    else if (ij == -2) { ij = 0; for (int qi = 0; qi < 107; qi++) d_item_n[qi] = 0; std::cout << endl; goto enter_wishes_number; }
+                    else if (ij == -2) { ij = 0; for (int qi = 0; qi < 108; qi++) d_item_n[qi] = 0; std::cout << endl; goto enter_wishes_number; }
                     else if (ij > -1) {
                         if (d_item[ij] == 0){ ij = 0; std::cout << endl << S_122 << endl << endl; goto enter_ij; }
                         enter_d_item:
@@ -1148,6 +1148,7 @@ int main() {
             else if (wishes_number < 1) { wishes_number = 0; std::cout << S_72 << endl; goto enter_wishes_number;}
             else { std::cout << S_85 << endl << endl; }
             core_core_loop:
+            if (is_s_mode == 1) { d_item_c = 0; }
             const std::chrono::time_point<std::chrono::system_clock> startx = std::chrono::system_clock::now();
             auto starty = std::chrono::steady_clock::now();
             if (chosen_banner == 1 || chosen_banner == 2) {
@@ -1282,7 +1283,7 @@ int main() {
                     if (is_s_mode == 1) {
                         if (d_item_n[kind] > 0) d_item_n[kind]--;
                         if (d_item_n[kind] < 0) { std::cout << E_13 << endl; goto full_quit; }
-                        for (int ikk = 0; ikk < 107; ikk++) {
+                        for (int ikk = 0; ikk < 108; ikk++) {
                             if (d_item_n[ikk] > 0) { d_item_c = 1; goto break_ikk; }
                             else if (d_item_n[ikk] == 0) d_item_c = 0;
                             else { std::cout << E_13 << endl; goto full_quit; }
@@ -1465,7 +1466,7 @@ int main() {
                     if (is_s_mode == 1) {
                         if (d_item_n[kind] > 0) d_item_n[kind]--;
                         if (d_item_n[kind] < 0) { std::cout << E_13 << endl; goto full_quit; }
-                        for (int ikk = 0; ikk < 107; ikk++) {
+                        for (int ikk = 0; ikk < 108; ikk++) {
                             if (d_item_n[ikk] > 0) { d_item_c = 1; goto break_ikk2; }
                             else if (d_item_n[ikk] == 0) d_item_c = 0;
                             else { std::cout << E_13 << endl; goto full_quit; }
@@ -1638,7 +1639,7 @@ int main() {
                     if (is_s_mode == 1) {
                         if (d_item_n[kind] > 0) d_item_n[kind]--;
                         if (d_item_n[kind] < 0) { std::cout << E_13 << endl; goto full_quit; }
-                        for (int ikk = 0; ikk < 107; ikk++) {
+                        for (int ikk = 0; ikk < 108; ikk++) {
                             if (d_item_n[ikk] > 0) { d_item_c = 1; goto break_ikk3; }
                             else if (d_item_n[ikk] == 0) d_item_c = 0;
                             else { std::cout << E_13 << endl; goto full_quit; }
@@ -1744,7 +1745,7 @@ int main() {
                     if (is_s_mode == 1) {
                         if (d_item_n[kind] > 0) d_item_n[kind]--;
                         if (d_item_n[kind] < 0) { std::cout << E_13 << endl; goto full_quit; }
-                        for (int ikk = 0; ikk < 107; ikk++) {
+                        for (int ikk = 0; ikk < 108; ikk++) {
                             if (d_item_n[ikk] > 0) { d_item_c = 1; goto break_ikk4; }
                             else if (d_item_n[ikk] == 0) d_item_c = 0;
                             else { std::cout << E_13 << endl; goto full_quit; }
