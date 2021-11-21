@@ -1,5 +1,5 @@
 ﻿#ifndef EN_H
-#define S_1 "WELCOME TO GENSHIN IMPACT WISH SIMULATOR CLI V2.3.3"
+#define S_1 "WELCOME TO GENSHIN IMPACT WISH SIMULATOR CLI V2.3.4"
 #define S_2 "by Jirehlov Research"
 #define S_3 "Source code available on GitHub: Jirehlov_Genshin-Impact-Wish-Simulator-CLI"
 #define S_4 "MIT LICENSE"
@@ -391,4 +391,6 @@
 #define V_37 "Epitomized Path chosen weapon (EP banners only)  "
 #define V_38 "Epitomized Path fate points (EP banners only)  "
 #define V_39 "Luckiness "
+#define V_40 "If the loop should be break in S Mode "
+#define V_41 "If it's S Mode "
 #endif

@@ -945,6 +945,8 @@ int main() {
                     for (int ini = 0; ini < 80; ini++) { five_pity_w[ini] = 0; }
                     for (int ini = 0; ini < 127; ini++) { d_item[ini] = 0; }
                     for (int ini = 0; ini < 127; ini++) { d_item_n[ini] = 0; }
+                    d_item_c = 1,
+                    is_s_mode = 0,
                     std::cout << S_64 << endl;
                     goto enter_wishes_number;
                 }
@@ -1164,7 +1166,9 @@ int main() {
                     V_36 << "switch_e_should_be = " << switch_e_should_be << endl <<
                     V_37 << "fate_weapon = " << fate_weapon << endl <<
                     V_38 << "fate_points = " << fate_points << endl <<
-                    V_39 << "luckiest = " << luckiest << endl << endl;
+                    V_39 << "luckiest = " << luckiest << endl <<
+                    V_40 << "d_item_c = " << d_item_c << endl <<
+                    V_41 << "is_s_mode = " << is_s_mode << endl << endl;
                 goto enter_wishes_number;
             }
             else if (wishes_number < 1) { wishes_number = 0; std::cout << S_72 << endl; goto enter_wishes_number;}

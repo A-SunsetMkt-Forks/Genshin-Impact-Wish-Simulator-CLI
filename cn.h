@@ -1,5 +1,5 @@
 ﻿#ifndef CN_H
-#define S_1 "原神祈愿模拟器（命令行）V2.3.3"
+#define S_1 "原神祈愿模拟器（命令行）V2.3.4"
 #define S_2 "作者: Jirehlov Research"
 #define S_3 "开源于GitHub: Jirehlov_Genshin-Impact-Wish-Simulator-CLI"
 #define S_4 "MIT LICENSE"
@@ -391,4 +391,6 @@
 #define V_37 "神铸定轨武器 (仅用于适用神铸定轨的祈愿)  "
 #define V_38 "命定值 (仅用于适用神铸定轨的祈愿)  "
 #define V_39 "好运参考值 "
+#define V_40 "指定模式下的循环判定 "
+#define V_41 "指定模式判定 "
 #endif
