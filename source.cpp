@@ -943,6 +943,8 @@ int main() {
                     for (int ini = 0; ini < 10; ini++) { four_pity[ini] = 0; }
                     for (int ini = 0; ini < 90; ini++) { five_pity[ini] = 0; }
                     for (int ini = 0; ini < 80; ini++) { five_pity_w[ini] = 0; }
+                    for (int ini = 0; ini < 127; ini++) { d_item[ini] = 0; }
+                    for (int ini = 0; ini < 127; ini++) { d_item_n[ini] = 0; }
                     std::cout << S_64 << endl;
                     goto enter_wishes_number;
                 }
