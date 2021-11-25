@@ -926,9 +926,9 @@ int main() {
                     is_noelle = true;
                     ave_fives = 0;
                     max_fives = 1;
-                    if (chosen_banner == 2) min_fives = 80;
-                    else if (chosen_banner == 1 || chosen_banner == 3) min_fives = 90;
-                    else if (chosen_banner == 4) min_fives = 2147483647;
+                    if (chosen_banner == 3) min_fives = 80;
+                    else if (chosen_banner == 1 || chosen_banner == 2 || chosen_banner == 4) min_fives = 90;
+                    else if (chosen_banner == 5) min_fives = 2147483647;
                     else { std::cout << E_7 << endl; goto full_quit; }
                     max_fivesth = 1;
                     min_fivesth = 1;
