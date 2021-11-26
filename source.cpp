@@ -171,7 +171,6 @@ int WRSpick(const int* weightx, int nom){
 int main() {
     std::cout << S_1 << endl << S_2 << endl << S_3 << endl << S_4 << endl << endl;
     bool y_print = true;
-    while (true) {
     enter_chosen_banner:
         bool d_item_c = true,
         is_s_mode = false,
@@ -1789,7 +1788,7 @@ int main() {
             // a bunch of output of statistics
             //if (chosen_banner == 4 && chosen_event == 1 && count == 20) goto full_quit;
         }
-    }
+        goto enter_chosen_banner;
 full_quit:
     int prepause = getchar();
     prepause = 1;
