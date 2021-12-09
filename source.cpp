@@ -538,7 +538,7 @@ int main() {
                 switch_e_should_be = 0;
                 up_five = 105;
                 size_nup_four_c = 18;
-                int tempg1[3] = { 106, 26, 30 };
+                int tempg1[3] = { 26, 30, 106 };
                 memmove( up_four_g , tempg1 , sizeof(tempg1));
                 memmove( nup_four_c , nup_four_cg7 , sizeof(nup_four_cg7));
                 int tempg5[8] = { 26, 30, 0, 0, 0, 0, 0, 0 };
@@ -1035,6 +1035,7 @@ int main() {
                 wishes_number = 0;
                 is_s_mode = true;
                 bool zero_input_check = true;
+                bool zero_input_recheck = true;
                 while (true) {
                     int ij = 0;
                     enter_ij:
@@ -1049,7 +1050,7 @@ int main() {
                         std::cout << endl << S_119 << endl;
                         for (int ukk = 0; ukk < 3; ukk++) {
                             std::cout << up_four_g[ukk] << ": " << pnameshort[up_four_g[ukk]] << endl;
-                            d_item[up_five_g[ukk]] = 1;
+                            d_item[up_four_g[ukk]] = 1;
                         }
                         std::cout << endl << S_120 << endl;
                         for (int ukkk = 0; ukkk < size_nup_four_c; ukkk++) {
@@ -1139,7 +1140,8 @@ int main() {
                         std::cin >> d_item_n[ij];
                         if (cin.fail()) { d_item_n[ij] = 0; std::cout << endl << S_11 << endl; cin.clear(); cin.ignore(32767, '\n'); goto enter_d_item; }
                         if (d_item_n[ij] < 0) { d_item_n[ij] = 0; std::cout << endl << S_72 << endl << endl; goto enter_d_item; }
-                        if (countx < 1 && d_item_n[ij] < 1) { d_item_n[ij] = 0; std::cout << endl << S_72 << endl << endl; goto enter_d_item; }
+                        if (d_item_n[ij] > 0) { zero_input_recheck = false; }
+                        if (countx < 1 && d_item_n[ij] < 1 && zero_input_recheck) { d_item_n[ij] = 0; std::cout << endl << S_72 << endl << endl; goto enter_d_item; }
                         std::cout << endl;
                     }
                     else if (ij < -2) { ij = 0; std::cout << S_72 << endl; goto enter_ij; }
