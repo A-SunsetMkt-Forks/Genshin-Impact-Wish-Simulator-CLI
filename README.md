@@ -34,7 +34,8 @@ I Character Event Wish\
 19: Drifting Luminescence/20210921-20211012 (Sangonomiya Kokomi, Rosaria, Beidou, Xingqiu)\
 20: Farewell of Snezhnaya/20211013-20211102 (Tartaglia, Ningguang, Chongyun, Yanfei)\
 21: Moment of Bloom/20211102-20211123 (Hu Tao, Thoma, Diona, Sayu)\
-22: Secretum Secretorum/20211124-20211214 (Albedo, Rosaria, Noelle, Bennett)
+22: Secretum Secretorum/20211124-20211214 (Albedo, Rosaria, Noelle, Bennett)\
+23: Oni's Royale_20211214-20220104 (Arataki Itto, Gorou, Xiangling, Barbara)
 
 II Character Event Wish-2\
 1: Born of Ocean Swell/20211124-20211214 (Eula, Rosaria, Noelle, Bennett)
@@ -60,7 +61,8 @@ III Weapon Event Wish\
 18: Epitome Invocation/20210921-20211012 (Everlasting Moonglow, Primordial Jade Cutter, The Flute, Favonius Greatsword, Dragon's Bane, Favonius Codex, The Stringless)\
 19: Epitome Invocation/20211013-20211102 (Polar Star, Memory of Dust, Akuoumaru, Favonius Sword, Favonius Lance, Eye of Perception, Rust)\
 20: Epitome Invocation/20211102-20211123 (Staff of Homa, Elegy for the End, Wavebreaker's Fin, Mouun's Moon, Sacrificial Sword, Rainslasher, The Widsith)\
-21: Epitome Invocation/20211124-20211214 (Freedom Sworn, Song of Broken Pines, Alley Hunter, Lion's Roar, Dragon's Bane, Wine and Song, Sacrificial Greatsword)
+21: Epitome Invocation/20211124-20211214 (Freedom Sworn, Song of Broken Pines, Alley Hunter, Lion's Roar, Dragon's Bane, Wine and Song, Sacrificial Greatsword)\
+22: Epitome Invocation_20211214-20210104 (Redhorn Stonethresher, Skyward Harp, The Alley Flash, Mitternachts Waltz, Favonius Lance, Sacrificial Fragments, The Bell)
 
 IV Permanent Wish\
 1: Wanderlust Invocation/20200928-20201222 (Released)\
@@ -114,7 +116,8 @@ This simulator includes no hidden possibilities.
 19: 浮岳虹珠/20210921-20211012 (珊瑚宫心海, 罗莎莉亚, 北斗, 行秋)\
 20: 暂别冬都/20211013-20211102 (达达利亚, 凝光, 重云, 烟绯)\
 21: 赤团开时/20211102-20211123 (胡桃, 托马, 迪奥娜, 早柚)\
-22: 深秘之息/20211124-20211214 (阿贝多, 罗莎莉亚, 诺艾尔, 班尼特)
+22: 深秘之息/20211124-20211214 (阿贝多, 罗莎莉亚, 诺艾尔, 班尼特)\
+23: 鬼门斗宴_20211214-20220104 (荒泷一斗, 五郎, 香菱, 芭芭拉)
 
 二、角色活动祈愿-2\
 1: 浪涌之瞬/20211124-20211214 (优菈, 罗莎莉亚, 诺艾尔, 班尼特)
@@ -140,7 +143,8 @@ This simulator includes no hidden possibilities.
 18: 神铸赋形/20210921-20211012 (不灭月华, 磐岩结绿, 笛剑, 西风大剑, 匣里灭辰, 西风秘典, 绝弦)\
 19: 神铸赋形/20211013-20211102 (冬极白星, 尘世之锁, 恶玉丸, 西风剑, 西风长枪, 昭心, 弓藏)\
 20: 神铸赋形/20211102-20211123 (护摩之杖, 终末嗟叹之诗, 断浪长鳍, 曚云之月, 祭礼剑, 雨裁, 流浪乐章)\
-21: 神铸赋形/20211124-20211214 (苍古自由之誓, 松籁响起之时, 暗巷猎手, 匣里龙吟, 匣里灭辰, 暗巷的酒与诗, 祭礼大剑)
+21: 神铸赋形/20211124-20211214 (苍古自由之誓, 松籁响起之时, 暗巷猎手, 匣里龙吟, 匣里灭辰, 暗巷的酒与诗, 祭礼大剑)\
+22: 神铸赋形_20211214-20210104 (赤角石溃杵, 天空之翼, 暗巷闪光, 幽夜华尔兹, 西风长枪, 祭礼残章, 钟剑)
 
 三、常驻祈愿\
 1: 奔行世间/20200928-20201222 (公测)\
