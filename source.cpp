@@ -296,14 +296,14 @@ int main() {
             chosen_event = 0;
             std::cout << endl << S_12 << endl << S_13 << endl << S_109 << endl << S_32 << endl << S_33 << endl << S_34 << endl << S_35 << endl << S_36 << endl
                 << S_37 << endl << S_38 << endl << S_39 << endl << S_40 << endl << S_41 << endl << S_42 << endl << S_43 << endl << S_44 << endl
-                << S_45 << endl << S_46 << endl << S_47 << endl << S_96 << endl << S_97 << endl << S_104 << endl << S_105 << endl << S_111 << endl << endl;
+                << S_45 << endl << S_46 << endl << S_47 << endl << S_96 << endl << S_97 << endl << S_104 << endl << S_105 << endl << S_111 << endl << S_126 << endl << endl;
             std::cin >> chosen_event;
             fate_weapon = 0;
             fate_points = 0;
             if (cin.fail()) { chosen_event = 0; std::cout << endl << S_11 << endl; cin.clear(); cin.ignore(32767, '\n'); goto enter_chosen_event; }
             else if (chosen_event == -1) { chosen_event = 0; is_cross = true; std::cout << endl; goto enter_chosen_banner; }
             else if (chosen_event == -2) { chosen_event = 0; is_cross = true; std::cout << endl; goto enter_chosen_banner_switch; }
-            else if (chosen_event > 0 && chosen_event < 22 ) quit = false; else { std::cout << endl << S_31 << endl; goto enter_chosen_event; }
+            else if (chosen_event > 0 && chosen_event < 23 ) quit = false; else { std::cout << endl << S_31 << endl; goto enter_chosen_event; }
         } break;
         case 4: {
             chosen_event = 0;
@@ -538,10 +538,10 @@ int main() {
                 switch_e_should_be = 0;
                 up_five = 105;
                 size_nup_four_c = 18;
-                int tempg1[3] = { 106, 23, 19 };
+                int tempg1[3] = { 106, 26, 30 };
                 memmove( up_four_g , tempg1 , sizeof(tempg1));
                 memmove( nup_four_c , nup_four_cg7 , sizeof(nup_four_cg7));
-                int tempg5[8] = { 23, 19, 0, 0, 0, 0, 0, 0 };
+                int tempg5[8] = { 26, 30, 0, 0, 0, 0, 0, 0 };
                 memmove( four_check , tempg5 , sizeof(tempg5));
             } break;
             default: { std::cout << E_5 << endl; goto full_quit; } break;
@@ -815,6 +815,18 @@ int main() {
                 int tempg5[8] = { 41, 43, 46, 0, 0, 0, 0, 0 };
                 memmove(four_check, tempg5, sizeof(tempg5));
                 int tempg7[8] = { 0, 0, 0, 0, 0, 0, 0, 0 };
+                memmove(five_check, tempg7, sizeof(tempg7));
+            } break;
+            case 22: {
+                int tempg6[2] = { 6, 107 };
+                memmove(up_five_g, tempg6, sizeof(tempg6));
+                size_nup_four_c = 18;
+                int tempg1[5] = { 37, 40, 44, 82, 88 };
+                memmove(up_four_g, tempg1, sizeof(tempg1));
+                memmove(nup_four_c, nup_four_cg7, sizeof(nup_four_cg7));
+                int tempg5[8] = { 37, 40, 44, 0, 0, 0, 0, 0 };
+                memmove(four_check, tempg5, sizeof(tempg5));
+                int tempg7[8] = { 6, 0, 0, 0, 0, 0, 0, 0 };
                 memmove(five_check, tempg7, sizeof(tempg7));
             } break;
             default: { std::cout << E_5 << endl; goto full_quit; } break;

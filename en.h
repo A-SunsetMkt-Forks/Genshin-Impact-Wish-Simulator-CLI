@@ -1,5 +1,5 @@
 ﻿#ifndef EN_H
-#define S_1 "WELCOME TO GENSHIN IMPACT WISH SIMULATOR CLI V2.3.5"
+#define S_1 "WELCOME TO GENSHIN IMPACT WISH SIMULATOR CLI V2.3.6"
 #define S_2 "by Jirehlov Research"
 #define S_3 "Source code available on GitHub: Jirehlov_Genshin-Impact-Wish-Simulator-CLI"
 #define S_4 "GPL-3.0 License"
@@ -101,7 +101,7 @@
 #define S_100 "20: Farewell of Snezhnaya_20211013-20211102 (Tartaglia, Ningguang, Chongyun, Yanfei)"
 #define S_101 "21: Moment of Bloom_20211102-20211123 (Hu Tao, Thoma, Diona, Sayu)"
 #define S_102 "22: Secretum Secretorum_20211124-20211214 (Albedo, Rosaria, Noelle, Bennett)"
-#define S_103 "(test)23: Oni's Royale_20211214-20220104 (Arataki Itto, Gorou, , )"
+#define S_103 "23: Oni's Royale_20211214-20220104 (Arataki Itto, Gorou, Xiangling, Barbara)"
 #define S_104 "19: Epitome Invocation_20211013-20211102 (Polar Star, Memory of Dust, Akuoumaru, Favonius Sword, Favonius Lance, Eye of Perception, Rust)"
 #define S_105 "20: Epitome Invocation_20211102-20211123 (Staff of Homa, Elegy for the End, Wavebreaker's Fin, Mouun's Moon, Sacrificial Sword, Rainslasher, The Widsith)"
 #define S_106 "7: Wanderlust Invocation_20211124-20220104 (Adds Thoma)"
@@ -124,6 +124,7 @@
 #define S_123 "-2: Quit specific-ing and give up;"
 #define S_124 ") ?"
 #define S_125 "You didn't made any specific-ing!"
+#define S_126 "22: Epitome Invocation_20211214-20210104 (Redhorn Stonethresher, Skyward Harp, The Alley Flash, Mitternachts Waltz, Favonius Lance, Sacrificial Fragments, The Bell)"
 #define C_0 "\"Driving Thunder\" Keqing"
 #define C_1 "\"Astral Reflection\" Mona"
 #define C_2 "\"Icy Resurrection\" Qiqi"
