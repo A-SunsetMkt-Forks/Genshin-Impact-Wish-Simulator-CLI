@@ -10,20 +10,20 @@ Pull untill a specific output reached;\
 Statistics;\
 Showing the luckiest succession of 10 wishes
 
-How to build:\
-...
+How to build:
+```
 g++ -s -o3 source.cpp -o giwscli
-    ...
+```
 Or Visual Studio, etc.
 
-How to use:\
-...
+How to use:
+```
 giwscli <chosen_banner> <chosen_event> <wishes_number>
-    ...
-For exmaple, if you want to pull 100 wishes in Sparkling Steps/20201020-20201110 which is a Character Event Wish, use:\
-...
+```
+For exmaple, if you want to pull 100 wishes in Sparkling Steps/20201020-20201110 which is a Character Event Wish, type:
+```
 giwscli 1 2 100
-    ...
+```
 If no argument is provided, the program will enter interactive mode.
 
 No. of banners and events seen as follows:
@@ -94,7 +94,7 @@ V Novice Wish\
 1: Beginners' wish
 
 Screenshots\
-![Screenshot from 2021-10-24 01-43-17](https://user-images.githubusercontent.com/34600796/138576680-543855b2-b611-4417-af02-1eb22b8eb9e8.png)
+![Screenshot 2021-12-11 090439](https://user-images.githubusercontent.com/34600796/145670993-47180cce-24a6-4a43-a708-a1ed23aa6abe.png)
 
 
 
@@ -108,20 +108,20 @@ This simulator includes no hidden possibilities.
 主要功能：\
 任意数量抽卡、指定出货抽卡、简略统计信息反馈、查看当前记录中的运气最佳的十连等
 
-如何编译:\
-...
+如何编译:
+```
 g++ -s -o3 source.cpp -o giwscli
-    ...
+```
 或者Visual Studio等其他方法。
 
-如何使用:\
-...
+如何使用:
+```
 giwscli <卡池类型编号> <活动类型编号> <祈愿数量>
-    ...
-比如，你想在 角色活动祈愿 中的 闪焰的驻足/20201020-20201110 中抽取100次，可以键入:\
-...
+```
+比如，你想在 角色活动祈愿 中的 闪焰的驻足/20201020-20201110 中抽取100次，可以键入:
+```
 giwscli 1 2 100
-    ...
+```
 如果没有arguments，模拟器将进入交互模式。
 
 卡池类型编号与活动类型编号如下:
@@ -192,7 +192,8 @@ giwscli 1 2 100
 1: 新手祈愿
 
 截图\
-![Screenshot from 2021-10-24 01-42-52](https://user-images.githubusercontent.com/34600796/138576691-c7ff9349-a733-4879-94a1-cf9ca4a74355.png)
+![Screenshot 2021-12-11 090334](https://user-images.githubusercontent.com/34600796/145670987-5cc578e2-9f89-4a12-8387-0e42135ae867.png)
+
 
 
 关于隐藏概率（仓检）\
