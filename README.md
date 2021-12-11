@@ -1,22 +1,22 @@
-﻿### Genshin-Impact-Wish-Simulator-CLI
+﻿## Genshin-Impact-Wish-Simulator-CLI
 [![License](https://img.shields.io/badge/Licence-GPL-blue.svg)](https://github.com/Jirehlov/GenshinImpactWishSimulatorCLI/blob/master/LICENSE)
 
 ## English
 This is a CLI Wish Simulator for Genshin Impact players.
 
-Features:\
+### Features:
 Unlimited number of wishes in one go;\
 Pull untill a specific output reached;\
 Statistics;\
 Showing the luckiest succession of 10 wishes
 
-How to build:
+### How to build:
 ```
 g++ -s -o3 source.cpp -o giwscli
 ```
 Or Visual Studio, etc.
 
-How to use:
+### How to use:
 ```
 giwscli <chosen_banner> <chosen_event> <wishes_number>
 ```
@@ -93,28 +93,28 @@ IV Permanent Wish\
 V Novice Wish\
 1: Beginners' wish
 
-Screenshots\
+### Screenshots
 ![Screenshot 2021-12-11 090439](https://user-images.githubusercontent.com/34600796/145670993-47180cce-24a6-4a43-a708-a1ed23aa6abe.png)
 
 
 
-About Hidden Possibilities\
+### About Hidden Possibilities
 This simulator includes no hidden possibilities.
 
 
 ## 中文
 这是命令行界面的原神祈愿模拟器。
 
-主要功能：\
+### 主要功能：
 任意数量抽卡、指定出货抽卡、简略统计信息反馈、查看当前记录中的运气最佳的十连等
 
-如何编译:
+### 如何编译:
 ```
 g++ -s -o3 source.cpp -o giwscli
 ```
 或者Visual Studio等其他方法。
 
-如何使用:
+### 如何使用:
 ```
 giwscli <卡池类型编号> <活动类型编号> <祈愿数量>
 ```
@@ -191,12 +191,12 @@ giwscli 1 2 100
 四、新手祈愿\
 1: 新手祈愿
 
-截图\
+### 截图
 ![Screenshot 2021-12-11 090334](https://user-images.githubusercontent.com/34600796/145670987-5cc578e2-9f89-4a12-8387-0e42135ae867.png)
 
 
 
-关于隐藏概率（仓检）\
+### 关于隐藏概率（仓检）
 本模拟器不考虑仓检。
 
 
