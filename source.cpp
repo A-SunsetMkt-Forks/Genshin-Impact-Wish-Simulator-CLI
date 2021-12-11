@@ -73,6 +73,12 @@
                     is_s_mode = true;\
                     }\
                 } // do if is s mode
+#define set_pool_1_m(up_five_m,size_nup_four_c_m, nup_four_cgm) {\
+                    set_pool_1(up_five, (up_five_m), size_nup_four_c, (size_nup_four_c_m), tempg1, tempg5, up_four_g, nup_four_c, (nup_four_cgm), four_check);\
+                }
+#define set_pool_3_m(size_nup_four_c_m, nup_four_cgm) {\
+                    set_pool_3(up_five_g, size_nup_four_c, (size_nup_four_c_m), tempg1, tempg5, tempg6, tempg7, up_four_g, nup_four_c, (nup_four_cgm), four_check, five_check);\
+                }
 
 using namespace std;
 
@@ -167,6 +173,23 @@ int WRSpick(const int* weightx, int nom){
     return results;
 }
 // weighted random sampling
+
+void set_pool_1(int &up_five, int up_five_p, int &size_nup_four_c, int size_nup_four_c_p, int* tempg1, int* tempg5, int* up_four_g, int* nup_four_c, int* nup_four_cgm, int* four_check) {
+    up_five = up_five_p;
+    size_nup_four_c = size_nup_four_c_p;
+    for (int i = 0; i < 3; i++) { up_four_g[i] = tempg1[i]; }
+    for (int i = 0; i < size_nup_four_c; i++) { nup_four_c[i] = nup_four_cgm[i]; }
+    for (int i = 0; i < 8; i++) { four_check[i] = tempg5[i]; }
+}
+
+void set_pool_3(int *up_five_g, int& size_nup_four_c, int size_nup_four_c_p, int* tempg1, int* tempg5, int* tempg6, int* tempg7, int* up_four_g, int* nup_four_c, int* nup_four_cgm, int* four_check, int* five_check) {
+    for (int i = 0; i < 2; i++) { up_five_g[i] = tempg6[i]; }
+    size_nup_four_c = size_nup_four_c_p;
+    for (int i = 0; i < 5; i++) { up_four_g[i] = tempg1[i]; }
+    for (int i = 0; i < size_nup_four_c; i++) { nup_four_c[i] = nup_four_cgm[i]; }
+    for (int i = 0; i < 8; i++) { four_check[i] = tempg5[i]; }
+    for (int i = 0; i < 8; i++) { five_check[i] = tempg7[i]; }
+}
 
 int main() {
     std::cout << S_1 << endl << S_2 << endl << S_3 << endl << S_4 << endl << endl;
@@ -333,205 +356,117 @@ int main() {
         if (chosen_banner == 1) {
             switch (chosen_event) {
             case 1: {
-                up_five = 63;
-                size_nup_four_c = 11;
                 int tempg1[3] = { 22, 26, 30 };
-                memmove( up_four_g , tempg1 , sizeof(tempg1));
-                memmove( nup_four_c , nup_four_cg1 , sizeof(nup_four_cg1));
                 int tempg5[8] = { 22, 26, 30, 0, 0, 0, 0, 0 };
-                memmove( four_check , tempg5 , sizeof(tempg5));
+                set_pool_1_m(63, 11, nup_four_cg1)
             } break;
             case 2: {
-                up_five = 64;
-                size_nup_four_c = 11;
                 int tempg1[3] = { 17, 20, 24 };
-                memmove( up_four_g , tempg1 , sizeof(tempg1));
-                memmove( nup_four_c , nup_four_cg1 , sizeof(nup_four_cg1));
                 int tempg5[8] = { 17, 20, 24, 0, 0, 0, 0, 0 };
-                memmove( four_check , tempg5 , sizeof(tempg5));
+                set_pool_1_m(64, 11, nup_four_cg1)
             } break;
             case 3: {
-                up_five = 65;
-                size_nup_four_c = 11;
                 int tempg1[3] = { 18, 23, 25 };
-                memmove( up_four_g , tempg1 , sizeof(tempg1));
-                memmove( nup_four_c , nup_four_cg1 , sizeof(nup_four_cg1));
                 int tempg5[8] = { 23, 25, 0, 0, 0, 0, 0, 0 };
-                memmove( four_check , tempg5 , sizeof(tempg5));
+                set_pool_1_m(65, 11, nup_four_cg1)
             } break;
             case 4: {
-                up_five = 66;
-                size_nup_four_c = 11;
                 int tempg1[3] = { 16, 19, 28 };
-                memmove( up_four_g , tempg1 , sizeof(tempg1));
-                memmove( nup_four_c , nup_four_cg1 , sizeof(nup_four_cg1));
                 int tempg5[8] = { 19, 28, 0, 0, 0, 0, 0, 0 };
-                memmove( four_check , tempg5 , sizeof(tempg5));
+                set_pool_1_m(66, 11, nup_four_cg1)
             } break;
             case 5: {
-                up_five = 67;
-                size_nup_four_c = 13;
                 int tempg1[3] = { 17, 21, 22 };
-                memmove( up_four_g , tempg1 , sizeof(tempg1));
-                memmove( nup_four_c , nup_four_cg2 , sizeof(nup_four_cg2));
                 int tempg5[8] = { 17, 21, 22, 0, 0, 0, 0, 0 };
-                memmove( four_check , tempg5 , sizeof(tempg5));
+                set_pool_1_m(67, 13, nup_four_cg2)
             } break;
             case 6: {
-                up_five = 68;
-                size_nup_four_c = 13;
                 int tempg1[3] = { 22, 24, 26 };
-                memmove( up_four_g , tempg1 , sizeof(tempg1));
-                memmove( nup_four_c , nup_four_cg2 , sizeof(nup_four_cg2));
                 int tempg5[8] = { 22, 24, 26, 0, 0, 0, 0, 0 };
-                memmove( four_check , tempg5 , sizeof(tempg5));
+                set_pool_1_m(68, 13, nup_four_cg2)
             } break;
             case 7: {
-                up_five = 69;
-                size_nup_four_c = 13;
                 int tempg1[3] = { 16, 18, 25 };
-                memmove( up_four_g , tempg1 , sizeof(tempg1));
-                memmove( nup_four_c , nup_four_cg2 , sizeof(nup_four_cg2));
                 int tempg5[8] = { 16, 18, 25, 0, 0, 0, 0, 0 };
-                memmove( four_check , tempg5 , sizeof(tempg5));
+                set_pool_1_m(69, 13, nup_four_cg2)
             } break;
             case 8: {
-                up_five = 0;
-                size_nup_four_c = 13;
                 int tempg1[3] = { 21, 23, 30 };
-                memmove( up_four_g , tempg1 , sizeof(tempg1));
-                memmove( nup_four_c , nup_four_cg2 , sizeof(nup_four_cg2));
                 int tempg5[8] = { 21, 23, 30, 0, 0, 0, 0, 0 };
-                memmove( four_check , tempg5 , sizeof(tempg5));
+                set_pool_1_m(0, 13, nup_four_cg2)
                 five_check[0] = 0;
             } break;
             case 9: {
-                up_five = 70;
-                size_nup_four_c = 13;
                 int tempg1[3] = { 19, 24, 26 };
-                memmove( up_four_g , tempg1 , sizeof(tempg1));
-                memmove( nup_four_c , nup_four_cg2 , sizeof(nup_four_cg2));
                 int tempg5[8] = { 19, 24, 26, 0, 0, 0, 0, 0 };
-                memmove( four_check , tempg5 , sizeof(tempg5));
+                set_pool_1_m(70, 13, nup_four_cg2)
             } break;
             case 10: {
-                up_five = 63;
-                size_nup_four_c = 13;
                 int tempg1[3] = { 17, 20, 28 };
-                memmove( up_four_g , tempg1 , sizeof(tempg1));
-                memmove( nup_four_c , nup_four_cg2 , sizeof(nup_four_cg2));
                 int tempg5[8] = { 17, 20, 28, 0, 0, 0, 0, 0 };
-                memmove( four_check , tempg5 , sizeof(tempg5));
+                set_pool_1_m(63, 13, nup_four_cg2)
             } break;
             case 11: {
-                up_five = 65;
-                size_nup_four_c = 13;
                 int tempg1[3] = { 15, 22, 30 };
-                memmove( up_four_g , tempg1 , sizeof(tempg1));
-                memmove( nup_four_c , nup_four_cg2 , sizeof(nup_four_cg2));
                 int tempg5[8] = { 22, 30, 0, 0, 0, 0, 0, 0 };
-                memmove( four_check , tempg5 , sizeof(tempg5));
+                set_pool_1_m(65, 13, nup_four_cg2)
             } break;
             case 12: {
-                up_five = 66;
-                size_nup_four_c = 14;
                 int tempg1[3] = { 71, 20, 18 };
-                memmove( up_four_g , tempg1 , sizeof(tempg1));
-                memmove( nup_four_c , nup_four_cg3 , sizeof(nup_four_cg3));
                 int tempg5[8] = { 18, 20, 0, 0, 0, 0, 0, 0 };
-                memmove( four_check , tempg5 , sizeof(tempg5));
+                set_pool_1_m(66, 14, nup_four_cg3)
             } break;
             case 13: {
-                up_five = 72;
-                size_nup_four_c = 14;
                 int tempg1[3] = { 16, 24, 25 };
-                memmove( up_four_g , tempg1 , sizeof(tempg1));
-                memmove( nup_four_c , nup_four_cg3 , sizeof(nup_four_cg3));
                 int tempg5[8] = { 16, 24, 25, 0, 0, 0, 0, 0 };
-                memmove( four_check , tempg5 , sizeof(tempg5));
+                set_pool_1_m(72, 14, nup_four_cg3)
             } break;
             case 14: {
-                up_five = 64;
-                size_nup_four_c = 15;
                 int tempg1[3] = { 17, 22, 30 };
-                memmove( up_four_g , tempg1 , sizeof(tempg1));
-                memmove( nup_four_c , nup_four_cg4 , sizeof(nup_four_cg4));
                 int tempg5[8] = { 17, 22, 30, 0, 0, 0, 0, 0 };
-                memmove( four_check , tempg5 , sizeof(tempg5));
+                set_pool_1_m(64, 15, nup_four_cg4)
             } break;
             case 15: {
-                up_five = 86;
-                size_nup_four_c = 15;
                 int tempg1[3] = { 15, 21, 28 };
-                memmove( up_four_g , tempg1 , sizeof(tempg1));
-                memmove( nup_four_c , nup_four_cg4 , sizeof(nup_four_cg4));
                 int tempg5[8] = { 15, 21, 28, 0, 0, 0, 0, 0 };
-                memmove( four_check , tempg5 , sizeof(tempg5));
+                set_pool_1_m(86, 15, nup_four_cg4)
             } break;
             case 16: {
-                up_five = 89;
-                size_nup_four_c = 15;
                 int tempg1[3] = { 71, 23, 19 };
-                memmove( up_four_g , tempg1 , sizeof(tempg1));
-                memmove( nup_four_c , nup_four_cg4 , sizeof(nup_four_cg4));
                 int tempg5[8] = { 71, 23, 19, 0, 0, 0, 0, 0 };
-                memmove( four_check , tempg5 , sizeof(tempg5));
+                set_pool_1_m(89, 15, nup_four_cg4)
             } break;
             case 17: {
-                up_five = 90;
-                size_nup_four_c = 15;
                 int tempg1[3] = { 91, 16, 18 };
-                memmove( up_four_g , tempg1 , sizeof(tempg1));
-                memmove( nup_four_c , nup_four_cg4 , sizeof(nup_four_cg4));
                 int tempg5[8] = { 16, 18, 0, 0, 0, 0, 0, 0 };
-                memmove( four_check , tempg5 , sizeof(tempg5));
+                set_pool_1_m(90, 15, nup_four_cg4)
             } break;
             case 18: {
-                up_five = 96;
-                size_nup_four_c = 16;
                 int tempg1[3] = { 95, 17, 26 };
-                memmove( up_four_g , tempg1 , sizeof(tempg1));
-                memmove( nup_four_c , nup_four_cg5 , sizeof(nup_four_cg5));
                 int tempg5[8] = { 17, 26, 0, 0, 0, 0, 0, 0 };
-                memmove( four_check , tempg5 , sizeof(tempg5));
+                set_pool_1_m(96, 16, nup_four_cg5)
             } break;
             case 19: {
-                up_five = 94;
-                size_nup_four_c = 16;
                 int tempg1[3] = { 15, 24, 25 };
-                memmove( up_four_g , tempg1 , sizeof(tempg1));
-                memmove( nup_four_c , nup_four_cg5 , sizeof(nup_four_cg5));
                 int tempg5[8] = { 15, 24, 25, 0, 0, 0, 0, 0 };
-                memmove( four_check , tempg5 , sizeof(tempg5));
+                set_pool_1_m(94, 16, nup_four_cg5)
             } break;
             case 20: {
-                up_five = 65;
-                size_nup_four_c = 17;
                 int tempg1[3] = { 23, 19, 71 };
-                memmove( up_four_g , tempg1 , sizeof(tempg1));
-                memmove( nup_four_c , nup_four_cg6 , sizeof(nup_four_cg6));
                 int tempg5[8] = { 23, 19, 71, 0, 0, 0, 0, 0 };
-                memmove( four_check , tempg5 , sizeof(tempg5));
+                set_pool_1_m(65, 17, nup_four_cg6)
             } break;
             case 21: {
-                up_five = 70;
-                size_nup_four_c = 17;
                 int tempg1[3] = { 100, 18, 91 };
-                memmove( up_four_g , tempg1 , sizeof(tempg1));
-                memmove( nup_four_c , nup_four_cg6 , sizeof(nup_four_cg6));
                 int tempg5[8] = { 18, 91, 0, 0, 0, 0, 0, 0 };
-                memmove( four_check , tempg5 , sizeof(tempg5));
+                set_pool_1_m(70, 17, nup_four_cg6)
             } break;
             case 22: {
                 switch_e_sav = switch_e_should_be;
                 switch_e_should_be = 1;
-                up_five = 67;
-                size_nup_four_c = 18;
                 int tempg1[3] = { 15, 20, 21 };
-                memmove( up_four_g , tempg1 , sizeof(tempg1));
-                memmove( nup_four_c , nup_four_cg7 , sizeof(nup_four_cg7));
                 int tempg5[8] = { 15, 20, 21, 0, 0, 0, 0, 0 };
-                memmove( four_check , tempg5 , sizeof(tempg5));
+                set_pool_1_m(67, 18, nup_four_cg7)
             } break;
             case 23: {
                 switch_e_sav = switch_e_should_be;
@@ -539,10 +474,8 @@ int main() {
                 up_five = 105;
                 size_nup_four_c = 18;
                 int tempg1[3] = { 26, 30, 106 };
-                memmove( up_four_g , tempg1 , sizeof(tempg1));
-                memmove( nup_four_c , nup_four_cg7 , sizeof(nup_four_cg7));
                 int tempg5[8] = { 26, 30, 0, 0, 0, 0, 0, 0 };
-                memmove( four_check , tempg5 , sizeof(tempg5));
+                set_pool_1_m(105, 18, nup_four_cg7)
             } break;
             default: { std::cout << E_5 << endl; goto full_quit; } break;
             }
@@ -552,13 +485,9 @@ int main() {
             case 1: {
                 switch_e_sav = switch_e_should_be;
                 switch_e_should_be = 22;
-                up_five = 72;
-                size_nup_four_c = 18;
                 int tempg1[3] = { 15, 20, 21 };
-                memmove(up_four_g, tempg1, sizeof(tempg1));
-                memmove(nup_four_c, nup_four_cg7, sizeof(nup_four_cg7));
                 int tempg5[8] = { 15, 20, 21, 0, 0, 0, 0, 0 };
-                memmove(four_check, tempg5, sizeof(tempg5));
+                set_pool_1_m(72, 18, nup_four_cg7)
             } break;
             default: { std::cout << E_5 << endl; goto full_quit; } break;
             }
@@ -567,267 +496,179 @@ int main() {
             switch (chosen_event) {
             case 1: {
                 int tempg6[2] = { 5, 14 };
-                memmove( up_five_g , tempg6 , sizeof(tempg6));
                 size_nup_four_c = 11;
                 int tempg1[5] = { 34, 38, 40, 44, 48 };
-                memmove( up_four_g , tempg1, sizeof(tempg1));
-                memmove( nup_four_c , nup_four_cg1 , sizeof(nup_four_cg1));
                 int tempg5[8] = { 34, 38, 40, 44, 48, 0, 0, 0 };
-                memmove( four_check , tempg5 , sizeof(tempg5));
                 int tempg7[8] = { 5, 14, 0, 0, 0, 0, 0, 0 };
-                memmove( five_check , tempg7, sizeof(tempg7));
+                set_pool_3_m(11, nup_four_cg1)
             } break;
             case 2: {
                 int tempg6[2] = { 7, 11 };
-                memmove( up_five_g , tempg6 , sizeof(tempg6));
                 size_nup_four_c = 11;
                 int tempg1[5] = { 33, 37, 41, 43, 49 };
-                memmove( up_four_g , tempg1, sizeof(tempg1));
-                memmove( nup_four_c , nup_four_cg1 , sizeof(nup_four_cg1));
                 int tempg5[8] = { 33, 37, 41, 43, 49, 0, 0, 0 };
-                memmove( four_check , tempg5 , sizeof(tempg5));
                 int tempg7[8] = { 7, 11, 0, 0, 0, 0, 0, 0 };
-                memmove( five_check , tempg7, sizeof(tempg7));
+                set_pool_3_m(11, nup_four_cg1)
             } break;
             case 3: {
                 int tempg6[2] = { 6, 73 };
-                memmove( up_five_g , tempg6 , sizeof(tempg6));
                 size_nup_four_c = 11;
                 int tempg1[5] = { 32, 36, 40, 42, 48 };
-                memmove( up_four_g , tempg1, sizeof(tempg1));
-                memmove( nup_four_c , nup_four_cg1 , sizeof(nup_four_cg1));
                 int tempg5[8] = { 32, 36, 40, 42, 48, 0, 0, 0 };
-                memmove( four_check , tempg5 , sizeof(tempg5));
                 int tempg7[8] = { 6, 0, 0, 0, 0, 0, 0, 0 };
-                memmove( five_check , tempg7, sizeof(tempg7));
+                set_pool_3_m(11, nup_four_cg1)
             } break;
             case 4: {
                 int tempg6[2] = { 74, 75 };
-                memmove( up_five_g , tempg6 , sizeof(tempg6));
                 size_nup_four_c = 11;
                 int tempg1[5] = { 35, 39, 41, 44, 46 };
-                memmove( up_four_g , tempg1, sizeof(tempg1));
-                memmove( nup_four_c , nup_four_cg1 , sizeof(nup_four_cg1));
                 int tempg5[8] = { 35, 39, 41, 44, 46, 0, 0, 0 };
-                memmove( four_check , tempg5 , sizeof(tempg5));
                 int tempg7[8] = { 0, 0, 0, 0, 0, 0, 0, 0 };
-                memmove( five_check , tempg7, sizeof(tempg7));
+                set_pool_3_m(11, nup_four_cg1)
             } break;
             case 5: {
                 int tempg6[2] = { 8, 76 };
-                memmove( up_five_g , tempg6 , sizeof(tempg6));
                 size_nup_four_c = 13;
                 int tempg1[5] = { 34, 37, 40, 45, 49 };
-                memmove( up_four_g , tempg1, sizeof(tempg1));
-                memmove( nup_four_c , nup_four_cg2 , sizeof(nup_four_cg2));
                 int tempg5[8] = { 34, 37, 40, 45, 49, 0, 0, 0 };
-                memmove( four_check , tempg5 , sizeof(tempg5));
                 int tempg7[8] = { 8, 0, 0, 0, 0, 0, 0, 0 };
-                memmove( five_check , tempg7, sizeof(tempg7));
+                set_pool_3_m(13, nup_four_cg2)
             } break;
             case 6: {
                 int tempg6[2] = { 5, 12 };
-                memmove( up_five_g , tempg6 , sizeof(tempg6));
                 size_nup_four_c = 13;
                 int tempg1[5] = { 35, 36, 41, 44, 47 };
-                memmove( up_four_g , tempg1, sizeof(tempg1));
-                memmove( nup_four_c , nup_four_cg2 , sizeof(nup_four_cg2));
                 int tempg5[8] = { 35, 36, 41, 44, 47, 0, 0, 0 };
-                memmove( four_check , tempg5 , sizeof(tempg5));
                 int tempg7[8] = { 5, 12, 0, 0, 0, 0, 0, 0 };
-                memmove( five_check , tempg7, sizeof(tempg7));
+                set_pool_3_m(13, nup_four_cg2)
             } break;
             case 7: {
                 int tempg6[2] = { 9, 77 };
-                memmove( up_five_g , tempg6 , sizeof(tempg6));
                 size_nup_four_c = 13;
                 int tempg1[5] = { 32, 36, 40, 43, 48 };
-                memmove( up_four_g , tempg1, sizeof(tempg1));
-                memmove( nup_four_c , nup_four_cg2 , sizeof(nup_four_cg2));
                 int tempg5[8] = { 32, 36, 40, 43, 48, 0, 0, 0 };
-                memmove( four_check , tempg5 , sizeof(tempg5));
                 int tempg7[8] = { 9, 0, 0, 0, 0, 0, 0, 0 };
-                memmove( five_check , tempg7, sizeof(tempg7));
+                set_pool_3_m(13, nup_four_cg2)
             } break;
             case 8: {
                 int tempg6[2] = { 11, 78 };
-                memmove( up_five_g , tempg6 , sizeof(tempg6));
                 size_nup_four_c = 13;
                 int tempg1[5] = { 33, 38, 46, 79, 80 };
-                memmove( up_four_g , tempg1, sizeof(tempg1));
-                memmove( nup_four_c , nup_four_cg2 , sizeof(nup_four_cg2));
                 int tempg5[8] = { 33, 38, 46, 0, 0, 0, 0, 0 };
-                memmove( four_check , tempg5 , sizeof(tempg5));
                 int tempg7[8] = { 11, 0, 0, 0, 0, 0, 0, 0 };
-                memmove( five_check , tempg7, sizeof(tempg7));
+                set_pool_3_m(13, nup_four_cg2)
             } break;
             case 9: {
                 int tempg6[2] = { 13, 81 };
-                memmove( up_five_g , tempg6 , sizeof(tempg6));
                 size_nup_four_c = 13;
                 int tempg1[5] = { 35, 41, 45, 82, 83 };
-                memmove( up_four_g , tempg1, sizeof(tempg1));
-                memmove( nup_four_c , nup_four_cg2 , sizeof(nup_four_cg2));
                 int tempg5[8] = { 35, 41, 45, 0, 0, 0, 0, 0 };
-                memmove( four_check , tempg5 , sizeof(tempg5));
                 int tempg7[8] = { 13, 0, 0, 0, 0, 0, 0, 0 };
-                memmove( five_check , tempg7, sizeof(tempg7));
+                set_pool_3_m(13, nup_four_cg2)
             } break;
             case 10: {
                 int tempg6[2] = { 6, 7 };
-                memmove( up_five_g , tempg6 , sizeof(tempg6));
                 size_nup_four_c = 13;
                 int tempg1[5] = { 39, 40, 43, 49, 84 };
-                memmove( up_four_g , tempg1, sizeof(tempg1));
-                memmove( nup_four_c , nup_four_cg2 , sizeof(nup_four_cg2));
                 int tempg5[8] = { 39, 40, 43, 49, 0, 0, 0, 0 };
-                memmove( four_check , tempg5 , sizeof(tempg5));
                 int tempg7[8] = { 6, 7, 0, 0, 0, 0, 0, 0 };
-                memmove( five_check , tempg7, sizeof(tempg7));
+                set_pool_3_m(13, nup_four_cg2)
             } break;
             case 11: {
                 int tempg6[2] = { 73, 76 };
-                memmove( up_five_g , tempg6 , sizeof(tempg6));
                 size_nup_four_c = 14;
                 int tempg1[5] = { 33, 36, 48, 79, 80 };
-                memmove( up_four_g , tempg1, sizeof(tempg1));
-                memmove( nup_four_c , nup_four_cg3 , sizeof(nup_four_cg3));
                 int tempg5[8] = { 33, 36, 48, 0, 0, 0, 0, 0 };
-                memmove( four_check , tempg5 , sizeof(tempg5));
                 int tempg7[8] = { 0, 0, 0, 0, 0, 0, 0, 0 };
-                memmove( five_check , tempg7, sizeof(tempg7));
+                set_pool_3_m(14, nup_four_cg3)
             } break;
             case 12: {
                 int tempg6[2] = { 14, 85 };
-                memmove( up_five_g , tempg6 , sizeof(tempg6));
                 size_nup_four_c = 14;
                 int tempg1[5] = { 32, 37, 41, 42, 47 };
-                memmove( up_four_g , tempg1, sizeof(tempg1));
-                memmove( nup_four_c , nup_four_cg3 , sizeof(nup_four_cg3));
                 int tempg5[8] = { 32, 37, 41, 42, 47, 0, 0, 0 };
-                memmove( four_check , tempg5 , sizeof(tempg5));
                 int tempg7[8] = { 14, 0, 0, 0, 0, 0, 0, 0 };
-                memmove( five_check , tempg7, sizeof(tempg7));
+                set_pool_3_m(14, nup_four_cg3)
             } break;
             case 13: {
                 int tempg6[2] = { 7, 12 };
-                memmove( up_five_g , tempg6 , sizeof(tempg6));
                 size_nup_four_c = 15;
                 int tempg1[5] = { 88, 46, 44, 40, 38 };
-                memmove( up_four_g , tempg1, sizeof(tempg1));
-                memmove( nup_four_c , nup_four_cg4 , sizeof(nup_four_cg4));
                 int tempg5[8] = { 46, 44, 40, 38, 0, 0, 0, 0 };
-                memmove( four_check , tempg5 , sizeof(tempg5));
                 int tempg7[8] = { 7, 12, 0, 0, 0, 0, 0, 0 };
-                memmove( five_check , tempg7, sizeof(tempg7));
+                set_pool_3_m(15, nup_four_cg4)
             } break;
             case 14: {
                 int tempg6[2] = { 87, 8 };
-                memmove( up_five_g , tempg6 , sizeof(tempg6));
                 size_nup_four_c = 15;
                 int tempg1[5] = { 82, 83, 84, 45, 41 };
-                memmove( up_four_g , tempg1, sizeof(tempg1));
-                memmove( nup_four_c , nup_four_cg4 , sizeof(nup_four_cg4));
                 int tempg5[8] = { 45, 41, 0, 0, 0, 0, 0, 0 };
-                memmove( four_check , tempg5 , sizeof(tempg5));
                 int tempg7[8] = { 8, 0, 0, 0, 0, 0, 0, 0 };
-                memmove( five_check , tempg7, sizeof(tempg7));
+                set_pool_3_m(15, nup_four_cg4)
             } break;
             case 15: {
                 int tempg6[2] = { 92, 10 };
-                memmove( up_five_g , tempg6 , sizeof(tempg6));
                 size_nup_four_c = 15;
                 int tempg1[5] = { 34, 39, 40, 43, 49 };
-                memmove( up_four_g , tempg1, sizeof(tempg1));
-                memmove( nup_four_c , nup_four_cg4 , sizeof(nup_four_cg4));
                 int tempg5[8] = { 34, 39, 40, 43, 49, 0, 0, 0 };
-                memmove( four_check , tempg5 , sizeof(tempg5));
                 int tempg7[8] = { 10, 0, 0, 0, 0, 0, 0, 0 };
-                memmove( five_check , tempg7, sizeof(tempg7));
+                set_pool_3_m(15, nup_four_cg4)
             } break;
             case 16: {
                 int tempg6[2] = { 93, 13 };
-                memmove( up_five_g , tempg6 , sizeof(tempg6));
                 size_nup_four_c = 15;
                 int tempg1[5] = { 35, 37, 41, 42, 47 };
-                memmove( up_four_g , tempg1, sizeof(tempg1));
-                memmove( nup_four_c , nup_four_cg4 , sizeof(nup_four_cg4));
                 int tempg5[8] = { 35, 37, 41, 42, 47, 0, 0, 0 };
-                memmove( four_check , tempg5 , sizeof(tempg5));
                 int tempg7[8] = { 13, 0, 0, 0, 0, 0, 0, 0 };
-                memmove( five_check , tempg7, sizeof(tempg7));
+                set_pool_3_m(15, nup_four_cg4)
             } break;
             case 17: {
                 int tempg6[2] = { 97, 75 };
-                memmove( up_five_g , tempg6 , sizeof(tempg6));
                 size_nup_four_c = 16;
                 int tempg1[5] = { 33, 38, 40, 44, 46 };
-                memmove( up_four_g , tempg1, sizeof(tempg1));
-                memmove( nup_four_c , nup_four_cg5 , sizeof(nup_four_cg5));
                 int tempg5[8] = { 33, 38, 40, 44, 46, 0, 0, 0 };
-                memmove( four_check , tempg5 , sizeof(tempg5));
                 int tempg7[8] = { 0, 0, 0, 0, 0, 0, 0, 0 };
-                memmove( five_check , tempg7, sizeof(tempg7));
+                set_pool_3_m(16, nup_four_cg5)
             } break;
             case 18: {
                 int tempg6[2] = { 98, 77 };
-                memmove( up_five_g , tempg6 , sizeof(tempg6));
                 size_nup_four_c = 16;
                 int tempg1[5] = { 34, 39, 41, 45, 48 };
-                memmove( up_four_g , tempg1, sizeof(tempg1));
-                memmove( nup_four_c , nup_four_cg5 , sizeof(nup_four_cg5));
                 int tempg5[8] = { 34, 39, 41, 45, 48, 0, 0, 0 };
-                memmove( four_check , tempg5 , sizeof(tempg5));
                 int tempg7[8] = { 0, 0, 0, 0, 0, 0, 0, 0 };
-                memmove( five_check , tempg7, sizeof(tempg7));
+                set_pool_3_m(16, nup_four_cg5)
             } break;
             case 19: {
                 int tempg6[2] = { 101, 73 };
-                memmove( up_five_g , tempg6 , sizeof(tempg6));
                 size_nup_four_c = 17;
                 int tempg1[5] = { 32, 36, 40, 49, 104 };
-                memmove( up_four_g , tempg1, sizeof(tempg1));
-                memmove( nup_four_c , nup_four_cg6 , sizeof(nup_four_cg6));
                 int tempg5[8] = { 32, 36, 40, 49, 0, 0, 0, 0 };
-                memmove( four_check , tempg5 , sizeof(tempg5));
                 int tempg7[8] = { 0, 0, 0, 0, 0, 0, 0, 0 };
-                memmove( five_check , tempg7, sizeof(tempg7));
+                set_pool_3_m(17, nup_four_cg6)
             } break;
             case 20: {
                 int tempg6[2] = { 78, 81 };
-                memmove( up_five_g , tempg6 , sizeof(tempg6));
                 size_nup_four_c = 17;
                 int tempg1[5] = { 38, 42, 47, 102, 103 };
-                memmove( up_four_g , tempg1, sizeof(tempg1));
-                memmove( nup_four_c , nup_four_cg6 , sizeof(nup_four_cg6));
                 int tempg5[8] = { 38, 42, 47, 0, 0, 0, 0, 0 };
-                memmove( four_check , tempg5 , sizeof(tempg5));
                 int tempg7[8] = { 0, 0, 0, 0, 0, 0, 0, 0 };
-                memmove( five_check , tempg7, sizeof(tempg7));
+                set_pool_3_m(17, nup_four_cg6)
             } break;
             case 21: {
                 int tempg6[2] = { 85, 87 };
-                memmove(up_five_g, tempg6, sizeof(tempg6));
                 size_nup_four_c = 18;
                 int tempg1[5] = { 41, 43, 46, 83, 84 };
-                memmove(up_four_g, tempg1, sizeof(tempg1));
-                memmove(nup_four_c, nup_four_cg7, sizeof(nup_four_cg7));
                 int tempg5[8] = { 41, 43, 46, 0, 0, 0, 0, 0 };
-                memmove(four_check, tempg5, sizeof(tempg5));
                 int tempg7[8] = { 0, 0, 0, 0, 0, 0, 0, 0 };
-                memmove(five_check, tempg7, sizeof(tempg7));
+                set_pool_3_m(18, nup_four_cg7)
             } break;
             case 22: {
                 int tempg6[2] = { 6, 107 };
-                memmove(up_five_g, tempg6, sizeof(tempg6));
                 size_nup_four_c = 18;
                 int tempg1[5] = { 37, 40, 44, 82, 88 };
-                memmove(up_four_g, tempg1, sizeof(tempg1));
-                memmove(nup_four_c, nup_four_cg7, sizeof(nup_four_cg7));
                 int tempg5[8] = { 37, 40, 44, 0, 0, 0, 0, 0 };
-                memmove(four_check, tempg5, sizeof(tempg5));
                 int tempg7[8] = { 6, 0, 0, 0, 0, 0, 0, 0 };
-                memmove(five_check, tempg7, sizeof(tempg7));
+                set_pool_3_m(18, nup_four_cg7)
             } break;
             default: { std::cout << E_5 << endl; goto full_quit; } break;
             }
