@@ -1706,13 +1706,13 @@ int main(int argc, char* argv[]) {
             std::cout << S_87 << std::put_time(std::localtime(&t_end), "%F %T") << endl;
             std::cout << elapsed_time * 1.0 / 1000000 << S_84 << endl;
             if (five_count == 0) {
-                std::cout << endl << S_127 << wishes_number_r << endl << S_73 << countx << S_74 << endl
+                std::cout << endl << S_127 << wishes_number_r << S_74 << endl << S_73 << countx << S_74 << endl
                     << S_75 << five_count << "  " << five_count * 100.0 / countx << "%" << endl
                     << S_76 << four_count << "  " << four_count * 100.0 / countx << "%" << endl
                     << S_77 << five_count_c << " : " << five_count_w << " : " << four_count_c << " : " << four_count_w << endl << endl;
             }
             else if (five_count > 0) {
-                std::cout << endl << S_73 << countx << S_74 << endl
+                std::cout << endl << S_127 << wishes_number_r << S_74 << endl << S_73 << countx << S_74 << endl
                     << S_75 << five_count << "  " << five_count * 100.0 / countx << "%" << endl
                     << S_76 << four_count << "  " << four_count * 100.0 / countx << "%" << endl
                     << S_78 << max_fives << S_79 << max_fivesth << S_80 << max_fivecount + 1 << S_81 << endl
