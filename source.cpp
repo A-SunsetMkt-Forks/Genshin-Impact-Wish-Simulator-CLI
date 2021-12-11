@@ -329,9 +329,27 @@ int main(int argc, char* argv[]) {
         five_pity[90] = { 0 },
         five_pity_w[80] = { 0 };
         if (argc == 4) {
+            int test;
+            long long int test2;
+            try {
+                test = stoi(argv[1]);
+                test = stoi(argv[2]);
+                test2 = stoll(argv[3]);
+            }
+            catch (...) {
+                std::cout << E_11 << endl;
+                y_arg = true;
+                goto full_quit;
+            }
             chosen_banner = stoi(argv[1]);
             chosen_event = stoi(argv[2]);
-            wishes_number = stoull(argv[3]);
+            wishes_number = stoll(argv[3]);
+            if(wishes_number < 1){
+                wishes_number = 0;
+                std::cout << S_72 << endl;
+                y_arg = true;
+            goto full_quit;
+            }
             quit = false;
             y_arg = true;
             goto set_banner;
