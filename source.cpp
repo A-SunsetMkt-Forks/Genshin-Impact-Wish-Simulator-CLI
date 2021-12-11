@@ -74,10 +74,10 @@
                     }\
                 } // do if is s mode
 #define set_pool_1_m(up_five_m,size_nup_four_c_m, nup_four_cgm) {\
-                    set_pool_1(up_five, (up_five_m), size_nup_four_c, (size_nup_four_c_m), tempg1, tempg5, up_four_g, nup_four_c, (nup_four_cgm), four_check);\
+                    set_pool_1((up_five_m), (size_nup_four_c_m), tempg1, tempg5, up_four_g, nup_four_c, (nup_four_cgm), four_check);\
                 }
 #define set_pool_3_m(size_nup_four_c_m, nup_four_cgm) {\
-                    set_pool_3(up_five_g, size_nup_four_c, (size_nup_four_c_m), tempg1, tempg5, tempg6, tempg7, up_four_g, nup_four_c, (nup_four_cgm), four_check, five_check);\
+                    set_pool_3(up_five_g, (size_nup_four_c_m), tempg1, tempg5, tempg6, tempg7, up_four_g, nup_four_c, (nup_four_cgm), four_check, five_check);\
                 }
 
 using namespace std;
@@ -117,6 +117,8 @@ switch_b_should_be = 0,
 switch_e_should_be = 0,
 switch_b_sav = 0,
 switch_e_sav = 0,
+up_five = 0,
+size_nup_four_c = 1, 
 luck = 0,
 luckiest = 0,
 nup_five_c[32] = { 0, 1, 2, 3, 4 },
@@ -239,7 +241,7 @@ int WRSpick(const int* weightx, int nom){
 }
 // weighted random sampling
 
-void set_pool_1(int &up_five, int up_five_p, int &size_nup_four_c, int size_nup_four_c_p, int* tempg1, int* tempg5, int* up_four_g, int* nup_four_c, int* nup_four_cgm, int* four_check) {
+void set_pool_1(int up_five_p, int size_nup_four_c_p, int* tempg1, int* tempg5, int* up_four_g, int* nup_four_c, int* nup_four_cgm, int* four_check) {
     up_five = up_five_p;
     size_nup_four_c = size_nup_four_c_p;
     for (int i = 0; i < 3; i++) { up_four_g[i] = tempg1[i]; }
@@ -247,7 +249,7 @@ void set_pool_1(int &up_five, int up_five_p, int &size_nup_four_c, int size_nup_
     for (int i = 0; i < 8; i++) { four_check[i] = tempg5[i]; }
 }
 
-void set_pool_3(int *up_five_g, int& size_nup_four_c, int size_nup_four_c_p, int* tempg1, int* tempg5, int* tempg6, int* tempg7, int* up_four_g, int* nup_four_c, int* nup_four_cgm, int* four_check, int* five_check) {
+void set_pool_3(int *up_five_g, int size_nup_four_c_p, int* tempg1, int* tempg5, int* tempg6, int* tempg7, int* up_four_g, int* nup_four_c, int* nup_four_cgm, int* four_check, int* five_check) {
     for (int i = 0; i < 2; i++) { up_five_g[i] = tempg6[i]; }
     size_nup_four_c = size_nup_four_c_p;
     for (int i = 0; i < 5; i++) { up_four_g[i] = tempg1[i]; }
@@ -307,9 +309,7 @@ int main(int argc, char* argv[]) {
         min_fivesth = 1,
         max_fivecount = 1,
         min_fivecount = 1;
-        int up_five = 0,
-        size_nup_four_c = 1, 
-        d_item[128] = { 0 },
+        int d_item[128] = { 0 },
         d_item_n[128] = { 0 },
         up_five_g[32] = { 0 },
         up_four_g[64] = { 0 },
