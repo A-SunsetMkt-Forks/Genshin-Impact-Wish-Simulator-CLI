@@ -138,6 +138,7 @@ five_stars_c[22] = { 0, 1, 2, 3, 4, 63, 64, 65, 66, 67, 68, 69, 70, 72, 86, 89, 
 five_stars_w[25] = { 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 73, 74, 75, 76, 77, 78, 81, 85, 87, 92, 93, 97, 98, 101, 107 };
 long long int countx = 0,
 wishes_number = 0,
+wishes_number_r = 0,
 five_count = 0,
 five_count_c = 0,
 five_count_w = 0,
@@ -1124,6 +1125,7 @@ int main(int argc, char* argv[]) {
             else if (wishes_number < 1) { wishes_number = 0; std::cout << S_72 << endl; goto enter_wishes_number;}
             else { std::cout << S_85 << endl << endl; }
             core_core_loop:
+            wishes_number_r = wishes_number;
             if (y_arg) { std::cout << S_1 << endl << S_2 << endl << S_3 << endl << S_4 << endl << endl << S_85 << endl << endl; }
             if (!is_s_mode) { d_item_c = false; }
             const std::chrono::time_point<std::chrono::system_clock> startx = std::chrono::system_clock::now();
@@ -1704,7 +1706,7 @@ int main(int argc, char* argv[]) {
             std::cout << S_87 << std::put_time(std::localtime(&t_end), "%F %T") << endl;
             std::cout << elapsed_time * 1.0 / 1000000 << S_84 << endl;
             if (five_count == 0) {
-                std::cout << endl << S_73 << countx << S_74 << endl
+                std::cout << endl << S_127 << wishes_number_r << endl << S_73 << countx << S_74 << endl
                     << S_75 << five_count << "  " << five_count * 100.0 / countx << "%" << endl
                     << S_76 << four_count << "  " << four_count * 100.0 / countx << "%" << endl
                     << S_77 << five_count_c << " : " << five_count_w << " : " << four_count_c << " : " << four_count_w << endl << endl;

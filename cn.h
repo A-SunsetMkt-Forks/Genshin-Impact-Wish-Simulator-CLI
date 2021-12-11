@@ -1,5 +1,5 @@
 ﻿#ifndef CN_H
-#define S_1 "原神祈愿模拟器（命令行）V2.3.8"
+#define S_1 "原神祈愿模拟器（命令行）V2.3.9"
 #define S_2 "作者: Jirehlov Research"
 #define S_3 "开源于GitHub: Jirehlov_Genshin-Impact-Wish-Simulator-CLI"
 #define S_4 "GPL-3.0 License"
@@ -71,7 +71,7 @@
 #define S_70 "2: 第二顺位武器;"
 #define S_71 "0: 取消神铸定轨"
 #define S_72 "输入不合理!"
-#define S_73 "你已经抽了 "
+#define S_73 "你总共抽了 "
 #define S_74 " 发。"
 #define S_75 "五星角色或武器:   "
 #define S_76 "四星角色或武器:   "
@@ -125,6 +125,7 @@
 #define S_124 ") 的出货数量"
 #define S_125 "您未指定任何值"
 #define S_126 "22: 神铸赋形_20211214-20210104 (赤角石溃杵, 天空之翼, 暗巷闪光, 幽夜华尔兹, 西风长枪, 祭礼残章, 钟剑)"
+#define S_127 "你本次抽了 "
 #define C_0 "霆霓快雨·刻晴（雷）"
 #define C_1 "星天水镜·莫娜（水）"
 #define C_2 "冻冻回魂夜·七七（冰）"

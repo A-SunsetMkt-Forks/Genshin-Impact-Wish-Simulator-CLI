@@ -1,5 +1,5 @@
 ﻿#ifndef EN_H
-#define S_1 "WELCOME TO GENSHIN IMPACT WISH SIMULATOR CLI V2.3.8"
+#define S_1 "WELCOME TO GENSHIN IMPACT WISH SIMULATOR CLI V2.3.9"
 #define S_2 "by Jirehlov Research"
 #define S_3 "Source code available on GitHub: Jirehlov_Genshin-Impact-Wish-Simulator-CLI"
 #define S_4 "GPL-3.0 License"
@@ -71,7 +71,7 @@
 #define S_70 "2: The second weapon in order;"
 #define S_71 "0: Cancel and Reset"
 #define S_72 "Incorrect input!"
-#define S_73 "You have pulled "
+#define S_73 "In total, You have pulled "
 #define S_74 " wishes."
 #define S_75 "5-stars:   "
 #define S_76 "4-stars:   " 
@@ -125,6 +125,7 @@
 #define S_124 ") ?"
 #define S_125 "You didn't made any specific-ing!"
 #define S_126 "22: Epitome Invocation_20211214-20210104 (Redhorn Stonethresher, Skyward Harp, The Alley Flash, Mitternachts Waltz, Favonius Lance, Sacrificial Fragments, The Bell)"
+#define S_127 "This go, You have pulled "
 #define C_0 "\"Driving Thunder\" Keqing"
 #define C_1 "\"Astral Reflection\" Mona"
 #define C_2 "\"Icy Resurrection\" Qiqi"
