@@ -355,6 +355,7 @@
 #define E_8 "five_count 不合理! 错误码: 8"
 #define E_9 "ij 不合理! 错误码: 9"
 #define E_10 "d_item_n[kind] 不合理! 错误码: 10"
+#define E_11 "arguments错误！正确格式为: 卡池类型编号 活动类型编号 祈愿数量"
 #define V_1 "当前卡池类型 "
 #define V_2 "当前活动类型 "
 #define V_3 "当前概率up的五星编号 "

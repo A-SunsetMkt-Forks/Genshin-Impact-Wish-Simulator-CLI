@@ -86,6 +86,70 @@ unsigned long long int seed = static_cast<unsigned long long int> (std::chrono::
 std::mt19937_64 generatorz(seed);
 // random set
 
+bool d_item_c = true,
+is_s_mode = false,
+quit = true,
+is_noelle = true,
+is_cross = false,
+is_dualcross = false,
+y_print = true,
+y_arg = false;
+int chosen_banner = 0,
+chosen_event = 0,
+four_star_assurance_number = 1,
+five_star_assurance_number = 1,
+five_star_guarantee_number = 0,
+four_star_guarantee_number = 0,
+max_fives = 1,
+min_fives = 2147483647,
+fate_weapon = 0,
+fate_points = 0,
+five_weight = 0,
+four_weight = 0,
+three_weight = 0,
+unmet4_c = 0,
+unmet4_w = 0,
+unmet5_c = 0,
+unmet5_w = 0,
+resultt = 0,
+resultu = 0,
+switch_b_should_be = 0,
+switch_e_should_be = 0,
+switch_b_sav = 0,
+switch_e_sav = 0,
+luck = 0,
+luckiest = 0,
+nup_five_c[32] = { 0, 1, 2, 3, 4 },
+nup_five_w[32] = { 5, 6, 7, 8, 9, 10, 11, 12, 13, 14 },
+nup_four_w[64] = { 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49 },
+size_nup_four_w = 18,
+three_g[13] = { 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62 },
+nup_four_cg1[11] = { 17, 19, 20, 21, 22, 23, 24, 25, 26, 28, 30 },
+nup_four_cg2[13] = { 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 28, 30 },
+nup_four_cg3[14] = { 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 28, 30 },
+nup_four_cg4[15] = { 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 28, 30, 71 },
+nup_four_cg5[16] = { 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 28, 30, 71, 91 },
+nup_four_cg6[17] = { 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 28, 30, 71, 91, 95 },
+nup_four_cg7[18] = { 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 28, 30, 71, 91, 95, 100 },
+nup_four_cg8[19] = { 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 28, 30, 71, 91, 95, 100, 106 },
+four_stars_c[23] = { 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 71, 91, 95, 100, 106, 108 },
+four_stars_w[27] = { 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 79, 80, 82, 83, 84, 88, 102, 103, 104 },
+five_stars_c[22] = { 0, 1, 2, 3, 4, 63, 64, 65, 66, 67, 68, 69, 70, 72, 86, 89, 90, 94, 96, 99, 105, 109 },
+five_stars_w[25] = { 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 73, 74, 75, 76, 77, 78, 81, 85, 87, 92, 93, 97, 98, 101, 107 };
+long long int countx = 0,
+wishes_number = 0,
+five_count = 0,
+five_count_c = 0,
+five_count_w = 0,
+four_count = 0,
+four_count_c = 0,
+four_count_w = 0,
+ave_fives = 0,
+max_fivesth = 1,
+min_fivesth = 1,
+max_fivecount = 1,
+min_fivecount = 1;
+
 string pname[128] = {C_0, C_1, C_2, C_3, C_4, C_5, C_6, C_7, C_8, C_9, C_10, C_11, C_12, C_13, C_14, C_15, C_16, C_17, C_18, C_19, C_20,
                 C_21, C_22, C_23, C_24, C_25, C_26, C_27, C_28, C_29, C_30, C_31, C_32, C_33, C_34, C_35, C_36, C_37, C_38, C_39, C_40,
                 C_41, C_42, C_43, C_44, C_45, C_46, C_47, C_48, C_49, C_50, C_51, C_52, C_53, C_54, C_55, C_56, C_57, C_58, C_59, C_60,
@@ -191,17 +255,19 @@ void set_pool_3(int *up_five_g, int& size_nup_four_c, int size_nup_four_c_p, int
     for (int i = 0; i < 8; i++) { five_check[i] = tempg7[i]; }
 }
 
-int main() {
-    std::cout << S_1 << endl << S_2 << endl << S_3 << endl << S_4 << endl << endl;
-    bool y_print = true;
+int main(int argc, char* argv[]) {
+    static char default_argv0[] = "giwscli";
+    if (!argv[0] || !argv[0][0])
+        argv[0] = default_argv0;
+    y_print = true;
     enter_chosen_banner:
-        bool d_item_c = true,
+        d_item_c = true,
         is_s_mode = false,
         quit = true,
         is_noelle = true,
         is_cross = false,
-        is_dualcross = false;
-        int chosen_banner = 0,
+        is_dualcross = false,
+        chosen_banner = 0,
         chosen_event = 0,
         four_star_assurance_number = 1,
         five_star_assurance_number = 1,
@@ -224,38 +290,10 @@ int main() {
         switch_e_should_be = 0,
         switch_b_sav = 0,
         switch_e_sav = 0,
-        d_item[128] = { 0 },
-        d_item_n[128] = { 0 },
         luck = 0,
-        luckkind[10] = { 127, 127, 127, 127, 127, 127, 127, 127, 127, 127 },
-        luckstar[10] = { 3, 3, 3, 3, 3, 3, 3, 3, 3, 3 },
         luckiest = 0,
-        luckiestkind[10] = { 127, 127, 127, 127, 127, 127, 127, 127, 127, 127 },
-        up_five = 0,
-        up_five_g[32] = { 0 },
-        nup_five_c[32] = { 0, 1, 2, 3, 4 },
-        nup_five_w[32] = { 5, 6, 7, 8, 9, 10, 11, 12, 13, 14 },
-        up_four_g[64] = { 0 },
-        nup_four_c[64] = { 0 },
-        nup_four_w[64] = { 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49 },
-        size_nup_four_c = 1,
         size_nup_four_w = 18,
-        three_g[13] = { 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62 },
-        five_check[8] = { 127, 127, 127, 127, 127, 127, 127, 127 },
-        four_check[8] = { 127, 127, 127, 127, 127, 127, 127, 127 },
-        nup_four_cg1[11] = { 17, 19, 20, 21, 22, 23, 24, 25, 26, 28, 30 },
-        nup_four_cg2[13] = { 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 28, 30 },
-        nup_four_cg3[14] = { 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 28, 30 },
-        nup_four_cg4[15] = { 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 28, 30, 71 },
-        nup_four_cg5[16] = { 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 28, 30, 71, 91 },
-        nup_four_cg6[17] = { 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 28, 30, 71, 91, 95 },
-        nup_four_cg7[18] = { 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 28, 30, 71, 91, 95, 100 },
-        nup_four_cg8[19] = { 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 28, 30, 71, 91, 95, 100, 106 },
-        four_stars_c[23] = { 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 71, 91, 95, 100, 106, 108 },
-        four_stars_w[27] = { 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 79, 80, 82, 83, 84, 88, 102, 103, 104 },
-        five_stars_c[22] = { 0, 1, 2, 3, 4, 63, 64, 65, 66, 67, 68, 69, 70, 72, 86, 89, 90, 94, 96, 99, 105, 109 },
-        five_stars_w[25] = { 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 73, 74, 75, 76, 77, 78, 81, 85, 87, 92, 93, 97, 98, 101, 107 };
-        long long int countx = 0,
+        countx = 0,
         wishes_number = 0,
         five_count = 0,
         five_count_c = 0,
@@ -267,17 +305,43 @@ int main() {
         max_fivesth = 1,
         min_fivesth = 1,
         max_fivecount = 1,
-        min_fivecount = 1,
-        pcount[128] = { 0 },
-        lucklocation[10] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 },
+        min_fivecount = 1;
+        int up_five = 0,
+        size_nup_four_c = 1, 
+        d_item[128] = { 0 },
+        d_item_n[128] = { 0 },
+        up_five_g[32] = { 0 },
+        up_four_g[64] = { 0 },
+        nup_four_c[64] = { 0 },
+        luckkind[10] = { 127, 127, 127, 127, 127, 127, 127, 127, 127, 127 },
+        luckstar[10] = { 3, 3, 3, 3, 3, 3, 3, 3, 3, 3 },
+        luckiestkind[10] = { 127, 127, 127, 127, 127, 127, 127, 127, 127, 127 },
+        five_check[8] = { 127, 127, 127, 127, 127, 127, 127, 127 },
+        four_check[8] = { 127, 127, 127, 127, 127, 127, 127, 127 };
+        long long int lucklocation[10] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 },
         lucksublocation[10] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 },
         lucksubsublocation[10] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 },
         luckiestlocation[10] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 },
         luckiestsublocation[10] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 },
         luckiestsubsublocation[10] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 },
+        pcount[128] = { 0 },
         four_pity[11] = { 0 },
         five_pity[90] = { 0 },
         five_pity_w[80] = { 0 };
+        if (argc == 4) {
+            chosen_banner = stoi(argv[1]);
+            chosen_event = stoi(argv[2]);
+            wishes_number = stoull(argv[3]);
+            quit = false;
+            y_arg = true;
+            goto set_banner;
+        }
+        else if (argc != 1) {
+            std::cout << E_11 << endl;
+            y_arg = true;
+            goto full_quit;
+        }
+        std::cout << S_1 << endl << S_2 << endl << S_3 << endl << S_4 << endl << endl;
         enter_chosen_banner_switch:
         std::cout << S_5 << endl;
         std::cout << S_6 << endl << S_7 << endl << S_108 << endl << S_8 << endl << S_9 << endl << S_10 << endl << endl;
@@ -353,6 +417,7 @@ int main() {
         default: {chosen_banner = 0; chosen_event = 0; quit = true; std::cout << endl << S_53 << endl << endl; goto enter_chosen_banner; } break;
         }
         // choose event
+        set_banner:
         if (chosen_banner == 1) {
             switch (chosen_event) {
             case 1: {
@@ -722,6 +787,7 @@ int main() {
             memmove( nup_four_c , nup_four_cg1 , sizeof(nup_four_cg1));
         }
         else { std::cout << E_7 << endl; goto full_quit; }
+        if (y_arg) goto core_core_loop;
         // set banner
         if (!is_cross) goto core_loop;
         else if (chosen_banner == 3) min_fives = 80;
@@ -1040,6 +1106,7 @@ int main() {
             else if (wishes_number < 1) { wishes_number = 0; std::cout << S_72 << endl; goto enter_wishes_number;}
             else { std::cout << S_85 << endl << endl; }
             core_core_loop:
+            if (y_arg) { std::cout << S_1 << endl << S_2 << endl << S_3 << endl << S_4 << endl << endl << S_85 << endl << endl; }
             if (!is_s_mode) { d_item_c = false; }
             const std::chrono::time_point<std::chrono::system_clock> startx = std::chrono::system_clock::now();
             auto starty = std::chrono::steady_clock::now();
@@ -1640,6 +1707,7 @@ int main() {
             for (int iout = 0; iout < 23; iout++) { if (pcount[four_stars_c[iout]] > 0) std::cout << pnameshort[four_stars_c[iout]] << "(" << pcount[four_stars_c[iout]] << ") "; }
             for (int iout = 0; iout < 27; iout++) { if (pcount[four_stars_w[iout]] > 0) std::cout << pnameshort[four_stars_w[iout]] << "(" << pcount[four_stars_w[iout]] << ") "; }
             std::cout << endl << endl; 
+            if (y_arg) goto full_quit;
             // a bunch of output of statistics
             //if (chosen_banner == 4 && chosen_event == 1 && count == 20) goto full_quit;
         }

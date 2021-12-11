@@ -355,6 +355,7 @@
 #define E_8 "Unexpected five_count! Error code: 8"
 #define E_9 "Unexpected ij! Error code: 9"
 #define E_10 "Unexpected d_item_n[kind]! Error code: 10"
+#define E_11 "Arguments error! Usage: chosen_banner chosen_event wishes_number"
 #define V_1 "Current chosen Banner "
 #define V_2 "Current chosen Event "
 #define V_3 "Current up-ed 5-star item No. "
