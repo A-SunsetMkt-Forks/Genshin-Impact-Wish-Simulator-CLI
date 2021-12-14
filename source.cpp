@@ -64,7 +64,7 @@
                     bool check = false;\
                     if (d_item_n[kind] > 0) d_item_n[kind]--;\
                     if (d_item_n[kind] < 0) { std::cout << E_10 << endl; goto full_quit; }\
-                    for (int ikk = 0; ikk < 108; ikk++) {\
+                    for (int ikk = 0; ikk < 110; ikk++) {\
                     if (d_item_n[ikk] > 0) { d_item_c = true; check = true; break; }\
                     else if (d_item_n[ikk] == 0) d_item_c = false;\
                     else { std::cout << E_10 << endl; goto full_quit; }\
@@ -436,6 +436,7 @@ int main(int argc, char* argv[]) {
         // choose event
         set_banner:
         if (chosen_banner == 1) {
+            if (chosen_event < 22) switch_e_should_be = 0;
             switch (chosen_event) {
             case 1: {
                 int tempg1[3] = { 22, 26, 30 };
@@ -806,12 +807,14 @@ int main(int argc, char* argv[]) {
         else { std::cout << E_7 << endl; goto full_quit; }
         if (y_arg) goto core_core_loop;
         // set banner
-        if (!is_cross) goto core_loop;
+        if (!is_cross) goto pre_core_loop;
         else if (chosen_banner == 3) min_fives = 80;
         else if (chosen_banner == 1 || chosen_banner == 2 || chosen_banner == 4) min_fives = 90;
         else if (chosen_banner == 5) min_fives = 2147483647;
         else { std::cout << E_7 << endl; goto full_quit; }
+        pre_core_loop:
         if (switch_b_sav == chosen_banner && switch_e_sav == chosen_event) is_dualcross = true;
+        else is_dualcross = false;
         if (is_dualcross) goto core_loop;
         else { unmet4_c = 0; unmet4_w = 0; unmet5_c = 0; unmet5_w = 0; }
         core_loop:
