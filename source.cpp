@@ -70,7 +70,6 @@
                     else { std::cout << E_10 << endl; goto full_quit; }\
                     if (check){ break; }\
                     }\
-                    is_s_mode = true;\
                     }\
                 } // do if is s mode
 #define set_pool_1_m(up_five_m,size_nup_four_c_m, nup_four_cgm) {\
@@ -333,8 +332,7 @@ int main(int argc, char* argv[]) {
             int test;
             long long int test2;
             try {
-                test = stoi(argv[1]);
-                test = stoi(argv[2]);
+                test = stoi(argv[1]) + stoi(argv[2]);
                 test2 = stoll(argv[3]);
             }
             catch (...) {
@@ -917,7 +915,7 @@ int main(int argc, char* argv[]) {
                 goto enter_wishes_number;
             }
             else if (wishes_number == -5) {
-                if (chosen_banner == 4 || four_count == 0 || five_count == 0) { wishes_number = 0; std::cout << S_72 << endl; goto enter_wishes_number; }
+                if (chosen_banner == 5 || four_count == 0 || five_count == 0) { wishes_number = 0; std::cout << S_72 << endl; goto enter_wishes_number; }
                 else if (chosen_banner == 1 || chosen_banner == 2 || chosen_banner == 4 ) {
                     std::cout << S_88 << endl << endl;
                     for (int iout = 0; iout < 10; iout++) { std::cout << iout + 1 << "  " << four_pity[iout] << "   " << four_pity[iout] *100.0 / four_count << "%" << endl; }
@@ -1067,11 +1065,10 @@ int main(int argc, char* argv[]) {
                         if (cin.fail()) { d_item_n[ij] = 0; std::cout << endl << S_11 << endl; cin.clear(); cin.ignore(32767, '\n'); goto enter_d_item; }
                         if (d_item_n[ij] < 0) { d_item_n[ij] = 0; std::cout << endl << S_72 << endl << endl; goto enter_d_item; }
                         if (d_item_n[ij] > 0) { zero_input_recheck = false; }
-                        if (countx < 1 && d_item_n[ij] < 1 && zero_input_recheck) { d_item_n[ij] = 0; std::cout << endl << S_72 << endl << endl; goto enter_d_item; }
+                        if (countx < 1 && d_item_n[ij] < 1 && zero_input_recheck) { std::cout << endl << S_72 << endl << endl; goto enter_d_item; }
                         std::cout << endl;
                     }
-                    else if (ij < -2) { ij = 0; std::cout << S_72 << endl; goto enter_ij; }
-                    else { ij = 0; std::cout << E_9 << endl; goto full_quit; }
+                    else { ij = 0; std::cout << S_72 << endl; goto enter_ij; }
                     }
                 std::cout << endl << S_85 << endl << endl;
                 goto core_core_loop;
@@ -1734,8 +1731,8 @@ int main(int argc, char* argv[]) {
         goto enter_chosen_banner;
 full_quit:
     int prepause = getchar();
-    prepause = 1;
+    prepause += 1;
     int pausex = getchar();
-    pausex = 1;
-    return 0;
+    pausex += 1;
+    return pausex;
 }
