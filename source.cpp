@@ -11,7 +11,7 @@
                     else if ((kind) < 50 ) { std::cout << "!!**** "; }\
                     else if ((kind) < 63 ) { std::cout << "*** "; }\
                     else if ((kind) == 71 || (kind) == 79 || (kind) == 80 || (kind) == 82 || (kind) == 83 || (kind) == 84 || (kind) == 88 || (kind) == 91 || (kind) == 95 || (kind) == 100 || (kind) == 102 || (kind) == 103 || (kind) == 104 || (kind) == 106 ||(kind) == 108 ) { std::cout << "!!**** "; }\
-                    else if ((kind) < 110 ) { std::cout << "!!!!!***** "; }\
+                    else if ((kind) < 111 ) { std::cout << "!!!!!***** "; }\
                     else {  std::cout << E_1 << endl; goto full_quit; }\
                 } // cout stars prefix
 #define output_string() {if (y_print) {std::cout << countx + 1 << "(" << five_star_assurance_number << ")(" << four_star_assurance_number << ") ";\
@@ -141,7 +141,7 @@ nup_four_cg8[19] = { 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 28, 30, 71,
 four_stars_c[23] = { 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 71, 91, 95, 100, 106, 108 },
 four_stars_w[27] = { 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 79, 80, 82, 83, 84, 88, 102, 103, 104 },
 five_stars_c[22] = { 0, 1, 2, 3, 4, 63, 64, 65, 66, 67, 68, 69, 70, 72, 86, 89, 90, 94, 96, 99, 105, 109 },
-five_stars_w[25] = { 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 73, 74, 75, 76, 77, 78, 81, 85, 87, 92, 93, 97, 98, 101, 107 };
+five_stars_w[26] = { 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 73, 74, 75, 76, 77, 78, 81, 85, 87, 92, 93, 97, 98, 101, 107, 110 };
 long long int countx = 0,
 wishes_number = 0,
 countx_r = 0,
@@ -1074,6 +1074,7 @@ int main(int argc, char* argv[]) {
                 std::cout << endl;
             apply_profile:
                 std::cout << endl << S_141 << endl;
+                if (sav[1] == sav[3]) check_profile_throw()
                 if (sav[4] != sav[1] && sav[5] != sav[1]) check_profile_throw()
                 if (sav[6] != sav[3] && sav[7] != sav[3]) check_profile_throw()
                 if (chosen_banner != 3 && sav[4] > 89 && sav[5] > 89) check_profile_throw()
@@ -1856,7 +1857,7 @@ int main(int argc, char* argv[]) {
             }
             else { std::cout << E_8 << endl; goto full_quit; }
             for (int iout = 0; iout < 22; iout++) { if (pcount[five_stars_c[iout]] > 0) std::cout << pnameshort[five_stars_c[iout]] << "(" << pcount[five_stars_c[iout]] << ") "; }
-            for (int iout = 0; iout < 25; iout++) { if (pcount[five_stars_w[iout]] > 0) std::cout << pnameshort[five_stars_w[iout]] << "(" << pcount[five_stars_w[iout]] << ") "; }
+            for (int iout = 0; iout < 26; iout++) { if (pcount[five_stars_w[iout]] > 0) std::cout << pnameshort[five_stars_w[iout]] << "(" << pcount[five_stars_w[iout]] << ") "; }
             if (five_count > 0) { std::cout << endl << endl; }
             for (int iout = 0; iout < 23; iout++) { if (pcount[four_stars_c[iout]] > 0) std::cout << pnameshort[four_stars_c[iout]] << "(" << pcount[four_stars_c[iout]] << ") "; }
             for (int iout = 0; iout < 27; iout++) { if (pcount[four_stars_w[iout]] > 0) std::cout << pnameshort[four_stars_w[iout]] << "(" << pcount[four_stars_w[iout]] << ") "; }
