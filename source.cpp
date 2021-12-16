@@ -969,7 +969,7 @@ int main(int argc, char* argv[]) {
                 int sav[16] = { 0 };
                 int else_counter = 0;
                 if (chosen_banner == 3 && chosen_event > 14) {
-                    enter_profile_0:
+                enter_profile_0:
                     std::cout << S_138 << endl << S_139 << endl << S_67 << endl
                         << S_69 << " ( " << pname[up_five_g[0]] << " ) " << endl
                         << S_70 << " ( " << pname[up_five_g[1]] << " ) " << endl
@@ -981,7 +981,7 @@ int main(int argc, char* argv[]) {
                     else if (sav[8] < -1 || sav[8] > 2) { sav[8] = 0; std::cout << endl << S_72 << endl << endl; goto enter_profile_0; }
                     else { else_counter ++; }
                     std::cout << endl;
-                    enter_profile_01:
+                enter_profile_01:
                     std::cout << S_138 << endl << S_139 << endl << endl << S_140 << endl;
                     std::cin >> sav[9];
                     if (cin.fail()) { sav[9] = 0; std::cout << endl << S_11 << endl; cin.clear(); cin.ignore(32767, '\n'); goto enter_profile_01; }
@@ -992,7 +992,7 @@ int main(int argc, char* argv[]) {
                     std::cout << endl;
                 }
                 else { else_counter++; }
-                enter_profile_1:
+            enter_profile_1:
                 std::cout << S_138 << endl << S_139 << endl << endl << S_129 << endl << endl;
                 std::cin >> sav[0];
                 if (cin.fail()) { sav[0] = 0; std::cout << endl << S_11 << endl; cin.clear(); cin.ignore(32767, '\n'); goto enter_profile_1; }
@@ -1001,7 +1001,7 @@ int main(int argc, char* argv[]) {
                 else if (sav[0] != 1 && sav[0] != 0) { sav[0] = 0; std::cout << endl << S_72 << endl << endl; goto enter_profile_1; }
                 else { else_counter++; }
                 std::cout << endl;
-                enter_profile_2:
+            enter_profile_2:
                 std::cout << S_138 << endl << S_139 << endl << endl << S_130 << S_137 << endl << endl;
                 std::cin >> sav[1];
                 if (cin.fail()) { sav[1] = 0; std::cout << endl << S_11 << endl; cin.clear(); cin.ignore(32767, '\n'); goto enter_profile_2; }
@@ -1012,7 +1012,7 @@ int main(int argc, char* argv[]) {
                 else if (sav[1] < 0) { sav[1] = 0; std::cout << endl << S_72 << endl << endl; goto enter_profile_2; }
                 else { else_counter++; }
                 std::cout << endl;
-                enter_profile_3:
+            enter_profile_3:
                 std::cout << S_138 << endl << S_139 << endl << endl << S_131 << endl << endl;
                 std::cin >> sav[2];
                 if (cin.fail()) { sav[2] = 0; std::cout << endl << S_11 << endl; cin.clear(); cin.ignore(32767, '\n'); goto enter_profile_3; }
@@ -1021,7 +1021,7 @@ int main(int argc, char* argv[]) {
                 else if (sav[2] != 1 && sav[2] != 0) { sav[2] = 0; std::cout << endl << S_72 << endl << endl; goto enter_profile_3; }
                 else { else_counter++; }
                 std::cout << endl;
-                enter_profile_4:
+            enter_profile_4:
                 std::cout << S_138 << endl << S_139 << endl << endl << S_132 << S_137 << endl << endl;
                 std::cin >> sav[3];
                 if (cin.fail()) { sav[3] = 0; std::cout << endl << S_11 << endl; cin.clear(); cin.ignore(32767, '\n'); goto enter_profile_4; }
@@ -1030,7 +1030,7 @@ int main(int argc, char* argv[]) {
                 else if (sav[3] < 0 ) { sav[3] = 0; std::cout << endl << S_72 << endl << endl; goto enter_profile_4; }
                 else { else_counter++; }
                 std::cout << endl;
-                enter_profile_5:
+            enter_profile_5:
                 std::cout << S_138 << endl << S_139 << endl << endl << S_133 << S_137 << endl << endl;
                 std::cin >> sav[4];
                 if (cin.fail()) { sav[4] = 0; std::cout << endl << S_11 << endl; cin.clear(); cin.ignore(32767, '\n'); goto enter_profile_5; }
@@ -1054,7 +1054,7 @@ int main(int argc, char* argv[]) {
                     else { else_counter++; }
                 }
                 std::cout << endl;
-                enter_profile_7:
+            enter_profile_7:
                 std::cout << S_138 << endl << S_139 << endl << endl << S_135 << S_137 << endl << endl;
                 std::cin >> sav[6];
                 if (cin.fail()) { sav[6] = 0; std::cout << endl << S_11 << endl; cin.clear(); cin.ignore(32767, '\n'); goto enter_profile_7; }
@@ -1063,7 +1063,7 @@ int main(int argc, char* argv[]) {
                 else if (sav[6] < 0) { sav[6] = 0; std::cout << endl << S_72 << endl << endl; goto enter_profile_7; }
                 else { else_counter++; }
                 std::cout << endl;
-                enter_profile_8:
+            enter_profile_8:
                 std::cout << S_138 << endl << S_139 << endl << endl << S_136 << S_137 << endl << endl;
                 std::cin >> sav[7];
                 if (cin.fail()) { sav[7] = 0; std::cout << endl << S_11 << endl; cin.clear(); cin.ignore(32767, '\n'); goto enter_profile_8; }
@@ -1072,7 +1072,7 @@ int main(int argc, char* argv[]) {
                 else if (sav[7] < 0) { sav[7] = 0; std::cout << endl << S_72 << endl << endl; goto enter_profile_8; }
                 else { else_counter++; }
                 std::cout << endl;
-                apply_profile:
+            apply_profile:
                 std::cout << endl << S_141 << endl;
                 if (sav[4] != sav[1] && sav[5] != sav[1]) check_profile_throw()
                 if (sav[6] != sav[3] && sav[7] != sav[3]) check_profile_throw()
@@ -1083,10 +1083,10 @@ int main(int argc, char* argv[]) {
                 five_star_assurance_number = sav[1];
                 four_star_guarantee_number = sav[2];
                 four_star_assurance_number = sav[3];
-                unmet5_c = sav[4];
-                unmet5_w = sav[5];
-                unmet4_c = sav[6];
-                unmet4_w = sav[7];
+                unmet5_c = sav[4] - 1; if (unmet5_c < 0) unmet5_c = 0;
+                unmet5_w = sav[5] - 1; if (unmet5_w < 0) unmet5_w = 0;
+                unmet4_c = sav[6] - 1; if (unmet4_c < 0) unmet4_c = 0;
+                unmet4_w = sav[7] - 1; if (unmet4_w < 0) unmet4_w = 0;
                 fate_weapon = sav[8];
                 wishes_number = 0;
                 goto enter_wishes_number;
@@ -1219,8 +1219,8 @@ int main(int argc, char* argv[]) {
                     V_4 << "y_print = " << y_print << endl <<
                     V_5 << "four_star_assurance_number = " << four_star_assurance_number << endl <<
                     V_6 << "five_star_assurance_number = " << five_star_assurance_number << endl <<
-                    V_7 << "five_star_guarantee_number = " << five_star_guarantee_number << endl <<
-                    V_8 << "four_star_guarantee_number = " << four_star_guarantee_number << endl <<
+                    V_7 << "four_star_guarantee_number = " << four_star_guarantee_number << endl <<
+                    V_8 << "five_star_guarantee_number = " << five_star_guarantee_number << endl <<
                     V_9 << "countx = " << countx << endl <<
                     V_10 << "five_count = " << five_count << endl <<
                     V_11 << "five_count_c = " << five_count_c << endl <<
