@@ -78,6 +78,11 @@
 #define set_pool_3_m(size_nup_four_c_m, nup_four_cgm) {\
                     set_pool_3(up_five_g, (size_nup_four_c_m), tempg1, tempg5, tempg6, tempg7, up_four_g, nup_four_c, (nup_four_cgm), four_check, five_check);\
                 }
+#define check_profile_throw() {\
+                    std::cout << S_143 << endl;\
+                    wishes_number = 0;\
+                    goto enter_wishes_number;\
+                }
 
 using namespace std;
 
@@ -92,15 +97,15 @@ is_noelle = true,
 is_cross = false,
 is_dualcross = false,
 y_print = true,
-y_arg = false;
+y_arg = false,
+five_star_guarantee_number = false,
+four_star_guarantee_number = false;
 int chosen_banner = 0,
 chosen_event = 0,
 four_star_assurance_number = 1,
 five_star_assurance_number = 1,
-five_star_guarantee_number = 0,
-four_star_guarantee_number = 0,
 max_fives = 1,
-min_fives = 2147483647,
+min_fives = INT_MAX,
 fate_weapon = 0,
 fate_points = 0,
 five_weight = 0,
@@ -269,14 +274,14 @@ int main(int argc, char* argv[]) {
         is_noelle = true,
         is_cross = false,
         is_dualcross = false,
+        five_star_guarantee_number = false,
+        four_star_guarantee_number = false,
         chosen_banner = 0,
         chosen_event = 0,
         four_star_assurance_number = 1,
         five_star_assurance_number = 1,
-        five_star_guarantee_number = 0,
-        four_star_guarantee_number = 0,
         max_fives = 1,
-        min_fives = 2147483647,
+        min_fives = INT_MAX,
         fate_weapon = 0,
         fate_points = 0,
         five_weight = 0,
@@ -810,7 +815,7 @@ int main(int argc, char* argv[]) {
         if (!is_cross) goto pre_core_loop;
         else if (chosen_banner == 3) min_fives = 80;
         else if (chosen_banner == 1 || chosen_banner == 2 || chosen_banner == 4) min_fives = 90;
-        else if (chosen_banner == 5) min_fives = 2147483647;
+        else if (chosen_banner == 5) min_fives = INT_MAX;
         else { std::cout << E_7 << endl; goto full_quit; }
         pre_core_loop:
         if (switch_b_sav == chosen_banner && switch_e_sav == chosen_event) is_dualcross = true;
@@ -825,6 +830,7 @@ int main(int argc, char* argv[]) {
             std::cout << endl << S_54 << endl << S_55 << endl << S_56 << endl << S_57 << endl << S_58 << endl << S_59 << endl << S_60;
             if (chosen_banner == 1 || chosen_banner == 2 || chosen_banner == 3 || chosen_banner == 4) {std::cout << ";" << endl << S_90; }
             if (chosen_banner == 3 && chosen_event > 14) {std::cout << ";" << endl << S_61; }
+            if (chosen_banner != 5) { std::cout << ";" << endl << S_128; }
             std::cout << ";" << endl << S_113 << endl << S_112 << endl << endl;
             std::cin >> wishes_number;
             if (cin.fail()) { wishes_number = 0; std::cout << endl << S_11 << endl; cin.clear(); cin.ignore(32767, '\n'); goto enter_wishes_number; }
@@ -852,8 +858,8 @@ int main(int argc, char* argv[]) {
                     wishes_number = 0;
                     four_star_assurance_number = 1;
                     five_star_assurance_number = 1;
-                    five_star_guarantee_number = 0;
-                    four_star_guarantee_number = 0;
+                    five_star_guarantee_number = false;
+                    four_star_guarantee_number = false;
                     countx = 0;
                     five_count = 0;
                     five_count_c = 0;
@@ -866,7 +872,7 @@ int main(int argc, char* argv[]) {
                     max_fives = 1;
                     if (chosen_banner == 3) min_fives = 80;
                     else if (chosen_banner == 1 || chosen_banner == 2 || chosen_banner == 4) min_fives = 90;
-                    else if (chosen_banner == 5) min_fives = 2147483647;
+                    else if (chosen_banner == 5) min_fives = INT_MAX;
                     else { std::cout << E_7 << endl; goto full_quit; }
                     max_fivesth = 1;
                     min_fivesth = 1;
@@ -958,6 +964,133 @@ int main(int argc, char* argv[]) {
                     wishes_number = 0; std::cout << S_72 << endl; goto enter_wishes_number;
                 }
             }
+            else if (wishes_number == -31) {
+                if (chosen_banner == 5) { wishes_number = 0; std::cout << S_72 << endl; goto enter_wishes_number; }
+                int sav[16] = { 0 };
+                int else_counter = 0;
+                if (chosen_banner == 3 && chosen_event > 14) {
+                    enter_profile_0:
+                    std::cout << S_138 << endl << S_139 << endl << S_67 << endl
+                        << S_69 << " ( " << pname[up_five_g[0]] << " ) " << endl
+                        << S_70 << " ( " << pname[up_five_g[1]] << " ) " << endl
+                        << S_71 << endl << endl;
+                    std::cin >> sav[8];
+                    if (cin.fail()) { sav[8] = 0; std::cout << endl << S_11 << endl << endl; cin.clear(); cin.ignore(32767, '\n'); goto enter_profile_0; }
+                    else if (sav[8] == -1) { sav[8] = 0; wishes_number = 0; goto enter_wishes_number; }
+                    else if (sav[8] == -2) { goto apply_profile; }
+                    else if (sav[8] < -1 || sav[8] > 2) { sav[8] = 0; std::cout << endl << S_72 << endl << endl; goto enter_profile_0; }
+                    else { else_counter ++; }
+                    std::cout << endl;
+                    enter_profile_01:
+                    std::cout << S_138 << endl << S_139 << endl << endl << S_140 << endl;
+                    std::cin >> sav[9];
+                    if (cin.fail()) { sav[9] = 0; std::cout << endl << S_11 << endl; cin.clear(); cin.ignore(32767, '\n'); goto enter_profile_01; }
+                    else if (sav[9] == -1) { sav[9] = 0; wishes_number = 0; goto enter_wishes_number; }
+                    else if (sav[9] == -2) { goto apply_profile; }
+                    else if (sav[9] != 0 && sav[9] != 1 && sav[9] != 2) { sav[9] = 0; std::cout << endl << S_72 << endl; goto enter_profile_01; }
+                    else { else_counter++; }
+                    std::cout << endl;
+                }
+                else { else_counter++; }
+                enter_profile_1:
+                std::cout << S_138 << endl << S_139 << endl << endl << S_129 << endl << endl;
+                std::cin >> sav[0];
+                if (cin.fail()) { sav[0] = 0; std::cout << endl << S_11 << endl; cin.clear(); cin.ignore(32767, '\n'); goto enter_profile_1; }
+                else if (sav[0] == -1) { sav[0] = 0; wishes_number = 0; goto enter_wishes_number; }
+                else if (sav[0] == -2) { goto apply_profile; }
+                else if (sav[0] != 1 && sav[0] != 0) { sav[0] = 0; std::cout << endl << S_72 << endl << endl; goto enter_profile_1; }
+                else { else_counter++; }
+                std::cout << endl;
+                enter_profile_2:
+                std::cout << S_138 << endl << S_139 << endl << endl << S_130 << S_137 << endl << endl;
+                std::cin >> sav[1];
+                if (cin.fail()) { sav[1] = 0; std::cout << endl << S_11 << endl; cin.clear(); cin.ignore(32767, '\n'); goto enter_profile_2; }
+                else if (sav[1] == -1) { sav[1] = 0; wishes_number = 0; goto enter_wishes_number; }
+                else if (sav[1] == -2) { goto apply_profile; }
+                else if ((chosen_banner == 1 || chosen_banner == 2 || chosen_banner == 4) && sav[1] > 89) { sav[1] = 0; std::cout << endl << S_72 << endl << endl; goto enter_profile_2; }
+                else if (chosen_banner == 3 && sav[1] > 79) { sav[1] = 0; std::cout << endl << S_72 << endl << endl; goto enter_profile_2; }
+                else if (sav[1] < 0) { sav[1] = 0; std::cout << endl << S_72 << endl << endl; goto enter_profile_2; }
+                else { else_counter++; }
+                std::cout << endl;
+                enter_profile_3:
+                std::cout << S_138 << endl << S_139 << endl << endl << S_131 << endl << endl;
+                std::cin >> sav[2];
+                if (cin.fail()) { sav[2] = 0; std::cout << endl << S_11 << endl; cin.clear(); cin.ignore(32767, '\n'); goto enter_profile_3; }
+                else if (sav[2] == -1) { sav[2] = 0; wishes_number = 0; goto enter_wishes_number; }
+                else if (sav[2] == -2) { goto apply_profile; }
+                else if (sav[2] != 1 && sav[2] != 0) { sav[2] = 0; std::cout << endl << S_72 << endl << endl; goto enter_profile_3; }
+                else { else_counter++; }
+                std::cout << endl;
+                enter_profile_4:
+                std::cout << S_138 << endl << S_139 << endl << endl << S_132 << S_137 << endl << endl;
+                std::cin >> sav[3];
+                if (cin.fail()) { sav[3] = 0; std::cout << endl << S_11 << endl; cin.clear(); cin.ignore(32767, '\n'); goto enter_profile_4; }
+                else if (sav[3] == -1) { sav[3] = 0; wishes_number = 0; goto enter_wishes_number; }
+                else if (sav[3] == -2) { goto apply_profile; }
+                else if (sav[3] < 0 ) { sav[3] = 0; std::cout << endl << S_72 << endl << endl; goto enter_profile_4; }
+                else { else_counter++; }
+                std::cout << endl;
+                enter_profile_5:
+                std::cout << S_138 << endl << S_139 << endl << endl << S_133 << S_137 << endl << endl;
+                std::cin >> sav[4];
+                if (cin.fail()) { sav[4] = 0; std::cout << endl << S_11 << endl; cin.clear(); cin.ignore(32767, '\n'); goto enter_profile_5; }
+                else if (sav[4] == -1) { sav[4] = 0; wishes_number = 0; goto enter_wishes_number; }
+                else if (sav[4] == -2) { goto apply_profile; }
+                else if (sav[4] < 0 ) { sav[4] = 0; std::cout << endl << S_72 << endl << endl; goto enter_profile_5; }
+                else if ((chosen_banner == 1 || chosen_banner == 2 || chosen_banner == 4) && sav[4] > 89) { sav[1] = 0; std::cout << endl << S_72 << endl; goto enter_profile_5; }
+                else if (chosen_banner == 3 && sav[4] > 79) { sav[1] = 0; std::cout << endl << S_72 << endl << endl; goto enter_profile_5; }
+                else { else_counter++; }
+                std::cout << endl;
+                if (chosen_banner == 3 || chosen_banner == 4) {
+                    enter_profile_6:
+                    std::cout << S_138 << endl << S_139 << endl << endl << S_134 << S_137 << endl << endl;
+                    std::cin >> sav[5];
+                    if (cin.fail()) { sav[5] = 0; std::cout << endl << S_11 << endl; cin.clear(); cin.ignore(32767, '\n'); goto enter_profile_6; }
+                    else if (sav[5] == -1) { sav[5] = 0; wishes_number = 0; goto enter_wishes_number; }
+                    else if (sav[5] == -2) { goto apply_profile; }
+                    else if (sav[5] < 0) { sav[5] = 0; std::cout << endl << S_72 << endl << endl; goto enter_profile_6; }
+                    else if (chosen_banner == 4 && sav[4] > 89) { sav[5] = 0; std::cout << endl << S_72 << endl; goto enter_profile_6; }
+                    else if (chosen_banner == 3 && sav[4] > 79) { sav[5] = 0; std::cout << endl << S_72 << endl << endl; goto enter_profile_6; }
+                    else { else_counter++; }
+                }
+                std::cout << endl;
+                enter_profile_7:
+                std::cout << S_138 << endl << S_139 << endl << endl << S_135 << S_137 << endl << endl;
+                std::cin >> sav[6];
+                if (cin.fail()) { sav[6] = 0; std::cout << endl << S_11 << endl; cin.clear(); cin.ignore(32767, '\n'); goto enter_profile_7; }
+                else if (sav[6] == -1) { sav[6] = 0; wishes_number = 0; goto enter_wishes_number; }
+                else if (sav[6] == -2) { goto apply_profile; }
+                else if (sav[6] < 0) { sav[6] = 0; std::cout << endl << S_72 << endl << endl; goto enter_profile_7; }
+                else { else_counter++; }
+                std::cout << endl;
+                enter_profile_8:
+                std::cout << S_138 << endl << S_139 << endl << endl << S_136 << S_137 << endl << endl;
+                std::cin >> sav[7];
+                if (cin.fail()) { sav[7] = 0; std::cout << endl << S_11 << endl; cin.clear(); cin.ignore(32767, '\n'); goto enter_profile_8; }
+                else if (sav[7] == -1) { sav[7] = 0; wishes_number = 0; goto enter_wishes_number; }
+                else if (sav[7] == -2) { goto apply_profile; }
+                else if (sav[7] < 0) { sav[7] = 0; std::cout << endl << S_72 << endl << endl; goto enter_profile_8; }
+                else { else_counter++; }
+                std::cout << endl;
+                apply_profile:
+                std::cout << endl << S_141 << endl;
+                if (sav[4] != sav[1] && sav[5] != sav[1]) check_profile_throw()
+                if (sav[6] != sav[3] && sav[7] != sav[3]) check_profile_throw()
+                if (chosen_banner != 3 && sav[4] > 89 && sav[5] > 89) check_profile_throw()
+                if (chosen_banner == 3 && sav[4] > 79 && sav[5] > 79) check_profile_throw()
+                std::cout << endl << S_142 << endl;
+                five_star_guarantee_number = sav[0];
+                five_star_assurance_number = sav[1];
+                four_star_guarantee_number = sav[2];
+                four_star_assurance_number = sav[3];
+                unmet5_c = sav[4];
+                unmet5_w = sav[5];
+                unmet4_c = sav[6];
+                unmet4_w = sav[7];
+                fate_weapon = sav[8];
+                wishes_number = 0;
+                goto enter_wishes_number;
+            }
             else if (wishes_number == -63) {
                 wishes_number = 0;
                 is_s_mode = true;
@@ -967,18 +1100,35 @@ int main(int argc, char* argv[]) {
                     int ij = 0;
                     enter_ij:
                     std::cout << S_114 << endl << endl << S_116 << endl << S_123 << endl;
+                    std::cout << endl << S_121 << endl;
+                    for (int ukkkkk = 0; ukkkkk < 13; ukkkkk++) {
+                        std::cout << three_g[ukkkkk] << ": " << pnameshort[three_g[ukkkkk]] << endl;
+                        d_item[three_g[ukkkkk]] = 1;
+                    }
                     if (chosen_banner == 1 || chosen_banner == 2) {
-                        std::cout << endl << S_117 << endl << up_five << ": " << pnameshort[up_five] << endl << endl << S_118 << endl;
-                        d_item[up_five] = 1;
-                        for (int ukt = 0; ukt < 5; ukt++) {
-                            std::cout << nup_five_c[ukt] << ": " << pnameshort[nup_five_c[ukt]] << endl;
-                            d_item[nup_five_c[ukt]] = 1;
+                        std::cout << endl << S_120 << endl;
+                        for (int ukkk = 0; ukkk < size_nup_four_c; ukkk++) {
+                            std::cout << nup_four_c[ukkk] << ": " << pnameshort[nup_four_c[ukkk]] << endl;
+                            d_item[nup_four_c[ukkk]] = 1;
+                        }
+                        for (int ukkkk = 0; ukkkk < 18; ukkkk++) {
+                            std::cout << nup_four_w[ukkkk] << ": " << pnameshort[nup_four_w[ukkkk]] << endl;
+                            d_item[nup_four_w[ukkkk]] = 1;
                         }
                         std::cout << endl << S_119 << endl;
                         for (int ukk = 0; ukk < 3; ukk++) {
                             std::cout << up_four_g[ukk] << ": " << pnameshort[up_four_g[ukk]] << endl;
                             d_item[up_four_g[ukk]] = 1;
                         }
+                        std::cout << endl << S_118 << endl;
+                        for (int ukt = 0; ukt < 5; ukt++) {
+                            std::cout << nup_five_c[ukt] << ": " << pnameshort[nup_five_c[ukt]] << endl;
+                            d_item[nup_five_c[ukt]] = 1;
+                        }
+                        std::cout << endl << S_117 << endl << up_five << ": " << pnameshort[up_five] << endl;
+                        d_item[up_five] = 1;
+                    }
+                    else if (chosen_banner == 3) {
                         std::cout << endl << S_120 << endl;
                         for (int ukkk = 0; ukkk < size_nup_four_c; ukkk++) {
                             std::cout << nup_four_c[ukkk] << ": " << pnameshort[nup_four_c[ukkk]] << endl;
@@ -987,24 +1137,24 @@ int main(int argc, char* argv[]) {
                         for (int ukkkk = 0; ukkkk < 18; ukkkk++) {
                             std::cout << nup_four_w[ukkkk] << ": " << pnameshort[nup_four_w[ukkkk]] << endl;
                             d_item[nup_four_w[ukkkk]] = 1;
-                        }
-                    }
-                    else if (chosen_banner == 3) {
-                        std::cout << endl << S_117 << endl;
-                        for (int uk = 0; uk < 2; uk++) {
-                            std::cout << up_five_g[uk] << ": " << pnameshort[up_five_g[uk]] << endl;
-                            d_item[up_five_g[uk]] = 1;
-                        }
-                        std::cout << endl << S_118 << endl;
-                        for (int uktt = 0; uktt < 10; uktt++) {
-                            std::cout << nup_five_w[uktt] << ": " << pnameshort[nup_five_w[uktt]] << endl;
-                            d_item[nup_five_w[uktt]] = 1;
                         }
                         std::cout << endl << S_119 << endl;
                         for (int ukk = 0; ukk < 5; ukk++) {
                             std::cout << up_four_g[ukk] << ": " << pnameshort[up_four_g[ukk]] << endl;
                             d_item[up_four_g[ukk]] = 1;
                         }
+                        std::cout << endl << S_118 << endl;
+                        for (int uktt = 0; uktt < 10; uktt++) {
+                            std::cout << nup_five_w[uktt] << ": " << pnameshort[nup_five_w[uktt]] << endl;
+                            d_item[nup_five_w[uktt]] = 1;
+                        }
+                        std::cout << endl << S_117 << endl;
+                        for (int uk = 0; uk < 2; uk++) {
+                            std::cout << up_five_g[uk] << ": " << pnameshort[up_five_g[uk]] << endl;
+                            d_item[up_five_g[uk]] = 1;
+                        }
+                    }
+                    else if (chosen_banner == 4) {
                         std::cout << endl << S_120 << endl;
                         for (int ukkk = 0; ukkk < size_nup_four_c; ukkk++) {
                             std::cout << nup_four_c[ukkk] << ": " << pnameshort[nup_four_c[ukkk]] << endl;
@@ -1014,8 +1164,6 @@ int main(int argc, char* argv[]) {
                             std::cout << nup_four_w[ukkkk] << ": " << pnameshort[nup_four_w[ukkkk]] << endl;
                             d_item[nup_four_w[ukkkk]] = 1;
                         }
-                    }
-                    else if (chosen_banner == 4) {
                         std::cout << endl << S_118 << endl;
                         for (int ukt = 0; ukt < 5; ukt++) {
                             std::cout << nup_five_c[ukt] << ": " << pnameshort[nup_five_c[ukt]] << endl;
@@ -1025,34 +1173,20 @@ int main(int argc, char* argv[]) {
                             std::cout << nup_five_w[uktt] << ": " << pnameshort[nup_five_w[uktt]] << endl;
                             d_item[nup_five_w[uktt]] = 1;
                         }
-                        std::cout << endl << S_120 << endl;
-                        for (int ukkk = 0; ukkk < size_nup_four_c; ukkk++) {
-                            std::cout << nup_four_c[ukkk] << ": " << pnameshort[nup_four_c[ukkk]] << endl;
-                            d_item[nup_four_c[ukkk]] = 1;
-                        }
-                        for (int ukkkk = 0; ukkkk < 18; ukkkk++) {
-                            std::cout << nup_four_w[ukkkk] << ": " << pnameshort[nup_four_w[ukkkk]] << endl;
-                            d_item[nup_four_w[ukkkk]] = 1;
-                        }
                     }
                     else if (chosen_banner == 5) {
-                        std::cout << endl << S_118 << endl;
-                        for (int ukt = 0; ukt < 5; ukt++) {
-                            std::cout << nup_five_c[ukt] << ": " << pnameshort[nup_five_c[ukt]] << endl;
-                            d_item[nup_five_c[ukt]] = 1;
-                        }
                         std::cout << endl << S_120 << endl;
                         for (int ukkk = 0; ukkk < 11; ukkk++) {
                             std::cout << nup_four_c[ukkk] << ": " << pnameshort[nup_four_c[ukkk]] << endl;
                             d_item[nup_four_c[ukkk]] = 1;
                         }
+                        std::cout << endl << S_118 << endl;
+                        for (int ukt = 0; ukt < 5; ukt++) {
+                            std::cout << nup_five_c[ukt] << ": " << pnameshort[nup_five_c[ukt]] << endl;
+                            d_item[nup_five_c[ukt]] = 1;
+                        }
                     }
                     else { std::cout << E_7 << endl; goto full_quit; }
-                    std::cout << endl << S_121 << endl;
-                    for (int ukkkkk = 0; ukkkkk < 13; ukkkkk++) {
-                        std::cout << three_g[ukkkkk] << ": " << pnameshort[three_g[ukkkkk]] << endl;
-                        d_item[three_g[ukkkkk]] = 1;
-                    }
                     std::cout << endl;
                     std::cin >> ij;
                     if (cin.fail()) { ij = 0; std::cout << endl << S_11 << endl << endl; cin.clear(); cin.ignore(32767, '\n'); goto enter_ij; }
@@ -1152,17 +1286,17 @@ int main(int argc, char* argv[]) {
                             if (five_star_assurance_number < min_fives) { min_fives = five_star_assurance_number; min_fivesth = five_count; min_fivecount = countx; }
                             five_pity[five_star_assurance_number - 1] ++;
                             five_star_assurance_number = 0;
-                            if (five_star_guarantee_number == 1 || temp1 < 1) {
+                            if (five_star_guarantee_number || temp1 < 1) {
                                 type = 1;
                                 five_count_c++;
                                 kind = up_five;
-                                five_star_guarantee_number = 0;
+                                five_star_guarantee_number = false;
                             }
                             else {
                                 type = 2;
                                 five_count_c++;
                                 kind = rspick(nup_five_c, 5);
-                                if (kind == five_check[0]) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
+                                if (kind == five_check[0]) five_star_guarantee_number = false; else five_star_guarantee_number = true;
                             }// 5-star kind settler for banner I
                         }; break;
                         case 1: {
@@ -1171,12 +1305,12 @@ int main(int argc, char* argv[]) {
                             if (four_star_assurance_number < 11) four_pity[four_star_assurance_number - 1] ++;
                             else four_pity[10] ++;
                             four_star_assurance_number = 0;
-                            if (four_star_guarantee_number == 1 || temp1 < 1) {
+                            if (four_star_guarantee_number || temp1 < 1) {
                                 type = 1;
                                 four_count_c++;
                                 unmet4_c = 0;
                                 kind = rspick(up_four_g, 3);
-                                four_star_guarantee_number = 0;
+                                four_star_guarantee_number = false;
                             }
                             else {
                                 if (unmet4_c < 17 && unmet4_w < 17) {
@@ -1188,14 +1322,14 @@ int main(int argc, char* argv[]) {
                                         four_count_c++;
                                         unmet4_c = 0;
                                         kind = rspick(nup_four_c, size_nup_four_c);
-                                        if ((kind == four_check[0] || kind == four_check[1] || kind == four_check[2] || kind == four_check[3] || kind == four_check[4] || kind == four_check[5] || kind == four_check[6] || kind == four_check[7])) four_star_guarantee_number = 0; else four_star_guarantee_number = 1;
+                                        if ((kind == four_check[0] || kind == four_check[1] || kind == four_check[2] || kind == four_check[3] || kind == four_check[4] || kind == four_check[5] || kind == four_check[6] || kind == four_check[7])) four_star_guarantee_number = false; else four_star_guarantee_number = true;
                                     } break;
                                     case 1: {
                                         type = 3;
                                         four_count_w++;
                                         unmet4_w = 0;
                                         kind = rspick(nup_four_w, size_nup_four_w);
-                                        four_star_guarantee_number = 1;
+                                        four_star_guarantee_number = true;
                                     } break;
                                     default: std::cout << E_4 << endl; break;
                                     }
@@ -1209,14 +1343,14 @@ int main(int argc, char* argv[]) {
                                         four_count_c++;
                                         unmet4_c = 0;
                                         kind = rspick(nup_four_c, size_nup_four_c);
-                                        if ((kind == four_check[0] || kind == four_check[1] || kind == four_check[2] || kind == four_check[3] || kind == four_check[4] || kind == four_check[5] || kind == four_check[6] || kind == four_check[7])) four_star_guarantee_number = 0; else four_star_guarantee_number = 1;
+                                        if ((kind == four_check[0] || kind == four_check[1] || kind == four_check[2] || kind == four_check[3] || kind == four_check[4] || kind == four_check[5] || kind == four_check[6] || kind == four_check[7])) four_star_guarantee_number = false; else four_star_guarantee_number = true;
                                     } break;
                                     case 1: {
                                         type = 3;
                                         four_count_w++;
                                         unmet4_w = 0;
                                         kind = rspick(nup_four_w, size_nup_four_w);
-                                        four_star_guarantee_number = 1;
+                                        four_star_guarantee_number = true;
                                     } break;
                                     default: std::cout << E_4 << endl; break;
                                     }
@@ -1230,14 +1364,14 @@ int main(int argc, char* argv[]) {
                                         four_count_w++;
                                         unmet4_w = 0;
                                         kind = rspick(nup_four_w, size_nup_four_w);
-                                        four_star_guarantee_number = 1;
+                                        four_star_guarantee_number = true;
                                     } break;
                                     case 1: {
                                         type = 2;
                                         four_count_c++;
                                         unmet4_c = 0;
                                         kind = rspick(nup_four_c, size_nup_four_c);
-                                        if ((kind == four_check[0] || kind == four_check[1] || kind == four_check[2] || kind == four_check[3] || kind == four_check[4] || kind == four_check[5] || kind == four_check[6] || kind == four_check[7])) four_star_guarantee_number = 0; else four_star_guarantee_number = 1;
+                                        if ((kind == four_check[0] || kind == four_check[1] || kind == four_check[2] || kind == four_check[3] || kind == four_check[4] || kind == four_check[5] || kind == four_check[6] || kind == four_check[7])) four_star_guarantee_number = false; else four_star_guarantee_number = true;
                                     } break;
                                     default: std::cout << E_4 << endl; break;
                                     }
@@ -1292,48 +1426,48 @@ int main(int argc, char* argv[]) {
                                     five_count_w++;
                                     kind = up_five_g[fate_weapon - 1];
                                     fate_points = 0;
-                                    five_star_guarantee_number = 0;
+                                    five_star_guarantee_number = false;
                                 }
-                                else if (five_star_guarantee_number == 1) {
+                                else if (five_star_guarantee_number) {
                                     type = 1;
                                     five_count_w++;
                                     kind = rspick(up_five_g, 2);
                                     if (kind == up_five_g[fate_weapon - 1] ) fate_points = 0; else fate_points ++;
-                                    five_star_guarantee_number = 0;
+                                    five_star_guarantee_number = false;
                                 }
                                 else if (temp1 < 3) {
                                     type = 1;
                                     five_count_w++;
                                     kind = rspick(up_five_g, 2);
                                     if (kind == up_five_g[fate_weapon - 1] ) fate_points = 0; else fate_points ++;
-                                    five_star_guarantee_number = 0;
+                                    five_star_guarantee_number = false;
                                 }
                                 else {
                                     type = 2;
                                     five_count_w++;
                                     kind = rspick(nup_five_w, 10);
                                     fate_points ++;
-                                    if ((kind == five_check[0] || kind == five_check[1] || kind == five_check[2] || kind == five_check[3] || kind == five_check[4] || kind == five_check[5] || kind == five_check[6] || kind == five_check[7])) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
+                                    if ((kind == five_check[0] || kind == five_check[1] || kind == five_check[2] || kind == five_check[3] || kind == five_check[4] || kind == five_check[5] || kind == five_check[6] || kind == five_check[7])) five_star_guarantee_number = false; else five_star_guarantee_number = true;
                                 }
                             }
                             else if (fate_weapon == 0) {
-                                if (five_star_guarantee_number == 1) {
+                                if (five_star_guarantee_number) {
                                     type = 1;
                                     five_count_w++;
                                     kind = rspick(up_five_g, 2);
-                                    five_star_guarantee_number = 0;
+                                    five_star_guarantee_number = false;
                                 }
                                 else if (temp1 < 3) {
                                     type = 1;
                                     five_count_w++;
                                     kind = rspick(up_five_g, 2);
-                                    five_star_guarantee_number = 0;
+                                    five_star_guarantee_number = false;
                                 }
                                 else {
                                     type = 2;
                                     five_count_w++;
                                     kind = rspick(nup_five_w, 10);
-                                    if ((kind == five_check[0] || kind == five_check[1] || kind == five_check[2] || kind == five_check[3] || kind == five_check[4] || kind == five_check[5] || kind == five_check[6] || kind == five_check[7])) five_star_guarantee_number = 0; else five_star_guarantee_number = 1;
+                                    if ((kind == five_check[0] || kind == five_check[1] || kind == five_check[2] || kind == five_check[3] || kind == five_check[4] || kind == five_check[5] || kind == five_check[6] || kind == five_check[7])) five_star_guarantee_number = false; else five_star_guarantee_number = true;
                                 }
                             }
                             else {  std::cout << E_2 << endl; goto full_quit; }
@@ -1344,12 +1478,12 @@ int main(int argc, char* argv[]) {
                             if (four_star_assurance_number < 11) four_pity[four_star_assurance_number - 1] ++;
                             else four_pity[10] ++;
                             four_star_assurance_number = 0;
-                            if (four_star_guarantee_number == 1 || temp1 < 3) {
+                            if (four_star_guarantee_number || temp1 < 3) {
                                 type = 1;
                                 four_count_w++;
                                 unmet4_w = 0;
                                 kind = rspick(up_four_g, 5);
-                                four_star_guarantee_number = 0;
+                                four_star_guarantee_number = false;
                             }
                             else {
                                 if (unmet4_c < 15 && unmet4_w < 15) {
@@ -1361,14 +1495,14 @@ int main(int argc, char* argv[]) {
                                         four_count_c++;
                                         unmet4_c = 0;
                                         kind = rspick(nup_four_c, size_nup_four_c);
-                                        four_star_guarantee_number = 1;
+                                        four_star_guarantee_number = true;
                                     } break;
                                     case 1: {
                                         type = 3;
                                         four_count_w++;
                                         unmet4_w = 0;
                                         kind = rspick(nup_four_w, size_nup_four_w);
-                                        if ((kind == four_check[0] || kind == four_check[1] || kind == four_check[2] || kind == four_check[3] || kind == four_check[4] || kind == four_check[5] || kind == four_check[6] || kind == four_check[7])) four_star_guarantee_number = 0; else four_star_guarantee_number = 1;
+                                        if ((kind == four_check[0] || kind == four_check[1] || kind == four_check[2] || kind == four_check[3] || kind == four_check[4] || kind == four_check[5] || kind == four_check[6] || kind == four_check[7])) four_star_guarantee_number = false; else four_star_guarantee_number = true;
                                     } break;
                                     default: std::cout << E_4 << endl; break;
                                     }
@@ -1382,14 +1516,14 @@ int main(int argc, char* argv[]) {
                                         four_count_c++;
                                         unmet4_c = 0;
                                         kind = rspick(nup_four_c, size_nup_four_c);
-                                        four_star_guarantee_number = 1;
+                                        four_star_guarantee_number = true;
                                     } break;
                                     case 1: {
                                         type = 3;
                                         four_count_w++;
                                         unmet4_w = 0;
                                         kind = rspick(nup_four_w, size_nup_four_w);
-                                        if ((kind == four_check[0] || kind == four_check[1] || kind == four_check[2] || kind == four_check[3] || kind == four_check[4] || kind == four_check[5] || kind == four_check[6] || kind == four_check[7])) four_star_guarantee_number = 0; else four_star_guarantee_number = 1;
+                                        if ((kind == four_check[0] || kind == four_check[1] || kind == four_check[2] || kind == four_check[3] || kind == four_check[4] || kind == four_check[5] || kind == four_check[6] || kind == four_check[7])) four_star_guarantee_number = false; else four_star_guarantee_number = true;
                                     } break;
                                     default: std::cout << E_4 << endl; break;
                                     }
@@ -1403,14 +1537,14 @@ int main(int argc, char* argv[]) {
                                         four_count_w++;
                                         unmet4_w = 0;
                                         kind = rspick(nup_four_w, size_nup_four_w);
-                                        if ((kind == four_check[0] || kind == four_check[1] || kind == four_check[2] || kind == four_check[3] || kind == four_check[4] || kind == four_check[5] || kind == four_check[6] || kind == four_check[7])) four_star_guarantee_number = 0; else four_star_guarantee_number = 1;
+                                        if ((kind == four_check[0] || kind == four_check[1] || kind == four_check[2] || kind == four_check[3] || kind == four_check[4] || kind == four_check[5] || kind == four_check[6] || kind == four_check[7])) four_star_guarantee_number = false; else four_star_guarantee_number = true;
                                     } break;
                                     case 1: {
                                         type = 2;
                                         four_count_c++;
                                         unmet4_c = 0;
                                         kind = rspick(nup_four_c, size_nup_four_c);
-                                        four_star_guarantee_number = 1;
+                                        four_star_guarantee_number = true;
                                     } break;
                                     default: std::cout << E_4 << endl; break;
                                     }
