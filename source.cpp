@@ -1098,8 +1098,7 @@ int main(int argc, char* argv[]) {
                 while (true) {
                     int ij = 0;
                     enter_ij:
-                    std::cout << S_114 << endl << endl << S_116 << endl << S_123 << endl;
-                    std::cout << endl << S_121 << endl;
+                    std::cout << S_114 << endl << endl << S_121 << endl;
                     for (int ukkkkk = 0; ukkkkk < 13; ukkkkk++) {
                         std::cout << three_g[ukkkkk] << ": " << pnameshort[three_g[ukkkkk]] << endl;
                         d_item[three_g[ukkkkk]] = 1;
@@ -1186,7 +1185,7 @@ int main(int argc, char* argv[]) {
                         }
                     }
                     else { std::cout << E_7 << endl; goto full_quit; }
-                    std::cout << endl;
+                    std::cout << endl << S_116 << endl << S_123 << endl << endl;
                     std::cin >> ij;
                     if (cin.fail()) { ij = 0; std::cout << endl << S_11 << endl << endl; cin.clear(); cin.ignore(32767, '\n'); goto enter_ij; }
                     if (ij == -1 && zero_input_check) { ij = 0; d_item_c = false; std::cout << endl << S_125 << endl; goto core_loop; }
