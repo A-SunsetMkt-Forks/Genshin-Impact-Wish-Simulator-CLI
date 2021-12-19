@@ -2,9 +2,7 @@
 #include <iostream>
 #include <random>
 #include <string>
-#include <cstring>
-#include <iomanip>
-#include <ctime>
+#include <time.h>
 #include "cn.h" //include the language header file
 
 #define casesx( kind ){   if ((kind) < 15 ) { std::cout << "!!!!!***** "; }\
@@ -1834,8 +1832,8 @@ int main(int argc, char* argv[]) {
             unsigned long long int elapsed_time = std::chrono::duration_cast<std::chrono::microseconds>(elapsed).count();
             const std::time_t t_start = std::chrono::system_clock::to_time_t(startx);
             const std::time_t t_end = std::chrono::system_clock::to_time_t(endx);
-            std::cout << endl << S_86 << std::put_time(std::localtime(&t_start), "%F %T") << endl;
-            std::cout << S_87 << std::put_time(std::localtime(&t_end), "%F %T") << endl;
+            std::cout << endl << S_86 << t_start << endl;
+            std::cout << S_87 << t_end << endl;
             std::cout << elapsed_time * 1.0 / 1000000 << S_84 << endl;
             if (five_count == 0) {
                 std::cout << endl << S_127 << countx - countx_r << S_74 << endl << S_73 << countx << S_74 << endl
