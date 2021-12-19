@@ -224,7 +224,7 @@ int WRSpick(const int* weightx, int nom){
     const int typess1[3] = {0, 1, 2};
     const int typess2[2] = {0, 1};
     if (nom == 3 && ceilling > 10000) ceilling = 10000;
-    int randomn = generatorz() % static_cast<unsigned long long int>(ceilling) + 1;
+    int randomn = generatorz() % static_cast<unsigned long long int>(ceilling);
     int tc = 0, results = 0;
     for (int inin = 0; inin < nom; inin ++){
         if (randomn < weightx[inin]) {
