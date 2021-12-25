@@ -62,7 +62,7 @@
                     bool check = false;\
                     if (d_item_n[kind] > 0) d_item_n[kind]--;\
                     if (d_item_n[kind] < 0) { std::cout << E_10 << endl; goto full_quit; }\
-                    for (int ikk = 0; ikk < 111; ikk++) {\
+                    for (int ikk = 0; ikk < 112; ikk++) {\
                     if (d_item_n[ikk] > 0) { d_item_c = true; check = true; break; }\
                     else if (d_item_n[ikk] == 0) d_item_c = false;\
                     else { std::cout << E_10 << endl; goto full_quit; }\
