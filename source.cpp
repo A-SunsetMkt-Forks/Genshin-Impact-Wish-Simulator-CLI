@@ -123,6 +123,7 @@ up_five = 0,
 size_nup_four_c = 1, 
 luck = 0,
 luckiest = 0,
+e_sav = 0,
 nup_five_c[32] = { 0, 1, 2, 3, 4 },
 nup_five_w[32] = { 5, 6, 7, 8, 9, 10, 11, 12, 13, 14 },
 nup_four_w[64] = { 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49 },
@@ -258,10 +259,10 @@ void set_pool_3(int *up_five_g, int size_nup_four_c_p, int* tempg1, int* tempg5,
 }
 
 int main(int argc, char* argv[]) {
-    static char default_argv0[] = "giwscli";
-    if (!argv[0] || !argv[0][0])
-        argv[0] = default_argv0;
-    y_print = true;
+        static char default_argv0[] = "giwscli";
+        if (!argv[0] || !argv[0][0])
+            argv[0] = default_argv0;
+        y_print = true;
     enter_chosen_banner:
         d_item_c = true,
         is_s_mode = false,
@@ -294,6 +295,7 @@ int main(int argc, char* argv[]) {
         switch_e_sav = 0,
         luck = 0,
         luckiest = 0,
+        e_sav = 0,
         size_nup_four_w = 18,
         countx = 0,
         wishes_number = 0,
@@ -359,12 +361,12 @@ int main(int argc, char* argv[]) {
             goto full_quit;
         }
         std::cout << S_1 << endl << S_2 << endl << S_3 << endl << S_4 << endl << endl;
-        enter_chosen_banner_switch:
-        std::cout << S_5 << endl;
-        std::cout << S_6 << endl << S_7 << endl << S_108 << endl << S_8 << endl << S_9 << endl << S_10 << endl << endl;
+    enter_chosen_banner_switch:
+        std::cout << S_5 << endl << S_6 << endl << S_7 << endl << S_108 << endl << S_8 << endl << S_9 << endl << S_10 << endl << endl;
         std::cin >> chosen_banner;
         if (cin.fail()) { chosen_banner = 0; std::cout << endl << S_11 << endl << endl; cin.clear(); cin.ignore(32767, '\n'); goto enter_chosen_banner; }
-        enter_chosen_event:
+    enter_chosen_event:
+        e_sav = chosen_event;
         switch (chosen_banner) {
         case -1: goto full_quit; break;
         case 1: {
@@ -435,7 +437,7 @@ int main(int argc, char* argv[]) {
         default: {chosen_banner = 0; chosen_event = 0; quit = true; std::cout << endl << S_53 << endl << endl; goto enter_chosen_banner; } break;
         }
         // choose event
-        set_banner:
+    set_banner:
         if (chosen_banner == 1) {
             if (chosen_event < 22) switch_e_should_be = 0;
             switch (chosen_event) {
@@ -837,15 +839,16 @@ int main(int argc, char* argv[]) {
         else if (chosen_banner == 1 || chosen_banner == 2 || chosen_banner == 4) min_fives = 90;
         else if (chosen_banner == 5) min_fives = INT_MAX;
         else { std::cout << E_7 << endl; goto full_quit; }
-        pre_core_loop:
+    pre_core_loop:
         if (switch_b_sav == chosen_banner && switch_e_sav == chosen_event) is_dualcross = true;
+        else if (e_sav == chosen_event) is_dualcross = true;
         else is_dualcross = false;
         if (is_dualcross) goto core_loop;
         else { unmet4_c = 0; unmet4_w = 0; unmet5_c = 0; unmet5_w = 0; }
-        core_loop:
+    core_loop:
         while (true) {
             if (quit) { std::cout << E_6 << endl; goto full_quit; }
-            enter_wishes_number:
+        enter_wishes_number:
             d_item_c = true;
             std::cout << endl << S_54 << endl << S_55 << endl << S_56 << endl << S_57 << endl << S_58 << endl << S_59 << endl << S_60;
             if (chosen_banner == 1 || chosen_banner == 2 || chosen_banner == 3 || chosen_banner == 4) {std::cout << ";" << endl << S_90; }
@@ -1278,7 +1281,7 @@ int main(int argc, char* argv[]) {
             }
             else if (wishes_number < 1) { wishes_number = 0; std::cout << S_72 << endl; goto enter_wishes_number;}
             else { std::cout << S_85 << endl << endl; }
-            core_core_loop:
+        core_core_loop:
             countx_r = countx;
             if (y_arg) { std::cout << S_1 << endl << S_2 << endl << S_3 << endl << S_4 << endl << endl << S_85 << endl << endl; }
             if (!is_s_mode) { d_item_c = false; }
