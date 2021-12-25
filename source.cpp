@@ -9,7 +9,7 @@
                     else if ((kind) < 50 ) { std::cout << "!!**** "; }\
                     else if ((kind) < 63 ) { std::cout << "*** "; }\
                     else if ((kind) == 71 || (kind) == 79 || (kind) == 80 || (kind) == 82 || (kind) == 83 || (kind) == 84 || (kind) == 88 || (kind) == 91 || (kind) == 95 || (kind) == 100 || (kind) == 102 || (kind) == 103 || (kind) == 104 || (kind) == 106 ||(kind) == 108 ) { std::cout << "!!**** "; }\
-                    else if ((kind) < 111 ) { std::cout << "!!!!!***** "; }\
+                    else if ((kind) < 112 ) { std::cout << "!!!!!***** "; }\
                     else {  std::cout << E_1 << endl; goto full_quit; }\
                 } // cout stars prefix
 #define output_string() {if (y_print) {std::cout << countx + 1 << "(" << five_star_assurance_number << ")(" << four_star_assurance_number << ") ";\
@@ -62,7 +62,7 @@
                     bool check = false;\
                     if (d_item_n[kind] > 0) d_item_n[kind]--;\
                     if (d_item_n[kind] < 0) { std::cout << E_10 << endl; goto full_quit; }\
-                    for (int ikk = 0; ikk < 110; ikk++) {\
+                    for (int ikk = 0; ikk < 111; ikk++) {\
                     if (d_item_n[ikk] > 0) { d_item_c = true; check = true; break; }\
                     else if (d_item_n[ikk] == 0) d_item_c = false;\
                     else { std::cout << E_10 << endl; goto full_quit; }\
@@ -136,9 +136,10 @@ nup_four_cg5[16] = { 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 28, 30, 71,
 nup_four_cg6[17] = { 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 28, 30, 71, 91, 95 },
 nup_four_cg7[18] = { 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 28, 30, 71, 91, 95, 100 },
 nup_four_cg8[19] = { 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 28, 30, 71, 91, 95, 100, 106 },
+nup_four_cg9[20] = { 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 28, 30, 71, 91, 95, 100, 106, 108 },
 four_stars_c[23] = { 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 71, 91, 95, 100, 106, 108 },
 four_stars_w[27] = { 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 79, 80, 82, 83, 84, 88, 102, 103, 104 },
-five_stars_c[22] = { 0, 1, 2, 3, 4, 63, 64, 65, 66, 67, 68, 69, 70, 72, 86, 89, 90, 94, 96, 99, 105, 109 },
+five_stars_c[23] = { 0, 1, 2, 3, 4, 63, 64, 65, 66, 67, 68, 69, 70, 72, 86, 89, 90, 94, 96, 99, 105, 109, 111 },
 five_stars_w[26] = { 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 73, 74, 75, 76, 77, 78, 81, 85, 87, 92, 93, 97, 98, 101, 107, 110 };
 long long int countx = 0,
 wishes_number = 0,
@@ -160,8 +161,7 @@ string pname[128] = {C_0, C_1, C_2, C_3, C_4, C_5, C_6, C_7, C_8, C_9, C_10, C_1
                 C_41, C_42, C_43, C_44, C_45, C_46, C_47, C_48, C_49, C_50, C_51, C_52, C_53, C_54, C_55, C_56, C_57, C_58, C_59, C_60,
                 C_61, C_62, C_63, C_64, C_65, C_66, C_67, C_68, C_69, C_70, C_71, C_72, C_73, C_74, C_75, C_76, C_77, C_78, C_79, C_80,
                 C_81, C_82, C_83, C_84, C_85, C_86, C_87, C_88, C_89, C_90, C_91, C_92, C_93, C_94, C_95, C_96, C_97, C_98, C_99, C_100,
-                C_101, C_102, C_103, C_104, C_105, C_106, C_107, C_108, C_109, C_110,
-                "Placeholder",
+                C_101, C_102, C_103, C_104, C_105, C_106, C_107, C_108, C_109, C_110, C_111,
                 "Placeholder",
                 "Placeholder",
                 "Placeholder",
@@ -184,8 +184,7 @@ string pnameshort[128] = {X_0, X_1, X_2, X_3, X_4, X_5, X_6, X_7, X_8, X_9, X_10
                 X_41, X_42, X_43, X_44, X_45, X_46, X_47, X_48, X_49, X_50, X_51, X_52, X_53, X_54, X_55, X_56, X_57, X_58, X_59, X_60,
                 X_61, X_62, X_63, X_64, X_65, X_66, X_67, X_68, X_69, X_70, X_71, X_72, X_73, X_74, X_75, X_76, X_77, X_78, X_79, X_80,
                 X_81, X_82, X_83, X_84, X_85, X_86, X_87, X_88, X_89, X_90, X_91, X_92, X_93, X_94, X_95, X_96, X_97, X_98, X_99, X_100,
-                X_101, X_102, X_103, X_104, X_105, X_106, X_107, X_108, X_109, X_110,
-                "Placeholder",
+                X_101, X_102, X_103, X_104, X_105, X_106, X_107, X_108, X_109, X_110, X_111,
                 "Placeholder",
                 "Placeholder",
                 "Placeholder",
@@ -373,7 +372,7 @@ int main(int argc, char* argv[]) {
             std::cout << endl << S_12 << endl << S_13 << endl << S_109 << endl << S_14 << endl << S_15 << endl << S_16 << endl << S_17 << endl << S_18 << endl
                 << S_19 << endl << S_20 << endl << S_21 << endl << S_22 << endl << S_23 << endl << S_24 << endl << S_25 << endl << S_26 << endl
                 << S_27 << endl << S_28 << endl << S_29 << endl << S_30 << endl << S_94 << endl << S_95 << endl << S_100 << endl << S_101 << endl
-                << S_102 << endl << S_103 << endl << endl;
+                << S_102 << endl << S_103 << endl << S_144 << endl << S_145 << endl << endl;
             std::cin >> chosen_event;
             fate_weapon = 0;
             fate_points = 0;
@@ -382,11 +381,11 @@ int main(int argc, char* argv[]) {
             if (cin.fail()) { chosen_event = 0; std::cout << endl << S_11 << endl; cin.clear(); cin.ignore(32767, '\n'); goto enter_chosen_event; }
             else if (chosen_event == -1) { chosen_event = 0; is_cross = true; std::cout << endl; goto enter_chosen_banner; }
             else if (chosen_event == -2) { chosen_event = 0; is_cross = true; std::cout << endl; goto enter_chosen_banner_switch; }
-            else if (chosen_event > 0 && chosen_event < 24 ) quit = false; else { std::cout << endl << S_31 << endl; goto enter_chosen_event; }
+            else if (chosen_event > 0 && chosen_event < 26 ) quit = false; else { std::cout << endl << S_31 << endl; goto enter_chosen_event; }
         } break;
         case 2: {
             chosen_event = 0;
-            std::cout << endl << S_12 << endl << S_13 << endl << S_109 << endl << S_107 << endl << endl;
+            std::cout << endl << S_12 << endl << S_13 << endl << S_109 << endl << S_107 << endl << S_146 << endl << S_147 << endl << endl;
             std::cin >> chosen_event;
             fate_weapon = 0;
             fate_points = 0;
@@ -395,32 +394,33 @@ int main(int argc, char* argv[]) {
             if (cin.fail()) { chosen_event = 0; std::cout << endl << S_11 << endl; cin.clear(); cin.ignore(32767, '\n'); goto enter_chosen_event; }
             else if (chosen_event == -1) { chosen_event = 0; is_cross = true; std::cout << endl; goto enter_chosen_banner; }
             else if (chosen_event == -2) { chosen_event = 0; is_cross = true; std::cout << endl; goto enter_chosen_banner_switch; }
-            else if (chosen_event > 0 && chosen_event < 2) quit = false; else { std::cout << endl << S_31 << endl; goto enter_chosen_event; }
+            else if (chosen_event > 0 && chosen_event < 4) quit = false; else { std::cout << endl << S_31 << endl; goto enter_chosen_event; }
         } break;
         case 3: {
             chosen_event = 0;
             std::cout << endl << S_12 << endl << S_13 << endl << S_109 << endl << S_32 << endl << S_33 << endl << S_34 << endl << S_35 << endl << S_36 << endl
                 << S_37 << endl << S_38 << endl << S_39 << endl << S_40 << endl << S_41 << endl << S_42 << endl << S_43 << endl << S_44 << endl
-                << S_45 << endl << S_46 << endl << S_47 << endl << S_96 << endl << S_97 << endl << S_104 << endl << S_105 << endl << S_111 << endl << S_126 << endl << endl;
+                << S_45 << endl << S_46 << endl << S_47 << endl << S_96 << endl << S_97 << endl << S_104 << endl << S_105 << endl << S_111 << endl
+                << S_126 << endl << S_148 << endl << S_149 << endl << endl;
             std::cin >> chosen_event;
             fate_weapon = 0;
             fate_points = 0;
             if (cin.fail()) { chosen_event = 0; std::cout << endl << S_11 << endl; cin.clear(); cin.ignore(32767, '\n'); goto enter_chosen_event; }
             else if (chosen_event == -1) { chosen_event = 0; is_cross = true; std::cout << endl; goto enter_chosen_banner; }
             else if (chosen_event == -2) { chosen_event = 0; is_cross = true; std::cout << endl; goto enter_chosen_banner_switch; }
-            else if (chosen_event > 0 && chosen_event < 23 ) quit = false; else { std::cout << endl << S_31 << endl; goto enter_chosen_event; }
+            else if (chosen_event > 0 && chosen_event < 25 ) quit = false; else { std::cout << endl << S_31 << endl; goto enter_chosen_event; }
         } break;
         case 4: {
             chosen_event = 0;
             std::cout << endl << S_12 << endl << S_13 << endl << S_109 << endl << S_48 << endl << S_49 << endl << S_50 << endl << S_51 << endl << S_98 << endl
-                << S_99 << endl << S_106 << endl << S_110 << endl << endl;
+                << S_99 << endl << S_106 << endl << S_110 << endl << S_150 << endl << endl;
             std::cin >> chosen_event;
             fate_weapon = 0;
             fate_points = 0;
             if (cin.fail()) { chosen_event = 0; std::cout << endl << S_11 << endl; cin.clear(); cin.ignore(32767, '\n'); goto enter_chosen_event; }
             else if (chosen_event == -1) { chosen_event = 0; is_cross = true; std::cout << endl; goto enter_chosen_banner; }
             else if (chosen_event == -2) { chosen_event = 0; is_cross = true; std::cout << endl; goto enter_chosen_banner_switch; }
-            else if (chosen_event > 0 && chosen_event < 9 ) quit = false; else { std::cout << endl << S_31 << endl; goto enter_chosen_event; }
+            else if (chosen_event > 0 && chosen_event < 10 ) quit = false; else { std::cout << endl << S_31 << endl; goto enter_chosen_event; }
         } break;
         case 5: {
             chosen_event = 0;
@@ -555,11 +555,23 @@ int main(int argc, char* argv[]) {
             case 23: {
                 switch_e_sav = switch_e_should_be;
                 switch_e_should_be = 0;
-                up_five = 105;
-                size_nup_four_c = 18;
                 int tempg1[3] = { 26, 30, 106 };
                 int tempg5[8] = { 26, 30, 0, 0, 0, 0, 0, 0 };
                 set_pool_1_m(105, 18, nup_four_cg7)
+            } break;
+            case 24: {
+                switch_e_sav = switch_e_should_be;
+                switch_e_should_be = 2;
+                int tempg1[3] = { 26, 30, 108 };
+                int tempg5[8] = { 26, 30, 0, 0, 0, 0, 0, 0 };
+                set_pool_1_m(109, 19, nup_four_cg8)
+            } break;
+            case 25: {
+                switch_e_sav = switch_e_should_be;
+                switch_e_should_be = 3;
+                int tempg1[3] = { 26, 30, 106 };
+                int tempg5[8] = { 26, 30, 0, 0, 0, 0, 0, 0 };
+                set_pool_1_m(66, 19, nup_four_cg8)
             } break;
             default: { std::cout << E_5 << endl; goto full_quit; } break;
             }
@@ -573,6 +585,20 @@ int main(int argc, char* argv[]) {
                 int tempg5[8] = { 15, 20, 21, 0, 0, 0, 0, 0 };
                 set_pool_1_m(72, 18, nup_four_cg7)
             } break;
+            case 2: {
+                switch_e_sav = switch_e_should_be;
+                switch_e_should_be = 24;
+                int tempg1[3] = { 26, 30, 108 };
+                int tempg5[8] = { 26, 30, 0, 0, 0, 0, 0, 0 };
+                set_pool_1_m(69, 19, nup_four_cg8)
+            } break;
+            case 3: {
+                switch_e_sav = switch_e_should_be;
+                switch_e_should_be = 25;
+                int tempg1[3] = { 26, 30, 106 };
+                int tempg5[8] = { 26, 30, 0, 0, 0, 0, 0, 0 };
+                set_pool_1_m(68, 19, nup_four_cg8)
+            } break;
             default: { std::cout << E_5 << endl; goto full_quit; } break;
             }
         }
@@ -580,7 +606,6 @@ int main(int argc, char* argv[]) {
             switch (chosen_event) {
             case 1: {
                 int tempg6[2] = { 5, 14 };
-                size_nup_four_c = 11;
                 int tempg1[5] = { 34, 38, 40, 44, 48 };
                 int tempg5[8] = { 34, 38, 40, 44, 48, 0, 0, 0 };
                 int tempg7[8] = { 5, 14, 0, 0, 0, 0, 0, 0 };
@@ -588,7 +613,6 @@ int main(int argc, char* argv[]) {
             } break;
             case 2: {
                 int tempg6[2] = { 7, 11 };
-                size_nup_four_c = 11;
                 int tempg1[5] = { 33, 37, 41, 43, 49 };
                 int tempg5[8] = { 33, 37, 41, 43, 49, 0, 0, 0 };
                 int tempg7[8] = { 7, 11, 0, 0, 0, 0, 0, 0 };
@@ -596,7 +620,6 @@ int main(int argc, char* argv[]) {
             } break;
             case 3: {
                 int tempg6[2] = { 6, 73 };
-                size_nup_four_c = 11;
                 int tempg1[5] = { 32, 36, 40, 42, 48 };
                 int tempg5[8] = { 32, 36, 40, 42, 48, 0, 0, 0 };
                 int tempg7[8] = { 6, 0, 0, 0, 0, 0, 0, 0 };
@@ -604,7 +627,6 @@ int main(int argc, char* argv[]) {
             } break;
             case 4: {
                 int tempg6[2] = { 74, 75 };
-                size_nup_four_c = 11;
                 int tempg1[5] = { 35, 39, 41, 44, 46 };
                 int tempg5[8] = { 35, 39, 41, 44, 46, 0, 0, 0 };
                 int tempg7[8] = { 0, 0, 0, 0, 0, 0, 0, 0 };
@@ -612,7 +634,6 @@ int main(int argc, char* argv[]) {
             } break;
             case 5: {
                 int tempg6[2] = { 8, 76 };
-                size_nup_four_c = 13;
                 int tempg1[5] = { 34, 37, 40, 45, 49 };
                 int tempg5[8] = { 34, 37, 40, 45, 49, 0, 0, 0 };
                 int tempg7[8] = { 8, 0, 0, 0, 0, 0, 0, 0 };
@@ -628,7 +649,6 @@ int main(int argc, char* argv[]) {
             } break;
             case 7: {
                 int tempg6[2] = { 9, 77 };
-                size_nup_four_c = 13;
                 int tempg1[5] = { 32, 36, 40, 43, 48 };
                 int tempg5[8] = { 32, 36, 40, 43, 48, 0, 0, 0 };
                 int tempg7[8] = { 9, 0, 0, 0, 0, 0, 0, 0 };
@@ -636,7 +656,6 @@ int main(int argc, char* argv[]) {
             } break;
             case 8: {
                 int tempg6[2] = { 11, 78 };
-                size_nup_four_c = 13;
                 int tempg1[5] = { 33, 38, 46, 79, 80 };
                 int tempg5[8] = { 33, 38, 46, 0, 0, 0, 0, 0 };
                 int tempg7[8] = { 11, 0, 0, 0, 0, 0, 0, 0 };
@@ -644,7 +663,6 @@ int main(int argc, char* argv[]) {
             } break;
             case 9: {
                 int tempg6[2] = { 13, 81 };
-                size_nup_four_c = 13;
                 int tempg1[5] = { 35, 41, 45, 82, 83 };
                 int tempg5[8] = { 35, 41, 45, 0, 0, 0, 0, 0 };
                 int tempg7[8] = { 13, 0, 0, 0, 0, 0, 0, 0 };
@@ -652,7 +670,6 @@ int main(int argc, char* argv[]) {
             } break;
             case 10: {
                 int tempg6[2] = { 6, 7 };
-                size_nup_four_c = 13;
                 int tempg1[5] = { 39, 40, 43, 49, 84 };
                 int tempg5[8] = { 39, 40, 43, 49, 0, 0, 0, 0 };
                 int tempg7[8] = { 6, 7, 0, 0, 0, 0, 0, 0 };
@@ -660,7 +677,6 @@ int main(int argc, char* argv[]) {
             } break;
             case 11: {
                 int tempg6[2] = { 73, 76 };
-                size_nup_four_c = 14;
                 int tempg1[5] = { 33, 36, 48, 79, 80 };
                 int tempg5[8] = { 33, 36, 48, 0, 0, 0, 0, 0 };
                 int tempg7[8] = { 0, 0, 0, 0, 0, 0, 0, 0 };
@@ -668,7 +684,6 @@ int main(int argc, char* argv[]) {
             } break;
             case 12: {
                 int tempg6[2] = { 14, 85 };
-                size_nup_four_c = 14;
                 int tempg1[5] = { 32, 37, 41, 42, 47 };
                 int tempg5[8] = { 32, 37, 41, 42, 47, 0, 0, 0 };
                 int tempg7[8] = { 14, 0, 0, 0, 0, 0, 0, 0 };
@@ -676,7 +691,6 @@ int main(int argc, char* argv[]) {
             } break;
             case 13: {
                 int tempg6[2] = { 7, 12 };
-                size_nup_four_c = 15;
                 int tempg1[5] = { 88, 46, 44, 40, 38 };
                 int tempg5[8] = { 46, 44, 40, 38, 0, 0, 0, 0 };
                 int tempg7[8] = { 7, 12, 0, 0, 0, 0, 0, 0 };
@@ -684,7 +698,6 @@ int main(int argc, char* argv[]) {
             } break;
             case 14: {
                 int tempg6[2] = { 87, 8 };
-                size_nup_four_c = 15;
                 int tempg1[5] = { 82, 83, 84, 45, 41 };
                 int tempg5[8] = { 45, 41, 0, 0, 0, 0, 0, 0 };
                 int tempg7[8] = { 8, 0, 0, 0, 0, 0, 0, 0 };
@@ -692,7 +705,6 @@ int main(int argc, char* argv[]) {
             } break;
             case 15: {
                 int tempg6[2] = { 92, 10 };
-                size_nup_four_c = 15;
                 int tempg1[5] = { 34, 39, 40, 43, 49 };
                 int tempg5[8] = { 34, 39, 40, 43, 49, 0, 0, 0 };
                 int tempg7[8] = { 10, 0, 0, 0, 0, 0, 0, 0 };
@@ -700,7 +712,6 @@ int main(int argc, char* argv[]) {
             } break;
             case 16: {
                 int tempg6[2] = { 93, 13 };
-                size_nup_four_c = 15;
                 int tempg1[5] = { 35, 37, 41, 42, 47 };
                 int tempg5[8] = { 35, 37, 41, 42, 47, 0, 0, 0 };
                 int tempg7[8] = { 13, 0, 0, 0, 0, 0, 0, 0 };
@@ -708,7 +719,6 @@ int main(int argc, char* argv[]) {
             } break;
             case 17: {
                 int tempg6[2] = { 97, 75 };
-                size_nup_four_c = 16;
                 int tempg1[5] = { 33, 38, 40, 44, 46 };
                 int tempg5[8] = { 33, 38, 40, 44, 46, 0, 0, 0 };
                 int tempg7[8] = { 0, 0, 0, 0, 0, 0, 0, 0 };
@@ -716,7 +726,6 @@ int main(int argc, char* argv[]) {
             } break;
             case 18: {
                 int tempg6[2] = { 98, 77 };
-                size_nup_four_c = 16;
                 int tempg1[5] = { 34, 39, 41, 45, 48 };
                 int tempg5[8] = { 34, 39, 41, 45, 48, 0, 0, 0 };
                 int tempg7[8] = { 0, 0, 0, 0, 0, 0, 0, 0 };
@@ -724,7 +733,6 @@ int main(int argc, char* argv[]) {
             } break;
             case 19: {
                 int tempg6[2] = { 101, 73 };
-                size_nup_four_c = 17;
                 int tempg1[5] = { 32, 36, 40, 49, 104 };
                 int tempg5[8] = { 32, 36, 40, 49, 0, 0, 0, 0 };
                 int tempg7[8] = { 0, 0, 0, 0, 0, 0, 0, 0 };
@@ -732,7 +740,6 @@ int main(int argc, char* argv[]) {
             } break;
             case 20: {
                 int tempg6[2] = { 78, 81 };
-                size_nup_four_c = 17;
                 int tempg1[5] = { 38, 42, 47, 102, 103 };
                 int tempg5[8] = { 38, 42, 47, 0, 0, 0, 0, 0 };
                 int tempg7[8] = { 0, 0, 0, 0, 0, 0, 0, 0 };
@@ -740,7 +747,6 @@ int main(int argc, char* argv[]) {
             } break;
             case 21: {
                 int tempg6[2] = { 85, 87 };
-                size_nup_four_c = 18;
                 int tempg1[5] = { 41, 43, 46, 83, 84 };
                 int tempg5[8] = { 41, 43, 46, 0, 0, 0, 0, 0 };
                 int tempg7[8] = { 0, 0, 0, 0, 0, 0, 0, 0 };
@@ -748,11 +754,24 @@ int main(int argc, char* argv[]) {
             } break;
             case 22: {
                 int tempg6[2] = { 6, 107 };
-                size_nup_four_c = 18;
                 int tempg1[5] = { 37, 40, 44, 82, 88 };
                 int tempg5[8] = { 37, 40, 44, 0, 0, 0, 0, 0 };
                 int tempg7[8] = { 6, 0, 0, 0, 0, 0, 0, 0 };
                 set_pool_3_m(18, nup_four_cg7)
+            } break;
+            case 23: {
+                int tempg6[2] = { 6, 110 };
+                int tempg1[5] = { 37, 40, 44, 82, 88 };
+                int tempg5[8] = { 37, 40, 44, 0, 0, 0, 0, 0 };
+                int tempg7[8] = { 6, 0, 0, 0, 0, 0, 0, 0 };
+                set_pool_3_m(19, nup_four_cg8)
+            } break;
+            case 24: {
+                int tempg6[2] = { 6, 107 };
+                int tempg1[5] = { 37, 40, 44, 82, 88 };
+                int tempg5[8] = { 37, 40, 44, 0, 0, 0, 0, 0 };
+                int tempg7[8] = { 6, 0, 0, 0, 0, 0, 0, 0 };
+                set_pool_3_m(19, nup_four_cg8)
             } break;
             default: { std::cout << E_5 << endl; goto full_quit; } break;
             }
@@ -798,6 +817,11 @@ int main(int argc, char* argv[]) {
                 int nup_four_cg38[22] = { 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 71, 91, 95, 100, 106 };
                 size_nup_four_c = 22;
                 memmove(nup_four_c, nup_four_cg38, sizeof(nup_four_cg38));
+            } break;
+            case 9: {
+                int nup_four_cg39[23] = { 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 71, 91, 95, 100, 106, 108 };
+                size_nup_four_c = 22;
+                memmove(nup_four_c, nup_four_cg39, sizeof(nup_four_cg39));
             } break;
             default: { std::cout << E_5 << endl; goto full_quit; } break;
             }
@@ -1851,7 +1875,7 @@ int main(int argc, char* argv[]) {
                     << S_77 << five_count_c << " : " << five_count_w << " : " << four_count_c << " : " << four_count_w << endl << endl;
             }
             else { std::cout << E_8 << endl; goto full_quit; }
-            for (int iout = 0; iout < 22; iout++) { if (pcount[five_stars_c[iout]] > 0) std::cout << pnameshort[five_stars_c[iout]] << "(" << pcount[five_stars_c[iout]] << ") "; }
+            for (int iout = 0; iout < 23; iout++) { if (pcount[five_stars_c[iout]] > 0) std::cout << pnameshort[five_stars_c[iout]] << "(" << pcount[five_stars_c[iout]] << ") "; }
             for (int iout = 0; iout < 26; iout++) { if (pcount[five_stars_w[iout]] > 0) std::cout << pnameshort[five_stars_w[iout]] << "(" << pcount[five_stars_w[iout]] << ") "; }
             if (five_count > 0) { std::cout << endl << endl; }
             for (int iout = 0; iout < 23; iout++) { if (pcount[four_stars_c[iout]] > 0) std::cout << pnameshort[four_stars_c[iout]] << "(" << pcount[four_stars_c[iout]] << ") "; }
