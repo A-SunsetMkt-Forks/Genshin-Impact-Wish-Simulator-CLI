@@ -143,7 +143,7 @@
 #define S_141 "Checking profile validity..."
 #define S_142 "Checking profile passed!"
 #define S_143 "Checking profile failed! Changes undone！"
-#define S_144 "(test) 24: _20220105-20220125 (Shenhe, Yun Jin, , )"
+#define S_144 "(test) 24: The Transcendent One Returns_20220105-20220125 (Shenhe, Yun Jin, , )"
 #define S_145 "(test) 25: Gentry of Hermitage_20220125-20220215 (Zhongli, , , )"
 #define S_146 "(test) 2: Invitation to Mundane Life_20220105-20220125 (Xiao, Yun Jin, , )"
 #define S_147 "(test) 3: Adrift in the Harbor_20220125-20220215 (Ganyu, , , )"
