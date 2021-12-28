@@ -157,7 +157,7 @@ min_fivesth = 1,
 max_fivecount = 1,
 min_fivecount = 1;
 
-string pname[128] = {C_0, C_1, C_2, C_3, C_4, C_5, C_6, C_7, C_8, C_9, C_10, C_11, C_12, C_13, C_14, C_15, C_16, C_17, C_18, C_19, C_20,
+const char* pname[128] = {C_0, C_1, C_2, C_3, C_4, C_5, C_6, C_7, C_8, C_9, C_10, C_11, C_12, C_13, C_14, C_15, C_16, C_17, C_18, C_19, C_20,
                 C_21, C_22, C_23, C_24, C_25, C_26, C_27, C_28, C_29, C_30, C_31, C_32, C_33, C_34, C_35, C_36, C_37, C_38, C_39, C_40,
                 C_41, C_42, C_43, C_44, C_45, C_46, C_47, C_48, C_49, C_50, C_51, C_52, C_53, C_54, C_55, C_56, C_57, C_58, C_59, C_60,
                 C_61, C_62, C_63, C_64, C_65, C_66, C_67, C_68, C_69, C_70, C_71, C_72, C_73, C_74, C_75, C_76, C_77, C_78, C_79, C_80,
@@ -180,7 +180,7 @@ string pname[128] = {C_0, C_1, C_2, C_3, C_4, C_5, C_6, C_7, C_8, C_9, C_10, C_1
                 "Placeholder",
                 "Placeholder",
 };
-string pnameshort[128] = {X_0, X_1, X_2, X_3, X_4, X_5, X_6, X_7, X_8, X_9, X_10, X_11, X_12, X_13, X_14, X_15, X_16, X_17, X_18, X_19, X_20,
+const char* pnameshort[128] = {X_0, X_1, X_2, X_3, X_4, X_5, X_6, X_7, X_8, X_9, X_10, X_11, X_12, X_13, X_14, X_15, X_16, X_17, X_18, X_19, X_20,
                 X_21, X_22, X_23, X_24, X_25, X_26, X_27, X_28, X_29, X_30, X_31, X_32, X_33, X_34, X_35, X_36, X_37, X_38, X_39, X_40,
                 X_41, X_42, X_43, X_44, X_45, X_46, X_47, X_48, X_49, X_50, X_51, X_52, X_53, X_54, X_55, X_56, X_57, X_58, X_59, X_60,
                 X_61, X_62, X_63, X_64, X_65, X_66, X_67, X_68, X_69, X_70, X_71, X_72, X_73, X_74, X_75, X_76, X_77, X_78, X_79, X_80,
@@ -355,11 +355,15 @@ int main(int argc, char* argv[]) {
             y_arg = true;
             goto set_banner;
         }
-        else if (argc != 1) {
+        else if (argc == 1) {
+            goto welcome;
+        }
+        else {
             std::cout << E_11 << endl;
             y_arg = true;
             goto full_quit;
         }
+    welcome:
         std::cout << S_1 << endl << S_2 << endl << S_3 << endl << S_4 << endl << endl;
     enter_chosen_banner_switch:
         std::cout << S_5 << endl << S_6 << endl << S_7 << endl << S_108 << endl << S_8 << endl << S_9 << endl << S_10 << endl << endl;
@@ -564,8 +568,8 @@ int main(int argc, char* argv[]) {
             case 24: {
                 switch_e_sav = switch_e_should_be;
                 switch_e_should_be = 2;
-                int tempg1[3] = { 26, 30, 108 };
-                int tempg5[8] = { 26, 30, 0, 0, 0, 0, 0, 0 };
+                int tempg1[3] = { 19, 23, 108 };
+                int tempg5[8] = { 19, 23, 0, 0, 0, 0, 0, 0 };
                 set_pool_1_m(109, 19, nup_four_cg8)
             } break;
             case 25: {
@@ -590,8 +594,8 @@ int main(int argc, char* argv[]) {
             case 2: {
                 switch_e_sav = switch_e_should_be;
                 switch_e_should_be = 24;
-                int tempg1[3] = { 26, 30, 108 };
-                int tempg5[8] = { 26, 30, 0, 0, 0, 0, 0, 0 };
+                int tempg1[3] = { 19, 23, 108 };
+                int tempg5[8] = { 19, 23, 0, 0, 0, 0, 0, 0 };
                 set_pool_1_m(69, 19, nup_four_cg8)
             } break;
             case 3: {
@@ -762,10 +766,10 @@ int main(int argc, char* argv[]) {
                 set_pool_3_m(18, nup_four_cg7)
             } break;
             case 23: {
-                int tempg6[2] = { 6, 110 };
+                int tempg6[2] = { 9, 110 };
                 int tempg1[5] = { 37, 40, 44, 82, 88 };
                 int tempg5[8] = { 37, 40, 44, 0, 0, 0, 0, 0 };
-                int tempg7[8] = { 6, 0, 0, 0, 0, 0, 0, 0 };
+                int tempg7[8] = { 9, 0, 0, 0, 0, 0, 0, 0 };
                 set_pool_3_m(19, nup_four_cg8)
             } break;
             case 24: {
@@ -1886,7 +1890,6 @@ int main(int argc, char* argv[]) {
             std::cout << endl << endl; 
             if (y_arg) goto full_quit;
             // a bunch of output of statistics
-            //if (chosen_banner == 4 && chosen_event == 1 && count == 20) goto full_quit;
         }
         goto enter_chosen_banner;
 full_quit:
