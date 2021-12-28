@@ -1,6 +1,9 @@
 ﻿## Genshin-Impact-Wish-Simulator-CLI
 [![License](https://img.shields.io/badge/Licence-GPL-blue.svg)](https://github.com/Jirehlov/GenshinImpactWishSimulatorCLI/blob/master/LICENSE)
 
+## Other versions
+Fileout: [Genshin Impact Wish Simulator Fileout](https://github.com/Jirehlov/Genshin-Impact-Wish-Simulator-Fileout)
+
 ## English
 This is a CLI Wish Simulator for Genshin Impact players.
 
