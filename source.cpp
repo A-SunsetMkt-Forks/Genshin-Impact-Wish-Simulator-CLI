@@ -15,7 +15,7 @@
 #define output_string() {if (y_print) {std::cout << countx + 1 << "(" << five_star_assurance_number << ")(" << four_star_assurance_number << ") ";\
                     casesx( kind )\
                     std::cout << pname[kind] << endl; }\
-                    pcount[kind] ++;\
+                    pcount[kind]++;\
                     wishes_number--;\
                     countx++;\
                     five_star_assurance_number++;\
@@ -54,7 +54,8 @@
                     luckstar[9] = star;\
                     luck = 0;\
                 } // get the recorded luckiest
-#define Tri() {star = 3;\
+#define Tri() {\
+                star = 3;\
                 type = 2;\
                 kind = rspick(three_g, 13);\
                 } // 3-star kind settler for all banners
@@ -80,6 +81,16 @@
                     std::cout << S_143 << endl;\
                     wishes_number = 0;\
                     goto enter_wishes_number;\
+                }
+#define cin_error_by(){\
+                    std::cout << endl << S_11 << endl;\
+                    cin.clear();\
+                    cin.ignore(32767, '\n');\
+                }
+#define cin_error_by2(){\
+                    std::cout << endl << S_11 << endl << endl;\
+                    cin.clear();\
+                    cin.ignore(32767, '\n');\
                 }
 
 using namespace std;
@@ -368,7 +379,7 @@ welcome:
 enter_chosen_banner_switch:
     std::cout << S_5 << endl << S_6 << endl << S_7 << endl << S_108 << endl << S_8 << endl << S_9 << endl << S_10 << endl << endl;
     std::cin >> chosen_banner;
-    if (cin.fail()) { chosen_banner = 0; std::cout << endl << S_11 << endl << endl; cin.clear(); cin.ignore(32767, '\n'); goto enter_chosen_banner; }
+    if (cin.fail()) { chosen_banner = 0; cin_error_by2() goto enter_chosen_banner; }
 enter_chosen_event:
     e_sav = chosen_event;
     switch (chosen_banner) {
@@ -384,7 +395,7 @@ enter_chosen_event:
         fate_points = 0;
         switch_b_sav = switch_b_should_be;
         switch_b_should_be = 2;
-        if (cin.fail()) { chosen_event = 0; std::cout << endl << S_11 << endl; cin.clear(); cin.ignore(32767, '\n'); goto enter_chosen_event; }
+        if (cin.fail()) { chosen_event = 0; cin_error_by() goto enter_chosen_event; }
         else if (chosen_event == -1) { chosen_event = 0; is_cross = true; std::cout << endl; goto enter_chosen_banner; }
         else if (chosen_event == -2) { chosen_event = 0; is_cross = true; std::cout << endl; goto enter_chosen_banner_switch; }
         else if (chosen_event > 0 && chosen_event < 26) quit = false; else { std::cout << endl << S_31 << endl; goto enter_chosen_event; }
@@ -397,7 +408,7 @@ enter_chosen_event:
         fate_points = 0;
         switch_b_sav = switch_b_should_be;
         switch_b_should_be = 1;
-        if (cin.fail()) { chosen_event = 0; std::cout << endl << S_11 << endl; cin.clear(); cin.ignore(32767, '\n'); goto enter_chosen_event; }
+        if (cin.fail()) { chosen_event = 0; cin_error_by() goto enter_chosen_event; }
         else if (chosen_event == -1) { chosen_event = 0; is_cross = true; std::cout << endl; goto enter_chosen_banner; }
         else if (chosen_event == -2) { chosen_event = 0; is_cross = true; std::cout << endl; goto enter_chosen_banner_switch; }
         else if (chosen_event > 0 && chosen_event < 4) quit = false; else { std::cout << endl << S_31 << endl; goto enter_chosen_event; }
@@ -411,7 +422,7 @@ enter_chosen_event:
         std::cin >> chosen_event;
         fate_weapon = 0;
         fate_points = 0;
-        if (cin.fail()) { chosen_event = 0; std::cout << endl << S_11 << endl; cin.clear(); cin.ignore(32767, '\n'); goto enter_chosen_event; }
+        if (cin.fail()) { chosen_event = 0; cin_error_by() goto enter_chosen_event; }
         else if (chosen_event == -1) { chosen_event = 0; is_cross = true; std::cout << endl; goto enter_chosen_banner; }
         else if (chosen_event == -2) { chosen_event = 0; is_cross = true; std::cout << endl; goto enter_chosen_banner_switch; }
         else if (chosen_event > 0 && chosen_event < 25) quit = false; else { std::cout << endl << S_31 << endl; goto enter_chosen_event; }
@@ -423,7 +434,7 @@ enter_chosen_event:
         std::cin >> chosen_event;
         fate_weapon = 0;
         fate_points = 0;
-        if (cin.fail()) { chosen_event = 0; std::cout << endl << S_11 << endl; cin.clear(); cin.ignore(32767, '\n'); goto enter_chosen_event; }
+        if (cin.fail()) { chosen_event = 0; cin_error_by() goto enter_chosen_event; }
         else if (chosen_event == -1) { chosen_event = 0; is_cross = true; std::cout << endl; goto enter_chosen_banner; }
         else if (chosen_event == -2) { chosen_event = 0; is_cross = true; std::cout << endl; goto enter_chosen_banner_switch; }
         else if (chosen_event > 0 && chosen_event < 10) quit = false; else { std::cout << endl << S_31 << endl; goto enter_chosen_event; }
@@ -434,7 +445,7 @@ enter_chosen_event:
         std::cin >> chosen_event;
         fate_weapon = 0;
         fate_points = 0;
-        if (cin.fail()) { chosen_event = 0; std::cout << endl << S_11 << endl; cin.clear(); cin.ignore(32767, '\n'); goto enter_chosen_event; }
+        if (cin.fail()) { chosen_event = 0; cin_error_by() goto enter_chosen_event; }
         else if (chosen_event == -1) { chosen_event = 0; is_cross = true; std::cout << endl; goto enter_chosen_banner; }
         else if (chosen_event == -2) { chosen_event = 0; is_cross = true; std::cout << endl; goto enter_chosen_banner_switch; }
         else if (chosen_event == 1) quit = false; else { std::cout << endl << S_31 << endl; goto enter_chosen_event; } } break;
@@ -859,7 +870,7 @@ core_loop:
         if (chosen_banner != 5) { std::cout << ";" << endl << S_128; }
         std::cout << ";" << endl << S_113 << endl << S_112 << endl << endl;
         std::cin >> wishes_number;
-        if (cin.fail()) { wishes_number = 0; std::cout << endl << S_11 << endl; cin.clear(); cin.ignore(32767, '\n'); goto enter_wishes_number; }
+        if (cin.fail()) { wishes_number = 0; cin_error_by() goto enter_wishes_number; }
         std::cout << endl;
         if (wishes_number == -1) { wishes_number = 0; goto enter_chosen_event; }
         else if (wishes_number == -2) {
@@ -878,7 +889,7 @@ core_loop:
             std::cout << S_91 << endl << S_92 << endl << S_93 << endl << endl;
             int cleanornot = 0;
             std::cin >> cleanornot;
-            if (cin.fail()) { cleanornot = 0; std::cout << endl << S_11 << endl << endl; cin.clear(); cin.ignore(32767, '\n'); goto enter_cleanornot; }
+            if (cin.fail()) { cleanornot = 0; cin_error_by2() goto enter_cleanornot; }
             std::cout << endl;
             if (cleanornot == 1) {
                 wishes_number = 0;
@@ -979,7 +990,7 @@ core_loop:
                     << S_70 << " ( " << pname[up_five_g[1]] << " ) " << endl
                     << S_71 << endl << endl;
                 std::cin >> fate_weapon;
-                if (cin.fail()) { fate_weapon = 0; std::cout << endl << S_11 << endl << endl; cin.clear(); cin.ignore(32767, '\n'); goto enter_fate_weapon; }
+                if (cin.fail()) { fate_weapon = 0; cin_error_by2() goto enter_fate_weapon; }
                 else if (fate_weapon == -1) { fate_weapon = 0; goto enter_wishes_number; }
                 else if (fate_weapon < -1 || fate_weapon > 2) { std::cout << endl << S_72 << endl << endl; fate_weapon = 0; goto enter_fate_weapon; }
                 else fate_points = 0;
@@ -1001,7 +1012,7 @@ core_loop:
                     << S_70 << " ( " << pname[up_five_g[1]] << " ) " << endl
                     << S_71 << endl << endl;
                 std::cin >> sav[8];
-                if (cin.fail()) { sav[8] = 0; std::cout << endl << S_11 << endl << endl; cin.clear(); cin.ignore(32767, '\n'); goto enter_profile_0; }
+                if (cin.fail()) { sav[8] = 0; cin_error_by2() goto enter_profile_0; }
                 else if (sav[8] == -1) { sav[8] = 0; wishes_number = 0; goto enter_wishes_number; }
                 else if (sav[8] == -2) { goto apply_profile; }
                 else if (sav[8] < -1 || sav[8] > 2) { sav[8] = 0; std::cout << endl << S_72 << endl << endl; goto enter_profile_0; }
@@ -1010,7 +1021,7 @@ core_loop:
             enter_profile_01:
                 std::cout << S_138 << endl << S_139 << endl << endl << S_140 << endl;
                 std::cin >> sav[9];
-                if (cin.fail()) { sav[9] = 0; std::cout << endl << S_11 << endl; cin.clear(); cin.ignore(32767, '\n'); goto enter_profile_01; }
+                if (cin.fail()) { sav[9] = 0; cin_error_by() goto enter_profile_01; }
                 else if (sav[9] == -1) { sav[9] = 0; wishes_number = 0; goto enter_wishes_number; }
                 else if (sav[9] == -2) { goto apply_profile; }
                 else if (sav[9] != 0 && sav[9] != 1 && sav[9] != 2) { sav[9] = 0; std::cout << endl << S_72 << endl; goto enter_profile_01; }
@@ -1021,7 +1032,7 @@ core_loop:
         enter_profile_1:
             std::cout << S_138 << endl << S_139 << endl << endl << S_129 << endl << endl;
             std::cin >> sav[0];
-            if (cin.fail()) { sav[0] = 0; std::cout << endl << S_11 << endl; cin.clear(); cin.ignore(32767, '\n'); goto enter_profile_1; }
+            if (cin.fail()) { sav[0] = 0; cin_error_by() goto enter_profile_1; }
             else if (sav[0] == -1) { sav[0] = 0; wishes_number = 0; goto enter_wishes_number; }
             else if (sav[0] == -2) { goto apply_profile; }
             else if (sav[0] != 1 && sav[0] != 0) { sav[0] = 0; std::cout << endl << S_72 << endl << endl; goto enter_profile_1; }
@@ -1030,7 +1041,7 @@ core_loop:
         enter_profile_2:
             std::cout << S_138 << endl << S_139 << endl << endl << S_130 << S_137 << endl << endl;
             std::cin >> sav[1];
-            if (cin.fail()) { sav[1] = 0; std::cout << endl << S_11 << endl; cin.clear(); cin.ignore(32767, '\n'); goto enter_profile_2; }
+            if (cin.fail()) { sav[1] = 0; cin_error_by() goto enter_profile_2; }
             else if (sav[1] == -1) { sav[1] = 0; wishes_number = 0; goto enter_wishes_number; }
             else if (sav[1] == -2) { goto apply_profile; }
             else if ((chosen_banner == 1 || chosen_banner == 2 || chosen_banner == 4) && sav[1] > 89 || chosen_banner == 3 && sav[1] > 79 || sav[1] < 0) { sav[1] = 0; std::cout << endl << S_72 << endl << endl; goto enter_profile_2; }
@@ -1039,7 +1050,7 @@ core_loop:
         enter_profile_3:
             std::cout << S_138 << endl << S_139 << endl << endl << S_131 << endl << endl;
             std::cin >> sav[2];
-            if (cin.fail()) { sav[2] = 0; std::cout << endl << S_11 << endl; cin.clear(); cin.ignore(32767, '\n'); goto enter_profile_3; }
+            if (cin.fail()) { sav[2] = 0; cin_error_by() goto enter_profile_3; }
             else if (sav[2] == -1) { sav[2] = 0; wishes_number = 0; goto enter_wishes_number; }
             else if (sav[2] == -2) { goto apply_profile; }
             else if (sav[2] != 1 && sav[2] != 0) { sav[2] = 0; std::cout << endl << S_72 << endl << endl; goto enter_profile_3; }
@@ -1048,7 +1059,7 @@ core_loop:
         enter_profile_4:
             std::cout << S_138 << endl << S_139 << endl << endl << S_132 << S_137 << endl << endl;
             std::cin >> sav[3];
-            if (cin.fail()) { sav[3] = 0; std::cout << endl << S_11 << endl; cin.clear(); cin.ignore(32767, '\n'); goto enter_profile_4; }
+            if (cin.fail()) { sav[3] = 0; cin_error_by() goto enter_profile_4; }
             else if (sav[3] == -1) { sav[3] = 0; wishes_number = 0; goto enter_wishes_number; }
             else if (sav[3] == -2) { goto apply_profile; }
             else if (sav[3] < 0) { sav[3] = 0; std::cout << endl << S_72 << endl << endl; goto enter_profile_4; }
@@ -1057,7 +1068,7 @@ core_loop:
         enter_profile_5:
             std::cout << S_138 << endl << S_139 << endl << endl << S_133 << S_137 << endl << endl;
             std::cin >> sav[4];
-            if (cin.fail()) { sav[4] = 0; std::cout << endl << S_11 << endl; cin.clear(); cin.ignore(32767, '\n'); goto enter_profile_5; }
+            if (cin.fail()) { sav[4] = 0; cin_error_by() goto enter_profile_5; }
             else if (sav[4] == -1) { sav[4] = 0; wishes_number = 0; goto enter_wishes_number; }
             else if (sav[4] == -2) { goto apply_profile; }
             else if (sav[4] < 0) { sav[4] = 0; std::cout << endl << S_72 << endl << endl; goto enter_profile_5; }
@@ -1069,7 +1080,7 @@ core_loop:
             enter_profile_6:
                 std::cout << S_138 << endl << S_139 << endl << endl << S_134 << S_137 << endl << endl;
                 std::cin >> sav[5];
-                if (cin.fail()) { sav[5] = 0; std::cout << endl << S_11 << endl; cin.clear(); cin.ignore(32767, '\n'); goto enter_profile_6; }
+                if (cin.fail()) { sav[5] = 0; cin_error_by() goto enter_profile_6; }
                 else if (sav[5] == -1) { sav[5] = 0; wishes_number = 0; goto enter_wishes_number; }
                 else if (sav[5] == -2) { goto apply_profile; }
                 else if (sav[5] < 0 || (chosen_banner == 4 && sav[4] > 89) || (chosen_banner == 3 && sav[4] > 79)) { sav[5] = 0; std::cout << endl << S_72 << endl << endl; goto enter_profile_6; }
@@ -1079,7 +1090,7 @@ core_loop:
         enter_profile_7:
             std::cout << S_138 << endl << S_139 << endl << endl << S_135 << S_137 << endl << endl;
             std::cin >> sav[6];
-            if (cin.fail()) { sav[6] = 0; std::cout << endl << S_11 << endl; cin.clear(); cin.ignore(32767, '\n'); goto enter_profile_7; }
+            if (cin.fail()) { sav[6] = 0; cin_error_by() goto enter_profile_7; }
             else if (sav[6] == -1) { sav[6] = 0; wishes_number = 0; goto enter_wishes_number; }
             else if (sav[6] == -2) { goto apply_profile; }
             else if (sav[6] < 0) { sav[6] = 0; std::cout << endl << S_72 << endl << endl; goto enter_profile_7; }
@@ -1088,7 +1099,7 @@ core_loop:
         enter_profile_8:
             std::cout << S_138 << endl << S_139 << endl << endl << S_136 << S_137 << endl << endl;
             std::cin >> sav[7];
-            if (cin.fail()) { sav[7] = 0; std::cout << endl << S_11 << endl; cin.clear(); cin.ignore(32767, '\n'); goto enter_profile_8; }
+            if (cin.fail()) { sav[7] = 0; cin_error_by() goto enter_profile_8; }
             else if (sav[7] == -1) { sav[7] = 0; wishes_number = 0; goto enter_wishes_number; }
             else if (sav[7] == -2) { goto apply_profile; }
             else if (sav[7] < 0) { sav[7] = 0; std::cout << endl << S_72 << endl << endl; goto enter_profile_8; }
@@ -1207,7 +1218,7 @@ core_loop:
                 else { std::cout << E_7 << endl; goto full_quit; }
                 std::cout << endl << S_116 << endl << S_123 << endl << endl;
                 std::cin >> ij;
-                if (cin.fail()) { ij = 0; std::cout << endl << S_11 << endl << endl; cin.clear(); cin.ignore(32767, '\n'); goto enter_ij; }
+                if (cin.fail()) { ij = 0; cin_error_by2() goto enter_ij; }
                 if (ij == -1 && zero_input_check) { ij = 0; d_item_c = false; std::cout << endl << S_125 << endl; goto core_loop; }
                 else if (ij == -1) { ij = 0; std::cout << endl << S_85 << endl << endl; goto core_core_loop; }
                 else if (ij == -2) { ij = 0; for (int qi = 0; qi < 108; qi++) d_item_n[qi] = 0; std::cout << endl; goto enter_wishes_number; }
@@ -1217,7 +1228,7 @@ core_loop:
                 enter_d_item:
                     std::cout << endl << S_115 << pnameshort[ij] << S_124 << endl << endl;
                     std::cin >> d_item_n[ij];
-                    if (cin.fail()) { d_item_n[ij] = 0; std::cout << endl << S_11 << endl; cin.clear(); cin.ignore(32767, '\n'); goto enter_d_item; }
+                    if (cin.fail()) { d_item_n[ij] = 0; cin_error_by() goto enter_d_item; }
                     if (d_item_n[ij] < 0) { d_item_n[ij] = 0; std::cout << endl << S_72 << endl << endl; goto enter_d_item; }
                     if (d_item_n[ij] > 0) { zero_input_recheck = false; }
                     if (countx < 1 && d_item_n[ij] < 1 && zero_input_recheck) { std::cout << endl << S_72 << endl << endl; goto enter_d_item; }
@@ -1302,7 +1313,7 @@ core_loop:
                     ave_fives += five_star_assurance_number;
                     if (five_star_assurance_number > max_fives) { max_fives = five_star_assurance_number; max_fivesth = five_count; max_fivecount = countx; }
                     if (five_star_assurance_number < min_fives) { min_fives = five_star_assurance_number; min_fivesth = five_count; min_fivecount = countx; }
-                    five_pity[five_star_assurance_number - 1] ++;
+                    five_pity[five_star_assurance_number - 1]++;
                     five_star_assurance_number = 0;
                     if (five_star_guarantee_number || temp1 < 1) {
                         type = 1;
@@ -1320,8 +1331,8 @@ core_loop:
                 case 1: {
                     star = 4;
                     four_count++;
-                    if (four_star_assurance_number < 11) four_pity[four_star_assurance_number - 1] ++;
-                    else four_pity[10] ++;
+                    if (four_star_assurance_number < 11) four_pity[four_star_assurance_number - 1]++;
+                    else four_pity[10]++;
                     four_star_assurance_number = 0;
                     if (four_star_guarantee_number || temp1 < 1) {
                         type = 1;
@@ -1436,7 +1447,7 @@ core_loop:
                     ave_fives += five_star_assurance_number;
                     if (five_star_assurance_number > max_fives) { max_fives = five_star_assurance_number; max_fivesth = five_count; max_fivecount = countx; }
                     if (five_star_assurance_number < min_fives) { min_fives = five_star_assurance_number; min_fivesth = five_count; min_fivecount = countx; }
-                    five_pity_w[five_star_assurance_number - 1] ++;
+                    five_pity_w[five_star_assurance_number - 1]++;
                     five_star_assurance_number = 0;
                     if (fate_weapon == 1 || fate_weapon == 2) {
                         if (fate_points == 2) {
@@ -1480,8 +1491,8 @@ core_loop:
                 case 1: {
                     star = 4;
                     four_count++;
-                    if (four_star_assurance_number < 11) four_pity[four_star_assurance_number - 1] ++;
-                    else four_pity[10] ++;
+                    if (four_star_assurance_number < 11) four_pity[four_star_assurance_number - 1]++;
+                    else four_pity[10]++;
                     four_star_assurance_number = 0;
                     if (four_star_guarantee_number || temp1 < 3) {
                         type = 1;
@@ -1593,7 +1604,7 @@ core_loop:
                     ave_fives += five_star_assurance_number;
                     if (five_star_assurance_number > max_fives) { max_fives = five_star_assurance_number; max_fivesth = five_count; max_fivecount = countx; }
                     if (five_star_assurance_number < min_fives) { min_fives = five_star_assurance_number; min_fivesth = five_count; min_fivecount = countx; }
-                    five_pity[five_star_assurance_number - 1] ++;
+                    five_pity[five_star_assurance_number - 1]++;
                     five_star_assurance_number = 0;
                     if (unmet5_c < 147 && unmet5_w < 147) {
                         int weight4[2] = { 30, 30 };
@@ -1656,8 +1667,8 @@ core_loop:
                 case 1: {
                     star = 4;
                     four_count++;
-                    if (four_star_assurance_number < 11) four_pity[four_star_assurance_number - 1] ++;
-                    else four_pity[10] ++;
+                    if (four_star_assurance_number < 11) four_pity[four_star_assurance_number - 1]++;
+                    else four_pity[10]++;
                     four_star_assurance_number = 0;
                     if (unmet4_c < 17 && unmet4_w < 17) {
                         int weight3[2] = { 255, 255 };
