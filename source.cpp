@@ -1411,9 +1411,10 @@ core_loop:
                 default: std::cout << E_3 << endl; break;
                 }
                 output_string()
-                    if (!((star == 4 && type == 1) || (star == 4 && type == 2))) unmet4_c++;
+                if (!((star == 4 && type == 1) || (star == 4 && type == 2))) unmet4_c++;
                 if (!(star == 4 && type == 3)) unmet4_w++;
-                luckget()
+                if (!y_arg) {
+                    luckget()
                     if (star == 4 || star == 5) {
                         for (int templuck : luckstar) {
                             if (templuck == 5) luck += 6232;
@@ -1421,8 +1422,9 @@ core_loop:
                             else luck += 0;
                         }
                     }
-                luckcpy()
+                    luckcpy()
                     is_mode()
+                }
             }
         }
         else if (chosen_banner == 3) {
@@ -1571,9 +1573,10 @@ core_loop:
                 default: std::cout << E_3 << endl; break;
                 }
                 output_string()
-                    if (!((star == 4 && type == 1) || (star == 4 && type == 2))) unmet4_c++;
+                if (!((star == 4 && type == 1) || (star == 4 && type == 2))) unmet4_c++;
                 if (!(star == 4 && type == 3)) unmet4_w++;
-                luckget()
+                if (!y_arg) {
+                    luckget()
                     if (star == 4 || star == 5) {
                         for (int templuck : luckstar) {
                             if (templuck == 5) luck += 5328;
@@ -1581,8 +1584,9 @@ core_loop:
                             else luck += 0;
                         }
                     }
-                luckcpy()
+                    luckcpy()
                     is_mode()
+                }
             }
         }
         else if (chosen_banner == 4) {
@@ -1736,7 +1740,8 @@ core_loop:
                 if (!(star == 5 && type == 2)) unmet5_w++;
                 if (!(star == 4 && type == 1)) unmet4_c++;
                 if (!(star == 4 && type == 2)) unmet4_w++;
-                luckget()
+                if (!y_arg) {
+                    luckget()
                     if (star == 4 || star == 5) {
                         for (int templuck : luckstar) {
                             if (templuck == 5) luck += 6232;
@@ -1744,8 +1749,9 @@ core_loop:
                             else luck += 0;
                         }
                     }
-                luckcpy()
+                    luckcpy()
                     is_mode()
+                }
             }
         }
         else if (chosen_banner == 5) {
@@ -1832,16 +1838,18 @@ core_loop:
                     }
                 }
                 output_string()
+                if (!y_arg) {
                     luckget()
-                    if (star == 4 || star == 5) {
-                        for (int templuck : luckstar) {
-                            if (templuck == 5) luck += 16667;
-                            else if (templuck == 4) luck += 766;
-                            else luck += 0;
+                        if (star == 4 || star == 5) {
+                            for (int templuck : luckstar) {
+                                if (templuck == 5) luck += 16667;
+                                else if (templuck == 4) luck += 766;
+                                else luck += 0;
+                            }
                         }
-                    }
-                luckcpy()
+                    luckcpy()
                     is_mode()
+                }
             }
         }
         else { std::cout << E_7 << endl; goto full_quit; }
