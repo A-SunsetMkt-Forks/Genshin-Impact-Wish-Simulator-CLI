@@ -961,17 +961,17 @@ core_loop:
             if (chosen_banner == 5 || four_count == 0 || five_count == 0) { wishes_number = 0; std::cout << S_72 << endl; goto enter_wishes_number; }
             else if (chosen_banner == 1 || chosen_banner == 2 || chosen_banner == 4) {
                 std::cout << S_88 << endl << endl;
-                for (int iout = 0; iout < 10; iout++) { std::cout << iout + 1 << "  " << four_pity[iout] << "   " << four_pity[iout] * 100.0 / four_count << "%" << endl; }
-                std::cout << "10+  " << four_pity[10] << "   " << four_pity[10] * 100.0 / four_count << "%" << endl << endl << S_89 << endl << endl;
-                for (int iout = 0; iout < 90; iout++) { std::cout << iout + 1 << "  " << five_pity[iout] << "   " << five_pity[iout] * 100.0 / five_count << "%" << endl; }
+                for (int iout = 0; iout < 10; iout++) { std::cout << iout + 1 << "  " << four_pity[iout] << "   " << static_cast<double>(four_pity[iout]) * 100.0 / static_cast<double>(four_count) << "%" << endl; }
+                std::cout << "10+  " << four_pity[10] << "   " << static_cast<double>(four_pity[10]) * 100.0 / static_cast<double>(four_count) << "%" << endl << endl << S_89 << endl << endl;
+                for (int iout = 0; iout < 90; iout++) { std::cout << iout + 1 << "  " << five_pity[iout] << "   " << static_cast<double>(five_pity[iout]) * 100.0 / static_cast<double>(five_count) << "%" << endl; }
                 wishes_number = 0;
                 goto enter_wishes_number;
             }
             else if (chosen_banner == 3) {
                 std::cout << S_88 << endl << endl;
-                for (int iout = 0; iout < 10; iout++) { std::cout << iout + 1 << "  " << four_pity[iout] << "   " << four_pity[iout] * 100.0 / four_count << "%" << endl; }
-                std::cout << "10+  " << four_pity[10] << "   " << four_pity[10] * 100.0 / four_count << "%" << endl << endl << S_89 << endl << endl;
-                for (int iout = 0; iout < 80; iout++) { std::cout << iout + 1 << "  " << five_pity_w[iout] << "   " << five_pity_w[iout] * 100.0 / five_count << "%" << endl; }
+                for (int iout = 0; iout < 10; iout++) { std::cout << iout + 1 << "  " << four_pity[iout] << "   " << static_cast<double>(four_pity[iout]) * 100.0 / static_cast<double>(four_count) << "%" << endl; }
+                std::cout << "10+  " << four_pity[10] << "   " << static_cast<double>(four_pity[10]) * 100.0 / static_cast<double>(four_count) << "%" << endl << endl << S_89 << endl << endl;
+                for (int iout = 0; iout < 80; iout++) { std::cout << iout + 1 << "  " << five_pity_w[iout] << "   " << static_cast<double>(five_pity_w[iout]) * 100.0 / static_cast<double>(five_count) << "%" << endl; }
                 wishes_number = 0;
                 goto enter_wishes_number;
             }
@@ -1106,9 +1106,9 @@ core_loop:
             std::cout << endl << S_141 << endl;
             if (sav[1] == sav[3] || (sav[4] != sav[1] && sav[5] != sav[1]) || (sav[6] != sav[3] && sav[7] != sav[3]) || (chosen_banner != 3 && sav[4] > 89 && sav[5] > 89) || (chosen_banner == 3 && sav[4] > 79 && sav[5] > 79) ) check_profile_throw()
             std::cout << endl << S_142 << endl;
-            five_star_guarantee_number = sav[0];
+            five_star_guarantee_number = static_cast<bool> (sav[0]);
             five_star_assurance_number = sav[1];
-            four_star_guarantee_number = sav[2];
+            four_star_guarantee_number = static_cast<bool> (sav[2]);
             four_star_assurance_number = sav[3];
             unmet5_c = sav[4] - 1; if (unmet5_c < 0) unmet5_c = 0;
             unmet5_w = sav[5] - 1; if (unmet5_w < 0) unmet5_w = 0;
@@ -1854,25 +1854,25 @@ core_loop:
         auto endy = std::chrono::steady_clock::now();
         const std::chrono::time_point<std::chrono::system_clock> endx = std::chrono::system_clock::now();
         auto elapsed = endy - starty;
-        unsigned long long int elapsed_time = std::chrono::duration_cast<std::chrono::microseconds>(elapsed).count();
+        long long int elapsed_time = std::chrono::duration_cast<std::chrono::microseconds>(elapsed).count();
         const std::time_t t_start = std::chrono::system_clock::to_time_t(startx);
         const std::time_t t_end = std::chrono::system_clock::to_time_t(endx);
         std::cout << endl << S_86 << t_start << endl;
         std::cout << S_87 << t_end << endl;
-        std::cout << elapsed_time * 1.0 / 1000000 << S_84 << endl;
+        std::cout << static_cast<double>(elapsed_time) * 1.0 / 1000000 << S_84 << endl;
         if (five_count == 0) {
             std::cout << endl << S_127 << countx - countx_r << S_74 << endl << S_73 << countx << S_74 << endl
-                << S_75 << five_count << "  " << five_count * 100.0 / countx << "%" << endl
-                << S_76 << four_count << "  " << four_count * 100.0 / countx << "%" << endl
+                << S_75 << five_count << "  " << static_cast<double>(five_count) * 100.0 / static_cast<double>(countx) << "%" << endl
+                << S_76 << four_count << "  " << static_cast<double>(four_count) * 100.0 / static_cast<double>(countx) << "%" << endl
                 << S_77 << five_count_c << " : " << five_count_w << " : " << four_count_c << " : " << four_count_w << endl << endl;
         }
         else if (five_count > 0) {
             std::cout << endl << S_127 << countx - countx_r << S_74 << endl << S_73 << countx << S_74 << endl
-                << S_75 << five_count << "  " << five_count * 100.0 / countx << "%" << endl
-                << S_76 << four_count << "  " << four_count * 100.0 / countx << "%" << endl
+                << S_75 << five_count << "  " << static_cast<double>(five_count) * 100.0 / static_cast<double>(countx) << "%" << endl
+                << S_76 << four_count << "  " << static_cast<double>(four_count) * 100.0 / static_cast<double>(countx) << "%" << endl
                 << S_78 << max_fives << S_79 << max_fivesth << S_80 << max_fivecount + 1 << S_81 << endl
                 << S_82 << min_fives << S_79 << min_fivesth << S_80 << min_fivecount + 1 << S_81 << endl
-                << S_83 << ave_fives * 1.0 / five_count << endl
+                << S_83 << static_cast<double>(ave_fives) * 1.0 / static_cast<double>(five_count) << endl
                 << S_77 << five_count_c << " : " << five_count_w << " : " << four_count_c << " : " << four_count_w << endl << endl;
         }
         else { std::cout << E_8 << endl; goto full_quit; }
