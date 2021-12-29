@@ -2,7 +2,6 @@
 #include <iostream>
 #include <random>
 #include <string>
-#include <ctime>
 #include "cn.h" //include the language header file
 
 #define casesx( kind ){   if ((kind) < 15 ) { std::cout << "!!!!!***** "; }\
@@ -952,8 +951,6 @@ core_loop:
                 goto enter_cleanornot;
             }
         }
-        //if (chosen_banner == 4 && chosen_event == 1 && wishes_number != 10) { wishes_number = 0; std::cout << "Invalid number of wishes!" << endl; goto enter_wishes_number; }
-        //if (!(wishes_number == -1||wishes_number == 1||wishes_number == 10||wishes_number == -2||wishes_number == -3)){ wishes_number = 0; std::cout << "Invalid number of wishes!" << endl; goto enter_wishes_number; }
         else if (wishes_number == -4) {
             if (y_print) { y_print = false; std::cout << S_65 << endl; }
             else { y_print = true; std::cout << S_66 << endl; }
