@@ -121,7 +121,6 @@ five_count_w = 0,
 four_count = 0,
 four_count_c = 0,
 four_count_w = 0,
-ave_fives = 0,
 max_fivesth = 1,
 min_fivesth = 1,
 max_fivecount = 1,
@@ -149,9 +148,7 @@ std::chrono::system_clock::time_point endy = std::chrono::system_clock::now();
 std::chrono::nanoseconds elapsed = starty - endy;
 std::time_t t_start = std::chrono::system_clock::to_time_t(starty);
 std::time_t t_end = std::chrono::system_clock::to_time_t(endy);
-ptrdiff_t wishes_number = 0,
-elapsed_time = std::chrono::duration_cast<std::chrono::microseconds>(elapsed).count(),
-chosen_event = 0,
+ptrdiff_t chosen_event = 0,
 chosen_banner = 0,
 switch_b_should_be = 0,
 switch_e_should_be = 0,
@@ -169,7 +166,10 @@ e_sav = 0,
 five_weight = 0,
 four_weight = 0,
 three_weight = 0,
-fate_weapon = 0;
+fate_weapon = 0,
+ave_fives = 0;
+_int64 wishes_number = 0;
+auto elapsed_time = std::chrono::duration_cast<std::chrono::microseconds>(elapsed).count();
 
 const char* pname[128] = { C_0, C_1, C_2, C_3, C_4, C_5, C_6, C_7, C_8, C_9, C_10, C_11, C_12, C_13, C_14, C_15, C_16, C_17, C_18, C_19, C_20,
                 C_21, C_22, C_23, C_24, C_25, C_26, C_27, C_28, C_29, C_30, C_31, C_32, C_33, C_34, C_35, C_36, C_37, C_38, C_39, C_40,
@@ -219,21 +219,21 @@ const char* pnameshort[128] = { X_0, X_1, X_2, X_3, X_4, X_5, X_6, X_7, X_8, X_9
 };
 // names of the items
 
-size_t rspick(const size_t* kindx, size_t sizekind) {
+static size_t rspick(const size_t* kindx, size_t sizekind) {
     size_t kindout = kindx[1];
     size_t index = 0;
     size_t temp121 = 0;
     for (; index < sizekind; index++)
     {
-        temp121 = generatorz() % (static_cast<size_t>(index) + 1);
+        temp121 = generatorz() % (static_cast<unsigned long long int>(index) + 1);
         if (temp121 < 1) kindout = kindx[index];
     }
     return kindout;
 }
 // randomly pick an element among kindx which size is sizekind
 
-size_t WRSpick(const ptrdiff_t* weightx, size_t nom) {
-    size_t ceilling = 1;
+static size_t WRSpick(const ptrdiff_t* weightx, size_t nom) {
+    ptrdiff_t ceilling = 1;
     for (size_t inin = 0; inin < nom; inin++) ceilling += weightx[inin];
     const size_t typess1[3] = { 0, 1, 2 };
     const size_t typess2[2] = { 0, 1 };
@@ -255,7 +255,7 @@ size_t WRSpick(const ptrdiff_t* weightx, size_t nom) {
 }
 // weighted random sampling
 
-void set_pool_1(size_t up_five_p, size_t size_nup_four_c_p, const size_t* tempg1, const size_t* tempg5, size_t* up_four_g, size_t* nup_four_c, const size_t* nup_four_cgm, size_t* four_check) {
+static void set_pool_1(size_t up_five_p, size_t size_nup_four_c_p, const size_t* tempg1, const size_t* tempg5, size_t* up_four_g, size_t* nup_four_c, const size_t* nup_four_cgm, size_t* four_check) {
     up_five = up_five_p;
     size_nup_four_c = size_nup_four_c_p;
     for (size_t i = 0; i < 3; i++) { up_four_g[i] = tempg1[i]; }
@@ -263,7 +263,7 @@ void set_pool_1(size_t up_five_p, size_t size_nup_four_c_p, const size_t* tempg1
     for (size_t i = 0; i < 8; i++) { four_check[i] = tempg5[i]; }
 }
 
-void set_pool_3(size_t* up_five_g, size_t size_nup_four_c_p, const size_t* tempg1, const size_t* tempg5, const size_t* tempg6, const size_t* tempg7, size_t* up_four_g, size_t* nup_four_c, const size_t* nup_four_cgm, size_t* four_check, size_t* five_check) {
+static void set_pool_3(size_t* up_five_g, size_t size_nup_four_c_p, const size_t* tempg1, const size_t* tempg5, const size_t* tempg6, const size_t* tempg7, size_t* up_four_g, size_t* nup_four_c, const size_t* nup_four_cgm, size_t* four_check, size_t* five_check) {
     for (size_t i = 0; i < 2; i++) { up_five_g[i] = tempg6[i]; }
     size_nup_four_c = size_nup_four_c_p;
     for (size_t i = 0; i < 5; i++) { up_four_g[i] = tempg1[i]; }
@@ -333,8 +333,8 @@ enter_chosen_banner:
         luckstar[10] = { 3, 3, 3, 3, 3, 3, 3, 3, 3, 3 },
         luckiestkind[10] = { 127, 127, 127, 127, 127, 127, 127, 127, 127, 127 },
         five_check[8] = { 127, 127, 127, 127, 127, 127, 127, 127 },
-        four_check[8] = { 127, 127, 127, 127, 127, 127, 127, 127 };
-    size_t lucklocation[10] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 },
+        four_check[8] = { 127, 127, 127, 127, 127, 127, 127, 127 },
+        lucklocation[10] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 },
         lucksublocation[10] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 },
         lucksubsublocation[10] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 },
         luckiestlocation[10] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 },
@@ -387,7 +387,7 @@ enter_chosen_banner_switch:
 enter_chosen_event:
     e_sav = chosen_event;
     switch (chosen_banner) {
-    case -1: goto full_quit; break;
+    case -1: goto full_quit;
     case 1: {
         chosen_event = 0;
         std::cout << endl << S_12 << endl << S_13 << endl << S_109 << endl << S_14 << endl << S_15 << endl << S_16 << endl << S_17 << endl << S_18 << endl
@@ -453,7 +453,7 @@ enter_chosen_event:
         else if (chosen_event == -1) { chosen_event = 0; is_cross = true; std::cout << endl; goto enter_chosen_banner; }
         else if (chosen_event == -2) { chosen_event = 0; is_cross = true; std::cout << endl; goto enter_chosen_banner_switch; }
         else if (chosen_event == 1) quit = false; else { std::cout << endl << S_31 << endl; goto enter_chosen_event; } } break;
-    default: {chosen_banner = 0; chosen_event = 0; quit = true; std::cout << endl << S_53 << endl << endl; goto enter_chosen_banner; } break;
+    default: {chosen_banner = 0; chosen_event = 0; quit = true; std::cout << endl << S_53 << endl << endl; goto enter_chosen_banner; }
     }
     // choose event
 set_banner:
@@ -594,7 +594,7 @@ set_banner:
             size_t tempg5[8] = { 26, 30, 0, 0, 0, 0, 0, 0 };
             set_pool_1_m(66, 19, nup_four_cg8)
         } break;
-        default: { std::cout << E_5 << endl; goto full_quit; } break;
+        default: { std::cout << E_5 << endl; goto full_quit; }
         }
     }
     else if (chosen_banner == 2) {
@@ -620,7 +620,7 @@ set_banner:
             size_t tempg5[8] = { 26, 30, 0, 0, 0, 0, 0, 0 };
             set_pool_1_m(68, 19, nup_four_cg8)
         } break;
-        default: { std::cout << E_5 << endl; goto full_quit; } break;
+        default: { std::cout << E_5 << endl; goto full_quit; }
         }
     }
     else if (chosen_banner == 3) {
@@ -794,7 +794,7 @@ set_banner:
             size_t tempg7[8] = { 6, 0, 0, 0, 0, 0, 0, 0 };
             set_pool_3_m(19, nup_four_cg8)
         } break;
-        default: { std::cout << E_5 << endl; goto full_quit; } break;
+        default: { std::cout << E_5 << endl; goto full_quit; }
         }
     }
     else if (chosen_banner == 4) {
@@ -844,7 +844,7 @@ set_banner:
             size_nup_four_c = 22;
             memmove(nup_four_c, nup_four_cg39, sizeof(nup_four_cg39));
         } break;
-        default: { std::cout << E_5 << endl; goto full_quit; } break;
+        default: { std::cout << E_5 << endl; goto full_quit; }
         }
     }
     else if (chosen_banner == 5) {
@@ -890,7 +890,7 @@ enter_wishes_number:
         else if (wishes_number == -3) {
         enter_cleanornot:
             std::cout << S_91 << endl << S_92 << endl << S_93 << endl << endl;
-            size_t cleanornot = 0;
+            ptrdiff_t cleanornot = 0;
             std::cin >> cleanornot;
             if (cin.fail()) { cleanornot = 0; cin_error_by2() goto enter_cleanornot; }
             std::cout << endl;
@@ -1236,8 +1236,6 @@ enter_wishes_number:
                 }
                 else { ij = 0; std::cout << S_72 << endl; goto enter_ij; }
             }
-            std::cout << endl << S_85 << endl << endl;
-            goto core_core_loop;
         }
         else if (wishes_number == -127) {
             wishes_number = 0;
