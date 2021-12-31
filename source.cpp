@@ -858,8 +858,7 @@ set_banner:
     if (!is_cross) goto pre_core_loop;
     else if (chosen_banner == 3) min_fives = 80;
     else if (chosen_banner == 1 || chosen_banner == 2 || chosen_banner == 4) min_fives = 90;
-    else if (chosen_banner == 5) min_fives = PTRDIFF_MAX;
-    else { std::cout << E_7 << endl; goto full_quit; }
+    else min_fives = PTRDIFF_MAX;
 pre_core_loop:
     if ((switch_b_sav == chosen_banner && switch_e_sav == chosen_event) || e_sav == chosen_event) is_dualcross = true;
     else is_dualcross = false;
