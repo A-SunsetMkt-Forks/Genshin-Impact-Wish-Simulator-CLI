@@ -802,53 +802,55 @@ set_banner:
         case 1: {
             size_t nup_four_cg31[14] = { 17, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31 };
             size_nup_four_c = 14;
-            memmove(nup_four_c, nup_four_cg31, sizeof(nup_four_cg31));
+            for (size_t i = 0; i < 14; i++) { nup_four_c[i] = nup_four_cg31[i]; }
         } break;
         case 2: {
             size_t nup_four_cg32[16] = { 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31 };
             size_nup_four_c = 16;
-            memmove(nup_four_c, nup_four_cg32, sizeof(nup_four_cg32));
+            for (size_t i = 0; i < 16; i++) { nup_four_c[i] = nup_four_cg32[i]; }
         } break;
         case 3: {
             size_t nup_four_cg33[17] = { 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31 };
             size_nup_four_c = 17;
-            memmove(nup_four_c, nup_four_cg33, sizeof(nup_four_cg33));
+            for (size_t i = 0; i < 17; i++) { nup_four_c[i] = nup_four_cg33[i]; }
         } break;
         case 4: {
             size_t nup_four_cg34[18] = { 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 71 };
             size_nup_four_c = 18;
-            memmove(nup_four_c, nup_four_cg34, sizeof(nup_four_cg34));
+            for (size_t i = 0; i < 18; i++) { nup_four_c[i] = nup_four_cg34[i]; }
         } break;
         case 5: {
             size_t nup_four_cg35[19] = { 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 71, 91 };
             size_nup_four_c = 19;
-            memmove(nup_four_c, nup_four_cg35, sizeof(nup_four_cg35));
+            for (size_t i = 0; i < 19; i++) { nup_four_c[i] = nup_four_cg35[i]; }
         } break;
         case 6: {
             size_t nup_four_cg36[20] = { 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 71, 91, 95 };
             size_nup_four_c = 20;
-            memmove(nup_four_c, nup_four_cg36, sizeof(nup_four_cg36));
+            for (size_t i = 0; i < 20; i++) { nup_four_c[i] = nup_four_cg36[i]; }
         } break;
         case 7: {
             size_t nup_four_cg37[21] = { 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 71, 91, 95, 100 };
             size_nup_four_c = 21;
-            memmove(nup_four_c, nup_four_cg37, sizeof(nup_four_cg37));
+            for (size_t i = 0; i < 21; i++) { nup_four_c[i] = nup_four_cg37[i]; }
         } break;
         case 8: {
             size_t nup_four_cg38[22] = { 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 71, 91, 95, 100, 106 };
             size_nup_four_c = 22;
-            memmove(nup_four_c, nup_four_cg38, sizeof(nup_four_cg38));
+            for (size_t i = 0; i < 22; i++) { nup_four_c[i] = nup_four_cg38[i]; }
         } break;
         case 9: {
             size_t nup_four_cg39[23] = { 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 71, 91, 95, 100, 106, 108 };
             size_nup_four_c = 22;
-            memmove(nup_four_c, nup_four_cg39, sizeof(nup_four_cg39));
+            for (size_t i = 0; i < 23; i++) { nup_four_c[i] = nup_four_cg39[i]; }
         } break;
         default: { std::cout << E_5 << endl; goto full_quit; }
         }
     }
     else if (chosen_banner == 5) {
-        memmove(nup_four_c, nup_four_cg1, sizeof(nup_four_cg1));
+        for (size_t i = 0; i < 11; i++) {
+            nup_four_c[i] = nup_four_cg1[i];
+        }
     }
     else { std::cout << E_7 << endl; goto full_quit; }
     if (y_arg) goto core_core_loop;
