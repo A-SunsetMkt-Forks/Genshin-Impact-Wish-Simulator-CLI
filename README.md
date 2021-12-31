@@ -1,25 +1,31 @@
 ﻿## Genshin-Impact-Wish-Simulator-CLI
+
 [![License](https://img.shields.io/badge/Licence-GPL-blue.svg)](https://github.com/Jirehlov/GenshinImpactWishSimulatorCLI/blob/master/LICENSE)
 
 ## Other versions
+
 Fileout: [Genshin Impact Wish Simulator Fileout](https://github.com/Jirehlov/Genshin-Impact-Wish-Simulator-Fileout)
 
 ## English
+
 This is a CLI Wish Simulator for Genshin Impact players.
 
 ### Features:
+
 Unlimited number of wishes in one go;\
 Pull untill a specific output reached;\
 Statistics;\
 Showing the luckiest succession of 10 wishes
 
 ### How to build:
+
 ```
 g++ -s -o3 source.cpp -o giwscli
 ```
 Or Visual Studio, etc.
 
 ### How to use:
+
 ```
 giwscli <chosen_banner> <chosen_event> <wishes_number>
 ```
@@ -54,10 +60,14 @@ I Character Event Wish\
 20: Farewell of Snezhnaya/20211013-20211102 (Tartaglia, Ningguang, Chongyun, Yanfei)\
 21: Moment of Bloom/20211102-20211123 (Hu Tao, Thoma, Diona, Sayu)\
 22: Secretum Secretorum/20211124-20211214 (Albedo, Rosaria, Noelle, Bennett)\
-23: Oni's Royale/20211214-20220104 (Arataki Itto, Gorou, Xiangling, Barbara)
+23: Oni's Royale/20211214-20220104 (Arataki Itto, Gorou, Xiangling, Barbara)\
+24: The Transcendent One Returns/20220105-20220125 (Shenhe, Yun Jin, Ningguang, Chongyun)\
+25: Gentry of Hermitage/20220125-20220215 (Zhongli, Yanfei, Xingqiu, Beidou)
 
 II Character Event Wish-2\
-1: Born of Ocean Swell/20211124-20211214 (Eula, Rosaria, Noelle, Bennett)
+1: Born of Ocean Swell/20211124-20211214 (Eula, Rosaria, Noelle, Bennett)\
+2: Invitation to Mundane Life/20220105-20220125 (Xiao, Yun Jin, Ningguang, Chongyun)\
+3: Adrift in the Harbor/20220125-20220215 (Ganyu, Yanfei, Xingqiu, Beidou)
 
 III Weapon Event Wish\
 1: Epitome Invocation/20200928-20201018 (Aquila Favonia, Amos' Bow, The Flute, The Bell, The Widsith, The Stringless, Favonius Lance)\
@@ -81,7 +91,9 @@ III Weapon Event Wish\
 19: Epitome Invocation/20211013-20211102 (Polar Star, Memory of Dust, Akuoumaru, Favonius Sword, Favonius Lance, Eye of Perception, Rust)\
 20: Epitome Invocation/20211102-20211123 (Staff of Homa, Elegy for the End, Wavebreaker's Fin, Mouun's Moon, Sacrificial Sword, Rainslasher, The Widsith)\
 21: Epitome Invocation/20211124-20211214 (Freedom Sworn, Song of Broken Pines, Alley Hunter, Lion's Roar, Dragon's Bane, Wine and Song, Sacrificial Greatsword)\
-22: Epitome Invocation/20211214-20210104 (Redhorn Stonethresher, Skyward Harp, The Alley Flash, Mitternachts Waltz, Favonius Lance, Sacrificial Fragments, The Bell)
+22: Epitome Invocation/20211214-20210104 (Redhorn Stonethresher, Skyward Harp, The Alley Flash, Mitternachts Waltz, Favonius Lance, Sacrificial Fragments, The Bell)\
+23: Epitome Invocation/20220105-20220125 (Calamity Queller, Primordial Jade Winged-Spear, Lithic Spear, The Flute, Favonius Warbow, The Widsith, Favonius Greatsword)\
+24: Epitome Invocation/20220125-20220215 (Vortex Vanquisher, Amos' Bow, Lithic Blade, Favonius Sword, Dragon's Bane, Favonius Codex, Sacrificial Bow)
 
 IV Permanent Wish\
 1: Wanderlust Invocation/20200928-20201222 (Released)\
@@ -91,33 +103,40 @@ IV Permanent Wish\
 5: Wanderlust Invocation/20210901-20211012 (Adds Sayu)\
 6: Wanderlust Invocation/20211013-20211123 (Adds Kujo Sara)\
 7: Wanderlust Invocation/20211124-20220104 (Adds Thoma)\
-8: Wanderlust Invocation/20220105- (Adds Gorou)
+8: Wanderlust Invocation/20220105-20220215 (Adds Gorou)\
+9: Wanderlust Invocation/20220216- (Adds Yun Jin)
 
 V Novice Wish\
 1: Beginners' wish
 
 ### Screenshots
+
 ![Screenshot 2021-12-11 090439](https://user-images.githubusercontent.com/34600796/145670993-47180cce-24a6-4a43-a708-a1ed23aa6abe.png)
 
 
 
 ### About Hidden Possibilities
+
 This simulator includes no hidden possibilities.
 
 
 ## 中文
+
 这是命令行界面的原神祈愿模拟器。
 
 ### 主要功能：
+
 任意数量抽卡、指定出货抽卡、简略统计信息反馈、查看当前记录中的运气最佳的十连等
 
 ### 如何编译:
+
 ```
 g++ -s -o3 source.cpp -o giwscli
 ```
 或者Visual Studio等其他方法。
 
 ### 如何使用:
+
 ```
 giwscli <卡池类型编号> <活动类型编号> <祈愿数量>
 ```
@@ -152,10 +171,14 @@ giwscli 1 2 100
 20: 暂别冬都/20211013-20211102 (达达利亚, 凝光, 重云, 烟绯)\
 21: 赤团开时/20211102-20211123 (胡桃, 托马, 迪奥娜, 早柚)\
 22: 深秘之息/20211124-20211214 (阿贝多, 罗莎莉亚, 诺艾尔, 班尼特)\
-23: 鬼门斗宴/20211214-20220104 (荒泷一斗, 五郎, 香菱, 芭芭拉)
+23: 鬼门斗宴/20211214-20220104 (荒泷一斗, 五郎, 香菱, 芭芭拉)\
+24: 出尘入世/20220105-20220125 (申鹤, 云堇, 凝光, 重云)\
+25: 陵薮市朝/20220125-20220215 (钟离, 烟绯, 行秋, 北斗)
 
 二、角色活动祈愿-2\
-1: 浪涌之瞬/20211124-20211214 (优菈, 罗莎莉亚, 诺艾尔, 班尼特)
+1: 浪涌之瞬/20211124-20211214 (优菈, 罗莎莉亚, 诺艾尔, 班尼特)\
+2: 烟火之邀/20220105-20220125 (魈, 云堇, 凝光, 重云)\
+3: 浮生孰来/20220125-20220215 (甘雨, 烟绯, 行秋, 北斗)
 
 三、武器活动祈愿\
 1: 神铸赋形/20200928-20201018 (风鹰剑, 阿莫斯之弓, 笛剑, 钟剑, 流浪乐章, 绝弦, 西风长枪)\
@@ -179,7 +202,9 @@ giwscli 1 2 100
 19: 神铸赋形/20211013-20211102 (冬极白星, 尘世之锁, 恶玉丸, 西风剑, 西风长枪, 昭心, 弓藏)\
 20: 神铸赋形/20211102-20211123 (护摩之杖, 终末嗟叹之诗, 断浪长鳍, 曚云之月, 祭礼剑, 雨裁, 流浪乐章)\
 21: 神铸赋形/20211124-20211214 (苍古自由之誓, 松籁响起之时, 暗巷猎手, 匣里龙吟, 匣里灭辰, 暗巷的酒与诗, 祭礼大剑)\
-22: 神铸赋形/20211214-20210104 (赤角石溃杵, 天空之翼, 暗巷闪光, 幽夜华尔兹, 西风长枪, 祭礼残章, 钟剑)
+22: 神铸赋形/20211214-20210104 (赤角石溃杵, 天空之翼, 暗巷闪光, 幽夜华尔兹, 西风长枪, 祭礼残章, 钟剑)\
+23: 神铸赋形/20220105-20220125 (息灾, 和璞鸢, 千岩长枪, 笛剑, 西风猎弓, 流浪乐章, 西风大剑)\
+24: 神铸赋形/20220125-20220215 (贯虹之槊, 阿莫斯之弓, 千岩古剑, 西风剑, 匣里灭辰, 西风秘典, 祭礼弓)
 
 四、常驻祈愿\
 1: 奔行世间/20200928-20201222 (公测)\
@@ -189,21 +214,25 @@ giwscli 1 2 100
 5: 奔行世间/20210901-20211012 (新增早柚)\
 6: 奔行世间/20211013-20211123 (新增九条裟罗)\
 7: 奔行世间/20211124-20220104 (新增托马)\
-8: 奔行世间/20220105- (新增五郎)
+8: 奔行世间/20220105-20220215(新增五郎)\
+9: 奔行世间/20220216- (新增云堇)
 
 五、新手祈愿\
 1: 新手祈愿
 
 ### 截图
+
 ![Screenshot 2021-12-11 090334](https://user-images.githubusercontent.com/34600796/145670987-5cc578e2-9f89-4a12-8387-0e42135ae867.png)
 
 
 
 ### 关于隐藏概率（仓检）
+
 本模拟器不考虑仓检。
 
 
 ## Credits
+
 [原神抽卡全机制总结](https://www.bilibili.com/read/cv10468091)\
 [原神抽卡记录数据集](https://github.com/OneBST/GI_gacha_dataset)\
 by [一棵平衡树](https://space.bilibili.com/6165300) aka [OneBST](https://github.com/OneBST)

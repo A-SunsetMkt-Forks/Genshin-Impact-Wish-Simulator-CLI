@@ -590,8 +590,8 @@ set_banner:
         case 25: {
             switch_e_sav = switch_e_should_be;
             switch_e_should_be = 3;
-            size_t tempg1[3] = { 26, 30, 106 };
-            size_t tempg5[8] = { 26, 30, 0, 0, 0, 0, 0, 0 };
+            size_t tempg1[3] = { 24, 25, 71 };
+            size_t tempg5[8] = { 24, 25, 71, 0, 0, 0, 0, 0 };
             set_pool_1_m(66, 19, nup_four_cg8)
         } break;
         default: { std::cout << E_5 << endl; goto full_quit; }
@@ -616,8 +616,8 @@ set_banner:
         case 3: {
             switch_e_sav = switch_e_should_be;
             switch_e_should_be = 25;
-            size_t tempg1[3] = { 26, 30, 106 };
-            size_t tempg5[8] = { 26, 30, 0, 0, 0, 0, 0, 0 };
+            size_t tempg1[3] = { 24, 25, 71 };
+            size_t tempg5[8] = { 24, 25, 71, 0, 0, 0, 0, 0 };
             set_pool_1_m(68, 19, nup_four_cg8)
         } break;
         default: { std::cout << E_5 << endl; goto full_quit; }
@@ -774,24 +774,24 @@ set_banner:
             set_pool_3_m(18, nup_four_cg7)
         } break;
         case 22: {
-            size_t tempg6[2] = { 6, 107 };
+            size_t tempg6[2] = { 107, 6 };
             size_t tempg1[5] = { 37, 40, 44, 82, 88 };
             size_t tempg5[8] = { 37, 40, 44, 0, 0, 0, 0, 0 };
             size_t tempg7[8] = { 6, 0, 0, 0, 0, 0, 0, 0 };
             set_pool_3_m(18, nup_four_cg7)
         } break;
         case 23: {
-            size_t tempg6[2] = { 9, 110 };
-            size_t tempg1[5] = { 37, 40, 44, 82, 88 };
-            size_t tempg5[8] = { 37, 40, 44, 0, 0, 0, 0, 0 };
+            size_t tempg6[2] = { 110, 9 };
+            size_t tempg1[5] = { 35, 38, 45, 48, 80 };
+            size_t tempg5[8] = { 35, 38, 45, 48, 0, 0, 0, 0 };
             size_t tempg7[8] = { 9, 0, 0, 0, 0, 0, 0, 0 };
             set_pool_3_m(19, nup_four_cg8)
         } break;
         case 24: {
-            size_t tempg6[2] = { 6, 107 };
-            size_t tempg1[5] = { 37, 40, 44, 82, 88 };
-            size_t tempg5[8] = { 37, 40, 44, 0, 0, 0, 0, 0 };
-            size_t tempg7[8] = { 6, 0, 0, 0, 0, 0, 0, 0 };
+            size_t tempg6[2] = { 74, 5 };
+            size_t tempg1[5] = { 33, 39, 41, 49, 79 };
+            size_t tempg5[8] = { 33, 39, 41, 49, 0, 0, 0, 0 };
+            size_t tempg7[8] = { 5, 0, 0, 0, 0, 0, 0, 0 };
             set_pool_3_m(19, nup_four_cg8)
         } break;
         default: { std::cout << E_5 << endl; goto full_quit; }
