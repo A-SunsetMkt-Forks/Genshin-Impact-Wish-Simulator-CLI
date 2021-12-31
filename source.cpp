@@ -168,7 +168,7 @@ four_weight = 0,
 three_weight = 0,
 fate_weapon = 0,
 ave_fives = 0;
-_int64 wishes_number = 0;
+signed long long int wishes_number = 0;
 auto elapsed_time = std::chrono::duration_cast<std::chrono::microseconds>(elapsed).count();
 
 const char* pname[128] = { C_0, C_1, C_2, C_3, C_4, C_5, C_6, C_7, C_8, C_9, C_10, C_11, C_12, C_13, C_14, C_15, C_16, C_17, C_18, C_19, C_20,
