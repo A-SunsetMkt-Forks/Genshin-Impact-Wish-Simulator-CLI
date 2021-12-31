@@ -142,7 +142,7 @@
 #define S_140 "fate points? (0, 1 or 2)"
 #define S_141 "Checking profile validity..."
 #define S_142 "Checking profile passed!"
-#define S_143 "Checking profile failed! Changes undone！"
+#define S_143 "Checking profile failed! Changes undone!"
 #define S_144 "24: The Transcendent One Returns_20220105-20220125 (Shenhe, Yun Jin, Ningguang, Chongyun)"
 #define S_145 "25: Gentry of Hermitage_20220125-20220215 (Zhongli, Yanfei, Xingqiu, Beidou)"
 #define S_146 "2: Invitation to Mundane Life_20220105-20220125 (Xiao, Yun Jin, Ningguang, Chongyun)"
