@@ -1,6 +1,6 @@
 ﻿#pragma once
 #ifndef EN_H
-#define S_1 "WELCOME TO GENSHIN IMPACT WISH SIMULATOR CLI V2.4.1"
+#define S_1 "WELCOME TO GENSHIN IMPACT WISH SIMULATOR CLI V2.4.2"
 #define S_2 "by Jirehlov Research"
 #define S_3 "Source code available on GitHub: Jirehlov_Genshin-Impact-Wish-Simulator-CLI"
 #define S_4 "GPL-3.0 License"
@@ -142,7 +142,7 @@
 #define S_140 "fate points? (0, 1 or 2)"
 #define S_141 "Checking profile validity..."
 #define S_142 "Checking profile passed!"
-#define S_143 "Checking profile failed! Changes undone!"
+#define S_143 "Checking profile failed! Changes undone！"
 #define S_144 "24: The Transcendent One Returns_20220105-20220125 (Shenhe, Yun Jin, Ningguang, Chongyun)"
 #define S_145 "25: Gentry of Hermitage_20220125-20220215 (Zhongli, Yanfei, Xingqiu, Beidou)"
 #define S_146 "2: Invitation to Mundane Life_20220105-20220125 (Xiao, Yun Jin, Ningguang, Chongyun)"
