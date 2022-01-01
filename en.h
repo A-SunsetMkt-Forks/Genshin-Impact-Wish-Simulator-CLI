@@ -249,7 +249,7 @@
 #define C_96 "\"Plane of Euthymia\" Raiden Shogun (Electro)"
 #define C_97 "Engulfing Lightning (Polearm)"
 #define C_98 "Everlasting Moonglow (Catalyst)"
-#define C_99 "Yae Miko (Electro)"
+#define C_99 "\"Astute Amusement\" Yae Miko (Electro)"
 #define C_100 "\"Protector From Afar\" Thoma (Pryo)"
 #define C_101 "Polar Star (Bow)"
 #define C_102 "Mouun's Moon (Bow)"
