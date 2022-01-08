@@ -1409,7 +1409,7 @@ enter_wishes_number:
                 default: std::cout << E_3 << endl; break;
                 }
                 output_string()
-                if (star != 4 || (type != 1 && type != 2)) unmet4_c++;
+                if (star != 4 || type == 3) unmet4_c++;
                 if (star != 4 || type != 3) unmet4_w++;
                 if (!y_arg) {
                     luckget()
@@ -1571,7 +1571,7 @@ enter_wishes_number:
                 default: std::cout << E_3 << endl; break;
                 }
                 output_string()
-                if (star != 4 || (type != 1 && type != 2)) unmet4_c++;
+                if (star != 4 || type == 3) unmet4_c++;
                 if (star != 4 || type != 3) unmet4_w++;
                 if (!y_arg) {
                     luckget()
