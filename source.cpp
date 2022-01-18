@@ -92,7 +92,10 @@
 
 using namespace std;
 
-size_t seed = static_cast<size_t>(std::chrono::high_resolution_clock::now().time_since_epoch().count());
+std::random_device seed_gen;
+unsigned int seed_r = seed_gen();
+unsigned long long int seed_t = std::chrono::high_resolution_clock::now().time_since_epoch().count();
+size_t seed = static_cast<size_t>(seed_t) - static_cast<size_t>(seed_r);
 std::mt19937_64 generatorz(seed);
 // random set
 
