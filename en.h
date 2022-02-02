@@ -150,6 +150,8 @@
 #define S_148 "23: Epitome Invocation_20220105-20220125 (Calamity Queller, Primordial Jade Winged-Spear, Lithic Spear, The Flute, Favonius Warbow, The Widsith, Favonius Greatsword)"
 #define S_149 "24: Epitome Invocation_20220125-20220215 (Vortex Vanquisher, Amos' Bow, Lithic Blade, Favonius Sword, Dragon's Bane, Favonius Codex, Sacrificial Bow)"
 #define S_150 "9: Wanderlust Invocation_20220216- (Adds Yun Jin)"
+#define S_151 "26: _20220216-20220308 (Yae Miko, Fischl, Diona, Thoma)"
+#define S_152 "25: Epitome Invocation_20220216-20220308 (Kagura's Verity, Primordial Jade Cutter, , , , , )"
 #define C_0 "\"Driving Thunder\" Keqing (Electro)"
 #define C_1 "\"Astral Reflection\" Mona (Hydro)"
 #define C_2 "\"Icy Resurrection\" Qiqi (Cryo)"

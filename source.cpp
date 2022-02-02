@@ -179,8 +179,7 @@ const char* pname[128] = { C_0, C_1, C_2, C_3, C_4, C_5, C_6, C_7, C_8, C_9, C_1
                 C_41, C_42, C_43, C_44, C_45, C_46, C_47, C_48, C_49, C_50, C_51, C_52, C_53, C_54, C_55, C_56, C_57, C_58, C_59, C_60,
                 C_61, C_62, C_63, C_64, C_65, C_66, C_67, C_68, C_69, C_70, C_71, C_72, C_73, C_74, C_75, C_76, C_77, C_78, C_79, C_80,
                 C_81, C_82, C_83, C_84, C_85, C_86, C_87, C_88, C_89, C_90, C_91, C_92, C_93, C_94, C_95, C_96, C_97, C_98, C_99, C_100,
-                C_101, C_102, C_103, C_104, C_105, C_106, C_107, C_108, C_109, C_110, C_111,
-                "Placeholder",
+                C_101, C_102, C_103, C_104, C_105, C_106, C_107, C_108, C_109, C_110, C_111, C_112,
                 "Placeholder",
                 "Placeholder",
                 "Placeholder",
@@ -202,8 +201,7 @@ const char* pnameshort[128] = { X_0, X_1, X_2, X_3, X_4, X_5, X_6, X_7, X_8, X_9
                 X_41, X_42, X_43, X_44, X_45, X_46, X_47, X_48, X_49, X_50, X_51, X_52, X_53, X_54, X_55, X_56, X_57, X_58, X_59, X_60,
                 X_61, X_62, X_63, X_64, X_65, X_66, X_67, X_68, X_69, X_70, X_71, X_72, X_73, X_74, X_75, X_76, X_77, X_78, X_79, X_80,
                 X_81, X_82, X_83, X_84, X_85, X_86, X_87, X_88, X_89, X_90, X_91, X_92, X_93, X_94, X_95, X_96, X_97, X_98, X_99, X_100,
-                X_101, X_102, X_103, X_104, X_105, X_106, X_107, X_108, X_109, X_110, X_111,
-                "Placeholder",
+                X_101, X_102, X_103, X_104, X_105, X_106, X_107, X_108, X_109, X_110, X_111, X_112,
                 "Placeholder",
                 "Placeholder",
                 "Placeholder",
@@ -396,7 +394,7 @@ enter_chosen_event:
         std::cout << endl << S_12 << endl << S_13 << endl << S_109 << endl << S_14 << endl << S_15 << endl << S_16 << endl << S_17 << endl << S_18 << endl
             << S_19 << endl << S_20 << endl << S_21 << endl << S_22 << endl << S_23 << endl << S_24 << endl << S_25 << endl << S_26 << endl
             << S_27 << endl << S_28 << endl << S_29 << endl << S_30 << endl << S_94 << endl << S_95 << endl << S_100 << endl << S_101 << endl
-            << S_102 << endl << S_103 << endl << S_144 << endl << S_145 << endl << endl;
+            << S_102 << endl << S_103 << endl << S_144 << endl << S_145 << endl << S_151 << endl << endl;
         std::cin >> chosen_event;
         fate_weapon = 0;
         fate_points = 0;
@@ -405,7 +403,7 @@ enter_chosen_event:
         if (cin.fail()) { chosen_event = 0; cin_error_by() goto enter_chosen_event; }
         else if (chosen_event == -1) { chosen_event = 0; is_cross = true; std::cout << endl; goto enter_chosen_banner; }
         else if (chosen_event == -2) { chosen_event = 0; is_cross = true; std::cout << endl; goto enter_chosen_banner_switch; }
-        else if (chosen_event > 0 && chosen_event < 26) quit = false; else { std::cout << endl << S_31 << endl; goto enter_chosen_event; }
+        else if (chosen_event > 0 && chosen_event < 27) quit = false; else { std::cout << endl << S_31 << endl; goto enter_chosen_event; }
     } break;
     case 2: {
         chosen_event = 0;
@@ -425,14 +423,14 @@ enter_chosen_event:
         std::cout << endl << S_12 << endl << S_13 << endl << S_109 << endl << S_32 << endl << S_33 << endl << S_34 << endl << S_35 << endl << S_36 << endl
             << S_37 << endl << S_38 << endl << S_39 << endl << S_40 << endl << S_41 << endl << S_42 << endl << S_43 << endl << S_44 << endl
             << S_45 << endl << S_46 << endl << S_47 << endl << S_96 << endl << S_97 << endl << S_104 << endl << S_105 << endl << S_111 << endl
-            << S_126 << endl << S_148 << endl << S_149 << endl << endl;
+            << S_126 << endl << S_148 << endl << S_149 << endl << S_152 << endl << endl;
         std::cin >> chosen_event;
         fate_weapon = 0;
         fate_points = 0;
         if (cin.fail()) { chosen_event = 0; cin_error_by() goto enter_chosen_event; }
         else if (chosen_event == -1) { chosen_event = 0; is_cross = true; std::cout << endl; goto enter_chosen_banner; }
         else if (chosen_event == -2) { chosen_event = 0; is_cross = true; std::cout << endl; goto enter_chosen_banner_switch; }
-        else if (chosen_event > 0 && chosen_event < 25) quit = false; else { std::cout << endl << S_31 << endl; goto enter_chosen_event; }
+        else if (chosen_event > 0 && chosen_event < 26) quit = false; else { std::cout << endl << S_31 << endl; goto enter_chosen_event; }
     } break;
     case 4: {
         chosen_event = 0;
@@ -596,6 +594,13 @@ set_banner:
             size_t tempg1[3] = { 24, 25, 71 };
             size_t tempg5[8] = { 24, 25, 71, 0, 0, 0, 0, 0 };
             set_pool_1_m(66, 19, nup_four_cg8)
+        } break;
+        case 26: {
+            switch_e_sav = switch_e_should_be;
+            switch_e_should_be = 0;
+            size_t tempg1[3] = { 18, 22, 100 };
+            size_t tempg5[8] = { 18, 22, 100, 0, 0, 0, 0, 0 };
+            set_pool_1_m(99, 19, nup_four_cg8)
         } break;
         default: { std::cout << E_5 << endl; goto full_quit; }
         }
@@ -792,6 +797,13 @@ set_banner:
         } break;
         case 24: {
             size_t tempg6[2] = { 74, 5 };
+            size_t tempg1[5] = { 33, 39, 41, 49, 79 };
+            size_t tempg5[8] = { 33, 39, 41, 49, 0, 0, 0, 0 };
+            size_t tempg7[8] = { 5, 0, 0, 0, 0, 0, 0, 0 };
+            set_pool_3_m(19, nup_four_cg8)
+        } break;
+        case 25: {
+            size_t tempg6[2] = { 112, 77 };
             size_t tempg1[5] = { 33, 39, 41, 49, 79 };
             size_t tempg5[8] = { 33, 39, 41, 49, 0, 0, 0, 0 };
             size_t tempg7[8] = { 5, 0, 0, 0, 0, 0, 0, 0 };
