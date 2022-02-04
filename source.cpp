@@ -4,15 +4,8 @@
 #include <string>
 #include "cn.h" //include the language header file
 
-#define casesx( kind ){   if ((kind) < 15 ) { std::cout << "!!!!!***** "; }\
-                    else if ((kind) < 50 ) { std::cout << "!!**** "; }\
-                    else if ((kind) < 63 ) { std::cout << "*** "; }\
-                    else if ((kind) == 71 || (kind) == 79 || (kind) == 80 || (kind) == 82 || (kind) == 83 || (kind) == 84 || (kind) == 88 || (kind) == 91 || (kind) == 95 || (kind) == 100 || (kind) == 102 || (kind) == 103 || (kind) == 104 || (kind) == 106 ||(kind) == 108 ) { std::cout << "!!**** "; }\
-                    else if ((kind) < 113 ) { std::cout << "!!!!!***** "; }\
-                    else {  std::cout << E_1 << endl; goto full_quit; }\
-                } // cout stars prefix
 #define output_string() {if (y_print) {std::cout << countx + 1 << "(" << five_star_assurance_number << ")(" << four_star_assurance_number << ") ";\
-                    casesx( kind )\
+                    casesx( kind );\
                     std::cout << pname[kind] << endl; }\
                     pcount[kind]++;\
                     wishes_number--;\
@@ -256,6 +249,15 @@ static size_t WRSpick(const ptrdiff_t* weightx, size_t nom) {
 }
 // weighted random sampling
 
+void casesx( size_t kind ){
+    if (kind < 15 ) { std::cout << "!!!!!***** "; }
+    else if (kind < 50 ) { std::cout << "!!**** "; }
+    else if (kind < 63 ) { std::cout << "*** "; }
+    else if (kind == 71 || kind == 79 || kind == 80 || kind == 82 || kind == 83 || kind == 84 || kind == 88 || kind == 91 || kind == 95 || kind == 100 || kind == 102 || kind == 103 || kind == 104 || kind == 106 || kind == 108 ) { std::cout << "!!**** "; }
+    else if (kind < 113 ) { std::cout << "!!!!!***** "; }
+    else { std::cout << E_1 << endl; quit = true; }
+} // cout stars prefix
+
 static void set_pool_1(size_t up_five_p, size_t size_nup_four_c_p, const size_t* tempg1, const size_t* tempg5, size_t* up_four_g, size_t* nup_four_c, const size_t* nup_four_cgm, size_t* four_check) {
     up_five = up_five_p;
     size_nup_four_c = size_nup_four_c_p;
@@ -394,7 +396,7 @@ enter_chosen_event:
         std::cout << endl << S_12 << endl << S_13 << endl << S_109 << endl << S_14 << endl << S_15 << endl << S_16 << endl << S_17 << endl << S_18 << endl
             << S_19 << endl << S_20 << endl << S_21 << endl << S_22 << endl << S_23 << endl << S_24 << endl << S_25 << endl << S_26 << endl
             << S_27 << endl << S_28 << endl << S_29 << endl << S_30 << endl << S_94 << endl << S_95 << endl << S_100 << endl << S_101 << endl
-            << S_102 << endl << S_103 << endl << S_144 << endl << S_145 << endl << S_151 << endl << endl;
+            << S_102 << endl << S_103 << endl << S_144 << endl << S_145 << endl << S_151 << endl << S_153 << endl << endl;
         std::cin >> chosen_event;
         fate_weapon = 0;
         fate_points = 0;
@@ -403,11 +405,11 @@ enter_chosen_event:
         if (cin.fail()) { chosen_event = 0; cin_error_by() goto enter_chosen_event; }
         else if (chosen_event == -1) { chosen_event = 0; is_cross = true; std::cout << endl; goto enter_chosen_banner; }
         else if (chosen_event == -2) { chosen_event = 0; is_cross = true; std::cout << endl; goto enter_chosen_banner_switch; }
-        else if (chosen_event > 0 && chosen_event < 27) quit = false; else { std::cout << endl << S_31 << endl; goto enter_chosen_event; }
+        else if (chosen_event > 0 && chosen_event < 28) quit = false; else { std::cout << endl << S_31 << endl; goto enter_chosen_event; }
     } break;
     case 2: {
         chosen_event = 0;
-        std::cout << endl << S_12 << endl << S_13 << endl << S_109 << endl << S_107 << endl << S_146 << endl << S_147 << endl << endl;
+        std::cout << endl << S_12 << endl << S_13 << endl << S_109 << endl << S_107 << endl << S_146 << endl << S_147 << endl << S_154 << endl << endl;
         std::cin >> chosen_event;
         fate_weapon = 0;
         fate_points = 0;
@@ -416,7 +418,7 @@ enter_chosen_event:
         if (cin.fail()) { chosen_event = 0; cin_error_by() goto enter_chosen_event; }
         else if (chosen_event == -1) { chosen_event = 0; is_cross = true; std::cout << endl; goto enter_chosen_banner; }
         else if (chosen_event == -2) { chosen_event = 0; is_cross = true; std::cout << endl; goto enter_chosen_banner_switch; }
-        else if (chosen_event > 0 && chosen_event < 4) quit = false; else { std::cout << endl << S_31 << endl; goto enter_chosen_event; }
+        else if (chosen_event > 0 && chosen_event < 5) quit = false; else { std::cout << endl << S_31 << endl; goto enter_chosen_event; }
     } break;
     case 3: {
         chosen_event = 0;
@@ -602,6 +604,13 @@ set_banner:
             size_t tempg5[8] = { 18, 22, 100, 0, 0, 0, 0, 0 };
             set_pool_1_m(99, 19, nup_four_cg8)
         } break;
+        case 27: {
+            switch_e_sav = switch_e_should_be;
+            switch_e_should_be = 4;
+            size_t tempg1[3] = { 18, 22, 100 };
+            size_t tempg5[8] = { 18, 22, 100, 0, 0, 0, 0, 0 };
+            set_pool_1_m(96, 19, nup_four_cg8)
+        } break;
         default: { std::cout << E_5 << endl; goto full_quit; }
         }
     }
@@ -627,6 +636,13 @@ set_banner:
             size_t tempg1[3] = { 24, 25, 71 };
             size_t tempg5[8] = { 24, 25, 71, 0, 0, 0, 0, 0 };
             set_pool_1_m(68, 19, nup_four_cg8)
+        } break;
+        case 4: {
+            switch_e_sav = switch_e_should_be;
+            switch_e_should_be = 27;
+            size_t tempg1[3] = { 24, 25, 71 };
+            size_t tempg5[8] = { 24, 25, 71, 0, 0, 0, 0, 0 };
+            set_pool_1_m(94, 19, nup_four_cg8)
         } break;
         default: { std::cout << E_5 << endl; goto full_quit; }
         }
@@ -897,7 +913,7 @@ enter_wishes_number:
             std::cout << S_63 << luckiest << endl;
             for (size_t templuck = 0; templuck < 10; templuck++) {
                 std::cout << luckiestlocation[templuck] << "(" << luckiestsublocation[templuck] << ")(" << luckiestsubsublocation[templuck] << ") ";
-                casesx(luckiestkind[templuck])
+                casesx(luckiestkind[templuck]);
                     std::cout << pname[luckiestkind[templuck]] << endl;
             }
             wishes_number = 0;
