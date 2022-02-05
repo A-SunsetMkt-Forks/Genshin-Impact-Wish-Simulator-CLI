@@ -4,15 +4,6 @@
 #include <string>
 #include "cn.h" //include the language header file
 
-#define output_string() {if (y_print) {std::cout << countx + 1 << "(" << five_star_assurance_number << ")(" << four_star_assurance_number << ") ";\
-                    casesx( kind );\
-                    std::cout << pname[kind] << endl; }\
-                    pcount[kind]++;\
-                    wishes_number--;\
-                    countx++;\
-                    five_star_assurance_number++;\
-                    four_star_assurance_number++;\
-                    } // cout what have come home
 #define luckcpy() {if (countx == 10) {\
                         luckiest = luck;\
                         for (size_t templuck = 0; templuck < 10; templuck++) {\
@@ -249,14 +240,26 @@ static size_t WRSpick(const ptrdiff_t* weightx, size_t nom) {
 }
 // weighted random sampling
 
-void casesx( size_t kind ){
+static void casesx( size_t kind ){
     if (kind < 15 ) { std::cout << "!!!!!***** "; }
     else if (kind < 50 ) { std::cout << "!!**** "; }
     else if (kind < 63 ) { std::cout << "*** "; }
     else if (kind == 71 || kind == 79 || kind == 80 || kind == 82 || kind == 83 || kind == 84 || kind == 88 || kind == 91 || kind == 95 || kind == 100 || kind == 102 || kind == 103 || kind == 104 || kind == 106 || kind == 108 ) { std::cout << "!!**** "; }
     else if (kind < 113 ) { std::cout << "!!!!!***** "; }
-    else { std::cout << E_1 << endl; quit = true; }
+    else { std::cout << E_1 << "  "; }
 } // cout stars prefix
+
+static void output_string(size_t kind, size_t* pcount) {
+    if (y_print) {
+        std::cout << countx + 1 << "(" << five_star_assurance_number << ")(" << four_star_assurance_number << ") ";
+        casesx( kind );
+        std::cout << pname[kind] << endl; }
+        pcount[kind]++;
+        wishes_number--;
+        countx++;
+        five_star_assurance_number++;
+        four_star_assurance_number++;
+} // cout what have come home
 
 static void set_pool_1(size_t up_five_p, size_t size_nup_four_c_p, const size_t* tempg1, const size_t* tempg5, size_t* up_four_g, size_t* nup_four_c, const size_t* nup_four_cgm, size_t* four_check) {
     up_five = up_five_p;
@@ -1439,7 +1442,7 @@ enter_wishes_number:
                 case 2: Tri() break;
                 default: std::cout << E_3 << endl; break;
                 }
-                output_string()
+                output_string(kind, pcount);
                 if (star != 4 || type == 3) unmet4_c++;
                 if (star != 4 || type != 3) unmet4_w++;
                 if (!y_arg) {
@@ -1601,7 +1604,7 @@ enter_wishes_number:
                 case 2: Tri() break;
                 default: std::cout << E_3 << endl; break;
                 }
-                output_string()
+                output_string(kind, pcount);
                 if (star != 4 || type == 3) unmet4_c++;
                 if (star != 4 || type != 3) unmet4_w++;
                 if (!y_arg) {
@@ -1764,7 +1767,7 @@ enter_wishes_number:
                 case 2: Tri() break;
                 default: std::cout << E_3 << endl; break;
                 }
-                output_string()
+                output_string(kind, pcount);
                 if (!(star == 5 && type == 1)) unmet5_c++;
                 if (!(star == 5 && type == 2)) unmet5_w++;
                 if (!(star == 4 && type == 1)) unmet4_c++;
@@ -1858,7 +1861,7 @@ enter_wishes_number:
                         if (kind == 20) { is_noelle = false; }
                     }
                 }
-                output_string()
+                output_string(kind, pcount);
                 if (!y_arg) {
                     luckget()
                         if (star == 4 || star == 5) {
