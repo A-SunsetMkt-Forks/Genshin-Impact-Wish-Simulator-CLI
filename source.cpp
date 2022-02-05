@@ -255,7 +255,7 @@ void casesx( size_t kind ){
     else if (kind < 63 ) { std::cout << "*** "; }
     else if (kind == 71 || kind == 79 || kind == 80 || kind == 82 || kind == 83 || kind == 84 || kind == 88 || kind == 91 || kind == 95 || kind == 100 || kind == 102 || kind == 103 || kind == 104 || kind == 106 || kind == 108 ) { std::cout << "!!**** "; }
     else if (kind < 113 ) { std::cout << "!!!!!***** "; }
-    else { std::cout << E_1 << endl; quit = true; }
+    else { std::cout << E_1 << "  "; }
 } // cout stars prefix
 
 static void set_pool_1(size_t up_five_p, size_t size_nup_four_c_p, const size_t* tempg1, const size_t* tempg5, size_t* up_four_g, size_t* nup_four_c, const size_t* nup_four_cgm, size_t* four_check) {
