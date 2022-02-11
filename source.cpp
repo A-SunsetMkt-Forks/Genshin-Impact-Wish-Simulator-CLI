@@ -249,7 +249,7 @@ static size_t WRSpick(const ptrdiff_t* weightx, size_t nom) {
 }
 // weighted random sampling
 
-void casesx( size_t kind ){
+static void casesx( size_t kind ){
     if (kind < 15 ) { std::cout << "!!!!!***** "; }
     else if (kind < 50 ) { std::cout << "!!**** "; }
     else if (kind < 63 ) { std::cout << "*** "; }
@@ -426,14 +426,14 @@ enter_chosen_event:
         std::cout << endl << S_12 << endl << S_13 << endl << S_109 << endl << S_32 << endl << S_33 << endl << S_34 << endl << S_35 << endl << S_36 << endl
             << S_37 << endl << S_38 << endl << S_39 << endl << S_40 << endl << S_41 << endl << S_42 << endl << S_43 << endl << S_44 << endl
             << S_45 << endl << S_46 << endl << S_47 << endl << S_96 << endl << S_97 << endl << S_104 << endl << S_105 << endl << S_111 << endl
-            << S_126 << endl << S_148 << endl << S_149 << endl << S_152 << endl << endl;
+            << S_126 << endl << S_148 << endl << S_149 << endl << S_152 << endl << S_155 << endl << endl;
         std::cin >> chosen_event;
         fate_weapon = 0;
         fate_points = 0;
         if (cin.fail()) { chosen_event = 0; cin_error_by() goto enter_chosen_event; }
         else if (chosen_event == -1) { chosen_event = 0; is_cross = true; std::cout << endl; goto enter_chosen_banner; }
         else if (chosen_event == -2) { chosen_event = 0; is_cross = true; std::cout << endl; goto enter_chosen_banner_switch; }
-        else if (chosen_event > 0 && chosen_event < 26) quit = false; else { std::cout << endl << S_31 << endl; goto enter_chosen_event; }
+        else if (chosen_event > 0 && chosen_event < 27) quit = false; else { std::cout << endl << S_31 << endl; goto enter_chosen_event; }
     } break;
     case 4: {
         chosen_event = 0;
@@ -603,14 +603,14 @@ set_banner:
             switch_e_should_be = 0;
             const size_t tempg1[3] = { 18, 22, 100 };
             const size_t tempg5[8] = { 18, 22, 100, 0, 0, 0, 0, 0 };
-            set_pool_1_m(99, 19, nup_four_cg8)
+            set_pool_1_m(99, 20, nup_four_cg9)
         } break;
         case 27: {
             switch_e_sav = switch_e_should_be;
             switch_e_should_be = 4;
             const size_t tempg1[3] = { 18, 22, 100 };
             const size_t tempg5[8] = { 18, 22, 100, 0, 0, 0, 0, 0 };
-            set_pool_1_m(96, 19, nup_four_cg8)
+            set_pool_1_m(96, 20, nup_four_cg9)
         } break;
         default: { std::cout << E_5 << endl; goto full_quit; }
         }
@@ -643,7 +643,7 @@ set_banner:
             switch_e_should_be = 27;
             const size_t tempg1[3] = { 24, 25, 71 };
             const size_t tempg5[8] = { 24, 25, 71, 0, 0, 0, 0, 0 };
-            set_pool_1_m(94, 19, nup_four_cg8)
+            set_pool_1_m(94, 20, nup_four_cg9)
         } break;
         default: { std::cout << E_5 << endl; goto full_quit; }
         }
@@ -820,10 +820,17 @@ set_banner:
         } break;
         case 25: {
             const size_t tempg6[2] = { 112, 77 };
-            const size_t tempg1[5] = { 33, 39, 41, 49, 79 };
-            const size_t tempg5[8] = { 33, 39, 41, 49, 0, 0, 0, 0 };
-            const size_t tempg7[8] = { 5, 0, 0, 0, 0, 0, 0, 0 };
-            set_pool_3_m(19, nup_four_cg8)
+            const size_t tempg1[5] = { 34, 36, 42, 47, 103 };
+            const size_t tempg5[8] = { 34, 36, 42, 47, 0, 0, 0, 0 };
+            const size_t tempg7[8] = { 0, 0, 0, 0, 0, 0, 0, 0 };
+            set_pool_3_m(20, nup_four_cg9)
+        } break;
+        case 26: {
+            const size_t tempg6[2] = { 112, 77 };
+            const size_t tempg1[5] = { 34, 36, 42, 47, 103 };
+            const size_t tempg5[8] = { 34, 36, 42, 47, 0, 0, 0, 0 };
+            const size_t tempg7[8] = { 0, 0, 0, 0, 0, 0, 0, 0 };
+            set_pool_3_m(20, nup_four_cg9)
         } break;
         default: { std::cout << E_5 << endl; goto full_quit; }
         }
